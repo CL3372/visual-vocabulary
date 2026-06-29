@@ -1,0 +1,32 @@
+import type { Word } from '../types';
+
+export const TIME_WORDS: Word[] = [
+  // Days of the week
+  { id: 't1',  word: 'Sunday',    translations: { es: 'Domingo',    pt: 'Domingo',    fr: 'Dimanche',  de: 'Sonntag',     it: 'Domenica',  ja: '日曜日', zh: '星期日', ko: '일요일', ar: 'الأحد'    }, category: 'Days',   unsplashQuery: 'sunday morning calm' },
+  { id: 't2',  word: 'Monday',    translations: { es: 'Lunes',      pt: 'Segunda-feira', fr: 'Lundi',  de: 'Montag',      it: 'Lunedì',    ja: '月曜日', zh: '星期一', ko: '월요일', ar: 'الاثنين'  }, category: 'Days',   unsplashQuery: 'monday coffee work' },
+  { id: 't3',  word: 'Tuesday',   translations: { es: 'Martes',     pt: 'Terça-feira',   fr: 'Mardi',  de: 'Dienstag',    it: 'Martedì',   ja: '火曜日', zh: '星期二', ko: '화요일', ar: 'الثلاثاء' }, category: 'Days',   unsplashQuery: 'tuesday productivity desk' },
+  { id: 't4',  word: 'Wednesday', translations: { es: 'Miércoles',  pt: 'Quarta-feira',  fr: 'Mercredi', de: 'Mittwoch',  it: 'Mercoledì', ja: '水曜日', zh: '星期三', ko: '수요일', ar: 'الأربعاء' }, category: 'Days',   unsplashQuery: 'midweek planning calendar' },
+  { id: 't5',  word: 'Thursday',  translations: { es: 'Jueves',     pt: 'Quinta-feira',  fr: 'Jeudi',  de: 'Donnerstag',  it: 'Giovedì',   ja: '木曜日', zh: '星期四', ko: '목요일', ar: 'الخميس'   }, category: 'Days',   unsplashQuery: 'thursday meeting teamwork' },
+  { id: 't6',  word: 'Friday',    translations: { es: 'Viernes',    pt: 'Sexta-feira',   fr: 'Vendredi', de: 'Freitag',   it: 'Venerdì',   ja: '金曜日', zh: '星期五', ko: '금요일', ar: 'الجمعة'   }, category: 'Days',   unsplashQuery: 'friday celebration weekend' },
+  { id: 't7',  word: 'Saturday',  translations: { es: 'Sábado',     pt: 'Sábado',        fr: 'Samedi', de: 'Samstag',     it: 'Sabato',    ja: '土曜日', zh: '星期六', ko: '토요일', ar: 'السبت'    }, category: 'Days',   unsplashQuery: 'saturday fun leisure' },
+
+  // Months of the year
+  { id: 't8',  word: 'January',   translations: { es: 'Enero',      pt: 'Janeiro',    fr: 'Janvier',   de: 'Januar',      it: 'Gennaio',   ja: '1月',  zh: '一月',  ko: '1월',  ar: 'يناير'    }, category: 'Months', unsplashQuery: 'january winter snow' },
+  { id: 't9',  word: 'February',  translations: { es: 'Febrero',    pt: 'Fevereiro',  fr: 'Février',   de: 'Februar',     it: 'Febbraio',  ja: '2月',  zh: '二月',  ko: '2월',  ar: 'فبراير'   }, category: 'Months', unsplashQuery: 'february valentines hearts' },
+  { id: 't10', word: 'March',     translations: { es: 'Marzo',      pt: 'Março',      fr: 'Mars',      de: 'März',        it: 'Marzo',     ja: '3月',  zh: '三月',  ko: '3월',  ar: 'مارس'     }, category: 'Months', unsplashQuery: 'march spring flowers bloom' },
+  { id: 't11', word: 'April',     translations: { es: 'Abril',      pt: 'Abril',      fr: 'Avril',     de: 'April',       it: 'Aprile',    ja: '4月',  zh: '四月',  ko: '4월',  ar: 'أبريل'    }, category: 'Months', unsplashQuery: 'april rain showers' },
+  { id: 't12', word: 'May',       translations: { es: 'Mayo',       pt: 'Maio',       fr: 'Mai',       de: 'Mai',         it: 'Maggio',    ja: '5月',  zh: '五月',  ko: '5월',  ar: 'مايو'     }, category: 'Months', unsplashQuery: 'may spring garden' },
+  { id: 't13', word: 'June',      translations: { es: 'Junio',      pt: 'Junho',      fr: 'Juin',      de: 'Juni',        it: 'Giugno',    ja: '6月',  zh: '六月',  ko: '6월',  ar: 'يونيو'    }, category: 'Months', unsplashQuery: 'june summer sunshine' },
+  { id: 't14', word: 'July',      translations: { es: 'Julio',      pt: 'Julho',      fr: 'Juillet',   de: 'Juli',        it: 'Luglio',    ja: '7月',  zh: '七月',  ko: '7월',  ar: 'يوليو'    }, category: 'Months', unsplashQuery: 'july summer beach' },
+  { id: 't15', word: 'August',    translations: { es: 'Agosto',     pt: 'Agosto',     fr: 'Août',      de: 'August',      it: 'Agosto',    ja: '8月',  zh: '八月',  ko: '8월',  ar: 'أغسطس'    }, category: 'Months', unsplashQuery: 'august harvest field' },
+  { id: 't16', word: 'September', translations: { es: 'Septiembre', pt: 'Setembro',   fr: 'Septembre', de: 'September',   it: 'Settembre', ja: '9月',  zh: '九月',  ko: '9월',  ar: 'سبتمبر'   }, category: 'Months', unsplashQuery: 'september autumn leaves' },
+  { id: 't17', word: 'October',   translations: { es: 'Octubre',    pt: 'Outubro',    fr: 'Octobre',   de: 'Oktober',     it: 'Ottobre',   ja: '10月', zh: '十月',  ko: '10월', ar: 'أكتوبر'   }, category: 'Months', unsplashQuery: 'october pumpkin autumn' },
+  { id: 't18', word: 'November',  translations: { es: 'Noviembre',  pt: 'Novembro',   fr: 'Novembre',  de: 'November',    it: 'Novembre',  ja: '11月', zh: '十一月', ko: '11월', ar: 'نوفمبر'   }, category: 'Months', unsplashQuery: 'november fog misty' },
+  { id: 't19', word: 'December',  translations: { es: 'Diciembre',  pt: 'Dezembro',   fr: 'Décembre',  de: 'Dezember',    it: 'Dicembre',  ja: '12月', zh: '十二月', ko: '12월', ar: 'ديسمبر'   }, category: 'Months', unsplashQuery: 'december christmas winter' },
+
+  // Seasons
+  { id: 't20', word: 'Spring', translations: { es: 'Primavera', pt: 'Primavera', fr: 'Printemps', de: 'Frühling', it: 'Primavera', ja: '春', zh: '春天', ko: '봄',  ar: 'ربيع'  }, category: 'Seasons', unsplashQuery: 'spring cherry blossom' },
+  { id: 't21', word: 'Summer', translations: { es: 'Verano',    pt: 'Verão',     fr: 'Été',       de: 'Sommer',   it: 'Estate',    ja: '夏', zh: '夏天', ko: '여름', ar: 'صيف'   }, category: 'Seasons', unsplashQuery: 'summer sunny beach' },
+  { id: 't22', word: 'Autumn', translations: { es: 'Otoño',     pt: 'Outono',    fr: 'Automne',   de: 'Herbst',   it: 'Autunno',   ja: '秋', zh: '秋天', ko: '가을', ar: 'خريف'  }, category: 'Seasons', unsplashQuery: 'autumn fall foliage' },
+  { id: 't23', word: 'Winter', translations: { es: 'Invierno',  pt: 'Inverno',   fr: 'Hiver',     de: 'Winter',   it: 'Inverno',   ja: '冬', zh: '冬天', ko: '겨울', ar: 'شتاء'  }, category: 'Seasons', unsplashQuery: 'winter snow cold' },
+];
