@@ -13,6 +13,7 @@ export interface SyncPayload {
   seenWords: Set<string>;
   favorites: Set<string>;
   xp: number;
+  displayName: string;
 }
 
 export interface SyncSetters {
@@ -71,7 +72,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
 
   const pushToCloud = useCallback(async () => {
     if (!user) return;
-    const fingerprint = `${payload.streak}|${payload.lastPlayDate}|${payload.favorites.size}|${payload.seenWords.size}|${payload.isPro}`;
+    const fingerprint = `${payload.streak}|${payload.lastPlayDate}|${payload.favorites.size}|${payload.seenWords.size}|${payload.isPro}|${payload.xp}|${payload.displayName}`;
     if (fingerprint === lastPushed.current) return;
     lastPushed.current = fingerprint;
 
@@ -86,6 +87,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
       seen_words: Array.from(payload.seenWords),
       favorites: Array.from(payload.favorites),
       xp: payload.xp,
+      display_name: payload.displayName || null,
       updated_at: new Date().toISOString(),
     });
   }, [user?.id, payload]);
@@ -111,7 +113,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
     if (!user) return;
     const t = setTimeout(pushToCloud, 3000);
     return () => clearTimeout(t);
-  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.isPro, payload.xp, user?.id]);
+  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.isPro, payload.xp, payload.displayName, user?.id]);
 
   return { pullFromCloud, pushToCloud, pushSrsCard };
 }

@@ -4,6 +4,7 @@ import { useApp } from '../context/AppContext';
 import { ALL_WORDS } from '../data/words';
 import { WrappedStats } from '../components/WrappedStats';
 import { UpgradeModal } from '../components/UpgradeModal';
+import { Leaderboard } from '../components/Leaderboard';
 
 const TOTAL_WORDS = ALL_WORDS.length;
 
@@ -288,6 +289,9 @@ export function Progress() {
           </div>
         )}
       </div>
+
+      {/* Leaderboard */}
+      <Leaderboard />
 
       {/* Quiz history */}
       {quizHistory.length > 0 && (
