@@ -353,8 +353,12 @@ async function fetchWikipedia(query: string): Promise<string> {
   }
 }
 
-// Tries Pexels first; if no result falls back to Wikipedia
+// If query has a WIKI_TERMS mapping, use Wikipedia directly (avoids wrong Pexels results for species/mythology)
+// Otherwise tries Pexels first, then Wikipedia fallback
 async function fetchImage(query: string): Promise<string> {
+  if (WIKI_TERMS[query.toLowerCase()]) {
+    return fetchWikipedia(query);
+  }
   const pexels = await fetchPexels(query);
   if (pexels) return pexels;
   return fetchWikipedia(query);
@@ -375,7 +379,6 @@ const CURATED: Record<string, string> = {
   'bear':               'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&h=400&fit=crop',
   'tiger':              'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=400&h=400&fit=crop',
   'monkey':             'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=400&h=400&fit=crop',
-  'cow':                'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=400&h=400&fit=crop',
   'sheep':              'https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=400&h=400&fit=crop',
   'duck':               'https://images.unsplash.com/photo-1444208516459-a2979afaff9d?w=400&h=400&fit=crop',
   // frog → Wikipedia fallback
