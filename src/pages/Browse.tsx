@@ -9,7 +9,7 @@ import { CuisineOfTheWeek } from '../components/CuisineOfTheWeek';
 import { useApp } from '../context/AppContext';
 import type { Word } from '../types';
 
-const KIDS_CATEGORIES = ['Animals', 'Food', 'Nature', 'Colors', 'Home'];
+const KIDS_CATEGORIES = ['Animals', 'Fruits', 'Vegetables', 'Dairy & Eggs', 'Desserts', 'Nature', 'Colors', 'Home'];
 
 const GROUP_TABS: { key: CategoryGroup; label: string; emoji: string }[] = [
   { key: 'All',         label: 'All',         emoji: '🌐' },
