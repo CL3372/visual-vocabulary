@@ -54,9 +54,9 @@ const WIKI_TERMS: Record<string, string> = {
   'lake trout fish':          'Lake trout',
   'rainbow trout fish':       'Rainbow trout',
   'arctic char fish':         'Arctic char',
-  'electric ray torpedo fish':'Torpedo (ray)',
-  'grey mullet fish':         'Grey mullet',
-  'monkfish anglerfish':      'Monkfish',
+  'electric ray torpedo fish': 'Electric ray',
+  'grey mullet fish':          'Flathead grey mullet',
+  'monkfish anglerfish':       'Monkfish',
   'wheat field grain':        'Wheat',
   'tapioca pearls':           'Tapioca',
   'juice glass fresh':        'Juice',
@@ -206,10 +206,29 @@ const WIKI_TERMS: Record<string, string> = {
   'wine tasting':          'Wine tasting',
   'grape harvest picker':  'Grape harvest',
   'vinaigrette dressing':  'Vinaigrette',
-  // Seafood additions
-  'toadfish':              'Toadfish',
-  'rays bream fish':       "Ray's bream",
-  'scallop shellfish':     'Scallop',
+  // Seafood
+  'toadfish':                              'Toadfish',
+  'rays bream fish':                       'Brama brama',
+  'scallop shellfish':                     'Scallop',
+  'clam shell seafood raw opened':         'Clam',
+  'mackerel fish':                         'Atlantic mackerel',
+  'dried shrimp small orange asian':       'Dried shrimp',
+  'paua abalone new zealand shell iridescent': 'Haliotis iris',
+  'paua abalone iridescent shell new zealand': 'Haliotis iris',
+  'tarakihi fish new zealand white fillet':'Nemadactylus macropterus',
+  'crawfish crayfish louisiana boil red':  'Crayfish',
+  'dried cod stockfish hanging traditional nordic': 'Stockfish',
+  'ahi tuna steak raw sushi grade red':    'Yellowfin tuna',
+  'king crab leg red alaska steamed':      'Red king crab',
+  'king crab alaska legs red steamed':     'Red king crab',
+  'arctic char salmon pink fillet fresh':  'Arctic char',
+  'coconut crab large tropical island':    'Coconut crab',
+  'black scabbard fish dark deep sea madeira': 'Aphanopus carbo',
+  'limpets grilled shell atlantic azores madeira': 'Patella vulgata',
+  // Fix existing seafood entries with better Wikipedia titles
+  'salt cod bacalhau':     'Bacalhau',
+  'dogfish shark':         'Small-spotted catshark',
+  'periwinkle shellfish':  'Common periwinkle',
   // Food additions
   'veal meat':             'Veal',
   'syrup bottle':          'Syrup',
@@ -232,9 +251,6 @@ const WIKI_TERMS: Record<string, string> = {
   'garfish':               'Garfish',
   'lemon sole fish':       'Lemon sole',
   'whiting fish':          'Whiting',
-  'dogfish shark':         'Dogfish shark',
-  'periwinkle shellfish':  'Periwinkle (gastropod)',
-  'salt cod bacalhau':     'Salt fish',
   'absinthe drink':        'Absinthe',
   'bitter ale beer':       'Bitter (beer)',
   'cornflour starch':      'Corn starch',
@@ -353,11 +369,11 @@ async function fetchWikipedia(query: string): Promise<string> {
   }
 }
 
-// If query has a WIKI_TERMS mapping, use Wikipedia directly (avoids wrong Pexels results for species/mythology)
-// Otherwise tries Pexels first, then Wikipedia fallback
+// WIKI_TERMS entries try Wikipedia first (for accuracy), then fall back to Pexels if Wikipedia has no image
 async function fetchImage(query: string): Promise<string> {
   if (WIKI_TERMS[query.toLowerCase()]) {
-    return fetchWikipedia(query);
+    const wiki = await fetchWikipedia(query);
+    if (wiki) return wiki;
   }
   const pexels = await fetchPexels(query);
   if (pexels) return pexels;
