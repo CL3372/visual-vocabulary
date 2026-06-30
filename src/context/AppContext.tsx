@@ -1,5 +1,8 @@
 import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from 'react';
+import type { User } from '@supabase/supabase-js';
 import type { SRSCard } from '../types';
+import { useAuth } from '../hooks/useAuth';
+import { useCloudSync } from '../hooks/useCloudSync';
 
 const LANG_LOCALES: Record<string, string> = {
   en: 'en-US', es: 'es-ES', pt: 'pt-PT', fr: 'fr-FR',
@@ -42,6 +45,9 @@ interface AppContextType {
   // Streak
   lastPlayDate: string;
   studiedToday: boolean;
+  // Auth
+  user: User | null;
+  signOut: () => Promise<void>;
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -76,6 +82,7 @@ function sm2(card: SRSCard, grade: 1 | 4 | 5): SRSCard {
 }
 
 export function AppProvider({ children }: { children: ReactNode }) {
+  const { user, signOut } = useAuth();
   const [isPro, setIsPro] = useState(() => load('vv-pro', false));
 
   const activatePro = useCallback((token: string) => {
@@ -151,15 +158,31 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
+  const dailyGoal = parseInt(localStorage.getItem('vv-daily-goal') ?? '10', 10);
+
+  const { pushSrsCard } = useCloudSync(user, {
+    streak, bestStreak, lastPlayDate, targetLang, dailyGoal, isPro, seenWords, favorites,
+  }, {
+    setStreak: (v) => { setStreak(v); save('vv-streak', v); },
+    setBestStreak: (v) => { setBestStreak(v); save('vv-best-streak', v); },
+    setLastPlayDate: (v) => { setLastPlayDate(v); save('vv-lastplay', v); },
+    setTargetLang: (v) => { setTargetLangRaw(v); save('vv-lang', v); },
+    setSeenWords: (v) => { setSeenWords(v); save('vv-seen', [...v]); },
+    setFavorites: (v) => { setFavorites(v); save('vv-favs', [...v]); },
+    setSrsData: (v) => { setSrsData(v); save('vv-srs', v); },
+    activatePro,
+  });
+
   const rateCard = useCallback((wordId: string, grade: 1 | 4 | 5) => {
     setSrsData(prev => {
       const existing = prev[wordId] ?? { ef: 2.5, interval: 0, reps: 0, due: Date.now() };
       const updated = sm2(existing, grade);
       const next = { ...prev, [wordId]: updated };
       save('vv-srs', next);
+      pushSrsCard(wordId, updated);
       return next;
     });
-  }, []);
+  }, [pushSrsCard]);
 
   const srsDueCount = useMemo(() => {
     const now = Date.now();
@@ -205,6 +228,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       isPro, activatePro,
       lastPlayDate,
       studiedToday: lastPlayDate === new Date().toISOString().split('T')[0],
+      user, signOut,
     }}>
       {children}
     </AppContext.Provider>

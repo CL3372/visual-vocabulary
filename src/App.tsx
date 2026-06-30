@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe } from 'lucide-react';
+import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut } from 'lucide-react';
 import { StreakModal } from './components/StreakModal';
+import { AuthModal } from './components/AuthModal';
 import { AppProvider, useApp } from './context/AppContext';
 import { Browse } from './pages/Browse';
 import { Flashcards } from './pages/Flashcards';
@@ -26,10 +27,11 @@ const TABS: { id: AppMode; label: string; icon: typeof BookOpen }[] = [
 ];
 
 function Inner() {
-  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak } = useApp();
+  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak, user, signOut } = useApp();
   const [mode, setMode] = useState<AppMode>('browse');
   const [showLang, setShowLang] = useState(false);
   const [showStreak, setShowStreak] = useState(false);
+  const [showAuth, setShowAuth] = useState(false);
   const [onboarded, setOnboarded] = useState(() => load('vv-onboarded', false));
   const [startCategory, setStartCategory] = useState('');
 
@@ -74,6 +76,24 @@ function Inner() {
             }}>
             {streak === 0 ? '🔥 0' : `🔥 ${streak}`}
           </button>
+
+          {/* Cloud sync / account */}
+          {user ? (
+            <button onClick={signOut}
+              className="p-2 rounded-xl transition-colors"
+              style={{ background: '#f0fdf4', color: '#16a34a' }}
+              aria-label="Signed in — tap to sign out"
+              title={`Signed in as ${user.email}`}>
+              <LogOut className="w-4 h-4" />
+            </button>
+          ) : (
+            <button onClick={() => setShowAuth(true)}
+              className="p-2 rounded-xl transition-colors"
+              style={{ background: 'var(--surface2)', color: 'var(--text2)' }}
+              aria-label="Sign in to sync">
+              <Cloud className="w-4 h-4" />
+            </button>
+          )}
 
           {/* Kids mode */}
           <button onClick={toggleKidsMode}
@@ -155,6 +175,9 @@ function Inner() {
           onClose={() => setShowLang(false)}
         />
       )}
+
+      {/* Auth modal */}
+      {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
 
       {/* Streak modal */}
       {showStreak && (
