@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, ChevronRight } from 'lucide-react';
+import { Check, ChevronRight, Bell } from 'lucide-react';
 import { LANGUAGES } from '../data/languages';
 
 const STARTER_CUISINES = [
@@ -97,12 +97,20 @@ interface Props {
   onComplete: (lang: string, startCategory: string) => void;
 }
 
+const DAILY_GOALS = [
+  { value: 5,  label: 'Casual',   desc: '5 words/day',  emoji: '🌱', sub: 'Just getting started' },
+  { value: 10, label: 'Regular',  desc: '10 words/day', emoji: '🔥', sub: 'Recommended' },
+  { value: 20, label: 'Serious',  desc: '20 words/day', emoji: '⚡', sub: 'Build fast' },
+  { value: 50, label: 'Intense',  desc: '50 words/day', emoji: '🚀', sub: 'Full immersion' },
+];
+
 export function Onboarding({ onComplete }: Props) {
   const [step, setStep] = useState(0);
   const [lang, setLang] = useState('es');
   const [cuisine, setCuisine] = useState('');
+  const [dailyGoal, setDailyGoal] = useState(10);
 
-  const TOTAL = 4;
+  const TOTAL = 5;
 
   // ── Step 0: Welcome ──────────────────────────────────────────────────────
 
@@ -129,7 +137,7 @@ export function Onboarding({ onComplete }: Props) {
               World Gastronomy
             </p>
             <p className="text-base leading-relaxed max-w-xs" style={{ color: 'var(--text2)' }}>
-              Learn food words from 8 languages through the dishes that define every culture.
+              Learn food words from 10 languages through the dishes that define every culture.
             </p>
           </div>
         </div>
@@ -249,12 +257,80 @@ export function Onboarding({ onComplete }: Props) {
           >
             Continue <ChevronRight className="w-5 h-5" />
           </button>
+          <button
+            onClick={() => { setCuisine(''); setStep(3); }}
+            className="text-sm py-2 transition-colors"
+            style={{ color: 'var(--text2)' }}
+          >
+            Skip — I'll explore on my own
+          </button>
         </div>
       </div>
     );
   }
 
-  // ── Step 3: Quick tip ────────────────────────────────────────────────────
+  // ── Step 3: Daily goal ───────────────────────────────────────────────────
+
+  if (step === 3) {
+    return (
+      <div className="min-h-screen flex flex-col px-5 py-10" style={{ background: 'var(--bg)' }}>
+        <div className="mb-6">
+          <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: 'var(--accent)' }}>
+            Step 3 of 4
+          </p>
+          <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>
+            Set your daily goal
+          </h2>
+          <p className="text-sm" style={{ color: 'var(--text2)' }}>
+            How many words do you want to learn each day?
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-3 flex-1 content-start">
+          {DAILY_GOALS.map(g => {
+            const active = g.value === dailyGoal;
+            return (
+              <button
+                key={g.value}
+                onClick={() => setDailyGoal(g.value)}
+                className="flex items-center gap-4 p-4 rounded-2xl text-left transition-all active:scale-95"
+                style={{
+                  background: active ? 'var(--accent-bg)' : 'var(--surface)',
+                  border: `1.5px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+                }}
+              >
+                <span className="text-3xl leading-none">{g.emoji}</span>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <p className="font-bold text-sm" style={{ color: active ? 'var(--accent)' : 'var(--text)' }}>{g.label}</p>
+                    <span className="text-xs px-2 py-0.5 rounded-full font-medium"
+                      style={{ background: active ? 'var(--accent)' : 'var(--surface2)', color: active ? '#fff' : 'var(--text2)' }}>
+                      {g.desc}
+                    </span>
+                  </div>
+                  <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>{g.sub}</p>
+                </div>
+                {active && <Check className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--accent)' }} />}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mt-6 flex flex-col items-center gap-3">
+          <Dots total={TOTAL} current={3} />
+          <button
+            onClick={() => setStep(4)}
+            className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            Continue <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Step 4: Quick tip ────────────────────────────────────────────────────
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between px-6 py-12 text-center"
@@ -262,7 +338,7 @@ export function Onboarding({ onComplete }: Props) {
 
       <div className="w-full">
         <p className="text-xs font-semibold uppercase tracking-wider mb-4" style={{ color: 'var(--accent)' }}>
-          Step 3 of 3
+          Step 4 of 4
         </p>
         <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>
           Tap to reveal the translation
@@ -275,25 +351,58 @@ export function Onboarding({ onComplete }: Props) {
       </div>
 
       <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-        <div className="rounded-2xl p-4 text-left w-full" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-          <p className="text-xs font-semibold mb-2" style={{ color: 'var(--text2)' }}>Quick tips</p>
+        <div className="grid grid-cols-2 gap-2 w-full">
           {[
-            '❤️  Heart a word to save it to favourites',
-            '🧠  Review with spaced repetition to actually remember',
-            '🗺️  Browse the map to explore by region',
+            { emoji: '❤️', text: 'Heart words to save favourites' },
+            { emoji: '🧠', text: 'Spaced repetition to remember' },
+            { emoji: '🗺️', text: 'Browse the map by region' },
+            { emoji: '🔥', text: `Goal: ${dailyGoal} words/day` },
           ].map(tip => (
-            <p key={tip} className="text-sm mb-1 last:mb-0" style={{ color: 'var(--text)' }}>{tip}</p>
+            <div key={tip.emoji} className="rounded-2xl p-3 flex flex-col items-center text-center gap-1"
+              style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+              <span className="text-2xl">{tip.emoji}</span>
+              <p className="text-xs leading-snug" style={{ color: 'var(--text)' }}>{tip.text}</p>
+            </div>
           ))}
         </div>
 
-        <Dots total={TOTAL} current={3} />
-        <button
-          onClick={() => onComplete(lang, cuisine)}
-          className="w-full py-4 rounded-2xl font-bold text-base transition-all active:scale-95"
-          style={{ background: 'var(--accent)', color: '#fff' }}
-        >
-          Start exploring 🚀
-        </button>
+        <Dots total={TOTAL} current={4} />
+        {'Notification' in window && Notification.permission === 'default' ? (
+          <div className="w-full space-y-2">
+            <button
+              onClick={async () => {
+                await Notification.requestPermission();
+                localStorage.setItem('vv-daily-goal', String(dailyGoal));
+                onComplete(lang, cuisine);
+              }}
+              className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+              style={{ background: 'var(--accent)', color: '#fff' }}
+            >
+              <Bell className="w-5 h-5" /> Enable reminders & start 🚀
+            </button>
+            <button
+              onClick={() => {
+                localStorage.setItem('vv-daily-goal', String(dailyGoal));
+                onComplete(lang, cuisine);
+              }}
+              className="w-full py-2 text-sm transition-colors"
+              style={{ color: 'var(--text2)' }}
+            >
+              Skip reminders
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => {
+              localStorage.setItem('vv-daily-goal', String(dailyGoal));
+              onComplete(lang, cuisine);
+            }}
+            className="w-full py-4 rounded-2xl font-bold text-base transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            Start exploring 🚀
+          </button>
+        )}
       </div>
     </div>
   );
