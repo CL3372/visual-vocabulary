@@ -27,11 +27,13 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? 'All');
   const [showFavs, setShowFavs] = useState(false);
   const [selected, setSelected] = useState<Word | null>(null);
+  const [visibleCount, setVisibleCount] = useState(50);
 
   function handleGroupChange(group: CategoryGroup) {
     startTransition(() => {
       setActiveGroup(group);
       setActiveCategory('All');
+      setVisibleCount(50);
     });
   }
 
@@ -86,7 +88,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             type="text"
             placeholder="Search in any language…"
             value={search}
-            onChange={e => { const v = e.target.value; startTransition(() => setSearch(v)); }}
+            onChange={e => { const v = e.target.value; startTransition(() => { setSearch(v); setVisibleCount(50); }); }}
             className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:ring-2"
             style={{
               background: 'var(--surface2)',
@@ -152,7 +154,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
           {['All', ...subCategories].map(cat => (
             <button
               key={cat}
-              onClick={() => startTransition(() => setActiveCategory(cat))}
+              onClick={() => startTransition(() => { setActiveCategory(cat); setVisibleCount(50); })}
               className="flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-all"
               style={{
                 background: activeCategory === cat ? 'var(--accent)' : 'var(--surface2)',
@@ -179,7 +181,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
       {/* Grid */}
       <div className="flex-1 p-4">
         <div className={`grid gap-3 ${kidsMode ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'} max-w-5xl mx-auto`}>
-          {filtered.map(word => (
+          {filtered.slice(0, visibleCount).map(word => (
             <WordCard key={word.id} word={word} onClick={() => handleSelect(word)} />
           ))}
         </div>
@@ -192,6 +194,16 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             <p className="text-sm mt-1">
               {showFavs ? 'Tap the heart on any word card' : 'Try a different search or category'}
             </p>
+          </div>
+        )}
+        {filtered.length > visibleCount && (
+          <div className="text-center mt-6 mb-4">
+            <button
+              onClick={() => startTransition(() => setVisibleCount(c => c + 50))}
+              className="px-6 py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95"
+              style={{ background: 'var(--accent)', color: '#fff' }}>
+              Load more ({filtered.length - visibleCount} remaining)
+            </button>
           </div>
         )}
       </div>
