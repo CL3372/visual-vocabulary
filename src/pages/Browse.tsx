@@ -1,4 +1,4 @@
-import { useState, useTransition } from 'react';
+import { useState, useTransition, useMemo, useCallback } from 'react';
 import { Search, Heart } from 'lucide-react';
 import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
 import type { CategoryGroup } from '../data/words';
@@ -27,30 +27,37 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? 'All');
   const [showFavs, setShowFavs] = useState(false);
   const [selected, setSelected] = useState<Word | null>(null);
-  const [visibleCount, setVisibleCount] = useState(50);
+  const [visibleCount, setVisibleCount] = useState(24);
 
-  function handleGroupChange(group: CategoryGroup) {
-    startTransition(() => {
-      setActiveGroup(group);
-      setActiveCategory('All');
-      setVisibleCount(50);
-    });
-  }
+  // Switch category: clear grid immediately so browser paints fast (INP fix),
+  // then render cards after two animation frames.
+  const switchCategory = useCallback((cat: string) => {
+    setActiveCategory(cat);
+    setVisibleCount(0);
+    requestAnimationFrame(() => requestAnimationFrame(() =>
+      startTransition(() => setVisibleCount(24))
+    ));
+  }, [startTransition]);
+
+  const switchGroup = useCallback((group: CategoryGroup) => {
+    setActiveGroup(group);
+    setActiveCategory('All');
+    setVisibleCount(0);
+    requestAnimationFrame(() => requestAnimationFrame(() =>
+      startTransition(() => setVisibleCount(24))
+    ));
+  }, [startTransition]);
 
   const subCategories = kidsMode
     ? KIDS_CATEGORIES
     : CATEGORY_GROUPS[activeGroup];
 
-  const filtered = ALL_WORDS.filter(w => {
+  // Memoised so filter only re-runs when inputs actually change (not on visibleCount changes)
+  const filtered = useMemo(() => ALL_WORDS.filter(w => {
     if (kidsMode && !KIDS_CATEGORIES.includes(w.category)) return false;
     if (showFavs && !favorites.has(w.id)) return false;
-
-    // Group filter: if not "All", word must belong to one of the group's categories
     if (activeGroup !== 'All' && !CATEGORY_GROUPS[activeGroup].includes(w.category)) return false;
-
-    // Sub-category filter
     const matchCat = activeCategory === 'All' || w.category === activeCategory;
-
     const q = search.toLowerCase().trim();
     if (!q) return matchCat;
     return matchCat && (
@@ -58,12 +65,12 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
       w.category.toLowerCase().includes(q) ||
       Object.values(w.translations).some(t => t.toLowerCase().includes(q))
     );
-  });
+  }), [kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
 
-  function handleSelect(word: Word) {
+  const handleSelect = useCallback((word: Word) => {
     markWordSeen(word.id);
     setSelected(word);
-  }
+  }, [markWordSeen]);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -88,7 +95,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             type="text"
             placeholder="Search in any language…"
             value={search}
-            onChange={e => { const v = e.target.value; startTransition(() => { setSearch(v); setVisibleCount(50); }); }}
+            onChange={e => { const v = e.target.value; setSearch(v); setVisibleCount(0); requestAnimationFrame(() => requestAnimationFrame(() => startTransition(() => setVisibleCount(24)))); }}
             className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:ring-2"
             style={{
               background: 'var(--surface2)',
@@ -107,7 +114,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
               return (
                 <button
                   key={key}
-                  onClick={() => handleGroupChange(key)}
+                  onClick={() => switchGroup(key)}
                   className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
                   style={{
                     background: isActive ? 'var(--accent)' : 'var(--surface2)',
@@ -154,7 +161,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
           {['All', ...subCategories].map(cat => (
             <button
               key={cat}
-              onClick={() => startTransition(() => { setActiveCategory(cat); setVisibleCount(50); })}
+              onClick={() => switchCategory(cat)}
               className="flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-all"
               style={{
                 background: activeCategory === cat ? 'var(--accent)' : 'var(--surface2)',
@@ -199,7 +206,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
         {filtered.length > visibleCount && (
           <div className="text-center mt-6 mb-4">
             <button
-              onClick={() => startTransition(() => setVisibleCount(c => c + 50))}
+              onClick={() => startTransition(() => setVisibleCount(c => c + 24))}
               className="px-6 py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95"
               style={{ background: 'var(--accent)', color: '#fff' }}>
               Load more ({filtered.length - visibleCount} remaining)

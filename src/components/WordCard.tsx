@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Heart, Volume2 } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
@@ -9,7 +10,7 @@ interface Props {
   onClick?: () => void;
 }
 
-export function WordCard({ word, onClick }: Props) {
+export const WordCard = memo(function WordCard({ word, onClick }: Props) {
   const { targetLang, isFavorite, toggleFavorite, speak, kidsMode } = useApp();
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
@@ -83,4 +84,4 @@ export function WordCard({ word, onClick }: Props) {
       </div>
     </div>
   );
-}
+});
