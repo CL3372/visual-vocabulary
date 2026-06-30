@@ -39,6 +39,9 @@ interface AppContextType {
   // Pro
   isPro: boolean;
   activatePro: (token: string) => void;
+  // Streak
+  lastPlayDate: string;
+  studiedToday: boolean;
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -200,6 +203,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
       recordQuizResult, markWordSeen,
       srsData, rateCard, srsDueCount,
       isPro, activatePro,
+      lastPlayDate,
+      studiedToday: lastPlayDate === new Date().toISOString().split('T')[0],
     }}>
       {children}
     </AppContext.Provider>

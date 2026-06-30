@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe } from 'lucide-react';
+import { StreakModal } from './components/StreakModal';
 import { AppProvider, useApp } from './context/AppContext';
 import { Browse } from './pages/Browse';
 import { Flashcards } from './pages/Flashcards';
@@ -25,9 +26,10 @@ const TABS: { id: AppMode; label: string; icon: typeof BookOpen }[] = [
 ];
 
 function Inner() {
-  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount } = useApp();
+  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak } = useApp();
   const [mode, setMode] = useState<AppMode>('browse');
   const [showLang, setShowLang] = useState(false);
+  const [showStreak, setShowStreak] = useState(false);
   const [onboarded, setOnboarded] = useState(() => load('vv-onboarded', false));
   const [startCategory, setStartCategory] = useState('');
 
@@ -62,12 +64,16 @@ function Inner() {
         </div>
 
         <div className="flex items-center gap-2">
-          {streak > 0 && (
-            <div className="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold"
-              style={{ background: '#fff7ed', color: '#ea580c' }}>
-              🔥 {streak}
-            </div>
-          )}
+          <button
+            onClick={() => setShowStreak(true)}
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all active:scale-95 ${streak > 0 && !studiedToday ? 'animate-pulse' : ''}`}
+            style={{
+              background: streak === 0 ? 'var(--surface2)' : studiedToday ? '#fff7ed' : '#fef2f2',
+              color: streak === 0 ? 'var(--text3)' : studiedToday ? '#ea580c' : '#dc2626',
+              border: streak > 0 && !studiedToday ? '1px solid #fca5a5' : '1px solid transparent',
+            }}>
+            {streak === 0 ? '🔥 0' : `🔥 ${streak}`}
+          </button>
 
           {/* Kids mode */}
           <button onClick={toggleKidsMode}
@@ -147,6 +153,17 @@ function Inner() {
           value={targetLang}
           onChange={setTargetLang}
           onClose={() => setShowLang(false)}
+        />
+      )}
+
+      {/* Streak modal */}
+      {showStreak && (
+        <StreakModal
+          streak={streak}
+          bestStreak={bestStreak}
+          studiedToday={studiedToday}
+          onClose={() => setShowStreak(false)}
+          onStudyNow={() => { setShowStreak(false); setMode('flashcards'); }}
         />
       )}
     </div>
