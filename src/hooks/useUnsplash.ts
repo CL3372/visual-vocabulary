@@ -671,6 +671,8 @@ const CURATED: Record<string, string> = {
   'topaz gemstone crystal':   'https://images.unsplash.com/photo-1561714200-d28799b2f8b4?w=400&h=400&fit=crop',
   'roof tile terracotta':     'https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=400&h=400&fit=crop',
   'turtle sea tortoise':      'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=400&h=400&fit=crop',
+  'chaffinch bird':           'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Male_Common_Chaffinch.jpg/480px-Male_Common_Chaffinch.jpg',
+  'mermaid ocean mythology':  'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/John_William_Waterhouse_-_A_Mermaid.jpg/480px-John_William_Waterhouse_-_A_Mermaid.jpg',
   'vase flower home':         'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'candle flame light':       'https://images.unsplash.com/photo-1478431048903-94c27d6ba9c8?w=400&h=400&fit=crop',
   'steam vapor hot':          'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop',
