@@ -45,6 +45,13 @@ interface AppContextType {
   // Streak
   lastPlayDate: string;
   studiedToday: boolean;
+  // XP
+  xp: number;
+  level: number;
+  levelName: string;
+  xpForNextLevel: number;
+  xpIntoLevel: number;
+  addXp: (amount: number) => void;
   // Auth
   user: User | null;
   signOut: () => Promise<void>;
@@ -58,6 +65,31 @@ function load<T>(key: string, fallback: T): T {
 }
 function save(key: string, value: unknown) {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
+}
+
+// XP levels (food-themed)
+const LEVELS = [
+  { name: 'Kitchen Helper',   min: 0    },
+  { name: 'Prep Cook',        min: 100  },
+  { name: 'Line Cook',        min: 300  },
+  { name: 'Sous Chef',        min: 600  },
+  { name: 'Head Chef',        min: 1000 },
+  { name: 'Executive Chef',   min: 2000 },
+  { name: 'Michelin Star',    min: 4000 },
+];
+
+function getLevel(xp: number) {
+  let lvl = 0;
+  for (let i = LEVELS.length - 1; i >= 0; i--) {
+    if (xp >= LEVELS[i].min) { lvl = i; break; }
+  }
+  const nextMin = lvl < LEVELS.length - 1 ? LEVELS[lvl + 1].min : LEVELS[lvl].min + 1000;
+  return {
+    level: lvl + 1,
+    levelName: LEVELS[lvl].name,
+    xpIntoLevel: xp - LEVELS[lvl].min,
+    xpForNextLevel: nextMin - LEVELS[lvl].min,
+  };
 }
 
 // SM-2 algorithm
@@ -111,6 +143,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [bestStreak, setBestStreak] = useState(() => load('vv-best-streak', 0));
   const [lastPlayDate, setLastPlayDate] = useState(() => load('vv-lastplay', ''));
   const [srsData, setSrsData] = useState<Record<string, SRSCard>>(() => load('vv-srs', {}));
+  const [xp, setXp] = useState(() => load('vv-xp', 0));
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
@@ -148,20 +181,25 @@ export function AppProvider({ children }: { children: ReactNode }) {
     window.speechSynthesis.speak(u);
   }, []);
 
+  const addXp = useCallback((amount: number) => {
+    setXp(prev => { const next = prev + amount; save('vv-xp', next); return next; });
+  }, []);
+
   const markWordSeen = useCallback((id: string) => {
     setSeenWords(prev => {
       if (prev.has(id)) return prev;
       const next = new Set(prev);
       next.add(id);
       save('vv-seen', [...next]);
+      addXp(1);
       return next;
     });
-  }, []);
+  }, [addXp]);
 
   const dailyGoal = parseInt(localStorage.getItem('vv-daily-goal') ?? '10', 10);
 
   const { pushSrsCard } = useCloudSync(user, {
-    streak, bestStreak, lastPlayDate, targetLang, dailyGoal, isPro, seenWords, favorites,
+    streak, bestStreak, lastPlayDate, targetLang, dailyGoal, isPro, seenWords, favorites, xp,
   }, {
     setStreak: (v) => { setStreak(v); save('vv-streak', v); },
     setBestStreak: (v) => { setBestStreak(v); save('vv-best-streak', v); },
@@ -171,6 +209,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setFavorites: (v) => { setFavorites(v); save('vv-favs', [...v]); },
     setSrsData: (v) => { setSrsData(v); save('vv-srs', v); },
     activatePro,
+    setXp: (v) => { setXp(v); save('vv-xp', v); },
   });
 
   const rateCard = useCallback((wordId: string, grade: 1 | 4 | 5) => {
@@ -182,7 +221,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
       pushSrsCard(wordId, updated);
       return next;
     });
-  }, [pushSrsCard]);
+    addXp(grade === 1 ? 2 : 5);
+  }, [pushSrsCard, addXp]);
 
   const srsDueCount = useMemo(() => {
     const now = Date.now();
@@ -213,7 +253,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
       save('vv-history', next);
       return next;
     });
-  }, [lastPlayDate]);
+    addXp(score * 10 + (score === total ? 50 : 0));
+  }, [lastPlayDate, addXp]);
 
   return (
     <AppContext.Provider value={{
@@ -228,6 +269,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       isPro, activatePro,
       lastPlayDate,
       studiedToday: lastPlayDate === new Date().toISOString().split('T')[0],
+      xp, addXp, ...getLevel(xp),
       user, signOut,
     }}>
       {children}

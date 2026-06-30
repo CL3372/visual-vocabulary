@@ -12,6 +12,7 @@ export interface SyncPayload {
   isPro: boolean;
   seenWords: Set<string>;
   favorites: Set<string>;
+  xp: number;
 }
 
 export interface SyncSetters {
@@ -23,6 +24,7 @@ export interface SyncSetters {
   setFavorites: (v: Set<string>) => void;
   setSrsData: (v: Record<string, SRSCard>) => void;
   activatePro: (token: string) => void;
+  setXp: (v: number) => void;
 }
 
 export function useCloudSync(user: User | null, payload: SyncPayload, setters: SyncSetters) {
@@ -45,6 +47,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
       setters.setSeenWords(new Set(row.seen_words ?? []));
       setters.setFavorites(new Set(row.favorites ?? []));
       if (row.is_pro) setters.activatePro(row.pro_token ?? 'cloud');
+      if (row.xp) setters.setXp(row.xp);
     }
 
     const { data: cards } = await supabase
@@ -82,6 +85,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
       is_pro: payload.isPro,
       seen_words: Array.from(payload.seenWords),
       favorites: Array.from(payload.favorites),
+      xp: payload.xp,
       updated_at: new Date().toISOString(),
     });
   }, [user?.id, payload]);
@@ -107,7 +111,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
     if (!user) return;
     const t = setTimeout(pushToCloud, 3000);
     return () => clearTimeout(t);
-  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.isPro, user?.id]);
+  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.isPro, payload.xp, user?.id]);
 
   return { pullFromCloud, pushToCloud, pushSrsCard };
 }

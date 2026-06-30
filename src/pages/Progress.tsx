@@ -45,7 +45,7 @@ const BADGES: Badge[] = [
 export function Progress() {
   const [showWrapped, setShowWrapped] = useState(false);
   const [showUpgrade, setShowUpgrade] = useState(false);
-  const { streak, totalSeen, favorites, quizHistory, srsData, seenWords, isPro } = useApp();
+  const { streak, totalSeen, favorites, quizHistory, srsData, seenWords, isPro, xp, level, levelName, xpIntoLevel, xpForNextLevel } = useApp();
 
   // SRS stats
   const now = Date.now();
@@ -110,6 +110,37 @@ export function Progress() {
               <Zap className="w-3 h-3" /> Upgrade to Pro
             </button>
           )}
+        </div>
+      </div>
+
+      {/* XP / Level card */}
+      <div className="rounded-2xl p-4" style={{ background: 'linear-gradient(135deg, #6366f111, #8b5cf611)', border: '1.5px solid #6366f133' }}>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">
+              {['🧑‍🍳','🥄','🍳','👨‍🍳','🎖️','⭐','⭐⭐⭐'][level - 1]}
+            </span>
+            <div>
+              <p className="font-bold text-sm leading-none" style={{ color: 'var(--text)' }}>{levelName}</p>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>Level {level}</p>
+            </div>
+          </div>
+          <div className="text-right">
+            <p className="text-xl font-bold" style={{ color: '#6366f1' }}>{xp.toLocaleString()} XP</p>
+            <p className="text-xs" style={{ color: 'var(--text2)' }}>{xpForNextLevel - xpIntoLevel} to next level</p>
+          </div>
+        </div>
+        <div className="h-2.5 rounded-full overflow-hidden" style={{ background: 'var(--surface2)' }}>
+          <div
+            className="h-full rounded-full transition-all duration-500"
+            style={{
+              width: `${Math.min(100, Math.round((xpIntoLevel / xpForNextLevel) * 100))}%`,
+              background: 'linear-gradient(90deg, #6366f1, #8b5cf6)',
+            }}
+          />
+        </div>
+        <div className="flex justify-between mt-1.5">
+          <p className="text-xs" style={{ color: 'var(--text3)' }}>Flashcard: +2–5 XP · Quiz answer: +10 XP · New word: +1 XP</p>
         </div>
       </div>
 
