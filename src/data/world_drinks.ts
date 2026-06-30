@@ -56,6 +56,10 @@ export const WORLD_DRINK_WORDS: Word[] = [
   // South-East Asian
   { id: 'dr29', word: 'Cendol',         translations: { es: 'Cendol',         pt: 'Cendol',         fr: 'Cendol',          de: 'Cendol',          it: 'Cendol',         ja: 'チェンドル',       zh: '煎蕊',       ko: '첸돌',        ar: 'شيندول'       }, category: 'Drinks', unsplashQuery: 'cendol malaysian shaved ice coconut milk palm sugar green', sentence: 'Cendol is a popular South-East Asian iced dessert drink of shaved ice, creamy coconut milk, palm sugar syrup, and green pandan rice-flour jelly.' },
 
+  // Portuguese
+  { id: 'dr31', word: 'Ginjinha',       translations: { es: 'Ginjinha',       pt: 'Ginjinha',       fr: 'Ginjinha',        de: 'Ginjinha',        it: 'Ginjinha',       ja: 'ジンジーニャ',     zh: '葡萄牙樱桃酒', ko: '진지냐',      ar: 'جينجينيا'     }, category: 'Drinks', unsplashQuery: 'ginjinha portuguese cherry liqueur small glass', sentence: 'Ginjinha is a beloved Portuguese cherry liqueur made from ginja sour cherries soaked in aguardente — sipped from a tiny chocolate cup in Lisbon\'s oldest tascas.' },
+  { id: 'dr32', word: 'Port Wine',      translations: { es: 'Vino de Oporto', pt: 'Vinho do Porto', fr: 'Porto',           de: 'Portwein',        it: 'Vino Porto',     ja: 'ポートワイン',     zh: '波特酒',     ko: '포트 와인',   ar: 'نبيذ البورتو' }, category: 'Drinks', unsplashQuery: 'port wine glass dark red douro portugal',  sentence: 'Port Wine is a rich, sweet fortified wine from Portugal\'s Douro Valley, aged in oak lodges in Vila Nova de Gaia — the world\'s most celebrated dessert wine.' },
+
   // Gin
   { id: 'dr30', word: 'Gin & Tonic',    translations: { es: 'Gin tonic',      pt: 'Gin tónico',     fr: 'Gin tonic',       de: 'Gin Tonic',       it: 'Gin tonic',      ja: 'ジントニック',     zh: '金汤力',     ko: '진 토닉',     ar: 'جن تونيك'     }, category: 'Drinks', unsplashQuery: 'gin tonic glass ice lime cucumber',      sentence: 'Gin & Tonic was born in British India as a way to make medicinal quinine tonic water more palatable — now the world\'s most elegant long drink, garnished with botanicals.' },
 ];
