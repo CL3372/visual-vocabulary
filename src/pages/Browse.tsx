@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { Search, Heart } from 'lucide-react';
 import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
 import type { CategoryGroup } from '../data/words';
@@ -21,6 +21,7 @@ const GROUP_TABS: { key: CategoryGroup; label: string; emoji: string }[] = [
 
 export function Browse({ initialCategory }: { initialCategory?: string }) {
   const { kidsMode, favorites, markWordSeen } = useApp();
+  const [, startTransition] = useTransition();
   const [search, setSearch] = useState('');
   const [activeGroup, setActiveGroup] = useState<CategoryGroup>(initialCategory ? 'Cuisines' : 'All');
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? 'All');
@@ -28,8 +29,10 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   const [selected, setSelected] = useState<Word | null>(null);
 
   function handleGroupChange(group: CategoryGroup) {
-    setActiveGroup(group);
-    setActiveCategory('All');
+    startTransition(() => {
+      setActiveGroup(group);
+      setActiveCategory('All');
+    });
   }
 
   const subCategories = kidsMode
@@ -83,7 +86,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             type="text"
             placeholder="Search in any language…"
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={e => { const v = e.target.value; startTransition(() => setSearch(v)); }}
             className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:ring-2"
             style={{
               background: 'var(--surface2)',
@@ -149,7 +152,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
           {['All', ...subCategories].map(cat => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => startTransition(() => setActiveCategory(cat))}
               className="flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-all"
               style={{
                 background: activeCategory === cat ? 'var(--accent)' : 'var(--surface2)',
