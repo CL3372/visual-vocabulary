@@ -46,6 +46,10 @@ export const WORLD_DESSERT_WORDS: Word[] = [
   // Middle Eastern
   { id: 'wd2_27', word: 'Muhallebi',         translations: { es: 'Muhallebi',        pt: 'Muhallebi',         fr: 'Mouhallabia',        de: 'Muhallebi',          it: 'Muhallebi',         ja: 'ムハッレビ',       zh: '土耳其牛奶布丁', ko: '무할레비',   ar: 'مهلبية'        }, category: 'Desserts', unsplashQuery: 'muhallebi milk pudding rosewater pistachio', sentence: 'Muhallebi is a silky Middle Eastern milk pudding delicately scented with rosewater or orange blossom, topped with crushed pistachios.' },
 
+  // Portuguese
+  { id: 'wd2_29', word: 'Pastel de Nata',    translations: { es: 'Pastel de nata',   pt: 'Pastel de nata',    fr: 'Pastel de nata',     de: 'Pastel de Nata',     it: 'Pastel de nata',    ja: 'パステル・デ・ナタ', zh: '葡式蛋挞',   ko: '파스텔 드 나타', ar: 'باستيل دي ناتا'  }, category: 'Desserts', unsplashQuery: 'pastel de nata portuguese egg tart custard', sentence: 'Pastel de Nata is Portugal\'s iconic flaky custard tart, caramelised on top and dusted with cinnamon — created by monks at Jerónimos Monastery in Belém.' },
+  { id: 'wd2_30', word: 'Papo de Anjo',      translations: { es: 'Papo de ángel',    pt: 'Papo de anjo',      fr: 'Papo de anjo',       de: 'Papo de Anjo',       it: 'Papo de anjo',      ja: 'パポ・デ・アンジョ', zh: '天使颈糕',   ko: '파포 드 안주', ar: 'باب دي أنجو'     }, category: 'Desserts', unsplashQuery: 'papo de anjo portuguese egg yolk syrup sweet', sentence: 'Papo de Anjo are delicate Portuguese egg yolk sweets soaked in sugar syrup — one of the convent sweets born from the tradition of using surplus yolks after nuns used whites to starch their habits.' },
+
   // African
   { id: 'wd2_28', word: 'Malva Pudding',     translations: { es: 'Pudín malva',      pt: 'Pudim malva',       fr: 'Pudding malva',      de: 'Malva-Pudding',      it: 'Budino malva',      ja: 'マルバプディング',  zh: '南非棉花糖蛋糕', ko: '말바 푸딩',   ar: 'بودينغ مالفا'  }, category: 'Desserts', unsplashQuery: 'malva pudding south african sponge apricot cream sauce', sentence: 'Malva Pudding is a beloved South African baked sponge cake with apricot jam, soaked in a hot cream sauce until sticky and indulgent.' },
 ];
