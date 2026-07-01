@@ -1,5 +1,15 @@
 // Fallback emoji shown when no image loads for a word
 export const EMOJI_MAP: Record<string, string> = {
+  // Adjectives
+  'big': '🐘', 'small': '🐜', 'tall': '🦒', 'short': '📏', 'long': '🛤️',
+  'hot': '🔥', 'cold': '🧊', 'fast': '⚡', 'slow': '🐌', 'soft': '☁️',
+  'hard': '🪨', 'loud': '📢', 'quiet': '🤫', 'old': '🏺', 'new': '✨',
+  'clean': '🧼', 'dirty': '💩', 'heavy': '⚖️', 'light': '🪶', 'full': '🫙',
+  'empty': '🫗', 'round': '⚽', 'sharp': '🔪', 'bright': '☀️', 'dark': '🌑',
+  'wet': '💧', 'dry': '🏜️', 'sweet': '🍯', 'sour': '🍋', 'beautiful': '🌸',
+  'funny': '😂', 'strong': '💪', 'weak': '🌿', 'delicious': '😋', 'colourful': '🌈',
+  'fluffy': '🐑', 'shiny': '✨', 'straight': '➡️', 'curly': '〰️', 'careful': '🤲',
+
   // Numbers
   'one': '1️⃣', 'two': '2️⃣', 'three': '3️⃣', 'four': '4️⃣', 'five': '5️⃣',
   'six': '6️⃣', 'seven': '7️⃣', 'eight': '8️⃣', 'nine': '9️⃣', 'ten': '🔟',
