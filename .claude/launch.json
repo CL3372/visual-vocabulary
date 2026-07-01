@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "visual-vocabulary-preview",
+      "name": "Visual Vocab Dev",
       "cwd": "/Users/carlalouro/Desktop/visual-vocabulary",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite"],
       "port": 5173
     }
   ]
