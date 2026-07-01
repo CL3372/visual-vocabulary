@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visual-vocab.vercel.app/sitemap.xml
+Sitemap: https://visual-vocabulary.vercel.app/sitemap.xml
