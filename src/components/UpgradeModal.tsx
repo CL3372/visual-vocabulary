@@ -106,8 +106,8 @@ export function UpgradeModal({ onClose, reason }: Props) {
                 style={{ background: 'rgba(255,255,255,0.25)' }}>
                 BEST VALUE
               </div>
-              <p className="font-bold text-base">Annual · <span className="text-2xl">$29.99</span><span className="text-sm opacity-75">/year</span></p>
-              <p className="text-sm opacity-75 mt-0.5">Just $2.50/month · save 50%</p>
+              <p className="font-bold text-base">Annual · <span className="text-2xl">€29.99</span><span className="text-sm opacity-75">/year</span></p>
+              <p className="text-sm opacity-75 mt-0.5">Just €2.50/month · save 50%</p>
             </button>
 
             {/* Monthly */}
@@ -116,7 +116,7 @@ export function UpgradeModal({ onClose, reason }: Props) {
               className="w-full rounded-2xl p-4 text-left transition-all active:scale-95"
               style={{ background: 'var(--surface2)', border: '1.5px solid var(--border)', color: 'var(--text)' }}
             >
-              <p className="font-bold text-base">Monthly · <span className="text-xl">$4.99</span><span className="text-sm" style={{ color: 'var(--text2)' }}>/month</span></p>
+              <p className="font-bold text-base">Monthly · <span className="text-xl">€4.99</span><span className="text-sm" style={{ color: 'var(--text2)' }}>/month</span></p>
               <p className="text-sm mt-0.5" style={{ color: 'var(--text2)' }}>Cancel any time</p>
             </button>
           </div>
