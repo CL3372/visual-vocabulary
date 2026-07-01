@@ -58,7 +58,7 @@ export const EMOJI_MAP: Record<string, string> = {
   'scissors': '✂️', 'glue': '🔗', 'notebook': '📓', 'textbook': '📘',
   'backpack': '🎒', 'calculator': '🔢', 'compass': '🧭', 'highlighter': '🖍️',
   'blackboard': '📋', 'globe': '🌍', 'map': '🗺️', 'diploma': '🎓',
-  'homework': '📝', 'exam': '📝', 'teacher': '🧑‍🏫', 'student': '🧑‍🎓',
+  'homework': '📝', 'exam': '📝', 'student': '🧑‍🎓',
 
   // Seasons & Time
   'spring': '🌸', 'summer': '☀️', 'autumn': '🍂', 'winter': '❄️',
