@@ -32,6 +32,6 @@ export const EASTERN_EUROPEAN_INGREDIENT_WORDS: Word[] = [
   { id: 'eei17', word: 'Celeriac',      translations: { es: 'Apio-nabo',       pt: 'Aipo-rábano',    fr: 'Céleri-rave',     de: 'Knollensellerie', it: 'Sedano rapa',     ja: 'セロリアック',     zh: '根芹菜',    ko: '셀러리악', ar: 'كرفس الجذر' }, category: 'Vegetables', unsplashQuery: 'celeriac root celery vegetable pale' },
 
   // ── Meat ──────────────────────────────────────────────────────────────────────
-  { id: 'eei18', word: 'Lard',          translations: { es: 'Manteca de cerdo', pt: 'Banha',          fr: 'Saindoux',        de: 'Schmalz',         it: 'Lardo',           ja: 'ラード',           zh: '猪油',      ko: '라드', ar: 'شحم الخنزير' }, category: 'Meat', unsplashQuery: 'lard rendered pork fat cooking' },
+
   { id: 'eei19', word: 'Smoked Pork',   translations: { es: 'Cerdo ahumado',   pt: 'Porco fumado',   fr: 'Porc fumé',       de: 'Geräuchertes Schweinefleisch', it: 'Maiale affumicato', ja: '燻製豚肉',   zh: '熏猪肉',    ko: '훈제 돼지고기', ar: 'لحم خنزير مدخن' }, category: 'Meat', unsplashQuery: 'smoked pork meat Eastern European' },
 ];

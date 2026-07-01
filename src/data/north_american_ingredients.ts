@@ -10,9 +10,9 @@ export const NORTH_AMERICAN_INGREDIENT_WORDS: Word[] = [
   { id: 'nai6',  word: 'Catfish',          translations: { es: 'Pez gato',          pt: 'Peixe-gato',        fr: 'Poisson-chat',        de: 'Wels',               it: 'Pesce gatto',        ja: 'ナマズ',             zh: '鲶鱼'        }, category: 'Seafood',         unsplashQuery: 'catfish fried southern american cornmeal' },
 
   // ── Meat ─────────────────────────────────────────────────────────────────────
-  { id: 'nai7',  word: 'Brisket',          translations: { es: 'Pecho de ternera',  pt: 'Peito de vaca',     fr: 'Poitrine de bœuf',    de: 'Rinderbrust',        it: 'Petto di manzo',     ja: 'ブリスケット',       zh: '牛腩'        }, category: 'Meat',            unsplashQuery: 'brisket smoked beef texas slice' },
-  { id: 'nai8',  word: 'Andouille Sausage', translations: { es: 'Salchicha andouille', pt: 'Salsicha andouille', fr: 'Saucisse andouille', de: 'Andouille-Wurst',   it: 'Salsiccia andouille', ja: 'アンドゥイユ・ソーセージ', zh: '安杜邑香肠' }, category: 'Meat',            unsplashQuery: 'andouille sausage louisiana smoked sliced' },
-  { id: 'nai9',  word: 'Turkey',           translations: { es: 'Pavo',              pt: 'Peru',              fr: 'Dinde',               de: 'Truthahn',           it: 'Tacchino',           ja: 'ターキー',           zh: '火鸡'        }, category: 'Meat',            unsplashQuery: 'turkey whole roasted thanksgiving' },
+  { id: 'nai7',  word: 'Brisket',          translations: { es: 'Pecho de ternera',  pt: 'Peito de vaca',     fr: 'Poitrine de bœuf',    de: 'Rinderbrust',        it: 'Petto di manzo',     ja: 'ブリスケット',       zh: '牛腩'        }, category: 'Meat',            unsplashQuery: 'smoked brisket texas BBQ sliced bark dark smoke ring' },
+  { id: 'nai8',  word: 'Andouille Sausage', translations: { es: 'Salchicha andouille', pt: 'Salsicha andouille', fr: 'Saucisse andouille', de: 'Andouille-Wurst',   it: 'Salsiccia andouille', ja: 'アンドゥイユ・ソーセージ', zh: '安杜邑香肠' }, category: 'Meat',            unsplashQuery: 'andouille sausage cajun smoked dark casing sliced louisiana' },
+
   { id: 'nai10', word: 'Bison',            translations: { es: 'Bisonte',           pt: 'Bisão',             fr: 'Bison',               de: 'Bison',              it: 'Bisonte',            ja: 'バイソン',           zh: '美洲野牛肉'  }, category: 'Meat',            unsplashQuery: 'bison buffalo burger patty american plains' },
 
   // ── Dairy ─────────────────────────────────────────────────────────────────────

@@ -6,79 +6,188 @@ import { getColorSwatch } from '../utils/colorSwatches';
 import { getTranslation } from '../utils/getTranslation';
 import type { Word } from '../types';
 
+export type ViewMode = 'grid2' | 'grid3' | 'list';
+
 interface Props {
   word: Word;
+  viewMode?: ViewMode;
   onClick?: () => void;
 }
 
-export const WordCard = memo(function WordCard({ word, onClick }: Props) {
+const KIDS_PALETTES = [
+  { bg: '#fde68a', text: '#92400e' },
+  { bg: '#a7f3d0', text: '#065f46' },
+  { bg: '#bfdbfe', text: '#1e3a8a' },
+  { bg: '#fecaca', text: '#991b1b' },
+  { bg: '#ddd6fe', text: '#4c1d95' },
+  { bg: '#fed7aa', text: '#7c2d12' },
+];
+
+export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onClick }: Props) {
   const { targetLang, isFavorite, toggleFavorite, speak, kidsMode } = useApp();
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const translation = getTranslation(word, targetLang);
   const fav = isFavorite(word.id);
+  const showTranslation = targetLang !== 'en' && translation && translation !== word.word;
 
-  const KIDS_COLORS = ['#fde68a','#a7f3d0','#bfdbfe','#fecaca','#ddd6fe','#fed7aa'];
-  const kidsBg = KIDS_COLORS[parseInt(word.id.replace('g','')) % KIDS_COLORS.length];
+  const kidsPalette = KIDS_PALETTES[parseInt(word.id.replace(/\D/g, '')) % KIDS_PALETTES.length];
+
+  function handleSpeak(e: React.MouseEvent) {
+    e.stopPropagation();
+    const text = showTranslation ? translation : word.word;
+    const lang = showTranslation ? targetLang : 'en';
+    speak(text, lang);
+  }
+
+  // ── List mode ─────────────────────────────────────────────────────────────
+  if (viewMode === 'list') {
+    return (
+      <div
+        onClick={onClick}
+        className="flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors active:scale-[0.99]"
+        style={{
+          background: 'var(--surface)',
+          borderBottom: '1px solid var(--border)',
+        }}
+      >
+        {/* Thumbnail */}
+        <div className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden"
+          style={{ background: 'var(--surface2)' }}>
+          {colorSwatch ? (
+            <div className="w-full h-full" style={{ background: colorSwatch }} />
+          ) : loading ? (
+            <div className="w-full h-full animate-pulse" style={{ background: 'var(--surface2)' }} />
+          ) : (
+            <img src={imageUrl} alt={word.word} className="w-full h-full object-cover" loading="lazy" onError={handleError} />
+          )}
+        </div>
+
+        {/* Text */}
+        <div className="flex-1 min-w-0">
+          <p className="font-bold text-base leading-tight truncate" style={{ color: 'var(--text)' }}>
+            {word.word}
+          </p>
+          {showTranslation && (
+            <p className="text-sm mt-0.5 truncate font-medium" style={{ color: 'var(--accent)' }} dir="auto">
+              {translation}
+            </p>
+          )}
+          <span className="inline-block text-[11px] mt-1 px-2 py-0.5 rounded-full"
+            style={{ background: 'var(--surface2)', color: 'var(--text3)' }}>
+            {word.category}
+          </span>
+        </div>
+
+        {/* Actions */}
+        <div className="flex-shrink-0 flex items-center gap-2">
+          <button onClick={handleSpeak} className="p-2 rounded-full transition-colors"
+            style={{ background: 'var(--surface2)', color: 'var(--accent)' }}
+            aria-label="Pronounce">
+            <Volume2 className="w-4 h-4" />
+          </button>
+          <button
+            onClick={e => { e.stopPropagation(); toggleFavorite(word.id); }}
+            className="p-2 rounded-full transition-all"
+            style={{ background: fav ? '#fee2e2' : 'var(--surface2)', color: fav ? '#ef4444' : 'var(--text3)' }}
+            aria-label={fav ? 'Remove favourite' : 'Add favourite'}>
+            <Heart className={`w-4 h-4 ${fav ? 'fill-red-400' : ''}`} />
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Grid mode ─────────────────────────────────────────────────────────────
+  const isGrid3 = viewMode === 'grid3';
 
   return (
     <div
       onClick={onClick}
-      className="rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-1 active:scale-95"
+      className="rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:scale-95"
       style={{
-        background: kidsMode ? kidsBg : 'var(--surface)',
+        background: kidsMode ? kidsPalette.bg : 'var(--surface)',
         border: '1.5px solid var(--border)',
-        boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
+        boxShadow: '0 1px 4px rgba(0,0,0,0.07)',
       }}
     >
-      <div className="relative overflow-hidden aspect-square" style={{ background: 'var(--surface2)' }}>
+      {/* Image */}
+      <div
+        className="relative overflow-hidden"
+        style={{
+          aspectRatio: kidsMode ? '1/1' : (isGrid3 ? '1/1' : '4/3'),
+          background: 'var(--surface2)',
+        }}
+      >
         {colorSwatch ? (
           <div className="w-full h-full" style={{ background: colorSwatch }} />
         ) : loading ? (
           <div className="absolute inset-0 animate-pulse" style={{ background: 'var(--surface2)' }} />
+        ) : imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={word.word}
+            className="w-full h-full object-cover"
+            loading="lazy"
+            onError={handleError}
+          />
         ) : (
-          <img src={imageUrl} alt={word.word} className="w-full h-full object-cover" loading="lazy" onError={handleError} />
+          <div className="absolute inset-0 flex items-center justify-center"
+            style={{ background: 'var(--surface2)' }}>
+            <span className="text-3xl opacity-30">📷</span>
+          </div>
         )}
+
+        {/* Favourite button */}
         <button
           onClick={e => { e.stopPropagation(); toggleFavorite(word.id); }}
-          className="absolute top-1.5 right-1.5 p-1.5 rounded-full transition-all"
-          style={{ background: 'rgba(0,0,0,0.25)' }}
+          className="absolute top-2 right-2 p-1.5 rounded-full transition-all"
+          style={{ background: fav ? 'rgba(239,68,68,0.9)' : 'rgba(0,0,0,0.28)' }}
           aria-label={fav ? 'Remove favourite' : 'Add favourite'}
         >
-          <Heart className={`w-3.5 h-3.5 ${fav ? 'fill-red-400 text-red-400' : 'text-white'}`} />
+          <Heart className={`${isGrid3 ? 'w-3 h-3' : 'w-3.5 h-3.5'} ${fav ? 'fill-white text-white' : 'text-white'}`} />
         </button>
       </div>
 
-      <div className={`p-2.5 text-center ${kidsMode ? 'pb-3' : ''}`}>
-        <div className="flex items-center justify-center gap-1">
-          <p className={`font-bold leading-tight ${kidsMode ? 'text-xl' : 'text-base'}`}
-            style={{ color: 'var(--text)' }}>
+      {/* Text strip */}
+      <div className={`${isGrid3 ? 'px-2 py-2' : 'px-3 py-2.5'}`}
+        style={{ background: kidsMode ? kidsPalette.bg : 'var(--surface)' }}>
+        {/* Word + speaker */}
+        <div className="flex items-center justify-between gap-1">
+          <p
+            className={`font-bold leading-tight flex-1 min-w-0 truncate ${
+              kidsMode ? 'text-lg' : isGrid3 ? 'text-sm' : 'text-[15px]'
+            }`}
+            style={{ color: kidsMode ? kidsPalette.text : 'var(--text)' }}
+          >
             {word.word}
           </p>
           <button
-            onClick={e => {
-              e.stopPropagation();
-              const text = targetLang !== 'en' && translation ? translation : word.word;
-              const lang = targetLang !== 'en' && translation ? targetLang : 'en';
-              speak(text, lang);
-            }}
-            className="opacity-60 hover:opacity-100 transition-opacity"
+            onClick={handleSpeak}
+            className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity"
             aria-label="Pronounce"
           >
-            <Volume2 className="w-3.5 h-3.5" style={{ color: 'var(--accent)' }} />
+            <Volume2 className={`${isGrid3 ? 'w-3 h-3' : 'w-3.5 h-3.5'}`} style={{ color: 'var(--accent)' }} />
           </button>
         </div>
-        {translation && targetLang !== 'en' && (
-          <button
-            onClick={e => { e.stopPropagation(); speak(translation, targetLang); }}
-            className={`font-medium mt-0.5 transition-opacity hover:opacity-70 ${kidsMode ? 'text-base' : 'text-xs'}`}
-            style={{ color: 'var(--accent)' }}>
+
+        {/* Translation */}
+        {showTranslation && (
+          <p
+            className={`font-semibold leading-tight truncate mt-0.5 ${
+              kidsMode ? 'text-base' : isGrid3 ? 'text-xs' : 'text-[13px]'
+            }`}
+            style={{ color: 'var(--accent)' }}
+            dir="auto"
+          >
             {translation}
-          </button>
+          </p>
         )}
-        {!kidsMode && (
-          <span className="inline-block mt-1 text-xs px-2 py-0.5 rounded-full"
-            style={{ background: 'var(--surface2)', color: 'var(--text2)' }}>
+
+        {/* Category tag (grid2 only, non-kids) */}
+        {!kidsMode && !isGrid3 && (
+          <span className="inline-block mt-1.5 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
+            style={{ background: 'var(--surface2)', color: 'var(--text3)' }}>
             {word.category}
           </span>
         )}

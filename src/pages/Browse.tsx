@@ -1,8 +1,9 @@
 import { useState, useTransition, useMemo, useCallback } from 'react';
-import { Search, Heart } from 'lucide-react';
+import { Search, Heart, LayoutGrid, Grid3x3, List } from 'lucide-react';
 import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
 import type { CategoryGroup } from '../data/words';
 import { WordCard } from '../components/WordCard';
+import type { ViewMode } from '../components/WordCard';
 import { WordModal } from '../components/WordModal';
 import { WordOfDay } from '../components/WordOfDay';
 import { CuisineOfTheWeek } from '../components/CuisineOfTheWeek';
@@ -19,6 +20,38 @@ const GROUP_TABS: { key: CategoryGroup; label: string; emoji: string }[] = [
   { key: 'Wine',        label: 'Wine',        emoji: '🍷' },
 ];
 
+const GROUP_COLORS: Record<CategoryGroup, { bg: string; text: string; accent: string }> = {
+  All:         { bg: 'var(--surface2)',  text: 'var(--text)',  accent: 'var(--accent)' },
+  Cuisines:    { bg: '#fef3c7',          text: '#78350f',      accent: '#f59e0b' },
+  Ingredients: { bg: '#d1fae5',          text: '#064e3b',      accent: '#10b981' },
+  General:     { bg: '#e0e7ff',          text: '#3730a3',      accent: '#6366f1' },
+  Wine:        { bg: '#ede9fe',          text: '#4c1d95',      accent: '#7c3aed' },
+};
+
+const CATEGORY_EMOJIS: Record<string, string> = {
+  Animals: '🐾', Fruits: '🍎', Vegetables: '🥦', Colors: '🎨', Numbers: '🔢',
+  Shapes: '🔷', Family: '👨‍👩‍👧', Emotions: '😊', Verbs: '🏃', Adjectives: '✨',
+  Occupations: '👷', Weather: '☀️', Technology: '💻', Nature: '🌿', Home: '🏠',
+  'Dairy & Eggs': '🥚', Desserts: '🍰', 'Italian Cuisine': '🍝', 'Japanese Cuisine': '🍱',
+  'French Cuisine': '🥐', 'Mexican Cuisine': '🌮', 'Indian Cuisine': '🍛',
+  'Chinese Cuisine': '🥡', 'Spanish Cuisine': '🥘', 'Thai Cuisine': '🍜',
+  'Greek Cuisine': '🫒', 'American Cuisine': '🍔', 'Middle Eastern Cuisine': '🧆',
+  'Vietnamese Cuisine': '🍲', 'Korean Cuisine': '🍲', 'Turkish Cuisine': '🥙',
+  'Peruvian Cuisine': '🥘', 'Ethiopian Cuisine': '🍛', 'Brazilian Cuisine': '🥩',
+  Wine: '🍷', Beer: '🍺', Spirits: '🥃', Cocktails: '🍸',
+};
+
+function getCategoryEmoji(cat: string) {
+  return CATEGORY_EMOJIS[cat] ?? '📂';
+}
+
+function getCategoryGroup(cat: string): CategoryGroup {
+  for (const [group, cats] of Object.entries(CATEGORY_GROUPS)) {
+    if ((cats as string[]).includes(cat)) return group as CategoryGroup;
+  }
+  return 'All';
+}
+
 export function Browse({ initialCategory }: { initialCategory?: string }) {
   const { kidsMode, favorites, markWordSeen } = useApp();
   const [, startTransition] = useTransition();
@@ -28,9 +61,15 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   const [showFavs, setShowFavs] = useState(false);
   const [selected, setSelected] = useState<Word | null>(null);
   const [visibleCount, setVisibleCount] = useState(24);
+  const [viewMode, setViewMode] = useState<ViewMode>(() => {
+    try { return (localStorage.getItem('browse-view') as ViewMode) ?? 'grid2'; } catch { return 'grid2'; }
+  });
 
-  // Switch category: clear grid immediately so browser paints fast (INP fix),
-  // then render cards after two animation frames.
+  function changeView(mode: ViewMode) {
+    setViewMode(mode);
+    try { localStorage.setItem('browse-view', mode); } catch { /* noop */ }
+  }
+
   const switchCategory = useCallback((cat: string) => {
     setActiveCategory(cat);
     setVisibleCount(0);
@@ -48,11 +87,18 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
     ));
   }, [startTransition]);
 
-  const subCategories = kidsMode
-    ? KIDS_CATEGORIES
-    : CATEGORY_GROUPS[activeGroup];
+  const subCategories = kidsMode ? KIDS_CATEGORIES : CATEGORY_GROUPS[activeGroup];
 
-  // Memoised so filter only re-runs when inputs actually change (not on visibleCount changes)
+  // Count per category (for chip badges)
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    ALL_WORDS.forEach(w => {
+      if (kidsMode && !KIDS_CATEGORIES.includes(w.category)) return;
+      counts[w.category] = (counts[w.category] || 0) + 1;
+    });
+    return counts;
+  }, [kidsMode]);
+
   const filtered = useMemo(() => ALL_WORDS.filter(w => {
     if (kidsMode && !KIDS_CATEGORIES.includes(w.category)) return false;
     if (showFavs && !favorites.has(w.id)) return false;
@@ -72,11 +118,24 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
     setSelected(word);
   }, [markWordSeen]);
 
+  // Derive group from active category for the header color
+  const activeCategoryGroup = activeCategory === 'All' ? activeGroup : getCategoryGroup(activeCategory);
+  const groupColor = GROUP_COLORS[activeCategoryGroup] ?? GROUP_COLORS.All;
+
+  // Grid class
+  const gridClass = useMemo(() => {
+    if (viewMode === 'list') return '';
+    if (viewMode === 'grid3') return 'grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2';
+    // grid2 (default)
+    return kidsMode
+      ? 'grid grid-cols-2 gap-3'
+      : 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3';
+  }, [viewMode, kidsMode]);
+
   return (
     <div className="flex-1 flex flex-col">
       <WordOfDay />
 
-      {/* Cuisine of the week */}
       {!kidsMode && !search && activeGroup === 'All' && activeCategory === 'All' && !showFavs && (
         <CuisineOfTheWeek
           onExplore={(category, group) => {
@@ -86,7 +145,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
         />
       )}
 
-      {/* Search + filters */}
+      {/* ── Sticky filters ─────────────────────────────────────────────────── */}
       <div className="px-4 py-3 sticky top-0 z-10" style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)' }}>
         {/* Search bar */}
         <div className="relative max-w-md mx-auto">
@@ -95,7 +154,12 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             type="text"
             placeholder="Search in any language…"
             value={search}
-            onChange={e => { const v = e.target.value; setSearch(v); setVisibleCount(0); requestAnimationFrame(() => requestAnimationFrame(() => startTransition(() => setVisibleCount(24)))); }}
+            onChange={e => {
+              const v = e.target.value;
+              setSearch(v);
+              setVisibleCount(0);
+              requestAnimationFrame(() => requestAnimationFrame(() => startTransition(() => setVisibleCount(24))));
+            }}
             className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:ring-2"
             style={{
               background: 'var(--surface2)',
@@ -127,7 +191,6 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
               );
             })}
             <div className="flex-1" />
-            {/* Favourites toggle stays right-aligned */}
             <button
               onClick={() => setShowFavs(f => !f)}
               className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
@@ -158,40 +221,112 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             </button>
           )}
 
-          {['All', ...subCategories].map(cat => (
-            <button
-              key={cat}
-              onClick={() => switchCategory(cat)}
-              className="flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-all"
-              style={{
-                background: activeCategory === cat ? 'var(--accent)' : 'var(--surface2)',
-                color: activeCategory === cat ? '#fff' : 'var(--text2)',
-                border: activeCategory === cat ? '1px solid var(--accent)' : '1px solid transparent',
-              }}>
-              {cat}
-            </button>
-          ))}
+          {['All', ...subCategories].map(cat => {
+            const isActive = activeCategory === cat;
+            const count = cat === 'All' ? null : categoryCounts[cat];
+            return (
+              <button
+                key={cat}
+                onClick={() => switchCategory(cat)}
+                className="flex-shrink-0 flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium transition-all whitespace-nowrap"
+                style={{
+                  background: isActive ? 'var(--accent)' : 'var(--surface2)',
+                  color: isActive ? '#fff' : 'var(--text2)',
+                  border: isActive ? '1px solid var(--accent)' : '1px solid transparent',
+                }}>
+                {cat !== 'All' && <span>{getCategoryEmoji(cat)}</span>}
+                {cat}
+                {count != null && (
+                  <span className="ml-0.5 opacity-70 font-normal">
+                    {count}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Count indicator */}
-      {!kidsMode && (
-        <div className="px-4 pt-2 pb-0">
-          <p className="text-xs" style={{ color: 'var(--text3)' }}>
-            {filtered.length.toLocaleString()} {filtered.length === 1 ? 'entry' : 'entries'}
-            {activeGroup !== 'All' && ` · ${activeGroup}`}
-            {activeCategory !== 'All' && ` · ${activeCategory}`}
-          </p>
+      {/* ── Category header ─────────────────────────────────────────────────── */}
+      {activeCategory !== 'All' && !search && (
+        <div className="px-4 py-3 flex items-center gap-3"
+          style={{ background: groupColor.bg, borderBottom: '1px solid var(--border)' }}>
+          <span className="text-2xl">{getCategoryEmoji(activeCategory)}</span>
+          <div className="flex-1 min-w-0">
+            <h2 className="font-bold text-base leading-tight" style={{ color: groupColor.text }}>
+              {activeCategory}
+            </h2>
+            <p className="text-xs mt-0.5" style={{ color: groupColor.accent }}>
+              {filtered.length} {filtered.length === 1 ? 'word' : 'words'}
+            </p>
+          </div>
+          {/* View toggle (inside category header so it stays prominent) */}
+          <div className="flex items-center gap-1 flex-shrink-0">
+            {(['grid2', 'grid3', 'list'] as ViewMode[]).map((mode) => {
+              const Icon = mode === 'list' ? List : mode === 'grid3' ? Grid3x3 : LayoutGrid;
+              return (
+                <button
+                  key={mode}
+                  onClick={() => changeView(mode)}
+                  className="p-1.5 rounded-lg transition-all"
+                  style={{
+                    background: viewMode === mode ? groupColor.accent : 'rgba(0,0,0,0.08)',
+                    color: viewMode === mode ? '#fff' : groupColor.text,
+                  }}>
+                  <Icon className="w-3.5 h-3.5" />
+                </button>
+              );
+            })}
+          </div>
         </div>
       )}
 
-      {/* Grid */}
-      <div className="flex-1 p-4">
-        <div className={`grid gap-3 ${kidsMode ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'} max-w-5xl mx-auto`}>
-          {filtered.slice(0, visibleCount).map(word => (
-            <WordCard key={word.id} word={word} onClick={() => handleSelect(word)} />
-          ))}
+      {/* ── Count + view toggle (when no category header) ──────────────────── */}
+      {(activeCategory === 'All' || search) && (
+        <div className="px-4 pt-2 pb-1 flex items-center justify-between">
+          <p className="text-xs" style={{ color: 'var(--text3)' }}>
+            {filtered.length.toLocaleString()} {filtered.length === 1 ? 'entry' : 'entries'}
+            {search && <span> matching <em>"{search}"</em></span>}
+            {!search && activeGroup !== 'All' && ` · ${activeGroup}`}
+          </p>
+          {!kidsMode && (
+            <div className="flex items-center gap-1">
+              {(['grid2', 'grid3', 'list'] as ViewMode[]).map((mode) => {
+                const Icon = mode === 'list' ? List : mode === 'grid3' ? Grid3x3 : LayoutGrid;
+                return (
+                  <button
+                    key={mode}
+                    onClick={() => changeView(mode)}
+                    className="p-1.5 rounded-lg transition-all"
+                    style={{
+                      background: viewMode === mode ? 'var(--accent)' : 'var(--surface2)',
+                      color: viewMode === mode ? '#fff' : 'var(--text3)',
+                    }}>
+                  <Icon className="w-3.5 h-3.5" />
+                </button>
+                );
+              })}
+            </div>
+          )}
         </div>
+      )}
+
+      {/* ── Word grid / list ───────────────────────────────────────────────── */}
+      <div className={`flex-1 ${viewMode === 'list' ? '' : 'p-4'}`}>
+        {viewMode === 'list' ? (
+          <div className="max-w-2xl mx-auto" style={{ borderTop: '1px solid var(--border)' }}>
+            {filtered.slice(0, visibleCount).map(word => (
+              <WordCard key={word.id} word={word} viewMode="list" onClick={() => handleSelect(word)} />
+            ))}
+          </div>
+        ) : (
+          <div className={`${gridClass} max-w-5xl mx-auto`}>
+            {filtered.slice(0, visibleCount).map(word => (
+              <WordCard key={word.id} word={word} viewMode={kidsMode ? 'grid2' : viewMode} onClick={() => handleSelect(word)} />
+            ))}
+          </div>
+        )}
+
         {filtered.length === 0 && (
           <div className="text-center py-20" style={{ color: 'var(--text2)' }}>
             <p className="text-4xl mb-3">{showFavs ? '💔' : '🔍'}</p>
@@ -203,6 +338,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             </p>
           </div>
         )}
+
         {filtered.length > visibleCount && (
           <div className="text-center mt-6 mb-4">
             <button
