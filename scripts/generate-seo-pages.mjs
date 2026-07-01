@@ -18,7 +18,7 @@ const LEARN_DIR = join(PUBLIC, 'learn');
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
-const SITE_URL = 'https://visual-vocabulary.vercel.app';
+const SITE_URL = 'https://visualvocab.io';
 const SITE_NAME = 'Visual Vocabulary';
 
 // ─── Category metadata ────────────────────────────────────────────────────────
