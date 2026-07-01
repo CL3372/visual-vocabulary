@@ -3,7 +3,8 @@ import type { Language } from '../types';
 export const LANGUAGES: Language[] = [
   { code: 'en', label: 'English',    nativeName: 'English',   flag: '🇬🇧' },
   { code: 'es', label: 'Spanish',    nativeName: 'Español',   flag: '🇪🇸' },
-  { code: 'pt', label: 'Portuguese', nativeName: 'Português', flag: '🇧🇷' },
+  { code: 'pt',    label: 'Portuguese',            nativeName: 'Português',          flag: '🇵🇹' },
+  { code: 'pt-BR', label: 'Brazilian Portuguese',   nativeName: 'Português (Brasil)', flag: '🇧🇷', dataKey: 'pt' },
   { code: 'fr', label: 'French',     nativeName: 'Français',  flag: '🇫🇷' },
   { code: 'de', label: 'German',     nativeName: 'Deutsch',   flag: '🇩🇪' },
   { code: 'it', label: 'Italian',    nativeName: 'Italiano',  flag: '🇮🇹' },

@@ -13,6 +13,8 @@ export interface Language {
   label: string;
   nativeName: string;
   flag: string;
+  /** If set, use this key to look up word.translations instead of code */
+  dataKey?: string;
 }
 
 export type AppMode = 'browse' | 'flashcards' | 'quiz' | 'progress' | 'map';

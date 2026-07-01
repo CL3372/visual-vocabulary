@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, Shuffle, Volume2, ArrowLeft, Brain } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
+import { getTranslation } from '../utils/getTranslation';
 import { TopicPicker } from '../components/TopicPicker';
 import { SRSReview } from '../components/SRSReview';
 import { getColorSwatch } from '../utils/colorSwatches';
@@ -21,7 +22,7 @@ function FlashCard({ word }: { word: Word }) {
   const [flipped, setFlipped] = useState(false);
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
-  const translation = targetLang === 'en' ? word.word : (word.translations[targetLang] || word.word);
+  const translation = getTranslation(word, targetLang);
 
   return (
     <div className="w-full max-w-sm mx-auto cursor-pointer" style={{ perspective: '1000px' }}

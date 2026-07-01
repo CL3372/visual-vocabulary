@@ -6,6 +6,7 @@ import { LANGUAGES } from '../data/languages';
 import { useApp } from '../context/AppContext';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { shareWord } from '../utils/shareCard';
+import { getTranslation, getTranslationOrDash } from '../utils/getTranslation';
 import { UpgradeModal } from './UpgradeModal';
 
 interface Props { word: Word; onClose: () => void }
@@ -18,7 +19,7 @@ export function WordModal({ word, onClose }: Props) {
   const [showUpgrade, setShowUpgrade] = useState(false);
 
   const lang = LANGUAGES.find(l => l.code === targetLang) ?? LANGUAGES[1];
-  const translation = word.translations[targetLang] ?? word.translations['es'] ?? word.word;
+  const translation = getTranslation(word, targetLang);
 
   async function handleShare() {
     if (!isPro) { setShowUpgrade(true); return; }
@@ -105,7 +106,7 @@ export function WordModal({ word, onClose }: Props) {
           <div className="grid grid-cols-2 gap-2 mt-4">
             {LANGUAGES.filter(l => l.code !== 'en').map(lang => (
               <button key={lang.code}
-                onClick={() => speak(word.translations[lang.code] || word.word, lang.code)}
+                onClick={() => speak(getTranslation(word, lang.code), lang.code)}
                 className="p-2.5 rounded-xl text-left transition-all hover:opacity-80 active:scale-95"
                 style={{
                   background: lang.code === targetLang ? 'var(--accent-bg)' : 'var(--surface2)',
@@ -113,7 +114,7 @@ export function WordModal({ word, onClose }: Props) {
                 }}>
                 <p className="text-xs" style={{ color: 'var(--text2)' }}>{lang.flag} {lang.label}</p>
                 <p className="font-semibold text-sm mt-0.5 flex items-center gap-1" style={{ color: 'var(--text)' }} dir="auto">
-                  {word.translations[lang.code] || '—'}
+                  {getTranslationOrDash(word, lang.code)}
                   <Volume2 className="w-3 h-3 opacity-40" />
                 </p>
               </button>

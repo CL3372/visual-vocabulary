@@ -3,6 +3,7 @@ import { Heart, Volume2 } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
 import { getColorSwatch } from '../utils/colorSwatches';
+import { getTranslation } from '../utils/getTranslation';
 import type { Word } from '../types';
 
 interface Props {
@@ -14,7 +15,7 @@ export const WordCard = memo(function WordCard({ word, onClick }: Props) {
   const { targetLang, isFavorite, toggleFavorite, speak, kidsMode } = useApp();
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
-  const translation = word.translations[targetLang];
+  const translation = getTranslation(word, targetLang);
   const fav = isFavorite(word.id);
 
   const KIDS_COLORS = ['#fde68a','#a7f3d0','#bfdbfe','#fecaca','#ddd6fe','#fed7aa'];

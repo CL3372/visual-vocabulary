@@ -6,6 +6,7 @@ import { Confetti } from '../components/Confetti';
 import { TopicPicker } from '../components/TopicPicker';
 import { getColorSwatch } from '../utils/colorSwatches';
 import type { Word } from '../types';
+import { getTranslation } from '../utils/getTranslation';
 
 const TOTAL = 10;
 
@@ -19,14 +20,14 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function getChoices(correct: Word, all: Word[], lang: string): string[] {
-  const answer = lang === 'en' ? correct.word : (correct.translations[lang] || correct.word);
+  const answer = getTranslation(correct, lang);
   const wrong = shuffle(all.filter(w => w.id !== correct.id)).slice(0, 3)
-    .map(w => lang === 'en' ? w.word : (w.translations[lang] || w.word));
+    .map(w => getTranslation(w, lang));
   return shuffle([answer, ...wrong]);
 }
 
 function correctAnswer(word: Word, lang: string) {
-  return lang === 'en' ? word.word : (word.translations[lang] || word.word);
+  return getTranslation(word, lang);
 }
 
 // ─── Multiple-choice card ────────────────────────────────────────────────────

@@ -5,6 +5,7 @@ import { ALL_WORDS } from '../data/words';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useNotifications } from '../hooks/useNotifications';
 import type { Word } from '../types';
+import { getTranslation } from '../utils/getTranslation';
 
 const NEW_CARDS_PER_SESSION = 20;
 const SWIPE_THRESHOLD = 80; // px to trigger a swipe action
@@ -29,7 +30,7 @@ function ReviewCard({ word, onRate }: CardProps) {
   const { targetLang, speak } = useApp();
   const { imageUrl } = useUnsplashImage(word.unsplashQuery);
   const [revealed, setRevealed] = useState(false);
-  const translation = word.translations[targetLang] ?? word.translations['es'] ?? word.word;
+  const translation = getTranslation(word, targetLang);
 
   // Swipe state
   const [drag, setDrag] = useState({ x: 0, y: 0, active: false });

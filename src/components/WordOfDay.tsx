@@ -3,6 +3,7 @@ import { useApp } from '../context/AppContext';
 import { ALL_WORDS } from '../data/words';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { LANGUAGES } from '../data/languages';
+import { getTranslation } from '../utils/getTranslation';
 
 function getTodayWord() {
   const day = Math.floor(Date.now() / 86400000);
@@ -13,7 +14,7 @@ export function WordOfDay() {
   const { targetLang, speak } = useApp();
   const word = getTodayWord();
   const { imageUrl, loading, handleError } = useUnsplashImage(word.unsplashQuery);
-  const translation = word.translations[targetLang];
+  const translation = getTranslation(word, targetLang);
   const langLabel = LANGUAGES.find(l => l.code === targetLang)?.flag ?? '';
 
   return (
