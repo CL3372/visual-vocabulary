@@ -4,6 +4,7 @@ import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { getTranslation } from '../utils/getTranslation';
+import { getEmoji } from '../utils/emojiMap';
 import type { Word } from '../types';
 
 export type ViewMode = 'grid2' | 'grid3' | 'list';
@@ -58,8 +59,12 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
             <div className="w-full h-full" style={{ background: colorSwatch }} />
           ) : loading ? (
             <div className="w-full h-full animate-pulse" style={{ background: 'var(--surface2)' }} />
-          ) : (
+          ) : imageUrl ? (
             <img src={imageUrl} alt={word.word} className="w-full h-full object-cover" loading="lazy" onError={handleError} />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center" style={{ background: 'var(--surface2)' }}>
+              <span className="text-3xl">{getEmoji(word.word)}</span>
+            </div>
           )}
         </div>
 
@@ -134,7 +139,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
         ) : (
           <div className="absolute inset-0 flex items-center justify-center"
             style={{ background: 'var(--surface2)' }}>
-            <span className="text-3xl opacity-30">📷</span>
+            <span className="text-3xl">{getEmoji(word.word)}</span>
           </div>
         )}
 

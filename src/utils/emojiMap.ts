@@ -1,0 +1,71 @@
+// Fallback emoji shown when no image loads for a word
+export const EMOJI_MAP: Record<string, string> = {
+  // Family
+  'mother': '👩', 'father': '👨', 'sister': '👧', 'brother': '👦',
+  'grandmother': '👵', 'grandfather': '👴', 'baby': '👶', 'child': '🧒',
+  'son': '👦', 'daughter': '👧', 'aunt': '👩', 'uncle': '👨',
+  'cousin': '🧑', 'family': '👨‍👩‍👧‍👦', 'friend': '🤝', 'twin': '👯', 'parents': '👨‍👩‍👧',
+
+  // Occupations
+  'doctor': '🩺', 'nurse': '🧑‍⚕️', 'teacher': '🧑‍🏫', 'chef': '👨‍🍳',
+  'firefighter': '👨‍🚒', 'police': '👮', 'farmer': '🧑‍🌾', 'engineer': '🧑‍🔧',
+  'artist': '🧑‍🎨', 'pilot': '🧑‍✈️', 'scientist': '🧑‍🔬', 'dentist': '🦷',
+  'builder': '👷', 'writer': '✍️', 'musician': '🎵', 'vet': '🐾',
+  'astronaut': '🧑‍🚀', 'librarian': '📚', 'baker': '🥐', 'sailor': '⚓',
+  'journalist': '📰', 'photographer': '📷', 'gardener': '🌱', 'mechanic': '🔧',
+  'athlete': '🏃',
+
+  // Animals
+  'cat': '🐱', 'dog': '🐶', 'horse': '🐴', 'cow': '🐄', 'pig': '🐷',
+  'sheep': '🐑', 'goat': '🐐', 'chicken': '🐔', 'duck': '🦆', 'rabbit': '🐰',
+  'fish': '🐟', 'bird': '🐦', 'elephant': '🐘', 'lion': '🦁', 'tiger': '🐯',
+  'bear': '🐻', 'monkey': '🐒', 'snake': '🐍', 'frog': '🐸', 'butterfly': '🦋',
+  'whale': '🐋', 'dolphin': '🐬', 'penguin': '🐧', 'spider': '🕷️', 'ant': '🐜',
+  'shark': '🦈', 'giraffe': '🦒', 'crocodile': '🐊', 'octopus': '🐙', 'fox': '🦊',
+  'owl': '🦉', 'flamingo': '🦩', 'gorilla': '🦍', 'panda': '🐼', 'turtle': '🐢',
+
+  // Weather
+  'sunny': '☀️', 'rainy': '🌧️', 'cloudy': '☁️', 'windy': '💨', 'snowy': '❄️',
+  'foggy': '🌫️', 'stormy': '⛈️', 'thunder': '⚡', 'rainbow': '🌈',
+  'hail': '🌨️', 'frost': '🧊', 'drought': '🏜️', 'hurricane': '🌀',
+  'temperature': '🌡️', 'flood': '🌊',
+
+  // Technology
+  'phone': '📱', 'computer': '💻', 'tablet': '📱', 'camera': '📷',
+  'television': '📺', 'headphones': '🎧', 'keyboard': '⌨️', 'mouse': '🖱️',
+  'charger': '🔌', 'robot': '🤖', 'rocket': '🚀', 'satellite': '🛰️',
+  'drone': '🛸', 'printer': '🖨️', 'speaker': '🔊', 'battery': '🔋',
+  'screen': '🖥️', 'app': '📲', 'internet': '🌐', 'microphone': '🎤',
+
+  // School
+  'pencil': '✏️', 'pen': '🖊️', 'eraser': '🧹', 'ruler': '📏',
+  'scissors': '✂️', 'glue': '🔗', 'notebook': '📓', 'textbook': '📘',
+  'backpack': '🎒', 'calculator': '🔢', 'compass': '🧭', 'highlighter': '🖍️',
+  'blackboard': '📋', 'globe': '🌍', 'map': '🗺️', 'diploma': '🎓',
+  'homework': '📝', 'exam': '📝', 'teacher': '🧑‍🏫', 'student': '🧑‍🎓',
+
+  // Seasons & Time
+  'spring': '🌸', 'summer': '☀️', 'autumn': '🍂', 'winter': '❄️',
+  'january': '❄️', 'february': '❤️', 'march': '🌼', 'april': '🌦️',
+  'may': '🌸', 'june': '☀️', 'july': '🏖️', 'august': '🌾',
+  'september': '🍇', 'october': '🎃', 'november': '🍂', 'december': '🎄',
+
+  // Holidays
+  'christmas': '🎄', 'easter': '🐣', 'diwali': '🪔', 'holi': '🎨',
+  'hanukkah': '🕎', 'ramadan': '🌙', 'eid al-fitr': '🌙', 'eid al-adha': '🌙',
+  'halloween': '🎃', 'new year': '🎆', 'vesak': '🏮', 'nowruz': '🌺',
+  'vaisakhi': '🌾', 'passover': '✡️', 'rosh hashanah': '🍎',
+
+  // Body
+  'heart': '❤️', 'eye': '👁️', 'ear': '👂', 'nose': '👃', 'mouth': '👄',
+  'hand': '✋', 'foot': '🦶', 'brain': '🧠', 'tooth': '🦷', 'bone': '🦴',
+
+  // Food
+  'apple': '🍎', 'banana': '🍌', 'orange': '🍊', 'grapes': '🍇',
+  'strawberry': '🍓', 'pizza': '🍕', 'burger': '🍔', 'bread': '🍞',
+  'egg': '🥚', 'milk': '🥛', 'coffee': '☕', 'tea': '🍵', 'water': '💧',
+};
+
+export function getEmoji(word: string): string {
+  return EMOJI_MAP[word.toLowerCase()] ?? '📷';
+}
