@@ -23,9 +23,6 @@ export const ISLAND_INGREDIENT_WORDS: Word[] = [
   { id: 'isli15', word: 'Capers',          translations: { es: 'Alcaparras',       pt: 'Alcaparras',       fr: 'Câpres',            de: 'Kapern',            it: 'Capperi',           ja: 'ケッパー',           zh: '刺山柑'       }, category: 'Condiments',     unsplashQuery: 'capers small green jar mediterranean' },
   { id: 'isli16', word: 'Rabbit',          translations: { es: 'Conejo',           pt: 'Coelho',           fr: 'Lapin',             de: 'Kaninchen',         it: 'Coniglio',          ja: 'ウサギ肉',           zh: '兔肉'         }, category: 'Meat',           unsplashQuery: 'rabbit meat raw game maltese' },
 
-  // ── Atlantic Islands ──────────────────────────────────────────────────────────
-  { id: 'isli18', word: 'Scabbard Fish',   translations: { es: 'Pez sable',        pt: 'Peixe espada',     fr: 'Poisson sabre',     de: 'Degenfisch',        it: 'Pesce spada nero',  ja: 'タチウオ',           zh: '带鱼'         }, category: 'Seafood',        unsplashQuery: 'black scabbard fish dark deep sea madeira' },
-  { id: 'isli19', word: 'Limpets',         translations: { es: 'Lapas',            pt: 'Lapas',            fr: 'Patelles',          de: 'Napfschnecken',     it: 'Patelle',           ja: 'カサガイ',           zh: '笠贝'         }, category: 'Seafood',        unsplashQuery: 'limpets grilled shell atlantic azores madeira' },
   { id: 'isli20', word: 'Laurel',          translations: { es: 'Laurel',           pt: 'Louro',            fr: 'Laurier',           de: 'Lorbeer',           it: 'Alloro',            ja: 'ローリエ',           zh: '月桂叶'       }, category: 'Herbs & Spices', unsplashQuery: 'bay laurel leaf fresh herb green' },
 
   // ── Indian Ocean Islands ──────────────────────────────────────────────────────
