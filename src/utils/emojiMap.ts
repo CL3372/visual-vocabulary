@@ -1,5 +1,11 @@
 // Fallback emoji shown when no image loads for a word
 export const EMOJI_MAP: Record<string, string> = {
+  // Numbers
+  'one': '1️⃣', 'two': '2️⃣', 'three': '3️⃣', 'four': '4️⃣', 'five': '5️⃣',
+  'six': '6️⃣', 'seven': '7️⃣', 'eight': '8️⃣', 'nine': '9️⃣', 'ten': '🔟',
+  'eleven': '1️⃣1️⃣', 'twelve': '1️⃣2️⃣', 'thirteen': '1️⃣3️⃣', 'fourteen': '1️⃣4️⃣', 'fifteen': '1️⃣5️⃣',
+  'sixteen': '1️⃣6️⃣', 'seventeen': '1️⃣7️⃣', 'eighteen': '1️⃣8️⃣', 'nineteen': '1️⃣9️⃣', 'twenty': '2️⃣0️⃣',
+
   // Family
   'mother': '👩', 'father': '👨', 'sister': '👧', 'brother': '👦',
   'grandmother': '👵', 'grandfather': '👴', 'baby': '👶', 'child': '🧒',
