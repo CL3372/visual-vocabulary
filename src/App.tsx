@@ -33,7 +33,15 @@ function Inner() {
   const [showStreak, setShowStreak] = useState(false);
   const [showAuth, setShowAuth] = useState(false);
   const [onboarded, setOnboarded] = useState(() => load('vv-onboarded', false));
-  const [startCategory, setStartCategory] = useState('');
+  const [startCategory, setStartCategory] = useState(() => {
+    // Support deep-links from SEO landing pages: /?cat=Italian+Cuisine
+    const param = new URLSearchParams(window.location.search).get('cat');
+    if (param) {
+      // Clean the URL without a page reload
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+    return param ?? '';
+  });
 
   if (!onboarded) {
     return (
