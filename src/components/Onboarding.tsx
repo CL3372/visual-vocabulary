@@ -134,11 +134,25 @@ export function Onboarding({ onComplete }: Props) {
               Visual Vocabulary
             </h1>
             <p className="text-lg font-medium mb-3" style={{ color: 'var(--text)' }}>
-              World Gastronomy
+              Learn words through photos
             </p>
             <p className="text-base leading-relaxed max-w-xs" style={{ color: 'var(--text2)' }}>
-              Learn food words from 10 languages through the dishes that define every culture.
+              3,000+ words across 15 languages — food, animals, travel, home and more. Free forever.
             </p>
+          </div>
+
+          {/* Stats row */}
+          <div className="flex gap-4 justify-center">
+            {[
+              { value: '3,422', label: 'words' },
+              { value: '15', label: 'languages' },
+              { value: '100+', label: 'categories' },
+            ].map(s => (
+              <div key={s.label} className="flex flex-col items-center">
+                <span className="text-xl font-black" style={{ color: 'var(--accent)' }}>{s.value}</span>
+                <span className="text-xs" style={{ color: 'var(--text2)' }}>{s.label}</span>
+              </div>
+            ))}
           </div>
         </div>
 
