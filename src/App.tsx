@@ -64,14 +64,14 @@ function Inner() {
       {/* Header */}
       <header className="flex items-center justify-between px-4 py-3 sticky top-0 z-20"
         style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)' }}>
-        <div>
+        <button onClick={() => setMode('browse')} className="text-left active:opacity-70 transition-opacity">
           <h1 className="text-lg font-bold leading-none" style={{ color: 'var(--accent)' }}>
             {kidsMode ? '🌈 Visual Vocab' : 'Visual Vocabulary'}
           </h1>
           <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>
             {kidsMode ? 'Learning is fun!' : 'World Gastronomy'}
           </p>
-        </div>
+        </button>
 
         <div className="flex items-center gap-2">
           <button
@@ -130,6 +130,34 @@ function Inner() {
         </div>
       </header>
 
+      {/* Top nav */}
+      <nav className="flex" style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)' }}>
+        {TABS.map(tab => {
+          const Icon = tab.icon;
+          const active = mode === tab.id;
+          return (
+            <button key={tab.id} onClick={() => setMode(tab.id)}
+              className="flex-1 flex flex-col items-center py-3 gap-1 relative transition-colors"
+              style={{ color: active ? 'var(--accent)' : 'var(--text3)' }}>
+              {active && (
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full"
+                  style={{ background: 'var(--accent)' }} />
+              )}
+              <div className="relative">
+                <Icon className="w-5 h-5" />
+                {tab.id === 'flashcards' && srsDueCount > 0 && (
+                  <div className="absolute -top-1.5 -right-1.5 min-w-[16px] h-4 px-0.5 rounded-full text-[10px] font-bold flex items-center justify-center"
+                    style={{ background: '#ef4444', color: '#fff' }}>
+                    {srsDueCount > 99 ? '99+' : srsDueCount}
+                  </div>
+                )}
+              </div>
+              <span className={`text-xs ${active ? 'font-semibold' : 'font-medium'}`}>{tab.label}</span>
+            </button>
+          );
+        })}
+      </nav>
+
       {/* Kids mode banner */}
       {kidsMode && (
         <div className="px-4 py-2 text-center text-sm font-semibold"
@@ -147,33 +175,6 @@ function Inner() {
         {mode === 'progress'   && <Progress />}
       </main>
 
-      {/* Bottom nav */}
-      <nav className="flex" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
-        {TABS.map(tab => {
-          const Icon = tab.icon;
-          const active = mode === tab.id;
-          return (
-            <button key={tab.id} onClick={() => setMode(tab.id)}
-              className="flex-1 flex flex-col items-center py-3 gap-1 relative transition-colors"
-              style={{ color: active ? 'var(--accent)' : 'var(--text3)' }}>
-              {active && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full"
-                  style={{ background: 'var(--accent)' }} />
-              )}
-              <div className="relative">
-                <Icon className="w-5 h-5" />
-                {tab.id === 'flashcards' && srsDueCount > 0 && (
-                  <div className="absolute -top-1.5 -right-1.5 min-w-[16px] h-4 px-0.5 rounded-full text-[10px] font-bold flex items-center justify-center"
-                    style={{ background: '#ef4444', color: '#fff' }}>
-                    {srsDueCount > 99 ? '99+' : srsDueCount}
-                  </div>
-                )}
-              </div>
-              <span className={`text-xs ${active ? 'font-semibold' : 'font-medium'}`}>{tab.label}</span>
-            </button>
-          );
-        })}
-      </nav>
 
       {/* Language bottom sheet */}
       {showLang && (
