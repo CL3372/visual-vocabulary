@@ -7,7 +7,7 @@ import { useCloudSync } from '../hooks/useCloudSync';
 const LANG_LOCALES: Record<string, string> = {
   en: 'en-US', es: 'es-ES', pt: 'pt-PT', fr: 'fr-FR',
   de: 'de-DE', it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN',
-  ko: 'ko-KR', ar: 'ar-SA',
+  ko: 'ko-KR', ar: 'ar-SA', pl: 'pl-PL', cs: 'cs-CZ', ro: 'ro-RO',
 };
 
 export const RTL_LANGS = new Set(['ar']);

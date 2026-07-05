@@ -16,4 +16,7 @@ export const LANGUAGES: Language[] = [
   { code: 'zh-TW', label: 'Chinese (Traditional)', nativeName: '中文（繁體）',          flag: '🇹🇼', dataKey: 'zh' },
   { code: 'ko',    label: 'Korean',                 nativeName: '한국어',              flag: '🇰🇷' },
   { code: 'ar',    label: 'Arabic',                 nativeName: 'العربية',            flag: '🇸🇦' },
+  { code: 'pl',    label: 'Polish',                 nativeName: 'Polski',             flag: '🇵🇱' },
+  { code: 'cs',    label: 'Czech',                  nativeName: 'Čeština',            flag: '🇨🇿' },
+  { code: 'ro',    label: 'Romanian',               nativeName: 'Română',             flag: '🇷🇴' },
 ];

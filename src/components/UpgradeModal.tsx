@@ -15,7 +15,7 @@ const FREE_FEATURES = [
 ];
 
 const PRO_FEATURES = [
-  { icon: Globe,    text: 'All 10 languages (+ Arabic, Japanese, Korean…)' },
+  { icon: Globe,    text: 'All 18 languages (Spanish, Arabic, Japanese, Polish, Czech, Romanian…)' },
   { icon: Brain,    text: 'Unlimited spaced-repetition reviews' },
   { icon: Share2,   text: 'Share beautiful word cards' },
   { icon: BarChart2,text: 'Yearly Wrapped stats' },
