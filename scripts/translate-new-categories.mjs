@@ -4,7 +4,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '../src/data');
-const DEEPL_KEY = 'f13c48e0-b909-4360-8647-737d91486180:fx';
+const DEEPL_KEY = process.env.DEEPL_API_KEY;
+if (!DEEPL_KEY) { console.error('Missing DEEPL_API_KEY env var'); process.exit(1); }
 const DEEPL_URL = 'https://api-free.deepl.com/v2/translate';
 
 // Only translate the new emigrant survival files
