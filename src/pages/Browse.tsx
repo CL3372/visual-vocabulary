@@ -39,6 +39,9 @@ const CATEGORY_EMOJIS: Record<string, string> = {
   Drinks: '🥤', Dishes: '🍽️', Kitchen: '🍳', 'Bread & Grains': '🍞',
   Holidays: '🎉', Days: '📅', Months: '📆', Seasons: '🍂', Time: '⏰',
   Concepts: '💡',
+  // Emigrant Survival
+  'At the Doctor': '🏥', Banking: '🏦', 'Renting a Home': '🏠', 'Work & Jobs': '💼',
+  'Government & Admin': '🏛️', Emergency: '🚨',
   // Drinks subcategories
   Wine: '🍷', Beer: '🍺', Spirits: '🥃', Cocktails: '🍸',
   // Cuisines — country flags
