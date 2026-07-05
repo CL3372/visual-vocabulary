@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import { Heart, Volume2 } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
@@ -6,6 +6,7 @@ import { getColorSwatch } from '../utils/colorSwatches';
 import { getTranslation } from '../utils/getTranslation';
 import { getEmoji } from '../utils/emojiMap';
 import type { Word } from '../types';
+import { UpgradeModal } from './UpgradeModal';
 
 export type ViewMode = 'grid2' | 'grid3' | 'list';
 
@@ -25,7 +26,8 @@ const KIDS_PALETTES = [
 ];
 
 export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onClick }: Props) {
-  const { targetLang, isFavorite, toggleFavorite, speak, kidsMode } = useApp();
+  const { targetLang, isFavorite, toggleFavorite, speak, kidsMode, isPro } = useApp();
+  const [showUpgrade, setShowUpgrade] = useState(false);
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const translation = getTranslation(word, targetLang);
@@ -92,7 +94,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
             <Volume2 className="w-4 h-4" />
           </button>
           <button
-            onClick={e => { e.stopPropagation(); toggleFavorite(word.id); }}
+            onClick={e => { e.stopPropagation(); if (isPro) toggleFavorite(word.id); else setShowUpgrade(true); }}
             className="p-2 rounded-full transition-all"
             style={{ background: fav ? '#fee2e2' : 'var(--surface2)', color: fav ? '#ef4444' : 'var(--text3)' }}
             aria-label={fav ? 'Remove favourite' : 'Add favourite'}>
@@ -107,6 +109,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
   const isGrid3 = viewMode === 'grid3';
 
   return (
+    <>
     <div
       onClick={onClick}
       className="rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:scale-95"
@@ -145,7 +148,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
 
         {/* Favourite button */}
         <button
-          onClick={e => { e.stopPropagation(); toggleFavorite(word.id); }}
+          onClick={e => { e.stopPropagation(); if (isPro) toggleFavorite(word.id); else setShowUpgrade(true); }}
           className="absolute top-2 right-2 p-1.5 rounded-full transition-all"
           style={{ background: fav ? 'rgba(239,68,68,0.9)' : 'rgba(0,0,0,0.28)' }}
           aria-label={fav ? 'Remove favourite' : 'Add favourite'}
@@ -198,5 +201,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
         )}
       </div>
     </div>
+    {showUpgrade && <UpgradeModal onClose={() => setShowUpgrade(false)} reason="Save your favourite words with Pro" />}
+    </>
   );
 });

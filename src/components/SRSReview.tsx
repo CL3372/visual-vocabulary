@@ -7,7 +7,7 @@ import { useNotifications } from '../hooks/useNotifications';
 import type { Word } from '../types';
 import { getTranslation } from '../utils/getTranslation';
 
-const NEW_CARDS_PER_SESSION = 20;
+const NEW_CARDS_PER_SESSION = 10;
 const SWIPE_THRESHOLD = 80; // px to trigger a swipe action
 
 function shuffle<T>(arr: T[]): T[] {
@@ -329,7 +329,7 @@ function SessionComplete({ reviewed, again, onBack }: { reviewed: number; again:
 interface Props { onBack: () => void }
 
 export function SRSReview({ onBack }: Props) {
-  const { srsData, seenWords, rateCard } = useApp();
+  const { srsData, seenWords, rateCard, isPro } = useApp();
 
   // Build the session queue once on mount
   const initialQueue = useMemo(() => {
@@ -344,7 +344,8 @@ export function SRSReview({ onBack }: Props) {
       else if (card.due <= now) due.push(word);
     }
 
-    return [...shuffle(due), ...shuffle(newCards).slice(0, NEW_CARDS_PER_SESSION)];
+    const limit = isPro ? NEW_CARDS_PER_SESSION * 5 : NEW_CARDS_PER_SESSION;
+    return [...shuffle(due), ...shuffle(newCards).slice(0, limit)];
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // intentionally computed once per session
 

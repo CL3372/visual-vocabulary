@@ -7,11 +7,11 @@ const PAYMENT_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK as string | undefi
 const ANNUAL_LINK  = import.meta.env.VITE_STRIPE_ANNUAL_LINK  as string | undefined;
 
 const FREE_FEATURES = [
-  'Spanish, French & Portuguese',
+  'Spanish & French only',
   'Browse all world cuisines',
-  'Daily quiz',
+  '2 quizzes per day',
   'World map',
-  '20 SRS cards per day',
+  '10 SRS cards per day',
 ];
 
 const PRO_FEATURES = [

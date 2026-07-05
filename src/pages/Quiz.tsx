@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft } from 'lucide-react';
+import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
 import { Confetti } from '../components/Confetti';
@@ -7,8 +7,20 @@ import { TopicPicker } from '../components/TopicPicker';
 import { getColorSwatch } from '../utils/colorSwatches';
 import type { Word } from '../types';
 import { getTranslation } from '../utils/getTranslation';
+import { UpgradeModal } from '../components/UpgradeModal';
 
 const TOTAL = 10;
+const FREE_DAILY_QUIZZES = 2;
+
+function getTodayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+function getQuizzesToday(): number {
+  try { return parseInt(localStorage.getItem(`vv-quizzes-${getTodayKey()}`) ?? '0', 10); } catch { return 0; }
+}
+function incrementQuizzesToday() {
+  try { localStorage.setItem(`vv-quizzes-${getTodayKey()}`, String(getQuizzesToday() + 1)); } catch { /* noop */ }
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -154,7 +166,7 @@ function TypeCard({ word, lang, onAnswer }: {
 
 // ─── Main Quiz component ─────────────────────────────────────────────────────
 export function Quiz() {
-  const { targetLang, kidsMode, recordQuizResult } = useApp();
+  const { targetLang, kidsMode, recordQuizResult, isPro } = useApp();
 
   const [pool, setPool] = useState<Word[]>([]);
   const [started, setStarted] = useState(false);
@@ -165,8 +177,13 @@ export function Quiz() {
   const [done, setDone] = useState(false);
   const [choices, setChoices] = useState<string[]>([]);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showUpgrade, setShowUpgrade] = useState(false);
+
+  const quizzesToday = getQuizzesToday();
+  const quizLimitReached = !isPro && quizzesToday >= FREE_DAILY_QUIZZES;
 
   function handleStart(selectedPool: Word[]) {
+    if (quizLimitReached) { setShowUpgrade(true); return; }
     setPool(selectedPool);
     setDeck(shuffle(selectedPool));
     setIndex(0);
@@ -187,6 +204,7 @@ export function Quiz() {
     if (index + 1 >= TOTAL) {
       const finalScore = correct ? score + 1 : score;
       recordQuizResult(finalScore, TOTAL);
+      incrementQuizzesToday();
       if (finalScore >= 7) setShowConfetti(true);
       setDone(true);
     } else {
@@ -197,7 +215,26 @@ export function Quiz() {
   function restart() { setDeck(shuffle(pool)); setIndex(0); setScore(0); setDone(false); setShowConfetti(false); }
 
   if (!started) {
-    return <TopicPicker mode="quiz" onStart={handleStart} kidsMode={kidsMode} />;
+    return (
+      <>
+        {showUpgrade && <UpgradeModal onClose={() => setShowUpgrade(false)} reason="Upgrade to Pro for unlimited daily quizzes" />}
+        <TopicPicker mode="quiz" onStart={handleStart} kidsMode={kidsMode} />
+        {quizLimitReached && (
+          <div className="fixed bottom-20 left-0 right-0 mx-4 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-lg"
+            style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', color: '#fff' }}>
+            <div className="flex items-center gap-2">
+              <Lock className="w-4 h-4 flex-shrink-0" />
+              <p className="text-sm font-medium">{FREE_DAILY_QUIZZES} free quizzes used today</p>
+            </div>
+            <button onClick={() => setShowUpgrade(true)}
+              className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold flex-shrink-0"
+              style={{ background: 'rgba(255,255,255,0.25)' }}>
+              <Zap className="w-3 h-3" /> Upgrade
+            </button>
+          </div>
+        )}
+      </>
+    );
   }
 
   if (done) {
