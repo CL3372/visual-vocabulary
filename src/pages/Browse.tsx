@@ -41,7 +41,7 @@ const CATEGORY_EMOJIS: Record<string, string> = {
   Concepts: '💡',
   // Emigrant Survival
   'At the Doctor': '🏥', Banking: '🏦', 'Renting a Home': '🏠', 'Work & Jobs': '💼',
-  'Government & Admin': '🏛️', Emergency: '🚨',
+  'Government & Admin': '🏛️', Emergency: '🚨', 'Travel Essentials': '✈️',
   // Drinks subcategories
   Wine: '🍷', Beer: '🍺', Spirits: '🥃', Cocktails: '🍸',
   // Cuisines — country flags

@@ -9,7 +9,7 @@ if (!DEEPL_KEY) { console.error('Missing DEEPL_API_KEY env var'); process.exit(1
 const DEEPL_URL = 'https://api-free.deepl.com/v2/translate';
 
 // Only translate the new emigrant survival files
-const TARGET_FILES = ['doctor.ts', 'bank.ts', 'renting.ts', 'work_life.ts', 'admin.ts', 'emergency.ts'];
+const TARGET_FILES = ['travel_essentials.ts'];
 
 const ALL_LANGS = [
   { code: 'es', deepl: 'ES' },
