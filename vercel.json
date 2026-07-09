@@ -4,6 +4,8 @@
   "outputDirectory": "dist",
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/privacy", "dest": "/index.html" },
+    { "src": "/terms", "dest": "/index.html" },
     { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/404.html", "status": 404 }
   ]
