@@ -175,10 +175,30 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const speak = useCallback((text: string, lang = 'en') => {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = LANG_LOCALES[lang] || 'en-US';
-    u.rate = 0.85;
-    window.speechSynthesis.speak(u);
+    const targetLocale = LANG_LOCALES[lang] || 'en-US';
+
+    const doSpeak = () => {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = targetLocale;
+      u.rate = 0.85;
+      const voices = window.speechSynthesis.getVoices();
+      const exact = voices.find(v => v.lang === targetLocale);
+      const prefix = voices.find(v => v.lang.startsWith(targetLocale.split('-')[0]));
+      if (exact) u.voice = exact;
+      else if (prefix) u.voice = prefix;
+      window.speechSynthesis.speak(u);
+    };
+
+    // On Android, voices load asynchronously — wait for them if not ready
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length > 0) {
+      doSpeak();
+    } else {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.onvoiceschanged = null;
+        doSpeak();
+      };
+    }
   }, []);
 
   const addXp = useCallback((amount: number) => {
