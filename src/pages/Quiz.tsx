@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
@@ -175,7 +175,6 @@ export function Quiz() {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
-  const [choices, setChoices] = useState<string[]>([]);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showUpgrade, setShowUpgrade] = useState(false);
 
@@ -192,10 +191,10 @@ export function Quiz() {
     setStarted(true);
   }
 
-  useEffect(() => {
-    if (started && index < TOTAL && deck.length > 0)
-      setChoices(getChoices(deck[index], pool, targetLang));
-  }, [index, deck, targetLang, started]);
+  const choices = useMemo(() => {
+    if (!started || deck.length === 0 || index >= TOTAL) return [];
+    return getChoices(deck[index], pool, targetLang);
+  }, [index, deck, targetLang, started, pool]);
 
   const handleAnswer = useCallback((correct: boolean) => {
     if (correct) { setScore(s => s + 1); if (kidsMode) setShowConfetti(true); }
