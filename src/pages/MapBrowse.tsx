@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef } from 'react';
 // @ts-ignore
-import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
+import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
 import { X } from 'lucide-react';
 import { ALL_WORDS } from '../data/words';
 import { WordCard } from '../components/WordCard';
@@ -163,6 +163,9 @@ export function MapBrowse() {
   const [tooltip, setTooltip]         = useState<Tooltip | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
 
+  const [zoom, setZoom] = useState(1);
+  const [center, setCenter] = useState<[number, number]>([10, 15]);
+
   const wordsByCategory = useMemo(() => {
     const map = new Map<string, Word[]>();
     for (const w of ALL_WORDS) {
@@ -202,76 +205,96 @@ export function MapBrowse() {
           projectionConfig={{ scale: 155, center: [10, 15] }}
           style={{ width: '100%', height: '100%' }}
         >
-          {/* Countries — hover shows country name */}
-          <Geographies geography={GEO_URL}>
-            {({ geographies }: { geographies: any[] }) =>
-              geographies.map((geo: any) => {
-                const name = COUNTRY_NAMES[Number(geo.id)] ?? '';
-                return (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    onMouseEnter={(e: React.MouseEvent) => name && showTooltip(name, e)}
-                    onMouseMove={(e: React.MouseEvent)  => name && showTooltip(name, e)}
+          <ZoomableGroup
+            zoom={zoom}
+            center={center}
+            onMoveEnd={({ zoom: z, coordinates }: { zoom: number; coordinates: [number, number] }) => {
+              setZoom(z);
+              setCenter(coordinates);
+            }}
+          >
+            {/* Countries — hover shows country name */}
+            <Geographies geography={GEO_URL}>
+              {({ geographies }: { geographies: any[] }) =>
+                geographies.map((geo: any) => {
+                  const name = COUNTRY_NAMES[Number(geo.id)] ?? '';
+                  return (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={(e: React.MouseEvent) => name && showTooltip(name, e)}
+                      onMouseMove={(e: React.MouseEvent)  => name && showTooltip(name, e)}
+                      onMouseLeave={() => setTooltip(null)}
+                      style={{
+                        default: { fill: landColor,  stroke: borderColor, strokeWidth: 0.5 / zoom, outline: 'none' },
+                        hover:   { fill: hoverLand,  stroke: borderColor, strokeWidth: 0.5 / zoom, outline: 'none' },
+                        pressed: { fill: hoverLand,  outline: 'none' },
+                      }}
+                    />
+                  );
+                })
+              }
+            </Geographies>
+
+            {/* Cuisine pins — scale inversely with zoom so they stay a consistent screen size */}
+            {PINS.map(pin => {
+              const words = wordsByCategory.get(pin.category) ?? [];
+              if (words.length === 0) return null;
+              const isSelected = selectedId === pin.id;
+              const s = 1 / zoom; // scale factor keeps pins same screen size when zoomed in
+
+              return (
+                <Marker key={pin.id} coordinates={pin.coordinates}>
+                  <g
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => { setTooltip(null); setSelectedId(isSelected ? null : pin.id); }}
+                    onMouseEnter={(e: React.MouseEvent) => showTooltip(`${pin.flag} ${pin.label} Cuisine`, e)}
+                    onMouseMove={(e: React.MouseEvent)  => showTooltip(`${pin.flag} ${pin.label} Cuisine`, e)}
                     onMouseLeave={() => setTooltip(null)}
-                    style={{
-                      default: { fill: landColor,  stroke: borderColor, strokeWidth: 0.5, outline: 'none' },
-                      hover:   { fill: hoverLand,  stroke: borderColor, strokeWidth: 0.5, outline: 'none' },
-                      pressed: { fill: hoverLand,  outline: 'none' },
-                    }}
-                  />
-                );
-              })
-            }
-          </Geographies>
-
-          {/* Cuisine pins */}
-          {PINS.map(pin => {
-            const words = wordsByCategory.get(pin.category) ?? [];
-            if (words.length === 0) return null;
-            const isSelected = selectedId === pin.id;
-
-            return (
-              <Marker key={pin.id} coordinates={pin.coordinates}>
-                <g
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => { setTooltip(null); setSelectedId(isSelected ? null : pin.id); }}
-                  onMouseEnter={(e: React.MouseEvent) => showTooltip(`${pin.flag} ${pin.label} Cuisine`, e)}
-                  onMouseMove={(e: React.MouseEvent)  => showTooltip(`${pin.flag} ${pin.label} Cuisine`, e)}
-                  onMouseLeave={() => setTooltip(null)}
-                >
-                  {/* Glow ring */}
-                  {isSelected && <circle r={16} fill={accentColor} fillOpacity={0.2} />}
-
-                  {/* Pin body */}
-                  <circle
-                    r={isSelected ? 9 : 6}
-                    fill={accentColor}
-                    stroke="#fff"
-                    strokeWidth={isSelected ? 2 : 1.5}
-                    fillOpacity={selectedId && !isSelected ? 0.4 : 1}
-                  />
-                  {/* White centre dot */}
-                  <circle r={2} fill="#fff" fillOpacity={isSelected ? 0 : 0.9} />
-
-                  {/* Flag — always visible above pin */}
-                  <text
-                    textAnchor="middle"
-                    y={-12}
-                    style={{
-                      fontSize: isSelected ? 14 : 11,
-                      userSelect: 'none',
-                      pointerEvents: 'none',
-                      opacity: selectedId && !isSelected ? 0.45 : 1,
-                    }}
+                    transform={`scale(${s})`}
                   >
-                    {pin.flag}
-                  </text>
-                </g>
-              </Marker>
-            );
-          })}
+                    {isSelected && <circle r={16} fill={accentColor} fillOpacity={0.2} />}
+                    <circle
+                      r={isSelected ? 9 : 6}
+                      fill={accentColor}
+                      stroke="#fff"
+                      strokeWidth={isSelected ? 2 : 1.5}
+                      fillOpacity={selectedId && !isSelected ? 0.4 : 1}
+                    />
+                    <circle r={2} fill="#fff" fillOpacity={isSelected ? 0 : 0.9} />
+                    <text
+                      textAnchor="middle"
+                      y={-12}
+                      style={{
+                        fontSize: isSelected ? 14 : 11,
+                        userSelect: 'none',
+                        pointerEvents: 'none',
+                        opacity: selectedId && !isSelected ? 0.45 : 1,
+                      }}
+                    >
+                      {pin.flag}
+                    </text>
+                  </g>
+                </Marker>
+              );
+            })}
+          </ZoomableGroup>
         </ComposableMap>
+
+        {/* Zoom controls */}
+        <div className="absolute top-3 right-3 z-10 flex flex-col gap-1">
+          {[
+            { label: '+', action: () => setZoom(z => Math.min(z * 1.5, 20)) },
+            { label: '−', action: () => setZoom(z => Math.max(z / 1.5, 1)) },
+            { label: '⌂', action: () => { setZoom(1); setCenter([10, 15]); } },
+          ].map(btn => (
+            <button key={btn.label} onClick={btn.action}
+              className="w-8 h-8 rounded-lg text-sm font-bold flex items-center justify-center shadow-md transition-opacity hover:opacity-80 active:scale-95"
+              style={{ background: 'rgba(15,23,42,0.75)', color: '#fff', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(4px)' }}>
+              {btn.label}
+            </button>
+          ))}
+        </div>
 
         {/* Floating tooltip */}
         {tooltip && (
