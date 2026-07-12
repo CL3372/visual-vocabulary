@@ -1,6 +1,6 @@
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useCallback } from 'react';
 // @ts-ignore
-import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import { X } from 'lucide-react';
 import { ALL_WORDS } from '../data/words';
 import { WordCard } from '../components/WordCard';
@@ -163,8 +163,83 @@ export function MapBrowse() {
   const [tooltip, setTooltip]         = useState<Tooltip | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
 
-  const [zoom, setZoom] = useState(1);
-  const [center, setCenter] = useState<[number, number]>([10, 15]);
+  // CSS-transform based zoom/pan — works reliably in Android WebView
+  const [scale, setScale] = useState(1);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const touchRef = useRef<{ type: 'pan' | 'pinch'; x: number; y: number; dist: number } | null>(null);
+  const scaleRef = useRef(1);
+  const offsetRef = useRef({ x: 0, y: 0 });
+
+  const clampScale = (s: number) => Math.min(Math.max(s, 1), 12);
+
+  const applyZoom = useCallback((newScale: number, originX: number, originY: number) => {
+    const rect = mapRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const cx = originX - rect.left;
+    const cy = originY - rect.top;
+    const clamped = clampScale(newScale);
+    // Keep zoom origin fixed on screen
+    const ox = cx - (cx - offsetRef.current.x) * (clamped / scaleRef.current);
+    const oy = cy - (cy - offsetRef.current.y) * (clamped / scaleRef.current);
+    scaleRef.current = clamped;
+    offsetRef.current = { x: ox, y: oy };
+    setScale(clamped);
+    setOffset({ x: ox, y: oy });
+  }, []);
+
+  function onTouchStart(e: React.TouchEvent) {
+    if (e.touches.length === 1) {
+      touchRef.current = { type: 'pan', x: e.touches[0].clientX, y: e.touches[0].clientY, dist: 0 };
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchRef.current = {
+        type: 'pinch',
+        x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+        y: (e.touches[0].clientY + e.touches[1].clientY) / 2,
+        dist: Math.sqrt(dx * dx + dy * dy),
+      };
+    }
+  }
+
+  function onTouchMove(e: React.TouchEvent) {
+    e.preventDefault();
+    if (!touchRef.current) return;
+    if (e.touches.length === 1 && touchRef.current.type === 'pan') {
+      const dx = e.touches[0].clientX - touchRef.current.x;
+      const dy = e.touches[0].clientY - touchRef.current.y;
+      touchRef.current.x = e.touches[0].clientX;
+      touchRef.current.y = e.touches[0].clientY;
+      offsetRef.current = { x: offsetRef.current.x + dx, y: offsetRef.current.y + dy };
+      setOffset({ ...offsetRef.current });
+    } else if (e.touches.length === 2 && touchRef.current.type === 'pinch') {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const newDist = Math.sqrt(dx * dx + dy * dy);
+      const midX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      const midY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      applyZoom(scaleRef.current * (newDist / touchRef.current.dist), midX, midY);
+      touchRef.current.dist = newDist;
+      touchRef.current.x = midX;
+      touchRef.current.y = midY;
+    }
+  }
+
+  function onTouchEnd() { touchRef.current = null; }
+
+  // Wheel zoom (desktop)
+  function onWheel(e: React.WheelEvent) {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    applyZoom(scaleRef.current * factor, e.clientX, e.clientY);
+  }
+
+  function resetView() {
+    scaleRef.current = 1;
+    offsetRef.current = { x: 0, y: 0 };
+    setScale(1);
+    setOffset({ x: 0, y: 0 });
+  }
 
   const wordsByCategory = useMemo(() => {
     const map = new Map<string, Word[]>();
@@ -196,24 +271,27 @@ export function MapBrowse() {
       {/* ── Map — fills all available space ──────────────────────────────────── */}
       <div
         ref={mapRef}
-        className="relative select-none overflow-hidden"
-        style={{ flex: 1, background: oceanColor, minHeight: 0 }}
+        className="relative select-none"
+        style={{ flex: 1, background: oceanColor, minHeight: 0, overflow: 'hidden', touchAction: 'none' }}
         onMouseLeave={() => setTooltip(null)}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        onWheel={onWheel}
       >
-        <ComposableMap
-          projection="geoMercator"
-          projectionConfig={{ scale: 155, center: [10, 15] }}
-          style={{ width: '100%', height: '100%' }}
-        >
-          <ZoomableGroup
-            zoom={zoom}
-            center={center}
-            onMoveEnd={({ zoom: z, coordinates }: { zoom: number; coordinates: [number, number] }) => {
-              setZoom(z);
-              setCenter(coordinates);
-            }}
+        {/* CSS-transform wrapper — pinch/pan moves this div */}
+        <div style={{
+          width: '100%', height: '100%',
+          transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
+          transformOrigin: '0 0',
+          willChange: 'transform',
+        }}>
+          <ComposableMap
+            projection="geoMercator"
+            projectionConfig={{ scale: 155, center: [10, 15] }}
+            style={{ width: '100%', height: '100%' }}
           >
-            {/* Countries — hover shows country name */}
+            {/* Countries */}
             <Geographies geography={GEO_URL}>
               {({ geographies }: { geographies: any[] }) =>
                 geographies.map((geo: any) => {
@@ -226,8 +304,8 @@ export function MapBrowse() {
                       onMouseMove={(e: React.MouseEvent)  => name && showTooltip(name, e)}
                       onMouseLeave={() => setTooltip(null)}
                       style={{
-                        default: { fill: landColor,  stroke: borderColor, strokeWidth: 0.5 / zoom, outline: 'none' },
-                        hover:   { fill: hoverLand,  stroke: borderColor, strokeWidth: 0.5 / zoom, outline: 'none' },
+                        default: { fill: landColor,  stroke: borderColor, strokeWidth: 0.5 / scale, outline: 'none' },
+                        hover:   { fill: hoverLand,  stroke: borderColor, strokeWidth: 0.5 / scale, outline: 'none' },
                         pressed: { fill: hoverLand,  outline: 'none' },
                       }}
                     />
@@ -236,12 +314,12 @@ export function MapBrowse() {
               }
             </Geographies>
 
-            {/* Cuisine pins — scale inversely with zoom so they stay a consistent screen size */}
+            {/* Cuisine pins — scale inversely so they stay same size on screen */}
             {PINS.map(pin => {
               const words = wordsByCategory.get(pin.category) ?? [];
               if (words.length === 0) return null;
               const isSelected = selectedId === pin.id;
-              const s = 1 / zoom; // scale factor keeps pins same screen size when zoomed in
+              const s = 1 / scale;
 
               return (
                 <Marker key={pin.id} coordinates={pin.coordinates}>
@@ -278,15 +356,15 @@ export function MapBrowse() {
                 </Marker>
               );
             })}
-          </ZoomableGroup>
-        </ComposableMap>
+          </ComposableMap>
+        </div>
 
         {/* Zoom controls */}
         <div className="absolute top-3 right-3 z-10 flex flex-col gap-1">
           {[
-            { label: '+', action: () => setZoom(z => Math.min(z * 1.5, 20)) },
-            { label: '−', action: () => setZoom(z => Math.max(z / 1.5, 1)) },
-            { label: '⌂', action: () => { setZoom(1); setCenter([10, 15]); } },
+            { label: '+', action: () => { const rect = mapRef.current?.getBoundingClientRect(); if (rect) applyZoom(scaleRef.current * 1.5, rect.left + rect.width / 2, rect.top + rect.height / 2); } },
+            { label: '−', action: () => { const rect = mapRef.current?.getBoundingClientRect(); if (rect) applyZoom(scaleRef.current / 1.5, rect.left + rect.width / 2, rect.top + rect.height / 2); } },
+            { label: '⌂', action: resetView },
           ].map(btn => (
             <button key={btn.label} onClick={btn.action}
               className="w-8 h-8 rounded-lg text-sm font-bold flex items-center justify-center shadow-md transition-opacity hover:opacity-80 active:scale-95"

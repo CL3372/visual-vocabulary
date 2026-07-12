@@ -189,15 +189,26 @@ export function AppProvider({ children }: { children: ReactNode }) {
       window.speechSynthesis.speak(u);
     };
 
-    // On Android, voices load asynchronously — wait for them if not ready
     const voices = window.speechSynthesis.getVoices();
     if (voices.length > 0) {
       doSpeak();
     } else {
+      // Wait for voices, but Xiaomi/MIUI WebView may never fire onvoiceschanged —
+      // fall back to speaking without a specific voice after 500ms
+      let fired = false;
       window.speechSynthesis.onvoiceschanged = () => {
+        if (fired) return;
+        fired = true;
         window.speechSynthesis.onvoiceschanged = null;
         doSpeak();
       };
+      setTimeout(() => {
+        if (!fired) {
+          fired = true;
+          window.speechSynthesis.onvoiceschanged = null;
+          doSpeak();
+        }
+      }, 500);
     }
   }, []);
 
