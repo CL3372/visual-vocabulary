@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "Visual Vocab Dev",
+      "name": "visual-vocabulary",
       "cwd": "/Users/carlalouro/Desktop/visual-vocabulary",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["vite"],
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /Users/carlalouro/Desktop/visual-vocabulary && npx vite --port 5173"],
       "port": 5173
     }
   ]
