@@ -136,13 +136,13 @@ function Inner() {
           const active = mode === tab.id;
           return (
             <button key={tab.id} onClick={() => setMode(tab.id)}
-              className="flex-1 flex flex-col items-center py-2 gap-1 transition-all active:scale-95"
+              className="flex-1 flex flex-col items-center py-3 gap-1.5 transition-all active:scale-95"
               style={{ color: active ? tab.color : 'var(--text3)' }}>
               <div className="relative">
-                <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl transition-all"
+                <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-3xl transition-all"
                   style={{
-                    background: active ? `${tab.color}20` : 'transparent',
-                    transform: active ? 'scale(1.1)' : 'scale(1)',
+                    background: active ? `${tab.color}18` : 'transparent',
+                    transform: active ? 'scale(1.12)' : 'scale(1)',
                   }}>
                   {tab.emoji}
                 </div>
@@ -153,7 +153,7 @@ function Inner() {
                   </div>
                 )}
               </div>
-              <span className="text-[10px] font-semibold">{tab.label}</span>
+              <span className="text-xs font-black tracking-wide">{tab.label}</span>
             </button>
           );
         })}
