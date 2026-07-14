@@ -60,7 +60,7 @@ const PINS: Pin[] = [
   { id: 'belgian',     label: 'Belgian',     category: 'Belgian Cuisine',     coordinates: [4.5,    50.5],  flag: '🇧🇪' },
   { id: 'swiss',       label: 'Swiss',       category: 'Swiss Cuisine',       coordinates: [8.3,    46.8],  flag: '🇨🇭' },
   { id: 'austrian',    label: 'Austrian',    category: 'Austrian Cuisine',    coordinates: [14.5,   47.5],  flag: '🇦🇹' },
-  { id: 'welsh',       label: 'Welsh',       category: 'Welsh Cuisine',       coordinates: [-3.8,   52.1],  flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
+  { id: 'welsh',       label: 'Welsh',       category: 'Welsh Cuisine',       coordinates: [-3.8,   52.1],  flag: '🇬🇧' },
   // ── Northern Europe ─────────────────────────────────────────────────────────
   { id: 'danish',      label: 'Danish',      category: 'Danish Cuisine',      coordinates: [10.0,   56.0],  flag: '🇩🇰' },
   { id: 'norwegian',   label: 'Norwegian',   category: 'Norwegian Cuisine',   coordinates: [10.5,   60.5],  flag: '🇳🇴' },
@@ -227,6 +227,24 @@ export function MapBrowse() {
 
   function onTouchEnd() { touchRef.current = null; }
 
+  // Mouse drag (desktop)
+  function onMouseDown(e: React.MouseEvent) {
+    if (e.button !== 0) return;
+    touchRef.current = { type: 'pan', x: e.clientX, y: e.clientY, dist: 0 };
+  }
+
+  function onMouseMove(e: React.MouseEvent) {
+    if (!touchRef.current) return;
+    const dx = e.clientX - touchRef.current.x;
+    const dy = e.clientY - touchRef.current.y;
+    touchRef.current.x = e.clientX;
+    touchRef.current.y = e.clientY;
+    offsetRef.current = { x: offsetRef.current.x + dx, y: offsetRef.current.y + dy };
+    setOffset({ ...offsetRef.current });
+  }
+
+  function onMouseUp() { touchRef.current = null; }
+
   // Wheel zoom (desktop)
   function onWheel(e: React.WheelEvent) {
     e.preventDefault();
@@ -272,8 +290,11 @@ export function MapBrowse() {
       <div
         ref={mapRef}
         className="relative select-none"
-        style={{ flex: 1, background: oceanColor, minHeight: 0, overflow: 'hidden', touchAction: 'none' }}
-        onMouseLeave={() => setTooltip(null)}
+        style={{ flex: 1, background: oceanColor, minHeight: 0, overflow: 'hidden', touchAction: 'none', cursor: 'grab' }}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={() => { setTooltip(null); onMouseUp(); }}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
