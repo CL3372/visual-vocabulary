@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut } from 'lucide-react';
+import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut, ArrowLeft } from 'lucide-react';
 import { StreakModal } from './components/StreakModal';
 import { AuthModal } from './components/AuthModal';
 import { AppProvider, useApp } from './context/AppContext';
@@ -18,12 +18,12 @@ function load<T>(key: string, fallback: T): T {
   catch { return fallback; }
 }
 
-const TABS: { id: AppMode; label: string; icon: typeof BookOpen }[] = [
-  { id: 'browse',     label: 'Browse',     icon: BookOpen   },
-  { id: 'map',        label: 'Map',        icon: Map        },
-  { id: 'flashcards', label: 'Flashcards', icon: CreditCard },
-  { id: 'quiz',       label: 'Quiz',       icon: HelpCircle },
-  { id: 'progress',   label: 'Progress',   icon: BarChart2  },
+const TABS: { id: AppMode; label: string; icon: typeof BookOpen; emoji: string; color: string }[] = [
+  { id: 'browse',     label: 'Browse',     icon: BookOpen,   emoji: '🍽️', color: '#f97316' },
+  { id: 'map',        label: 'Map',        icon: Map,        emoji: '🗺️', color: '#3b82f6' },
+  { id: 'flashcards', label: 'Cards',      icon: CreditCard, emoji: '🃏', color: '#8b5cf6' },
+  { id: 'quiz',       label: 'Quiz',       icon: HelpCircle, emoji: '🧠', color: '#10b981' },
+  { id: 'progress',   label: 'Progress',   icon: BarChart2,  emoji: '📈', color: '#ef4444' },
 ];
 
 function Inner() {
@@ -133,26 +133,27 @@ function Inner() {
       {/* Top nav */}
       <nav className="flex" style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)' }}>
         {TABS.map(tab => {
-          const Icon = tab.icon;
           const active = mode === tab.id;
           return (
             <button key={tab.id} onClick={() => setMode(tab.id)}
-              className="flex-1 flex flex-col items-center py-3 gap-1 relative transition-colors"
-              style={{ color: active ? 'var(--accent)' : 'var(--text3)' }}>
-              {active && (
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full"
-                  style={{ background: 'var(--accent)' }} />
-              )}
+              className="flex-1 flex flex-col items-center py-2 gap-1 transition-all active:scale-95"
+              style={{ color: active ? tab.color : 'var(--text3)' }}>
               <div className="relative">
-                <Icon className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl transition-all"
+                  style={{
+                    background: active ? `${tab.color}20` : 'transparent',
+                    transform: active ? 'scale(1.1)' : 'scale(1)',
+                  }}>
+                  {tab.emoji}
+                </div>
                 {tab.id === 'flashcards' && srsDueCount > 0 && (
-                  <div className="absolute -top-1.5 -right-1.5 min-w-[16px] h-4 px-0.5 rounded-full text-[10px] font-bold flex items-center justify-center"
+                  <div className="absolute -top-1 -right-1 min-w-[16px] h-4 px-0.5 rounded-full text-[10px] font-bold flex items-center justify-center"
                     style={{ background: '#ef4444', color: '#fff' }}>
                     {srsDueCount > 99 ? '99+' : srsDueCount}
                   </div>
                 )}
               </div>
-              <span className={`text-xs ${active ? 'font-semibold' : 'font-medium'}`}>{tab.label}</span>
+              <span className="text-[10px] font-semibold">{tab.label}</span>
             </button>
           );
         })}
@@ -168,6 +169,15 @@ function Inner() {
 
       {/* Page content */}
       <main className="flex-1 flex flex-col overflow-auto">
+        {mode !== 'browse' && (
+          <button
+            onClick={() => setMode('browse')}
+            className="flex items-center gap-2 mx-4 mt-4 mb-1 px-5 py-3 rounded-2xl text-base font-bold transition-all active:scale-95 self-start"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            <ArrowLeft className="w-5 h-5" /> Back to Home
+          </button>
+        )}
         {mode === 'browse'     && <Browse initialCategory={startCategory || undefined} />}
         {mode === 'map'        && <MapBrowse />}
         {mode === 'flashcards' && <Flashcards />}
