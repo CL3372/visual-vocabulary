@@ -15,7 +15,7 @@ export const RTL_LANGS = new Set(['ar']);
 interface QuizResult { date: string; score: number; total: number }
 
 // Languages available on the free tier
-export const FREE_LANGS = new Set(['pt', 'pt-BR', 'fr']);
+export const FREE_LANGS = new Set(['pt', 'pt-BR', 'fr', 'en']);
 
 interface AppContextType {
   targetLang: string;
