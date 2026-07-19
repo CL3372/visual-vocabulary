@@ -5,7 +5,7 @@ import { useAuth } from '../hooks/useAuth';
 import { useCloudSync } from '../hooks/useCloudSync';
 
 const LANG_LOCALES: Record<string, string> = {
-  en: 'en-US', es: 'es-ES', pt: 'pt-PT', 'pt-BR': 'pt-BR', fr: 'fr-FR',
+  en: 'en-GB', es: 'es-ES', pt: 'pt-PT', 'pt-BR': 'pt-BR', fr: 'fr-FR',
   de: 'de-DE', it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN',
   ko: 'ko-KR', ar: 'ar-SA', pl: 'pl-PL', cs: 'cs-CZ', ro: 'ro-RO',
 };
