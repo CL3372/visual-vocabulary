@@ -182,10 +182,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
       u.lang = targetLocale;
       u.rate = 0.85;
       const voices = window.speechSynthesis.getVoices();
-      const exact = voices.find(v => v.lang === targetLocale);
-      const prefix = voices.find(v => v.lang.startsWith(targetLocale.split('-')[0]));
-      if (exact) u.voice = exact;
-      else if (prefix) u.voice = prefix;
+      const langVoices = voices.filter(v => v.lang === targetLocale || v.lang.startsWith(targetLocale.split('-')[0]));
+      // For English prefer a female voice
+      if (targetLocale.startsWith('en')) {
+        const femaleKeywords = ['female', 'woman', 'girl', 'samantha', 'karen', 'moira', 'kate', 'serena', 'victoria', 'emily', 'fiona', 'tessa', 'veena'];
+        const female = langVoices.find(v => femaleKeywords.some(k => v.name.toLowerCase().includes(k)));
+        u.voice = female ?? langVoices[0] ?? null;
+        u.pitch = female ? 1.1 : 1.15; // slightly higher pitch if no female voice found
+      } else {
+        const exact = langVoices.find(v => v.lang === targetLocale);
+        u.voice = exact ?? langVoices[0] ?? null;
+      }
       window.speechSynthesis.speak(u);
     };
 
