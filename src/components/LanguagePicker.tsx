@@ -18,7 +18,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
   function handleSelect(code: string) {
     if (!isPro && !FREE_LANGS.has(code)) { setShowUpgrade(true); return; }
     onChange(code);
-    onClose();
+    setTimeout(onClose, 150);
   }
 
   return (
@@ -31,8 +31,8 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
       >
         {/* Sheet */}
         <div
-          className="rounded-t-3xl w-full max-w-lg mx-auto slide-up"
-          style={{ background: 'var(--surface)' }}
+          className="rounded-t-3xl w-full max-w-lg mx-auto slide-up flex flex-col"
+          style={{ background: 'var(--surface)', maxHeight: '85vh' }}
           onClick={e => e.stopPropagation()}
         >
           {/* Handle bar */}
@@ -60,7 +60,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
           </div>
 
           {/* Language grid */}
-          <div className="grid grid-cols-2 gap-2 px-4 pb-4 pt-1">
+          <div className="grid grid-cols-2 gap-2 px-4 pb-4 pt-1 overflow-y-auto">
             {LANGUAGES.map(lang => {
               const active  = lang.code === value;
               const locked  = !isPro && !FREE_LANGS.has(lang.code);
