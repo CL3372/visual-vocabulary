@@ -9,6 +9,7 @@ import type { Word } from '../types';
 import { getTranslation } from '../utils/getTranslation';
 import { UpgradeModal } from '../components/UpgradeModal';
 import { PronunciationBadge } from '../components/PronunciationBadge';
+import { AudioSourceBadge } from '../components/AudioSourceBadge';
 
 const TOTAL = 10;
 const FREE_DAILY_QUIZZES = 2;
@@ -51,7 +52,7 @@ function McCard({ word, choices, lang, onAnswer }: {
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const [selected, setSelected] = useState<string | null>(null);
   const correct = correctAnswer(word, lang);
-  const { kidsMode, speak } = useApp();
+  const { kidsMode, speak, audioSource } = useApp();
 
   useEffect(() => {
     const t = setTimeout(() => speak(word.word, 'en', word.id), 400);
@@ -80,9 +81,12 @@ function McCard({ word, choices, lang, onAnswer }: {
           <PronunciationBadge lang={lang} />
         </div>
       </div>
-      <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
-        What is this{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}?
-      </p>
+      <div className="flex items-center justify-center gap-2 mt-1">
+        <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
+          What is this{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}?
+        </p>
+        <AudioSourceBadge source={audioSource} />
+      </div>
       <div className="grid grid-cols-2 gap-3">
         {choices.map(c => {
           let bg = 'var(--surface)', border = 'var(--border)', color = 'var(--text)';
@@ -114,7 +118,7 @@ function TypeCard({ word, lang, onAnswer }: {
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const correct = correctAnswer(word, lang);
-  const { speak } = useApp();
+  const { speak, audioSource } = useApp();
 
   useEffect(() => { inputRef.current?.focus(); }, []);
   useEffect(() => {
@@ -144,9 +148,12 @@ function TypeCard({ word, lang, onAnswer }: {
           <PronunciationBadge lang={lang} />
         </div>
       </div>
-      <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
-        Type the word{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}
-      </p>
+      <div className="flex items-center justify-center gap-2 mt-1">
+        <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
+          Type the word{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}
+        </p>
+        <AudioSourceBadge source={audioSource} />
+      </div>
       <div className="flex flex-col gap-2">
         <input
           ref={inputRef}

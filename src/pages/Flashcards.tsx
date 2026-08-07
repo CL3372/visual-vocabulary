@@ -7,6 +7,7 @@ import { TopicPicker } from '../components/TopicPicker';
 import { SRSReview } from '../components/SRSReview';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { PronunciationBadge } from '../components/PronunciationBadge';
+import { AudioSourceBadge } from '../components/AudioSourceBadge';
 import type { Word } from '../types';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -19,7 +20,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function FlashCard({ word }: { word: Word }) {
-  const { targetLang, speak, kidsMode, markWordSeen } = useApp();
+  const { targetLang, speak, kidsMode, markWordSeen, audioSource } = useApp();
   const [flipped, setFlipped] = useState(false);
 
   useEffect(() => {
@@ -64,6 +65,7 @@ function FlashCard({ word }: { word: Word }) {
                 style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}>
                 <Volume2 className="w-4 h-4" />
               </button>
+              <AudioSourceBadge source={audioSource} />
               <p className="text-sm" style={{ color: 'var(--text2)' }}>Tap to reveal</p>
             </div>
           </div>
@@ -85,6 +87,7 @@ function FlashCard({ word }: { word: Word }) {
               {word.category}
             </span>
             <PronunciationBadge lang={targetLang} variant="light" />
+            <AudioSourceBadge source={audioSource} variant="light" />
           </div>
           <p className="text-white/50 text-sm mt-8">Tap to flip back</p>
         </div>

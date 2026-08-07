@@ -7,6 +7,7 @@ import { useUnsplashImage } from '../hooks/useUnsplash';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { getTranslation } from '../utils/getTranslation';
 import { PronunciationBadge } from '../components/PronunciationBadge';
+import { AudioSourceBadge } from '../components/AudioSourceBadge';
 import type { Word } from '../types';
 
 const TOTAL = 10;
@@ -68,7 +69,7 @@ function QuizCard({ word, choices, lang, onAnswer }: {
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const [selected, setSelected] = useState<string | null>(null);
   const correct = getTranslation(word, lang);
-  const { speak } = useApp();
+  const { speak, audioSource } = useApp();
 
   useEffect(() => {
     const t = setTimeout(() => speak(word.word, 'en', word.id), 400);
@@ -96,9 +97,12 @@ function QuizCard({ word, choices, lang, onAnswer }: {
           <PronunciationBadge lang={lang} />
         </div>
       </div>
-      <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
-        What is this in {lang.toUpperCase()}?
-      </p>
+      <div className="flex items-center justify-center gap-2 mt-1">
+        <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
+          What is this in {lang.toUpperCase()}?
+        </p>
+        <AudioSourceBadge source={audioSource} />
+      </div>
       <div className="grid grid-cols-2 gap-3">
         {choices.map(c => {
           let bg = 'var(--surface2)', border = '1.5px solid var(--border)', color = 'var(--text)';

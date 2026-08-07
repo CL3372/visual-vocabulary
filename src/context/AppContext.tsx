@@ -29,6 +29,7 @@ interface AppContextType {
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
   speak: (text: string, lang?: string, wordId?: string) => void;
+  audioSource: 'wavenet' | 'webspeech' | null;
   streak: number;
   bestStreak: number;
   totalSeen: number;
@@ -140,6 +141,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }
   }, [activatePro]);
 
+  const [audioSource, setAudioSource] = useState<'wavenet' | 'webspeech' | null>(null);
   const [targetLang, setTargetLangRaw] = useState(() => load('vv-lang', 'es'));
   const [darkMode, setDarkMode] = useState(() => load('vv-dark', false));
   const [kidsMode, setKidsMode] = useState(() => load('vv-kids', false));
@@ -229,11 +231,20 @@ export function AppProvider({ children }: { children: ReactNode }) {
       const url = `https://storage.googleapis.com/vv-audio/${gcsLang}/${wordId}.mp3`;
       const audio = new Audio(url);
       let used = false;
-      const fallback = () => { if (!used) { used = true; speakWebSpeech(text, lang); } };
+      const fallback = () => {
+        if (!used) {
+          used = true;
+          setAudioSource('webspeech');
+          speakWebSpeech(text, lang);
+        }
+      };
       audio.onerror = fallback;
-      audio.play().catch(fallback);
+      audio.play().then(() => {
+        if (!used) { used = true; setAudioSource('wavenet'); }
+      }).catch(fallback);
       return;
     }
+    setAudioSource('webspeech');
     speakWebSpeech(text, lang);
   }, [speakWebSpeech]);
 
@@ -422,7 +433,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       darkMode, toggleDarkMode,
       kidsMode, toggleKidsMode,
       favorites, toggleFavorite, isFavorite,
-      speak,
+      speak, audioSource,
       streak, bestStreak, totalSeen: seenWords.size, seenWords, quizHistory,
       recordQuizResult, markWordSeen,
       srsData, rateCard, srsDueCount,
