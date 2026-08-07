@@ -8,6 +8,7 @@ import { getColorSwatch } from '../utils/colorSwatches';
 import type { Word } from '../types';
 import { getTranslation } from '../utils/getTranslation';
 import { UpgradeModal } from '../components/UpgradeModal';
+import { PronunciationBadge } from '../components/PronunciationBadge';
 
 const TOTAL = 10;
 const FREE_DAILY_QUIZZES = 2;
@@ -66,7 +67,7 @@ function McCard({ word, choices, lang, onAnswer }: {
 
   return (
     <div className="w-full max-w-sm mx-auto flex flex-col gap-4">
-      <div className={`rounded-3xl overflow-hidden shadow-md ${kidsMode ? 'aspect-square' : 'aspect-video'}`}
+      <div className={`relative rounded-3xl overflow-hidden shadow-md ${kidsMode ? 'aspect-square' : 'aspect-video'}`}
         style={{ background: 'var(--surface2)' }}>
         {colorSwatch ? (
           <div className="w-full h-full" style={{ background: colorSwatch }} />
@@ -75,6 +76,9 @@ function McCard({ word, choices, lang, onAnswer }: {
         ) : (
           <img src={imageUrl} alt="?" className="w-full h-full object-cover" onError={handleError} />
         )}
+        <div className="absolute top-2 right-2">
+          <PronunciationBadge lang={lang} />
+        </div>
       </div>
       <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
         What is this{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}?
@@ -128,7 +132,7 @@ function TypeCard({ word, lang, onAnswer }: {
 
   return (
     <div className="w-full max-w-sm mx-auto flex flex-col gap-4">
-      <div className="aspect-square rounded-3xl overflow-hidden shadow-md" style={{ background: 'var(--surface2)' }}>
+      <div className="relative aspect-square rounded-3xl overflow-hidden shadow-md" style={{ background: 'var(--surface2)' }}>
         {colorSwatch ? (
           <div className="w-full h-full" style={{ background: colorSwatch }} />
         ) : loading ? (
@@ -136,6 +140,9 @@ function TypeCard({ word, lang, onAnswer }: {
         ) : (
           <img src={imageUrl} alt="?" className="w-full h-full object-cover" onError={handleError} />
         )}
+        <div className="absolute top-2 right-2">
+          <PronunciationBadge lang={lang} />
+        </div>
       </div>
       <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
         Type the word{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}

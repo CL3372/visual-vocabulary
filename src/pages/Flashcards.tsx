@@ -6,6 +6,7 @@ import { getTranslation } from '../utils/getTranslation';
 import { TopicPicker } from '../components/TopicPicker';
 import { SRSReview } from '../components/SRSReview';
 import { getColorSwatch } from '../utils/colorSwatches';
+import { PronunciationBadge } from '../components/PronunciationBadge';
 import type { Word } from '../types';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -49,6 +50,9 @@ function FlashCard({ word }: { word: Word }) {
             ) : (
               <img src={imageUrl} alt={word.word} className="w-full h-full object-cover" onError={handleError} />
             )}
+            <div className="absolute top-2 right-2">
+              <PronunciationBadge lang={targetLang} />
+            </div>
           </div>
           <div className="p-6 text-center">
             <p className={`font-bold ${kidsMode ? 'text-3xl' : 'text-2xl'}`} style={{ color: 'var(--text)' }}>
@@ -76,9 +80,12 @@ function FlashCard({ word }: { word: Word }) {
             className="mt-4 p-2.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
             <Volume2 className="w-5 h-5 text-white" />
           </button>
-          <span className="mt-4 inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full">
-            {word.category}
-          </span>
+          <div className="mt-4 flex items-center gap-2 flex-wrap justify-center">
+            <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full">
+              {word.category}
+            </span>
+            <PronunciationBadge lang={targetLang} variant="light" />
+          </div>
           <p className="text-white/50 text-sm mt-8">Tap to flip back</p>
         </div>
       </div>
