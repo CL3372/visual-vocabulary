@@ -1,8 +1,9 @@
-import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, useRef, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
 import type { SRSCard } from '../types';
 import { useAuth } from '../hooks/useAuth';
 import { useCloudSync } from '../hooks/useCloudSync';
+import { computeNewBadges, type BadgeDef, type BadgeStats, type EarnedBadge } from '../data/badges';
 
 const LANG_LOCALES: Record<string, string> = {
   en: 'en-GB', es: 'es-ES', pt: 'pt-PT', 'pt-BR': 'pt-BR', fr: 'fr-FR',
@@ -27,7 +28,7 @@ interface AppContextType {
   favorites: Set<string>;
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
-  speak: (text: string, lang?: string) => void;
+  speak: (text: string, lang?: string, wordId?: string) => void;
   streak: number;
   bestStreak: number;
   totalSeen: number;
@@ -52,6 +53,12 @@ interface AppContextType {
   xpForNextLevel: number;
   xpIntoLevel: number;
   addXp: (amount: number) => void;
+  // Badges
+  earnedBadges: EarnedBadge[];
+  badgeStats: BadgeStats;
+  newBadge: BadgeDef | null;
+  clearNewBadge: () => void;
+  checkBadges: (stats: BadgeStats) => void;
   // Auth
   user: User | null;
   signOut: () => Promise<void>;
@@ -144,6 +151,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [lastPlayDate, setLastPlayDate] = useState(() => load('vv-lastplay', ''));
   const [srsData, setSrsData] = useState<Record<string, SRSCard>>(() => load('vv-srs', {}));
   const [xp, setXp] = useState(() => load('vv-xp', 0));
+  const [earnedBadges, setEarnedBadges] = useState<EarnedBadge[]>(() => load('vv-badges', []));
+  const [newBadge, setNewBadge] = useState<BadgeDef | null>(null);
+  const badgeQueue = useRef<BadgeDef[]>([]);
+  const showingBadge = useRef(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
@@ -161,18 +172,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setKidsMode(k => { save('vv-kids', !k); return !k; });
   }, []);
 
-  const toggleFavorite = useCallback((id: string) => {
-    setFavorites(prev => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      save('vv-favs', [...next]);
-      return next;
-    });
-  }, []);
-
   const isFavorite = useCallback((id: string) => favorites.has(id), [favorites]);
 
-  const speak = useCallback((text: string, lang = 'en') => {
+  const speakWebSpeech = useCallback((text: string, lang = 'en') => {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
     const targetLocale = LANG_LOCALES[lang] || 'en-US';
@@ -221,9 +223,101 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  const speak = useCallback((text: string, lang = 'en', wordId?: string) => {
+    if (wordId) {
+      const gcsLang = lang === 'pt-br' ? 'pt-br' : lang.toLowerCase();
+      const url = `https://storage.googleapis.com/vv-audio/${gcsLang}/${wordId}.mp3`;
+      const audio = new Audio(url);
+      let used = false;
+      const fallback = () => { if (!used) { used = true; speakWebSpeech(text, lang); } };
+      audio.onerror = fallback;
+      audio.play().catch(fallback);
+      return;
+    }
+    speakWebSpeech(text, lang);
+  }, [speakWebSpeech]);
+
   const addXp = useCallback((amount: number) => {
     setXp(prev => { const next = prev + amount; save('vv-xp', next); return next; });
   }, []);
+
+  const showNextBadge = useCallback(() => {
+    if (showingBadge.current || badgeQueue.current.length === 0) return;
+    showingBadge.current = true;
+    const next = badgeQueue.current.shift()!;
+    setNewBadge(next);
+  }, []);
+
+  const clearNewBadge = useCallback(() => {
+    setNewBadge(null);
+    showingBadge.current = false;
+    // Small delay before showing next badge so toasts don't overlap
+    setTimeout(showNextBadge, 400);
+  }, [showNextBadge]);
+
+  const checkBadges = useCallback((stats: BadgeStats) => {
+    setEarnedBadges(prev => {
+      const newOnes = computeNewBadges(prev, stats);
+      if (newOnes.length === 0) return prev;
+      const now = Date.now();
+      const updated = [...prev, ...newOnes.map(b => ({ id: b.id, earnedAt: now }))];
+      save('vv-badges', updated);
+      badgeQueue.current.push(...newOnes);
+      // Trigger display on next tick so state has settled
+      setTimeout(showNextBadge, 300);
+      return updated;
+    });
+  }, [showNextBadge]);
+
+  // badge stats refs — keep mutable copies so callbacks can read them without stale closure
+  const streakRef = useRef(streak);
+  const bestStreakRef = useRef(bestStreak);
+  const seenWordsRef = useRef(seenWords);
+  const quizHistoryRef = useRef(quizHistory);
+  const favoritesRef = useRef(favorites);
+  const srsDataRef = useRef(srsData);
+  useEffect(() => { streakRef.current = streak; }, [streak]);
+  useEffect(() => { bestStreakRef.current = bestStreak; }, [bestStreak]);
+  useEffect(() => { seenWordsRef.current = seenWords; }, [seenWords]);
+  useEffect(() => { quizHistoryRef.current = quizHistory; }, [quizHistory]);
+  useEffect(() => { favoritesRef.current = favorites; }, [favorites]);
+  useEffect(() => { srsDataRef.current = srsData; }, [srsData]);
+
+  const getDailyCount = () => {
+    let count = 0;
+    const today = new Date();
+    for (let i = 0; i < 365; i++) {
+      const d = new Date(today); d.setDate(d.getDate() - i);
+      const key = d.toISOString().split('T')[0].replace(/-/g, '');
+      if (localStorage.getItem(`vv-daily-${key}`)) count++;
+    }
+    return count;
+  };
+
+  const buildStats = useCallback((overrides: Partial<BadgeStats> = {}): BadgeStats => {
+    const qh = quizHistoryRef.current;
+    return {
+      totalSeen: seenWordsRef.current.size,
+      streak: streakRef.current,
+      bestStreak: bestStreakRef.current,
+      quizCount: qh.length,
+      perfectQuizzes: qh.filter(r => r.score === r.total).length,
+      dailyChallengeCount: getDailyCount(),
+      favoritesCount: favoritesRef.current.size,
+      srsReviewed: Object.values(srsDataRef.current).filter(c => c.reps > 0).length,
+      ...overrides,
+    };
+  }, []);
+
+  const toggleFavorite = useCallback((id: string) => {
+    setFavorites(prev => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      save('vv-favs', [...next]);
+      checkBadges(buildStats({ favoritesCount: next.size }));
+      return next;
+    });
+  }, [checkBadges, buildStats]);
 
   const markWordSeen = useCallback((id: string) => {
     setSeenWords(prev => {
@@ -232,9 +326,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       next.add(id);
       save('vv-seen', [...next]);
       addXp(1);
+      checkBadges(buildStats({ totalSeen: next.size }));
       return next;
     });
-  }, [addXp]);
+  }, [addXp, checkBadges, buildStats]);
 
   const dailyGoal = parseInt(localStorage.getItem('vv-daily-goal') ?? '10', 10);
 
@@ -263,10 +358,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
       const next = { ...prev, [wordId]: updated };
       save('vv-srs', next);
       pushSrsCard(wordId, updated);
+      const reviewed = Object.values(next).filter(c => c.reps > 0).length;
+      checkBadges(buildStats({ srsReviewed: reviewed }));
       return next;
     });
     addXp(grade === 1 ? 2 : 5);
-  }, [pushSrsCard, addXp]);
+  }, [pushSrsCard, addXp, checkBadges, buildStats]);
 
   const srsDueCount = useMemo(() => {
     const now = Date.now();
@@ -295,10 +392,29 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setQuizHistory(prev => {
       const next = [{ date: today, score, total }, ...prev].slice(0, 30);
       save('vv-history', next);
+      const perfectQuizzes = next.filter(r => r.score === r.total).length;
+      checkBadges(buildStats({ quizCount: next.length, perfectQuizzes }));
       return next;
     });
     addXp(score * 10 + (score === total ? 50 : 0));
-  }, [lastPlayDate, addXp]);
+  }, [lastPlayDate, addXp, checkBadges, buildStats]);
+
+  // Check streak-based badges whenever bestStreak changes
+  useEffect(() => {
+    if (bestStreak > 0) checkBadges(buildStats({ bestStreak }));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bestStreak]);
+
+  const badgeStats = useMemo<BadgeStats>(() => ({
+    totalSeen: seenWords.size,
+    streak,
+    bestStreak,
+    quizCount: quizHistory.length,
+    perfectQuizzes: quizHistory.filter(r => r.score === r.total).length,
+    dailyChallengeCount: getDailyCount(),
+    favoritesCount: favorites.size,
+    srsReviewed: Object.values(srsData).filter(c => c.reps > 0).length,
+  }), [seenWords, streak, bestStreak, quizHistory, favorites, srsData]);
 
   return (
     <AppContext.Provider value={{
@@ -314,6 +430,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       lastPlayDate,
       studiedToday: lastPlayDate === new Date().toISOString().split('T')[0],
       xp, addXp, ...getLevel(xp),
+      earnedBadges, badgeStats, newBadge, clearNewBadge, checkBadges,
       user, signOut,
     }}>
       {children}

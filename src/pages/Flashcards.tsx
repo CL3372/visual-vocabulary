@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, Shuffle, Volume2, ArrowLeft, Brain } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
@@ -20,6 +20,11 @@ function shuffle<T>(arr: T[]): T[] {
 function FlashCard({ word }: { word: Word }) {
   const { targetLang, speak, kidsMode, markWordSeen } = useApp();
   const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => speak(word.word, 'en', word.id), 400);
+    return () => clearTimeout(t);
+  }, [word.id]);
   const colorSwatch = word.category === 'Colors' ? getColorSwatch(word.word) : null;
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const translation = getTranslation(word, targetLang);
@@ -27,7 +32,7 @@ function FlashCard({ word }: { word: Word }) {
   return (
     <div className="w-full max-w-sm mx-auto cursor-pointer" style={{ perspective: '1000px' }}
       onClick={() => {
-        if (!flipped) { speak(translation, targetLang); markWordSeen(word.id); }
+        if (!flipped) { speak(translation, targetLang, word.id); markWordSeen(word.id); }
         setFlipped(f => !f);
       }}>
       <div className="relative w-full transition-transform duration-500"
@@ -50,7 +55,7 @@ function FlashCard({ word }: { word: Word }) {
               {word.word}
             </p>
             <div className="flex items-center justify-center gap-2 mt-2">
-              <button onClick={e => { e.stopPropagation(); speak(word.word, 'en'); }}
+              <button onClick={e => { e.stopPropagation(); speak(word.word, 'en', word.id); }}
                 className="p-1.5 rounded-full transition-opacity hover:opacity-70"
                 style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}>
                 <Volume2 className="w-4 h-4" />
@@ -67,7 +72,7 @@ function FlashCard({ word }: { word: Word }) {
           <p className={`font-bold text-white text-center ${kidsMode ? 'text-5xl' : 'text-4xl'}`} dir="auto">
             {translation}
           </p>
-          <button onClick={e => { e.stopPropagation(); speak(translation, targetLang); }}
+          <button onClick={e => { e.stopPropagation(); speak(translation, targetLang, word.id); }}
             className="mt-4 p-2.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
             <Volume2 className="w-5 h-5 text-white" />
           </button>

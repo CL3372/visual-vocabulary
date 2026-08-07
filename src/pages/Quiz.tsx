@@ -52,10 +52,15 @@ function McCard({ word, choices, lang, onAnswer }: {
   const correct = correctAnswer(word, lang);
   const { kidsMode, speak } = useApp();
 
+  useEffect(() => {
+    const t = setTimeout(() => speak(word.word, 'en', word.id), 400);
+    return () => clearTimeout(t);
+  }, [word.id]);
+
   function pick(c: string) {
     if (selected) return;
     setSelected(c);
-    speak(c, lang);
+    speak(c, lang, word.id);
     setTimeout(() => onAnswer(c === correct), 900);
   }
 
@@ -108,12 +113,16 @@ function TypeCard({ word, lang, onAnswer }: {
   const { speak } = useApp();
 
   useEffect(() => { inputRef.current?.focus(); }, []);
+  useEffect(() => {
+    const t = setTimeout(() => speak(word.word, 'en', word.id), 400);
+    return () => clearTimeout(t);
+  }, [word.id]);
 
   function check() {
     if (result) return;
     const ok = input.trim().toLowerCase() === correct.toLowerCase();
     setResult(ok ? 'correct' : 'wrong');
-    speak(correct, lang);
+    speak(correct, lang, word.id);
     setTimeout(() => onAnswer(ok), 1200);
   }
 
