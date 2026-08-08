@@ -188,7 +188,7 @@ export function Onboarding({ onComplete }: Props) {
               Learn words through photos
             </p>
             <p className="text-base leading-relaxed max-w-xs" style={{ color: 'var(--text2)' }}>
-              3,500+ words, 19 languages, native speaker audio. Free forever.
+              3,500+ words, 19 languages, WaveNet audio. Free to start.
             </p>
           </div>
 
