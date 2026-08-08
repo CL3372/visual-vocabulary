@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://visualvocab.io/sitemap.xml
+Sitemap: https://lexpix.io/sitemap.xml

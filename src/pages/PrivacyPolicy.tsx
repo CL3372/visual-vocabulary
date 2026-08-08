@@ -2,15 +2,15 @@ export function PrivacyPolicy() {
   return (
     <div className="min-h-screen px-4 py-10 max-w-2xl mx-auto" style={{ color: 'var(--text1)' }}>
       <a href="/" className="text-sm underline mb-6 inline-block" style={{ color: 'var(--accent)' }}>
-        ← Back to Visual Vocabulary
+        ← Back to LexPix
       </a>
 
       <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
       <p className="text-sm mb-8" style={{ color: 'var(--text3)' }}>Last updated: 7 July 2025</p>
 
       <p className="mb-6">
-        Visual Vocabulary ("we", "us", "our") is operated by Carla Louro. This Privacy Policy explains
-        how we collect, use, and protect your information when you use the Visual Vocabulary mobile and
+        LexPix ("we", "us", "our") is operated by Carla Louro. This Privacy Policy explains
+        how we collect, use, and protect your information when you use the LexPix mobile and
         web app ("the App").
       </p>
 

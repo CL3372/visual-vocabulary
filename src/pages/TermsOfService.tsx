@@ -2,21 +2,21 @@ export function TermsOfService() {
   return (
     <div className="min-h-screen px-4 py-10 max-w-2xl mx-auto" style={{ color: 'var(--text1)' }}>
       <a href="/" className="text-sm underline mb-6 inline-block" style={{ color: 'var(--accent)' }}>
-        ← Back to Visual Vocabulary
+        ← Back to LexPix
       </a>
 
       <h1 className="text-3xl font-bold mb-2">Terms of Service</h1>
       <p className="text-sm mb-8" style={{ color: 'var(--text3)' }}>Last updated: 7 July 2025</p>
 
       <p className="mb-6">
-        These Terms of Service ("Terms") govern your use of Visual Vocabulary, operated by Carla Louro
+        These Terms of Service ("Terms") govern your use of LexPix, operated by Carla Louro
         ("we", "us", "our"). By using the App, you agree to these Terms. If you do not agree, please
         do not use the App.
       </p>
 
       <h2 className="text-xl font-semibold mt-8 mb-3">1. Use of the App</h2>
       <p className="mb-4">
-        Visual Vocabulary is a language learning application. You may use it for personal, non-commercial
+        LexPix is a language learning application. You may use it for personal, non-commercial
         learning purposes. You agree not to:
       </p>
       <ul className="list-disc pl-5 space-y-1 mb-4">

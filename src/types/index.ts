@@ -17,7 +17,7 @@ export interface Language {
   dataKey?: string;
 }
 
-export type AppMode = 'browse' | 'flashcards' | 'quiz' | 'progress' | 'map';
+export type AppMode = 'browse' | 'flashcards' | 'quiz' | 'progress' | 'map' | 'badges';
 
 export interface SRSCard {
   ef: number;       // ease factor ≥ 1.3, starts 2.5

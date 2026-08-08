@@ -207,7 +207,7 @@ export async function generateShareCard(p: ShareCardParams): Promise<string> {
 
   ctx.font = '500 32px system-ui, sans-serif';
   ctx.fillStyle = '#94a3b8';
-  ctx.fillText('🌐  visualvocab.io', PAD, footerY + 8);
+  ctx.fillText('🌐  lexpix.io', PAD, footerY + 8);
 
   // Export as data URL
   return canvas.toDataURL('image/png');
@@ -222,7 +222,7 @@ export async function getShareFile(p: ShareCardParams, dataUrl: string): Promise
 export type ShareResult = 'shared' | 'copied' | 'downloaded' | 'failed';
 
 export async function shareWord(p: ShareCardParams, dataUrl: string): Promise<ShareResult> {
-  const shareText = `${p.word} = "${p.translation}" in ${p.langName} ${p.langFlag}\n\nLearn languages visually → visualvocab.io`;
+  const shareText = `${p.word} = "${p.translation}" in ${p.langName} ${p.langFlag}\n\nLearn languages visually → lexpix.io`;
 
   // Try native image share (mobile)
   if (navigator.share && navigator.canShare) {
@@ -240,7 +240,7 @@ export async function shareWord(p: ShareCardParams, dataUrl: string): Promise<Sh
   // Text-only share sheet
   if (navigator.share) {
     try {
-      await navigator.share({ title: p.word, text: shareText, url: 'https://visualvocab.io' });
+      await navigator.share({ title: p.word, text: shareText, url: 'https://lexpix.io' });
       return 'shared';
     } catch (e) {
       if ((e as Error).name === 'AbortError') return 'failed';

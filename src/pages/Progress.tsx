@@ -342,7 +342,7 @@ export function Progress() {
     {/* Legal footer */}
     <div className="px-4 py-6 text-center" style={{ borderTop: '1px solid var(--border)', marginTop: '1rem' }}>
       <p className="text-xs" style={{ color: 'var(--text3)' }}>
-        © {new Date().getFullYear()} Visual Vocabulary &nbsp;·&nbsp;
+        © {new Date().getFullYear()} LexPix &nbsp;·&nbsp;
         <a href="/privacy" className="underline" style={{ color: 'var(--text3)' }}>Privacy Policy</a>
         &nbsp;·&nbsp;
         <a href="/terms" className="underline" style={{ color: 'var(--text3)' }}>Terms of Service</a>

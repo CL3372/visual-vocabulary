@@ -182,7 +182,7 @@ export function Onboarding({ onComplete }: Props) {
 
           <div>
             <h1 className="text-4xl font-black mb-3" style={{ color: 'var(--text)' }}>
-              Visual Vocabulary
+              LexPix
             </h1>
             <p className="text-lg font-semibold mb-2" style={{ color: 'var(--accent)' }}>
               Learn words through photos

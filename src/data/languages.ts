@@ -19,4 +19,5 @@ export const LANGUAGES: Language[] = [
   { code: 'pl',    label: 'Polish',                 nativeName: 'Polski',             flag: '🇵🇱' },
   { code: 'cs',    label: 'Czech',                  nativeName: 'Čeština',            flag: '🇨🇿' },
   { code: 'ro',    label: 'Romanian',               nativeName: 'Română',             flag: '🇷🇴' },
+  { code: 'nl',    label: 'Dutch',                  nativeName: 'Nederlands',         flag: '🇳🇱' },
 ];

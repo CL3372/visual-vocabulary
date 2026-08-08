@@ -1,7 +1,11 @@
-import { useState } from 'react';
-import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut, ArrowLeft } from 'lucide-react';
+import { useState, useCallback } from 'react';
+import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut, ArrowLeft, Flame } from 'lucide-react';
+import { DailyChallenge } from './pages/DailyChallenge';
+import { Badges } from './pages/Badges';
 import { StreakModal } from './components/StreakModal';
 import { AuthModal } from './components/AuthModal';
+import { BadgeToast } from './components/BadgeToast';
+import { OfflineBanner } from './components/OfflineBanner';
 import { AppProvider, useApp } from './context/AppContext';
 import { Browse } from './pages/Browse';
 import { Flashcards } from './pages/Flashcards';
@@ -24,14 +28,20 @@ const TABS: { id: AppMode; label: string; icon: typeof BookOpen; emoji: string; 
   { id: 'flashcards', label: 'Cards',      icon: CreditCard, emoji: '🃏', color: '#8b5cf6' },
   { id: 'quiz',       label: 'Quiz',       icon: HelpCircle, emoji: '🧠', color: '#10b981' },
   { id: 'progress',   label: 'Progress',   icon: BarChart2,  emoji: '📈', color: '#ef4444' },
+  { id: 'badges',     label: 'Badges',     icon: BarChart2,  emoji: '🏅', color: '#f59e0b' },
 ];
 
 function Inner() {
-  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak, user, signOut } = useApp();
+  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak, user, signOut, newBadge, clearNewBadge, earnedBadges } = useApp();
+  const handleBadgeDone = useCallback(() => clearNewBadge(), [clearNewBadge]);
   const [mode, setMode] = useState<AppMode>('browse');
   const [showLang, setShowLang] = useState(false);
   const [showStreak, setShowStreak] = useState(false);
   const [showAuth, setShowAuth] = useState(false);
+  const [showDailyChallenge, setShowDailyChallenge] = useState(false);
+
+  const todayKey = new Date().toISOString().slice(0, 10);
+  const dailyDone = !!localStorage.getItem(`vv-daily-${todayKey}`);
   const [onboarded, setOnboarded] = useState(() => load('vv-onboarded', false));
   const [startCategory, setStartCategory] = useState(() => {
     // Support deep-links from SEO landing pages: /?cat=Italian+Cuisine
@@ -66,7 +76,7 @@ function Inner() {
         style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)' }}>
         <button onClick={() => setMode('browse')} className="text-left active:opacity-70 transition-opacity">
           <h1 className="text-lg font-bold leading-none" style={{ color: 'var(--accent)' }}>
-            {kidsMode ? '🌈 Visual Vocab' : 'Visual Vocabulary'}
+            {kidsMode ? '🌈 LexPix' : 'LexPix'}
           </h1>
           <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>
             {kidsMode ? 'Learning is fun!' : 'World Gastronomy'}
@@ -152,12 +162,39 @@ function Inner() {
                     {srsDueCount > 99 ? '99+' : srsDueCount}
                   </div>
                 )}
+                {tab.id === 'badges' && earnedBadges.length > 0 && (
+                  <div className="absolute -top-1 -right-1 min-w-[16px] h-4 px-0.5 rounded-full text-[10px] font-bold flex items-center justify-center"
+                    style={{ background: '#f59e0b', color: '#fff' }}>
+                    {earnedBadges.length}
+                  </div>
+                )}
               </div>
               <span className="text-xs font-black tracking-wide">{tab.label}</span>
             </button>
           );
         })}
       </nav>
+
+      {/* Daily Challenge banner */}
+      {mode === 'browse' && (
+        <button
+          onClick={() => setShowDailyChallenge(true)}
+          className="mx-4 mt-3 flex items-center gap-3 px-4 py-3 rounded-2xl transition-all active:scale-95"
+          style={{
+            background: dailyDone ? 'var(--surface2)' : 'linear-gradient(135deg, #f97316, #ef4444)',
+            border: dailyDone ? '1.5px solid var(--border)' : 'none',
+          }}>
+          <Flame className="w-5 h-5 flex-shrink-0" style={{ color: dailyDone ? 'var(--text2)' : '#fff' }} />
+          <div className="text-left flex-1">
+            <p className="text-sm font-bold" style={{ color: dailyDone ? 'var(--text)' : '#fff' }}>
+              Daily Challenge {dailyDone ? '✓' : '🔥'}
+            </p>
+            <p className="text-xs" style={{ color: dailyDone ? 'var(--text2)' : 'rgba(255,255,255,0.8)' }}>
+              {dailyDone ? 'Completed today — come back tomorrow!' : '10 words · new category every day'}
+            </p>
+          </div>
+        </button>
+      )}
 
       {/* Kids mode banner */}
       {kidsMode && (
@@ -183,6 +220,7 @@ function Inner() {
         {mode === 'flashcards' && <Flashcards />}
         {mode === 'quiz'       && <Quiz />}
         {mode === 'progress'   && <Progress />}
+        {mode === 'badges'     && <Badges />}
       </main>
 
 
@@ -195,8 +233,44 @@ function Inner() {
         />
       )}
 
+      {/* Daily Challenge overlay */}
+      {showDailyChallenge && (
+        <div className="fixed inset-0 z-50">
+          <DailyChallenge onClose={() => setShowDailyChallenge(false)} />
+        </div>
+      )}
+
       {/* Auth modal */}
       {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
+
+      {/* Offline banner */}
+      <OfflineBanner />
+
+      {/* Badge toast */}
+      <BadgeToast badge={newBadge} onDone={handleBadgeDone} />
+
+      {/* Product Hunt badge */}
+      <div className="flex justify-center py-3" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
+        <a
+          href="https://www.producthunt.com/posts/visual-vocabulary"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: 8,
+            background: '#ff6154', color: '#fff',
+            borderRadius: 10, padding: '7px 14px',
+            fontWeight: 700, fontSize: 13, textDecoration: 'none',
+            letterSpacing: 0.1,
+          }}
+        >
+          <svg width="16" height="16" viewBox="0 0 512 512" fill="none">
+            <circle cx="256" cy="256" r="256" fill="#ff6154"/>
+            <path d="M291 256c19.9-7.2 34-26.4 34-49 0-28.7-23.3-52-52-52h-72v202h32v-72h40l48 72h38l-52-78c-5.2-2.4-10.5-1.3-16-2.7v-.3z" fill="white"/>
+            <path d="M233 185h39c11 0 20 9 20 20s-9 20-20 20h-39v-40z" fill="#ff6154"/>
+          </svg>
+          Featured on Product Hunt
+        </a>
+      </div>
 
       {/* Streak modal */}
       {showStreak && (

@@ -151,7 +151,7 @@ export async function generateWrappedCard(data: WrappedData): Promise<File> {
 
   ctx.font = '600 38px system-ui, sans-serif';
   ctx.fillStyle = 'rgba(255,255,255,0.35)';
-  ctx.fillText('🍽️  Visual Vocabulary · World Gastronomy', PAD, y);
+  ctx.fillText('🍽️  LexPix · World Gastronomy', PAD, y);
 
   // ── Export ─────────────────────────────────────────────────────────────────
   return new Promise((resolve, reject) => {
@@ -164,7 +164,7 @@ export async function generateWrappedCard(data: WrappedData): Promise<File> {
 
 export async function shareWrapped(data: WrappedData): Promise<void> {
   const file = await generateWrappedCard(data);
-  const shareText = `My ${data.year} Visual Vocabulary recap 🍽️\n\n🔍 ${data.wordsDiscovered} words discovered\n${data.topCuisineFlag} Favourite: ${data.topCuisine}\n🔥 Best streak: ${data.bestStreak} days\n🎯 ${data.quizzesTaken} quizzes\n🧠 ${data.wordsMastered} words mastered`;
+  const shareText = `My ${data.year} LexPix recap 🍽️\n\n🔍 ${data.wordsDiscovered} words discovered\n${data.topCuisineFlag} Favourite: ${data.topCuisine}\n🔥 Best streak: ${data.bestStreak} days\n🎯 ${data.quizzesTaken} quizzes\n🧠 ${data.wordsMastered} words mastered`;
 
   if (navigator.share && navigator.canShare?.({ files: [file] })) {
     await navigator.share({ files: [file], title: `My ${data.year} Food Year in Review`, text: shareText });

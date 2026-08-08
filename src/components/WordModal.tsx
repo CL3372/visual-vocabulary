@@ -19,6 +19,7 @@ export function WordModal({ word, onClose }: Props) {
   const { speak, targetLang, isFavorite, toggleFavorite } = useApp();
 
   const [view, setView] = useState<'detail' | 'share'>('detail');
+  const [showAllLangs, setShowAllLangs] = useState(false);
   const [shareDataUrl, setShareDataUrl] = useState<string | null>(null);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [shareState, setShareState] = useState<'idle' | 'loading' | 'done'>('idle');
@@ -153,23 +154,52 @@ export function WordModal({ word, onClose }: Props) {
                 </p>
               )}
 
-              <div className="grid grid-cols-2 gap-2 mt-4">
-                {LANGUAGES.filter(l => l.code !== 'en').map(lang => (
-                  <button key={lang.code}
-                    onClick={() => speak(getTranslation(word, lang.code), lang.code)}
-                    className="p-2.5 rounded-xl text-left transition-all hover:opacity-80 active:scale-95"
-                    style={{
-                      background: lang.code === targetLang ? 'var(--accent-bg)' : 'var(--surface2)',
-                      border: lang.code === targetLang ? '1px solid var(--accent)' : '1px solid transparent',
-                    }}>
-                    <p className="text-xs" style={{ color: 'var(--text2)' }}>{lang.flag} {lang.label}</p>
-                    <p className="font-semibold text-sm mt-0.5 flex items-center gap-1" style={{ color: 'var(--text)' }} dir="auto">
-                      {getTranslationOrDash(word, lang.code)}
-                      <Volume2 className="w-3 h-3 opacity-40" />
-                    </p>
-                  </button>
-                ))}
+              {/* Current language — always visible */}
+              <div className="mt-4">
+                <button
+                  onClick={() => speak(getTranslation(word, targetLang), targetLang)}
+                  className="w-full p-3 rounded-xl text-left transition-all active:scale-95"
+                  style={{ background: 'var(--accent-bg)', border: '1px solid var(--accent)' }}>
+                  <p className="text-xs" style={{ color: 'var(--accent)' }}>{lang.flag} {lang.label}</p>
+                  <p className="font-semibold text-base mt-0.5 flex items-center gap-1" style={{ color: 'var(--text)' }} dir="auto">
+                    {getTranslationOrDash(word, targetLang)}
+                    <Volume2 className="w-4 h-4 opacity-40" />
+                  </p>
+                </button>
               </div>
+
+              {/* Other languages — collapsible */}
+              <button
+                onClick={() => setShowAllLangs(v => !v)}
+                className="w-full mt-2 py-2 text-xs font-semibold rounded-xl transition-all"
+                style={{ color: 'var(--accent)', background: 'var(--surface2)' }}>
+                {showAllLangs ? 'Hide other languages ▲' : 'See in all languages ▼'}
+              </button>
+
+              {showAllLangs && (
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  {LANGUAGES.filter(l => l.code !== 'en' && l.code !== targetLang).map(l => (
+                    <button key={l.code}
+                      onClick={() => speak(getTranslation(word, l.code), l.code)}
+                      className="p-2.5 rounded-xl text-left transition-all hover:opacity-80 active:scale-95"
+                      style={{ background: 'var(--surface2)', border: '1px solid transparent' }}>
+                      <p className="text-xs" style={{ color: 'var(--text2)' }}>{l.flag} {l.label}</p>
+                      <p className="font-semibold text-sm mt-0.5 flex items-center gap-1" style={{ color: 'var(--text)' }} dir="auto">
+                        {getTranslationOrDash(word, l.code)}
+                        <Volume2 className="w-3 h-3 opacity-40" />
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Close button */}
+              <button
+                onClick={onClose}
+                className="w-full mt-4 py-3 rounded-2xl font-semibold text-sm transition-all active:scale-95"
+                style={{ background: 'var(--surface2)', color: 'var(--text2)' }}>
+                Close
+              </button>
             </div>
           </>
         )}

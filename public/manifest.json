@@ -1,6 +1,6 @@
 {
-  "name": "Visual Vocabulary",
-  "short_name": "Visual Vocab",
+  "name": "LexPix",
+  "short_name": "LexPix",
   "description": "Learn vocabulary through beautiful images",
   "start_url": "/",
   "display": "standalone",
