@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
-import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap } from 'lucide-react';
+import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap, Volume2 } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
 import { Confetti } from '../components/Confetti';
@@ -187,13 +187,72 @@ function TypeCard({ word, lang, onAnswer }: {
   );
 }
 
+// ─── Listen card ─────────────────────────────────────────────────────────────
+function ListenCard({ word, choices, lang, onAnswer }: {
+  word: Word; choices: string[]; lang: string; onAnswer: (ok: boolean) => void;
+}) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const [played, setPlayed] = useState(false);
+  const correct = correctAnswer(word, lang);
+  const { speak } = useApp();
+
+  useEffect(() => {
+    const t = setTimeout(() => { speak(correct, lang, word.id); setPlayed(true); }, 400);
+    return () => clearTimeout(t);
+  }, [word.id]);
+
+  function replay() { speak(correct, lang, word.id); setPlayed(true); }
+
+  function pick(c: string) {
+    if (selected) return;
+    setSelected(c);
+    setTimeout(() => onAnswer(c === correct), 900);
+  }
+
+  return (
+    <div className="w-full max-w-sm mx-auto flex flex-col gap-4">
+      <div className="rounded-3xl flex flex-col items-center justify-center gap-4 py-10"
+        style={{ background: 'var(--surface2)', border: '1.5px solid var(--border)' }}>
+        <button onClick={replay}
+          className="w-20 h-20 rounded-full flex items-center justify-center shadow-lg transition-transform active:scale-95"
+          style={{ background: 'var(--accent)' }}>
+          <Volume2 className="w-9 h-9 text-white" />
+        </button>
+        <p className="text-sm font-medium" style={{ color: 'var(--text2)' }}>
+          {played ? 'Tap to replay' : 'Playing…'}
+        </p>
+      </div>
+      <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
+        What word did you hear{lang !== 'en' ? ` in ${lang.toUpperCase()}` : ''}?
+      </p>
+      <div className="grid grid-cols-2 gap-3">
+        {choices.map(c => {
+          let bg = 'var(--surface)', border = 'var(--border)', color = 'var(--text)';
+          if (selected) {
+            if (c === correct)       { bg = 'var(--green-bg)'; border = 'var(--green)'; color = 'var(--green)'; }
+            else if (c === selected) { bg = 'var(--red-bg)';   border = 'var(--red)';   color = 'var(--red)'; }
+            else                     { color = 'var(--text3)'; }
+          }
+          return (
+            <button key={c} onClick={() => pick(c)}
+              className="p-3 rounded-xl border-2 font-semibold text-sm transition-all"
+              style={{ background: bg, borderColor: border, color }}>
+              {c}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 // ─── Main Quiz component ─────────────────────────────────────────────────────
 export function Quiz() {
   const { targetLang, kidsMode, recordQuizResult, isPro } = useApp();
 
   const [pool, setPool] = useState<Word[]>([]);
   const [started, setStarted] = useState(false);
-  const [mode, setMode] = useState<'choice' | 'type'>('choice');
+  const [mode, setMode] = useState<'choice' | 'type' | 'listen'>('choice');
   const [deck, setDeck] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -309,15 +368,18 @@ export function Quiz() {
         <div className="flex-1" />
       {!kidsMode && (
         <div className="flex rounded-xl overflow-hidden border" style={{ borderColor: 'var(--border)' }}>
-          {(['choice', 'type'] as const).map(m => (
-            <button key={m} onClick={() => { setMode(m); restart(); }}
-              className="flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors"
+          {([
+            { id: 'choice', label: 'Multiple choice', icon: <MousePointer className="w-3.5 h-3.5" /> },
+            { id: 'type',   label: 'Type answer',     icon: <Keyboard className="w-3.5 h-3.5" /> },
+            { id: 'listen', label: 'Listen',           icon: <Volume2 className="w-3.5 h-3.5" /> },
+          ] as const).map(({ id, label, icon }) => (
+            <button key={id} onClick={() => { setMode(id); restart(); }}
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors"
               style={{
-                background: mode === m ? 'var(--accent)' : 'var(--surface)',
-                color: mode === m ? '#fff' : 'var(--text2)',
+                background: mode === id ? 'var(--accent)' : 'var(--surface)',
+                color: mode === id ? '#fff' : 'var(--text2)',
               }}>
-              {m === 'choice' ? <MousePointer className="w-3.5 h-3.5" /> : <Keyboard className="w-3.5 h-3.5" />}
-              {m === 'choice' ? 'Multiple choice' : 'Type answer'}
+              {icon}{label}
             </button>
           ))}
         </div>
@@ -339,7 +401,9 @@ export function Quiz() {
       {choices.length > 0 && (
         mode === 'choice'
           ? <McCard key={`mc-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
-          : <TypeCard key={`type-${deck[index].id}`} word={deck[index]} lang={targetLang} onAnswer={handleAnswer} />
+          : mode === 'type'
+          ? <TypeCard key={`type-${deck[index].id}`} word={deck[index]} lang={targetLang} onAnswer={handleAnswer} />
+          : <ListenCard key={`listen-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
       )}
     </div>
   );
