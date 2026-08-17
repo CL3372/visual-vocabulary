@@ -27,7 +27,7 @@ export function WordOfDay() {
       </div>
       <div className="flex-1 p-3 flex flex-col justify-center min-w-0">
         <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--accent)' }}>
-          ✨ Word of the day
+          🍽️ Dish of the day
         </p>
         <div className="flex items-center gap-2">
           <p className="text-xl font-bold" style={{ color: 'var(--text)' }}>{word.word}</p>
