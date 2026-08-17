@@ -63,6 +63,11 @@ const VOICES = {
   cs:    { languageCode: 'cs-CZ',  name: 'cs-CZ-Wavenet-A'   },
   ro:    { languageCode: 'ro-RO',  name: 'ro-RO-Wavenet-A'   },
   nl:    { languageCode: 'nl-NL',  name: 'nl-NL-Wavenet-A'   },
+  sv:    { languageCode: 'sv-SE',  name: 'sv-SE-Wavenet-A'   },
+  el:    { languageCode: 'el-GR',  name: 'el-GR-Wavenet-A'   },
+  id:    { languageCode: 'id-ID',  name: 'id-ID-Wavenet-A'   },
+  vi:    { languageCode: 'vi-VN',  name: 'vi-VN-Wavenet-A'   },
+  th:    { languageCode: 'th-TH',  name: 'th-TH-Standard-A'  },
 };
 
 const LANGS = Object.keys(VOICES);
