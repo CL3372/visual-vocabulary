@@ -20,11 +20,26 @@ const DEEPL_KEY = process.env.DEEPL_API_KEY;
 // DeepL codes: https://developers.deepl.com/docs/resources/supported-languages
 // Google codes: standard BCP-47
 const NEW_LANGS = [
-  { code: 'sv', deepl: 'SV',   google: 'sv', name: 'Swedish' },
-  { code: 'el', deepl: 'EL',   google: 'el', name: 'Greek' },
-  { code: 'id', deepl: 'ID',   google: 'id', name: 'Indonesian' },
-  { code: 'vi', deepl: null,   google: 'vi', name: 'Vietnamese' },  // DeepL doesn't support Vietnamese
-  { code: 'th', deepl: null,   google: 'th', name: 'Thai' },        // DeepL doesn't support Thai
+  // High priority
+  { code: 'nb', deepl: 'NB',   google: 'nb', name: 'Norwegian' },
+  { code: 'da', deepl: 'DA',   google: 'da', name: 'Danish' },
+  { code: 'fi', deepl: 'FI',   google: 'fi', name: 'Finnish' },
+  { code: 'fil', deepl: 'TL',  google: 'fil', name: 'Filipino' },
+  { code: 'uk', deepl: 'UK',   google: 'uk', name: 'Ukrainian' },
+  { code: 'he', deepl: 'HE',   google: 'he', name: 'Hebrew' },
+  { code: 'ms', deepl: 'MS',   google: 'ms', name: 'Malay' },
+  { code: 'bn', deepl: 'BN',   google: 'bn', name: 'Bengali' },
+  { code: 'ta', deepl: 'TA',   google: 'ta', name: 'Tamil' },
+  // Worth adding
+  { code: 'hu', deepl: 'HU',   google: 'hu', name: 'Hungarian' },
+  { code: 'sk', deepl: 'SK',   google: 'sk', name: 'Slovak' },
+  { code: 'bg', deepl: 'BG',   google: 'bg', name: 'Bulgarian' },
+  { code: 'hr', deepl: 'HR',   google: 'hr', name: 'Croatian' },
+  { code: 'sr', deepl: 'SR',   google: 'sr', name: 'Serbian' },
+  { code: 'lt', deepl: 'LT',   google: 'lt', name: 'Lithuanian' },
+  { code: 'lv', deepl: 'LV',   google: 'lv', name: 'Latvian' },
+  { code: 'ur', deepl: 'UR',   google: 'ur', name: 'Urdu' },
+  { code: 'sw', deepl: 'SW',   google: 'sw', name: 'Swahili' },
 ];
 
 const DEEPL_URL = 'https://api-free.deepl.com/v2/translate';
