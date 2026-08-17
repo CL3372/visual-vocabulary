@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef, useMemo } from 'react';
-import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap, Volume2 } from 'lucide-react';
+import { CheckCircle, XCircle, Trophy, MousePointer, Keyboard, ArrowLeft, Lock, Zap, Volume2, BookOpen } from 'lucide-react';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useApp } from '../context/AppContext';
 import { Confetti } from '../components/Confetti';
@@ -246,13 +246,91 @@ function ListenCard({ word, choices, lang, onAnswer }: {
   );
 }
 
+// ─── Sentence card ───────────────────────────────────────────────────────────
+function SentenceCard({ word, choices, lang, onAnswer }: {
+  word: Word; choices: string[]; lang: string; onAnswer: (ok: boolean) => void;
+}) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const correct = correctAnswer(word, lang);
+  const { speak } = useApp();
+
+  // Build the blanked sentence: replace the word (case-insensitive) with underscores
+  const blanked = (word.sentence ?? `The word is ${word.word}.`).replace(
+    new RegExp(`\\b${word.word}\\b`, 'gi'),
+    '___'
+  );
+
+  function pick(c: string) {
+    if (selected) return;
+    setSelected(c);
+    speak(correct, lang, word.id);
+    setTimeout(() => onAnswer(c === correct), 900);
+  }
+
+  return (
+    <div className="w-full max-w-sm mx-auto flex flex-col gap-5">
+      {/* Sentence display */}
+      <div className="rounded-3xl p-5 flex flex-col gap-3" style={{ background: 'var(--surface)', border: '1.5px solid var(--border)' }}>
+        <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--text3)' }}>
+          Fill in the blank
+        </p>
+        <p className="text-base leading-relaxed font-medium" style={{ color: 'var(--text)' }}>
+          {blanked.split('___').map((part, i, arr) => (
+            <span key={i}>
+              {part}
+              {i < arr.length - 1 && (
+                <span
+                  className="inline-block px-2 py-0.5 rounded-lg font-bold mx-1"
+                  style={{
+                    background: selected ? (selected === correct ? 'var(--green-bg)' : 'var(--red-bg)') : 'var(--accent-bg)',
+                    color: selected ? (selected === correct ? 'var(--green)' : 'var(--red)') : 'var(--accent)',
+                    minWidth: '3rem',
+                    textAlign: 'center',
+                  }}
+                >
+                  {selected ? correct : '___'}
+                </span>
+              )}
+            </span>
+          ))}
+        </p>
+        <p className="text-xs" style={{ color: 'var(--text3)' }}>
+          English word: <span className="font-bold" style={{ color: 'var(--text2)' }}>{word.word}</span>
+        </p>
+      </div>
+
+      {/* Choices — what is the translation? */}
+      <p className="text-center text-sm" style={{ color: 'var(--text2)' }}>
+        Which translation fills the blank?
+      </p>
+      <div className="grid grid-cols-2 gap-3">
+        {choices.map(c => {
+          let bg = 'var(--surface)', border = 'var(--border)', color = 'var(--text)';
+          if (selected) {
+            if (c === correct)       { bg = 'var(--green-bg)'; border = 'var(--green)'; color = 'var(--green)'; }
+            else if (c === selected) { bg = 'var(--red-bg)';   border = 'var(--red)';   color = 'var(--red)'; }
+            else                     { color = 'var(--text3)'; }
+          }
+          return (
+            <button key={c} onClick={() => pick(c)}
+              className="p-3 rounded-xl border-2 font-semibold text-sm transition-all"
+              style={{ background: bg, borderColor: border, color }} dir="auto">
+              {c}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 // ─── Main Quiz component ─────────────────────────────────────────────────────
 export function Quiz() {
   const { targetLang, kidsMode, recordQuizResult, isPro } = useApp();
 
   const [pool, setPool] = useState<Word[]>([]);
   const [started, setStarted] = useState(false);
-  const [mode, setMode] = useState<'choice' | 'type' | 'listen'>('choice');
+  const [mode, setMode] = useState<'choice' | 'type' | 'listen' | 'sentence'>('choice');
   const [deck, setDeck] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -369,9 +447,10 @@ export function Quiz() {
       {!kidsMode && (
         <div className="flex rounded-xl overflow-hidden border" style={{ borderColor: 'var(--border)' }}>
           {([
-            { id: 'choice', label: 'Multiple choice', icon: <MousePointer className="w-3.5 h-3.5" /> },
-            { id: 'type',   label: 'Type answer',     icon: <Keyboard className="w-3.5 h-3.5" /> },
-            { id: 'listen', label: 'Listen',           icon: <Volume2 className="w-3.5 h-3.5" /> },
+            { id: 'choice',   label: 'Choice',   icon: <MousePointer className="w-3.5 h-3.5" /> },
+            { id: 'type',     label: 'Type',     icon: <Keyboard className="w-3.5 h-3.5" /> },
+            { id: 'listen',   label: 'Listen',   icon: <Volume2 className="w-3.5 h-3.5" /> },
+            { id: 'sentence', label: 'Sentence', icon: <BookOpen className="w-3.5 h-3.5" /> },
           ] as const).map(({ id, label, icon }) => (
             <button key={id} onClick={() => { setMode(id); restart(); }}
               className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors"
@@ -403,7 +482,9 @@ export function Quiz() {
           ? <McCard key={`mc-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
           : mode === 'type'
           ? <TypeCard key={`type-${deck[index].id}`} word={deck[index]} lang={targetLang} onAnswer={handleAnswer} />
-          : <ListenCard key={`listen-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
+          : mode === 'listen'
+          ? <ListenCard key={`listen-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
+          : <SentenceCard key={`sent-${deck[index].id}`} word={deck[index]} choices={choices} lang={targetLang} onAnswer={handleAnswer} />
       )}
     </div>
   );
