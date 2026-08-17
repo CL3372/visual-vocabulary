@@ -20,4 +20,9 @@ export const LANGUAGES: Language[] = [
   { code: 'cs',    label: 'Czech',                  nativeName: 'Čeština',            flag: '🇨🇿' },
   { code: 'ro',    label: 'Romanian',               nativeName: 'Română',             flag: '🇷🇴' },
   { code: 'nl',    label: 'Dutch',                  nativeName: 'Nederlands',         flag: '🇳🇱' },
+  { code: 'sv',    label: 'Swedish',                nativeName: 'Svenska',            flag: '🇸🇪' },
+  { code: 'el',    label: 'Greek',                  nativeName: 'Ελληνικά',           flag: '🇬🇷' },
+  { code: 'id',    label: 'Indonesian',             nativeName: 'Bahasa Indonesia',   flag: '🇮🇩' },
+  { code: 'vi',    label: 'Vietnamese',             nativeName: 'Tiếng Việt',         flag: '🇻🇳' },
+  { code: 'th',    label: 'Thai',                   nativeName: 'ภาษาไทย',            flag: '🇹🇭' },
 ];
