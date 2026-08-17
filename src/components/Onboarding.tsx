@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Check, ChevronRight, Volume2 } from 'lucide-react';
+import { Bell, BellOff, Check, ChevronRight, Volume2 } from 'lucide-react';
 import { LANGUAGES } from '../data/languages';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { getTranslation } from '../utils/getTranslation';
+import {
+  requestNotificationPermission,
+  scheduleStreakNotification,
+  getNotifHour,
+} from '../utils/notifications';
 import type { Word } from '../types';
 
 // Three universally recognisable demo words
@@ -148,6 +153,114 @@ function DemoCard({ word, lang, active }: { word: Word; lang: string; active: bo
   );
 }
 
+// ── Notification opt-in step ──────────────────────────────────────────────────
+function NotifStep({ onNext, onSkip }: { onNext: () => void; onSkip: () => void }) {
+  const [hour, setHour] = useState(getNotifHour());
+  const [granted, setGranted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  function formatHour(h: number) {
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    const display = h % 12 === 0 ? 12 : h % 12;
+    return `${display}:00 ${ampm}`;
+  }
+
+  async function enable() {
+    setLoading(true);
+    const ok = await requestNotificationPermission();
+    if (ok) {
+      await scheduleStreakNotification(hour);
+      setGranted(true);
+    }
+    setLoading(false);
+  }
+
+  async function confirm() {
+    if (granted) await scheduleStreakNotification(hour);
+    onNext();
+  }
+
+  return (
+    <div
+      className="min-h-screen flex flex-col items-center justify-between px-6 py-12 text-center"
+      style={{ background: 'var(--bg)' }}
+    >
+      <div />
+
+      <div className="flex flex-col items-center gap-6 w-full max-w-xs">
+        <div
+          className="w-20 h-20 rounded-3xl flex items-center justify-center shadow-lg"
+          style={{ background: granted ? 'var(--accent)' : 'var(--surface)' }}
+        >
+          {granted
+            ? <Bell className="w-9 h-9 text-white" />
+            : <BellOff className="w-9 h-9" style={{ color: 'var(--text3)' }} />}
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-black mb-2" style={{ color: 'var(--text)' }}>
+            Never break your streak
+          </h2>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
+            Get a daily nudge to keep your learning streak alive. You can change this any time.
+          </p>
+        </div>
+
+        {!granted ? (
+          <button
+            onClick={enable}
+            disabled={loading}
+            className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff', opacity: loading ? 0.7 : 1 }}
+          >
+            <Bell className="w-5 h-5" />
+            {loading ? 'Requesting…' : 'Turn on reminders'}
+          </button>
+        ) : (
+          <div
+            className="w-full rounded-2xl p-4 flex flex-col gap-3"
+            style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
+          >
+            <div className="flex items-center gap-2" style={{ color: 'var(--accent)' }}>
+              <Check className="w-4 h-4" />
+              <p className="text-sm font-semibold">Reminders enabled</p>
+            </div>
+            <div className="flex items-center justify-between">
+              <p className="text-sm" style={{ color: 'var(--text2)' }}>Remind me at</p>
+              <select
+                value={hour}
+                onChange={e => setHour(Number(e.target.value))}
+                className="px-3 py-1.5 rounded-xl text-sm font-medium"
+                style={{ background: 'var(--surface2)', color: 'var(--text)', border: '1px solid var(--border)' }}
+              >
+                {Array.from({ length: 24 }, (_, i) => (
+                  <option key={i} value={i}>{formatHour(i)}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="flex flex-col items-center gap-3 w-full max-w-xs">
+        <Dots total={5} current={3} />
+        <button
+          onClick={confirm}
+          className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+          style={{ background: 'var(--accent)', color: '#fff' }}
+        >
+          {granted ? 'Done' : 'Continue'} <ChevronRight className="w-5 h-5" />
+        </button>
+        {!granted && (
+          <button onClick={onSkip} className="text-sm" style={{ color: 'var(--text3)' }}>
+            Skip for now
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 interface Props {
   onComplete: (lang: string, startCategory: string) => void;
 }
@@ -207,7 +320,7 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-          <Dots total={4} current={0} />
+          <Dots total={5} current={0} />
           <button
             onClick={() => setStep(1)}
             className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
@@ -262,7 +375,7 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="mt-5 flex flex-col items-center gap-3">
-          <Dots total={4} current={1} />
+          <Dots total={5} current={1} />
           <button
             onClick={() => setStep(2)}
             className="w-full max-w-xs py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
@@ -277,6 +390,7 @@ export function Onboarding({ onComplete }: Props) {
 
   // ── Step 2: Demo – try 3 cards ────────────────────────────────────────────
   if (step === 2) {
+
     const word = DEMO_WORDS[demoIndex];
     const isLast = demoIndex === DEMO_WORDS.length - 1;
     const langLabel = LANGUAGES.find(l => l.code === lang)?.label ?? lang;
@@ -316,7 +430,7 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="mt-6 flex flex-col items-center gap-3 w-full max-w-xs">
-          <Dots total={4} current={2} />
+          <Dots total={5} current={2} />
           <button
             onClick={() => {
               if (isLast) setStep(3);
@@ -325,7 +439,7 @@ export function Onboarding({ onComplete }: Props) {
             className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
             style={{ background: 'var(--accent)', color: '#fff' }}
           >
-            {isLast ? 'Finish' : 'Next word'} <ChevronRight className="w-5 h-5" />
+            {isLast ? 'Next' : 'Next word'} <ChevronRight className="w-5 h-5" />
           </button>
           {step === 2 && (
             <button
@@ -341,7 +455,12 @@ export function Onboarding({ onComplete }: Props) {
     );
   }
 
-  // ── Step 3: You're set ────────────────────────────────────────────────────
+  // ── Step 3: Streak notifications ─────────────────────────────────────────
+  if (step === 3) {
+    return <NotifStep onNext={() => setStep(4)} onSkip={finish} />;
+  }
+
+  // ── Step 4: You're set ────────────────────────────────────────────────────
   const langObj = LANGUAGES.find(l => l.code === lang);
   return (
     <div
@@ -382,7 +501,7 @@ export function Onboarding({ onComplete }: Props) {
       </div>
 
       <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-        <Dots total={4} current={3} />
+        <Dots total={5} current={4} />
         <button
           onClick={finish}
           className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
