@@ -1,5 +1,5 @@
 import { useState, useTransition, useMemo, useCallback } from 'react';
-import { Search, Heart, LayoutGrid, Grid3x3, List } from 'lucide-react';
+import { Search, Heart, LayoutGrid, Grid3x3, List, Lock, Zap } from 'lucide-react';
 import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
 import type { CategoryGroup } from '../data/words';
 import { WordCard } from '../components/WordCard';
@@ -8,6 +8,7 @@ import { WordModal } from '../components/WordModal';
 import { WordOfDay } from '../components/WordOfDay';
 import { CuisineOfTheWeek } from '../components/CuisineOfTheWeek';
 import { useApp } from '../context/AppContext';
+import { UpgradeModal } from '../components/UpgradeModal';
 import type { Word } from '../types';
 
 const KIDS_CATEGORIES = ['Animals', 'Fruits', 'Vegetables', 'Dairy & Eggs', 'Desserts', 'Nature', 'Colors', 'Home'];
@@ -98,7 +99,8 @@ function getCategoryGroup(cat: string): CategoryGroup {
 }
 
 export function Browse({ initialCategory }: { initialCategory?: string }) {
-  const { kidsMode, favorites, markWordSeen } = useApp();
+  const { kidsMode, favorites, markWordSeen, newWordsToday, dailyWordLimit, isPro, seenWords } = useApp();
+  const [showUpgrade, setShowUpgrade] = useState(false);
   const [, startTransition] = useTransition();
   const [search, setSearch] = useState('');
   const [activeGroup, setActiveGroup] = useState<CategoryGroup>(initialCategory ? 'Cuisines' : 'All');
@@ -159,9 +161,14 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   }), [kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
 
   const handleSelect = useCallback((word: Word) => {
+    const isNew = !seenWords.has(word.id);
+    if (isNew && !isPro && newWordsToday >= dailyWordLimit) {
+      setShowUpgrade(true);
+      return;
+    }
     markWordSeen(word.id);
     setSelected(word);
-  }, [markWordSeen]);
+  }, [markWordSeen, seenWords, isPro, newWordsToday, dailyWordLimit]);
 
   // Derive group from active category for the header color
   const activeCategoryGroup = activeCategory === 'All' ? activeGroup : getCategoryGroup(activeCategory);
@@ -397,6 +404,22 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
       </div>
 
       {selected && <WordModal word={selected} onClose={() => setSelected(null)} />}
+      {showUpgrade && <UpgradeModal onClose={() => setShowUpgrade(false)} reason="You've discovered 20 new words today — upgrade to Pro for unlimited daily learning" />}
+
+      {!isPro && newWordsToday >= dailyWordLimit && (
+        <div className="fixed bottom-20 left-0 right-0 mx-4 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-lg"
+          style={{ background: 'linear-gradient(135deg, #4f46e5, #7c3aed)', color: '#fff' }}>
+          <div className="flex items-center gap-2">
+            <Lock className="w-4 h-4 flex-shrink-0" />
+            <p className="text-sm font-medium">20 new words discovered today</p>
+          </div>
+          <button onClick={() => setShowUpgrade(true)}
+            className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold flex-shrink-0"
+            style={{ background: 'rgba(255,255,255,0.25)' }}>
+            <Zap className="w-3 h-3" /> Upgrade
+          </button>
+        </div>
+      )}
     </div>
   );
 }

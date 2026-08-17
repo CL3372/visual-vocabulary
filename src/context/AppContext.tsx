@@ -37,6 +37,8 @@ interface AppContextType {
   quizHistory: QuizResult[];
   recordQuizResult: (score: number, total: number) => void;
   markWordSeen: (id: string) => void;
+  newWordsToday: number;
+  dailyWordLimit: number;
   // SRS
   srsData: Record<string, SRSCard>;
   rateCard: (wordId: string, grade: 1 | 4 | 5) => void;
@@ -147,6 +149,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [kidsMode, setKidsMode] = useState(() => load('vv-kids', false));
   const [favorites, setFavorites] = useState<Set<string>>(() => new Set(load<string[]>('vv-favs', [])));
   const [seenWords, setSeenWords] = useState<Set<string>>(() => new Set(load<string[]>('vv-seen', [])));
+  const todayKey = new Date().toISOString().slice(0, 10);
+  const [newWordsToday, setNewWordsToday] = useState<number>(() => {
+    const saved = localStorage.getItem(`vv-new-words-${todayKey}`);
+    return saved ? parseInt(saved, 10) : 0;
+  });
   const [quizHistory, setQuizHistory] = useState<QuizResult[]>(() => load('vv-history', []));
   const [streak, setStreak] = useState(() => load('vv-streak', 0));
   const [bestStreak, setBestStreak] = useState(() => load('vv-best-streak', 0));
@@ -338,6 +345,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
       save('vv-seen', [...next]);
       addXp(1);
       checkBadges(buildStats({ totalSeen: next.size }));
+      setNewWordsToday(n => {
+        const updated = n + 1;
+        localStorage.setItem(`vv-new-words-${new Date().toISOString().slice(0, 10)}`, String(updated));
+        return updated;
+      });
       return next;
     });
   }, [addXp, checkBadges, buildStats]);
@@ -436,6 +448,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       speak, audioSource,
       streak, bestStreak, totalSeen: seenWords.size, seenWords, quizHistory,
       recordQuizResult, markWordSeen,
+      newWordsToday, dailyWordLimit: isPro ? Infinity : 20,
       srsData, rateCard, srsDueCount,
       isPro, activatePro,
       lastPlayDate,
