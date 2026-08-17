@@ -356,9 +356,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const dailyGoal = parseInt(localStorage.getItem('vv-daily-goal') ?? '10', 10);
 
-  const displayName = user?.user_metadata?.full_name
+  const displayName = (user?.user_metadata?.full_name
     ?? user?.user_metadata?.name
-    ?? (user?.email ? user.email.split('@')[0] : '');
+    ?? (user?.email ? user.email.split('@')[0] : ''))
+    || localStorage.getItem('vv-display-name')
+    || '';
 
   const { pushSrsCard } = useCloudSync(user, {
     streak, bestStreak, lastPlayDate, targetLang, dailyGoal, isPro, seenWords, favorites, xp, displayName,

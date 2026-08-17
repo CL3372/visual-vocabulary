@@ -243,7 +243,7 @@ function NotifStep({ onNext, onSkip }: { onNext: () => void; onSkip: () => void 
       </div>
 
       <div className="flex flex-col items-center gap-3 w-full max-w-xs">
-        <Dots total={5} current={3} />
+        <Dots total={8} current={6} />
         <button
           onClick={confirm}
           className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
@@ -267,12 +267,20 @@ interface Props {
 
 export function Onboarding({ onComplete }: Props) {
   const [step, setStep] = useState(0);
+  const [name, setName] = useState('');
   const [lang, setLang] = useState('es');
+  const [skillLevel, setSkillLevel] = useState<'beginner' | 'some' | 'advanced'>('beginner');
+  const [dailyGoal, setDailyGoal] = useState(10);
   const [demoIndex, setDemoIndex] = useState(0);
 
   function finish() {
+    if (name.trim()) localStorage.setItem('vv-display-name', name.trim());
+    localStorage.setItem('vv-skill-level', skillLevel);
+    localStorage.setItem('vv-daily-goal', String(dailyGoal));
     onComplete(lang, '');
   }
+
+  const TOTAL = 8;
 
   // ── Step 0: Welcome ──────────────────────────────────────────────────────
   if (step === 0) {
@@ -320,7 +328,7 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-          <Dots total={5} current={0} />
+          <Dots total={TOTAL} current={0} />
           <button
             onClick={() => setStep(1)}
             className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
@@ -333,19 +341,60 @@ export function Onboarding({ onComplete }: Props) {
     );
   }
 
-  // ── Step 1: Language picker ───────────────────────────────────────────────
+  // ── Step 1: Name ─────────────────────────────────────────────────────────
   if (step === 1) {
-    // Exclude English (you learn English words, not learn IN English here)
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-between px-6 py-12" style={{ background: 'var(--bg)' }}>
+        <div />
+        <div className="flex flex-col items-center gap-6 w-full max-w-xs">
+          <div className="text-6xl">👋</div>
+          <div className="text-center">
+            <h2 className="text-3xl font-black mb-2" style={{ color: 'var(--text)' }}>What's your name?</h2>
+            <p className="text-base" style={{ color: 'var(--text2)' }}>We'll personalise your experience.</p>
+          </div>
+          <input
+            type="text"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && setStep(2)}
+            placeholder="Your first name"
+            maxLength={30}
+            autoFocus
+            className="w-full px-4 py-4 rounded-2xl text-base font-semibold text-center outline-none transition-all"
+            style={{
+              background: 'var(--surface)',
+              border: '1.5px solid var(--border)',
+              color: 'var(--text)',
+            }}
+          />
+        </div>
+        <div className="flex flex-col items-center gap-3 w-full max-w-xs">
+          <Dots total={TOTAL} current={1} />
+          <button
+            onClick={() => setStep(2)}
+            className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            Continue <ChevronRight className="w-5 h-5" />
+          </button>
+          <button onClick={() => setStep(2)} className="text-sm" style={{ color: 'var(--text3)' }}>
+            Skip
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Step 2: Language picker ───────────────────────────────────────────────
+  if (step === 2) {
     const learnable = LANGUAGES.filter(l => l.code !== 'en');
     return (
       <div className="min-h-screen flex flex-col px-5 py-10" style={{ background: 'var(--bg)' }}>
         <div className="mb-5">
           <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>
-            What do you want to learn?
+            {name.trim() ? `Hi ${name.trim()}! What do you want to learn?` : 'What do you want to learn?'}
           </h2>
-          <p className="text-sm" style={{ color: 'var(--text2)' }}>
-            You can change this any time.
-          </p>
+          <p className="text-sm" style={{ color: 'var(--text2)' }}>You can change this any time.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-2 flex-1 overflow-y-auto">
@@ -375,9 +424,9 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="mt-5 flex flex-col items-center gap-3">
-          <Dots total={5} current={1} />
+          <Dots total={TOTAL} current={2} />
           <button
-            onClick={() => setStep(2)}
+            onClick={() => setStep(3)}
             className="w-full max-w-xs py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
             style={{ background: 'var(--accent)', color: '#fff' }}
           >
@@ -388,9 +437,116 @@ export function Onboarding({ onComplete }: Props) {
     );
   }
 
-  // ── Step 2: Demo – try 3 cards ────────────────────────────────────────────
-  if (step === 2) {
+  // ── Step 3: Skill level ───────────────────────────────────────────────────
+  if (step === 3) {
+    const langLabel = LANGUAGES.find(l => l.code === lang)?.label ?? lang;
+    const levels = [
+      { id: 'beginner' as const, emoji: '🌱', title: 'Complete beginner', desc: `I know little to no ${langLabel}` },
+      { id: 'some' as const, emoji: '📖', title: 'Know some basics', desc: 'I know a few words or phrases' },
+      { id: 'advanced' as const, emoji: '🚀', title: 'Intermediate+', desc: 'I can hold a basic conversation' },
+    ];
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-between px-6 py-12" style={{ background: 'var(--bg)' }}>
+        <div />
+        <div className="flex flex-col gap-5 w-full max-w-xs">
+          <div className="text-center">
+            <h2 className="text-3xl font-black mb-2" style={{ color: 'var(--text)' }}>Your {langLabel} level?</h2>
+            <p className="text-base" style={{ color: 'var(--text2)' }}>We'll tailor your experience.</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            {levels.map(({ id, emoji, title, desc }) => {
+              const active = skillLevel === id;
+              return (
+                <button
+                  key={id}
+                  onClick={() => setSkillLevel(id)}
+                  className="flex items-center gap-4 p-4 rounded-2xl text-left transition-all active:scale-95"
+                  style={{
+                    background: active ? 'var(--accent-bg)' : 'var(--surface)',
+                    border: `1.5px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+                  }}
+                >
+                  <span className="text-3xl">{emoji}</span>
+                  <div className="flex-1">
+                    <p className="font-bold text-sm" style={{ color: active ? 'var(--accent)' : 'var(--text)' }}>{title}</p>
+                    <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>{desc}</p>
+                  </div>
+                  {active && <Check className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--accent)' }} />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col items-center gap-3 w-full max-w-xs">
+          <Dots total={TOTAL} current={3} />
+          <button
+            onClick={() => setStep(4)}
+            className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            Continue <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    );
+  }
 
+  // ── Step 4: Daily goal ────────────────────────────────────────────────────
+  if (step === 4) {
+    const goals = [
+      { value: 5,  emoji: '🌿', label: 'Casual',   desc: '5 words/day — just keep it going' },
+      { value: 10, emoji: '⚡', label: 'Regular',  desc: '10 words/day — steady progress' },
+      { value: 20, emoji: '🔥', label: 'Intense',  desc: '20 words/day — serious learner' },
+      { value: 30, emoji: '💪', label: 'Champion', desc: '30 words/day — go all in' },
+    ];
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-between px-6 py-12" style={{ background: 'var(--bg)' }}>
+        <div />
+        <div className="flex flex-col gap-5 w-full max-w-xs">
+          <div className="text-center">
+            <h2 className="text-3xl font-black mb-2" style={{ color: 'var(--text)' }}>Set your daily goal</h2>
+            <p className="text-base" style={{ color: 'var(--text2)' }}>How many new words per day?</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            {goals.map(({ value, emoji, label, desc }) => {
+              const active = dailyGoal === value;
+              return (
+                <button
+                  key={value}
+                  onClick={() => setDailyGoal(value)}
+                  className="flex items-center gap-4 p-4 rounded-2xl text-left transition-all active:scale-95"
+                  style={{
+                    background: active ? 'var(--accent-bg)' : 'var(--surface)',
+                    border: `1.5px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+                  }}
+                >
+                  <span className="text-3xl">{emoji}</span>
+                  <div className="flex-1">
+                    <p className="font-bold text-sm" style={{ color: active ? 'var(--accent)' : 'var(--text)' }}>{label}</p>
+                    <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>{desc}</p>
+                  </div>
+                  {active && <Check className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--accent)' }} />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col items-center gap-3 w-full max-w-xs">
+          <Dots total={TOTAL} current={4} />
+          <button
+            onClick={() => setStep(5)}
+            className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
+            style={{ background: 'var(--accent)', color: '#fff' }}
+          >
+            Continue <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Step 5: Demo – try 3 cards ────────────────────────────────────────────
+  if (step === 5) {
     const word = DEMO_WORDS[demoIndex];
     const isLast = demoIndex === DEMO_WORDS.length - 1;
     const langLabel = LANGUAGES.find(l => l.code === lang)?.label ?? lang;
@@ -409,7 +565,6 @@ export function Onboarding({ onComplete }: Props) {
           </p>
         </div>
 
-        {/* Progress dots for cards */}
         <div className="flex gap-2 mb-5">
           {DEMO_WORDS.map((_, i) => (
             <div
@@ -418,7 +573,7 @@ export function Onboarding({ onComplete }: Props) {
               style={{
                 width: i === demoIndex ? 20 : 8,
                 height: 8,
-                background: i < demoIndex ? 'var(--accent)' : i === demoIndex ? 'var(--accent)' : 'var(--border)',
+                background: i <= demoIndex ? 'var(--accent)' : 'var(--border)',
                 opacity: i < demoIndex ? 0.4 : 1,
               }}
             />
@@ -430,10 +585,10 @@ export function Onboarding({ onComplete }: Props) {
         </div>
 
         <div className="mt-6 flex flex-col items-center gap-3 w-full max-w-xs">
-          <Dots total={5} current={2} />
+          <Dots total={TOTAL} current={5} />
           <button
             onClick={() => {
-              if (isLast) setStep(3);
+              if (isLast) setStep(6);
               else setDemoIndex(i => i + 1);
             }}
             className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
@@ -441,26 +596,20 @@ export function Onboarding({ onComplete }: Props) {
           >
             {isLast ? 'Next' : 'Next word'} <ChevronRight className="w-5 h-5" />
           </button>
-          {step === 2 && (
-            <button
-              onClick={finish}
-              className="text-sm"
-              style={{ color: 'var(--text3)' }}
-            >
-              Skip demo
-            </button>
-          )}
+          <button onClick={finish} className="text-sm" style={{ color: 'var(--text3)' }}>
+            Skip demo
+          </button>
         </div>
       </div>
     );
   }
 
-  // ── Step 3: Streak notifications ─────────────────────────────────────────
-  if (step === 3) {
-    return <NotifStep onNext={() => setStep(4)} onSkip={finish} />;
+  // ── Step 6: Streak notifications ─────────────────────────────────────────
+  if (step === 6) {
+    return <NotifStep onNext={() => setStep(7)} onSkip={() => setStep(7)} />;
   }
 
-  // ── Step 4: You're set ────────────────────────────────────────────────────
+  // ── Step 7: You're set ────────────────────────────────────────────────────
   const langObj = LANGUAGES.find(l => l.code === lang);
   return (
     <div
@@ -501,7 +650,7 @@ export function Onboarding({ onComplete }: Props) {
       </div>
 
       <div className="flex flex-col items-center gap-4 w-full max-w-xs">
-        <Dots total={5} current={4} />
+        <Dots total={TOTAL} current={7} />
         <button
           onClick={finish}
           className="w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-95"
