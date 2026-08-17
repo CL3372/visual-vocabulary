@@ -5,6 +5,7 @@ import { ALL_WORDS } from '../data/words';
 import { WrappedStats } from '../components/WrappedStats';
 import { UpgradeModal } from '../components/UpgradeModal';
 import { Leaderboard } from '../components/Leaderboard';
+import { NotificationSettings } from '../components/NotificationSettings';
 
 const TOTAL_WORDS = ALL_WORDS.length;
 
@@ -292,6 +293,9 @@ export function Progress() {
 
       {/* Leaderboard */}
       <Leaderboard />
+
+      {/* Notifications */}
+      <NotificationSettings />
 
       {/* Quiz history */}
       {quizHistory.length > 0 && (
