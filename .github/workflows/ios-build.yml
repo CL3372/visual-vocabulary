@@ -33,15 +33,36 @@ jobs:
 
       - name: Patch Xcode signing settings
         run: |
-          PBXPROJ="ios/App/App.xcodeproj/project.pbxproj"
-          sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' "$PBXPROJ"
-          sed -i '' 's/CODE_SIGN_IDENTITY = "iPhone Developer";/CODE_SIGN_IDENTITY = "iPhone Distribution";/g' "$PBXPROJ"
-          sed -i '' '/PROVISIONING_PROFILE_SPECIFIER/d' "$PBXPROJ"
-          sed -i '' '/PROVISIONING_PROFILE = /d' "$PBXPROJ"
-          sed -i '' '/DEVELOPMENT_TEAM = /d' "$PBXPROJ"
-          sed -i '' 's/PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;/PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app; DEVELOPMENT_TEAM = NT793MJZMN; PROVISIONING_PROFILE = "b16426b9-8257-444d-a3e7-c8bb16cb0166";/g' "$PBXPROJ"
-          echo "--- Signing settings ---"
-          grep -E "CODE_SIGN|DEVELOPMENT_TEAM|PROVISIONING" "$PBXPROJ"
+          python3 << 'PYEOF'
+          import re
+
+          path = "ios/App/App.xcodeproj/project.pbxproj"
+          with open(path, "r") as f:
+              content = f.read()
+
+          content = content.replace("CODE_SIGN_STYLE = Automatic;", "CODE_SIGN_STYLE = Manual;")
+          content = content.replace('CODE_SIGN_IDENTITY = "iPhone Developer";', 'CODE_SIGN_IDENTITY = "iPhone Distribution";')
+          content = re.sub(r'\s*PROVISIONING_PROFILE_SPECIFIER = [^;]+;', '', content)
+          content = re.sub(r'\s*PROVISIONING_PROFILE = [^;]+;', '', content)
+          content = re.sub(r'\s*DEVELOPMENT_TEAM = [^;]+;', '', content)
+
+          inject = (
+              '\n\t\t\t\tDEVELOPMENT_TEAM = NT793MJZMN;'
+              '\n\t\t\t\tPROVISIONING_PROFILE = "b16426b9-8257-444d-a3e7-c8bb16cb0166";'
+          )
+          content = content.replace(
+              "PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;",
+              "PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;" + inject
+          )
+
+          with open(path, "w") as f:
+              f.write(content)
+
+          print("Done. Signing settings now:")
+          for line in content.splitlines():
+              if any(k in line for k in ["CODE_SIGN", "DEVELOPMENT_TEAM", "PROVISIONING"]):
+                  print(line)
+          PYEOF
 
       - name: Install Apple certificate and provisioning profile
         env:
