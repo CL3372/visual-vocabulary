@@ -31,6 +31,24 @@ jobs:
       - name: Sync Capacitor iOS
         run: npx cap sync ios
 
+      - name: Patch Xcode project signing settings
+        run: |
+          PBXPROJ="ios/App/App.xcodeproj/project.pbxproj"
+          # Switch to manual signing
+          sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' $PBXPROJ
+          # Set distribution identity
+          sed -i '' 's/CODE_SIGN_IDENTITY = "iPhone Developer";/CODE_SIGN_IDENTITY = "iPhone Distribution";/g' $PBXPROJ
+          # Remove any existing PROVISIONING_PROFILE_SPECIFIER lines
+          sed -i '' '/PROVISIONING_PROFILE_SPECIFIER/d' $PBXPROJ
+          # Inject team + profile UUID into Release config (after PRODUCT_BUNDLE_IDENTIFIER line)
+          sed -i '' '/PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;/{
+            a\
+				DEVELOPMENT_TEAM = NT793MJZMN;\
+				PROVISIONING_PROFILE = "b16426b9-8257-444d-a3e7-c8bb16cb0166";
+          }' $PBXPROJ
+          echo "--- Signing settings after patch ---"
+          grep -E "CODE_SIGN|DEVELOPMENT_TEAM|PROVISIONING_PROFILE" $PBXPROJ
+
       - name: Install Apple certificate and provisioning profile
         env:
           IOS_CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64 }}
@@ -72,7 +90,6 @@ jobs:
             -archivePath $RUNNER_TEMP/LexPix.xcarchive \
             DEVELOPMENT_TEAM=$IOS_TEAM_ID \
             CODE_SIGN_STYLE=Manual \
-            PROVISIONING_PROFILE="b16426b9-8257-444d-a3e7-c8bb16cb0166" \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
             archive 2>&1 | tee /tmp/xcodebuild.log
           echo "Archive exit code: $?"
