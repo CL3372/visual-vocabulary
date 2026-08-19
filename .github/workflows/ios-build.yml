@@ -41,6 +41,7 @@ jobs:
               content = f.read()
 
           content = content.replace("CODE_SIGN_STYLE = Automatic;", "CODE_SIGN_STYLE = Manual;")
+          content = content.replace("ProvisioningStyle = Automatic;", "ProvisioningStyle = Manual;")
           content = content.replace('CODE_SIGN_IDENTITY = "iPhone Developer";', 'CODE_SIGN_IDENTITY = "Apple Distribution";')
           content = re.sub(r'\s*PROVISIONING_PROFILE_SPECIFIER = [^;]+;', '', content)
           content = re.sub(r'\s*PROVISIONING_PROFILE = [^;]+;', '', content)
