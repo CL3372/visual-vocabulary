@@ -125,6 +125,11 @@ jobs:
             <string>NT793MJZMN</string>
             <key>provisioningProfileSpecifier</key>
             <string>LexPix AppStore</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>io.lexpix.app</key>
+              <string>b16426b9-8257-444d-a3e7-c8bb16cb0166</string>
+            </dict>
             <key>signingCertificate</key>
             <string>Apple Distribution</string>
             <key>uploadBitcode</key>
