@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.visualvocabulary.app',
-  appName: 'Visual Vocabulary',
+  appId: 'io.lexpix.app',
+  appName: 'LexPix',
   webDir: 'dist'
 };
 
