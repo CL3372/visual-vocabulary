@@ -40,17 +40,23 @@ jobs:
           with open(path, "r") as f:
               content = f.read()
 
-          content = content.replace("CODE_SIGN_STYLE = Automatic;", "CODE_SIGN_STYLE = Manual;")
+          # Fix ProvisioningStyle in TargetAttributes
           content = content.replace("ProvisioningStyle = Automatic;", "ProvisioningStyle = Manual;")
+          # Fix CODE_SIGN_STYLE
+          content = content.replace("CODE_SIGN_STYLE = Automatic;", "CODE_SIGN_STYLE = Manual;")
+          # Fix CODE_SIGN_IDENTITY
           content = content.replace('CODE_SIGN_IDENTITY = "iPhone Developer";', 'CODE_SIGN_IDENTITY = "Apple Distribution";')
+          # Remove any existing profile/team settings to avoid conflicts
           content = re.sub(r'\s*PROVISIONING_PROFILE_SPECIFIER = [^;]+;', '', content)
           content = re.sub(r'\s*PROVISIONING_PROFILE = [^;]+;', '', content)
           content = re.sub(r'\s*DEVELOPMENT_TEAM = [^;]+;', '', content)
 
+          # Inject into Release target config only (504EC3181FED79650016851F)
           inject = (
               '\n\t\t\t\tDEVELOPMENT_TEAM = NT793MJZMN;'
-              '\n\t\t\t\tPROVISIONING_PROFILE = "b16426b9-8257-444d-a3e7-c8bb16cb0166";'
+              '\n\t\t\t\tPROVISIONING_PROFILE_SPECIFIER = "LexPix AppStore";'
           )
+          # Replace in Release config block (identified by MARKETING_VERSION near PRODUCT_BUNDLE_IDENTIFIER)
           content = content.replace(
               "PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;",
               "PRODUCT_BUNDLE_IDENTIFIER = io.lexpix.app;" + inject
@@ -59,9 +65,9 @@ jobs:
           with open(path, "w") as f:
               f.write(content)
 
-          print("Done. Signing settings now:")
+          print("Patched. Signing settings:")
           for line in content.splitlines():
-              if any(k in line for k in ["CODE_SIGN", "DEVELOPMENT_TEAM", "PROVISIONING"]):
+              if any(k in line for k in ["CODE_SIGN", "DEVELOPMENT_TEAM", "PROVISIONING", "ProvisioningStyle"]):
                   print(line)
           PYEOF
 
@@ -79,25 +85,13 @@ jobs:
           echo "$IOS_CERTIFICATE_BASE64" | base64 --decode > $RUNNER_TEMP/certificate.p12
           security import $RUNNER_TEMP/certificate.p12 -P "$IOS_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
           security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          # Add our keychain to the search list WITHOUT removing the login keychain
           security list-keychain -d user -s $KEYCHAIN_PATH login.keychain-db
-          echo "=== Certificates in keychain ==="
-          security find-identity -v -p codesigning $KEYCHAIN_PATH
+          echo "=== Certificates ==="
+          security find-identity -v -p codesigning
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           echo "$IOS_PROVISIONING_PROFILE_BASE64" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/b16426b9-8257-444d-a3e7-c8bb16cb0166.mobileprovision
-          echo "=== Installed profiles ==="
-          ls -la ~/Library/MobileDevice/Provisioning\ Profiles/
-          echo "=== Profile UUID check ==="
-          strings ~/Library/MobileDevice/Provisioning\ Profiles/b16426b9-8257-444d-a3e7-c8bb16cb0166.mobileprovision | grep -E "UUID|Name|TeamIdentifier" | head -10
-
-      - name: Verify signing state before build
-        run: |
-          echo "=== pbxproj signing lines ==="
-          grep -n "CODE_SIGN\|PROVISIONING\|DEVELOPMENT_TEAM\|ProvisioningStyle" ios/App/App.xcodeproj/project.pbxproj
-          echo "=== Available signing identities ==="
-          security find-identity -v -p codesigning
-          echo "=== Installed provisioning profiles ==="
-          ls -la ~/Library/MobileDevice/Provisioning\ Profiles/ 2>/dev/null || echo "No profiles directory"
+          echo "=== Profiles ==="
+          ls ~/Library/MobileDevice/Provisioning\ Profiles/
 
       - name: Build iOS app (signed)
         env:
@@ -113,7 +107,7 @@ jobs:
             DEVELOPMENT_TEAM=$IOS_TEAM_ID \
             CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="Apple Distribution" \
-            PROVISIONING_PROFILE="b16426b9-8257-444d-a3e7-c8bb16cb0166" \
+            PROVISIONING_PROFILE_SPECIFIER="LexPix AppStore" \
             archive 2>&1 | tee /tmp/xcodebuild.log
           ls -la $RUNNER_TEMP/LexPix.xcarchive || echo "Archive NOT created"
 
