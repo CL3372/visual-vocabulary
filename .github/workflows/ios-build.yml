@@ -58,6 +58,7 @@ jobs:
         env:
           IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
         run: |
+          set -o pipefail
           xcodebuild \
             -workspace ios/App/App.xcworkspace \
             -scheme App \
@@ -68,10 +69,13 @@ jobs:
             CODE_SIGN_STYLE=Manual \
             PROVISIONING_PROFILE_SPECIFIER="LexPix AppStore" \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
-            archive | xcpretty
+            archive 2>&1 | tee /tmp/xcodebuild.log
+          echo "Archive exit code: $?"
+          ls -la $RUNNER_TEMP/LexPix.xcarchive || echo "Archive NOT created"
 
       - name: Export IPA
         run: |
+          set -o pipefail
           cat > $RUNNER_TEMP/ExportOptions.plist << EOF
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -92,7 +96,8 @@ jobs:
           xcodebuild -exportArchive \
             -archivePath $RUNNER_TEMP/LexPix.xcarchive \
             -exportOptionsPlist $RUNNER_TEMP/ExportOptions.plist \
-            -exportPath $RUNNER_TEMP/export | xcpretty
+            -exportPath $RUNNER_TEMP/export 2>&1
+          ls -la $RUNNER_TEMP/export/ || echo "Export folder empty"
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
