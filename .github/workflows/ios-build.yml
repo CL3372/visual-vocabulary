@@ -33,6 +33,8 @@ jobs:
 
       - name: Verify web assets copied
         run: |
+          echo "=== Copying fresh dist to ios public ==="
+          cp -r dist/. ios/App/App/public/
           echo "=== index.html tail ==="
           tail -5 ios/App/App/public/index.html
           echo "=== assets ==="
