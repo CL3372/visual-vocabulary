@@ -25,6 +25,11 @@ jobs:
       - name: Build web app
         run: npm run build
 
+      - name: Check dist index.html
+        run: |
+          echo "=== dist/index.html tail ==="
+          tail -10 dist/index.html
+
       - name: Install Capacitor CLI
         run: npm install -g @capacitor/cli
 
