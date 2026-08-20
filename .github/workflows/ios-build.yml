@@ -36,16 +36,6 @@ jobs:
       - name: Sync Capacitor iOS
         run: npx cap sync ios
 
-      - name: Verify web assets copied
-        run: |
-          echo "=== Overwriting index.html and assets from dist ==="
-          cp dist/index.html ios/App/App/public/index.html
-          cp dist/assets/* ios/App/App/public/assets/
-          echo "=== index.html tail ==="
-          tail -5 ios/App/App/public/index.html
-          echo "=== assets ==="
-          ls ios/App/App/public/assets/
-
       - name: Patch Xcode signing settings
         run: |
           python3 << 'PYEOF'
@@ -107,6 +97,24 @@ jobs:
           echo "$IOS_PROVISIONING_PROFILE_BASE64" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/b16426b9-8257-444d-a3e7-c8bb16cb0166.mobileprovision
           echo "=== Profiles ==="
           ls ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: Replace iOS public with dist output (safe copy)
+        run: |
+          set -euo pipefail
+          SRC="dist"
+          DEST="ios/App/App/public"
+          test -f "$SRC/index.html" || { echo "Missing $SRC/index.html"; exit 1; }
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -R "$SRC/." "$DEST/"
+          echo "=== verify copied index includes module script ==="
+          grep -n '<script type="module"' "$DEST/index.html" || {
+            echo "ERROR: module script missing in copied index.html"
+            tail -n 30 "$SRC/index.html"
+            exit 1
+          }
+          echo "=== copied assets ==="
+          ls -la "$DEST/assets"
 
       - name: Build iOS app (signed)
         env:
