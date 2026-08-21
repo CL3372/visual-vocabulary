@@ -26,6 +26,9 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_PEXELS_API_KEY: ${{ secrets.VITE_PEXELS_API_KEY }}
+          VITE_STRIPE_PAYMENT_LINK: ${{ secrets.VITE_STRIPE_PAYMENT_LINK }}
+          VITE_STRIPE_ANNUAL_LINK: ${{ secrets.VITE_STRIPE_ANNUAL_LINK }}
         run: npm run build
 
       - name: Check dist index.html
