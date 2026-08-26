@@ -3,6 +3,7 @@ import type { User } from '@supabase/supabase-js';
 import type { SRSCard } from '../types';
 import { useAuth } from '../hooks/useAuth';
 import { useCloudSync } from '../hooks/useCloudSync';
+import { useIAP } from '../hooks/useIAP';
 import { computeNewBadges, type BadgeDef, type BadgeStats, type EarnedBadge } from '../data/badges';
 
 const LANG_LOCALES: Record<string, string> = {
@@ -127,13 +128,23 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const { user, signOut } = useAuth();
   const [isPro, setIsPro] = useState(() => load('vv-pro', false));
 
+  // Native iOS Pro status comes from StoreKit via RevenueCat, not Stripe —
+  // see src/hooks/useIAP.ts for why (App Store Guideline 3.1.1). On the web
+  // build isNativeIOS is false and this is a no-op.
+  const { isProFromIAP, isNativeIOS, linkIdentity } = useIAP();
+  const isProCombined = isPro || isProFromIAP;
+
   const activatePro = useCallback((token: string) => {
     save('vv-pro', true);
     save('vv-pro-token', token);
     setIsPro(true);
   }, []);
 
-  // Detect Stripe success redirect (?pro_success=true in URL)
+  // Detect Stripe success redirect (?pro_success=true in URL).
+  // This only makes sense on the web build — on native iOS, upgrades go
+  // through useIAP's purchase() instead. Note this trusts the redirect
+  // param without a server-side check; that's a pre-existing gap worth
+  // hardening separately (see the LexPix project doc).
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get('pro_success') === 'true') {
@@ -142,6 +153,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
       window.history.replaceState({}, '', window.location.pathname);
     }
   }, [activatePro]);
+
+  // Link the RevenueCat anonymous user to our real Supabase user id once
+  // both are available, so a purchase made on this device is attributable
+  // to this account (needed for cross-device entitlement sync later).
+  useEffect(() => {
+    if (isNativeIOS && user?.id) linkIdentity(user.id);
+  }, [isNativeIOS, user?.id, linkIdentity]);
 
   const [audioSource, setAudioSource] = useState<'wavenet' | 'webspeech' | null>(null);
   const [targetLang, setTargetLangRaw] = useState(() => load('vv-lang', 'es'));
@@ -363,7 +381,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     || '';
 
   const { pushSrsCard } = useCloudSync(user, {
-    streak, bestStreak, lastPlayDate, targetLang, dailyGoal, isPro, seenWords, favorites, xp, displayName,
+    streak, bestStreak, lastPlayDate, targetLang, dailyGoal, seenWords, favorites, xp, displayName,
   }, {
     setStreak: (v) => { setStreak(v); save('vv-streak', v); },
     setBestStreak: (v) => { setBestStreak(v); save('vv-best-streak', v); },
@@ -450,9 +468,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
       speak, audioSource,
       streak, bestStreak, totalSeen: seenWords.size, seenWords, quizHistory,
       recordQuizResult, markWordSeen,
-      newWordsToday, dailyWordLimit: isPro ? Infinity : 20,
+      newWordsToday, dailyWordLimit: isProCombined ? Infinity : 20,
       srsData, rateCard, srsDueCount,
-      isPro, activatePro,
+      isPro: isProCombined, activatePro,
       lastPlayDate,
       studiedToday: lastPlayDate === new Date().toISOString().split('T')[0],
       xp, addXp, ...getLevel(xp),

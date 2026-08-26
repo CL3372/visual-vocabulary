@@ -1,5 +1,6 @@
 import { X, Check, Zap, Globe, Brain, Share2, BarChart2, Sparkles } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import { useIAP, PACKAGE_IDS } from '../hooks/useIAP';
 
 interface Props { onClose: () => void; reason?: string }
 
@@ -23,20 +24,46 @@ const PRO_FEATURES = [
 ];
 
 export function UpgradeModal({ onClose, reason }: Props) {
-  const { activatePro } = useApp();
+  const { activatePro, user } = useApp();
+  // On the iOS app, purchases MUST go through StoreKit (App Store Guideline
+  // 3.1.1) — the Stripe checkout below is web-only. See src/hooks/useIAP.ts.
+  const { isNativeIOS, packages, purchasing, purchase, restore } = useIAP();
 
   function goToCheckout(annual: boolean) {
     const link = annual ? ANNUAL_LINK : PAYMENT_LINK;
     if (link) {
+      // client_reference_id used to be hardcoded to the literal string
+      // "web", which meant NO purchase — including legitimate paying
+      // ones — could ever be attributed to an account server-side. Pass
+      // the real signed-in user id so the Stripe webhook (see
+      // supabase/functions/stripe-webhook) can set is_pro on the right
+      // row. If nobody's signed in, Pro still activates locally below via
+      // the pro_success redirect, but won't sync to an account or another
+      // device until the user signs in and repeats a purchase-linked flow.
+      const clientReferenceId = user?.id ?? 'web_anonymous';
       // After Stripe payment, Stripe redirects back with ?pro_success=true
       const returnUrl = encodeURIComponent(window.location.href.split('?')[0] + '?pro_success=true');
-      window.location.href = `${link}?client_reference_id=web&return_url=${returnUrl}`;
+      window.location.href = `${link}?client_reference_id=${clientReferenceId}&return_url=${returnUrl}`;
     } else {
       // No Stripe link configured — dev mode: activate directly
       activatePro('dev_mode');
       onClose();
     }
   }
+
+  async function buyNative(annual: boolean) {
+    const identifier = annual ? PACKAGE_IDS.annual : PACKAGE_IDS.monthly;
+    const { success } = await purchase(identifier);
+    if (success) onClose();
+  }
+
+  async function restoreNative() {
+    const active = await restore();
+    if (active) onClose();
+  }
+
+  const annualPkg = packages.find(p => p.identifier === PACKAGE_IDS.annual);
+  const monthlyPkg = packages.find(p => p.identifier === PACKAGE_IDS.monthly);
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center"
@@ -98,32 +125,43 @@ export function UpgradeModal({ onClose, reason }: Props) {
           <div className="flex flex-col gap-2 mb-5">
             {/* Annual — highlighted */}
             <button
-              onClick={() => goToCheckout(true)}
-              className="w-full rounded-2xl p-4 text-left transition-all active:scale-95 relative overflow-hidden"
+              onClick={() => isNativeIOS ? buyNative(true) : goToCheckout(true)}
+              disabled={isNativeIOS && purchasing}
+              className="w-full rounded-2xl p-4 text-left transition-all active:scale-95 relative overflow-hidden disabled:opacity-60"
               style={{ background: 'linear-gradient(135deg,#4f46e5,#7c3aed)', color: '#fff' }}
             >
               <div className="absolute top-2 right-3 text-xs font-bold px-2 py-0.5 rounded-full"
                 style={{ background: 'rgba(255,255,255,0.25)' }}>
                 BEST VALUE
               </div>
-              <p className="font-bold text-base">Annual · <span className="text-2xl">€29.99</span><span className="text-sm opacity-75">/year</span></p>
+              <p className="font-bold text-base">
+                Annual · <span className="text-2xl">{annualPkg?.priceString ?? '€29.99'}</span><span className="text-sm opacity-75">/year</span>
+              </p>
               <p className="text-sm opacity-75 mt-0.5">Just €2.50/month · save 50%</p>
             </button>
 
             {/* Monthly */}
             <button
-              onClick={() => goToCheckout(false)}
-              className="w-full rounded-2xl p-4 text-left transition-all active:scale-95"
+              onClick={() => isNativeIOS ? buyNative(false) : goToCheckout(false)}
+              disabled={isNativeIOS && purchasing}
+              className="w-full rounded-2xl p-4 text-left transition-all active:scale-95 disabled:opacity-60"
               style={{ background: 'var(--surface2)', border: '1.5px solid var(--border)', color: 'var(--text)' }}
             >
-              <p className="font-bold text-base">Monthly · <span className="text-xl">€4.99</span><span className="text-sm" style={{ color: 'var(--text2)' }}>/month</span></p>
+              <p className="font-bold text-base">
+                Monthly · <span className="text-xl">{monthlyPkg?.priceString ?? '€4.99'}</span><span className="text-sm" style={{ color: 'var(--text2)' }}>/month</span>
+              </p>
               <p className="text-sm mt-0.5" style={{ color: 'var(--text2)' }}>Cancel any time</p>
             </button>
           </div>
 
           <p className="text-center text-xs mb-1" style={{ color: 'var(--text3)' }}>
-            Secure payment via Stripe · No hidden fees
+            {isNativeIOS ? 'Secure payment via the App Store · No hidden fees' : 'Secure payment via Stripe · No hidden fees'}
           </p>
+          {isNativeIOS && (
+            <button onClick={restoreNative} className="w-full text-center text-xs py-1" style={{ color: 'var(--accent)' }}>
+              Restore purchases
+            </button>
+          )}
           <button onClick={onClose} className="w-full text-center text-xs py-2" style={{ color: 'var(--text3)' }}>
             Maybe later
           </button>

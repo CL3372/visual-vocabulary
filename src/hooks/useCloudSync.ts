@@ -9,7 +9,6 @@ export interface SyncPayload {
   lastPlayDate: string;
   targetLang: string;
   dailyGoal: number;
-  isPro: boolean;
   seenWords: Set<string>;
   favorites: Set<string>;
   xp: number;
@@ -72,7 +71,13 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
 
   const pushToCloud = useCallback(async () => {
     if (!user) return;
-    const fingerprint = `${payload.streak}|${payload.lastPlayDate}|${payload.favorites.size}|${payload.seenWords.size}|${payload.isPro}|${payload.xp}|${payload.displayName}`;
+    // NOTE: is_pro is intentionally never sent here. Pro status is set
+    // server-side only, by the Stripe/RevenueCat webhooks (running as
+    // service_role) — the database no longer even grants this client role
+    // permission to write that column (see migration
+    // lock_down_is_pro_column_v2), so including it here would just make
+    // every sync fail.
+    const fingerprint = `${payload.streak}|${payload.lastPlayDate}|${payload.favorites.size}|${payload.seenWords.size}|${payload.xp}|${payload.displayName}`;
     if (fingerprint === lastPushed.current) return;
     lastPushed.current = fingerprint;
 
@@ -83,7 +88,6 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
       last_play_date: payload.lastPlayDate,
       target_lang: payload.targetLang,
       daily_goal: payload.dailyGoal,
-      is_pro: payload.isPro,
       seen_words: Array.from(payload.seenWords),
       favorites: Array.from(payload.favorites),
       xp: payload.xp,
@@ -113,7 +117,7 @@ export function useCloudSync(user: User | null, payload: SyncPayload, setters: S
     if (!user) return;
     const t = setTimeout(pushToCloud, 3000);
     return () => clearTimeout(t);
-  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.isPro, payload.xp, payload.displayName, user?.id]);
+  }, [payload.streak, payload.favorites.size, payload.seenWords.size, payload.xp, payload.displayName, user?.id]);
 
   return { pullFromCloud, pushToCloud, pushSrsCard };
 }
