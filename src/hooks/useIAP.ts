@@ -43,8 +43,8 @@ const ENTITLEMENT_ID = 'pro';
 // Must match the package identifiers configured for the "default" offering
 // in the RevenueCat dashboard (Products > Offerings).
 export const PACKAGE_IDS = {
-  monthly: 'lexpix_pro_monthly',
-  annual: 'lexpix_pro_annual',
+  monthly: '$rc_monthly',
+  annual: '$rc_annual',
 } as const;
 
 export interface IAPPackage {
