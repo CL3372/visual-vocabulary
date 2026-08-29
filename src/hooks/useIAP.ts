@@ -2,46 +2,55 @@ import { useEffect, useState, useCallback } from 'react';
 import { Capacitor } from '@capacitor/core';
 
 /**
- * Native In-App Purchase support for the iOS build, via RevenueCat.
+ * Native In-App Purchase support for iOS and Android, via RevenueCat.
  *
- * Why this exists: Apple Guideline 3.1.1 requires that any digital
- * subscription consumed inside the app be sold through Apple's own
- * In-App Purchase system, not an external payment processor. The web
- * app (lexpix.io) keeps using Stripe Payment Links — that's fine, it's
- * a browser. The iOS app must use StoreKit. RevenueCat wraps StoreKit
- * (and, later, Google Play Billing for Android) behind one API and
- * handles receipt validation server-side, so we don't have to build
- * that ourselves.
+ * Why this exists: both Apple (Guideline 3.1.1) and Google Play require
+ * that any digital subscription consumed inside the app be sold through
+ * the platform's own in-app purchase system, not an external payment
+ * processor. The web app (lexpix.io) keeps using Stripe Payment Links —
+ * that's fine, it's a browser. The native apps must use StoreKit (iOS) or
+ * Google Play Billing (Android). RevenueCat wraps both behind one API and
+ * handles receipt validation server-side, so we don't have to build that
+ * ourselves.
  *
- * Setup required before this works (see docs handed back with this file):
- *  1. `npm install @revenuecat/purchases-capacitor` (run locally — this
- *     sandbox has no npm registry access, so the exact version wasn't
- *     pinned here; install latest and `npx cap sync ios`).
+ * Setup required before this works:
+ *  1. `npm install @revenuecat/purchases-capacitor` (already done), then
+ *     `npx cap sync ios` and `npx cap sync android` locally.
  *  2. Create the "pro" entitlement + subscription products in App Store
- *     Connect, mirror them in the RevenueCat dashboard, and set
- *     VITE_REVENUECAT_IOS_API_KEY in Vercel/GitHub Actions secrets.
- *  3. Match PACKAGE_IDS below to whatever identifiers you give the
- *     monthly/annual packages in the RevenueCat dashboard.
+ *     Connect and Google Play Console, mirror them in the RevenueCat
+ *     dashboard (one RevenueCat "app" per store), and set
+ *     VITE_REVENUECAT_IOS_API_KEY and VITE_REVENUECAT_ANDROID_API_KEY.
+ *  3. Match PACKAGE_IDS below to whatever identifiers the monthly/annual
+ *     packages use in the RevenueCat dashboard.
  */
 
-// Lazy-typed handle to the plugin — imported dynamically so this file
-// has zero cost and doesn't crash on web, where the native plugin isn't
+// Lazy-typed handle to the plugin — imported dynamically so this file has
+// zero cost and doesn't crash on web, where the native plugin isn't
 // installed/available.
 type PurchasesModule = typeof import('@revenuecat/purchases-capacitor');
 let PurchasesRef: PurchasesModule['Purchases'] | null = null;
 
-export const IS_NATIVE_IOS =
-  Capacitor.getPlatform() === 'ios' && Capacitor.isNativePlatform();
+type NativePlatform = 'ios' | 'android' | 'web';
+const PLATFORM = Capacitor.getPlatform() as NativePlatform;
+
+export const IS_NATIVE_MOBILE =
+  (PLATFORM === 'ios' || PLATFORM === 'android') && Capacitor.isNativePlatform();
 
 const REVENUECAT_IOS_KEY = import.meta.env.VITE_REVENUECAT_IOS_API_KEY as
   | string
   | undefined;
+const REVENUECAT_ANDROID_KEY = import.meta.env.VITE_REVENUECAT_ANDROID_API_KEY as
+  | string
+  | undefined;
+
+const REVENUECAT_KEY = PLATFORM === 'ios' ? REVENUECAT_IOS_KEY : REVENUECAT_ANDROID_KEY;
 
 // Must match the entitlement identifier configured in the RevenueCat dashboard.
 const ENTITLEMENT_ID = 'pro';
 
 // Must match the package identifiers configured for the "default" offering
-// in the RevenueCat dashboard (Products > Offerings).
+// in the RevenueCat dashboard (Products > Offerings). These are shared
+// across both the iOS and Android apps in the RevenueCat project.
 export const PACKAGE_IDS = {
   monthly: '$rc_monthly',
   annual: '$rc_annual',
@@ -65,9 +74,11 @@ export function useIAP() {
   const [purchasing, setPurchasing] = useState(false);
 
   useEffect(() => {
-    if (!IS_NATIVE_IOS) return;
-    if (!REVENUECAT_IOS_KEY) {
-      console.warn('[IAP] VITE_REVENUECAT_IOS_API_KEY is not set — native purchases disabled.');
+    if (!IS_NATIVE_MOBILE) return;
+    if (!REVENUECAT_KEY) {
+      console.warn(
+        `[IAP] VITE_REVENUECAT_${PLATFORM === 'ios' ? 'IOS' : 'ANDROID'}_API_KEY is not set — native purchases disabled.`
+      );
       return;
     }
 
@@ -77,7 +88,7 @@ export function useIAP() {
       const mod = await import('@revenuecat/purchases-capacitor');
       PurchasesRef = mod.Purchases;
 
-      await PurchasesRef.configure({ apiKey: REVENUECAT_IOS_KEY });
+      await PurchasesRef.configure({ apiKey: REVENUECAT_KEY });
 
       const { customerInfo } = await PurchasesRef.getCustomerInfo();
       if (!cancelled) {
@@ -111,7 +122,7 @@ export function useIAP() {
   /** Link the RevenueCat anonymous user to our real Supabase user id, so
    *  Pro status can eventually be cross-referenced server-side (see the
    *  revenuecat-webhook Supabase function). Call this after Supabase
-   *  sign-in on native iOS. */
+   *  sign-in on native iOS/Android. */
   const linkIdentity = useCallback(async (supabaseUserId: string) => {
     if (!PurchasesRef) return;
     try {
@@ -160,6 +171,7 @@ export function useIAP() {
     purchase,
     restore,
     linkIdentity,
-    isNativeIOS: IS_NATIVE_IOS,
+    isNativeMobile: IS_NATIVE_MOBILE,
+    platform: PLATFORM,
   };
 }
