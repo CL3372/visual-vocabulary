@@ -160,6 +160,22 @@ export function UpgradeModal({ onClose, reason }: Props) {
               ? `Secure payment via ${platform === 'ios' ? 'the App Store' : 'Google Play'} · No hidden fees`
               : 'Secure payment via Stripe · No hidden fees'}
           </p>
+
+          {/* Required by App Store / Play Store review for auto-renewable
+              subscriptions: functional links to Terms of Use and Privacy
+              Policy, visible on the purchase screen itself. */}
+          <p className="text-center text-[11px] mb-1" style={{ color: 'var(--text3)' }}>
+            <a href="https://lexpix.io/terms" target="_blank" rel="noopener noreferrer"
+              style={{ color: 'var(--text3)', textDecoration: 'underline' }}>
+              Terms of Use
+            </a>
+            {' · '}
+            <a href="https://lexpix.io/privacy" target="_blank" rel="noopener noreferrer"
+              style={{ color: 'var(--text3)', textDecoration: 'underline' }}>
+              Privacy Policy
+            </a>
+          </p>
+
           {isNativeMobile && (
             <button onClick={restoreNative} className="w-full text-center text-xs py-1" style={{ color: 'var(--accent)' }}>
               Restore purchases
