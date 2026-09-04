@@ -41,7 +41,7 @@ export function TermsOfService() {
       </p>
       <h3 className="font-semibold mb-1">Pro subscription</h3>
       <p className="mb-4">
-        Pro unlocks all 18 languages, unlimited quizzes, unlimited SRS reviews, and favourites.
+        Pro unlocks all 42 languages, unlimited quizzes, unlimited SRS reviews, and favourites.
         Subscription pricing:
       </p>
       <ul className="list-disc pl-5 space-y-1 mb-4">

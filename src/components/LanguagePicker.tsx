@@ -99,7 +99,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
               style={{ background: 'linear-gradient(135deg,#4f46e5,#7c3aed)', color: '#fff' }}
             >
               <Zap className="w-4 h-4" />
-              Unlock all 18 languages with Pro
+              Unlock all 42 languages with Pro
             </button>
           )}
         </div>
@@ -107,7 +107,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
 
       {showUpgrade && (
         <UpgradeModal
-          reason="Unlock all 18 languages including Spanish, Arabic, Japanese, Polish & more"
+          reason="Unlock all 42 languages including Spanish, Arabic, Japanese, Polish & more"
           onClose={() => setShowUpgrade(false)}
         />
       )}
