@@ -28,3 +28,7 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Capacitor build output (regenerated fresh by npx cap sync — never edit by hand)
+android/app/src/main/assets/public
+ios/App/App/public
