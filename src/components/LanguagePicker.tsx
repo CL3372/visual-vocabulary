@@ -47,7 +47,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
                 Learning language
               </h2>
               <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>
-                {isPro ? 'All languages unlocked' : 'Portuguese & French free · Pro unlocks all 18'}
+                {isPro ? 'All languages unlocked' : 'Portuguese & French free · Pro unlocks all 42'}
               </p>
             </div>
             <button
