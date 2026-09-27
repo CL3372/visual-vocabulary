@@ -126,7 +126,7 @@ export function WordModal({ word, onClose }: Props) {
                   </span>
                 </div>
                 <div className="flex gap-2 mt-1">
-                  <button onClick={() => speak(word.word, 'en')}
+                  <button onClick={() => speak(word.word, 'en', word.id)}
                     className="p-2 rounded-full transition-colors"
                     style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}
                     aria-label="Pronounce English">
@@ -157,7 +157,7 @@ export function WordModal({ word, onClose }: Props) {
               {/* Current language — always visible */}
               <div className="mt-4">
                 <button
-                  onClick={() => speak(getTranslation(word, targetLang), targetLang)}
+                  onClick={() => speak(getTranslation(word, targetLang), targetLang, word.id)}
                   className="w-full p-3 rounded-xl text-left transition-all active:scale-95"
                   style={{ background: 'var(--accent-bg)', border: '1px solid var(--accent)' }}>
                   <p className="text-xs" style={{ color: 'var(--accent)' }}>{lang.flag} {lang.label}</p>
@@ -180,7 +180,7 @@ export function WordModal({ word, onClose }: Props) {
                 <div className="grid grid-cols-2 gap-2 mt-2">
                   {LANGUAGES.filter(l => l.code !== 'en' && l.code !== targetLang).map(l => (
                     <button key={l.code}
-                      onClick={() => speak(getTranslation(word, l.code), l.code)}
+                      onClick={() => speak(getTranslation(word, l.code), l.code, word.id)}
                       className="p-2.5 rounded-xl text-left transition-all hover:opacity-80 active:scale-95"
                       style={{ background: 'var(--surface2)', border: '1px solid transparent' }}>
                       <p className="text-xs" style={{ color: 'var(--text2)' }}>{l.flag} {l.label}</p>
