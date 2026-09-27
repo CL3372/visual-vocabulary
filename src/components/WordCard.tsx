@@ -40,7 +40,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
     e.stopPropagation();
     const text = showTranslation ? translation : word.word;
     const lang = showTranslation ? targetLang : 'en';
-    speak(text, lang);
+    speak(text, lang, word.id);
   }
 
   // ── List mode ─────────────────────────────────────────────────────────────
