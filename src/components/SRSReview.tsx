@@ -38,9 +38,9 @@ function ReviewCard({ word, onRate }: CardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const reveal = useCallback(() => {
-    speak(translation, targetLang);
+    speak(translation, targetLang, word.id);
     setRevealed(true);
-  }, [translation, targetLang, speak]);
+  }, [translation, targetLang, word.id, speak]);
 
   // Swipe direction label + color
   const swipeAction = (() => {
