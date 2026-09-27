@@ -32,7 +32,7 @@ export function WordOfDay() {
         <div className="flex items-center gap-2">
           <p className="text-xl font-bold" style={{ color: 'var(--text)' }}>{word.word}</p>
           <button
-            onClick={() => speak(word.word, 'en')}
+            onClick={() => speak(word.word, 'en', word.id)}
             className="p-1 rounded-full transition-opacity hover:opacity-70"
             style={{ color: 'var(--accent)' }}
             aria-label="Pronounce"
