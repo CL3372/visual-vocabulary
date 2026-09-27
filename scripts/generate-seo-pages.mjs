@@ -82,7 +82,55 @@ const CATEGORY_DATA = [
 ];
 
 // Languages supported
-const LANGUAGES = ['Spanish', 'Portuguese', 'French', 'German', 'Italian', 'Hindi', 'Russian', 'Turkish', 'Japanese', 'Chinese', 'Korean', 'Arabic'];
+// Full language list, kept in sync with src/data/languages.ts (42 languages).
+const LANGUAGES = [
+  { flag: '🇬🇧', name: 'English' },
+  { flag: '🇪🇸', name: 'Spanish' },
+  { flag: '🇵🇹', name: 'Portuguese' },
+  { flag: '🇧🇷', name: 'Brazilian Portuguese' },
+  { flag: '🇫🇷', name: 'French' },
+  { flag: '🇩🇪', name: 'German' },
+  { flag: '🇮🇹', name: 'Italian' },
+  { flag: '🇮🇳', name: 'Hindi' },
+  { flag: '🇷🇺', name: 'Russian' },
+  { flag: '🇹🇷', name: 'Turkish' },
+  { flag: '🇯🇵', name: 'Japanese' },
+  { flag: '🇨🇳', name: 'Chinese' },
+  { flag: '🇹🇼', name: 'Chinese (Traditional)' },
+  { flag: '🇰🇷', name: 'Korean' },
+  { flag: '🇸🇦', name: 'Arabic' },
+  { flag: '🇵🇱', name: 'Polish' },
+  { flag: '🇨🇿', name: 'Czech' },
+  { flag: '🇷🇴', name: 'Romanian' },
+  { flag: '🇳🇱', name: 'Dutch' },
+  { flag: '🇸🇪', name: 'Swedish' },
+  { flag: '🇬🇷', name: 'Greek' },
+  { flag: '🇮🇩', name: 'Indonesian' },
+  { flag: '🇻🇳', name: 'Vietnamese' },
+  { flag: '🇹🇭', name: 'Thai' },
+  { flag: '🇳🇴', name: 'Norwegian' },
+  { flag: '🇩🇰', name: 'Danish' },
+  { flag: '🇫🇮', name: 'Finnish' },
+  { flag: '🇵🇭', name: 'Filipino' },
+  { flag: '🇺🇦', name: 'Ukrainian' },
+  { flag: '🇮🇱', name: 'Hebrew' },
+  { flag: '🇲🇾', name: 'Malay' },
+  { flag: '🇧🇩', name: 'Bengali' },
+  { flag: '🇱🇰', name: 'Tamil' },
+  { flag: '🇭🇺', name: 'Hungarian' },
+  { flag: '🇸🇰', name: 'Slovak' },
+  { flag: '🇧🇬', name: 'Bulgarian' },
+  { flag: '🇭🇷', name: 'Croatian' },
+  { flag: '🇷🇸', name: 'Serbian' },
+  { flag: '🇱🇹', name: 'Lithuanian' },
+  { flag: '🇱🇻', name: 'Latvian' },
+  { flag: '🇵🇰', name: 'Urdu' },
+  { flag: '🇰🇪', name: 'Swahili' },
+];
+
+const LANGUAGE_CHIPS_HTML = LANGUAGES
+  .map(l => `    <div class="lang-chip"><span>${l.flag}</span> ${l.name}</div>`)
+  .join('\n');
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -281,11 +329,11 @@ function generatePage(cat) {
 
 <section class="hero">
   <div class="emoji">${cat.emoji}</div>
-  <h1>${cat.name} Vocabulary in 15 Languages</h1>
+  <h1>${cat.name} Vocabulary in ${LANGUAGES.length} Languages</h1>
   <p>${cat.desc}</p>
   <div class="badges">
     <span class="badge">📸 ${cat.count}+ illustrated words</span>
-    <span class="badge">🌐 42 languages</span>
+    <span class="badge">🌐 ${LANGUAGES.length} languages</span>
     <span class="badge">✅ Free to use</span>
     <span class="badge">📱 Works on all devices</span>
   </div>
@@ -302,21 +350,7 @@ function generatePage(cat) {
 
   <h2 class="section-title">🌍 Available Languages</h2>
   <div class="lang-grid">
-    <div class="lang-chip"><span>🇬🇧</span> English</div>
-    <div class="lang-chip"><span>🇪🇸</span> Spanish</div>
-    <div class="lang-chip"><span>🇵🇹</span> Portuguese</div>
-    <div class="lang-chip"><span>🇫🇷</span> French</div>
-    <div class="lang-chip"><span>🇩🇪</span> German</div>
-    <div class="lang-chip"><span>🇮🇹</span> Italian</div>
-    <div class="lang-chip"><span>🇮🇳</span> Hindi</div>
-    <div class="lang-chip"><span>🇷🇺</span> Russian</div>
-    <div class="lang-chip"><span>🇹🇷</span> Turkish</div>
-    <div class="lang-chip"><span>🇯🇵</span> Japanese</div>
-    <div class="lang-chip"><span>🇨🇳</span> Chinese</div>
-    <div class="lang-chip"><span>🇰🇷</span> Korean</div>
-    <div class="lang-chip"><span>🇸🇦</span> Arabic</div>
-    <div class="lang-chip"><span>🇧🇷</span> Brazilian Portuguese</div>
-    <div class="lang-chip"><span>🇹🇼</span> Chinese (Traditional)</div>
+${LANGUAGE_CHIPS_HTML}
   </div>
 
   <h2 class="section-title">✨ How it Works</h2>
