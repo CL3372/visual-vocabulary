@@ -1,11 +1,23 @@
 interface Props {
-  source: 'wavenet' | 'webspeech' | null;
+  source: 'wavenet' | 'webspeech' | 'none' | null;
   /** 'light' for use on dark/accent backgrounds */
   variant?: 'light' | 'auto';
 }
 
 export function AudioSourceBadge({ source, variant = 'auto' }: Props) {
   if (!source) return null;
+
+  if (source === 'none') {
+    return (
+      <span
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold"
+        style={{ background: 'rgba(239,68,68,0.12)', color: '#dc2626' }}
+        title="No audio could be played on this device"
+      >
+        🔇 No sound — check volume
+      </span>
+    );
+  }
 
   const isWavenet = source === 'wavenet';
 
