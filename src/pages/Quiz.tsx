@@ -62,7 +62,7 @@ function McCard({ word, choices, lang, onAnswer }: {
   function pick(c: string) {
     if (selected) return;
     setSelected(c);
-    speak(c, lang, word.id);
+    speak(correct, lang, word.id);
     setTimeout(() => onAnswer(c === correct), 900);
   }
 
