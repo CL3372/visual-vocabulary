@@ -8,9 +8,17 @@ import { computeNewBadges, type BadgeDef, type BadgeStats, type EarnedBadge } fr
 
 const LANG_LOCALES: Record<string, string> = {
   en: 'en-GB', es: 'es-ES', pt: 'pt-PT', 'pt-BR': 'pt-BR', fr: 'fr-FR',
-  de: 'de-DE', it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN',
+  de: 'de-DE', it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN', 'zh-TW': 'zh-TW',
   ko: 'ko-KR', ar: 'ar-SA', pl: 'pl-PL', cs: 'cs-CZ', ro: 'ro-RO',
+  hi: 'hi-IN', ru: 'ru-RU', tr: 'tr-TR', nl: 'nl-NL', sv: 'sv-SE', el: 'el-GR',
+  id: 'id-ID', vi: 'vi-VN', th: 'th-TH', nb: 'nb-NO', da: 'da-DK', fi: 'fi-FI',
+  fil: 'fil-PH', uk: 'uk-UA', he: 'he-IL', ms: 'ms-MY', bn: 'bn-BD', ta: 'ta-IN',
+  hu: 'hu-HU', sk: 'sk-SK', bg: 'bg-BG', hr: 'hr-HR', sr: 'sr-RS', lt: 'lt-LT',
+  lv: 'lv-LV', ur: 'ur-PK', sw: 'sw-KE',
 };
+
+// Folder names in the audio bucket that differ from the lower-cased language code
+const AUDIO_FOLDERS: Record<string, string> = { 'zh-tw': 'zh' };
 
 export const RTL_LANGS = new Set(['ar']);
 
@@ -30,7 +38,7 @@ interface AppContextType {
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
   speak: (text: string, lang?: string, wordId?: string) => void;
-  audioSource: 'wavenet' | 'webspeech' | null;
+  audioSource: 'wavenet' | 'webspeech' | 'none' | null;
   streak: number;
   bestStreak: number;
   totalSeen: number;
@@ -162,7 +170,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (isNativeMobile && user?.id) linkIdentity(user.id);
   }, [isNativeMobile, user?.id, linkIdentity]);
 
-  const [audioSource, setAudioSource] = useState<'wavenet' | 'webspeech' | null>(null);
+  const [audioSource, setAudioSource] = useState<'wavenet' | 'webspeech' | 'none' | null>(null);
   const [targetLang, setTargetLangRaw] = useState(() => load('vv-lang', 'es'));
   const [darkMode, setDarkMode] = useState(() => load('vv-dark', false));
   const [kidsMode, setKidsMode] = useState(() => load('vv-kids', false));
@@ -203,7 +211,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const isFavorite = useCallback((id: string) => favorites.has(id), [favorites]);
 
   const speakWebSpeech = useCallback((text: string, lang = 'en') => {
-    if (!window.speechSynthesis) return;
+    if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
+      setAudioSource('none');
+      return;
+    }
     window.speechSynthesis.cancel();
     const targetLocale = LANG_LOCALES[lang] || 'en-US';
 
@@ -225,53 +236,82 @@ export function AppProvider({ children }: { children: ReactNode }) {
       } else {
         u.voice = langVoices[0] ?? null;
       }
+      // If the phone has no speech engine/voice for this language, tell the user instead of staying silent
+      u.onerror = (e) => {
+        if (e.error !== 'interrupted' && e.error !== 'canceled') setAudioSource('none');
+      };
       window.speechSynthesis.speak(u);
     };
 
-    const voices = window.speechSynthesis.getVoices();
-    if (voices.length > 0) {
-      doSpeak();
-    } else {
-      // Wait for voices, but Xiaomi/MIUI WebView may never fire onvoiceschanged —
-      // fall back to speaking without a specific voice after 500ms
-      let fired = false;
-      window.speechSynthesis.onvoiceschanged = () => {
-        if (fired) return;
-        fired = true;
-        window.speechSynthesis.onvoiceschanged = null;
+    // Chrome/Android silently drops a speak() issued in the same tick as cancel(), so wait a moment
+    setTimeout(() => {
+      const voices = window.speechSynthesis.getVoices();
+      if (voices.length > 0) {
         doSpeak();
-      };
-      setTimeout(() => {
-        if (!fired) {
+      } else {
+        // Wait for voices, but Xiaomi/MIUI WebView may never fire onvoiceschanged —
+        // fall back to speaking without a specific voice after 500ms
+        let fired = false;
+        window.speechSynthesis.onvoiceschanged = () => {
+          if (fired) return;
           fired = true;
           window.speechSynthesis.onvoiceschanged = null;
           doSpeak();
-        }
-      }, 500);
-    }
+        };
+        setTimeout(() => {
+          if (!fired) {
+            fired = true;
+            window.speechSynthesis.onvoiceschanged = null;
+            doSpeak();
+          }
+        }, 500);
+      }
+    }, 60);
   }, []);
 
+  // One shared <audio> element: it is "unlocked" by the first tap and then reused, which Android
+  // WebViews/Chrome treat much more kindly than a brand-new Audio() for every word.
+  const audioElRef = useRef<HTMLAudioElement | null>(null);
+  const speakTokenRef = useRef(0);
+
   const speak = useCallback((text: string, lang = 'en', wordId?: string) => {
-    if (wordId) {
-      const gcsLang = lang === 'pt-br' ? 'pt-br' : lang.toLowerCase();
-      const url = `https://storage.googleapis.com/vv-audio/${gcsLang}/${wordId}.mp3`;
-      const audio = new Audio(url);
-      let used = false;
-      const fallback = () => {
-        if (!used) {
-          used = true;
-          setAudioSource('webspeech');
-          speakWebSpeech(text, lang);
-        }
-      };
-      audio.onerror = fallback;
-      audio.play().then(() => {
-        if (!used) { used = true; setAudioSource('wavenet'); }
-      }).catch(fallback);
-      return;
+    const token = ++speakTokenRef.current;
+
+    // Stop whatever was playing so sounds never overlap
+    try { audioElRef.current?.pause(); } catch { /* ignore */ }
+    try { window.speechSynthesis?.cancel(); } catch { /* ignore */ }
+
+    const fallbackToDeviceVoice = () => {
+      if (token !== speakTokenRef.current) return; // a newer word has started
+      setAudioSource('webspeech');
+      speakWebSpeech(text, lang);
+    };
+
+    if (!wordId) { fallbackToDeviceVoice(); return; }
+
+    const key = lang.toLowerCase();
+    const folder = AUDIO_FOLDERS[key] ?? key;
+    const url = `https://storage.googleapis.com/vv-audio/${folder}/${wordId}.mp3`;
+
+    const audio = audioElRef.current ?? (audioElRef.current = new Audio());
+    audio.preload = 'auto';
+    let settled = false;
+    const fail = () => { if (!settled) { settled = true; fallbackToDeviceVoice(); } };
+
+    audio.onerror = fail;
+    audio.onended = null;
+    audio.src = url;
+    audio.currentTime = 0;
+    const p = audio.play();
+    if (p && typeof p.then === 'function') {
+      p.then(() => {
+        if (!settled && token === speakTokenRef.current) { settled = true; setAudioSource('wavenet'); }
+      }).catch(fail);
     }
-    setAudioSource('webspeech');
-    speakWebSpeech(text, lang);
+    // Safety net: if nothing has started within 3s (stalled network), try the device voice
+    setTimeout(() => {
+      if (!settled && token === speakTokenRef.current && audio.paused) fail();
+    }, 3000);
   }, [speakWebSpeech]);
 
   const addXp = useCallback((amount: number) => {
