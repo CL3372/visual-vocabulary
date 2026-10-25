@@ -358,19 +358,59 @@ const WIKI_TERMS: Record<string, string> = {
 
 const PEXELS_KEY = import.meta.env.VITE_PEXELS_API_KEY as string;
 
-// Fetch a high-quality photo from Pexels
-async function fetchPexels(query: string): Promise<string> {
+// ── Persistent cache ─────────────────────────────────────────────────────────
+// Resolved photo URLs are remembered on the device, so a word only needs one
+// lookup ever (not one per visit). Failures are never stored.
+const STORE_KEY = 'vv-img-cache-v1';
+const STORE_MAX = 2500;
+function loadStore(): Record<string, string> {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch { return {}; }
+}
+const stored: Record<string, string> = loadStore();
+let storeTimer: ReturnType<typeof setTimeout> | undefined;
+function persist(key: string, url: string | null) {
+  if (url) stored[key] = url; else delete stored[key];
+  clearTimeout(storeTimer);
+  storeTimer = setTimeout(() => {
+    try {
+      const keys = Object.keys(stored);
+      if (keys.length > STORE_MAX) for (const k of keys.slice(0, keys.length - STORE_MAX)) delete stored[k];
+      localStorage.setItem(STORE_KEY, JSON.stringify(stored));
+    } catch { /* storage full or unavailable — fine */ }
+  }, 500);
+}
+
+// ── Throttle ─────────────────────────────────────────────────────────────────
+// One shared Pexels key serves every user, and Pexels allows ~200 requests/hour.
+// Opening a big category fired dozens of lookups at once and got rate-limited,
+// which left photos blank. Limit parallel lookups and pause Pexels after a 429.
+const MAX_PARALLEL = 4;
+let running = 0;
+const waiting: Array<() => void> = [];
+async function throttled<T>(job: () => Promise<T>): Promise<T> {
+  if (running >= MAX_PARALLEL) await new Promise<void>(res => waiting.push(res));
+  running++;
+  try { return await job(); } finally { running--; waiting.shift()?.(); }
+}
+let pexelsPausedUntil = 0;
+
+// Fetch a high-quality photo from Pexels.
+// Returns '' when Pexels has no photo for the query, or null on a temporary
+// failure (rate limit / network) so the caller does not guess a wrong photo.
+async function fetchPexels(query: string): Promise<string | null> {
   if (!PEXELS_KEY) return '';
+  if (Date.now() < pexelsPausedUntil) return null;
   try {
     const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=square`;
     const r = await fetch(url, { headers: { Authorization: PEXELS_KEY } });
-    if (!r.ok) return '';
+    if (r.status === 429) { pexelsPausedUntil = Date.now() + 60_000; return null; }
+    if (!r.ok) return null;
     const data = await r.json();
     const photo = data?.photos?.[0];
     // prefer large2x, fallback to large, then medium
     return photo?.src?.large2x || photo?.src?.large || photo?.src?.medium || '';
   } catch {
-    return '';
+    return null;
   }
 }
 
@@ -393,13 +433,17 @@ async function fetchWikipedia(query: string): Promise<string> {
 
 // WIKI_TERMS entries try Wikipedia first (for accuracy), then fall back to Pexels if Wikipedia has no image
 async function fetchImage(query: string): Promise<string> {
-  if (WIKI_TERMS[query.toLowerCase()]) {
-    const wiki = await fetchWikipedia(query);
-    if (wiki) return wiki;
-  }
-  const pexels = await fetchPexels(query);
-  if (pexels) return pexels;
-  return fetchWikipedia(query);
+  return throttled(async () => {
+    if (WIKI_TERMS[query.toLowerCase()]) {
+      const wiki = await fetchWikipedia(query);
+      if (wiki) return wiki;
+    }
+    const pexels = await fetchPexels(query);
+    if (pexels) return pexels;
+    // Temporary Pexels failure: leave blank and retry later rather than show a guessed (often wrong) photo
+    if (pexels === null) return '';
+    return fetchWikipedia(query);
+  });
 }
 
 // Curated Unsplash photos — verified accurate images
@@ -911,11 +955,15 @@ export function useUnsplashImage(query: string) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Always clear the previous word's photo so it can never be shown for a new word
+    setImageUrl('');
     if (!query) { setLoading(false); return; }
     const key = query.toLowerCase();
 
-    if (cache.has(key)) {
-      setImageUrl(cache.get(key)!);
+    const hit = cache.get(key) ?? stored[key];
+    if (hit) {
+      cache.set(key, hit);
+      setImageUrl(hit);
       setLoading(false);
       return;
     }
@@ -927,20 +975,38 @@ export function useUnsplashImage(query: string) {
       return;
     }
 
-    // Fetch via Pexels → Wikipedia fallback
+    // Fetch via Pexels → Wikipedia fallback; retry twice if nothing came back
+    let cancelled = false;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    const attempt = (n: number) => {
+      fetchImage(query).then(url => {
+        if (cancelled) return;
+        if (url) {
+          cache.set(key, url);
+          persist(key, url);
+          setImageUrl(url);
+        } else if (n < 2) {
+          timers.push(setTimeout(() => attempt(n + 1), n === 0 ? 20_000 : 70_000));
+        }
+        setLoading(false);
+      });
+    };
     setLoading(true);
-    fetchImage(query)
-      .then(url => { cache.set(key, url); setImageUrl(url); })
-      .finally(() => setLoading(false));
+    attempt(0);
+    return () => { cancelled = true; timers.forEach(clearTimeout); };
   }, [query]);
 
-  // Called by <img onError> — retries with Wikipedia when the primary image fails
+  // Called by <img onError> — forgets the broken URL and retries with Wikipedia
   const handleError = useCallback(() => {
-    if (!imageUrl || imageUrl.includes('wikipedia.org')) return;
+    if (!imageUrl) return;
     const key = query.toLowerCase();
+    cache.delete(key);
+    persist(key, null);
+    // Already a Wikipedia/Wikimedia image (or retried once): give up instead of looping
+    if (imageUrl.includes('wikipedia.org') || imageUrl.includes('wikimedia.org')) { setImageUrl(''); return; }
     setImageUrl('');
     fetchWikipedia(query).then(url => {
-      if (url) { cache.set(key, url); setImageUrl(url); }
+      if (url) { cache.set(key, url); persist(key, url); setImageUrl(url); }
     });
   }, [query, imageUrl]);
 
