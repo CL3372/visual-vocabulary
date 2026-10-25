@@ -1004,8 +1004,10 @@ export function useUnsplashImage(query: string) {
     persist(key, null);
     // Already a Wikipedia/Wikimedia image (or retried once): give up instead of looping
     if (imageUrl.includes('wikipedia.org') || imageUrl.includes('wikimedia.org')) { setImageUrl(''); return; }
+    // A dead hand-picked Unsplash link → try Pexels first, then Wikipedia
+    const wasUnsplash = imageUrl.includes('images.unsplash.com');
     setImageUrl('');
-    fetchWikipedia(query).then(url => {
+    (wasUnsplash ? fetchImage(query) : fetchWikipedia(query)).then(url => {
       if (url) { cache.set(key, url); persist(key, url); setImageUrl(url); }
     });
   }, [query, imageUrl]);
