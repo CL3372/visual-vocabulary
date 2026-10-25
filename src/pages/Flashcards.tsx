@@ -104,8 +104,6 @@ export function Flashcards() {
   const [deck, setDeck] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
 
-  if (srsMode) return <SRSReview onBack={() => setSrsMode(false)} />;
-
   function handleStart(selectedPool: Word[]) {
     setPool(selectedPool);
     setDeck(shuffle(selectedPool));
@@ -116,6 +114,8 @@ export function Flashcards() {
   const next = useCallback(() => setIndex(i => Math.min(i + 1, deck.length - 1)), [deck.length]);
   const prev = useCallback(() => setIndex(i => Math.max(i - 1, 0)), []);
   const reshuffle = useCallback(() => { setDeck(shuffle(pool)); setIndex(0); }, [pool]);
+
+  if (srsMode) return <SRSReview onBack={() => setSrsMode(false)} />;
 
   if (!started) {
     return (
