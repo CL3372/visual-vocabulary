@@ -249,6 +249,7 @@ const WIKI_TERMS: Record<string, string> = {
   'limpets grilled shell atlantic azores madeira': 'Patella vulgata',
   // Fix existing seafood entries with better Wikipedia titles
   'salt cod bacalhau':     'Bacalhau',
+  'bacalhau bras salt cod eggs': 'Bacalhau à Brás',
   'dogfish shark':         'Small-spotted catshark',
   'periwinkle shellfish':  'Common periwinkle',
   // Food additions
