@@ -170,6 +170,79 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tapas spanish appetizers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/TapasenBarcelona.JPG/960px-TapasenBarcelona.JPG', // Tapas
   'iberian ham jamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Jamon_iberico_de_bellota_2_%28cinco_jotas%29.jpg/960px-Jamon_iberico_de_bellota_2_%28cinco_jotas%29.jpg', // Jamón Ibérico
   'patatas bravas spicy potatoes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Patatas_bravas_madrid.jpg/960px-Patatas_bravas_madrid.jpg', // Patatas Bravas
+  'amatriciana pasta tomato guanciale': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/960px-Bucatini_allamatriciana.jpg', // Amatriciana
+  'gelato italian ice cream cone': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Gelato_ice_cream.jpg/960px-Gelato_ice_cream.jpg', // Gelato
+  'focaccia bread olive oil rosemary': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Focaccia_with_Crumb.jpg/960px-Focaccia_with_Crumb.jpg', // Focaccia
+  'panettone christmas italian sweet bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Panettone_-_Nicolettone_2017_-_IMG_7092_%2831752504105%29.jpg/960px-Panettone_-_Nicolettone_2017_-_IMG_7092_%2831752504105%29.jpg', // Panettone
+  'carpaccio raw beef thin sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Carpaccio_with_cheese_in_Warsaw.jpg/960px-Carpaccio_with_cheese_in_Warsaw.jpg', // Carpaccio
+  'saltimbocca veal prosciutto sage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Saltimbocca_01.jpg/960px-Saltimbocca_01.jpg', // Saltimbocca
+  'burrata fresh cheese creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Burrata2.jpg/960px-Burrata2.jpg', // Burrata
+  'limoncello lemon liqueur italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/SIMAL_limoncello_jp.jpg/960px-SIMAL_limoncello_jp.jpg', // Limoncello
+  'spaghetti bolognese meat sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Quorn_Spaghetti_Bolognese.jpg/960px-Quorn_Spaghetti_Bolognese.jpg', // Spaghetti Bolognese
+  'tagliatelle pasta fresh egg ragù': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Making_a_better_homemade_pasta_-_16670047286.jpg/960px-Making_a_better_homemade_pasta_-_16670047286.jpg', // Tagliatelle
+  'penne arrabbiata spicy tomato pasta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Penne_Arrabbiata.jpg/960px-Penne_Arrabbiata.jpg', // Penne all'Arrabbiata
+  'aglio olio spaghetti garlic olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Spaghetti_di_Gragnano_e_colatura_di_alici.jpg/960px-Spaghetti_di_Gragnano_e_colatura_di_alici.jpg', // Aglio e Olio
+  'spaghetti vongole clams white wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Flickr_-_cyclonebill_-_Spaghetti_med_muslinger.jpg/960px-Flickr_-_cyclonebill_-_Spaghetti_med_muslinger.jpg', // Vongole
+  'cacio e pepe pasta black pepper cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Tonnarelli_cacio_e_pepe.jpg/960px-Tonnarelli_cacio_e_pepe.jpg', // Cacio e Pepe
+  'pappardelle pasta wide ribbon ragu': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pappardelle.jpg/960px-Pappardelle.jpg', // Pappardelle
+  'orecchiette pasta broccoli rabe puglia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Orecchiette_su_tavoliere_in_legno.jpg/960px-Orecchiette_su_tavoliere_in_legno.jpg', // Orecchiette
+  'bucatini amatriciana pasta thick hollow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Bucatini.jpg/960px-Bucatini.jpg', // Bucatini
+  'tortellini pasta broth stuffed ring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Tortellini_Bolognesi.jpg/960px-Tortellini_Bolognesi.jpg', // Tortellini
+  'ravioli stuffed pasta butter sage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Ravioli_2020.jpg/960px-Ravioli_2020.jpg', // Ravioli
+  'fettuccine alfredo cream pasta parmesan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fettuccine_Alfredo_originals.jpg/960px-Fettuccine_Alfredo_originals.jpg', // Fettuccine Alfredo
+  'pasta fagioli bean soup italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Pasta_e_fagioli_cannellini.jpg/960px-Pasta_e_fagioli_cannellini.jpg', // Pasta e Fagioli
+  'pizza margherita tomato mozzarella basil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg/960px-Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg', // Pizza Margherita
+  'neapolitan pizza wood fired charred': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Forno_a_legna_pizza_napoletana.jpg/960px-Forno_a_legna_pizza_napoletana.jpg', // Pizza Napolitana
+  'pizza al taglio roman slice rectangular': 'https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg', // Pizza al Taglio
+  'calzone folded pizza stuffed oven': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Calzone_Tradition_%2B_poivrons.JPG/960px-Calzone_Tradition_%2B_poivrons.JPG', // Calzone
+  'antipasto board italian charcuterie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Antipasto_nell%27isola_di_Ortigia.jpg/960px-Antipasto_nell%27isola_di_Ortigia.jpg', // Antipasto
+  'crostini bread toasted toppings italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Crostini_by_Charles_Haynes.jpg/960px-Crostini_by_Charles_Haynes.jpg', // Crostini
+  'suppli roman rice ball fried mozzarella': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Suppl%C3%AC_al_telefono.jpg/960px-Suppl%C3%AC_al_telefono.jpg', // Supplì
+  'vitello tonnato veal tuna sauce piemonte': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Vitello_tonnato_%287169906567%29.jpg/960px-Vitello_tonnato_%287169906567%29.jpg', // Vitello Tonnato
+  'caprese salad mozzarella tomato basil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Caprese-1_%28tigher_crop%29.jpg/960px-Caprese-1_%28tigher_crop%29.jpg', // Insalata Caprese
+  'cotoletta milanese breaded veal cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cotoletta_alla_milanese_in_milano.jpg/960px-Cotoletta_alla_milanese_in_milano.jpg', // Cotoletta Milanese
+  'osso buco veal shank braised gremolata': 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Ossobuco.jpg', // Osso Buco
+  'bollito misto boiled meat italian northern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/20171225_Bollito_misto.jpg/960px-20171225_Bollito_misto.jpg', // Bollito Misto
+  'bistecca fiorentina tuscan t-bone steak': 'https://upload.wikimedia.org/wikipedia/commons/1/12/Bistecca_alla_fiorentina-01.jpg', // Bistecca Fiorentina
+  'porchetta italian roast pork herbs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Saveurs_2016_62.jpg/960px-Saveurs_2016_62.jpg', // Porchetta
+  'pork loin roasted tuscan rosemary garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fusion_of_traditional_dishes%2C_Tuscan_roasted_pork_%28arista%29_with_Shiitake_mushrooms.jpg/960px-Fusion_of_traditional_dishes%2C_Tuscan_roasted_pork_%28arista%29_with_Shiitake_mushrooms.jpg', // Arista di Maiale
+  'fritto misto seafood fried mixed italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Fritto_misto_di_pesce_con_limone.jpg/960px-Fritto_misto_di_pesce_con_limone.jpg', // Fritto Misto
+  'baccala salt cod italian dried fish stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Vicenza%2C_Espressamente%2C_baccala_vicentina.jpg/960px-Vicenza%2C_Espressamente%2C_baccala_vicentina.jpg', // Baccalà
+  'ribollita tuscan bread soup kale beans': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ribollita_toscana.JPG/960px-Ribollita_toscana.JPG', // Ribollita
+  'acquacotta tuscan water soup egg bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Acquacotta.jpg/960px-Acquacotta.jpg', // Acquacotta
+  'mushroom risotto porcini italian creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Risotto_ai_funghi_porcini.JPG/960px-Risotto_ai_funghi_porcini.JPG', // Risotto ai Funghi
+  'black squid ink risotto venetian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Risotto_al_nero_di_seppia.jpg/960px-Risotto_al_nero_di_seppia.jpg', // Risotto Nero
+  'grissini breadsticks thin crispy italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Soepstengels_%283871017999%29.jpg/960px-Soepstengels_%283871017999%29.jpg', // Grissini
+  'schiacciata flatbread tuscan olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Focaccia_o_schiacciata_di_patate.jpg/960px-Focaccia_o_schiacciata_di_patate.jpg', // Schiacciata
+  'piadina romagna flatbread stuffed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Piadina.jpg/960px-Piadina.jpg', // Piadina
+  'parmesan cheese block aged grated': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Parmigiano-Reggiano_at_Eataly_in_Stockholm.jpg/960px-Parmigiano-Reggiano_at_Eataly_in_Stockholm.jpg', // Parmigiano Reggiano
+  'buffalo mozzarella fresh white italy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Mozzarella_di_bufala2.jpg/960px-Mozzarella_di_bufala2.jpg', // Mozzarella di Bufala
+  'pecorino romano cheese hard grated': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Pecorino_romano_cheese.jpg/960px-Pecorino_romano_cheese.jpg', // Pecorino Romano
+  'gorgonzola blue cheese italian creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/A_Gongonzola_from_Baci.jpg/960px-A_Gongonzola_from_Baci.jpg', // Gorgonzola
+  'ricotta cheese fresh white creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ricotta_fresca.jpg/960px-Ricotta_fresca.jpg', // Ricotta
+  'taleggio cheese washed rind italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Taleggio_vecchia_lavorazione_%283323694182%29.jpg/960px-Taleggio_vecchia_lavorazione_%283323694182%29.jpg', // Taleggio
+  'sfogliatella pastry shell naples flaky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Sfogliatelle_ricce_e_frolle.jpg/960px-Sfogliatelle_ricce_e_frolle.jpg', // Sfogliatella
+  'cassata siciliana cake marzipan ricotta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cassatasiciliana.jpg/960px-Cassatasiciliana.jpg', // Cassata Siciliana
+  'zeppole fried doughnuts cream pastry': 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Zeppole_di_San_Giuseppe.jpg', // Zeppole
+  'granita coffee ice sicilian slush': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tris_di_granite.JPG/960px-Tris_di_granite.JPG', // Granita
+  'torta della nonna custard pine nut tart': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Torta_della_Nonna.jpg/960px-Torta_della_Nonna.jpg', // Torta della Nonna
+  'struffoli naples honey balls christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Struffoli2.JPG/960px-Struffoli2.JPG', // Struffoli
+  'aperol spritz orange cocktail prosecco': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Aperol_Spritz_aboard_Viking_Mariella.jpg/960px-Aperol_Spritz_aboard_Viking_Mariella.jpg', // Aperol Spritz
+  'negroni cocktail red bitter gin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Negroni_served_in_Vancouver_BC.jpg/960px-Negroni_served_in_Vancouver_BC.jpg', // Negroni
+  'grappa spirit italy glass clear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_glass_of_tasty_grappa.jpg/960px-A_glass_of_tasty_grappa.jpg', // Grappa
+  'amaro bitter italian liqueur digestif': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/ManyAmari.jpg/960px-ManyAmari.jpg', // Amaro
+  'pasta italian bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg', // Pasta
+  'carbonara pasta creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg', // Carbonara
+  'risotto creamy rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Risotto_con_l%27ossobuco%2C_Editathon_Vegnii_a_ved%C3%A8_se_l%27%C3%B2rghen_el_gh%27%C3%A8%2C_Baggio%2C_Milano_01.jpg/960px-Risotto_con_l%27ossobuco%2C_Editathon_Vegnii_a_ved%C3%A8_se_l%27%C3%B2rghen_el_gh%27%C3%A8%2C_Baggio%2C_Milano_01.jpg', // Risotto
+  'tiramisu dessert coffee': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Home-made_tiramisu%2C_november_2008.jpg/960px-Home-made_tiramisu%2C_november_2008.jpg', // Tiramisu
+  'lasagna baked pasta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Meaty_Lasagna_8of8_%288736299782%29.jpg/960px-Meaty_Lasagna_8of8_%288736299782%29.jpg', // Lasagna
+  'pesto sauce basil green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/BasilPesto.JPG/960px-BasilPesto.JPG', // Pesto
+  'minestrone soup italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Minestrone_soup.jpg/960px-Minestrone_soup.jpg', // Minestrone
+  'cannoli sicilian pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg/960px-Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg', // Cannoli
+  'panna cotta dessert': 'https://upload.wikimedia.org/wikipedia/commons/0/01/Panna_cotta_with_chocolate_mousse.jpg', // Panna Cotta
+  'arancini rice balls fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Arancini_002.jpg/960px-Arancini_002.jpg', // Arancini
+  'bruschetta tomato toasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/2014_Bruschetta_The_Larder_Chiang_Mai.jpg/960px-2014_Bruschetta_The_Larder_Chiang_Mai.jpg', // Bruschetta
+  'gnocchi potato dumplings': 'https://upload.wikimedia.org/wikipedia/commons/8/86/Gnocchi_di_ricotta_burro_e_salvia.jpg', // Gnocchi
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -317,4 +390,77 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Churros', file: 'Chocolate con churros (27343655726).jpg', author: 'Joy', license: 'CC BY 2.0' },
   { word: 'Jamón Ibérico', file: 'Jamon iberico de bellota 2 (cinco jotas).jpg', author: 'Cantabrucu', license: 'CC0' },
   { word: 'Patatas Bravas', file: 'Patatas bravas madrid.jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Amatriciana', file: 'Bucatini allamatriciana.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Gelato', file: 'Gelato ice cream.jpg', author: 'rawpixel', license: 'CC0' },
+  { word: 'Focaccia', file: 'Focaccia with Crumb.jpg', author: 'Fred Benenson', license: 'CC BY-SA 4.0' },
+  { word: 'Panettone', file: 'Panettone - Nicolettone 2017 - IMG 7092 (31752504105).jpg', author: 'N i c o l a from Fiumicino (Rome), Italy', license: 'CC BY 2.0' },
+  { word: 'Carpaccio', file: 'Carpaccio with cheese in Warsaw.jpg', author: 'MichalPL', license: 'CC BY-SA 4.0' },
+  { word: 'Saltimbocca', file: 'Saltimbocca 01.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Burrata', file: 'Burrata2.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Limoncello', file: 'SIMAL limoncello jp.jpg', author: 'claudia', license: 'CC BY-SA 4.0' },
+  { word: 'Spaghetti Bolognese', file: 'Quorn Spaghetti Bolognese.jpg', author: 'Quorn Foods Deutschland', license: 'CC BY-SA 4.0' },
+  { word: 'Tagliatelle', file: 'Making a better homemade pasta - 16670047286.jpg', author: 'Joy', license: 'CC BY 2.0' },
+  { word: 'Penne all\'Arrabbiata', file: 'Penne Arrabbiata.jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Aglio e Olio', file: 'Spaghetti di Gragnano e colatura di alici.jpg', author: 'Elga Cappellari', license: 'CC BY-SA 2.0' },
+  { word: 'Vongole', file: 'Flickr - cyclonebill - Spaghetti med muslinger.jpg', author: 'cyclonebill', license: 'CC BY-SA 2.0' },
+  { word: 'Cacio e Pepe', file: 'Tonnarelli cacio e pepe.jpg', author: 'Camelia.boban', license: 'CC BY-SA 4.0' },
+  { word: 'Pappardelle', file: 'Pappardelle.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Orecchiette', file: 'Orecchiette su tavoliere in legno.jpg', author: 'Giuseppe Nigro', license: 'CC BY-SA 4.0' },
+  { word: 'Bucatini', file: 'Bucatini.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Tortellini', file: 'Tortellini Bolognesi.jpg', author: 'Angelo.Muratore', license: 'CC BY-SA 4.0' },
+  { word: 'Ravioli', file: 'Ravioli 2020.jpg', author: 'Ramagliolo9', license: 'CC BY-SA 4.0' },
+  { word: 'Fettuccine Alfredo', file: 'Fettuccine Alfredo originals.jpg', author: 'Civa61', license: 'CC BY 4.0' },
+  { word: 'Pasta e Fagioli', file: 'Pasta e fagioli cannellini.jpg', author: 'Spinoziano', license: 'CC BY-SA 4.0' },
+  { word: 'Pizza Margherita', file: 'Neapolitan pizza at Trappica (48701940197).jpg', author: 'Bex Walton from London, England', license: 'CC BY 2.0' },
+  { word: 'Pizza Napolitana', file: 'Forno a legna pizza napoletana.jpg', author: 'CDibisceglia', license: 'CC BY-SA 4.0' },
+  { word: 'Pizza al Taglio', file: 'Pizza al taglio.jpg', author: 'Shoebill2', license: 'Public domain' },
+  { word: 'Calzone', file: 'Calzone Tradition + poivrons.JPG', author: 'Mario56', license: 'CC BY-SA 3.0' },
+  { word: 'Antipasto', file: 'Antipasto nell\'isola di Ortigia.jpg', author: 'Herbert Frank', license: 'CC BY 2.0' },
+  { word: 'Crostini', file: 'Crostini by Charles Haynes.jpg', author: 'Charles Haynes', license: 'CC BY-SA 2.0' },
+  { word: 'Supplì', file: 'Supplì al telefono.jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Vitello Tonnato', file: 'Vitello tonnato (7169906567).jpg', author: 'cyclonebill from Copenhagen, Denmark', license: 'CC BY-SA 2.0' },
+  { word: 'Insalata Caprese', file: 'Caprese-1 (tigher crop).jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Cotoletta Milanese', file: 'Cotoletta alla milanese in milano.jpg', author: 'Vaselineeeeeeee', license: 'CC BY-SA 4.0' },
+  { word: 'Osso Buco', file: 'Ossobuco.jpg', author: 'Mogens Engelund', license: 'CC BY-SA 3.0' },
+  { word: 'Bollito Misto', file: '20171225 Bollito misto.jpg', author: 'Melancholia~itwiki', license: 'CC0' },
+  { word: 'Bistecca Fiorentina', file: 'Bistecca alla fiorentina-01.jpg', author: 'mike packard', license: 'CC BY-SA 2.0' },
+  { word: 'Porchetta', file: 'Saveurs 2016 62.jpg', author: 'JJ Georges', license: 'CC BY-SA 4.0' },
+  { word: 'Arista di Maiale', file: 'Fusion of traditional dishes, Tuscan roasted pork (arista) with Shiitake mushrooms.jpg', author: 'Albarubescens', license: 'CC BY-SA 4.0' },
+  { word: 'Fritto Misto', file: 'Fritto misto di pesce con limone.jpg', author: 'Sergio Conti', license: 'CC BY-SA 2.0' },
+  { word: 'Baccalà', file: 'Vicenza, Espressamente, baccala vicentina.jpg', author: 'Palickap', license: 'CC BY-SA 4.0' },
+  { word: 'Ribollita', file: 'Ribollita toscana.JPG', author: 'Ithunn', license: 'CC BY-SA 3.0' },
+  { word: 'Acquacotta', file: 'Acquacotta.jpg', author: 'Fooding Around', license: 'CC BY 2.0' },
+  { word: 'Risotto ai Funghi', file: 'Risotto ai funghi porcini.JPG', author: 'Number55', license: 'CC BY-SA 3.0' },
+  { word: 'Risotto Nero', file: 'Risotto al nero di seppia.jpg', author: 'Micaela &amp; Massimo', license: 'CC BY 2.0' },
+  { word: 'Grissini', file: 'Soepstengels (3871017999).jpg', author: 'Sander van der Wel from Netherlands', license: 'CC BY-SA 2.0' },
+  { word: 'Schiacciata', file: 'Focaccia o schiacciata di patate.jpg', author: 'Rollopack', license: 'CC BY-SA 3.0' },
+  { word: 'Piadina', file: 'Piadina.jpg', author: 'Kobako', license: 'CC BY-SA 2.5' },
+  { word: 'Parmigiano Reggiano', file: 'Parmigiano-Reggiano at Eataly in Stockholm.jpg', author: 'Sinikka Halme', license: 'CC BY-SA 4.0' },
+  { word: 'Mozzarella di Bufala', file: 'Mozzarella di bufala2.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Pecorino Romano', file: 'Pecorino romano cheese.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Gorgonzola', file: 'A Gongonzola from Baci.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Ricotta', file: 'Ricotta fresca.jpg', author: 'it:Lasagnolo9', license: 'CC BY-SA 4.0' },
+  { word: 'Taleggio', file: 'Taleggio vecchia lavorazione (3323694182).jpg', author: 'F. D. Richards from Clinton, MI', license: 'CC BY-SA 2.0' },
+  { word: 'Sfogliatella', file: 'Sfogliatelle ricce e frolle.jpg', author: 'Saggittarius A', license: 'CC BY-SA 4.0' },
+  { word: 'Cassata Siciliana', file: 'Cassatasiciliana.jpg', author: 'Unknown author', license: 'CC BY-SA 4.0' },
+  { word: 'Zeppole', file: 'Zeppole di San Giuseppe.jpg', author: 'Lucas81', license: 'CC BY-SA 3.0' },
+  { word: 'Granita', file: 'Tris di granite.JPG', author: 'Adriao', license: 'CC BY 3.0' },
+  { word: 'Torta della Nonna', file: 'Torta della Nonna.jpg', author: 'Exilexi', license: 'CC BY 4.0' },
+  { word: 'Struffoli', file: 'Struffoli2.JPG', author: 'Steve-081', license: 'Public domain' },
+  { word: 'Aperol Spritz', file: 'Aperol Spritz aboard Viking Mariella.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Negroni', file: 'Negroni served in Vancouver BC.jpg', author: 'Geoff Peters from Vancouver, BC, Canada', license: 'CC BY 2.0' },
+  { word: 'Grappa', file: 'A glass of tasty grappa.jpg', author: 'Carsten Tolkmit from Kiel, Germany', license: 'CC BY-SA 2.0' },
+  { word: 'Amaro', file: 'ManyAmari.jpg', author: 'Shabbychef at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Pasta', file: '(Pasta) by David Adam Kess (pic.2).jpg', author: 'David Adam Kess', license: 'CC BY-SA 4.0' },
+  { word: 'Carbonara', file: 'Espaguetis carbonara.jpg', author: 'Javier Somoza', license: 'CC BY-SA 4.0' },
+  { word: 'Risotto', file: 'Risotto con l\'ossobuco, Editathon Vegnii a vedè se l\'òrghen el gh\'è, Baggio, Milano 01.jpg', author: 'Mattia Luigi Nappi', license: 'CC BY-SA 4.0' },
+  { word: 'Tiramisu', file: 'Home-made tiramisu, november 2008.jpg', author: 'procristination', license: 'CC BY 2.0' },
+  { word: 'Lasagna', file: 'Meaty Lasagna 8of8 (8736299782).jpg', author: 'Breville USA', license: 'CC BY 2.0' },
+  { word: 'Pesto', file: 'BasilPesto.JPG', author: 'Ɱ', license: 'CC BY-SA 3.0' },
+  { word: 'Minestrone', file: 'Minestrone soup.jpg', author: 'Katrin Morenz from Aachen, Deutschland', license: 'CC BY-SA 2.0' },
+  { word: 'Cannoli', file: 'Cannoli siciliani al Caffè Impero, ad Alcamo.jpg', author: 'Ensahequ', license: 'CC BY-SA 4.0' },
+  { word: 'Panna Cotta', file: 'Panna cotta with chocolate mousse.jpg', author: 'Insatiable Munchies', license: 'CC BY 2.0' },
+  { word: 'Arancini', file: 'Arancini 002.jpg', author: 'No machine-readable author provided. Gmelfi assumed (based on copyrigh', license: 'Public domain' },
+  { word: 'Bruschetta', file: '2014 Bruschetta The Larder Chiang Mai.jpg', author: 'Takeaway', license: 'CC BY-SA 4.0' },
+  { word: 'Gnocchi', file: 'Gnocchi di ricotta burro e salvia.jpg', author: 'Paoletta S.', license: 'CC BY 2.0' },
 ];
