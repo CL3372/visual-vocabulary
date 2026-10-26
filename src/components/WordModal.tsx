@@ -7,6 +7,7 @@ import { useApp } from '../context/AppContext';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { generateShareCard, shareWord } from '../utils/shareCard';
 import { getTranslation, getTranslationOrDash } from '../utils/getTranslation';
+import { nameVoice } from './WordCard';
 
 interface Props { word: Word; onClose: () => void }
 
@@ -126,7 +127,7 @@ export function WordModal({ word, onClose }: Props) {
                   </span>
                 </div>
                 <div className="flex gap-2 mt-1">
-                  <button onClick={() => speak(word.word, 'en', word.id)}
+                  <button onClick={() => speak(word.word, nameVoice(word), word.id)}
                     className="p-2 rounded-full transition-colors"
                     style={{ background: 'var(--accent-bg)', color: 'var(--accent)' }}
                     aria-label="Pronounce English">
