@@ -10,6 +10,20 @@ import { UpgradeModal } from './UpgradeModal';
 
 export type ViewMode = 'grid2' | 'grid3' | 'list';
 
+// Dish names in these cuisines are written in the cuisine's own language, so they are
+// read with that language's voice instead of an English one.
+const CUISINE_VOICE: Record<string, string> = {
+  'Portuguese Cuisine': 'pt',
+  'Brazilian Cuisine': 'pt-BR',
+  'Italian Cuisine': 'it',
+  'French Cuisine': 'fr',
+  'Spanish Cuisine': 'es',
+  'German Cuisine': 'de',
+};
+export function nameVoice(word: Word): string {
+  return CUISINE_VOICE[word.category] ?? 'en';
+}
+
 interface Props {
   word: Word;
   viewMode?: ViewMode;
@@ -39,7 +53,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
   function handleSpeak(e: React.MouseEvent) {
     e.stopPropagation();
     const text = showTranslation ? translation : word.word;
-    const lang = showTranslation ? targetLang : 'en';
+    const lang = showTranslation ? targetLang : nameVoice(word);
     speak(text, lang, word.id);
   }
 
