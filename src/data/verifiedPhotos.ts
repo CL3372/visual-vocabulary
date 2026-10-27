@@ -301,6 +301,76 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'boeuf bourguignon beef stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Boeuf_Bourguignon_2022.jpg/960px-Boeuf_Bourguignon_2022.jpg', // Boeuf Bourguignon
   'escargot snails french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Escargot_at_restaurant_Grill_it%21_Tapiola_Garden.jpg/960px-Escargot_at_restaurant_Grill_it%21_Tapiola_Garden.jpg', // Escargot
   'foie gras pate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Foie_gras_IMGP2349.jpg/960px-Foie_gras_IMGP2349.jpg', // Foie Gras
+  'okonomiyaki japanese savory pancake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg', // Okonomiyaki
+  'takoyaki octopus balls japanese street food': 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Takoyaki_by_yomi955.jpg', // Takoyaki
+  'gyoza japanese pan fried dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Gyoza_%2852769973678%29.jpg/960px-Gyoza_%2852769973678%29.jpg', // Gyoza
+  'onigiri japanese rice ball nori': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Onigiri_002.jpg/960px-Onigiri_002.jpg', // Onigiri
+  'sukiyaki japanese hot pot beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Sukiyaki_01.jpg/960px-Sukiyaki_01.jpg', // Sukiyaki
+  'shabu shabu japanese hot pot thin meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Shabu-shabu-01.jpg/960px-Shabu-shabu-01.jpg', // Shabu-Shabu
+  'natto fermented soybeans japanese': 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Natto_mixed.jpg', // Natto
+  'mochi japanese rice cake sweet': 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Rice_Cake.jpg', // Mochi
+  'yakisoba japanese fried noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Yakisoba_-_01.jpg/960px-Yakisoba_-_01.jpg', // Yakisoba
+  'tonkotsu ramen pork broth egg noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tonkotsu_ramen_in_Tokyo.jpg/960px-Tonkotsu_ramen_in_Tokyo.jpg', // Tonkotsu Ramen
+  'matcha green tea powder japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/960px-Matcha_Scoop.jpg', // Matcha
+  'sake japanese rice wine bottle': 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Sake_set.jpg', // Sake
+  'soba buckwheat noodles japanese cold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mori-soba_002.jpg/960px-Mori-soba_002.jpg', // Soba
+  'nigiri sushi rice fish hand pressed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Rokusanen_Wakayama_Japan07s5.jpg/960px-Rokusanen_Wakayama_Japan07s5.jpg', // Nigiri
+  'maki sushi roll nori seaweed rice cut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Makizushi2.jpg/960px-Makizushi2.jpg', // Maki
+  'temaki hand roll cone sushi nori': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Spider_hand_roll.jpg/960px-Spider_hand_roll.jpg', // Temaki
+  'chirashi scattered sushi bowl rice fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Chirashi_zushi_by_Marshall_Astor_in_Gardena%2C_CA.jpg/960px-Chirashi_zushi_by_Marshall_Astor_in_Gardena%2C_CA.jpg', // Chirashi
+  'shio ramen salt clear broth noodle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Japanese_Salt_flavor_Sapporo_Ramen.JPG/960px-Japanese_Salt_flavor_Sapporo_Ramen.JPG', // Shio Ramen
+  'shoyu ramen soy sauce brown broth tokyo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg/960px-Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg', // Shoyu Ramen
+  'miso ramen sapporo rich cloudy broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%91%B3%E5%99%8C%EF%BC%88%E5%A4%A7%E5%B3%B6%EF%BC%89.jpg/960px-%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%91%B3%E5%99%8C%EF%BC%88%E5%A4%A7%E5%B3%B6%EF%BC%89.jpg', // Miso Ramen
+  'tsukemen dipping ramen noodles separate broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Tsuke-men_001.jpg/960px-Tsuke-men_001.jpg', // Tsukemen
+  'yakitori grilled chicken skewers charcoal japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Typical_yakitori_001.jpg/960px-Typical_yakitori_001.jpg', // Yakitori
+  'kushiyaki japanese skewers grilled meat vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Cooking_yakitori.jpg/960px-Cooking_yakitori.jpg', // Kushiyaki
+  'yakiniku japanese bbq meat grill table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Yakiniku_002.jpg/960px-Yakiniku_002.jpg', // Yakiniku
+  'robatayaki hearth grilled japanese seafood vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Robatayaki.jpg/960px-Robatayaki.jpg', // Robatayaki
+  'somen thin white noodles cold dipping japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Somen_is_wonderfully_refreshing_summer_noodle_in_Japan.jpg/960px-Somen_is_wonderfully_refreshing_summer_noodle_in_Japan.jpg', // Somen
+  'hiyashi chuka cold ramen sesame summer toppings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hiyashi_chuka_002.jpg/960px-Hiyashi_chuka_002.jpg', // Hiyashi Chuka
+  'donburi rice bowl toppings japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg/960px-Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg', // Donburi
+  'oyakodon chicken egg rice bowl japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Oyakodon_003.jpg/960px-Oyakodon_003.jpg', // Oyakodon
+  'katsudon pork cutlet egg rice bowl japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Katsudon_001.jpg/960px-Katsudon_001.jpg', // Katsudon
+  'ochazuke tea rice bowl japanese green tea': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%E3%81%8A%E8%8C%B6%E6%BC%AC%E3%81%91%E3%81%8A%E6%96%B0%E9%A6%99%E4%BB%98%E3%81%8D01.jpg/960px-%E3%81%8A%E8%8C%B6%E6%BC%AC%E3%81%91%E3%81%8A%E6%96%B0%E9%A6%99%E4%BB%98%E3%81%8D01.jpg', // Ochazuke
+  'korokke japanese potato croquette fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Potato_croquettes_001.jpg/960px-Potato_croquettes_001.jpg', // Korokke
+  'ebi furai fried shrimp prawns panko japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ebi_Fry_003.jpg/960px-Ebi_Fry_003.jpg', // Ebi Furai
+  'agedashi tofu fried silken dashi broth': 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Agedashi_tofu%2C_fried_tofu_with_broth.jpg', // Agedashi Tofu
+  'nabe japanese hot pot winter communal': 'https://upload.wikimedia.org/wikipedia/commons/5/50/Cookingsukiyaki.jpg', // Nabe
+  'oden japanese winter stew daikon fish cake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Oden_001.jpg/960px-Oden_001.jpg', // Oden
+  'chawanmushi steamed egg custard japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Chawan-mushi.JPG/960px-Chawan-mushi.JPG', // Chawanmushi
+  'tamagoyaki rolled omelette japanese sweet egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_%2839394233682%29.jpg/960px-%E9%B3%A5%E7%84%BC%E3%81%8D%E5%B1%85%E9%85%92%E5%B1%8B_%2839394233682%29.jpg', // Tamagoyaki
+  'tamago gohan raw egg rice japanese breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Tamagokake-gohan_001.jpg/960px-Tamagokake-gohan_001.jpg', // Tamago Gohan
+  'taiyaki fish shaped waffle red bean japanese street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Taiyaki_003.jpg/960px-Taiyaki_003.jpg', // Taiyaki
+  'dorayaki red bean pancake sandwich japanese sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Dorayaki_001_%283%29.jpg/960px-Dorayaki_001_%283%29.jpg', // Dorayaki
+  'karaage fried chicken japanese crispy lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg', // Karaage
+  'tsukemono japanese pickles colourful assorted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nukazuke.jpg/960px-Nukazuke.jpg', // Tsukemono
+  'umeboshi pickled plum japanese sour red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Umeboshi_20101209_c.jpg/960px-Umeboshi_20101209_c.jpg', // Umeboshi
+  'miso paste fermented soybean japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Miso_paste_by_wilbanks_in_Nishiki_Ichiba%2C_Kyoto.jpg/960px-Miso_paste_by_wilbanks_in_Nishiki_Ichiba%2C_Kyoto.jpg', // Miso
+  'wasabi fresh green paste japanese sushi': 'https://upload.wikimedia.org/wikipedia/commons/3/3c/WasabiOnOroshigane.jpg', // Wasabi
+  'dashi broth kombu bonito stock japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/JapaneseBouillon_Dashi.jpg/960px-JapaneseBouillon_Dashi.jpg', // Dashi
+  'kaiseki japanese fine dining multi course': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/960px-Jisaku_Kaiseki_Ryori_01.jpg', // Kaiseki
+  'wagyu beef marbled steak japanese premium': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Sliced_Matsusaka_wagyu_beef.jpg/960px-Sliced_Matsusaka_wagyu_beef.jpg', // Wagyu
+  'anmitsu agar jelly bean paste fruit japanese': 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Anmitsu_in_Isezakicho.jpg', // Anmitsu
+  'kakigori shaved ice syrup japanese summer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Macha_kakigori_snow_cone.jpg/960px-Macha_kakigori_snow_cone.jpg', // Kakigori
+  'wagashi traditional japanese sweets seasonal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/%E5%92%8C%E8%8F%93%E5%AD%90_%285376984019%29.jpg/960px-%E5%92%8C%E8%8F%93%E5%AD%90_%285376984019%29.jpg', // Wagashi
+  'daifuku mochi rice cake red bean filling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Daifuku_001.jpg/960px-Daifuku_001.jpg', // Daifuku
+  'matcha latte green tea milk frothy cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Matcha_tea_art.jpg/960px-Matcha_tea_art.jpg', // Matcha Latte
+  'amazake sweet rice drink japanese winter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Amazake_by_emily_harbour_in_july.jpg/960px-Amazake_by_emily_harbour_in_july.jpg', // Amazake
+  'umeshu plum wine japanese sweet liqueur': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Jisaku_Umeshu_with_ume.jpg/960px-Jisaku_Umeshu_with_ume.jpg', // Umeshu
+  'edamame soybeans boiled salted japanese izakaya': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Edamame_by_Zesmerelda_in_Chicago.jpg/960px-Edamame_by_Zesmerelda_in_Chicago.jpg', // Edamame
+  'hiyayakko cold tofu ginger soy bonito japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Hiya-yakko_002.jpg/960px-Hiya-yakko_002.jpg', // Hiyayakko
+  'kaisen don seafood sashimi rice bowl colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Kaisendon.jpg/960px-Kaisendon.jpg', // Kaisen Don
+  'natto sticky fermented soybeans rice japanese breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Natto_gohan_in_Kochi.jpg/960px-Natto_gohan_in_Kochi.jpg', // Natto Gohan
+  'japanese curry rice karē raisu thick mild': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg', // Kare Raisu
+  'sushi japanese roll': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Various_sushi%2C_beautiful_October_night_at_midnight.jpg/960px-Various_sushi%2C_beautiful_October_night_at_midnight.jpg', // Sushi
+  'ramen noodle soup japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Tonkotsu_Ramen_-_Goemon_Ramen_Bar_2023-06-06.jpg/960px-Tonkotsu_Ramen_-_Goemon_Ramen_Bar_2023-06-06.jpg', // Ramen
+  'tempura fried battered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Tempurainjapan-ikebukuro-dec312007.jpg/960px-Tempurainjapan-ikebukuro-dec312007.jpg', // Tempura
+  'sashimi raw fish salmon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg', // Sashimi
+  'miso soup japanese tofu': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Miso_Soup_001.jpg/960px-Miso_Soup_001.jpg', // Miso Soup
+  'udon noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg', // Udon
+  'tonkatsu pork cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg', // Tonkatsu
+  'teriyaki chicken glaze': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Teriyaki_003.jpg/960px-Teriyaki_003.jpg', // Teriyaki
+  'ponzu citrus soy sauce japanese dipping': '', // Ponzu — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -579,4 +649,73 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Boeuf Bourguignon', file: 'Boeuf Bourguignon 2022.jpg', author: 'ZhengZhou', license: 'CC BY-SA 4.0' },
   { word: 'Escargot', file: 'Escargot at restaurant Grill it! Tapiola Garden.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
   { word: 'Foie Gras', file: 'Foie gras IMGP2349.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
+  { word: 'Okonomiyaki', file: 'Okonomiyaki 001.jpg', author: 'ume-y', license: 'CC BY 2.0' },
+  { word: 'Takoyaki', file: 'Takoyaki by yomi955.jpg', author: 'heiwa4126', license: 'CC BY 2.0' },
+  { word: 'Gyoza', file: 'Gyoza (52769973678).jpg', author: 'nakashi from Chofu, Tokyo, JAPAN', license: 'CC BY-SA 2.0' },
+  { word: 'Onigiri', file: 'Onigiri 002.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Sukiyaki', file: 'Sukiyaki 01.jpg', author: 'ajari', license: 'CC BY 2.0' },
+  { word: 'Shabu-Shabu', file: 'Shabu-shabu-01.jpg', author: 'jimg944', license: 'CC BY 2.0' },
+  { word: 'Natto', file: 'Natto mixed.jpg', author: 'User:Gleam', license: 'CC BY-SA 3.0' },
+  { word: 'Mochi', file: 'Rice Cake.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Yakisoba', file: 'Yakisoba - 01.jpg', author: 'Quercus acuta', license: 'CC BY-SA 4.0' },
+  { word: 'Tonkotsu Ramen', file: 'Tonkotsu ramen in Tokyo.jpg', author: 'Syced', license: 'CC0' },
+  { word: 'Matcha', file: 'Matcha Scoop.jpg', author: 'Evanhoever', license: 'CC BY-SA 4.0' },
+  { word: 'Sake', file: 'Sake set.jpg', author: 'The Epopt', license: 'Public domain' },
+  { word: 'Soba', file: 'Mori-soba 002.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Nigiri', file: 'Rokusanen Wakayama Japan07s5.jpg', author: '663highland', license: 'CC BY 2.5' },
+  { word: 'Maki', file: 'Makizushi2.jpg', author: 'pasqualeschiavoneph', license: 'CC0' },
+  { word: 'Temaki', file: 'Spider hand roll.jpg', author: 'RightCowLeftCoast', license: 'CC BY-SA 4.0' },
+  { word: 'Chirashi', file: 'Chirashi zushi by Marshall Astor in Gardena, CA.jpg', author: 'Marshall Astor - Food Pornographer from Japanese restaurant Tampopo Re', license: 'CC BY-SA 2.0' },
+  { word: 'Shio Ramen', file: 'Japanese Salt flavor Sapporo Ramen.JPG', author: 'STRONGlk7', license: 'CC BY-SA 3.0' },
+  { word: 'Shoyu Ramen', file: 'Shoyu Ramen（Tokyo Ramen） - 01.jpg', author: 'Quercus acuta', license: 'CC BY-SA 4.0' },
+  { word: 'Miso Ramen', file: 'らーめん味噌（大島）.jpg', author: 'くろふね', license: 'CC BY-SA 4.0' },
+  { word: 'Tsukemen', file: 'Tsuke-men 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Yakitori', file: 'Typical yakitori 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Kushiyaki', file: 'Cooking yakitori.jpg', author: '竹麦魚(Searobin)', license: 'CC BY-SA 3.0' },
+  { word: 'Yakiniku', file: 'Yakiniku 002.jpg', author: 'Jonathan Lin', license: 'CC BY-SA 2.0' },
+  { word: 'Robatayaki', file: 'Robatayaki.jpg', author: 'Schellack', license: 'CC BY 3.0' },
+  { word: 'Somen', file: 'Somen is wonderfully refreshing summer noodle in Japan.jpg', author: 'Blue Lotus from Tokyo', license: 'CC BY 2.0' },
+  { word: 'Hiyashi Chuka', file: 'Hiyashi chuka 002.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Donburi', file: 'Donburi Rice bowl of Chicken Teriyaki with Tomato.jpg', author: 'TechnoKittyCat', license: 'CC0' },
+  { word: 'Oyakodon', file: 'Oyakodon 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Katsudon', file: 'Katsudon 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Ochazuke', file: 'お茶漬けお新香付き01.jpg', author: 'ととりん', license: 'CC BY-SA 3.0' },
+  { word: 'Korokke', file: 'Potato croquettes 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Ebi Furai', file: 'Ebi Fry 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Agedashi Tofu', file: 'Agedashi tofu, fried tofu with broth.jpg', author: 'HungryHuy', license: 'CC BY 2.0' },
+  { word: 'Nabe', file: 'Cookingsukiyaki.jpg', author: 'Kapichu', license: 'CC BY-SA 3.0' },
+  { word: 'Oden', file: 'Oden 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Chawanmushi', file: 'Chawan-mushi.JPG', author: 'Brücke-Osteuropa', license: 'CC0' },
+  { word: 'Tamagoyaki', file: '鳥焼き居酒屋 (39394233682).jpg', author: '極地狐', license: 'CC BY 2.0' },
+  { word: 'Tamago Gohan', file: 'Tamagokake-gohan 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Taiyaki', file: 'Taiyaki 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Dorayaki', file: 'Dorayaki 001 (3).jpg', author: 'Ocdp', license: 'CC BY-SA 3.0' },
+  { word: 'Karaage', file: 'Chicken karaage 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Tsukemono', file: 'Nukazuke.jpg', author: 'DoWhile', license: 'CC BY-SA 3.0' },
+  { word: 'Umeboshi', file: 'Umeboshi 20101209 c.jpg', author: 'Batholith (talk)', license: 'Public domain' },
+  { word: 'Miso', file: 'Miso paste by wilbanks in Nishiki Ichiba, Kyoto.jpg', author: 'wilbanks from Shop of boiled beans, side dishes and miso, Adzumaya Foo', license: 'CC BY-SA 2.0' },
+  { word: 'Wasabi', file: 'WasabiOnOroshigane.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Dashi', file: 'JapaneseBouillon Dashi.jpg', author: 'サフィル', license: 'CC BY-SA 4.0' },
+  { word: 'Kaiseki', file: 'Jisaku Kaiseki Ryori 01.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Wagyu', file: 'Sliced Matsusaka wagyu beef.jpg', author: 'Schellack', license: 'CC BY 3.0' },
+  { word: 'Anmitsu', file: 'Anmitsu in Isezakicho.jpg', author: 'akira yamada from Yokohama (横浜市中区伊勢佐木町 - Isezakicho)', license: 'CC BY-SA 2.0' },
+  { word: 'Kakigori', file: 'Macha kakigori snow cone.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Wagashi', file: '和菓子 (5376984019).jpg', author: 'Ai Amo from Japan', license: 'CC BY 2.0' },
+  { word: 'Daifuku', file: 'Daifuku 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Matcha Latte', file: 'Matcha tea art.jpg', author: 'John Beans', license: 'CC BY 2.0' },
+  { word: 'Amazake', file: 'Amazake by emily harbour in july.jpg', author: 'emily_harbour_in_july', license: 'CC BY 2.0' },
+  { word: 'Umeshu', file: 'Jisaku Umeshu with ume.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Edamame', file: 'Edamame by Zesmerelda in Chicago.jpg', author: 'Tammy Green (aka Zesmerelda) from Chicago Upscale Dining + Lounge Repu', license: 'CC BY-SA 2.0' },
+  { word: 'Hiyayakko', file: 'Hiya-yakko 002.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Kaisen Don', file: 'Kaisendon.jpg', author: '海鮮ドン', license: 'CC BY-SA 4.0' },
+  { word: 'Natto Gohan', file: 'Natto gohan in Kochi.jpg', author: 'ノボホショコロトソ', license: 'CC BY 4.0' },
+  { word: 'Kare Raisu', file: 'Beef curry rice 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Sushi', file: 'Various sushi, beautiful October night at midnight.jpg', author: 'Yumi Kimura', license: 'CC BY-SA 2.0' },
+  { word: 'Ramen', file: 'Tonkotsu Ramen - Goemon Ramen Bar 2023-06-06.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Tempura', file: 'Tempurainjapan-ikebukuro-dec312007.jpg', author: 'Nesnad', license: 'CC0' },
+  { word: 'Sashimi', file: '241109 Shigaraki ware Koga Shiga pref Japan01s3.jpg', author: '663highland', license: 'CC BY-SA 4.0' },
+  { word: 'Miso Soup', file: 'Miso Soup 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Udon', file: 'Bowl of Kitsune Udon.jpg', author: 'LingLass', license: 'CC0' },
+  { word: 'Tonkatsu', file: 'Tonkatsu by ayustety in Tokyo.jpg', author: 'ayustety from Tokyo, Japan', license: 'CC BY-SA 2.0' },
+  { word: 'Teriyaki', file: 'Teriyaki 003.jpg', author: 'Ocdp', license: 'CC0' },
 ];
