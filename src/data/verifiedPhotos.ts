@@ -371,6 +371,67 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tonkatsu pork cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg', // Tonkatsu
   'teriyaki chicken glaze': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Teriyaki_003.jpg/960px-Teriyaki_003.jpg', // Teriyaki
   'ponzu citrus soy sauce japanese dipping': '', // Ponzu — no trustworthy photo yet
+  'dosa south indian crispy crepe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Masala_dosa_01.jpg/960px-Masala_dosa_01.jpg', // Dosa
+  'idli steamed rice cake south indian': 'https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG', // Idli
+  'chana masala chickpea curry indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Chana_masala.jpg/960px-Chana_masala.jpg', // Chana Masala
+  'aloo gobi potato cauliflower indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Aloo_gobi.jpg/960px-Aloo_gobi.jpg', // Aloo Gobi
+  'tandoori chicken red spiced grilled clay oven': 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Chickentandoori.jpg', // Tandoori Chicken
+  'rasam south indian pepper soup thin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Rasam.JPG/960px-Rasam.JPG', // Rasam
+  'khichdi indian rice lentil porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Dall_Khichdi.jpg/960px-Dall_Khichdi.jpg', // Khichdi
+  'gulab jamun indian syrup sweet balls': 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Gulab-jamun-wallpaper-1.jpg', // Gulab Jamun
+  'raita yogurt cucumber indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cucumber-raita.jpg/960px-Cucumber-raita.jpg', // Raita
+  'lassi indian yogurt drink mango': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Salt_lassi.jpg/960px-Salt_lassi.jpg', // Lassi
+  'malai kofta paneer balls cream sauce indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/MalaiKofta.jpg/960px-MalaiKofta.jpg', // Malai Kofta
+  'puri indian fried bread puffed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Fluffy_Poori_%28cropped%29.JPG/960px-Fluffy_Poori_%28cropped%29.JPG', // Puri
+  'rogan josh kashmiri lamb curry red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Rogan_Josh_Kashmiri.jpg/960px-Rogan_Josh_Kashmiri.jpg', // Rogan Josh
+  'palak paneer spinach cheese curry green indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Palakpaneer_Rayagada_Odisha_0009.jpg/960px-Palakpaneer_Rayagada_Odisha_0009.jpg', // Palak Paneer
+  'vindaloo goan pork curry hot fiery red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Beef_Vindaloo_-_Chilli_Mama%2C_Chadstone_%283014236693%29.jpg/960px-Beef_Vindaloo_-_Chilli_Mama%2C_Chadstone_%283014236693%29.jpg', // Vindaloo
+  'saag mustard greens punjabi curry winter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Makki_di_Roti_Te_Sarson_Da_Saag.jpg/960px-Makki_di_Roti_Te_Sarson_Da_Saag.jpg', // Saag
+  'korma mild creamy curry yogurt almonds': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Chicken_White_Qorma_%28Korma%29.JPG/960px-Chicken_White_Qorma_%28Korma%29.JPG', // Korma
+  'dhansak parsi lentil meat curry caramelised': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Dhansak.JPG/960px-Dhansak.JPG', // Dhansak
+  'fish curry coconut milk south indian coastal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Meen_curry_2.JPG/960px-Meen_curry_2.JPG', // Fish Curry
+  'roti chapati whole wheat flatbread indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg', // Roti
+  'paratha layered flatbread butter ghee flaky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Triangle_paratha_%28cropped%29.JPG/960px-Triangle_paratha_%28cropped%29.JPG', // Paratha
+  'bhatura deep fried leavened bread puffed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bikaner_chole_bhature.jpg/960px-Bikaner_chole_bhature.jpg', // Bhatura
+  'appam kerala rice pancake lacy coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg/960px-Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg', // Appam
+  'pulao pilaf rice spices vegetables indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/VEGETABLE_PULAO_~_An_Indian_cuisine_made_from_fried_rice_mixed_with_fried_vegetables.jpg/960px-VEGETABLE_PULAO_~_An_Indian_cuisine_made_from_fried_rice_mixed_with_fried_vegetables.jpg', // Pulao
+  'hyderabadi biryani dum rice lamb saffron': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/960px-Hyderabadi_Chicken_Biryani.jpg', // Hyderabadi Biryani
+  'pongal south indian rice lentil pepper ghee': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ven_pongal_with_sambar_and_chutney.jpg/960px-Ven_pongal_with_sambar_and_chutney.jpg', // Pongal
+  'pani puri golgappa hollow crispy ball tamarind': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Pani_Puri1.JPG/960px-Pani_Puri1.JPG', // Pani Puri
+  'bhel puri mumbai street food puffed rice chutney': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Behael_Puri_%286105489342%29.jpg/960px-Behael_Puri_%286105489342%29.jpg', // Bhel Puri
+  'vada pav mumbai potato fritter bread street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Vada_Pav-Indian_street_food.JPG/960px-Vada_Pav-Indian_street_food.JPG', // Vada Pav
+  'pakora fritters onion vegetable battered fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Onion_pakora_-_a.jpg/960px-Onion_pakora_-_a.jpg', // Pakora
+  'aloo tikki potato patty fried chutney chaat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Aloo_Tikki_served_with_chutneys.jpg/960px-Aloo_Tikki_served_with_chutneys.jpg', // Aloo Tikki
+  'chaat street food tangy spicy sweet tamarind': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Dahi_puri%2C_Doi_phuchka.jpg/960px-Dahi_puri%2C_Doi_phuchka.jpg', // Chaat
+  'uttapam thick dosa onion tomato south indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Mini_Uttappam.jpg/960px-Mini_Uttappam.jpg', // Uttapam
+  'medu vada south indian lentil doughnut sambar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Medu_Vada.JPG/960px-Medu_Vada.JPG', // Vada
+  'sambar south indian lentil vegetable soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Pumpkin_sambar.JPG/960px-Pumpkin_sambar.JPG', // Sambar
+  'avial kerala mixed vegetables coconut yoghurt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ayiyal.jpg/960px-Ayiyal.jpg', // Avial
+  'kerala fish molee coconut milk curry yellow mild': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Fish_Moilee_Kerala_Style_%28aka_KeralaFish_Molly%29.JPG/960px-Fish_Moilee_Kerala_Style_%28aka_KeralaFish_Molly%29.JPG', // Kerala Fish Molee
+  'seekh kebab minced meat skewer tandoor indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Pakistani_Food_Beef_Kabobs.jpg/960px-Pakistani_Food_Beef_Kabobs.jpg', // Seekh Kebab
+  'paneer tikka marinated cheese grilled tandoor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Paneer_tikka.jpg/960px-Paneer_tikka.jpg', // Paneer Tikka
+  'indian kebab galawat lucknow melt tandoor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Tunday_Kebabs.jpg/960px-Tunday_Kebabs.jpg', // Kebab
+  'dal makhani black lentil butter cream punjabi': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Punjabi_style_Dal_Makhani.jpg/960px-Punjabi_style_Dal_Makhani.jpg', // Dal Makhani
+  'dal tadka yellow lentil tempered cumin ghee': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Dal_Tadka-Delhi.jpg/960px-Dal_Tadka-Delhi.jpg', // Dal Tadka
+  'rajma red kidney bean curry north indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Rajma_Masala_%2832081557778%29.jpg/960px-Rajma_Masala_%2832081557778%29.jpg', // Rajma
+  'baingan bharta roasted eggplant mashed spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Baigan_Bharta_from_Nagpur.JPG/960px-Baigan_Bharta_from_Nagpur.JPG', // Baingan Bharta
+  'paneer butter masala orange curry cheese creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Shahi_panner.jpg/960px-Shahi_panner.jpg', // Paneer Butter Masala
+  'kheer rice pudding cardamom saffron indian sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Kheer.jpg/960px-Kheer.jpg', // Kheer
+  'halwa semolina carrot sweet dessert indian': 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Cuisine_%28268%29_44.jpg', // Halwa
+  'jalebi orange spiral fried sweet indian street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Basavanagudi_Kadalekai_Parishe_%282025%29_Bangalore_%2886%29.jpg/960px-Basavanagudi_Kadalekai_Parishe_%282025%29_Bangalore_%2886%29.jpg', // Jalebi
+  'rasgulla bengali cheese ball syrup white soft': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Rasgulla.jpg/960px-Rasgulla.jpg', // Rasgulla
+  'kulfi indian ice cream pistachio cardamom stick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Kulfi_5.jpg/960px-Kulfi_5.jpg', // Kulfi
+  'masala chai spiced milk tea india ginger': 'https://upload.wikimedia.org/wikipedia/commons/8/89/Chai_In_Sakora.jpg', // Masala Chai
+  'nimbu pani indian lemonade salt cumin': 'https://upload.wikimedia.org/wikipedia/commons/8/81/Nimbu_pani.JPG', // Nimbu Pani
+  'thandai holi milk drink rose nuts spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Thandai_%28Spiced_Indian_Milk_Drink%29.JPG/960px-Thandai_%28Spiced_Indian_Milk_Drink%29.JPG', // Thandai
+  'chutney green mint coriander tamarind indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Chutneykarnataka.jpg/960px-Chutneykarnataka.jpg', // Chutney
+  'achar indian pickle mango mustard oil spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Chilli_pickle_in_a_plate_2.jpg/960px-Chilli_pickle_in_a_plate_2.jpg', // Pickle (Achar)
+  'curry indian spicy sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Taj_Mahal_-_Lamb_Curry_Madras.jpg/960px-Taj_Mahal_-_Lamb_Curry_Madras.jpg', // Curry
+  'samosa fried indian pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg', // Samosa
+  'biryani indian rice spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg', // Biryani
+  'naan bread indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Annapurna_Naan.jpg/960px-Annapurna_Naan.jpg', // Naan
+  'butter chicken tikka masala': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg/960px-Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg', // Butter Chicken
+  'dal lentil soup indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Daal_after_Tadka_Pulse_Soup_India.jpg/960px-Daal_after_Tadka_Pulse_Soup_India.jpg', // Dal
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -718,4 +779,65 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Udon', file: 'Bowl of Kitsune Udon.jpg', author: 'LingLass', license: 'CC0' },
   { word: 'Tonkatsu', file: 'Tonkatsu by ayustety in Tokyo.jpg', author: 'ayustety from Tokyo, Japan', license: 'CC BY-SA 2.0' },
   { word: 'Teriyaki', file: 'Teriyaki 003.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Dosa', file: 'Masala dosa 01.jpg', author: 'Marajozkee', license: 'CC BY-SA 4.0' },
+  { word: 'Idli', file: 'Idli Sambar.JPG', author: 'Soumya dey at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Chana Masala', file: 'Chana masala.jpg', author: 'Simon Law (sfllaw) from Montréal, QC, Canada', license: 'CC BY-SA 2.0' },
+  { word: 'Aloo Gobi', file: 'Aloo gobi.jpg', author: 'paul goyette', license: 'CC BY-SA 2.0' },
+  { word: 'Tandoori Chicken', file: 'Chickentandoori.jpg', author: 'kspoddar', license: 'CC BY-SA 2.0' },
+  { word: 'Rasam', file: 'Rasam.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Khichdi', file: 'Dall Khichdi.jpg', author: 'Rpande', license: 'CC BY-SA 4.0' },
+  { word: 'Gulab Jamun', file: 'Gulab-jamun-wallpaper-1.jpg', author: 'Sapra5379', license: 'CC BY-SA 4.0' },
+  { word: 'Raita', file: 'Cucumber-raita.jpg', author: 'Sonia Goyal', license: 'CC BY-SA 2.0' },
+  { word: 'Lassi', file: 'Salt lassi.jpg', author: 'Raksanand', license: 'CC BY-SA 4.0' },
+  { word: 'Malai Kofta', file: 'MalaiKofta.jpg', author: 'Monali.mishra', license: 'CC BY-SA 4.0' },
+  { word: 'Puri', file: 'Fluffy Poori (cropped).JPG', author: 'Vidyascooking', license: 'CC BY-SA 4.0' },
+  { word: 'Rogan Josh', file: 'Rogan Josh Kashmiri.jpg', author: 'Spice Eats', license: 'CC BY 3.0' },
+  { word: 'Palak Paneer', file: 'Palakpaneer Rayagada Odisha 0009.jpg', author: 'Lopanayak', license: 'CC BY-SA 4.0' },
+  { word: 'Vindaloo', file: 'Beef Vindaloo - Chilli Mama, Chadstone (3014236693).jpg', author: 'Alpha from Melbourne, Australia', license: 'CC BY-SA 2.0' },
+  { word: 'Saag', file: 'Makki di Roti Te Sarson Da Saag.jpg', author: 'Yash Kapoor', license: 'CC BY-SA 3.0' },
+  { word: 'Korma', file: 'Chicken White Qorma (Korma).JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Dhansak', file: 'Dhansak.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Fish Curry', file: 'Meen curry 2.JPG', author: 'Kalakki at Malayalam Wikipedia', license: 'CC BY-SA 2.5' },
+  { word: 'Roti', file: '2020-05-08 19 34 28 Chapati being made in a pan in the Franklin Farm section of Oak Hill, Fairfax County, Virginia.jpg', author: 'Famartin', license: 'CC BY-SA 4.0' },
+  { word: 'Paratha', file: 'Triangle paratha (cropped).JPG', author: 'Nithyasrm', license: 'CC BY-SA 4.0' },
+  { word: 'Bhatura', file: 'Bikaner chole bhature.jpg', author: 'Aleemk72', license: 'CC BY-SA 4.0' },
+  { word: 'Appam', file: 'Appam - அப்பம்.jpg', author: 'VinPrasad', license: 'CC BY-SA 4.0' },
+  { word: 'Pulao', file: 'VEGETABLE PULAO ~ An Indian cuisine made from fried rice mixed with fried vegetables.jpg', author: 'Jagisnowjughead', license: 'CC BY-SA 4.0' },
+  { word: 'Hyderabadi Biryani', file: 'Hyderabadi Chicken Biryani.jpg', author: 'Garrett Ziegler from New York, United States', license: 'CC BY 2.0' },
+  { word: 'Pongal', file: 'Ven pongal with sambar and chutney.jpg', author: 'Shafana jasmine', license: 'CC BY-SA 4.0' },
+  { word: 'Pani Puri', file: 'Pani Puri1.JPG', author: 'Sruthi612', license: 'CC BY-SA 4.0' },
+  { word: 'Bhel Puri', file: 'Behael Puri (6105489342).jpg', author: 'Barry Pousman from New York, NY', license: 'CC BY 2.0' },
+  { word: 'Vada Pav', file: 'Vada Pav-Indian street food.JPG', author: 'Rutvi Mistry', license: 'CC BY-SA 4.0' },
+  { word: 'Pakora', file: 'Onion pakora - a.jpg', author: 'Babu iyer', license: 'CC BY-SA 4.0' },
+  { word: 'Aloo Tikki', file: 'Aloo Tikki served with chutneys.jpg', author: 'Raveesh Vyas from [Ahmedabad, Noida], India', license: 'CC BY-SA 2.0' },
+  { word: 'Chaat', file: 'Dahi puri, Doi phuchka.jpg', author: 'Rupamdas75', license: 'CC BY-SA 4.0' },
+  { word: 'Uttapam', file: 'Mini Uttappam.jpg', author: 'Ramesh NG', license: 'CC BY-SA 2.0' },
+  { word: 'Vada', file: 'Medu Vada.JPG', author: 'Lubnakarim06', license: 'CC BY-SA 4.0' },
+  { word: 'Sambar', file: 'Pumpkin sambar.JPG', author: 'Kalaiselvi Murugesan', license: 'CC BY-SA 4.0' },
+  { word: 'Avial', file: 'Ayiyal.jpg', author: 'Samphotography', license: 'CC BY-SA 4.0' },
+  { word: 'Kerala Fish Molee', file: 'Fish Moilee Kerala Style (aka KeralaFish Molly).JPG', author: 'Drsoumyadeepb', license: 'CC BY-SA 4.0' },
+  { word: 'Seekh Kebab', file: 'Pakistani Food Beef Kabobs.jpg', author: 'Jess Lander from Culver City, CA, USA', license: 'CC BY 2.0' },
+  { word: 'Paneer Tikka', file: 'Paneer tikka.jpg', author: 'Meghana Mohanty', license: 'CC BY-SA 4.0' },
+  { word: 'Kebab', file: 'Tunday Kebabs.jpg', author: 'Lillottama', license: 'CC BY-SA 4.0' },
+  { word: 'Dal Makhani', file: 'Punjabi style Dal Makhani.jpg', author: 'Radhikamprabhu82', license: 'CC BY-SA 4.0' },
+  { word: 'Dal Tadka', file: 'Dal Tadka-Delhi.jpg', author: 'AugustineKajur', license: 'CC BY-SA 4.0' },
+  { word: 'Rajma', file: 'Rajma Masala (32081557778).jpg', author: 'Gaurav Nemade', license: 'CC BY-SA 2.0' },
+  { word: 'Baingan Bharta', file: 'Baigan Bharta from Nagpur.JPG', author: 'Dheerajk88', license: 'CC BY-SA 4.0' },
+  { word: 'Paneer Butter Masala', file: 'Shahi panner.jpg', author: 'Om shankar singh', license: 'CC BY-SA 4.0' },
+  { word: 'Kheer', file: 'Kheer.jpg', author: 'stu spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Halwa', file: 'Cuisine (268) 44.jpg', author: 'AmanAgrahari01', license: 'CC BY-SA 4.0' },
+  { word: 'Jalebi', file: 'Basavanagudi Kadalekai Parishe (2025) Bangalore (86).jpg', author: 'Gpkp', license: 'CC BY-SA 4.0' },
+  { word: 'Rasgulla', file: 'Rasgulla.jpg', author: 'HrichikHv', license: 'CC BY-SA 4.0' },
+  { word: 'Kulfi', file: 'Kulfi 5.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY-SA 4.0' },
+  { word: 'Masala Chai', file: 'Chai In Sakora.jpg', author: 'Dadhichbittu007', license: 'CC BY-SA 4.0' },
+  { word: 'Nimbu Pani', file: 'Nimbu pani.JPG', author: 'Archana Joshi', license: 'CC BY-SA 4.0' },
+  { word: 'Thandai', file: 'Thandai (Spiced Indian Milk Drink).JPG', author: 'Aparna Balasubramanian', license: 'CC BY-SA 4.0' },
+  { word: 'Chutney', file: 'Chutneykarnataka.jpg', author: 'Charles Haynes', license: 'CC BY-SA 2.0' },
+  { word: 'Pickle (Achar)', file: 'Chilli pickle in a plate 2.jpg', author: 'Suyash.dwivedi', license: 'CC BY-SA 4.0' },
+  { word: 'Curry', file: 'Taj Mahal - Lamb Curry Madras.jpg', author: 'Francesc Fort', license: 'CC BY-SA 4.0' },
+  { word: 'Samosa', file: 'Samosas, snack food at Wikipedia\'s 16th Birthday celebration in Chittagong (01).jpg', author: 'Moheen Reeyad', license: 'CC BY-SA 4.0' },
+  { word: 'Biryani', file: '"Hyderabadi Dum Biryani".jpg', author: 'Mahi Tatavarty', license: 'CC BY-SA 4.0' },
+  { word: 'Naan', file: 'Annapurna Naan.jpg', author: 'snowpea&amp;bokchoi', license: 'CC BY 2.0' },
+  { word: 'Butter Chicken', file: 'Butter Chicken & Butter Naan - Home - Chandigarh - India - 0006.jpg', author: 'Yuvraj Singh 97', license: 'CC BY-SA 4.0' },
+  { word: 'Dal', file: 'Daal after Tadka Pulse Soup India.jpg', author: 'aimee rivers', license: 'CC BY-SA 2.0' },
 ];
