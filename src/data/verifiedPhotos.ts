@@ -472,6 +472,47 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'dim sum chinese dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chinese_DimSum_%289023590541%29.jpg/960px-Chinese_DimSum_%289023590541%29.jpg', // Dim Sum
   'peking duck crispy beijing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Peking_Duck%2C_2014_%2802%29.jpg/960px-Peking_Duck%2C_2014_%2802%29.jpg', // Peking Duck
   'spring rolls chinese fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Spring_Rolls_%283357696061%29.jpg/960px-Spring_Rolls_%283357696061%29.jpg', // Spring Rolls
+  'mole negro oaxacan dark chili chocolate sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Mole_negro_de_Oaxaca_con_arroz.jpg/960px-Mole_negro_de_Oaxaca_con_arroz.jpg', // Mole Negro
+  'pozole mexican hominy soup red pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg/960px-Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg', // Pozole
+  'chiles rellenos stuffed poblano pepper battered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Chile_Rellenos.jpg/960px-Chile_Rellenos.jpg', // Chiles Rellenos
+  'tamales mexican corn masa wrapped banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg', // Tamales
+  'cochinita pibil slow roasted pork achiote yucatan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Cochinita_pibil_2.jpg/960px-Cochinita_pibil_2.jpg', // Cochinita Pibil
+  'birria tacos mexican goat beef consomme': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Plato_de_birria.jpg/960px-Plato_de_birria.jpg', // Birria
+  'elote mexican street corn mayo cheese chili': 'https://upload.wikimedia.org/wikipedia/commons/6/67/Elote_recipe.jpg', // Elote
+  'churros fried dough cinnamon sugar chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Chocolate_con_churros_%2827343655726%29.jpg/960px-Chocolate_con_churros_%2827343655726%29.jpg', // Churros
+  'horchata mexican rice milk drink cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Horchata_de_arroz.jpg/960px-Horchata_de_arroz.jpg', // Horchata
+  'menudo mexican tripe soup red chili': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bowl_of_menudo_stew.jpg/960px-Bowl_of_menudo_stew.jpg', // Menudo
+  'sopa de lima yucatan lime chicken soup': 'https://upload.wikimedia.org/wikipedia/commons/2/27/Sopa_de_lima.jpg', // Sopa de Lima
+  'tacos al pastor spit pork pineapple mexico city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Tacos_al_pastor%2C_taco_de_panza.jpg/960px-Tacos_al_pastor%2C_taco_de_panza.jpg', // Tacos al Pastor
+  'tacos barbacoa beef cheek steamed slow cooked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Tacos_de_barbacoa_con_salsa_de_chile_rayado.jpg/960px-Tacos_de_barbacoa_con_salsa_de_chile_rayado.jpg', // Tacos de Barbacoa
+  'carnitas pork confit michoacan crispy shredded': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Carnitas.jpg/960px-Carnitas.jpg', // Tacos de Carnitas
+  'quesadilla cheese tortilla grilled mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Quesadilla_2.jpg/960px-Quesadilla_2.jpg', // Quesadilla
+  'caldo de res mexican beef vegetable soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Caldo_de_res_mexican_food.jpg/960px-Caldo_de_res_mexican_food.jpg', // Caldo de Res
+  'tortilla soup tomato chicken strips crispy': 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Sopa_de_tortilla_con_chicharron_de_real_del_monte.jpg', // Sopa de Tortilla
+  'caldo tlalpeno chicken chickpea chipotle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Caldo_tlalpe%C3%B1o.JPG/960px-Caldo_tlalpe%C3%B1o.JPG', // Caldo Tlalpeño
+  'salsa verde tomatillo green chili mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Salsa_verde.jpg/960px-Salsa_verde.jpg', // Salsa Verde
+  'salsa roja red tomato chili mexican sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Salsa_roja.jpg/960px-Salsa_roja.jpg', // Salsa Roja
+  'pico de gallo fresh tomato onion cilantro chopped': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Mmm..._Pico_de_Gallo_%285923456035%29.jpg/960px-Mmm..._Pico_de_Gallo_%285923456035%29.jpg', // Pico de Gallo
+  'mole poblano dark chocolate chili sauce turkey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/960px-ChickRedMole.JPG', // Mole Poblano
+  'gordita thick corn cake stuffed mexican street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/GORDITA.jpg/960px-GORDITA.jpg', // Gordita
+  'tostada crispy corn tortilla toppings shrimp': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tostada_de_tinga.jpg/960px-Tostada_de_tinga.jpg', // Tostada
+  'sope thick masa patty beans cheese meat': 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Sopes1.jpg', // Sope
+  'huarache long oval masa topped cactus beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Huarache_de_pollo_en_salsa_roja.JPG/960px-Huarache_de_pollo_en_salsa_roja.JPG', // Huarache
+  'tlayuda oaxacan large tortilla black beans quesillo': 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Tlayuda12-05oaxaca013x.jpg', // Tlayuda
+  'arroz rojo mexican red rice tomato cumin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mexican_rice_144235.jpg/960px-Mexican_rice_144235.jpg', // Arroz Rojo
+  'frijoles olla pot beans black pinto mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Frijoles_de_la_olla_1.jpg/960px-Frijoles_de_la_olla_1.jpg', // Frijoles de Olla
+  'queso fresco mexican fresh crumbly white cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Queso_fresco.JPG/960px-Queso_fresco.JPG', // Queso Fresco
+  'tres leches cake soaked cream mexican dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Pastel_de_Tres_Leches.jpg/960px-Pastel_de_Tres_Leches.jpg', // Tres Leches
+  'atole warm corn drink mexican traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg', // Atole
+  'champurrado hot chocolate corn drink thick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Champurrado_thenewplace_sf.jpg/960px-Champurrado_thenewplace_sf.jpg', // Champurrado
+  'agua fresca hibiscus melon cucumber water mexican': 'https://upload.wikimedia.org/wikipedia/commons/5/5b/ManekiNeko_horchata_jar.jpg', // Agua Fresca
+  'huevos rancheros fried eggs salsa tortilla mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Mmm...huevos_rancheros.jpg/960px-Mmm...huevos_rancheros.jpg', // Huevos Rancheros
+  'chilaquiles tortilla chips salsa verde egg mexican breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Chilaquiles_at_the_Grand_Cantina%2C_Windsor%2C_Ontario%2C_2025-09-01_04.jpg/960px-Chilaquiles_at_the_Grand_Cantina%2C_Windsor%2C_Ontario%2C_2025-09-01_04.jpg', // Chilaquiles
+  'tacos mexican food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg', // Tacos
+  'guacamole avocado dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Guacamole_IMGP1271.jpg/960px-Guacamole_IMGP1271.jpg', // Guacamole
+  'enchiladas mexican cheese sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Enchilada_Rice_Beans.jpg/960px-Enchilada_Rice_Beans.jpg', // Enchiladas
+  'mole sauce mexican chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mole_casero%2C_picante%2C_M%C3%A9xico.jpg/960px-Mole_casero%2C_picante%2C_M%C3%A9xico.jpg', // Mole
+  'crema mexicana sour cream drizzle tacos': '', // Crema Mexicana — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -920,4 +961,44 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Dim Sum', file: 'Chinese DimSum (9023590541).jpg', author: 'LeonardKong', license: 'CC BY 2.0' },
   { word: 'Peking Duck', file: 'Peking Duck, 2014 (02).jpg', author: 'City Foodsters', license: 'CC BY 2.0' },
   { word: 'Spring Rolls', file: 'Spring Rolls (3357696061).jpg', author: 'Donna Benjamin', license: 'CC BY-SA 2.0' },
+  { word: 'Mole Negro', file: 'Mole negro de Oaxaca con arroz.jpg', author: 'ProtoplasmaKid', license: 'CC BY-SA 4.0' },
+  { word: 'Pozole', file: 'Green pozole, dressed (29161841908) (cropped).jpg', author: 'T.Tseng', license: 'CC BY 2.0' },
+  { word: 'Chiles Rellenos', file: 'Chile Rellenos.jpg', author: 'Skyler Lewis', license: 'CC BY-SA 3.0' },
+  { word: 'Tamales', file: 'Tamal oaxaqueño.jpg', author: 'Georgina Meneses', license: 'CC BY-SA 4.0' },
+  { word: 'Cochinita Pibil', file: 'Cochinita pibil 2.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Birria', file: 'Plato de birria.jpg', author: 'Equipo 9mkt', license: 'CC BY-SA 3.0' },
+  { word: 'Elote', file: 'Elote recipe.jpg', author: 'SimpleFoodie', license: 'Public domain' },
+  { word: 'Churros', file: 'Chocolate con churros (27343655726).jpg', author: 'Joy', license: 'CC BY 2.0' },
+  { word: 'Horchata', file: 'Horchata de arroz.jpg', author: 'Ernesto Andrade from Fremont, United States', license: 'CC BY 2.0' },
+  { word: 'Menudo', file: 'Bowl of menudo stew.jpg', author: 'David Martin Davies', license: 'CC BY-SA 2.0' },
+  { word: 'Sopa de Lima', file: 'Sopa de lima.jpg', author: 'Aome7937', license: 'CC BY-SA 3.0' },
+  { word: 'Tacos al Pastor', file: 'Tacos al pastor, taco de panza.jpg', author: 'T.Tseng', license: 'CC BY 2.0' },
+  { word: 'Tacos de Barbacoa', file: 'Tacos de barbacoa con salsa de chile rayado.jpg', author: 'Daniela Gomez', license: 'CC BY-SA 4.0' },
+  { word: 'Tacos de Carnitas', file: 'Carnitas.jpg', author: 'Mike McCune', license: 'CC BY 2.0' },
+  { word: 'Quesadilla', file: 'Quesadilla 2.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Caldo de Res', file: 'Caldo de res mexican food.jpg', author: 'Julianduenas', license: 'CC BY-SA 3.0' },
+  { word: 'Sopa de Tortilla', file: 'Sopa de tortilla con chicharron de real del monte.jpg', author: 'Elizabethcasasola', license: 'CC BY-SA 4.0' },
+  { word: 'Caldo Tlalpeño', file: 'Caldo tlalpeño.JPG', author: 'Saloca', license: 'CC BY-SA 3.0' },
+  { word: 'Salsa Verde', file: 'Salsa verde.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Salsa Roja', file: 'Salsa roja.jpg', author: 'goblinbox_(queen_of_ad_hoc_bento) from Minneapolis, MN, US', license: 'CC BY 2.0' },
+  { word: 'Pico de Gallo', file: 'Mmm... Pico de Gallo (5923456035).jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'Mole Poblano', file: 'ChickRedMole.JPG', author: 'AlejandroLinaresGarcia', license: 'CC BY-SA 4.0' },
+  { word: 'Gordita', file: 'GORDITA.jpg', author: 'JEDIKNIGHT1970', license: 'CC BY-SA 2.5' },
+  { word: 'Tostada', file: 'Tostada de tinga.jpg', author: 'Jennifer Woodard Maderazo from San Francisco, USA', license: 'CC BY 2.0' },
+  { word: 'Sope', file: 'Sopes1.jpg', author: 'Mm serg', license: 'Public domain' },
+  { word: 'Huarache', file: 'Huarache de pollo en salsa roja.JPG', author: 'Svein Meinguer', license: 'CC BY-SA 4.0' },
+  { word: 'Tlayuda', file: 'Tlayuda12-05oaxaca013x.jpg', author: 'Bobak', license: 'CC BY-SA 2.5' },
+  { word: 'Arroz Rojo', file: 'Mexican rice 144235.jpg', author: 'Ralf Peter Reimann', license: 'CC BY-SA 2.0' },
+  { word: 'Frijoles de Olla', file: 'Frijoles de la olla 1.jpg', author: 'Salvador alc', license: 'CC BY-SA 4.0' },
+  { word: 'Queso Fresco', file: 'Queso fresco.JPG', author: 'Geoff', license: 'CC BY-SA 3.0' },
+  { word: 'Tres Leches', file: 'Pastel de Tres Leches.jpg', author: '@joefoodie', license: 'CC BY 2.0' },
+  { word: 'Atole', file: 'Atole.jpg', author: 'ottmarliebert.com', license: 'CC BY-SA 2.0' },
+  { word: 'Champurrado', file: 'Champurrado thenewplace sf.jpg', author: 'Tom White (Toboris)', license: 'CC BY 2.5' },
+  { word: 'Agua Fresca', file: 'ManekiNeko horchata jar.jpg', author: 'ManekiNeko', license: 'Public domain' },
+  { word: 'Huevos Rancheros', file: 'Mmm...huevos rancheros.jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'Chilaquiles', file: 'Chilaquiles at the Grand Cantina, Windsor, Ontario, 2025-09-01 04.jpg', author: 'Chris Woodrich', license: 'CC BY-SA 4.0' },
+  { word: 'Tacos', file: '001 Tacos de carnitas, carne asada y al pastor.jpg', author: 'Larry Miller', license: 'CC BY-SA 2.0' },
+  { word: 'Guacamole', file: 'Guacamole IMGP1271.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
+  { word: 'Enchiladas', file: 'Enchilada Rice Beans.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Mole', file: 'Mole casero, picante, México.jpg', author: 'Petrvs III', license: 'CC BY-SA 4.0' },
 ];
