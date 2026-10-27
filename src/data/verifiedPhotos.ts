@@ -243,6 +243,64 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'arancini rice balls fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Arancini_002.jpg/960px-Arancini_002.jpg', // Arancini
   'bruschetta tomato toasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/2014_Bruschetta_The_Larder_Chiang_Mai.jpg/960px-2014_Bruschetta_The_Larder_Chiang_Mai.jpg', // Bruschetta
   'gnocchi potato dumplings': 'https://upload.wikimedia.org/wikipedia/commons/8/86/Gnocchi_di_ricotta_burro_e_salvia.jpg', // Gnocchi
+  'french onion soup gratin cheese crock': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Mmm...onion_soup_%285344349906%29.jpg/960px-Mmm...onion_soup_%285344349906%29.jpg', // French Onion Soup
+  'vichyssoise cold potato leek soup cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Vichyssoise.jpg/960px-Vichyssoise.jpg', // Vichyssoise
+  'lobster bisque cream soup french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Bisque_de_homard.jpg/960px-Bisque_de_homard.jpg', // Bisque
+  'soupe au pistou provencal vegetable bean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Pistour-4.JPG/960px-Pistour-4.JPG', // Soupe au Pistou
+  'pate liver french terrine charcuterie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/%C3%89tal_de_charcutier-traiteur.JPG/960px-%C3%89tal_de_charcutier-traiteur.JPG', // Pâté
+  'terrine french pork countryside rustic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/La_Tuili%C3%A8re_-_Montloup_-_Ferme_auberge_Au_pr%C3%A9_de_mon_arbre_-_Terrine_de_campagne.jpg/960px-La_Tuili%C3%A8re_-_Montloup_-_Ferme_auberge_Au_pr%C3%A9_de_mon_arbre_-_Terrine_de_campagne.jpg', // Terrine
+  'gougeres cheese puff choux french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petites_goug%C3%A8res_ap%C3%A9ritif.jpg/960px-Petites_goug%C3%A8res_ap%C3%A9ritif.jpg', // Gougères
+  'salade nicoise tuna egg anchovy olives': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Salade_ni%C3%A7oise_001.jpg/960px-Salade_ni%C3%A7oise_001.jpg', // Salade Niçoise
+  'duck confit crispy skin french cassoulet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/MCB-duck-leg-confit.jpg/960px-MCB-duck-leg-confit.jpg', // Confit de Canard
+  'cassoulet white bean duck sausage slow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Cassoulet.cuit.jpg/960px-Cassoulet.cuit.jpg', // Cassoulet
+  'pot au feu french boiled beef vegetables broth': 'https://upload.wikimedia.org/wikipedia/commons/5/51/Pot-au-feu2.jpg', // Pot-au-Feu
+  'blanquette veau veal cream stew french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Blanquette_de_veau_%C3%A0_l%27ancienne_04.jpg/960px-Blanquette_de_veau_%C3%A0_l%27ancienne_04.jpg', // Blanquette de Veau
+  'navarin lamb stew spring vegetables french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Navarin_02.jpg/960px-Navarin_02.jpg', // Navarin d'Agneau
+  'steak tartare raw beef capers egg yolk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Tartare_de_boeuf_charolais_01.jpg/960px-Tartare_de_boeuf_charolais_01.jpg', // Steak Tartare
+  'steak frites bistro french fries entrecote': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Steak_frites.jpg/960px-Steak_frites.jpg', // Steak Frites
+  'magret duck breast scored pink medium rare': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Magret_de_canard_02.jpg/960px-Magret_de_canard_02.jpg', // Magret de Canard
+  'french roast chicken poulet roti golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg/960px-Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg', // Poulet Rôti
+  'rabbit mustard cream sauce french rustic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lapin_aux_deux_moutardes.jpg/960px-Lapin_aux_deux_moutardes.jpg', // Lapin à la Moutarde
+  'sole meuniere butter lemon fish french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Sole_meuniere_%284689490702%29.jpg/960px-Sole_meuniere_%284689490702%29.jpg', // Sole Meunière
+  'moules marinieres mussels white wine garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Normandy_%2710-_Saint-Vaast-la-Hougue_%284826863803%29.jpg/960px-Normandy_%2710-_Saint-Vaast-la-Hougue_%284826863803%29.jpg', // Moules Marinières
+  'brandade salt cod puree cream olive oil': 'https://upload.wikimedia.org/wikipedia/commons/6/68/Brandade5.jpg', // Brandade de Morue
+  'croque monsieur ham cheese bechamel grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Croque_Monsieur_and_salad_at_Paris_Bakery.jpg/960px-Croque_Monsieur_and_salad_at_Paris_Bakery.jpg', // Croque Monsieur
+  'croque madame fried egg toast french cafe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Croque-madame_02.jpg/960px-Croque-madame_02.jpg', // Croque Madame
+  'french omelette eggs butter fold yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Omelette-Plate.jpg/960px-Omelette-Plate.jpg', // Omelette
+  'salade lyonnaise frisee lardons poached egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Salade_lyonnaise.JPG/960px-Salade_lyonnaise.JPG', // Salade Lyonnaise
+  'tarte flambee alsatian thin pizza cream onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Tarte_flamb%C3%A9e_alsacienne_514471722.jpg/960px-Tarte_flamb%C3%A9e_alsacienne_514471722.jpg', // Tarte Flambée
+  'quiche lorraine bacon egg cream tart': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/54._Quiche_lorraine.jpg/960px-54._Quiche_lorraine.jpg', // Quiche Lorraine
+  'choucroute garnie sauerkraut sausage alsace': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Choucroute_garnie_servie_au_restaurant_Stam%2C_%C3%A0_Lyon_%28mars_2023%29.jpg/960px-Choucroute_garnie_servie_au_restaurant_Stam%2C_%C3%A0_Lyon_%28mars_2023%29.jpg', // Choucroute Garnie
+  'bouillabaisse marseille fish stew rouille': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Bouillabaisse_01.jpg/960px-Bouillabaisse_01.jpg', // Bouillabaisse
+  'piperade basque pepper tomato egg french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Piperade_01.jpg/960px-Piperade_01.jpg', // Piperade
+  'aligot mashed potato cheese stretchy auvergne': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Bol_d%27aligot.jpg/960px-Bol_d%27aligot.jpg', // Aligot
+  'tartiflette reblochon potato bacon savoy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Tartiflette.jpg/960px-Tartiflette.jpg', // Tartiflette
+  'gratin dauphinois potato cream garlic bake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Gratin_dauphinois.jpg/960px-Gratin_dauphinois.jpg', // Gratin Dauphinois
+  'baguette french bread crispy crust': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Baguettes%2C_Paris%2C_France_-_panoramio.jpg/960px-Baguettes%2C_Paris%2C_France_-_panoramio.jpg', // Baguette
+  'pain au chocolat chocolate croissant flaky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Pain_au_chocolat_Luc_Viatour.jpg/960px-Pain_au_chocolat_Luc_Viatour.jpg', // Pain au Chocolat
+  'brioche bread french enriched buttery': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Brioche_Nanterre_%28mars_2021%29.jpg/960px-Brioche_Nanterre_%28mars_2021%29.jpg', // Brioche
+  'madeleine shell cake france lemon butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Madeleine_02.JPG/960px-Madeleine_02.JPG', // Madeleine
+  'macarons colorful paris patisserie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Macarons%2C_French_made_mini_cakes.JPG/960px-Macarons%2C_French_made_mini_cakes.JPG', // Macaron
+  'eclair chocolate pastry cream choux': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg/960px-Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg', // Éclair
+  'paris brest choux ring praline cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Paris-Brest_IMG_0875.JPG/960px-Paris-Brest_IMG_0875.JPG', // Paris-Brest
+  'millefeuille napoleon pastry cream layers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Mille-feuille_02.jpg/960px-Mille-feuille_02.jpg', // Millefeuille
+  'tarte tatin caramel apple upside down tart': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Tarte_Tatin_a_la_Michalak.jpg/960px-Tarte_Tatin_a_la_Michalak.jpg', // Tarte Tatin
+  'clafoutis cherry batter pudding french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Clafoutis_cerises.jpg/960px-Clafoutis_cerises.jpg', // Clafoutis
+  'ile flottante floating island meringue custard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Auberge_Saint-Roch_%C3%AEle_flottante_%C3%A0_la_fraise.JPG/960px-Auberge_Saint-Roch_%C3%AEle_flottante_%C3%A0_la_fraise.JPG', // Île Flottante
+  'profiteroles choux cream chocolate sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Profiterole_choc.jpg/960px-Profiterole_choc.jpg', // Profiteroles
+  'chocolate mousse french dark rich cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Lafare_-_Bistrot_de_Pays_6.jpg/960px-Lafare_-_Bistrot_de_Pays_6.jpg', // Mousse au Chocolat
+  'creme caramel flan custard golden sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cremecaramel.jpg/960px-Cremecaramel.jpg', // Crème Caramel
+  'kir royale champagne blackcurrant cocktail': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Kir_Royal.jpg/960px-Kir_Royal.jpg', // Kir Royale
+  'pastis anise drink provence ice glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Pastis_005.jpg/960px-Pastis_005.jpg', // Pastis
+  'calvados apple brandy normandy glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Daron_Calvados_XO.JPG/960px-Daron_Calvados_XO.JPG', // Calvados
+  'croissant french pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Croissant-newspaper-and-tea.jpg/960px-Croissant-newspaper-and-tea.jpg', // Croissant
+  'creme brulee caramel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Creme_brul%C3%A9e.jpg/960px-Creme_brul%C3%A9e.jpg', // Crème Brûlée
+  'ratatouille vegetable french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ratatouille_001.jpg/960px-Ratatouille_001.jpg', // Ratatouille
+  'coq au vin chicken wine': 'https://upload.wikimedia.org/wikipedia/commons/3/30/Coq_au_vin_rouge.jpg', // Coq au Vin
+  'crepes french thin pancake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Crepes_dsc07085.jpg/960px-Crepes_dsc07085.jpg', // Crêpes
+  'boeuf bourguignon beef stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Boeuf_Bourguignon_2022.jpg/960px-Boeuf_Bourguignon_2022.jpg', // Boeuf Bourguignon
+  'escargot snails french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Escargot_at_restaurant_Grill_it%21_Tapiola_Garden.jpg/960px-Escargot_at_restaurant_Grill_it%21_Tapiola_Garden.jpg', // Escargot
+  'foie gras pate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Foie_gras_IMGP2349.jpg/960px-Foie_gras_IMGP2349.jpg', // Foie Gras
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -463,4 +521,62 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Arancini', file: 'Arancini 002.jpg', author: 'No machine-readable author provided. Gmelfi assumed (based on copyrigh', license: 'Public domain' },
   { word: 'Bruschetta', file: '2014 Bruschetta The Larder Chiang Mai.jpg', author: 'Takeaway', license: 'CC BY-SA 4.0' },
   { word: 'Gnocchi', file: 'Gnocchi di ricotta burro e salvia.jpg', author: 'Paoletta S.', license: 'CC BY 2.0' },
+  { word: 'French Onion Soup', file: 'Mmm...onion soup (5344349906).jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'Vichyssoise', file: 'Vichyssoise.jpg', author: 'BocaDorada', license: 'CC BY-SA 2.0' },
+  { word: 'Bisque', file: 'Bisque de homard.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Soupe au Pistou', file: 'Pistour-4.JPG', author: '120 / V. Mourre', license: 'CC BY-SA 3.0' },
+  { word: 'Pâté', file: 'Étal de charcutier-traiteur.JPG', author: 'DC', license: 'CC BY-SA 3.0' },
+  { word: 'Terrine', file: 'La Tuilière - Montloup - Ferme auberge Au pré de mon arbre - Terrine de campagne.jpg', author: 'Romainbehar', license: 'CC0' },
+  { word: 'Gougères', file: 'Petites gougères apéritif.jpg', author: 'Jebulon', license: 'CC0' },
+  { word: 'Salade Niçoise', file: 'Salade niçoise 001.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Confit de Canard', file: 'MCB-duck-leg-confit.jpg', author: 'en:User:MCB', license: 'CC BY-SA 2.5' },
+  { word: 'Cassoulet', file: 'Cassoulet.cuit.jpg', author: 'GD. Guilhem06 21:37, 20 April 2007 (UTC)', license: 'Public domain' },
+  { word: 'Pot-au-Feu', file: 'Pot-au-feu2.jpg', author: 'Andre', license: 'CC BY-SA 3.0' },
+  { word: 'Blanquette de Veau', file: 'Blanquette de veau à l\'ancienne 04.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Navarin d\'Agneau', file: 'Navarin 02.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Steak Tartare', file: 'Tartare de boeuf charolais 01.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Steak Frites', file: 'Steak frites.jpg', author: 'LWY', license: 'CC BY 2.0' },
+  { word: 'Magret de Canard', file: 'Magret de canard 02.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Poulet Rôti', file: 'Max\'s Roasted Chicken - Evan Swigart.jpg', author: 'Evan Swigart from Chicago, USA', license: 'CC BY 2.0' },
+  { word: 'Lapin à la Moutarde', file: 'Lapin aux deux moutardes.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Sole Meunière', file: 'Sole meuniere (4689490702).jpg', author: 'Jay Cross from Berkeley, California, US', license: 'CC BY 2.0' },
+  { word: 'Moules Marinières', file: 'Normandy \'10- Saint-Vaast-la-Hougue (4826863803).jpg', author: 'Archangel12', license: 'CC BY 2.0' },
+  { word: 'Brandade de Morue', file: 'Brandade5.jpg', author: 'Unknown author', license: 'CC BY-SA 3.0' },
+  { word: 'Croque Monsieur', file: 'Croque Monsieur and salad at Paris Bakery.jpg', author: 'Ruth Hartnup', license: 'CC BY 2.0' },
+  { word: 'Croque Madame', file: 'Croque-madame 02.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Omelette', file: 'Omelette-Plate.jpg', author: 'MaedaAkihiko', license: 'CC BY-SA 4.0' },
+  { word: 'Salade Lyonnaise', file: 'Salade lyonnaise.JPG', author: 'Arnaud 25', license: 'CC BY-SA 3.0' },
+  { word: 'Tarte Flambée', file: 'Tarte flambée alsacienne 514471722.jpg', author: 'Lulu Durand', license: 'CC BY 2.0' },
+  { word: 'Quiche Lorraine', file: '54. Quiche lorraine.jpg', author: 'Claude Humbert', license: 'CC BY-SA 4.0' },
+  { word: 'Choucroute Garnie', file: 'Choucroute garnie servie au restaurant Stam, à Lyon (mars 2023).jpg', author: 'Sebleouf', license: 'CC BY-SA 4.0' },
+  { word: 'Bouillabaisse', file: 'Bouillabaisse 01.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Piperade', file: 'Piperade 01.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Aligot', file: 'Bol d\'aligot.jpg', author: 'Slastic', license: 'Public domain' },
+  { word: 'Tartiflette', file: 'Tartiflette.jpg', author: 'Chrisjt', license: 'CC BY-SA 2.0 de' },
+  { word: 'Gratin Dauphinois', file: 'Gratin dauphinois.jpg', author: 'Ludovic Péron', license: 'CC BY-SA 3.0' },
+  { word: 'Baguette', file: 'Baguettes, Paris, France - panoramio.jpg', author: 'Nick Thweatt', license: 'CC BY-SA 3.0' },
+  { word: 'Pain au Chocolat', file: 'Pain au chocolat Luc Viatour.jpg', author: 'Luc Viatour', license: 'CC BY-SA 3.0' },
+  { word: 'Brioche', file: 'Brioche Nanterre (mars 2021).jpg', author: 'Benoît Prieur', license: 'CC0' },
+  { word: 'Madeleine', file: 'Madeleine 02.JPG', author: 'Un Chausson', license: 'CC BY-SA 4.0' },
+  { word: 'Macaron', file: 'Macarons, French made mini cakes.JPG', author: 'Nicolas Halftermeyer', license: 'CC BY-SA 3.0' },
+  { word: 'Éclair', file: 'Eclairs with chocolate icing at Cafe Blue Hills.jpg', author: 'georgie_grd', license: 'CC BY-SA 2.0' },
+  { word: 'Paris-Brest', file: 'Paris-Brest IMG 0875.JPG', author: 'Deror_avi', license: 'CC BY-SA 4.0' },
+  { word: 'Millefeuille', file: 'Mille-feuille 02.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Tarte Tatin', file: 'Tarte Tatin a la Michalak.jpg', author: 'Shani Evenstein (שני אבנשטיין)', license: 'CC BY-SA 4.0' },
+  { word: 'Clafoutis', file: 'Clafoutis cerises.jpg', author: 'Popo le Chien', license: 'CC BY-SA 4.0' },
+  { word: 'Île Flottante', file: 'Auberge Saint-Roch île flottante à la fraise.JPG', author: 'Marianne Casamance', license: 'CC BY-SA 4.0' },
+  { word: 'Profiteroles', file: 'Profiterole choc.jpg', author: 'Hcrepin', license: 'CC BY-SA 3.0' },
+  { word: 'Mousse au Chocolat', file: 'Lafare - Bistrot de Pays 6.jpg', author: 'Marianne Casamance', license: 'CC BY-SA 3.0' },
+  { word: 'Crème Caramel', file: 'Cremecaramel.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Kir Royale', file: 'Kir Royal.jpg', author: 'Martin Asche', license: 'CC BY-SA 3.0' },
+  { word: 'Pastis', file: 'Pastis 005.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Calvados', file: 'Daron Calvados XO.JPG', author: 'ChickenFalls', license: 'CC BY-SA 3.0' },
+  { word: 'Croissant', file: 'Croissant-newspaper-and-tea.jpg', author: 'Petr Kratochvil', license: 'CC0' },
+  { word: 'Crème Brûlée', file: 'Creme brulée.jpg', author: 'Arnaud 25', license: 'Public domain' },
+  { word: 'Ratatouille', file: 'Ratatouille 001.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Coq au Vin', file: 'Coq au vin rouge.jpg', author: 'stevendepolo', license: 'CC BY 2.0' },
+  { word: 'Crêpes', file: 'Crepes dsc07085.jpg', author: 'David Monniaux', license: 'CC BY-SA 3.0' },
+  { word: 'Boeuf Bourguignon', file: 'Boeuf Bourguignon 2022.jpg', author: 'ZhengZhou', license: 'CC BY-SA 4.0' },
+  { word: 'Escargot', file: 'Escargot at restaurant Grill it! Tapiola Garden.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Foie Gras', file: 'Foie gras IMGP2349.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
 ];
