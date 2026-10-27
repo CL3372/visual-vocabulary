@@ -432,6 +432,46 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'naan bread indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Annapurna_Naan.jpg/960px-Annapurna_Naan.jpg', // Naan
   'butter chicken tikka masala': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg/960px-Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg', // Butter Chicken
   'dal lentil soup indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Daal_after_Tadka_Pulse_Soup_India.jpg/960px-Daal_after_Tadka_Pulse_Soup_India.jpg', // Dal
+  'xiao long bao soup dumplings chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/A_Xiaolongbao_from_The_Modern_Shanghai.jpg/960px-A_Xiaolongbao_from_The_Modern_Shanghai.jpg', // Xiao Long Bao
+  'mapo tofu sichuan spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/960px-Chen_Mapo_Tofu.jpg', // Mapo Tofu
+  'char siu chinese bbq pork red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Char_siu_pieces.jpg/960px-Char_siu_pieces.jpg', // Char Siu
+  'wonton soup chinese dumplings broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/HK_Sai_Ying_Pun_Centre_Street_%E9%9B%B2%E5%90%9E_Wonton_noodle_July-2012.JPG/960px-HK_Sai_Ying_Pun_Centre_Street_%E9%9B%B2%E5%90%9E_Wonton_noodle_July-2012.JPG', // Wonton Soup
+  'congee rice porridge chinese breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Chinese_rice_congee.jpg/960px-Chinese_rice_congee.jpg', // Congee
+  'dan dan noodles sichuan sesame spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/960px-Dan-dan_noodles%2C_Shanghai.jpg', // Dan Dan Noodles
+  'chow mein stir fried noodles chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/960px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg', // Chow Mein
+  'fried rice chinese egg wok': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Chinese_egg_fried_rice.jpg/960px-Chinese_egg_fried_rice.jpg', // Fried Rice
+  'twice cooked pork chinese sichuan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_003.jpg/960px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_003.jpg', // Twice Cooked Pork
+  'lions head chinese pork meatballs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/%E7%8B%AE%E5%AD%90%E6%A5%BC%E7%8B%AE%E5%AD%90%E5%A4%B4.jpg/960px-%E7%8B%AE%E5%AD%90%E6%A5%BC%E7%8B%AE%E5%AD%90%E5%A4%B4.jpg', // Lion\'s Head
+  'steamed fish chinese ginger soy sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Ginger_Scallion_Red_Perch_%2850-366%29_%2825058329532%29.jpg/960px-Ginger_Scallion_Red_Perch_%2850-366%29_%2825058329532%29.jpg', // Steamed Fish
+  'tea eggs chinese marbled brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Tea_eggs_1.jpg/960px-Tea_eggs_1.jpg', // Tea Eggs
+  'zongzi sticky rice dumpling bamboo leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Zongzi.jpg/960px-Zongzi.jpg', // Zongzi
+  'har gow prawn dumpling dim sum steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Steamed_prawn_dumplings.jpg/960px-Steamed_prawn_dumplings.jpg', // Har Gow
+  'siu mai open topped pork prawn dim sum': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Yellow_dim_sum_in_steamer_basket.jpg/960px-Yellow_dim_sum_in_steamer_basket.jpg', // Siu Mai
+  'cheung fun rice noodle roll dim sum soy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/A_Steam_White_Rice_Noodle_Rolls_from_KC_Chinese_Restaurant.jpg/960px-A_Steam_White_Rice_Noodle_Rolls_from_KC_Chinese_Restaurant.jpg', // Cheung Fun
+  'turnip cake lo bak go dim sum pan fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%E9%A6%99%E7%85%8E%E8%98%BF%E8%94%94%E7%B3%95_%E2%80%9CFried_Turnip_Cake%E2%80%9D%2C_%E5%88%A9%E8%8B%91%E9%85%92%E5%AE%B6%E5%8D%88%E5%B8%82%E9%BB%9E%E5%BF%83_Lei_Garden_Lunchtime_Dim_Sum_SML.20120925.G12.00418_%288085981921%29.jpg/960px-%E9%A6%99%E7%85%8E%E8%98%BF%E8%94%94%E7%B3%95_%E2%80%9CFried_Turnip_Cake%E2%80%9D%2C_%E5%88%A9%E8%8B%91%E9%85%92%E5%AE%B6%E5%8D%88%E5%B8%82%E9%BB%9E%E5%BF%83_Lei_Garden_Lunchtime_Dim_Sum_SML.20120925.G12.00418_%288085981921%29.jpg', // Turnip Cake
+  'claypot rice chicken sausage cantonese crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Claypot_Chicken_Rice%2C_Singapore.JPG/960px-Claypot_Chicken_Rice%2C_Singapore.JPG', // Claypot Rice
+  'cantonese roast goose hong kong crispy skin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Cantonese_roast_goose_served_in_Guangzhou%2C_China%2C_June_2026.jpg/960px-Cantonese_roast_goose_served_in_Guangzhou%2C_China%2C_June_2026.jpg', // Roast Goose
+  'sichuan hot pot mala spicy broth bubbling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Hot_Pot.jpg/960px-Hot_Pot.jpg', // Sichuan Hot Pot
+  'kung pao chicken sichuan peanuts dried chili': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/960px-Kung-pao-shanghai.jpg', // Kung Pao Chicken
+  'yu xiang qiezi sichuan eggplant garlic sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Qiezi.jpg/960px-Qiezi.jpg', // Yu Xiang Qiezi
+  'shanghai hairy crab autumn steamed roe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Roe_inside_steamed_female_hairy_crab.jpg/960px-Roe_inside_steamed_female_hairy_crab.jpg', // Shanghai Hairy Crab
+  'hong shao rou red braised pork belly soy star anise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Red_braised_pork_%2820141106191221%29.JPG/960px-Red_braised_pork_%2820141106191221%29.JPG', // Red Braised Pork
+  'sheng jian bao pan fried pork bun crispy bottom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sheng_Jian_Bao_on_a_pan.jpg/960px-Sheng_Jian_Bao_on_a_pan.jpg', // Sheng Jian Bao
+  'yangzhou fried rice egg prawn ham colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/960px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg', // Yangzhou Fried Rice
+  'zhajiangmian beijing noodles minced pork fermented bean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Billyzhajiang1.jpg/960px-Billyzhajiang1.jpg', // Zhajiangmian
+  'jiaozi chinese dumplings pan fried boiled': 'https://upload.wikimedia.org/wikipedia/commons/8/88/%E5%8F%B0%E7%81%A3%E5%8D%97%E6%8A%95%E8%8D%89%E5%B1%AF%E6%B0%B4%E9%A4%83Nantou%2C_Taiwan_Caotun_dumplings.jpg', // Jiaozi
+  'yangrou chuanr lamb skewer beijing night market cumin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Spicy_lamb_skewers_%40_Tian_Tian_Wang_%40_Paris_%2834591424026%29.jpg/960px-Spicy_lamb_skewers_%40_Tian_Tian_Wang_%40_Paris_%2834591424026%29.jpg', // Lamb Skewer
+  'fo tiao qiang buddha jumps wall seafood soup luxury': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Buddha_jumps_over_the_wall_at_Jingrong_%2820161203135907%29.jpg/960px-Buddha_jumps_over_the_wall_at_Jingrong_%2820161203135907%29.jpg', // Buddha Jumps Over the Wall
+  'salt baked chicken hakka cantonese whole golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Salt_baked_chicken_-_San_Francisco%2C_CA.jpg/960px-Salt_baked_chicken_-_San_Francisco%2C_CA.jpg', // Salt Baked Chicken
+  'lanzhou beef noodle hand pulled broth china': 'https://upload.wikimedia.org/wikipedia/commons/c/c9/%E8%98%AD%E5%B7%9E%E7%89%9B%E8%82%89%E6%8B%89%E9%BA%BA.jpg', // Lanzhou Beef Noodle
+  'guilin rice noodles pork broth guangxi china': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%E6%A1%82%E6%9E%97%E7%B1%B3%E7%B2%89%28Guilin_Rice_Noodle_%29.jpg/960px-%E6%A1%82%E6%9E%97%E7%B1%B3%E7%B2%89%28Guilin_Rice_Noodle_%29.jpg', // Guilin Rice Noodles
+  'tang yuan glutinous rice ball soup black sesame': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Wufangzhai_Tangyuan_in_Wuhan.jpg/960px-Wufangzhai_Tangyuan_in_Wuhan.jpg', // Tang Yuan
+  'chinese egg tart custard pastry hong kong': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/HK_SSP_%E9%95%B7%E6%B2%99%E7%81%A3_Cheung_Sha_Wan_%E6%B7%B1%E7%9B%9B%E8%B7%AF_Sham_Shing_Road_%E6%B3%93%E6%99%AF%E6%BB%99%E5%95%86%E5%A0%B4_Banyan_Mall_shop_%E8%9B%8B%E6%92%BB%E7%8E%8B_King_Bakery_Studio_December_2019_SS2_egg_tarts.jpg/960px-HK_SSP_%E9%95%B7%E6%B2%99%E7%81%A3_Cheung_Sha_Wan_%E6%B7%B1%E7%9B%9B%E8%B7%AF_Sham_Shing_Road_%E6%B3%93%E6%99%AF%E6%BB%99%E5%95%86%E5%A0%B4_Banyan_Mall_shop_%E8%9B%8B%E6%92%BB%E7%8E%8B_King_Bakery_Studio_December_2019_SS2_egg_tarts.jpg', // Egg Tart
+  'tanghulu candied hawthorn skewer street food china': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/TangHuLu.JPG/960px-TangHuLu.JPG', // Tanghulu
+  'bubble tea boba milk tea tapioca pearls taiwanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg/960px-Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg', // Bubble Tea
+  'dim sum chinese dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chinese_DimSum_%289023590541%29.jpg/960px-Chinese_DimSum_%289023590541%29.jpg', // Dim Sum
+  'peking duck crispy beijing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Peking_Duck%2C_2014_%2802%29.jpg/960px-Peking_Duck%2C_2014_%2802%29.jpg', // Peking Duck
+  'spring rolls chinese fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Spring_Rolls_%283357696061%29.jpg/960px-Spring_Rolls_%283357696061%29.jpg', // Spring Rolls
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -840,4 +880,44 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Naan', file: 'Annapurna Naan.jpg', author: 'snowpea&amp;bokchoi', license: 'CC BY 2.0' },
   { word: 'Butter Chicken', file: 'Butter Chicken & Butter Naan - Home - Chandigarh - India - 0006.jpg', author: 'Yuvraj Singh 97', license: 'CC BY-SA 4.0' },
   { word: 'Dal', file: 'Daal after Tadka Pulse Soup India.jpg', author: 'aimee rivers', license: 'CC BY-SA 2.0' },
+  { word: 'Xiao Long Bao', file: 'A Xiaolongbao from The Modern Shanghai.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Mapo Tofu', file: 'Chen Mapo Tofu.jpg', author: 'ZhengZhou', license: 'CC BY-SA 4.0' },
+  { word: 'Char Siu', file: 'Char siu pieces.jpg', author: 'Michael', license: 'Public domain' },
+  { word: 'Wonton Soup', file: 'HK Sai Ying Pun Centre Street 雲吞 Wonton noodle July-2012.JPG', author: 'Angeimoarm', license: 'CC BY-SA 3.0' },
+  { word: 'Congee', file: 'Chinese rice congee.jpg', author: 'Daiju Azuma', license: 'CC BY-SA 2.5' },
+  { word: 'Dan Dan Noodles', file: 'Dan-dan noodles, Shanghai.jpg', author: 'Steven G. Johnson', license: 'CC BY-SA 3.0' },
+  { word: 'Chow Mein', file: 'Homemade Chow mein with shrimps and meat with a choy and Choung.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Fried Rice', file: 'Chinese egg fried rice.jpg', author: 'Euniceyeoh07', license: 'CC BY-SA 4.0' },
+  { word: 'Twice Cooked Pork', file: 'Twice cooked pork, Jia Yan, 5 rue Humblot, Paris 003.jpg', author: 'Guilhem Vellut from Paris, France', license: 'CC BY 2.0' },
+  { word: 'Lion\'s Head', file: '狮子楼狮子头.jpg', author: '三猎', license: 'CC BY-SA 4.0' },
+  { word: 'Steamed Fish', file: 'Ginger Scallion Red Perch (50-366) (25058329532).jpg', author: 'Tim Sackton from Somerville, MA', license: 'CC BY-SA 2.0' },
+  { word: 'Tea Eggs', file: 'Tea eggs 1.jpg', author: 'Daniela Eftimova', license: 'CC BY-SA 4.0' },
+  { word: 'Zongzi', file: 'Zongzi.jpg', author: 'Allentchang', license: 'CC BY-SA 3.0' },
+  { word: 'Har Gow', file: 'Steamed prawn dumplings.jpg', author: 'Maksym Kozlenko', license: 'CC BY-SA 4.0' },
+  { word: 'Siu Mai', file: 'Yellow dim sum in steamer basket.jpg', author: 'Mshuang2', license: 'CC0' },
+  { word: 'Cheung Fun', file: 'A Steam White Rice Noodle Rolls from KC Chinese Restaurant.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Turnip Cake', file: '香煎蘿蔔糕 “Fried Turnip Cake”, 利苑酒家午市點心 Lei Garden Lunchtime Dim Sum SML.20120925.G12.00418 (8085981921).jpg', author: 'See-ming Lee from Hong Kong SAR, China', license: 'CC BY 2.0' },
+  { word: 'Claypot Rice', file: 'Claypot Chicken Rice, Singapore.JPG', author: 'Banej', license: 'CC BY-SA 3.0' },
+  { word: 'Roast Goose', file: 'Cantonese roast goose served in Guangzhou, China, June 2026.jpg', author: 'Guangzhou Private Tours by Janvi', license: 'CC BY 4.0' },
+  { word: 'Sichuan Hot Pot', file: 'Hot Pot.jpg', author: 'Praneeth Thalla', license: 'CC BY-SA 4.0' },
+  { word: 'Kung Pao Chicken', file: 'Kung-pao-shanghai.jpg', author: 'Steven G. Johnson', license: 'CC BY-SA 3.0' },
+  { word: 'Yu Xiang Qiezi', file: 'Qiezi.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Shanghai Hairy Crab', file: 'Roe inside steamed female hairy crab.jpg', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
+  { word: 'Red Braised Pork', file: 'Red braised pork (20141106191221).JPG', author: 'N509FZ', license: 'CC BY-SA 4.0' },
+  { word: 'Sheng Jian Bao', file: 'Sheng Jian Bao on a pan.jpg', author: 'Brian Harrington Spier', license: 'CC BY-SA 2.0' },
+  { word: 'Yangzhou Fried Rice', file: 'Chinese fried rice by stu spivack in Cleveland, OH.jpg', author: 'stu_spivack from C & Y Chinese Restaurant in Cleveland\'s Chinatown', license: 'CC BY-SA 2.0' },
+  { word: 'Zhajiangmian', file: 'Billyzhajiang1.jpg', author: 'Archon6812', license: 'CC BY-SA 3.0' },
+  { word: 'Jiaozi', file: '台灣南投草屯水餃Nantou, Taiwan Caotun dumplings.jpg', author: 'Yeepunchmen', license: 'CC BY-SA 4.0' },
+  { word: 'Lamb Skewer', file: 'Spicy lamb skewers @ Tian Tian Wang @ Paris (34591424026).jpg', author: 'Guilhem Vellut from Paris, France', license: 'CC BY 2.0' },
+  { word: 'Buddha Jumps Over the Wall', file: 'Buddha jumps over the wall at Jingrong (20161203135907).jpg', author: 'N509FZ', license: 'CC BY-SA 4.0' },
+  { word: 'Salt Baked Chicken', file: 'Salt baked chicken - San Francisco, CA.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Lanzhou Beef Noodle', file: '蘭州牛肉拉麺.jpg', author: 'Super koikeyuriko', license: 'CC0' },
+  { word: 'Guilin Rice Noodles', file: '桂林米粉(Guilin Rice Noodle ).jpg', author: 'Flickr user gigijin', license: 'CC BY-SA 2.0' },
+  { word: 'Tang Yuan', file: 'Wufangzhai Tangyuan in Wuhan.jpg', author: 'Zheng Zhou', license: 'CC BY-SA 4.0' },
+  { word: 'Egg Tart', file: 'HK SSP 長沙灣 Cheung Sha Wan 深盛路 Sham Shing Road 泓景滙商場 Banyan Mall shop 蛋撻王 King Bakery Studio December 2019 SS2 egg tarts.jpg', author: 'LNAM Haoi', license: 'CC BY-SA 4.0' },
+  { word: 'Tanghulu', file: 'TangHuLu.JPG', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Bubble Tea', file: 'Pearl Milk Tea in Chun Shui Tang.jpg', author: 'Battlesnake1', license: 'CC0' },
+  { word: 'Dim Sum', file: 'Chinese DimSum (9023590541).jpg', author: 'LeonardKong', license: 'CC BY 2.0' },
+  { word: 'Peking Duck', file: 'Peking Duck, 2014 (02).jpg', author: 'City Foodsters', license: 'CC BY 2.0' },
+  { word: 'Spring Rolls', file: 'Spring Rolls (3357696061).jpg', author: 'Donna Benjamin', license: 'CC BY-SA 2.0' },
 ];
