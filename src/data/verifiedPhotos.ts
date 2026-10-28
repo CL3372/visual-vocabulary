@@ -713,6 +713,37 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'reuben sandwich corned beef sauerkraut swiss rye': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Katz%27s_Deli_-_Lunch.jpg/960px-Katz%27s_Deli_-_Lunch.jpg', // Reuben Sandwich
   'hamburger beef burger': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/960px-RedDot_Burger.jpg', // Hamburger
   'hot dog american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/960px-Hot_dog_with_mustard.png', // Hot Dog
+  'meze spread lebanese table small plates': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/960px-Petra_metzes.jpg', // Meze
+  'mutabbal smoky eggplant tahini lebanese dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Mutabbel_2.JPG/960px-Mutabbel_2.JPG', // Mutabbal
+  'muhammara red pepper walnut dip lebanese syrian': 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg', // Mouhamara
+  'kibbeh nayyeh raw lamb bulgur lebanese meze olive oil': 'https://upload.wikimedia.org/wikipedia/commons/1/17/Kibbeh_Nayyeh.jpg', // Kebbeh Nayyeh
+  'arayes lebanese stuffed pita minced meat grilled': 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Arayes_leb.jpg', // Arayes
+  'shish taouk marinated chicken skewer grilled lebanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tavuk_%C5%9Ei%C5%9F.jpg/960px-Tavuk_%C5%9Ei%C5%9F.jpg', // Shish Taouk
+  'kafta meshwiyyeh lebanese minced meat skewer parsley': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Grilled_Kefta_Skewers.jpg/960px-Grilled_Kefta_Skewers.jpg', // Kafta Meshwiyyeh
+  'riz shaeriyye lebanese vermicelli rice buttered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Arabic_rice.jpg/960px-Arabic_rice.jpg', // Riz bi Shaʿriyyeh
+  'freekeh smoked green wheat lebanese chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Freekeh_%28uncooked%29.jpg/960px-Freekeh_%28uncooked%29.jpg', // Freekeh
+  'lebanese lentil soup cumin lemon turmeric': 'https://upload.wikimedia.org/wikipedia/commons/6/61/EgFoodLentilSoup.jpg', // Lentil Soup
+  'yakhnet sabanekh lebanese spinach lamb stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Afghan_lamb_with_spinach_and_beans.jpg/960px-Afghan_lamb_with_spinach_and_beans.jpg', // Yakhnet Sabanekh
+  'kaak lebanese sesame bread ring street beirut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Arabkaak.jpg/960px-Arabkaak.jpg', // Kaak
+  'sfeeha lebanese meat pie open faced pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sfiha2.jpg/960px-Sfiha2.jpg', // Sfeeha
+  'toum lebanese garlic sauce white fluffy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Toum_%28Lebanese_Garlic_Sauce%29.JPG/960px-Toum_%28Lebanese_Garlic_Sauce%29.JPG', // Toum
+  'pomegranate molasses lebanese condiment dark bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Pomegranate_molasses_in_a_chinese_spoon.jpg/960px-Pomegranate_molasses_in_a_chinese_spoon.jpg', // Pomegranate Molasses
+  'meghli lebanese rice pudding caraway anise celebration': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/%D0%9C%D0%B8%D0%B3%D0%BB%D0%B8_%D1%81_%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BA%D0%B0%D0%BC%D0%B8.JPG/960px-%D0%9C%D0%B8%D0%B3%D0%BB%D0%B8_%D1%81_%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BA%D0%B0%D0%BC%D0%B8.JPG', // Meghli
+  'awamat lebanese fried dough balls syrup sesame': 'https://upload.wikimedia.org/wikipedia/commons/0/08/Loukoumades.jpg', // Awamat
+  'jallab lebanese drink grape rose water pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Jallab.jpg/960px-Jallab.jpg', // Jallab
+  'kibbeh lebanese bulgur ground meat fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kibbeh3.jpg/960px-Kibbeh3.jpg', // Kibbeh
+  'fattoush lebanese bread salad pita': 'https://upload.wikimedia.org/wikipedia/commons/9/93/Fattoush_mixed-salad.jpg', // Fattoush
+  'mujaddara lentils rice caramelized onions': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Mujaddara.jpg/960px-Mujaddara.jpg', // Mujaddara
+  'manakish zaatar flatbread lebanese breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Zaatar_Mankousheh.jpg/960px-Zaatar_Mankousheh.jpg', // Manakish
+  'labneh strained yogurt olive oil herb': 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Labneh01.jpg', // Labneh
+  'warak dawali stuffed grape vine leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Stuffed_grape_leaves.jpg/960px-Stuffed_grape_leaves.jpg', // Warak Dawali
+  'arak anise spirit levant glass milky water': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Arak_with_water_and_ice.jpg/960px-Arak_with_water_and_ice.jpg', // Arak
+  'hummus chickpea dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg', // Hummus
+  'falafel fried chickpea ball': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg', // Falafel
+  'shawarma wrap meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Shawarma_2.jpg/960px-Shawarma_2.jpg', // Shawarma
+  'tabbouleh parsley salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Tabouleh_1.JPG/960px-Tabouleh_1.JPG', // Tabbouleh
+  'baba ghanoush eggplant dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/960px-Baba_Ganoush_05of05_%288735238183%29.jpg', // Baba Ghanoush
+  'samke harra lebanese spiced fish tahini sauce': '', // Samke Harra — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1400,4 +1431,34 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Reuben Sandwich', file: 'Katz\'s Deli - Lunch.jpg', author: 'Ernesto Andrade', license: 'CC BY 2.0' },
   { word: 'Hamburger', file: 'RedDot Burger.jpg', author: 'Hongreddotbrewhouse', license: 'CC BY-SA 3.0' },
   { word: 'Hot Dog', file: 'Hot dog with mustard.png', author: 'Renee Comet', license: 'Public domain' },
+  { word: 'Meze', file: 'Petra metzes.jpg', author: 'Unai Guerra', license: 'CC BY-SA 2.0' },
+  { word: 'Mutabbal', file: 'Mutabbel 2.JPG', author: 'Dr. Bernd Gross', license: 'CC BY-SA 3.0' },
+  { word: 'Mouhamara', file: 'Tanoreen muhammara.jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Kebbeh Nayyeh', file: 'Kibbeh Nayyeh.jpg', author: '122589423KM', license: 'Public domain' },
+  { word: 'Arayes', file: 'Arayes leb.jpg', author: 'Ahmedhamdy007', license: 'CC BY-SA 4.0' },
+  { word: 'Shish Taouk', file: 'Tavuk Şiş.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Kafta Meshwiyyeh', file: 'Grilled Kefta Skewers.jpg', author: 'Strawberrypotato', license: 'CC BY 4.0' },
+  { word: 'Riz bi Shaʿriyyeh', file: 'Arabic rice.jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Freekeh', file: 'Freekeh (uncooked).jpg', author: 'Wribln', license: 'CC BY-SA 4.0' },
+  { word: 'Lentil Soup', file: 'EgFoodLentilSoup.jpg', author: 'Roland Unger', license: 'CC BY-SA 3.0' },
+  { word: 'Yakhnet Sabanekh', file: 'Afghan lamb with spinach and beans.jpg', author: 'WordRidden', license: 'CC BY 2.0' },
+  { word: 'Kaak', file: 'Arabkaak.jpg', author: 'Nsaum75', license: 'CC BY-SA 3.0' },
+  { word: 'Sfeeha', file: 'Sfiha2.jpg', author: 'Bazel', license: 'Public domain' },
+  { word: 'Toum', file: 'Toum (Lebanese Garlic Sauce).JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Pomegranate Molasses', file: 'Pomegranate molasses in a chinese spoon.jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Meghli', file: 'Мигли с добавками.JPG', author: 'حسين علي قرياني', license: 'CC BY-SA 3.0' },
+  { word: 'Awamat', file: 'Loukoumades.jpg', author: 'avlxyz', license: 'CC BY-SA 2.0' },
+  { word: 'Jallab', file: 'Jallab.jpg', author: 'Adam Jung', license: 'CC BY 2.0' },
+  { word: 'Kibbeh', file: 'Kibbeh3.jpg', author: 'Bazel', license: 'CC BY-SA 3.0' },
+  { word: 'Fattoush', file: 'Fattoush mixed-salad.jpg', author: 'Arousing Appetites', license: 'CC BY-SA 3.0' },
+  { word: 'Mujaddara', file: 'Mujaddara.jpg', author: 'Bazel', license: 'CC BY-SA 3.0' },
+  { word: 'Manakish', file: 'Zaatar Mankousheh.jpg', author: 'Elie.ghob', license: 'CC BY-SA 4.0' },
+  { word: 'Labneh', file: 'Labneh01.jpg', author: 'Omernos', license: 'Public domain' },
+  { word: 'Warak Dawali', file: 'Stuffed grape leaves.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Arak', file: 'Arak with water and ice.jpg', author: 'Preacher lad', license: 'CC BY-SA 4.0' },
+  { word: 'Hummus', file: 'Lebanese style hummus.jpg', author: 'Beyrouthhh', license: 'CC BY 3.0' },
+  { word: 'Falafel', file: 'Falafels 2.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Shawarma', file: 'Shawarma 2.jpg', author: 'Vis M', license: 'CC BY-SA 4.0' },
+  { word: 'Tabbouleh', file: 'Tabouleh 1.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Baba Ghanoush', file: 'Baba Ganoush 05of05 (8735238183).jpg', author: 'Breville USA', license: 'CC BY 2.0' },
 ];
