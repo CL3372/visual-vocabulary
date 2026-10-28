@@ -548,6 +548,43 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'kofte meatball turkish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Izgara_k%C3%B6fte.jpg/960px-Izgara_k%C3%B6fte.jpg', // Köfte
   'borek turkish pastry filo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Su_b%C3%B6re%C4%9Fi_2025.jpg/960px-Su_b%C3%B6re%C4%9Fi_2025.jpg', // Börek
   'urfa kebap dark lamb mince mild skewer grilled': '', // Urfa Kebap — no trustworthy photo yet
+  'greek salad horiatiki feta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Greece_Food_Horiatiki.JPG/960px-Greece_Food_Horiatiki.JPG', // Horiatiki
+  'dolmades stuffed vine leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Dolmades_Kurdish_and_Greek_-_Dec_2018.jpg/960px-Dolmades_Kurdish_and_Greek_-_Dec_2018.jpg', // Dolmades
+  'kleftiko slow roast lamb greek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Kleftiko.JPG/960px-Kleftiko.JPG', // Kleftiko
+  'loukoumades honey doughnuts greek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Loukoumades_Greek_Doughnuts_with_Walnuts_and_Honey.jpg/960px-Loukoumades_Greek_Doughnuts_with_Walnuts_and_Honey.jpg', // Loukoumades
+  'pastitsio greek baked pasta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Pastitsio_homemade.jpg/960px-Pastitsio_homemade.jpg', // Pastitsio
+  'fasolada greek bean soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fasolada.JPG/960px-Fasolada.JPG', // Fasolada
+  'taramasalata fish roe dip pink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Taramosalata01.jpg/960px-Taramosalata01.jpg', // Taramasalata
+  'galaktoboureko custard pastry greek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Galaktoboureko.jpg/960px-Galaktoboureko.jpg', // Galaktoboureko
+  'hummus chickpea dip olive oil greek meze': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg', // Hummus
+  'melitzanosalata greek roasted aubergine dip smoky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Baba_ganoush_closeup.jpg/960px-Baba_ganoush_closeup.jpg', // Melitzanosalata
+  'saganaki fried cheese greek pan crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Grekiska_koket_02.jpg/960px-Grekiska_koket_02.jpg', // Saganaki
+  'tiropita cheese pie phyllo pastry greek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Tiropita_Greek_dish.jpg/960px-Tiropita_Greek_dish.jpg', // Tiropita
+  'kolokithokeftedes zucchini fritters greek feta herbs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Restaurant_Thal%C3%A1mi_%28Almyrida%29_-_Kolokithokeftedes_%28courgette_or_zucchini_balls%29.jpg/960px-Restaurant_Thal%C3%A1mi_%28Almyrida%29_-_Kolokithokeftedes_%28courgette_or_zucchini_balls%29.jpg', // Kolokithokeftedes
+  'stifado greek beef rabbit onion stew tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stifado_%282%29.jpg/960px-Stifado_%282%29.jpg', // Stifado
+  'giouvetsi greek lamb orzo tomato baked casserole': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Giouvetsi.JPG/960px-Giouvetsi.JPG', // Giouvetsi
+  'gemista stuffed tomatoes peppers rice greek baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Gemista.jpg/960px-Gemista.jpg', // Gemista
+  'briam greek roasted vegetables zucchini potato olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Briam.jpg/960px-Briam.jpg', // Briam
+  'plaki baked fish greek tomato onion olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Baked_Fish_with_Tomato_Sauce_with_Lemon_Slices.jpg/960px-Baked_Fish_with_Tomato_Sauce_with_Lemon_Slices.jpg', // Plaki
+  'greek roast lamb easter oregano lemon oven': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Easter_Lamb_%283477180857%29.jpg/960px-Easter_Lamb_%283477180857%29.jpg', // Arnaki Fresko
+  'feta cheese block brine greek salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/960px-Feta_Cheese.jpg', // Feta
+  'halloumi grilled cheese squeaky golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Grilled_Halloumi.jpg/960px-Grilled_Halloumi.jpg', // Halloumi
+  'graviera greek hard cheese crete yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Naxos_Gravi%C3%A9ra.jpg/960px-Naxos_Gravi%C3%A9ra.jpg', // Graviera
+  'tsoureki greek easter braided sweet bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tsoureki_athen_20260323_1.jpg/960px-Tsoureki_athen_20260323_1.jpg', // Tsoureki
+  'koulouri thessaloniki sesame bread ring street': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Koulouri_Philadelphia_-_Hellenic_Bakery_2025-04-28.jpg/960px-Koulouri_Philadelphia_-_Hellenic_Bakery_2025-04-28.jpg', // Koulouri
+  'paidakia greek lamb chops charcoal grilled lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Freshippo_grilled_lamb_chops.jpg/960px-Freshippo_grilled_lamb_chops.jpg', // Paidakia
+  'kokoretsi greek offal wrapped spit easter roasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Ioannina_-_kokoretsi.jpg/960px-Ioannina_-_kokoretsi.jpg', // Kokoretsi
+  'gyros pita pork chicken greek wrapped tzatziki': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Pita_giros.JPG/960px-Pita_giros.JPG', // Gyros
+  'kourabiedes greek almond shortbread icing sugar christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Kourabiedes_platter_2008_01_08.jpg/960px-Kourabiedes_platter_2008_01_08.jpg', // Kourabiedes
+  'melomakarona greek honey walnut christmas cookies': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Melomakarona.jpg/960px-Melomakarona.jpg', // Melomakarona
+  'rizogalo greek rice pudding cinnamon cold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Rice_pudding_cinnamon.jpg/960px-Rice_pudding_cinnamon.jpg', // Rizogalo
+  'ouzo anise spirit cloudy water greek seafood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Ouzo_Ouzo.JPG/960px-Ouzo_Ouzo.JPG', // Ouzo
+  'greek frappe iced coffee shaken foam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Frapp%C3%A9.jpg/960px-Frapp%C3%A9.jpg', // Frappé
+  'moussaka greek eggplant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG', // Moussaka
+  'souvlaki greek skewer meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg/960px-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg', // Souvlaki
+  'baklava honey pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Baklava_kymi_greece.jpg/960px-Baklava_kymi_greece.jpg', // Baklava
+  'tzatziki yogurt cucumber dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tzatziki_meze_or_appetizer%2C_also_used_as_a_sauce.jpg/960px-Tzatziki_meze_or_appetizer%2C_also_used_as_a_sauce.jpg', // Tzatziki
+  'spanakopita spinach feta pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Spanakopita.jpg/960px-Spanakopita.jpg', // Spanakopita
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1070,4 +1107,41 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Kebab', file: 'Lula kebab 2.jpg', author: 'Lesya Dolyk', license: 'CC BY-SA 2.0' },
   { word: 'Köfte', file: 'Izgara köfte.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
   { word: 'Börek', file: 'Su böreği 2025.jpg', author: 'Samizambak', license: 'CC BY-SA 4.0' },
+  { word: 'Horiatiki', file: 'Greece Food Horiatiki.JPG', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
+  { word: 'Dolmades', file: 'Dolmades Kurdish and Greek - Dec 2018.jpg', author: 'Sina.ahm', license: 'CC BY-SA 4.0' },
+  { word: 'Kleftiko', file: 'Kleftiko.JPG', author: 'Lord Mountbatten', license: 'CC BY-SA 3.0' },
+  { word: 'Loukoumades', file: 'Loukoumades Greek Doughnuts with Walnuts and Honey.jpg', author: 'Alpha', license: 'CC BY-SA 2.0' },
+  { word: 'Pastitsio', file: 'Pastitsio homemade.jpg', author: 'Sam Bailey', license: 'CC BY-SA 4.0' },
+  { word: 'Fasolada', file: 'Fasolada.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Taramasalata', file: 'Taramosalata01.jpg', author: 'Robert Kindermann', license: 'CC BY-SA 2.5' },
+  { word: 'Galaktoboureko', file: 'Galaktoboureko.jpg', author: 'Badseed', license: 'CC BY 3.0' },
+  { word: 'Hummus', file: 'Lebanese style hummus.jpg', author: 'Beyrouthhh', license: 'CC BY 3.0' },
+  { word: 'Melitzanosalata', file: 'Baba ganoush closeup.jpg', author: 'avlxyz', license: 'CC BY-SA 2.0' },
+  { word: 'Saganaki', file: 'Grekiska koket 02.jpg', author: 'Scouten', license: 'CC BY-SA 3.0' },
+  { word: 'Tiropita', file: 'Tiropita Greek dish.jpg', author: 'Tanya Bakogiannis', license: 'CC BY 3.0' },
+  { word: 'Kolokithokeftedes', file: 'Restaurant Thalámi (Almyrida) - Kolokithokeftedes (courgette or zucchini balls).jpg', author: 'Benoît Prieur', license: 'CC0' },
+  { word: 'Stifado', file: 'Stifado (2).jpg', author: 'KF', license: 'Public domain' },
+  { word: 'Giouvetsi', file: 'Giouvetsi.JPG', author: 'Robert Kindermann', license: 'CC BY-SA 2.5' },
+  { word: 'Gemista', file: 'Gemista.jpg', author: 'Badseed', license: 'CC BY-SA 3.0' },
+  { word: 'Briam', file: 'Briam.jpg', author: 'Dianeira', license: 'CC BY-SA 4.0' },
+  { word: 'Plaki', file: 'Baked Fish with Tomato Sauce with Lemon Slices.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Arnaki Fresko', file: 'Easter Lamb (3477180857).jpg', author: 'Klearchos Kapoutsis', license: 'CC BY 2.0' },
+  { word: 'Feta', file: 'Feta Cheese.jpg', author: 'JJ Harrison', license: 'CC BY-SA 2.5' },
+  { word: 'Halloumi', file: 'Grilled Halloumi.jpg', author: 'Hmioannou', license: 'CC BY 3.0' },
+  { word: 'Graviera', file: 'Naxos Graviéra.jpg', author: 'Ossony', license: 'CC BY-SA 4.0' },
+  { word: 'Tsoureki', file: 'Tsoureki athen 20260323 1.jpg', author: 'Z thomas', license: 'CC BY-SA 4.0' },
+  { word: 'Koulouri', file: 'Koulouri Philadelphia - Hellenic Bakery 2025-04-28.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Paidakia', file: 'Freshippo grilled lamb chops.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Kokoretsi', file: 'Ioannina - kokoretsi.jpg', author: 'Ptyx', license: 'CC BY-SA 4.0' },
+  { word: 'Gyros', file: 'Pita giros.JPG', author: 'Antonio Fajardo i López', license: 'CC BY-SA 3.0' },
+  { word: 'Kourabiedes', file: 'Kourabiedes platter 2008 01 08.jpg', author: 'Jastrow', license: 'CC BY 2.5' },
+  { word: 'Melomakarona', file: 'Melomakarona.jpg', author: 'Kalambaki2', license: 'CC BY-SA 3.0' },
+  { word: 'Rizogalo', file: 'Rice pudding cinnamon.jpg', author: 'Ross Berteig', license: 'CC BY 2.0' },
+  { word: 'Ouzo', file: 'Ouzo Ouzo.JPG', author: 'Beemwej', license: 'CC BY-SA 3.0' },
+  { word: 'Frappé', file: 'Frappé.jpg', author: 'Kritzolina', license: 'CC BY-SA 4.0' },
+  { word: 'Moussaka', file: 'MussakasMeMelitsanesKePatates01.JPG', author: 'Robert Kindermann', license: 'CC BY-SA 2.5' },
+  { word: 'Souvlaki', file: 'Ελληνικό Σουβλάκι - panoramio.jpg', author: 'EntaXoyas', license: 'CC BY-SA 3.0' },
+  { word: 'Baklava', file: 'Baklava kymi greece.jpg', author: 'Mari Beika', license: 'CC BY-SA 4.0' },
+  { word: 'Tzatziki', file: 'Tzatziki meze or appetizer, also used as a sauce.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
+  { word: 'Spanakopita', file: 'Spanakopita.jpg', author: 'Alpha', license: 'CC BY-SA 2.0' },
 ];
