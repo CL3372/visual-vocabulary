@@ -801,6 +801,29 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'dundee cake scottish fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/North_British_Dundee_cake.JPG/960px-North_British_Dundee_cake.JPG', // Dundee Cake
   'forfar bridie scottish pasty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Bridie.jpg/960px-Bridie.jpg', // Forfar Bridie
   'empire biscuit double shortbread jam icing cherry': '', // Empire Biscuit — no trustworthy photo yet
+  'irish brown bread wholemeal soda loaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Irish_brown_soda_bread.JPG/960px-Irish_brown_soda_bread.JPG', // Brown Bread
+  'soda farl ulster fry griddle bread northern ireland': 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ben_W_Bell_Soda_Bread_Farl_05_June_2007.jpg', // Farl
+  'barmbrack irish fruit bread halloween ring': 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Barmbrack.jpg', // Barmbrack
+  'potato farl irish griddle cake mashed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Ulster_fry_1.jpg/960px-Ulster_fry_1.jpg', // Potato Farl
+  'champ irish mashed potato spring onion butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Champ_%28food%29.JPG/960px-Champ_%28food%29.JPG', // Champ
+  'colcannon irish mashed potato kale cabbage butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Colcannon.JPG/960px-Colcannon.JPG', // Colcannon
+  'boxty irish potato pancake griddle ulster': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Boxty_triangle.jpg/960px-Boxty_triangle.jpg', // Boxty
+  'dublin coddle sausage bacon potato onion stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Irish_Coddle.jpg/960px-Irish_Coddle.jpg', // Dublin Coddle
+  'irish stew lamb potato carrot onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Bone-in_Irish_lamb_stew_made_with_-guiness_and_red_wine_%E9%AA%A8%E3%81%A4%E3%81%8D%E3%83%A9%E3%83%A0%E5%85%A5%E3%82%8A%E3%80%81-%E3%82%AE%E3%83%8D%E3%82%B9_%E3%81%A8%E8%B5%A4%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%A7%E7%85%AE%E8%BE%BC%E3%82%93%E3%81%A0%E3%82%A2%E3%82%A4%E3%83%AA%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%81%E3%83%A5%E3%83%BC_-stpatricksday_-%E8%81%96%E3%83%91%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E3%81%AE%E6%97%A5.jpg/960px-Bone-in_Irish_lamb_stew_made_with_-guiness_and_red_wine_%E9%AA%A8%E3%81%A4%E3%81%8D%E3%83%A9%E3%83%A0%E5%85%A5%E3%82%8A%E3%80%81-%E3%82%AE%E3%83%8D%E3%82%B9_%E3%81%A8%E8%B5%A4%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%A7%E7%85%AE%E8%BE%BC%E3%82%93%E3%81%A0%E3%82%A2%E3%82%A4%E3%83%AA%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%81%E3%83%A5%E3%83%BC_-stpatricksday_-%E8%81%96%E3%83%91%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E3%81%AE%E6%97%A5.jpg', // Irish Stew
+  'corned beef cabbage boiled irish american st patricks': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Corned_Beef_and_Cabbage_%2816227912513%29.jpg/960px-Corned_Beef_and_Cabbage_%2816227912513%29.jpg', // Corned Beef and Cabbage
+  'irish smoked salmon brown bread butter lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2014_smoked_salmon_and_egg_salad_toasted_baguette.JPG/960px-2014_smoked_salmon_and_egg_salad_toasted_baguette.JPG', // Smoked Salmon
+  'crubeens irish pigs trotters boiled traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Crubeens_2008.jpg/960px-Crubeens_2008.jpg', // Crubeens
+  'irish butter kerrygold golden dish quality': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Butter_dish.jpg/960px-Butter_dish.jpg', // Irish Butter
+  'cashel blue irish cheese tipperary creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/CashelBlue.JPG/960px-CashelBlue.JPG', // Cashel Blue
+  'irish whiskey glass bottle jameson bushmills': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/GoodIrishWhiskeys.jpg/960px-GoodIrishWhiskeys.jpg', // Irish Whiskey
+  'poitin irish moonshine traditional spirit bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/A_selection_of_Irish_Poit%C3%ADn.jpg/960px-A_selection_of_Irish_Poit%C3%ADn.jpg', // Poitín
+  'irish soda bread loaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Irish_soda_bread_%2858_of_68%29_%28cropped%29.jpg/960px-Irish_soda_bread_%2858_of_68%29_%28cropped%29.jpg', // Soda Bread
+  'full irish breakfast fry up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Irish_breakfast%2C_cooked.JPG/960px-Irish_breakfast%2C_cooked.JPG', // Full Irish
+  'bacon cabbage irish boiled': 'https://upload.wikimedia.org/wikipedia/commons/7/78/Bacon_and_Cabbage_in_Ireland.jpg', // Bacon and Cabbage
+  'irish seafood chowder cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Seafood_chowder.jpg/960px-Seafood_chowder.jpg', // Irish Seafood Chowder
+  'black white pudding irish breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Irish_black_and_white_pudding_slices.JPG/960px-Irish_black_and_white_pudding_slices.JPG', // Black and White Pudding
+  'guinness beef stew dark beer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/IrishStew_Guinness.JPG/960px-IrishStew_Guinness.JPG', // Guinness Beef Stew
+  'porter cake irish dark beer dried fruit christmas': '', // Porter Cake — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1574,4 +1597,26 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Lorne Sausage', file: 'Grinners breakfast.jpg', author: 'Grinner', license: 'CC BY-SA 3.0' },
   { word: 'Dundee Cake', file: 'North British Dundee cake.JPG', author: 'RGloucester', license: 'CC BY-SA 4.0' },
   { word: 'Forfar Bridie', file: 'Bridie.jpg', author: 'Lindy Buckley', license: 'CC BY 2.0' },
+  { word: 'Brown Bread', file: 'Irish brown soda bread.JPG', author: 'O\'Dea', license: 'CC BY-SA 4.0' },
+  { word: 'Farl', file: 'Ben W Bell Soda Bread Farl 05 June 2007.jpg', author: 'Canterbury Tail', license: 'CC BY-SA 3.0' },
+  { word: 'Barmbrack', file: 'Barmbrack.jpg', author: 'Fordmadoxfraud', license: 'CC BY-SA 3.0' },
+  { word: 'Potato Farl', file: 'Ulster fry 1.jpg', author: 'Kent Wang', license: 'CC BY-SA 2.0' },
+  { word: 'Champ', file: 'Champ (food).JPG', author: 'Glane23', license: 'CC BY-SA 3.0' },
+  { word: 'Colcannon', file: 'Colcannon.JPG', author: 'Alison Cassidy', license: 'Public domain' },
+  { word: 'Boxty', file: 'Boxty triangle.jpg', author: 'さえぼー', license: 'CC0' },
+  { word: 'Dublin Coddle', file: 'Irish Coddle.jpg', author: 'Shushshello', license: 'CC0' },
+  { word: 'Irish Stew', file: 'Bone-in Irish lamb stew made with -guiness and red wine 骨つきラム入り、-ギネス と赤ワインで煮込んだアイリッシュシチュー -stpatricksday -聖パトリックの日.jpg', author: 'naotakem', license: 'CC BY 2.0' },
+  { word: 'Corned Beef and Cabbage', file: 'Corned Beef and Cabbage (16227912513).jpg', author: 'Willis Lam', license: 'CC BY-SA 2.0' },
+  { word: 'Smoked Salmon', file: '2014 smoked salmon and egg salad toasted baguette.JPG', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Crubeens', file: 'Crubeens 2008.jpg', author: 'Helen', license: 'CC BY-SA 2.0' },
+  { word: 'Irish Butter', file: 'Butter dish.jpg', author: 'The Digital Pimp', license: 'CC BY 2.0' },
+  { word: 'Cashel Blue', file: 'CashelBlue.JPG', author: 'AchilleT', license: 'Public domain' },
+  { word: 'Irish Whiskey', file: 'GoodIrishWhiskeys.jpg', author: 'Hammersbach', license: 'CC BY-SA 3.0' },
+  { word: 'Poitín', file: 'A selection of Irish Poitín.jpg', author: 'Handyandy70', license: 'CC BY 4.0' },
+  { word: 'Soda Bread', file: 'Irish soda bread (58 of 68) (cropped).jpg', author: 'Wheeler Cowperthwaite', license: 'CC BY 2.0' },
+  { word: 'Full Irish', file: 'Irish breakfast, cooked.JPG', author: 'O\'Dea', license: 'CC BY-SA 4.0' },
+  { word: 'Bacon and Cabbage', file: 'Bacon and Cabbage in Ireland.jpg', author: 'Zackgallagher', license: 'CC BY-SA 4.0' },
+  { word: 'Irish Seafood Chowder', file: 'Seafood chowder.jpg', author: 'Jazz Guy', license: 'CC BY 2.0' },
+  { word: 'Black and White Pudding', file: 'Irish black and white pudding slices.JPG', author: 'O\'Dea', license: 'CC BY-SA 4.0' },
+  { word: 'Guinness Beef Stew', file: 'IrishStew Guinness.JPG', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
 ];
