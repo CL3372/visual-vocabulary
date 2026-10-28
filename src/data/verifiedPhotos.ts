@@ -681,6 +681,38 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'jellied eels london cockney': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Eels_1385.JPG/960px-Eels_1385.JPG', // Jellied Eels
   'cumberland sausage coiled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Cumberland_sausage.jpg/960px-Cumberland_sausage.jpg', // Cumberland Sausage
   'pork scratchings crackling crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Pork_Scratchings_%283%29.jpg/960px-Pork_Scratchings_%283%29.jpg', // Pork Scratchings
+  'bbq ribs smoked southern american barbecue': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Dickey%27s_Barbecue_Pit_BBQ_Ribs_%2826992922031%29.jpg/960px-Dickey%27s_Barbecue_Pit_BBQ_Ribs_%2826992922031%29.jpg', // BBQ Ribs
+  'mac and cheese american creamy baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/960px-Original_Mac_n_Cheese_.jpg', // Mac and Cheese
+  'gumbo louisiana seafood okra stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Gumbo.JPG/960px-Gumbo.JPG', // Gumbo
+  'jambalaya louisiana rice shrimp sausage': 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Homemade_Jambalaya.JPG', // Jambalaya
+  'pulled pork sandwich smoked southern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pulled_pork_while_pulling.JPG/960px-Pulled_pork_while_pulling.JPG', // Pulled Pork
+  'cornbread american golden cast iron skillet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Skillet_cornbread_%28cropped%29.jpg/960px-Skillet_cornbread_%28cropped%29.jpg', // Cornbread
+  'biscuits gravy southern american breakfast sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Biscuits-and-gravy.jpg/960px-Biscuits-and-gravy.jpg', // Biscuits & Gravy
+  'po boy new orleans shrimp fried sandwich': 'https://upload.wikimedia.org/wikipedia/commons/8/89/Shrimppoboy.jpg', // Po\'Boy
+  'beignets new orleans fried dough powdered sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Beignets_at_Pastis_%2815057250578%29.jpg/960px-Beignets_at_Pastis_%2815057250578%29.jpg', // Beignets
+  'pecan pie southern american brown sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/My_first_pecan_pie%21.jpg/960px-My_first_pecan_pie%21.jpg', // Pecan Pie
+  'clam chowder new england creamy white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Quail_07_bg_041506.jpg/960px-Quail_07_bg_041506.jpg', // Clam Chowder
+  'lobster roll new england buttered bun': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Lobster_Roll.png/960px-Lobster_Roll.png', // Lobster Roll
+  'bagel lox cream cheese new york salmon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Lox-and-bagel-02.jpg/960px-Lox-and-bagel-02.jpg', // Bagel with Lox
+  'new york cheesecake dense cream cheese slice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Baked_cheesecake_with_raspberries_and_blueberries.jpg/960px-Baked_cheesecake_with_raspberries_and_blueberries.jpg', // New York Cheesecake
+  'clambake new england seafood corn lobster': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/New_England_clam_bake.jpg/960px-New_England_clam_bake.jpg', // Clam Bake
+  'buffalo wings hot sauce american crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Buffalo_wings-01.jpg/960px-Buffalo_wings-01.jpg', // Buffalo Wings
+  'philly cheesesteak sandwich beef onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cheesesteak_05_14_20.jpg/960px-Cheesesteak_05_14_20.jpg', // Philly Cheesesteak
+  'chicago deep dish pizza thick cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Chicago-Style_Stuffed_Pizza.jpg/960px-Chicago-Style_Stuffed_Pizza.jpg', // Chicago Deep Dish
+  'apple pie american lattice golden baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Apple_pie_14.jpg/960px-Apple_pie_14.jpg', // Apple Pie
+  'thanksgiving turkey roasted whole table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Roast_turkey_from_fall_season.jpg/960px-Roast_turkey_from_fall_season.jpg', // Thanksgiving Turkey
+  'chili con carne beef beans tex mex': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Bowl_of_chili.jpg/960px-Bowl_of_chili.jpg', // Chili con Carne
+  'pancakes american stack maple syrup butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg/960px-Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg', // Pancakes
+  'eggs benedict hollandaise poached english muffin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Traditional_Eggs_Benedict.jpg/960px-Traditional_Eggs_Benedict.jpg', // Eggs Benedict
+  'key lime pie florida yellow tart': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Slice_of_Key_Lime_Pie.jpg/960px-Slice_of_Key_Lime_Pie.jpg', // Key Lime Pie
+  'blt sandwich bacon lettuce tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Mmm..._BLT_for_me%21_%285487341380%29.jpg/960px-Mmm..._BLT_for_me%21_%285487341380%29.jpg', // BLT Sandwich
+  'smores marshmallow chocolate graham cracker campfire': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Smores-Microwave.jpg/960px-Smores-Microwave.jpg', // S\'mores
+  'nachos tortilla chips cheese jalapeno': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Nachos-cheese.jpg/960px-Nachos-cheese.jpg', // Nachos
+  'cobb salad chicken avocado egg american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Cobb_salad%2C_15_October_2010.jpg/960px-Cobb_salad%2C_15_October_2010.jpg', // Cobb Salad
+  'fried clam strips new england seafood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Clam_strips%2C_fried_-_San_Francisco%2C_CA.jpg/960px-Clam_strips%2C_fried_-_San_Francisco%2C_CA.jpg', // Clam Strips
+  'reuben sandwich corned beef sauerkraut swiss rye': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Katz%27s_Deli_-_Lunch.jpg/960px-Katz%27s_Deli_-_Lunch.jpg', // Reuben Sandwich
+  'hamburger beef burger': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/960px-RedDot_Burger.jpg', // Hamburger
+  'hot dog american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/960px-Hot_dog_with_mustard.png', // Hot Dog
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1336,4 +1368,36 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Jellied Eels', file: 'Eels 1385.JPG', author: 'JanesDaddy', license: 'CC BY-SA 3.0' },
   { word: 'Cumberland Sausage', file: 'Cumberland sausage.jpg', author: 'Andrew Fogg', license: 'CC BY 2.0' },
   { word: 'Pork Scratchings', file: 'Pork Scratchings (3).jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'BBQ Ribs', file: 'Dickey\'s Barbecue Pit BBQ Ribs (26992922031).jpg', author: 'Willis Lam', license: 'CC BY-SA 2.0' },
+  { word: 'Mac and Cheese', file: 'Original Mac n Cheese .jpg', author: 'Texasfoodgawker', license: 'CC BY-SA 4.0' },
+  { word: 'Gumbo', file: 'Gumbo.JPG', author: 'Amadscientist', license: 'CC BY-SA 3.0' },
+  { word: 'Jambalaya', file: 'Homemade Jambalaya.JPG', author: 'Amadscientist', license: 'CC BY-SA 3.0' },
+  { word: 'Pulled Pork', file: 'Pulled pork while pulling.JPG', author: 'Thogru', license: 'CC BY-SA 3.0' },
+  { word: 'Cornbread', file: 'Skillet cornbread (cropped).jpg', author: 'Zankopedia', license: 'CC BY-SA 3.0' },
+  { word: 'Biscuits & Gravy', file: 'Biscuits-and-gravy.jpg', author: 'Kaszeta', license: 'Public domain' },
+  { word: 'Po\'Boy', file: 'Shrimppoboy.jpg', author: 'Perlow', license: 'Public domain' },
+  { word: 'Beignets', file: 'Beignets at Pastis (15057250578).jpg', author: 'Jun Seita', license: 'CC BY 2.0' },
+  { word: 'Pecan Pie', file: 'My first pecan pie!.jpg', author: 'Librarygroover', license: 'CC BY 4.0' },
+  { word: 'Clam Chowder', file: 'Quail 07 bg 041506.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Lobster Roll', file: 'Lobster Roll.png', author: 'Maguy23', license: 'CC BY-SA 4.0' },
+  { word: 'Bagel with Lox', file: 'Lox-and-bagel-02.jpg', author: 'Kristina D.C. Hoeppner', license: 'CC BY-SA 2.0' },
+  { word: 'New York Cheesecake', file: 'Baked cheesecake with raspberries and blueberries.jpg', author: 'zingyyellow', license: 'CC BY 2.0' },
+  { word: 'Clam Bake', file: 'New England clam bake.jpg', author: 'inuyaki.com', license: 'CC BY-SA 2.0' },
+  { word: 'Buffalo Wings', file: 'Buffalo wings-01.jpg', author: 'Clotee Pridgen Allochuku', license: 'CC BY 2.0' },
+  { word: 'Philly Cheesesteak', file: 'Cheesesteak 05 14 20.jpg', author: '17parkc', license: 'CC BY-SA 4.0' },
+  { word: 'Chicago Deep Dish', file: 'Chicago-Style Stuffed Pizza.jpg', author: 'Олександр Дячук', license: 'CC BY-SA 4.0' },
+  { word: 'Apple Pie', file: 'Apple pie 14.jpg', author: 'Shisma', license: 'CC BY 4.0' },
+  { word: 'Thanksgiving Turkey', file: 'Roast turkey from fall season.jpg', author: 'Jim, the Photographer', license: 'CC BY 2.0' },
+  { word: 'Chili con Carne', file: 'Bowl of chili.jpg', author: 'Carstor', license: 'CC BY-SA 2.5' },
+  { word: 'Pancakes', file: 'Foodiesfeed.com pouring-honey-on-pancakes-with-walnuts.jpg', author: 'Mae Mu', license: 'CC0' },
+  { word: 'Eggs Benedict', file: 'Traditional Eggs Benedict.jpg', author: 'Mark Miller', license: 'CC BY-SA 4.0' },
+  { word: 'Key Lime Pie', file: 'Slice of Key Lime Pie.jpg', author: 'Louiemantia', license: 'CC BY-SA 4.0' },
+  { word: 'BLT Sandwich', file: 'Mmm... BLT for me! (5487341380).jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'S\'mores', file: 'Smores-Microwave.jpg', author: 'Evan-Amos', license: 'CC0' },
+  { word: 'Nachos', file: 'Nachos-cheese.jpg', author: 'chee.hong', license: 'CC BY 2.0' },
+  { word: 'Cobb Salad', file: 'Cobb salad, 15 October 2010.jpg', author: 'Jodimichelle', license: 'CC BY-SA 2.0' },
+  { word: 'Clam Strips', file: 'Clam strips, fried - San Francisco, CA.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Reuben Sandwich', file: 'Katz\'s Deli - Lunch.jpg', author: 'Ernesto Andrade', license: 'CC BY 2.0' },
+  { word: 'Hamburger', file: 'RedDot Burger.jpg', author: 'Hongreddotbrewhouse', license: 'CC BY-SA 3.0' },
+  { word: 'Hot Dog', file: 'Hot dog with mustard.png', author: 'Renee Comet', license: 'Public domain' },
 ];
