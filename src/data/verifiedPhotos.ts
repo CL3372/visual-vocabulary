@@ -744,6 +744,36 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tabbouleh parsley salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Tabouleh_1.JPG/960px-Tabouleh_1.JPG', // Tabbouleh
   'baba ghanoush eggplant dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/960px-Baba_Ganoush_05of05_%288735238183%29.jpg', // Baba Ghanoush
   'samke harra lebanese spiced fish tahini sauce': '', // Samke Harra — no trustworthy photo yet
+  'sauerbraten german pot roast beef vinegar gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Heldrunger_Sauerbraten_2.JPG/960px-Heldrunger_Sauerbraten_2.JPG', // Sauerbraten
+  'kassler smoked pork chop sauerkraut german': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Kassler.jpg/960px-Kassler.jpg', // Kassler
+  'eisbein german pork knuckle boiled sauerkraut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Eisbein-2.jpg/960px-Eisbein-2.jpg', // Eisbein
+  'schweinebraten bavarian roast pork gravy dark beer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Schweinebraten_Goldener_Adler_M%C3%BCrsbach.jpg/960px-Schweinebraten_Goldener_Adler_M%C3%BCrsbach.jpg', // Schweinebraten
+  'rinderroulade beef roll mustard bacon gherkin gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Th%C3%BCringer_Rinderroulade_mit_Kl%C3%B6%C3%9Fen.JPG/960px-Th%C3%BCringer_Rinderroulade_mit_Kl%C3%B6%C3%9Fen.JPG', // Rinderroulade
+  'currywurst berlin street food ketchup curry powder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20220430_currywurst.jpg/960px-20220430_currywurst.jpg', // Currywurst
+  'leberkase bavarian meatloaf bread roll mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Leberk%C3%A4se-1.jpg/960px-Leberk%C3%A4se-1.jpg', // Leberkäse
+  'hackepeter mett raw minced pork bread onion german': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Mettbroetchen.jpg/960px-Mettbroetchen.jpg', // Hackepeter
+  'weisswurst bavarian white sausage pretzel sweet mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Wei%C3%9Fwurst-1.jpg/960px-Wei%C3%9Fwurst-1.jpg', // Weißwurst
+  'nurnberger small sausages charcoal grilled sauerkraut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/N%C3%BCrnberger_W%C3%BCrstchen_%2810579337046%29.jpg/960px-N%C3%BCrnberger_W%C3%BCrstchen_%2810579337046%29.jpg', // Nürnberger
+  'frankfurter sausage mustard bread german': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Frankfurter_wuerstchen.jpg/960px-Frankfurter_wuerstchen.jpg', // Frankfurter
+  'blutwurst german blood sausage fried apple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/-2021-07-24_Sliced_Black_pudding_sausage%2C_Trimingham%2C_Norfolk.JPG/960px--2021-07-24_Sliced_Black_pudding_sausage%2C_Trimingham%2C_Norfolk.JPG', // Blutwurst
+  'kartoffelknoedel potato dumpling german gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kn%C3%B6delschneem%C3%A4nner_1.jpg/960px-Kn%C3%B6delschneem%C3%A4nner_1.jpg', // Kartoffelknödel
+  'rotkohl braised red cabbage apple vinegar german': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BraisedRedCabbage-0719.jpg/960px-BraisedRedCabbage-0719.jpg', // Rotkohl
+  'spatzle german egg noodle butter cheese swabians': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Sp%C3%A4tzle-02.jpg/960px-Sp%C3%A4tzle-02.jpg', // Spätzle
+  'kasespatzle german cheese noodles fried onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg/960px-Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg', // Käsespätzle
+  'kartoffelsalat german potato salad vinegar bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Kartoffelsalat_with_mayonnaise.jpg/960px-Kartoffelsalat_with_mayonnaise.jpg', // Kartoffelsalat
+  'pumpernickel dark rye bread westphalian dense': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Pumpernickel_allemand.jpg/960px-Pumpernickel_allemand.jpg', // Pumpernickel
+  'brezel pretzel bavarian soft baked salt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Brezel_l_B%C3%A4ckerei-Raisch.jpg/960px-Brezel_l_B%C3%A4ckerei-Raisch.jpg', // Brezeln
+  'stollen german christmas fruitcake marzipan icing sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Stollen-Dresdner_Christstollen.jpg/960px-Stollen-Dresdner_Christstollen.jpg', // Stollen
+  'gulaschsuppe german goulash soup paprika beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Goulash_soup_2.jpg/960px-Goulash_soup_2.jpg', // Gulaschsuppe
+  'pichelsteiner bavarian meat vegetable stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pichelsteiner_Eintopf.jpg/960px-Pichelsteiner_Eintopf.jpg', // Pichelsteiner
+  'schwarzwalder kirschtorte black forest cake cherry cream chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Black_Forest_gateau.jpg/960px-Black_Forest_gateau.jpg', // Schwarzwälder Kirschtorte
+  'apfelstrudel apple strudel pastry cinnamon cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg', // Apfelstrudel
+  'lebkuchen nuremberg gingerbread spiced christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Lebkuchen-pile.jpg/960px-Lebkuchen-pile.jpg', // Lebkuchen
+  'weissbier bavarian wheat beer cloudy glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2013_Augustiner_Weissbier_Munich_pub.jpg/960px-2013_Augustiner_Weissbier_Munich_pub.jpg', // Weißbier
+  'gluhwein mulled wine christmas market germany': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG/960px-Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG', // Glühwein
+  'schnitzel breaded cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG/960px-Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG', // Schnitzel
+  'bratwurst german sausage': 'https://upload.wikimedia.org/wikipedia/commons/b/b0/German_Bratw%C3%BCrste.jpg', // Bratwurst
+  'sauerkraut fermented cabbage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Bauernseufzer_Sauerkraut_Bayreuth.jpg/960px-Bauernseufzer_Sauerkraut_Bayreuth.jpg', // Sauerkraut
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1461,4 +1491,34 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Shawarma', file: 'Shawarma 2.jpg', author: 'Vis M', license: 'CC BY-SA 4.0' },
   { word: 'Tabbouleh', file: 'Tabouleh 1.JPG', author: 'Miansari66', license: 'CC0' },
   { word: 'Baba Ghanoush', file: 'Baba Ganoush 05of05 (8735238183).jpg', author: 'Breville USA', license: 'CC BY 2.0' },
+  { word: 'Sauerbraten', file: 'Heldrunger Sauerbraten 2.JPG', author: 'Dr. Bernd Gross', license: 'CC BY-SA 4.0' },
+  { word: 'Kassler', file: 'Kassler.jpg', author: 'Achim Raschka', license: 'CC BY-SA 3.0' },
+  { word: 'Eisbein', file: 'Eisbein-2.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Schweinebraten', file: 'Schweinebraten Goldener Adler Mürsbach.jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
+  { word: 'Rinderroulade', file: 'Thüringer Rinderroulade mit Klößen.JPG', author: 'Dr. Bernd Gross', license: 'CC BY-SA 4.0' },
+  { word: 'Currywurst', file: '20220430 currywurst.jpg', author: 'Ziko van Dijk', license: 'CC BY-SA 4.0' },
+  { word: 'Leberkäse', file: 'Leberkäse-1.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Hackepeter', file: 'Mettbroetchen.jpg', author: 'Nize', license: 'CC BY-SA 3.0' },
+  { word: 'Weißwurst', file: 'Weißwurst-1.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Nürnberger', file: 'Nürnberger Würstchen (10579337046).jpg', author: 'Dirk Vorderstraße', license: 'CC BY 2.0' },
+  { word: 'Frankfurter', file: 'Frankfurter wuerstchen.jpg', author: 'WordRidden', license: 'CC BY 2.0' },
+  { word: 'Blutwurst', file: '-2021-07-24 Sliced Black pudding sausage, Trimingham, Norfolk.JPG', author: 'Kolforn', license: 'CC BY-SA 4.0' },
+  { word: 'Kartoffelknödel', file: 'Knödelschneemänner 1.jpg', author: 'Schnobby', license: 'CC BY-SA 4.0' },
+  { word: 'Rotkohl', file: 'BraisedRedCabbage-0719.jpg', author: 'DC Central Kitchen', license: 'CC BY 2.0' },
+  { word: 'Spätzle', file: 'Spätzle-02.jpg', author: 'Kobako', license: 'CC BY-SA 2.5' },
+  { word: 'Käsespätzle', file: 'Berggasthof Haldenhof - Käsknöpfle (1).jpg', author: '1971markus', license: 'CC BY-SA 4.0' },
+  { word: 'Kartoffelsalat', file: 'Kartoffelsalat with mayonnaise.jpg', author: 'cyclonebill', license: 'CC BY-SA 2.0' },
+  { word: 'Pumpernickel', file: 'Pumpernickel allemand.jpg', author: 'Thomon', license: 'CC BY-SA 4.0' },
+  { word: 'Brezeln', file: 'Brezel l Bäckerei-Raisch.jpg', author: 'LenaRaisch', license: 'CC BY-SA 4.0' },
+  { word: 'Stollen', file: 'Stollen-Dresdner Christstollen.jpg', author: 'Gürgi', license: 'Public domain' },
+  { word: 'Gulaschsuppe', file: 'Goulash soup 2.jpg', author: 'Tiia Monto', license: 'CC BY-SA 3.0' },
+  { word: 'Pichelsteiner', file: 'Pichelsteiner Eintopf.jpg', author: 'Josef Türk Jun.', license: 'CC BY-SA 2.0' },
+  { word: 'Schwarzwälder Kirschtorte', file: 'Black Forest gateau.jpg', author: 'Mikelo', license: 'CC BY-SA 2.0' },
+  { word: 'Apfelstrudel', file: 'Strudel.jpg', author: 'che', license: 'CC BY-SA 2.5' },
+  { word: 'Lebkuchen', file: 'Lebkuchen-pile.jpg', author: 'Cnbrb', license: 'CC BY-SA 4.0' },
+  { word: 'Weißbier', file: '2013 Augustiner Weissbier Munich pub.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Glühwein', file: 'Glühwein Weinnachtsmarkt OS.JPG', author: 'Basotxerri', license: 'CC BY-SA 4.0' },
+  { word: 'Schnitzel', file: 'Breitenlesau Krug Bräu Schnitzel.JPG', author: 'Benreis', license: 'CC BY-SA 3.0' },
+  { word: 'Bratwurst', file: 'German Bratwürste.jpg', author: 'Gerbis', license: 'CC BY-SA 3.0' },
+  { word: 'Sauerkraut', file: 'Bauernseufzer Sauerkraut Bayreuth.jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
 ];
