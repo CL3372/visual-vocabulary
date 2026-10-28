@@ -646,6 +646,41 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pad thai noodles thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/960px-Phat_Thai_kung_Chang_Khien_street_stall.jpg', // Pad Thai
   'tom yum soup thai spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Tom_yam_kung_maenam.jpg/960px-Tom_yam_kung_maenam.jpg', // Tom Yum
   'green curry thai coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Thai_green_chicken_curry_and_roti.jpg/960px-Thai_green_chicken_curry_and_roti.jpg', // Green Curry
+  'fish and chips battered cod golden crispy chips newspaper english takeaway': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/960px-Fish_and_chips_blackpool.jpg', // Fish and Chips
+  'sunday roast beef yorkshire pudding roast potatoes gravy vegetables traditional plate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg/960px-Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg', // Sunday Roast
+  'shepherd\'s pie mashed potato crust golden baked lamb mince gravy dish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg/960px-Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg', // Shepherd\'s Pie
+  'beef wellington puff pastry sliced rare pink mushroom duxelles golden crust': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Beef_Wellington_2019.jpg/960px-Beef_Wellington_2019.jpg', // Beef Wellington
+  'scones clotted cream strawberry jam cream tea afternoon tiered stand english': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Scone_with_clotted_cream_and_jam_-_Dyke_Road_Park_Cafe_2025-08-10.jpg/960px-Scone_with_clotted_cream_and_jam_-_Dyke_Road_Park_Cafe_2025-08-10.jpg', // Scones
+  'full english breakfast fry up eggs bacon sausage baked beans black pudding toast plate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Full_English_breakfast_%28cropped%29.jpg/960px-Full_English_breakfast_%28cropped%29.jpg', // Full English Breakfast
+  'kippers smoked herring grilled plate butter brown bread english breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Kipper.JPG/960px-Kipper.JPG', // Kippers
+  'steak kidney pie golden shortcrust pastry gravy pub english traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Steak_%26_Kidney_Pie_-_3_3_2019_%2832347115557%29.jpg/960px-Steak_%26_Kidney_Pie_-_3_3_2019_%2832347115557%29.jpg', // Steak and Kidney Pie
+  'pork pie melton mowbray hot water crust raised pastry jelly sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/PORK_PIES.jpg/960px-PORK_PIES.jpg', // Pork Pie
+  'roast beef sliced pink sunday lunch horseradish gravy plate english': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Roast_beef_dish.jpg/960px-Roast_beef_dish.jpg', // Roast Beef
+  'yorkshire pudding risen tall golden hollow batter crispy oven': 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Yorkshire_Puddings_on_plate.jpg', // Yorkshire Pudding
+  'chicken tikka masala creamy orange tomato curry rice naan england': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Chicken_Tikka_Masala_on_White_Plate_with_Spoon.jpg/960px-Chicken_Tikka_Masala_on_White_Plate_with_Spoon.jpg', // Chicken Tikka Masala
+  'ploughmans lunch cheese bread pickle chutney apple salad english pub board': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/An_Elsecar_Ploughman%27s_Lunch.jpg/960px-An_Elsecar_Ploughman%27s_Lunch.jpg', // Ploughman\'s Lunch
+  'scotch egg sliced sausage meat breadcrumb runny yolk pub gastropub english': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/One_scotch_egg_%28No_jar_of_Marmite%29.jpg/960px-One_scotch_egg_%28No_jar_of_Marmite%29.jpg', // Scotch Egg
+  'chip butty white bread thick chips ketchup butter northern england sandwich': 'https://upload.wikimedia.org/wikipedia/commons/0/02/Chip_Butty.jpg', // Chip Butty
+  'jam roly poly suet pudding custard school dinner english traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Jam_roly-poly02.jpg/960px-Jam_roly-poly02.jpg', // Jam Roly-Poly
+  'bakewell tart almond frangipane raspberry jam shortcrust pastry slice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Bakewell_tart_on_a_plate.jpg/960px-Bakewell_tart_on_a_plate.jpg', // Bakewell Tart
+  'summer pudding red berries moulded bread crimson juices english dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Summer_Pudding-3.jpg/960px-Summer_Pudding-3.jpg', // Summer Pudding
+  'afternoon tea tiered stand scones sandwiches cakes english hotel traditional': 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Tea_at_the_Rittenhouse_Hotel.jpg', // Afternoon Tea
+  'bangers mash sausages potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Sausage_and_mash_with_peas.jpg/960px-Sausage_and_mash_with_peas.jpg', // Bangers and Mash
+  'toad in the hole yorkshire pudding sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Toad_in_the_hole.jpg/960px-Toad_in_the_hole.jpg', // Toad in the Hole
+  'lancashire hotpot lamb potato': 'https://upload.wikimedia.org/wikipedia/commons/9/91/Lancashire_hotpot.jpg', // Lancashire Hotpot
+  'cornish pasty traditional crimped': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Cornish_Pasty_%28cropped%29.jpeg/960px-Cornish_Pasty_%28cropped%29.jpeg', // Cornish Pasty
+  'sticky toffee pudding caramel sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sticky_toffee_pudding_at_the_Black_Swan_-_Stierch.jpg/960px-Sticky_toffee_pudding_at_the_Black_Swan_-_Stierch.jpg', // Sticky Toffee Pudding
+  'eton mess strawberry meringue cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Eton_Mess_2025-2_%28cropped%29.jpg/960px-Eton_Mess_2025-2_%28cropped%29.jpg', // Eton Mess
+  'victoria sponge cake jam cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Victoria_Sponges.jpg/960px-Victoria_Sponges.jpg', // Victoria Sponge
+  'spotted dick steamed pudding currants': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Spotted_dick.jpg/960px-Spotted_dick.jpg', // Spotted Dick
+  'bread butter pudding baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Bread_pudding_June_2020.jpg/960px-Bread_pudding_June_2020.jpg', // Bread and Butter Pudding
+  'treacle tart golden syrup': 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Mary_Berry_treacle_tart_%288131434026%29.jpg', // Treacle Tart
+  'kedgeree smoked haddock rice egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Kedgeree.jpg/960px-Kedgeree.jpg', // Kedgeree
+  'pie and mash london eel liquor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Goddards_pie_mash_and_liquor.jpg/960px-Goddards_pie_mash_and_liquor.jpg', // Pie and Mash
+  'cream tea scones clotted cream jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Classic_cream_tea_-_Nymans_Garden_Riding_House.jpg/960px-Classic_cream_tea_-_Nymans_Garden_Riding_House.jpg', // Cream Tea
+  'jellied eels london cockney': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Eels_1385.JPG/960px-Eels_1385.JPG', // Jellied Eels
+  'cumberland sausage coiled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Cumberland_sausage.jpg/960px-Cumberland_sausage.jpg', // Cumberland Sausage
+  'pork scratchings crackling crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Pork_Scratchings_%283%29.jpg/960px-Pork_Scratchings_%283%29.jpg', // Pork Scratchings
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1266,4 +1301,39 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Pad Thai', file: 'Phat Thai kung Chang Khien street stall.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
   { word: 'Tom Yum', file: 'Tom yam kung maenam.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
   { word: 'Green Curry', file: 'Thai green chicken curry and roti.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Fish and Chips', file: 'Fish and chips blackpool.jpg', author: 'Matthias Meckel', license: 'CC BY-SA 4.0' },
+  { word: 'Sunday Roast', file: 'Sunday roast lamb Cock Inn Henham Essex England 01.jpg', author: 'Acabashi', license: 'CC BY-SA 4.0' },
+  { word: 'Shepherd\'s Pie', file: 'Homerton College - Shepherd\'s pie (cropped).jpg', author: 'Oxfordian Kissuth', license: 'CC BY-SA 3.0' },
+  { word: 'Beef Wellington', file: 'Beef Wellington 2019.jpg', author: 'Snielsen1112', license: 'CC BY-SA 4.0' },
+  { word: 'Scones', file: 'Scone with clotted cream and jam - Dyke Road Park Cafe 2025-08-10.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Full English Breakfast', file: 'Full English breakfast (cropped).jpg', author: 'Joadl', license: 'CC BY-SA 3.0 AT' },
+  { word: 'Kippers', file: 'Kipper.JPG', author: 'Gaius Cornelius', license: 'Public domain' },
+  { word: 'Steak and Kidney Pie', file: 'Steak & Kidney Pie - 3 3 2019 (32347115557).jpg', author: 'CharmaineZoe\'s Marvelous Melange', license: 'CC BY 2.0' },
+  { word: 'Pork Pie', file: 'PORK PIES.jpg', author: 'Terry Kearney', license: 'CC0' },
+  { word: 'Roast Beef', file: 'Roast beef dish.jpg', author: 'Akahito Yamabe', license: 'CC0' },
+  { word: 'Yorkshire Pudding', file: 'Yorkshire Puddings on plate.jpg', author: 'Sam Greenhalgh', license: 'CC BY 2.0' },
+  { word: 'Chicken Tikka Masala', file: 'Chicken Tikka Masala on White Plate with Spoon.jpg', author: 'Lance Vanlewen', license: 'CC BY-SA 4.0' },
+  { word: 'Ploughman\'s Lunch', file: 'An Elsecar Ploughman\'s Lunch.jpg', author: 'Glammmur', license: 'CC BY-SA 4.0' },
+  { word: 'Scotch Egg', file: 'One scotch egg (No jar of Marmite).jpg', author: 'Unhindered by Talent', license: 'CC BY-SA 2.0' },
+  { word: 'Chip Butty', file: 'Chip Butty.jpg', author: 'Annie Mole', license: 'CC BY 2.0' },
+  { word: 'Jam Roly-Poly', file: 'Jam roly-poly02.jpg', author: 'EAT&ART TARO', license: 'CC BY-SA 4.0' },
+  { word: 'Bakewell Tart', file: 'Bakewell tart on a plate.jpg', author: 'Brynn', license: 'CC BY-SA 3.0' },
+  { word: 'Summer Pudding', file: 'Summer Pudding-3.jpg', author: 'Summer Pudding', license: 'CC BY 2.0' },
+  { word: 'Afternoon Tea', file: 'Tea at the Rittenhouse Hotel.jpg', author: 'joyosity', license: 'CC BY 2.0' },
+  { word: 'Bangers and Mash', file: 'Sausage and mash with peas.jpg', author: 'anokarina', license: 'CC BY-SA 2.0' },
+  { word: 'Toad in the Hole', file: 'Toad in the hole.jpg', author: 'Robert Gibert', license: 'Public domain' },
+  { word: 'Lancashire Hotpot', file: 'Lancashire hotpot.jpg', author: 'alexcwood', license: 'CC BY 2.0' },
+  { word: 'Cornish Pasty', file: 'Cornish Pasty (cropped).jpeg', author: 'David Johnson', license: 'CC BY-SA 3.0' },
+  { word: 'Sticky Toffee Pudding', file: 'Sticky toffee pudding at the Black Swan - Stierch.jpg', author: 'Sarah Stierch', license: 'CC BY 2.0' },
+  { word: 'Eton Mess', file: 'Eton Mess 2025-2 (cropped).jpg', author: 'Exx8', license: 'CC0' },
+  { word: 'Victoria Sponge', file: 'Victoria Sponges.jpg', author: 'euphro', license: 'CC BY-SA 2.0' },
+  { word: 'Spotted Dick', file: 'Spotted dick.jpg', author: 'Jem Stone', license: 'CC BY 2.0' },
+  { word: 'Bread and Butter Pudding', file: 'Bread pudding June 2020.jpg', author: 'Philafrenzy', license: 'CC BY-SA 4.0' },
+  { word: 'Treacle Tart', file: 'Mary Berry treacle tart (8131434026).jpg', author: 'Tony Hall', license: 'CC BY 2.0' },
+  { word: 'Kedgeree', file: 'Kedgeree.jpg', author: 'Justinc', license: 'CC BY-SA 2.0' },
+  { word: 'Pie and Mash', file: 'Goddards pie mash and liquor.jpg', author: 'Goddards Pies Limited', license: 'CC BY-SA 4.0' },
+  { word: 'Cream Tea', file: 'Classic cream tea - Nymans Garden Riding House.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Jellied Eels', file: 'Eels 1385.JPG', author: 'JanesDaddy', license: 'CC BY-SA 3.0' },
+  { word: 'Cumberland Sausage', file: 'Cumberland sausage.jpg', author: 'Andrew Fogg', license: 'CC BY 2.0' },
+  { word: 'Pork Scratchings', file: 'Pork Scratchings (3).jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
 ];
