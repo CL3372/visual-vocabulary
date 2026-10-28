@@ -513,6 +513,41 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'enchiladas mexican cheese sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Enchilada_Rice_Beans.jpg/960px-Enchilada_Rice_Beans.jpg', // Enchiladas
   'mole sauce mexican chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mole_casero%2C_picante%2C_M%C3%A9xico.jpg/960px-Mole_casero%2C_picante%2C_M%C3%A9xico.jpg', // Mole
   'crema mexicana sour cream drizzle tacos': '', // Crema Mexicana — no trustworthy photo yet
+  'baklava turkish honey nut pastry golden': 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png', // Baklava
+  'iskender kebap turkish lamb pide tomato butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%C4%B0skender_Kebap.jpg/960px-%C4%B0skender_Kebap.jpg', // İskender Kebap
+  'lahmacun turkish flatbread minced meat thin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/960px-Lahmacun.jpg', // Lahmacun
+  'manti turkish dumplings yogurt chili butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg/960px-Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg', // Mantı
+  'pide turkish flatbread boat shaped egg cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2019-07-27_Turkish_pide_with_cheese_at_Istanbul_restaurant.jpg/960px-2019-07-27_Turkish_pide_with_cheese_at_Istanbul_restaurant.jpg', // Pide
+  'simit turkish sesame bread ring street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Simit-2x.JPG/960px-Simit-2x.JPG', // Simit
+  'turkish delight lokum rose powdered sugar pink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/TurkishDelightDisplay.jpg/960px-TurkishDelightDisplay.jpg', // Turkish Delight
+  'ayran turkish yogurt drink white frothy glass': 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg', // Ayran
+  'turkish coffee small cup dark thick grounds': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/960px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg', // Turkish Coffee
+  'haydari turkish yogurt herb meze dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Haydari_in_a_square_plate.jpg/960px-Haydari_in_a_square_plate.jpg', // Haydari
+  'ezme turkish tomato pepper salad spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Ac%C4%B1l%C4%B1_Ezme.jpg/960px-Ac%C4%B1l%C4%B1_Ezme.jpg', // Ezme
+  'cacik turkish cucumber yogurt mint cold soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Cacik-1.jpg/960px-Cacik-1.jpg', // Cacık
+  'dolma stuffed vine leaves rice lemon turkish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Stuffed_grape_leaves.jpg/960px-Stuffed_grape_leaves.jpg', // Dolma
+  'arnavut cigeri fried liver spiced red onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Arnavut_ci%C4%9Feri.jpg/960px-Arnavut_ci%C4%9Feri.jpg', // Arnavut Ciğeri
+  'adana kebap spicy lamb mince skewer charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Adana_kebab.jpg/960px-Adana_kebab.jpg', // Adana Kebap
+  'cop sis turkish small meat skewer wood charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/%C3%87%C3%B6p_%C5%9Fi%C5%9F.jpg/960px-%C3%87%C3%B6p_%C5%9Fi%C5%9F.jpg', // Çöp Şiş
+  'cag kebabi horizontal spit erzurum lamb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Ca%C4%9Fkebab%C4%B15.jpg/960px-Ca%C4%9Fkebab%C4%B15.jpg', // Cağ Kebabı
+  'sis tavuk chicken skewer turkish grilled tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tavuk_%C5%9Ei%C5%9F.jpg/960px-Tavuk_%C5%9Ei%C5%9F.jpg', // Şiş Tavuk
+  'gozleme turkish flatbread filled spinach cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/G%C3%B6zleme.JPG/960px-G%C3%B6zleme.JPG', // Gözleme
+  'katmer gaziantep flaky bread pistachio cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/F%C4%B1st%C4%B1kl%C4%B1_kaymakl%C4%B1_muska_katmer.jpg/960px-F%C4%B1st%C4%B1kl%C4%B1_kaymakl%C4%B1_muska_katmer.jpg', // Katmer
+  'acma turkish soft pastry bread olive breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/A%C3%A7ma_from_Turkey.jpg/960px-A%C3%A7ma_from_Turkey.jpg', // Açma
+  'mercimek corbasi red lentil soup turkish lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mercimek_%C3%A7orbas%C4%B1_in_Ankara%2C_Turkey.jpg/960px-Mercimek_%C3%A7orbas%C4%B1_in_Ankara%2C_Turkey.jpg', // Mercimek Çorbası
+  'iskembe corbasi tripe soup turkish night': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Tripe_soup_from_Turkey.jpg/960px-Tripe_soup_from_Turkey.jpg', // İşkembe Çorbası
+  'pilav turkish rice butter vermicelli': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/%C5%9Eehriyeli_pilav.jpg/960px-%C5%9Eehriyeli_pilav.jpg', // Pilav
+  'ic pilav rice chicken liver currants pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/%C4%B0%C3%A7_pilav.jpg/960px-%C4%B0%C3%A7_pilav.jpg', // İç Pilav
+  'kunefe turkish shredded wheat cheese syrup hot': 'https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C3%BCnefe.jpg', // Künefe
+  'kazandibi turkish caramelised milk pudding burnt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Kazandibi_Dessert.jpg/960px-Kazandibi_Dessert.jpg', // Kazandibi
+  'asure noah pudding grains nuts pomegranate': 'https://upload.wikimedia.org/wikipedia/commons/7/7a/A%C5%9Fure_%281%29.JPG', // Aşure
+  'revani semolina syrup cake turkish ottoman': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Revani_with_lemon_zest.jpg/960px-Revani_with_lemon_zest.jpg', // Revani
+  'raki turkish anise spirit lion milk table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Rak%C4%B1.jpg/960px-Rak%C4%B1.jpg', // Raki
+  'salep turkish winter hot drink orchid cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Salep_drink.jpg/960px-Salep_drink.jpg', // Salep
+  'kebab skewer grilled meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/960px-Lula_kebab_2.jpg', // Kebab
+  'kofte meatball turkish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Izgara_k%C3%B6fte.jpg/960px-Izgara_k%C3%B6fte.jpg', // Köfte
+  'borek turkish pastry filo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Su_b%C3%B6re%C4%9Fi_2025.jpg/960px-Su_b%C3%B6re%C4%9Fi_2025.jpg', // Börek
+  'urfa kebap dark lamb mince mild skewer grilled': '', // Urfa Kebap — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1001,4 +1036,38 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Guacamole', file: 'Guacamole IMGP1271.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
   { word: 'Enchiladas', file: 'Enchilada Rice Beans.jpg', author: 'Jon Sullivan', license: 'Public domain' },
   { word: 'Mole', file: 'Mole casero, picante, México.jpg', author: 'Petrvs III', license: 'CC BY-SA 4.0' },
+  { word: 'Baklava', file: 'Baklava(1).png', author: 'Sakaman', license: 'CC BY-SA 4.0' },
+  { word: 'İskender Kebap', file: 'İskender Kebap.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Lahmacun', file: 'Lahmacun.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Mantı', file: 'Kayseride bir restoranda Kayseri mantısı (cropped).jpg', author: 'Kızılkum', license: 'CC BY-SA 4.0' },
+  { word: 'Pide', file: '2019-07-27 Turkish pide with cheese at Istanbul restaurant.jpg', author: 'Maksym Kozlenko', license: 'CC BY-SA 4.0' },
+  { word: 'Simit', file: 'Simit-2x.JPG', author: 'Barbarossa', license: 'CC BY-SA 3.0' },
+  { word: 'Turkish Delight', file: 'TurkishDelightDisplay.jpg', author: 'Quick fix', license: 'CC BY-SA 2.0' },
+  { word: 'Ayran', file: 'Fresh ayran.jpg', author: 'Mavigogun', license: 'CC BY-SA 3.0' },
+  { word: 'Turkish Coffee', file: 'Türk Kahvesi - Bakir Cezve.jpg', author: 'Eaeeae', license: 'CC BY-SA 3.0' },
+  { word: 'Haydari', file: 'Haydari in a square plate.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Ezme', file: 'Acılı Ezme.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Cacık', file: 'Cacik-1.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Dolma', file: 'Stuffed grape leaves.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Arnavut Ciğeri', file: 'Arnavut ciğeri.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Adana Kebap', file: 'Adana kebab.jpg', author: 'Anatolianpride', license: 'Public domain' },
+  { word: 'Çöp Şiş', file: 'Çöp şiş.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Cağ Kebabı', file: 'Cağkebabı5.jpg', author: 'Eaeeae', license: 'CC BY 3.0' },
+  { word: 'Şiş Tavuk', file: 'Tavuk Şiş.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Gözleme', file: 'Gözleme.JPG', author: 'Maderibeyza', license: 'CC BY-SA 3.0' },
+  { word: 'Katmer', file: 'Fıstıklı kaymaklı muska katmer.jpg', author: 'YG1', license: 'CC BY 4.0' },
+  { word: 'Açma', file: 'Açma from Turkey.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Mercimek Çorbası', file: 'Mercimek çorbası in Ankara, Turkey.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'İşkembe Çorbası', file: 'Tripe soup from Turkey.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Pilav', file: 'Şehriyeli pilav.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'İç Pilav', file: 'İç pilav.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Künefe', file: 'Künefe.jpg', author: 'elif ayse', license: 'CC BY 2.0' },
+  { word: 'Kazandibi', file: 'Kazandibi Dessert.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Aşure', file: 'Aşure (1).JPG', author: 'Maderibeyza', license: 'CC BY-SA 3.0' },
+  { word: 'Revani', file: 'Revani with lemon zest.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Raki', file: 'Rakı.jpg', author: 'Garrett Ziegler', license: 'CC BY-SA 4.0' },
+  { word: 'Salep', file: 'Salep drink.jpg', author: 'DesignbyNur', license: 'CC BY-SA 3.0' },
+  { word: 'Kebab', file: 'Lula kebab 2.jpg', author: 'Lesya Dolyk', license: 'CC BY-SA 2.0' },
+  { word: 'Köfte', file: 'Izgara köfte.jpg', author: 'E4024', license: 'CC BY-SA 4.0' },
+  { word: 'Börek', file: 'Su böreği 2025.jpg', author: 'Samizambak', license: 'CC BY-SA 4.0' },
 ];
