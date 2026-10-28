@@ -585,6 +585,39 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'baklava honey pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Baklava_kymi_greece.jpg/960px-Baklava_kymi_greece.jpg', // Baklava
   'tzatziki yogurt cucumber dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tzatziki_meze_or_appetizer%2C_also_used_as_a_sauce.jpg/960px-Tzatziki_meze_or_appetizer%2C_also_used_as_a_sauce.jpg', // Tzatziki
   'spanakopita spinach feta pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Spanakopita.jpg/960px-Spanakopita.jpg', // Spanakopita
+  'tteokbokki spicy rice cakes korean red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Tteokbokki.JPG/960px-Tteokbokki.JPG', // Tteokbokki
+  'bulgogi korean marinated beef grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Bulgogi_2.jpg/960px-Bulgogi_2.jpg', // Bulgogi
+  'japchae korean glass noodles vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Polish_Korean_Cuisine_and_Culture_Exchanges_Gradmother%E2%80%99s_Recipes_05.jpg/960px-Polish_Korean_Cuisine_and_Culture_Exchanges_Gradmother%E2%80%99s_Recipes_05.jpg', // Japchae
+  'doenjang jjigae korean soybean paste stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Doenjang-jjigae.jpg/960px-Doenjang-jjigae.jpg', // Doenjang Jjigae
+  'sundubu jjigae soft tofu stew korean spicy': 'https://upload.wikimedia.org/wikipedia/commons/0/02/Sundubu-jjigae.jpg', // Sundubu Jjigae
+  'pajeon korean green onion pancake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Korean_pancake-Pajeon-05.jpg/960px-Korean_pancake-Pajeon-05.jpg', // Pajeon
+  'samgyeopsal korean pork belly grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Samgyeopsal-gui.jpg/960px-Samgyeopsal-gui.jpg', // Samgyeopsal
+  'kimchi jjigae stew tofu pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Kimchi_jjigae_-_San_Francisco%2C_CA.jpg/960px-Kimchi_jjigae_-_San_Francisco%2C_CA.jpg', // Kimchi Jjigae
+  'naengmyeon korean cold noodles buckwheat': 'https://upload.wikimedia.org/wikipedia/commons/5/58/Naengmyeon_%28cold_noodles%29.jpg', // Naengmyeon
+  'hotteok korean sweet pancake brown sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Hotteok.jpg/960px-Hotteok.jpg', // Hotteok
+  'soju korean spirit green bottle glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Soju.jpg/960px-Soju.jpg', // Soju
+  'galbi tang beef short rib soup clear korean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Galbitang_%EA%B0%88%EB%B9%84%ED%83%95_beeniru.jpg/960px-Galbitang_%EA%B0%88%EB%B9%84%ED%83%95_beeniru.jpg', // Galbi Tang
+  'haemul sundubu jjigae seafood soft tofu stew spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Haemul-sundubu-jjigae.jpg/960px-Haemul-sundubu-jjigae.jpg', // Haemul Sundubu
+  'seolleongtang ox bone soup milky white korean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Seolleongtang2024.jpg/960px-Seolleongtang2024.jpg', // Seolleongtang
+  'budae jjigae army stew spam sausage ramen kimchi': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Budae_jjigae_%2828587380901%29.jpg/960px-Budae_jjigae_%2828587380901%29.jpg', // Budae Jjigae
+  'dolsot bibimbap stone pot rice crispy vegetables egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/960px-Dolsot-bibimbap.jpg', // Dolsot Bibimbap
+  'mul naengmyeon cold buckwheat noodle soup korean': 'https://upload.wikimedia.org/wikipedia/commons/b/bf/KOCIS_Mul-naengmyeon%2C_Chilled_Buckwheat_Noodle_Soup_%284594756202%29.jpg', // Mul Naengmyeon
+  'jajangmyeon black bean sauce noodles korean chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Jajangmyeon.jpg/960px-Jajangmyeon.jpg', // Jajangmyeon
+  'ramyeon korean instant noodle spicy pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/A_spicy_ramyeon.jpg/960px-A_spicy_ramyeon.jpg', // Ramyeon
+  'galbi korean beef short ribs grilled charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Korean.food-Galbi-03.jpg/960px-Korean.food-Galbi-03.jpg', // Galbi
+  'chadolbaegi thin beef brisket korean bbq grill': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Chadolbagi-gui.jpg/960px-Chadolbagi-gui.jpg', // Chadolbaegi
+  'dak galbi spicy stir fried chicken gochujang sweet potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Korean_cuisine-Dakgalbi-01.jpg/960px-Korean_cuisine-Dakgalbi-01.jpg', // Dak Galbi
+  'kimchi jeon korean kimchi pancake crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Kimchi-jeon_-_Kimchi_pancake_-_Kogi_Korean_cuisine_2024-09-03.jpg/960px-Kimchi-jeon_-_Kimchi_pancake_-_Kogi_Korean_cuisine_2024-09-03.jpg', // Kimchi Jeon
+  'haemul pajeon seafood green onion pancake korean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pajeon.jpg/960px-Pajeon.jpg', // Haemul Pajeon
+  'twigim korean fried vegetables shrimp street food': 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Gim-mari-twigim_2.jpg', // Twigim
+  'kkakdugi cubed radish kimchi korean fermented': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Korean.food-kkakdugi-01.jpg/960px-Korean.food-kkakdugi-01.jpg', // Kkakdugi
+  'banchan korean side dishes small plates table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Banchan.jpg/960px-Banchan.jpg', // Banchan
+  'gyeran bap korean egg rice butter soy simple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Ganjang-gyeran-bap_1.jpg/960px-Ganjang-gyeran-bap_1.jpg', // Gyeran Bap
+  'bingsu korean shaved ice dessert red bean mango': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Patbingsu.jpg/960px-Patbingsu.jpg', // Bingsu
+  'sikhye korean sweet rice punch drink cold': 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Korean.food-Sikhye-01.jpg', // Sikhye
+  'makgeolli korean rice wine milky bowl traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Makgeolli_2.jpg/960px-Makgeolli_2.jpg', // Makgeolli
+  'bibimbap korean rice bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Bibimbap_7.jpg/960px-Bibimbap_7.jpg', // Bibimbap
+  'kimchi korean fermented': 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg', // Kimchi
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1144,4 +1177,37 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Baklava', file: 'Baklava kymi greece.jpg', author: 'Mari Beika', license: 'CC BY-SA 4.0' },
   { word: 'Tzatziki', file: 'Tzatziki meze or appetizer, also used as a sauce.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
   { word: 'Spanakopita', file: 'Spanakopita.jpg', author: 'Alpha', license: 'CC BY-SA 2.0' },
+  { word: 'Tteokbokki', file: 'Tteokbokki.JPG', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Bulgogi', file: 'Bulgogi 2.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Japchae', file: 'Polish Korean Cuisine and Culture Exchanges Gradmother’s Recipes 05.jpg', author: 'korea.net', license: 'CC BY-SA 2.0' },
+  { word: 'Doenjang Jjigae', file: 'Doenjang-jjigae.jpg', author: 'jyleen21', license: 'CC0' },
+  { word: 'Sundubu Jjigae', file: 'Sundubu-jjigae.jpg', author: '행복한 초록개구리', license: 'CC BY 4.0' },
+  { word: 'Pajeon', file: 'Korean pancake-Pajeon-05.jpg', author: 'Tales of an LA Addict (Abby)', license: 'CC BY-SA 2.0' },
+  { word: 'Samgyeopsal', file: 'Samgyeopsal-gui.jpg', author: 'jinsoo jang', license: 'CC0' },
+  { word: 'Kimchi Jjigae', file: 'Kimchi jjigae - San Francisco, CA.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Naengmyeon', file: 'Naengmyeon (cold noodles).jpg', author: 'wjlee4284', license: 'CC BY 2.5' },
+  { word: 'Hotteok', file: 'Hotteok.jpg', author: 'Korea.net', license: 'CC BY-SA 2.0' },
+  { word: 'Soju', file: 'Soju.jpg', author: 'grahamhills', license: 'CC BY 2.0' },
+  { word: 'Galbi Tang', file: 'Galbitang 갈비탕 beeniru.jpg', author: 'Beeniru', license: 'CC BY-SA 3.0' },
+  { word: 'Haemul Sundubu', file: 'Haemul-sundubu-jjigae.jpg', author: 'Ajumeoni', license: 'CC0' },
+  { word: 'Seolleongtang', file: 'Seolleongtang2024.jpg', author: 'Kimhs5400', license: 'CC BY 4.0' },
+  { word: 'Budae Jjigae', file: 'Budae jjigae (28587380901).jpg', author: 'T.Tseng', license: 'CC BY 2.0' },
+  { word: 'Dolsot Bibimbap', file: 'Dolsot-bibimbap.jpg', author: 'Sous Chef', license: 'CC BY 2.0' },
+  { word: 'Mul Naengmyeon', file: 'KOCIS Mul-naengmyeon, Chilled Buckwheat Noodle Soup (4594756202).jpg', author: 'Korea.net', license: 'CC BY-SA 2.0' },
+  { word: 'Jajangmyeon', file: 'Jajangmyeon.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Ramyeon', file: 'A spicy ramyeon.jpg', author: 'BrithnyBiong', license: 'CC BY 4.0' },
+  { word: 'Galbi', file: 'Korean.food-Galbi-03.jpg', author: 'ayustety', license: 'CC BY-SA 2.0' },
+  { word: 'Chadolbaegi', file: 'Chadolbagi-gui.jpg', author: 'lazy fri13th', license: 'CC BY 2.0' },
+  { word: 'Dak Galbi', file: 'Korean cuisine-Dakgalbi-01.jpg', author: 'shizu k (shezzz)', license: 'CC BY-SA 2.0' },
+  { word: 'Kimchi Jeon', file: 'Kimchi-jeon - Kimchi pancake - Kogi Korean cuisine 2024-09-03.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Haemul Pajeon', file: 'Pajeon.jpg', author: 'Brücke-Osteuropa', license: 'CC0' },
+  { word: 'Twigim', file: 'Gim-mari-twigim 2.jpg', author: '경빈마마', license: 'CC BY 2.0' },
+  { word: 'Kkakdugi', file: 'Korean.food-kkakdugi-01.jpg', author: 'milkchug', license: 'CC BY 2.0' },
+  { word: 'Banchan', file: 'Banchan.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Gyeran Bap', file: 'Ganjang-gyeran-bap 1.jpg', author: '건강한 레시피', license: 'CC BY 4.0' },
+  { word: 'Bingsu', file: 'Patbingsu.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Sikhye', file: 'Korean.food-Sikhye-01.jpg', author: 'Drpepper000', license: 'CC BY-SA 3.0' },
+  { word: 'Makgeolli', file: 'Makgeolli 2.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Bibimbap', file: 'Bibimbap 7.jpg', author: 'Chloe Lim', license: 'CC BY 2.0' },
+  { word: 'Kimchi', file: 'Various kimchi.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
 ];
