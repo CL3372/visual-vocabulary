@@ -774,6 +774,33 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'schnitzel breaded cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG/960px-Breitenlesau_Krug_Br%C3%A4u_Schnitzel.JPG', // Schnitzel
   'bratwurst german sausage': 'https://upload.wikimedia.org/wikipedia/commons/b/b0/German_Bratw%C3%BCrste.jpg', // Bratwurst
   'sauerkraut fermented cabbage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Bauernseufzer_Sauerkraut_Bayreuth.jpg/960px-Bauernseufzer_Sauerkraut_Bayreuth.jpg', // Sauerkraut
+  'scottish dressed crab shell white brown meat': 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Crab_meat_in_shell_with_salad_and_Marie_Rose_sauce.jpg', // Dressed Crab
+  'scottish langoustines scampi grilled lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Langoustine_%28Nephrops_norvegicus%29_%28Ifremer_00710-82223%29.jpg/960px-Langoustine_%28Nephrops_norvegicus%29_%28Ifremer_00710-82223%29.jpg', // Langoustines
+  'smoked haddock finnan haddie yellow scotch': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Smoked_haddock_with_pease_pudding_and_saffron.jpg/960px-Smoked_haddock_with_pease_pudding_and_saffron.jpg', // Smoked Haddock
+  'potted shrimp brown butter spiced toast british': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Potted_shrimp_on_toast_with_pickled_cucumber.jpg/960px-Potted_shrimp_on_toast_with_pickled_cucumber.jpg', // Potted Shrimp
+  'grouse roasted scottish game bird heather moors': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2014-04-21_Lagopus_lagopus_scotica%2C_Hawsen_Burn_1.jpg/960px-2014-04-21_Lagopus_lagopus_scotica%2C_Hawsen_Burn_1.jpg', // Grouse
+  'scottish venison red deer loin steak game': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Venison_Loin_%283293814360%29.jpg/960px-Venison_Loin_%283293814360%29.jpg', // Venison
+  'aberdeen angus beef steak scotland quality': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Ribeye_steak%2C_chips%2C_b%C3%A9arnaise_sauce.jpg/960px-Ribeye_steak%2C_chips%2C_b%C3%A9arnaise_sauce.jpg', // Aberdeen Angus
+  'scotch pie hot water pastry mutton football': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Scotch_pie.jpg/960px-Scotch_pie.jpg', // Scotch Pie
+  'scotch broth lamb barley turnip vegetable soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Lunch_at_Inveraray_Castle_-_Scotch_broth_%2814342541740%29.jpg/960px-Lunch_at_Inveraray_Castle_-_Scotch_broth_%2814342541740%29.jpg', // Scotch Broth
+  'cock a leekie scottish chicken leek soup prunes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cock-a-leekie_Soup.jpg/960px-Cock-a-leekie_Soup.jpg', // Cock-a-Leekie
+  'selkirk bannock scottish fruit loaf border': 'https://upload.wikimedia.org/wikipedia/commons/d/d2/BannockBeremeal.jpg', // Selkirk Bannock
+  'cranachan scottish dessert cream raspberries oatmeal whisky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Cranachan_%284332953688%29.jpg/960px-Cranachan_%284332953688%29.jpg', // Cranachan
+  'scottish tablet fudge sugar condensed milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Butter_tablet.JPG/960px-Butter_tablet.JPG', // Tablet
+  'single malt scotch whisky glass distillery scotland': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Bowmore_whisky_12_years.JPG/960px-Bowmore_whisky_12_years.JPG', // Single Malt Whisky
+  'irn bru scottish orange soda can iconic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Barr_IRN-BRU_Sugar_Free_%283_of_3%29.jpg/960px-Barr_IRN-BRU_Sugar_Free_%283_of_3%29.jpg', // Irn-Bru
+  'haggis scottish traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Scotland_Haggis.jpg/960px-Scotland_Haggis.jpg', // Haggis
+  'cullen skink smoked haddock soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Cullen_Skink.JPG/960px-Cullen_Skink.JPG', // Cullen Skink
+  'stovies scottish potato stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Stovies_containing_beef.jpg/960px-Stovies_containing_beef.jpg', // Stovies
+  'arbroath smokie smoked haddock': 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Arbroath_Smokies_-_geograph.org.uk_-_481678.jpg', // Arbroath Smokie
+  'clootie dumpling scottish pudding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Clootie_dumpling.jpg/960px-Clootie_dumpling.jpg', // Clootie Dumpling
+  'shortbread scottish butter biscuit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Shortbread_House_round_biscuit_.jpg/960px-Shortbread_House_round_biscuit_.jpg', // Shortbread
+  'porridge oatmeal breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Oatmeal_%281%29.jpg/960px-Oatmeal_%281%29.jpg', // Porridge
+  'neeps tatties turnip potato mash': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Burns_Supper_-_January_25th_2024.jpg/960px-Burns_Supper_-_January_25th_2024.jpg', // Neeps and Tatties
+  'lorne sausage square scottish': 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Grinners_breakfast.jpg', // Lorne Sausage
+  'dundee cake scottish fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/North_British_Dundee_cake.JPG/960px-North_British_Dundee_cake.JPG', // Dundee Cake
+  'forfar bridie scottish pasty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Bridie.jpg/960px-Bridie.jpg', // Forfar Bridie
+  'empire biscuit double shortbread jam icing cherry': '', // Empire Biscuit — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1521,4 +1548,30 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Schnitzel', file: 'Breitenlesau Krug Bräu Schnitzel.JPG', author: 'Benreis', license: 'CC BY-SA 3.0' },
   { word: 'Bratwurst', file: 'German Bratwürste.jpg', author: 'Gerbis', license: 'CC BY-SA 3.0' },
   { word: 'Sauerkraut', file: 'Bauernseufzer Sauerkraut Bayreuth.jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
+  { word: 'Dressed Crab', file: 'Crab meat in shell with salad and Marie Rose sauce.jpg', author: 'horax zeigt hier', license: 'CC BY-SA 2.0' },
+  { word: 'Langoustines', file: 'Langoustine (Nephrops norvegicus) (Ifremer 00710-82223).jpg', author: 'Isabelle Cheret', license: 'CC BY 4.0' },
+  { word: 'Smoked Haddock', file: 'Smoked haddock with pease pudding and saffron.jpg', author: 'Bertrand Man', license: 'CC BY 2.0' },
+  { word: 'Potted Shrimp', file: 'Potted shrimp on toast with pickled cucumber.jpg', author: 'Kai Chan Vong', license: 'CC BY 2.0' },
+  { word: 'Grouse', file: '2014-04-21 Lagopus lagopus scotica, Hawsen Burn 1.jpg', author: 'MPF', license: 'CC BY-SA 3.0' },
+  { word: 'Venison', file: 'Venison Loin (3293814360).jpg', author: 'Ruth Hartnup', license: 'CC BY 2.0' },
+  { word: 'Aberdeen Angus', file: 'Ribeye steak, chips, béarnaise sauce.jpg', author: 'Socket0', license: 'CC0' },
+  { word: 'Scotch Pie', file: 'Scotch pie.jpg', author: 'Delta-NC', license: 'Public domain' },
+  { word: 'Scotch Broth', file: 'Lunch at Inveraray Castle - Scotch broth (14342541740).jpg', author: 'bnhsu', license: 'CC BY-SA 2.0' },
+  { word: 'Cock-a-Leekie', file: 'Cock-a-leekie Soup.jpg', author: 'Laurel F', license: 'CC BY-SA 2.0' },
+  { word: 'Selkirk Bannock', file: 'BannockBeremeal.jpg', author: 'Lou Sander', license: 'CC BY-SA 3.0' },
+  { word: 'Cranachan', file: 'Cranachan (4332953688).jpg', author: 'Saskia van de Nieuwenhof', license: 'CC BY-SA 2.0' },
+  { word: 'Tablet', file: 'Butter tablet.JPG', author: 'Seraphim Whipp', license: 'Public domain' },
+  { word: 'Single Malt Whisky', file: 'Bowmore whisky 12 years.JPG', author: 'Sansvase', license: 'CC BY-SA 3.0' },
+  { word: 'Irn-Bru', file: 'Barr IRN-BRU Sugar Free (3 of 3).jpg', author: 'Ubcule', license: 'CC BY-SA 4.0' },
+  { word: 'Haggis', file: 'Scotland Haggis.jpg', author: 'Chris Brown', license: 'CC BY 2.0' },
+  { word: 'Cullen Skink', file: 'Cullen Skink.JPG', author: 'Metukkalihis', license: 'CC BY-SA 3.0' },
+  { word: 'Stovies', file: 'Stovies containing beef.jpg', author: 'Mutt Lunker', license: 'CC BY-SA 4.0' },
+  { word: 'Arbroath Smokie', file: 'Arbroath Smokies - geograph.org.uk - 481678.jpg', author: 'Anne Burgess', license: 'CC BY-SA 2.0' },
+  { word: 'Clootie Dumpling', file: 'Clootie dumpling.jpg', author: 'Matt Riggott', license: 'CC BY-SA 2.0' },
+  { word: 'Shortbread', file: 'Shortbread House round biscuit .jpg', author: 'Elumineau', license: 'CC BY-SA 4.0' },
+  { word: 'Porridge', file: 'Oatmeal (1).jpg', author: 'Renee Comet', license: 'Public domain' },
+  { word: 'Neeps and Tatties', file: 'Burns Supper - January 25th 2024.jpg', author: 'Evelyn Hollow', license: 'CC BY-SA 4.0' },
+  { word: 'Lorne Sausage', file: 'Grinners breakfast.jpg', author: 'Grinner', license: 'CC BY-SA 3.0' },
+  { word: 'Dundee Cake', file: 'North British Dundee cake.JPG', author: 'RGloucester', license: 'CC BY-SA 4.0' },
+  { word: 'Forfar Bridie', file: 'Bridie.jpg', author: 'Lindy Buckley', license: 'CC BY 2.0' },
 ];
