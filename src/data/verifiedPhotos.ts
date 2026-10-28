@@ -618,6 +618,34 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'makgeolli korean rice wine milky bowl traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Makgeolli_2.jpg/960px-Makgeolli_2.jpg', // Makgeolli
   'bibimbap korean rice bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Bibimbap_7.jpg/960px-Bibimbap_7.jpg', // Bibimbap
   'kimchi korean fermented': 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg', // Kimchi
+  'massaman curry thai peanut potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kaeng_matsaman_kai.JPG/960px-Kaeng_matsaman_kai.JPG', // Massaman Curry
+  'tom kha gai coconut chicken soup thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Flickr_preppybyday_4711943668--Tom_kha_gai.jpg/960px-Flickr_preppybyday_4711943668--Tom_kha_gai.jpg', // Tom Kha Gai
+  'mango sticky rice thai dessert coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mango_sticy_rice_%283859549574%29.jpg/960px-Mango_sticy_rice_%283859549574%29.jpg', // Mango Sticky Rice
+  'thai satay skewer peanut sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pork_satay_2022.jpg/960px-Pork_satay_2022.jpg', // Thai Satay
+  'laab thai minced meat salad herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Larb_Moo_-_Siam_Thai_Restaurant_-_Regina_%2830194553768%29.jpg/960px-Larb_Moo_-_Siam_Thai_Restaurant_-_Regina_%2830194553768%29.jpg', // Laab
+  'pad kra pao thai basil stir fry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Basil_fried_crispy_pork_with_rice_-_Chiang_Mai_-_2017-07-11_%28002%29.jpg/960px-Basil_fried_crispy_pork_with_rice_-_Chiang_Mai_-_2017-07-11_%28002%29.jpg', // Pad Kra Pao
+  'thai iced tea orange condensed milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cha_yen.JPG/960px-Cha_yen.JPG', // Thai Iced Tea
+  'panang curry thai thick peanut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Panang_curry_%2842943883862%29.jpg/960px-Panang_curry_%2842943883862%29.jpg', // Panang Curry
+  'kaeng hang le northern thai pork curry tamarind': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/%E0%B9%81%E0%B8%81%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5_%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B8%AB%E0%B8%A5%E0%B8%B9%E0%B9%89%E0%B8%A5%E0%B8%B3.jpg/960px-%E0%B9%81%E0%B8%81%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5_%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B8%AB%E0%B8%A5%E0%B8%B9%E0%B9%89%E0%B8%A5%E0%B8%B3.jpg', // Kaeng Hang Le
+  'kaeng som sour orange curry fish vegetables thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Kaeng_som-marum63.JPG/960px-Kaeng_som-marum63.JPG', // Kaeng Som
+  'pad see ew wide rice noodle dark soy egg wok': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pad_see_ew.jpg/960px-Pad_see_ew.jpg', // Pad See Ew
+  'khao soi chiang mai curry noodle crispy northern thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Khao_Soi_Northern_Thai_food_%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%AD%E0%B8%87.jpg/960px-Khao_Soi_Northern_Thai_food_%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%AD%E0%B8%87.jpg', // Khao Soi
+  'guay teow thai noodle soup broth street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Boat_noodles.jpg/960px-Boat_noodles.jpg', // Guay Teow
+  'pad woon sen glass noodles stir fry egg thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Fried_cellophane_noodles_with_shrimp_Pad_woon_sen_kung.jpg/960px-Fried_cellophane_noodles_with_shrimp_Pad_woon_sen_kung.jpg', // Pad Woon Sen
+  'khao man gai thai poached chicken rice ginger sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hainanese_Chicken_Rice.jpg/960px-Hainanese_Chicken_Rice.jpg', // Khao Man Gai
+  'khao pad thai fried rice egg tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Thaifriedrice.jpg/960px-Thaifriedrice.jpg', // Khao Pad
+  'khao niew sticky rice bamboo basket northern thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Glutinous_rice%2C_Saveurs_d%27Asie%2C_9_Rue_de_Vouill%C3%A9%2C_75015_Paris%2C_5_November_2016.jpg/960px-Glutinous_rice%2C_Saveurs_d%27Asie%2C_9_Rue_de_Vouill%C3%A9%2C_75015_Paris%2C_5_November_2016.jpg', // Khao Niew
+  'som tam green papaya salad thai mortar chili': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Som_Tam_green_papaya_salad%2C_Bangkok%2C_Thailand.jpg/960px-Som_Tam_green_papaya_salad%2C_Bangkok%2C_Thailand.jpg', // Som Tam
+  'yam nua thai beef salad lime chili lemongrass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/YUM_NUAH_%28Thai_Beef_Salad%29_Red_onions%2C_green_onions%2C_tomato%2C_cucumbers%2C_cilantro%2C_fresh_chilies_mixed_with_homemade_sauce%2C_served_on_bed_of_greens.jpg/960px-YUM_NUAH_%28Thai_Beef_Salad%29_Red_onions%2C_green_onions%2C_tomato%2C_cucumbers%2C_cilantro%2C_fresh_chilies_mixed_with_homemade_sauce%2C_served_on_bed_of_greens.jpg', // Yam Nua
+  'miang kham betel leaf wrapped bite thai snack': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Miang_kham_platter.jpg/960px-Miang_kham_platter.jpg', // Miang Kham
+  'khanom buang thai crispy crepe coconut topping street': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Ang_Thong_%282024%29_-_khanom_bueang_boran_%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93.jpg/960px-Ang_Thong_%282024%29_-_khanom_bueang_boran_%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93.jpg', // Khanom Buang
+  'gai yang thai grilled chicken lemongrass charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Kai_yang_2.jpg/960px-Kai_yang_2.jpg', // Gai Yang
+  'tod man pla thai fish cake lime cucumber sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Thai_Fish_Cake.jpg/960px-Thai_Fish_Cake.jpg', // Tod Man Pla
+  'kluay buat chi thai banana coconut milk dessert warm': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Kluai_buat_chi.jpg/960px-Kluai_buat_chi.jpg', // Kluay Buat Chi
+  'nam manao thai lime soda drink refreshing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Koh_Mak%2C_Thailand%2C_Lime_juice%2C_Lemonade%2C_Limeade.jpg/960px-Koh_Mak%2C_Thailand%2C_Lime_juice%2C_Lemonade%2C_Limeade.jpg', // Nam Manao
+  'pad thai noodles thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/960px-Phat_Thai_kung_Chang_Khien_street_stall.jpg', // Pad Thai
+  'tom yum soup thai spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Tom_yam_kung_maenam.jpg/960px-Tom_yam_kung_maenam.jpg', // Tom Yum
+  'green curry thai coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Thai_green_chicken_curry_and_roti.jpg/960px-Thai_green_chicken_curry_and_roti.jpg', // Green Curry
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1210,4 +1238,32 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Makgeolli', file: 'Makgeolli 2.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
   { word: 'Bibimbap', file: 'Bibimbap 7.jpg', author: 'Chloe Lim', license: 'CC BY 2.0' },
   { word: 'Kimchi', file: 'Various kimchi.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Massaman Curry', file: 'Kaeng matsaman kai.JPG', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Tom Kha Gai', file: 'Flickr preppybyday 4711943668--Tom kha gai.jpg', author: 'Evan Joshua Swigart (TheCulinaryGeek)', license: 'CC BY 2.0' },
+  { word: 'Mango Sticky Rice', file: 'Mango sticy rice (3859549574).jpg', author: 'Dennis Wong', license: 'CC BY 2.0' },
+  { word: 'Thai Satay', file: 'Pork satay 2022.jpg', author: 'Athikhun.suw', license: 'CC BY-SA 4.0' },
+  { word: 'Laab', file: 'Larb Moo - Siam Thai Restaurant - Regina (30194553768).jpg', author: 'Haydn Blackey', license: 'CC BY-SA 2.0' },
+  { word: 'Pad Kra Pao', file: 'Basil fried crispy pork with rice - Chiang Mai - 2017-07-11 (002).jpg', author: 'Iudexvivorum', license: 'CC0' },
+  { word: 'Thai Iced Tea', file: 'Cha yen.JPG', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Panang Curry', file: 'Panang curry (42943883862).jpg', author: 'Vee Satayamas', license: 'CC BY 2.0' },
+  { word: 'Kaeng Hang Le', file: 'แกงฮังเล ที่ หลู้ลำ.jpg', author: 'Chainwit', license: 'CC BY-SA 4.0' },
+  { word: 'Kaeng Som', file: 'Kaeng som-marum63.JPG', author: 'Xufanc', license: 'CC BY-SA 3.0' },
+  { word: 'Pad See Ew', file: 'Pad see ew.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Khao Soi', file: 'Khao Soi Northern Thai food ข้าวซอย ผักดอง.jpg', author: 'Chainwit', license: 'CC BY-SA 4.0' },
+  { word: 'Guay Teow', file: 'Boat noodles.jpg', author: 'Alpha', license: 'CC BY-SA 2.0' },
+  { word: 'Pad Woon Sen', file: 'Fried cellophane noodles with shrimp Pad woon sen kung.jpg', author: 'Sakurai Midori', license: 'CC BY-SA 3.0' },
+  { word: 'Khao Man Gai', file: 'Hainanese Chicken Rice.jpg', author: 'Terence', license: 'CC BY 2.5' },
+  { word: 'Khao Pad', file: 'Thaifriedrice.jpg', author: 'Jazzcello', license: 'CC BY 2.5' },
+  { word: 'Khao Niew', file: 'Glutinous rice, Saveurs d\'Asie, 9 Rue de Vouillé, 75015 Paris, 5 November 2016.jpg', author: 'Guilhem Vellut', license: 'CC BY 2.0' },
+  { word: 'Som Tam', file: 'Som Tam green papaya salad, Bangkok, Thailand.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Yam Nua', file: 'YUM NUAH (Thai Beef Salad) Red onions, green onions, tomato, cucumbers, cilantro, fresh chilies mixed with homemade sauce, served on bed of greens.jpg', author: 'T.Tseng', license: 'CC BY 2.0' },
+  { word: 'Miang Kham', file: 'Miang kham platter.jpg', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
+  { word: 'Khanom Buang', file: 'Ang Thong (2024) - khanom bueang boran ขนมเบื้องโบราณ.jpg', author: 'Chainwit', license: 'CC BY 4.0' },
+  { word: 'Gai Yang', file: 'Kai yang 2.jpg', author: 'lazy fri13th', license: 'CC BY 2.0' },
+  { word: 'Tod Man Pla', file: 'Thai Fish Cake.jpg', author: 'Justin Hee', license: 'CC BY 2.0' },
+  { word: 'Kluay Buat Chi', file: 'Kluai buat chi.jpg', author: 'Susan Slater', license: 'CC BY-SA 4.0' },
+  { word: 'Nam Manao', file: 'Koh Mak, Thailand, Lime juice, Lemonade, Limeade.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Pad Thai', file: 'Phat Thai kung Chang Khien street stall.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Tom Yum', file: 'Tom yam kung maenam.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Green Curry', file: 'Thai green chicken curry and roti.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
 ];
