@@ -877,6 +877,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'banh mi vietnamese sandwich': 'https://upload.wikimedia.org/wikipedia/commons/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png', // Banh Mi
   'tom rim vietnamese caramelised shrimp chili garlic': '', // Tom Rim — no trustworthy photo yet
   'che ba mau three colour dessert coconut milk jelly': '', // Che Ba Mau — no trustworthy photo yet
+  'nasi lemak coconut rice sambal anchovies egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg/960px-Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg', // Nasi Lemak
+  'char kway teow penang flat noodle wok hei prawn': 'https://upload.wikimedia.org/wikipedia/commons/0/04/Char_kway_teow.jpg', // Char Kway Teow
+  'laksa noodle soup coconut curry prawn malaysia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nyonya_Laksa.jpg/960px-Nyonya_Laksa.jpg', // Laksa
+  'roti canai flaky flatbread dhal curry malaysia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/YosriRotiCanai.jpg/960px-YosriRotiCanai.jpg', // Roti Canai
+  'rendang beef dry curry coconut caramelised': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG', // Rendang
+  'hainanese chicken rice poached ginger sesame singapore': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hainanese_Chicken_Rice.jpg/960px-Hainanese_Chicken_Rice.jpg', // Hainanese Chicken Rice
+  'mee goreng mamak fried noodle egg tomato malaysia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kampung_Bukit_Jagong%2C_Pendang_20240917_172701.jpg/960px-Kampung_Bukit_Jagong%2C_Pendang_20240917_172701.jpg', // Mee Goreng
+  'satay grilled skewer peanut sauce malaysia kajang': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/CHICKEN_SATAY.jpg/960px-CHICKEN_SATAY.jpg', // Satay
+  'cendol dessert green pandan coconut milk palm sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg/960px-Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg', // Cendol
+  'teh tarik pulled tea malaysia frothy condensed milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg/960px-Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg', // Teh Tarik
+  'bak kut teh pork rib herbal soup malaysia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg/960px-Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg', // Bak Kut Teh
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1722,4 +1733,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Nuoc Mia', file: 'Sugarcanejuice.jpg', author: 'Food Trails', license: 'CC BY-SA 2.0' },
   { word: 'Pho', file: 'Bowl of Meatball pho.jpg', author: 'SerraKnightz', license: 'CC BY 4.0' },
   { word: 'Banh Mi', file: 'Bánh mì thịt nướng.png', author: 'nsaum75', license: 'CC BY-SA 3.0' },
+  { word: 'Nasi Lemak', file: 'Nasi Lemak dengan Chili Nasi Lemak dan Sotong Pedas, di Penang Summer Restaurant.jpg', author: 'Meandkancil2020', license: 'CC BY-SA 4.0' },
+  { word: 'Char Kway Teow', file: 'Char kway teow.jpg', author: 'Elizetang', license: 'Public domain' },
+  { word: 'Laksa', file: 'Nyonya Laksa.jpg', author: 'Giddy98', license: 'CC BY-SA 4.0' },
+  { word: 'Roti Canai', file: 'YosriRotiCanai.jpg', author: 'Yosri', license: 'GFDL' },
+  { word: 'Rendang', file: 'Rendang daging sapi asli Padang.JPG', author: 'Midori', license: 'CC BY 3.0' },
+  { word: 'Hainanese Chicken Rice', file: 'Hainanese Chicken Rice.jpg', author: 'Terence', license: 'CC BY 2.5' },
+  { word: 'Mee Goreng', file: 'Kampung Bukit Jagong, Pendang 20240917 172701.jpg', author: 'Wiki Farazi', license: 'CC0' },
+  { word: 'Satay', file: 'CHICKEN SATAY.jpg', author: 'Elly Suhailee', license: 'CC BY-SA 4.0' },
+  { word: 'Cendol', file: 'Kampung Paya Jaras Tengah, Selangor 20250112 111330.jpg', author: 'Wiki Farazi', license: 'CC0' },
+  { word: 'Teh Tarik', file: 'Teh Tarik at the Iskandar Curry House at One Riverside (DSCF0286).jpg', author: 'Yu Chu Chin', license: 'CC BY-SA 4.0' },
+  { word: 'Bak Kut Teh', file: 'Song Fa Bak Kut Teh, New Bridge Rd, Singapore (2023) 06.jpg', author: 'Chainwit.', license: 'CC BY 4.0' },
 ];
