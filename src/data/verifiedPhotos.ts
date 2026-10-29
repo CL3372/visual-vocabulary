@@ -1015,7 +1015,19 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'zereshk polo barberry rice saffron chicken iran': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Zereshk_polo_-_Riso_con_crespini.jpg/960px-Zereshk_polo_-_Riso_con_crespini.jpg', // Zereshk Polo
   'persian tea glass sugar cube saffron iran': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Persian_tea_glass.JPG/960px-Persian_tea_glass.JPG', // Persian Tea
   'doogh persian yogurt mint drink fizzy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Dough_%28ayran_%29_dei_Qashqai_in_Iran.jpg/960px-Dough_%28ayran_%29_dei_Qashqai_in_Iran.jpg', // Doogh
-  'halva sesame saffron sweet persian dense': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Persian_halva.jpg/960px-Persian_halva.jpg', // Halva
+  'halva sesame saffron sweet persian dense': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Persian_halva.jpg/960px-Persian_halva.jpg', // Halva,
+  'opor ayam indonesian coconut chicken white curry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Opor_Ayam_Telur_Pindang.JPG/960px-Opor_Ayam_Telur_Pindang.JPG', // Opor Ayam
+  'martabak indonesian stuffed pancake thick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/MartabakTelur.JPG/960px-MartabakTelur.JPG', // Martabak
+  'rawon indonesian black beef soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Rawon_Setan_II.jpg/960px-Rawon_Setan_II.jpg', // Rawon
+  'nasi goreng indonesian fried rice egg kecap manis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nasi_Goreng_Kampung_%2811967588375%29.jpg/960px-Nasi_Goreng_Kampung_%2811967588375%29.jpg', // Nasi Goreng
+  'gado gado indonesian peanut sauce vegetable salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Gado_gado_jakarta.jpg/960px-Gado_gado_jakarta.jpg', // Gado-Gado
+  'satay indonesian skewer peanut sauce charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Sate_Ayam_Sabang_Telur_Uritan_1.jpg/960px-Sate_Ayam_Sabang_Telur_Uritan_1.jpg', // Satay
+  'soto ayam indonesian chicken soup turmeric noodle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Soto_ayam.JPG/960px-Soto_ayam.JPG', // Soto Ayam
+  'tempeh indonesian fermented soybean fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Tempe_Goreng.jpg/960px-Tempe_Goreng.jpg', // Tempeh
+  'bakso indonesian meatball soup noodle broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bakso_mi_bihun.jpg/500px-Bakso_mi_bihun.jpg', // Bakso
+  'nasi padang rice small dishes minangkabau': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Nasi_Padang_Pak_Nurdin.jpg/960px-Nasi_Padang_Pak_Nurdin.jpg', // Nasi Padang
+  'cendol indonesian shaved ice pandan coconut palm sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Jakarta_street-side_Es_Cendol_4.jpg/960px-Jakarta_street-side_Es_Cendol_4.jpg', // Es Cendol
+  'rendang beef dry curry coconut caramelised dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG', // Rendang
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1999,4 +2011,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Persian Tea', file: 'Persian tea glass.JPG', author: 'Mondephile', license: 'Public domain' },
   { word: 'Doogh', file: 'Dough (ayran ) dei Qashqai in Iran.jpg', author: 'Marcuscalabresus', license: 'CC BY-SA 4.0' },
   { word: 'Halva', file: 'Persian halva.jpg', author: 'مانفی', license: 'CC BY-SA 4.0' },
+  { word: 'Opor Ayam', file: 'Opor Ayam Telur Pindang.JPG', author: 'Sakurai Midori', license: 'CC BY 3.0' },
+  { word: 'Martabak', file: 'MartabakTelur.JPG', author: 'Sakurai Midori', license: 'CC BY-SA 3.0' },
+  { word: 'Rawon', file: 'Rawon Setan II.jpg', author: 'christian razukas', license: 'CC BY-SA 2.0' },
+  { word: 'Nasi Goreng', file: 'Nasi Goreng Kampung (11967588375).jpg', author: 'shankar s.', license: 'CC BY 2.0' },
+  { word: 'Gado-Gado', file: 'Gado gado jakarta.jpg', author: 'Piknikdong', license: 'CC BY-SA 4.0' },
+  { word: 'Satay', file: 'Sate Ayam Sabang Telur Uritan 1.jpg', author: 'Gunawan Kartapranata', license: 'CC BY-SA 4.0' },
+  { word: 'Soto Ayam', file: 'Soto ayam.JPG', author: 'Sakurai Midori', license: 'CC BY-SA 3.0' },
+  { word: 'Tempeh', file: 'Tempe Goreng.jpg', author: 'Fido Cahya', license: 'CC BY-SA 4.0' },
+  { word: 'Bakso', file: 'Bakso mi bihun.jpg', author: 'christian r', license: 'CC BY-SA 2.0' },
+  { word: 'Nasi Padang', file: 'Nasi Padang Pak Nurdin.jpg', author: 'D.W. Fisher-Freberg', license: 'CC BY-SA 4.0' },
+  { word: 'Es Cendol', file: 'Jakarta street-side Es Cendol 4.jpg', author: 'Gunawan Kartapranata', license: 'CC BY-SA 4.0' },
 ];
