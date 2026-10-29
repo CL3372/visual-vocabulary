@@ -1027,7 +1027,19 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'bakso indonesian meatball soup noodle broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bakso_mi_bihun.jpg/500px-Bakso_mi_bihun.jpg', // Bakso
   'nasi padang rice small dishes minangkabau': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Nasi_Padang_Pak_Nurdin.jpg/960px-Nasi_Padang_Pak_Nurdin.jpg', // Nasi Padang
   'cendol indonesian shaved ice pandan coconut palm sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Jakarta_street-side_Es_Cendol_4.jpg/960px-Jakarta_street-side_Es_Cendol_4.jpg', // Es Cendol
-  'rendang beef dry curry coconut caramelised dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG', // Rendang
+  'rendang beef dry curry coconut caramelised dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG', // Rendang,
+  'borscht ukrainian beet soup sour cream red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/960px-Borscht_served.jpg', // Borscht
+  'varenyky ukrainian dumplings potato cheese sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg/960px-Varenyky_with_Potatoes_-_2026_-03.jpg', // Varenyky
+  'holubtsi ukrainian stuffed cabbage rolls rice pork tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Holubtsi.jpg/500px-Holubtsi.jpg', // Holubtsi
+  'chicken kyiv breaded butter herb filled cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Chicken_Kiev_-_Ukrainian_East_Village_restaurant.jpg/500px-Chicken_Kiev_-_Ukrainian_East_Village_restaurant.jpg', // Chicken Kyiv
+  'salo ukrainian cured pork fat garlic bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%D0%A1%D0%B0%D0%BB%D0%BE_%D0%B7_%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC_%D1%82%D0%B0_%D0%B3%D1%80%D1%96%D0%BD%D0%BA%D0%B8.jpg/960px-%D0%A1%D0%B0%D0%BB%D0%BE_%D0%B7_%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC_%D1%82%D0%B0_%D0%B3%D1%80%D1%96%D0%BD%D0%BA%D0%B8.jpg', // Salo
+  'pampushky ukrainian garlic bread buns soft': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Pampuchy_Donetsk.JPG/960px-Pampuchy_Donetsk.JPG', // Pampushky
+  'deruny ukrainian potato pancakes sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Potato_pancakes_%D0%B4%D0%B5%D1%80%D1%83%D0%BD%D0%B8_diruni_deruni_daruni_dirani.jpg/960px-Potato_pancakes_%D0%B4%D0%B5%D1%80%D1%83%D0%BD%D0%B8_diruni_deruni_daruni_dirani.jpg', // Deruny
+  'medivnyk ukrainian honey cake spiced dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Medivnyk_-_2.jpg/960px-Medivnyk_-_2.jpg', // Medivnyk
+  'horilka ukrainian vodka spirit wheat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Zirkova_One_Ultra_Premium_Vodka_%28obverse%2C_Ukrainian_flag%29%2C_Canada%2C_2026-03-31.jpg/960px-Zirkova_One_Ultra_Premium_Vodka_%28obverse%2C_Ukrainian_flag%29%2C_Canada%2C_2026-03-31.jpg', // Horilka
+  'kapusniak ukrainian sauerkraut soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Kapusniak.jpg/500px-Kapusniak.jpg', // Kapusniak
+  'galushky ukrainian soft dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D1%96_%D0%B3%D0%B0%D0%BB%D1%83%D1%88%D0%BA%D0%B8.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D1%96_%D0%B3%D0%B0%D0%BB%D1%83%D1%88%D0%BA%D0%B8.jpg', // Galushky
+  'kovbasa ukrainian sausage smoked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg/960px-%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg', // Kovbasa
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2022,4 +2034,16 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Bakso', file: 'Bakso mi bihun.jpg', author: 'christian r', license: 'CC BY-SA 2.0' },
   { word: 'Nasi Padang', file: 'Nasi Padang Pak Nurdin.jpg', author: 'D.W. Fisher-Freberg', license: 'CC BY-SA 4.0' },
   { word: 'Es Cendol', file: 'Jakarta street-side Es Cendol 4.jpg', author: 'Gunawan Kartapranata', license: 'CC BY-SA 4.0' },
+  { word: 'Borscht', file: 'Borscht served.jpg', author: 'liz west', license: 'CC BY 2.0' },
+  { word: 'Varenyky', file: 'Varenyky with Potatoes - 2026 -03.jpg', author: 'DemieK07', license: 'CC BY-SA 4.0' },
+  { word: 'Holubtsi', file: 'Holubtsi.jpg', author: 'Stefaniafleur', license: 'CC BY-SA 4.0' },
+  { word: 'Chicken Kyiv', file: 'Chicken Kiev - Ukrainian East Village restaurant.jpg', author: 'Jason Lam', license: 'CC BY-SA 2.0' },
+  { word: 'Salo', file: 'Сало з часником та грінки.jpg', author: 'Виталий Пуженко', license: 'CC BY-SA 4.0' },
+  { word: 'Pampushky', file: 'Pampuchy Donetsk.JPG', author: 'MOs810', license: 'CC BY-SA 3.0' },
+  { word: 'Deruny', file: 'Potato pancakes деруни diruni deruni daruni dirani.jpg', author: 'Zeliotvankaizer', license: 'CC BY 4.0' },
+  { word: 'Medivnyk', file: 'Medivnyk - 2.jpg', author: 'Amakuha', license: 'CC BY 4.0' },
+  { word: 'Horilka', file: 'Zirkova One Ultra Premium Vodka (obverse, Ukrainian flag), Canada, 2026-03-31.jpg', author: 'Chris Woodrich', license: 'CC BY-SA 4.0' },
+  { word: 'Kapusniak', file: 'Kapusniak.jpg', author: 'Mariuszjbie', license: 'CC BY-SA 3.0' },
+  { word: 'Galushky', file: 'Полтавські галушки.jpg', author: 'Andrii Orlov', license: 'CC BY-SA 4.0' },
+  { word: 'Kovbasa', file: 'Домашня ковбаса, запечена в духовці. Заводське. Полтавщина. 2026 07.jpg', author: 'Мандрівниця', license: 'CC BY-SA 4.0' },
 ];
