@@ -1082,7 +1082,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'caerphilly cheese welsh white crumbly': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Caerphilly_cheese.jpg/960px-Caerphilly_cheese.jpg', // Caerphilly Cheese
   'welsh cake griddle scone dried fruit sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Closeup_of_Welsh_cakes%2C_February_2009.jpg/960px-Closeup_of_Welsh_cakes%2C_February_2009.jpg', // Welsh Cake
   'crempog welsh pancakes stack': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Crempog_-_Anglesey_style.JPG/960px-Crempog_-_Anglesey_style.JPG', // Crempog
-  'faggots meatballs gravy welsh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Faggots-and-gravy.jpg/960px-Faggots-and-gravy.jpg', // Faggots
+  'faggots meatballs gravy welsh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Faggots-and-gravy.jpg/960px-Faggots-and-gravy.jpg', // Faggots,
+  'stamppot dutch mashed potato kale sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Boerenkool_stamppot.jpg/960px-Boerenkool_stamppot.jpg', // Stamppot
+  'stroopwafel dutch caramel waffle coffee cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/How_to_eat_a_stroopwafel_%288557345379%29.jpg/960px-How_to_eat_a_stroopwafel_%288557345379%29.jpg', // Stroopwafel
+  'bitterballen dutch fried meat croquette mustard beer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Bitterballen_with_Dijon_mustard_-_Taproom_%E2%80%98t_Blauwe_Theehuis_2024-11-26.jpg/960px-Bitterballen_with_Dijon_mustard_-_Taproom_%E2%80%98t_Blauwe_Theehuis_2024-11-26.jpg', // Bitterballen
+  'dutch raw herring hollandse nieuwe onion pickle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Haring_met_ui.jpg/960px-Haring_met_ui.jpg', // Herring
+  'poffertjes dutch mini pancake butter sugar fair': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Poffertjes-Melkhuis_%28cropped%29.jpg/960px-Poffertjes-Melkhuis_%28cropped%29.jpg', // Poffertjes
+  'erwtensoep dutch split pea soup sausage rye bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Erwtensoep_roggebrood_katenspek.jpg/960px-Erwtensoep_roggebrood_katenspek.jpg', // Erwtensoep
+  'gouda dutch cheese market wheel aged': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Chesses_gouda_affinage.JPG/960px-Chesses_gouda_affinage.JPG', // Gouda
+  'appelgebak dutch apple cake cinnamon cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Apple_pie_7.jpg/960px-Apple_pie_7.jpg', // Appelgebak
+  'hutspot dutch carrot potato mash': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hutspot_met_stooflap_op_bord.JPG/500px-Hutspot_met_stooflap_op_bord.JPG', // Hutspot
+  'rookworst dutch smoked sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Rookworst_gedeeltelijk_in_plakjes_2025.jpg/960px-Rookworst_gedeeltelijk_in_plakjes_2025.jpg', // Rookworst
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2132,4 +2142,14 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Welsh Cake', file: 'Closeup of Welsh cakes, February 2009.jpg', author: 'zingyyellow', license: 'CC BY 2.0' },
   { word: 'Crempog', file: 'Crempog - Anglesey style.JPG', author: 'FruitMonkey', license: 'CC BY-SA 4.0' },
   { word: 'Faggots', file: 'Faggots-and-gravy.jpg', author: 'Judgej', license: 'CC BY-SA 3.0' },
+  { word: 'Stamppot', file: 'Boerenkool stamppot.jpg', author: 'M.Minderhoud', license: 'CC BY-SA 3.0' },
+  { word: 'Stroopwafel', file: 'How to eat a stroopwafel (8557345379).jpg', author: 'Saaleha Bamjee', license: 'CC BY-SA 2.0' },
+  { word: 'Bitterballen', file: 'Bitterballen with Dijon mustard - Taproom ‘t Blauwe Theehuis 2024-11-26.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Herring', file: 'Haring met ui.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Poffertjes', file: 'Poffertjes-Melkhuis (cropped).jpg', author: 'Illustratedjc', license: 'CC BY-SA 4.0' },
+  { word: 'Erwtensoep', file: 'Erwtensoep roggebrood katenspek.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Gouda', file: 'Chesses gouda affinage.JPG', author: 'Alpha.prim', license: 'Public domain' },
+  { word: 'Appelgebak', file: 'Apple pie 7.jpg', author: 'Shisma', license: 'CC BY 4.0' },
+  { word: 'Hutspot', file: 'Hutspot met stooflap op bord.JPG', author: 'Ellywa', license: 'CC BY-SA 3.0' },
+  { word: 'Rookworst', file: 'Rookworst gedeeltelijk in plakjes 2025.jpg', author: 'JopkeB', license: 'CC BY-SA 4.0' },
 ];
