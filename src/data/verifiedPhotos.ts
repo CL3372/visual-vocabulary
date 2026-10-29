@@ -1049,7 +1049,19 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'danish pickled herring marinated onion rye bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Aringa-marinato.jpg/960px-Aringa-marinato.jpg', // Herring
   'rodgrod rhubarb strawberry red berry pudding cream denmark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Rote_Gr%C3%BCtze_mit_Sahne-3.jpg/960px-Rote_Gr%C3%BCtze_mit_Sahne-3.jpg', // Rødgrød med Fløde
   'stegt flaek danish fried pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Stegt_fl%C3%A6sk_med_persillesovs.jpg/960px-Stegt_fl%C3%A6sk_med_persillesovs.jpg', // Stegt Flæsk
-  'risalamande danish rice pudding cherry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Risalamande%2C_a_Danish_Christmas_dessert.jpg/960px-Risalamande%2C_a_Danish_Christmas_dessert.jpg', // Risalamande
+  'risalamande danish rice pudding cherry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Risalamande%2C_a_Danish_Christmas_dessert.jpg/960px-Risalamande%2C_a_Danish_Christmas_dessert.jpg', // Risalamande,
+  'svickova czech beef sirloin cream sauce bread dumpling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Sv%C3%AD%C4%8Dkov%C3%A1_na_smetan%C4%9B.JPG/960px-Sv%C3%AD%C4%8Dkov%C3%A1_na_smetan%C4%9B.JPG', // Svíčková
+  'vepro knedlo zelo czech pork knedliky sauerkraut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Vep%C5%99o_knedlo_zelo%2C_Prague.jpg/960px-Vep%C5%99o_knedlo_zelo%2C_Prague.jpg', // Vepřo-knedlo-zelo
+  'knedliky czech bread dumplings sliced steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Dan%C4%8D%C3%AD_gul%C3%A1%C5%A1_a_houskov%C3%A9_knedl%C3%ADky_01.jpg/960px-Dan%C4%8D%C3%AD_gul%C3%A1%C5%A1_a_houskov%C3%A9_knedl%C3%ADky_01.jpg', // Knedlíky
+  'trdelnik czech chimney cake cinnamon sugar prague': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Trdeln%C3%ADk-Basket-20101.JPG/960px-Trdeln%C3%ADk-Basket-20101.JPG', // Trdelník
+  'gulas czech beef goulash bread dumpling pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Veprovy_gulas_s_karlovarskym_knedlikem.JPG/960px-Veprovy_gulas_s_karlovarskym_knedlikem.JPG', // Guláš
+  'czech beer pilsner urquell pint prague pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Pilsner_Urquell_mug.jpg/960px-Pilsner_Urquell_mug.jpg', // Czech Beer
+  'medovnik czech honey cake cream layers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Medovnik_Prav%C4%8Dick%C3%A1_br%C3%A1na.jpg/960px-Medovnik_Prav%C4%8Dick%C3%A1_br%C3%A1na.jpg', // Medovník
+  'smazeny syr czech fried cheese edam tartar sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Sma%C5%BEen%C3%BD_s%C3%BDr_s_tatarskou_om%C3%A1%C4%8Dkou_a_brambory.jpg/960px-Sma%C5%BEen%C3%BD_s%C3%BDr_s_tatarskou_om%C3%A1%C4%8Dkou_a_brambory.jpg', // Smažený Sýr
+  'bramboraky czech potato pancakes garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Potato_pancakes.jpg/960px-Potato_pancakes.jpg', // Bramboráky
+  'czech roast duck cabbage dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Roast_duck_with_dumplings_%28Czech%29.JPG/960px-Roast_duck_with_dumplings_%28Czech%29.JPG', // Roast Duck & Cabbage
+  'svestkove knedliky czech plum dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Polish_Plum_Dumplings_in_Warsaw.jpg/960px-Polish_Plum_Dumplings_in_Warsaw.jpg', // Švestkové Knedlíky
+  'utopenci pickled sausages czech pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Utopenci.jpg/960px-Utopenci.jpg', // Utopenci
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2066,4 +2078,16 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Rødgrød med Fløde', file: 'Rote Grütze mit Sahne-3.jpg', author: 'Like the Grand Canyon', license: 'CC BY 2.0' },
   { word: 'Stegt Flæsk', file: 'Stegt flæsk med persillesovs.jpg', author: 'Nillerdk', license: 'CC BY 3.0' },
   { word: 'Risalamande', file: 'Risalamande, a Danish Christmas dessert.jpg', author: 'Lorie Shaull', license: 'CC BY-SA 4.0' },
+  { word: 'Svíčková', file: 'Svíčková na smetaně.JPG', author: 'Matyáš Havel', license: 'CC BY-SA 3.0' },
+  { word: 'Vepřo-knedlo-zelo', file: 'Vepřo knedlo zelo, Prague.jpg', author: 'Yusuke Kawasaki', license: 'CC BY 2.0' },
+  { word: 'Knedlíky', file: 'Dančí guláš a houskové knedlíky 01.jpg', author: 'Pohled 111', license: 'CC BY-SA 4.0' },
+  { word: 'Trdelník', file: 'Trdelník-Basket-20101.JPG', author: 'Tamorlan', license: 'CC BY-SA 3.0' },
+  { word: 'Guláš', file: 'Veprovy gulas s karlovarskym knedlikem.JPG', author: '01x07x2022000', license: 'CC0' },
+  { word: 'Czech Beer', file: 'Pilsner Urquell mug.jpg', author: 'martavasco', license: 'CC BY-SA 2.0' },
+  { word: 'Medovník', file: 'Medovnik Pravčická brána.jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
+  { word: 'Smažený Sýr', file: 'Smažený sýr s tatarskou omáčkou a brambory.jpg', author: 'Oldsoft', license: 'CC0' },
+  { word: 'Bramboráky', file: 'Potato pancakes.jpg', author: 'Daniel Spils', license: 'CC BY-SA 2.0' },
+  { word: 'Roast Duck & Cabbage', file: 'Roast duck with dumplings (Czech).JPG', author: 'Tamorlan', license: 'CC BY 3.0' },
+  { word: 'Švestkové Knedlíky', file: 'Polish Plum Dumplings in Warsaw.jpg', author: 'Cookinpolish', license: 'CC BY-SA 4.0' },
+  { word: 'Utopenci', file: 'Utopenci.jpg', author: 'Ludek', license: 'CC BY-SA 3.0' },
 ];
