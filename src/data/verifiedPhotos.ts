@@ -1039,7 +1039,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'horilka ukrainian vodka spirit wheat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Zirkova_One_Ultra_Premium_Vodka_%28obverse%2C_Ukrainian_flag%29%2C_Canada%2C_2026-03-31.jpg/960px-Zirkova_One_Ultra_Premium_Vodka_%28obverse%2C_Ukrainian_flag%29%2C_Canada%2C_2026-03-31.jpg', // Horilka
   'kapusniak ukrainian sauerkraut soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Kapusniak.jpg/500px-Kapusniak.jpg', // Kapusniak
   'galushky ukrainian soft dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D1%96_%D0%B3%D0%B0%D0%BB%D1%83%D1%88%D0%BA%D0%B8.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D1%96_%D0%B3%D0%B0%D0%BB%D1%83%D1%88%D0%BA%D0%B8.jpg', // Galushky
-  'kovbasa ukrainian sausage smoked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg/960px-%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg', // Kovbasa
+  'kovbasa ukrainian sausage smoked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg/960px-%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F_%D0%BA%D0%BE%D0%B2%D0%B1%D0%B0%D1%81%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B0_%D0%B2_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D1%86%D1%96._%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B5._%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0._2026_07.jpg', // Kovbasa,
+  'smorrebrod danish open sandwich rye bread herring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sm%C3%B8rrebr%C3%B8d_at_Kastrup_IMG_8275_C.JPG/960px-Sm%C3%B8rrebr%C3%B8d_at_Kastrup_IMG_8275_C.JPG', // Smørrebrød
+  'frikadeller danish meatballs pan fried pork veal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Frikadeller.jpg/960px-Frikadeller.jpg', // Frikadeller
+  'flaeskesteg danish roast pork crackling christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Fl%C3%A6skesteg_r%C3%B8dk%C3%A5l_brunede_kartofler.jpg/960px-Fl%C3%A6skesteg_r%C3%B8dk%C3%A5l_brunede_kartofler.jpg', // Flæskesteg
+  'rugbrod danish rye bread sourdough dark slice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Rugbr%C3%B8d.JPG/960px-Rugbr%C3%B8d.JPG', // Rugbrød
+  'aebleskiver danish pancake balls powdered sugar jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Aebelskivers_in_New_Orleans.jpg/960px-Aebelskivers_in_New_Orleans.jpg', // Æbleskiver
+  'danish pastry wienerbrood laminated butter cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Homemade_spandauer_%28pastry%29_with_vanilla_cream_and_powdered_sugar.png/960px-Homemade_spandauer_%28pastry%29_with_vanilla_cream_and_powdered_sugar.png', // Wienerbrød
+  'danish pickled herring marinated onion rye bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Aringa-marinato.jpg/960px-Aringa-marinato.jpg', // Herring
+  'rodgrod rhubarb strawberry red berry pudding cream denmark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Rote_Gr%C3%BCtze_mit_Sahne-3.jpg/960px-Rote_Gr%C3%BCtze_mit_Sahne-3.jpg', // Rødgrød med Fløde
+  'stegt flaek danish fried pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Stegt_fl%C3%A6sk_med_persillesovs.jpg/960px-Stegt_fl%C3%A6sk_med_persillesovs.jpg', // Stegt Flæsk
+  'risalamande danish rice pudding cherry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Risalamande%2C_a_Danish_Christmas_dessert.jpg/960px-Risalamande%2C_a_Danish_Christmas_dessert.jpg', // Risalamande
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2046,4 +2056,14 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Kapusniak', file: 'Kapusniak.jpg', author: 'Mariuszjbie', license: 'CC BY-SA 3.0' },
   { word: 'Galushky', file: 'Полтавські галушки.jpg', author: 'Andrii Orlov', license: 'CC BY-SA 4.0' },
   { word: 'Kovbasa', file: 'Домашня ковбаса, запечена в духовці. Заводське. Полтавщина. 2026 07.jpg', author: 'Мандрівниця', license: 'CC BY-SA 4.0' },
+  { word: 'Smørrebrød', file: 'Smørrebrød at Kastrup IMG 8275 C.JPG', author: 'Anneli Salo', license: 'CC BY-SA 3.0' },
+  { word: 'Frikadeller', file: 'Frikadeller.jpg', author: 'Kenneth Jorgensen', license: 'CC BY-SA 3.0' },
+  { word: 'Flæskesteg', file: 'Flæskesteg rødkål brunede kartofler.jpg', author: 'Nillerdk', license: 'CC BY 3.0' },
+  { word: 'Rugbrød', file: 'Rugbrød.JPG', author: 'Sten', license: 'CC BY-SA 3.0' },
+  { word: 'Æbleskiver', file: 'Aebelskivers in New Orleans.jpg', author: 'edenpictures', license: 'CC BY 2.0' },
+  { word: 'Wienerbrød', file: 'Homemade spandauer (pastry) with vanilla cream and powdered sugar.png', author: 'Marius Vassnes', license: 'CC BY-SA 4.0' },
+  { word: 'Herring', file: 'Aringa-marinato.jpg', author: 'Kagor', license: 'CC BY-SA 3.0' },
+  { word: 'Rødgrød med Fløde', file: 'Rote Grütze mit Sahne-3.jpg', author: 'Like the Grand Canyon', license: 'CC BY 2.0' },
+  { word: 'Stegt Flæsk', file: 'Stegt flæsk med persillesovs.jpg', author: 'Nillerdk', license: 'CC BY 3.0' },
+  { word: 'Risalamande', file: 'Risalamande, a Danish Christmas dessert.jpg', author: 'Lorie Shaull', license: 'CC BY-SA 4.0' },
 ];
