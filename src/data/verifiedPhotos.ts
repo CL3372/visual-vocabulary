@@ -888,6 +888,16 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'cendol dessert green pandan coconut milk palm sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg/960px-Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg', // Cendol
   'teh tarik pulled tea malaysia frothy condensed milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg/960px-Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg', // Teh Tarik
   'bak kut teh pork rib herbal soup malaysia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg/960px-Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg', // Bak Kut Teh
+  'asado argentine beef grill parrilla charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Asado_tradicional_argentino%2C_le%C3%B1a%2C_brasas.jpg/960px-Asado_tradicional_argentino%2C_le%C3%B1a%2C_brasas.jpg', // Asado
+  'empanada argentine beef pastry baked fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG', // Empanada
+  'chimichurri sauce parsley garlic oregano green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Chimichurri_Sauce_Recipe_%2813294574784%29.jpg/960px-Chimichurri_Sauce_Recipe_%2813294574784%29.jpg', // Chimichurri
+  'choripan argentine chorizo sandwich bread chimichurri': 'https://upload.wikimedia.org/wikipedia/commons/a/af/Choripan.jpg', // Choripán
+  'milanesa argentina breaded beef schnitzel fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Milanesa_plated_with_lemon_slices_and_french_fries_%28in_Buenos_Aires%2C_Argentina%29.jpg/960px-Milanesa_plated_with_lemon_slices_and_french_fries_%28in_Buenos_Aires%2C_Argentina%29.jpg', // Milanesa
+  'locro argentinian stew white corn squash pork': 'https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg', // Locro
+  'dulce de leche caramel spread argentina spoon jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/DulceDeLeche.jpg/960px-DulceDeLeche.jpg', // Dulce de Leche
+  'alfajor argentina dulce de leche cookie chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/AlfajoresP1115215_02.jpg/960px-AlfajoresP1115215_02.jpg', // Alfajor
+  'mate yerba argentina gourd bombilla green': 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Mate_en_calabaza.jpg', // Mate
+  'provoleta grilled cheese argentinian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg/960px-Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg', // Provoleta
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1744,4 +1754,14 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Cendol', file: 'Kampung Paya Jaras Tengah, Selangor 20250112 111330.jpg', author: 'Wiki Farazi', license: 'CC0' },
   { word: 'Teh Tarik', file: 'Teh Tarik at the Iskandar Curry House at One Riverside (DSCF0286).jpg', author: 'Yu Chu Chin', license: 'CC BY-SA 4.0' },
   { word: 'Bak Kut Teh', file: 'Song Fa Bak Kut Teh, New Bridge Rd, Singapore (2023) 06.jpg', author: 'Chainwit.', license: 'CC BY 4.0' },
+  { word: 'Asado', file: 'Asado tradicional argentino, leña, brasas.jpg', author: 'Maxd2', license: 'CC BY-SA 4.0' },
+  { word: 'Empanada', file: 'Tapa de empanadillitas.JPG', author: 'Tamorlan', license: 'CC BY 3.0' },
+  { word: 'Chimichurri', file: 'Chimichurri Sauce Recipe (13294574784).jpg', author: 'Dominic Lockyer', license: 'CC BY 2.0' },
+  { word: 'Choripán', file: 'Choripan.jpg', author: 'SimpleFoodie', license: 'Public domain' },
+  { word: 'Milanesa', file: 'Milanesa plated with lemon slices and french fries (in Buenos Aires, Argentina).jpg', author: 'Ben Tavener', license: 'CC BY 2.0' },
+  { word: 'Locro', file: 'Locro argentino.jpg', author: 'Matías Repetto / GCBA', license: 'CC BY 2.5 AR' },
+  { word: 'Dulce de Leche', file: 'DulceDeLeche.jpg', author: 'audinou', license: 'CC BY 2.0' },
+  { word: 'Alfajor', file: 'AlfajoresP1115215 02.jpg', author: 'Alex Lozupone', license: 'CC BY 4.0' },
+  { word: 'Mate', file: 'Mate en calabaza.jpg', author: 'Jorgealfonso', license: 'CC BY-SA 2.5' },
+  { word: 'Provoleta', file: 'Provoleta con cazuela (porción).jpg', author: 'Horacio Cambeiro', license: 'CC BY 3.0' },
 ];
