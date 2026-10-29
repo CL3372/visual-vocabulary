@@ -1061,7 +1061,18 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'bramboraky czech potato pancakes garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Potato_pancakes.jpg/960px-Potato_pancakes.jpg', // Bramboráky
   'czech roast duck cabbage dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Roast_duck_with_dumplings_%28Czech%29.JPG/960px-Roast_duck_with_dumplings_%28Czech%29.JPG', // Roast Duck & Cabbage
   'svestkove knedliky czech plum dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Polish_Plum_Dumplings_in_Warsaw.jpg/960px-Polish_Plum_Dumplings_in_Warsaw.jpg', // Švestkové Knedlíky
-  'utopenci pickled sausages czech pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Utopenci.jpg/960px-Utopenci.jpg', // Utopenci
+  'utopenci pickled sausages czech pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Utopenci.jpg/960px-Utopenci.jpg', // Utopenci,
+  'baltic black rye bread dense dark sourdough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Lithuanian_traditional_bread.jpg/960px-Lithuanian_traditional_bread.jpg', // Black Bread
+  'cold borscht lithuanian pink yogurt beet cucumber': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lurid_borscht.jpg/500px-Lurid_borscht.jpg', // Cold Borscht
+  'cepelinai lithuanian potato dumpling pork bacon cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Cepelinai_Kaunas_2023.jpg/960px-Cepelinai_Kaunas_2023.jpg', // Cepelinai
+  'smoked fish latvia estonia sprat herring brisling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Zakouskis_aux_sprats.JPG/960px-Zakouskis_aux_sprats.JPG', // Smoked Fish
+  'kama estonian roasted grain flour yogurt kefir': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Kama.jpg/960px-Kama.jpg', // Kama
+  'latvian piragi bacon onion bread roll pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Latvian_piragi_%28bacon_buns%29.jpg/960px-Latvian_piragi_%28bacon_buns%29.jpg', // Latvian Piragi
+  'kvass baltic fermented rye bread drink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Mint_bread_kvas.jpg/960px-Mint_bread_kvas.jpg', // Kvass
+  'latvian lithuanian beer alus farmhouse dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Glass_of_beer_at_restaurant_Jura_in_Jurmala.jpg/960px-Glass_of_beer_at_restaurant_Jura_in_Jurmala.jpg', // Alus
+  'sakotis lithuanian tree cake baumkuchen': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/%C5%A0akotis_display_at_Kaunas_Central_Market_%28Urmas%29_2025.jpg/960px-%C5%A0akotis_display_at_Kaunas_Central_Market_%28Urmas%29_2025.jpg', // Šakotis
+  'grey peas bacon latvian traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Grey_peas_at_restaurant_Milda_in_Riga.jpg/960px-Grey_peas_at_restaurant_Milda_in_Riga.jpg', // Grey Peas & Bacon
+  'verivorst estonian blood sausage christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Verivorstid.jpg/960px-Verivorstid.jpg', // Verivorst
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2090,4 +2101,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Roast Duck & Cabbage', file: 'Roast duck with dumplings (Czech).JPG', author: 'Tamorlan', license: 'CC BY 3.0' },
   { word: 'Švestkové Knedlíky', file: 'Polish Plum Dumplings in Warsaw.jpg', author: 'Cookinpolish', license: 'CC BY-SA 4.0' },
   { word: 'Utopenci', file: 'Utopenci.jpg', author: 'Ludek', license: 'CC BY-SA 3.0' },
+  { word: 'Black Bread', file: 'Lithuanian traditional bread.jpg', author: 'Bearas', license: 'CC BY 3.0' },
+  { word: 'Cold Borscht', file: 'Lurid borscht.jpg', author: 'TreasuryTag', license: 'CC BY-SA 3.0' },
+  { word: 'Cepelinai', file: 'Cepelinai Kaunas 2023.jpg', author: 'Bdx', license: 'CC0' },
+  { word: 'Smoked Fish', file: 'Zakouskis aux sprats.JPG', author: 'Aliyarussophonekz', license: 'CC BY-SA 3.0' },
+  { word: 'Kama', file: 'Kama.jpg', author: 'Mmh', license: 'CC BY-SA 3.0' },
+  { word: 'Latvian Piragi', file: 'Latvian piragi (bacon buns).jpg', author: 'Sara McCleary', license: 'CC BY-SA 4.0' },
+  { word: 'Kvass', file: 'Mint bread kvas.jpg', author: 'Mr.Icon (Mricon)', license: 'CC BY-SA 3.0' },
+  { word: 'Alus', file: 'Glass of beer at restaurant Jura in Jurmala.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Šakotis', file: 'Šakotis display at Kaunas Central Market (Urmas) 2025.jpg', author: 'Bdx', license: 'CC0' },
+  { word: 'Grey Peas & Bacon', file: 'Grey peas at restaurant Milda in Riga.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Verivorst', file: 'Verivorstid.jpg', author: 'Pikk de Päkk', license: 'CC BY-SA 3.0' },
 ];
