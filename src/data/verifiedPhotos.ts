@@ -910,7 +910,21 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'berbere ethiopian spice blend red chili fenugreek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Berberespice.jpg/960px-Berberespice.jpg', // Berbere
   'tej ethiopian honey wine mead yellow flask': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Tej_%28Ethiopian_honey_wine%29_%2827241999346%29.jpg/960px-Tej_%28Ethiopian_honey_wine%29_%2827241999346%29.jpg', // Tej
   'ethiopian coffee ceremony jebena pot green beans': 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Coffee_ceremony.jpg', // Ethiopian Coffee
-  'chechebsa ethiopian bread torn niter kibbeh berbere breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kitcha_fit_fit.png/500px-Kitcha_fit_fit.png', // Chechebsa
+  'chechebsa ethiopian bread torn niter kibbeh berbere breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kitcha_fit_fit.png/500px-Kitcha_fit_fit.png', // Chechebsa,
+  'raggmunk potato pancake lingonberry pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Raggmunk_med_fl%C3%A4sk.jpg/960px-Raggmunk_med_fl%C3%A4sk.jpg', // Raggmunk
+  'pytt i panna swedish hash beef potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pyttipanna.JPG/960px-Pyttipanna.JPG', // Pytt i Panna
+  'swedish meatballs gravy lingonberry cream sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg/960px-Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg', // Köttbullar
+  'smorgasbord swedish buffet herring eggs cold cuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Sm%C3%B6rg%C3%A5sbord.jpg/960px-Sm%C3%B6rg%C3%A5sbord.jpg', // Smörgåsbord
+  'gravlax cured salmon dill mustard sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gravlax_2.jpg/960px-Gravlax_2.jpg', // Gravlax
+  'pickled herring swedish jar varieties mustard onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Midsummer_pickled_herring.jpg/960px-Midsummer_pickled_herring.jpg', // Inlagd Sill
+  'janssons frestelse potato anchovy cream gratin swedish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Janssons_frestelse.jpg/960px-Janssons_frestelse.jpg', // Janssons Frestelse
+  'husmanskost swedish home cooking pork potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Kroppkaka.jpg/960px-Kroppkaka.jpg', // Husmanskost
+  'artsoppa swedish yellow pea soup pork thursday': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/%C3%84rtsoppa_och_pannkakor.jpg/960px-%C3%84rtsoppa_och_pannkakor.jpg', // Ärtsoppa
+  'surstromming fermented herring tin sweden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Surstr%C3%B6mming.jpg/960px-Surstr%C3%B6mming.jpg', // Surströmming
+  'prinsesstarta swedish princess cake green marzipan dome': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Princess_Cake_2025-Oct-02.jpg/960px-Princess_Cake_2025-Oct-02.jpg', // Prinsesstårta
+  'semla swedish cardamom bun cream almond paste': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/SemlaFlickr.jpg/960px-SemlaFlickr.jpg', // Semla
+  'kanelbulle swedish cinnamon bun cardamom pearl sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Kanelbulle.jpg/960px-Kanelbulle.jpg', // Kanelbulle
+  'aquavit scandinavian spirit caraway fennel glass': 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Aquavit_Schweden.jpg', // Aquavit
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1790,4 +1804,18 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Tej', file: 'Tej (Ethiopian honey wine) (27241999346).jpg', author: 'cotterillmike', license: 'CC0' },
   { word: 'Ethiopian Coffee', file: 'Coffee ceremony.jpg', author: 'Hans van der Splinter', license: 'CC BY-SA 2.5' },
   { word: 'Chechebsa', file: 'Kitcha fit fit.png', author: 'Merhawie', license: 'CC BY-SA 2.5' },
+  { word: 'Raggmunk', file: 'Raggmunk med fläsk.jpg', author: 'Mikaela Börjesson', license: 'CC BY-SA 4.0' },
+  { word: 'Pytt i Panna', file: 'Pyttipanna.JPG', author: 'Skivsamlare', license: 'CC BY-SA 3.0' },
+  { word: 'Köttbullar', file: 'Swedish.food-Köttbullar med lingon-01.jpg', author: 'tuey', license: 'CC BY 2.0' },
+  { word: 'Smörgåsbord', file: 'Smörgåsbord.jpg', author: 'Jordan Klein', license: 'CC BY 2.0' },
+  { word: 'Gravlax', file: 'Gravlax 2.jpg', author: 'Tiia Monto', license: 'CC BY-SA 4.0' },
+  { word: 'Inlagd Sill', file: 'Midsummer pickled herring.jpg', author: 'Fluff', license: 'CC BY-SA 3.0' },
+  { word: 'Janssons Frestelse', file: 'Janssons frestelse.jpg', author: 'Andejons', license: 'CC BY-SA 3.0' },
+  { word: 'Husmanskost', file: 'Kroppkaka.jpg', author: 'Sendelbach', license: 'CC BY-SA 3.0' },
+  { word: 'Ärtsoppa', file: 'Ärtsoppa och pannkakor.jpg', author: 'hildgrim', license: 'CC BY-SA 2.0' },
+  { word: 'Surströmming', file: 'Surströmming.jpg', author: 'Lapplaender', license: 'CC BY-SA 4.0' },
+  { word: 'Prinsesstårta', file: 'Princess Cake 2025-Oct-02.jpg', author: 'MarcellusW', license: 'CC0' },
+  { word: 'Semla', file: 'SemlaFlickr.jpg', author: 'Frugan', license: 'CC BY 2.0' },
+  { word: 'Kanelbulle', file: 'Kanelbulle.jpg', author: 'Bengt Olof Åradsson', license: 'Public domain' },
+  { word: 'Aquavit', file: 'Aquavit Schweden.jpg', author: 'Peng', license: 'CC BY-SA 3.0' },
 ];
