@@ -924,7 +924,20 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'prinsesstarta swedish princess cake green marzipan dome': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Princess_Cake_2025-Oct-02.jpg/960px-Princess_Cake_2025-Oct-02.jpg', // Prinsesstårta
   'semla swedish cardamom bun cream almond paste': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/SemlaFlickr.jpg/960px-SemlaFlickr.jpg', // Semla
   'kanelbulle swedish cinnamon bun cardamom pearl sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Kanelbulle.jpg/960px-Kanelbulle.jpg', // Kanelbulle
-  'aquavit scandinavian spirit caraway fennel glass': 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Aquavit_Schweden.jpg', // Aquavit
+  'aquavit scandinavian spirit caraway fennel glass': 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Aquavit_Schweden.jpg', // Aquavit,
+  'ceviche peruvian raw fish lime chili corn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG', // Ceviche
+  'lomo saltado peruvian stir fry beef soy fries': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg/960px-Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg', // Lomo Saltado
+  'aji de gallina peruvian creamy chicken yellow pepper walnut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Aj%C3%AD_de_gallina.jpg/960px-Aj%C3%AD_de_gallina.jpg', // Ají de Gallina
+  'anticucho beef heart skewer grilled peruvian street': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Anticuchos_-_Grilled_Beef_Heart_skewers.jpg/960px-Anticuchos_-_Grilled_Beef_Heart_skewers.jpg', // Anticucho
+  'causa limena peruvian potato terrine chicken avocado': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Causa_Rellena.jpg/960px-Causa_Rellena.jpg', // Causa Limeña
+  'papa huancaina potato yellow sauce cheese peru': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Papa_a_la_huancaina.jpg/960px-Papa_a_la_huancaina.jpg', // Papa a la Huancaína
+  'pollo a la brasa peruvian rotisserie chicken charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Un_cuarto_de_Pollo_a_la_Brasa.JPG/960px-Un_cuarto_de_Pollo_a_la_Brasa.JPG', // Pollo a la Brasa
+  'pachamanca peruvian earth oven stones meat potato': 'https://upload.wikimedia.org/wikipedia/commons/5/57/PachaComer.jpg', // Pachamanca
+  'chicha morada purple corn drink peru cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Chicha_Morada_2017.jpg/960px-Chicha_Morada_2017.jpg', // Chicha Morada
+  'pisco sour peruvian cocktail egg white foam lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Pisco_sour_20100613b.JPG/960px-Pisco_sour_20100613b.JPG', // Pisco Sour
+  'arroz con leche peruvian rice pudding cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Arroz_con_leche%2C_postre.jpg/960px-Arroz_con_leche%2C_postre.jpg', // Arroz con Leche
+  'tiradito peruvian fish slices sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tiradito.jpg/960px-Tiradito.jpg', // Tiradito
+  'cuy guinea pig roasted peruvian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cuy_Chactado.jpg/960px-Cuy_Chactado.jpg', // Cuy
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1818,4 +1831,17 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Semla', file: 'SemlaFlickr.jpg', author: 'Frugan', license: 'CC BY 2.0' },
   { word: 'Kanelbulle', file: 'Kanelbulle.jpg', author: 'Bengt Olof Åradsson', license: 'Public domain' },
   { word: 'Aquavit', file: 'Aquavit Schweden.jpg', author: 'Peng', license: 'CC BY-SA 3.0' },
+  { word: 'Ceviche', file: 'Cebiche de corvina.JPG', author: 'Picanteria karol', license: 'CC BY-SA 4.0' },
+  { word: 'Lomo Saltado', file: 'Lomo Saltado - Lima, Peru Miraflores (Tiendecita Blanca).jpg', author: 'Chasqui (Luis Tamayo)', license: 'CC BY-SA 2.0' },
+  { word: 'Ají de Gallina', file: 'Ají de gallina.jpg', author: 'Feralbt', license: 'CC BY-SA 3.0' },
+  { word: 'Anticucho', file: 'Anticuchos - Grilled Beef Heart skewers.jpg', author: 'Carly & Art', license: 'CC BY-SA 2.0' },
+  { word: 'Causa Limeña', file: 'Causa Rellena.jpg', author: 'spersper', license: 'CC BY 2.0' },
+  { word: 'Papa a la Huancaína', file: 'Papa a la huancaina.jpg', author: 'Feralbt', license: 'CC BY 3.0' },
+  { word: 'Pollo a la Brasa', file: 'Un cuarto de Pollo a la Brasa.JPG', author: 'Dtarazona', license: 'CC BY-SA 3.0' },
+  { word: 'Pachamanca', file: 'PachaComer.jpg', author: 'Håkan Svensson (Xauxa)', license: 'CC BY-SA 3.0' },
+  { word: 'Chicha Morada', file: 'Chicha Morada 2017.jpg', author: 'Young Shanahan', license: 'CC BY 2.0' },
+  { word: 'Pisco Sour', file: 'Pisco sour 20100613b.JPG', author: 'Dtarazona', license: 'CC BY-SA 4.0' },
+  { word: 'Arroz con Leche', file: 'Arroz con leche, postre.jpg', author: 'Juan Emilio Prades Bel', license: 'CC BY-SA 4.0' },
+  { word: 'Tiradito', file: 'Tiradito.jpg', author: 'Manuel González Olaechea', license: 'CC BY 3.0' },
+  { word: 'Cuy', file: 'Cuy Chactado.jpg', author: 'MovEditor', license: 'CC BY-SA 4.0' },
 ];
