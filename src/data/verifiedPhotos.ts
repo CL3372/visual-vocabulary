@@ -831,7 +831,7 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'chermoula moroccan herb marinade green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Poulet_chermoula_aux_olives_rouges.png/960px-Poulet_chermoula_aux_olives_rouges.png', // Chermoula
   'makouda moroccan potato fritters': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Maakouda.jpg/960px-Maakouda.jpg', // Makouda
   'moroccan mint tea glass pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mint_tea%2C_Marrakesh.jpg/960px-Mint_tea%2C_Marrakesh.jpg', // Moroccan Mint Tea
-  'rfissa moroccan chicken shredded bread': 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Rfissa_marocaine.jpg', // Rfissa
+  'rfissa moroccan chicken shredded bread': 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rfissa_marocaine.jpg/500px-Rfissa_marocaine.jpg', // Rfissa
   'tagine mrouzia sweet lamb raisins honey almond': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/IB_tajine_02.jpg/960px-IB_tajine_02.jpg', // Tagine Mrouzia
   'tagine kefta meatball egg tomato moroccan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Tajine_kefta_%288348397161%29.jpg/960px-Tajine_kefta_%288348397161%29.jpg', // Tagine Kefta
   'chicken tagine preserved lemon olives moroccan': 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Tajine-marocain-un-plat-varie-et-sain_%28cropped%29.jpg', // Tagine Poulet
@@ -851,6 +851,32 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tagine moroccan stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Moroccan_dinner-02.jpg/960px-Moroccan_dinner-02.jpg', // Tagine
   'couscous moroccan vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg', // Couscous
   'moroccan mallow salad herb lemon olive oil': '', // Khoubiza — no trustworthy photo yet
+  'bun cha vietnamese grilled pork noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg/960px-B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg', // Bun Cha
+  'goi cuon vietnamese fresh spring rolls': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Homemade_spring_rolls_%287010969349%29.jpg/960px-Homemade_spring_rolls_%287010969349%29.jpg', // Goi Cuon
+  'banh xeo vietnamese sizzling crepe shrimp': 'https://upload.wikimedia.org/wikipedia/commons/5/59/Banh_Xeo_with_fish_sauce_and_vegetables.jpg', // Banh Xeo
+  'cao lau hoi an noodles pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Cao_l%E1%BA%A7u_H%E1%BB%99i_An_%282024%29.jpg/960px-Cao_l%E1%BA%A7u_H%E1%BB%99i_An_%282024%29.jpg', // Cao Lau
+  'banh cuon vietnamese steamed rice rolls': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/B%C3%A1nh_cu%E1%BB%91n_Thanh_Tr%C3%AC.jpg/960px-B%C3%A1nh_cu%E1%BB%91n_Thanh_Tr%C3%AC.jpg', // Banh Cuon
+  'ca kho to vietnamese caramel fish clay pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/C%C3%A1_kho_t%E1%BB%99%2C_c%C3%A1_h%C3%BA.jpg/960px-C%C3%A1_kho_t%E1%BB%99%2C_c%C3%A1_h%C3%BA.jpg', // Ca Kho To
+  'che vietnamese sweet dessert soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ch%C3%A8_b%C3%A0_ba.jpg/960px-Ch%C3%A8_b%C3%A0_ba.jpg', // Che
+  'cha ca hanoi turmeric fish dill': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_H%C3%A0_N%E1%BB%99i.jpg/960px-Ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_H%C3%A0_N%E1%BB%99i.jpg', // Cha Ca
+  'bun bo hue spicy beef noodle soup hue central vietnam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_-_Ch%E1%BB%A3_%C4%90%C3%B4ng_Ba_%282024%29_-_img_02.jpg/960px-B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_-_Ch%E1%BB%A3_%C4%90%C3%B4ng_Ba_%282024%29_-_img_02.jpg', // Bun Bo Hue
+  'mi quang quang nam turmeric noodle shrimp pork rice cracker': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/M%C3%AC_Qu%E1%BA%A3ng%2C_Da_Nang%2C_Vietnam.jpg/960px-M%C3%AC_Qu%E1%BA%A3ng%2C_Da_Nang%2C_Vietnam.jpg', // Mi Quang
+  'hu tieu southern vietnam pork noodle soup clear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Hu_Tieu_Nam_Vang.jpg/960px-Hu_Tieu_Nam_Vang.jpg', // Hu Tieu
+  'thit nuong vietnamese grilled pork charcoal lemongrass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Bun_thit_nuong.jpg/960px-Bun_thit_nuong.jpg', // Thit Nuong
+  'com tam broken rice pork chop fried egg saigon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg/960px-C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg', // Com Tam
+  'vit quay vietnamese roast duck crispy caramelised': 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Vit-quay-bac-kinh-by-vit-quay-to-thi.jpg', // Vit Quay
+  'com chien vietnamese fried rice egg shrimp': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Fried_rice_in_home.jpg/960px-Fried_rice_in_home.jpg', // Com Chien
+  'xoi vietnamese sticky rice toppings colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/X%C3%B4i_s%E1%BA%AFn.jpg/960px-X%C3%B4i_s%E1%BA%AFn.jpg', // Xoi
+  'bo luc lac shaking beef wok tender cubes salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Product_Shots_of_Food-Bo_Luc_Lac.jpg/960px-Product_Shots_of_Food-Bo_Luc_Lac.jpg', // Bo Luc Lac
+  'ca hap steamed fish ginger soy vietnamese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Steamed_fish_in_dinner.jpg/960px-Steamed_fish_in_dinner.jpg', // Ca Hap
+  'goi du du vietnamese papaya salad shrimp herbs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/G%E1%BB%8Fi_%C4%91u_%C4%91%E1%BB%A7_kh%C3%B4_b%C3%B2.jpg/960px-G%E1%BB%8Fi_%C4%91u_%C4%91%E1%BB%A7_kh%C3%B4_b%C3%B2.jpg', // Goi Du Du
+  'rau muong water spinach stir fry garlic vietnamese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Rau_mu%E1%BB%91ng_x%C3%A0o_t%E1%BB%8Fi.jpg/960px-Rau_mu%E1%BB%91ng_x%C3%A0o_t%E1%BB%8Fi.jpg', // Rau Muong Xao Toi
+  'ca phe trung egg coffee hanoi creamy whipped': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng.jpg/960px-C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng.jpg', // Ca Phe Trung
+  'nuoc mia sugarcane juice fresh squeezed vietnamese': 'https://upload.wikimedia.org/wikipedia/commons/6/63/Sugarcanejuice.jpg', // Nuoc Mia
+  'pho vietnamese noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bowl_of_Meatball_pho.jpg/960px-Bowl_of_Meatball_pho.jpg', // Pho
+  'banh mi vietnamese sandwich': 'https://upload.wikimedia.org/wikipedia/commons/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png', // Banh Mi
+  'tom rim vietnamese caramelised shrimp chili garlic': '', // Tom Rim — no trustworthy photo yet
+  'che ba mau three colour dessert coconut milk jelly': '', // Che Ba Mau — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1672,4 +1698,28 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Argan Oil', file: 'Huile d\'argan 010.JPG', author: 'Arnaud 25', license: 'CC BY-SA 3.0' },
   { word: 'Tagine', file: 'Moroccan dinner-02.jpg', author: 'Matt Perreault', license: 'CC BY-SA 2.0' },
   { word: 'Couscous', file: 'Moroccan cuscus, from Casablanca, September 2018.jpg', author: 'Lmmima', license: 'CC BY-SA 4.0' },
+  { word: 'Bun Cha', file: 'Bún chả Vietnamese food.jpg', author: 'stuart_spivack', license: 'CC BY 2.0' },
+  { word: 'Goi Cuon', file: 'Homemade spring rolls (7010969349).jpg', author: 'pelican', license: 'CC BY-SA 2.0' },
+  { word: 'Banh Xeo', file: 'Banh Xeo with fish sauce and vegetables.jpg', author: 'HungryHuy', license: 'CC BY 2.0' },
+  { word: 'Cao Lau', file: 'Cao lầu Hội An (2024).jpg', author: 'Chainwit.', license: 'CC BY 4.0' },
+  { word: 'Banh Cuon', file: 'Bánh cuốn Thanh Trì.jpg', author: 'Casablanca1911', license: 'Public domain' },
+  { word: 'Ca Kho To', file: 'Cá kho tộ, cá hú.jpg', author: 'Charles Haynes', license: 'CC BY-SA 2.0' },
+  { word: 'Che', file: 'Chè bà ba.jpg', author: 'Zxcvasdfqwer888', license: 'CC BY-SA 3.0' },
+  { word: 'Cha Ca', file: 'Chả cá Lã Vọng Hà Nội.jpg', author: 'Phương Huy', license: 'Public domain' },
+  { word: 'Bun Bo Hue', file: 'Bún bò Huế - Chợ Đông Ba (2024) - img 02.jpg', author: 'Chainwit.', license: 'CC BY 4.0' },
+  { word: 'Mi Quang', file: 'Mì Quảng, Da Nang, Vietnam.jpg', author: 'Christopher Crouzet', license: 'CC BY-SA 4.0' },
+  { word: 'Hu Tieu', file: 'Hu Tieu Nam Vang.jpg', author: 'Dianne Flor Reyno', license: 'CC BY 2.0' },
+  { word: 'Thit Nuong', file: 'Bun thit nuong.jpg', author: 'Lưu Ly', license: 'Public domain' },
+  { word: 'Com Tam', file: 'Cơm Tấm, Da Nang, Vietnam.jpg', author: 'Christopher Crouzet', license: 'CC BY-SA 4.0' },
+  { word: 'Vit Quay', file: 'Vit-quay-bac-kinh-by-vit-quay-to-thi.jpg', author: 'Vitquaytothi', license: 'CC BY-SA 4.0' },
+  { word: 'Com Chien', file: 'Fried rice in home.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Xoi', file: 'Xôi sắn.jpg', author: 'Hoangkid', license: 'CC BY-SA 4.0' },
+  { word: 'Bo Luc Lac', file: 'Product Shots of Food-Bo Luc Lac.jpg', author: 'Nick Nguyen', license: 'CC BY-SA 2.0' },
+  { word: 'Ca Hap', file: 'Steamed fish in dinner.jpg', author: 'Apeach316', license: 'CC BY-SA 2.0' },
+  { word: 'Goi Du Du', file: 'Gỏi đu đủ khô bò.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Rau Muong Xao Toi', file: 'Rau muống xào tỏi.jpg', author: 'Andy Wright', license: 'CC BY 2.0' },
+  { word: 'Ca Phe Trung', file: 'Cà phê trứng.jpg', author: 'travel oriented', license: 'CC BY-SA 2.0' },
+  { word: 'Nuoc Mia', file: 'Sugarcanejuice.jpg', author: 'Food Trails', license: 'CC BY-SA 2.0' },
+  { word: 'Pho', file: 'Bowl of Meatball pho.jpg', author: 'SerraKnightz', license: 'CC BY 4.0' },
+  { word: 'Banh Mi', file: 'Bánh mì thịt nướng.png', author: 'nsaum75', license: 'CC BY-SA 3.0' },
 ];
