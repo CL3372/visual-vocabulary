@@ -990,7 +990,21 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'kyufte bulgarian meatball grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kebapcheta.JPG/960px-Kebapcheta.JPG', // Kyufte
   'meshana skara mixed grill bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg/960px-Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg', // Meshana Skara
   'rakia bulgarian brandy shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg/330px-%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg', // Rakia
-  'boza fermented drink bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Boza_bg.jpg/960px-Boza_bg.jpg', // Boza
+  'boza fermented drink bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Boza_bg.jpg/960px-Boza_bg.jpg', // Boza,
+  'cevapi balkan grilled sausage somun bread kajmak': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cevapi_s_kajmakom.jpg/500px-Cevapi_s_kajmakom.jpg', // Ćevapi
+  'burek bosnian filo meat cheese spinach spiral': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Meat_burek_%28GAK_bakery%2C_Belgrade%2C_Serbia%29.jpg/960px-Meat_burek_%28GAK_bakery%2C_Belgrade%2C_Serbia%29.jpg', // Burek
+  'pljeskavica serbian burger patty lepinja cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Pleskavitsa.JPG/960px-Pleskavitsa.JPG', // Pljeskavica
+  'ajvar balkan roasted red pepper relish jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Ajvar1_bright.jpg/960px-Ajvar1_bright.jpg', // Ajvar
+  'kajmak balkan cream cheese spread dairy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Kaymak_from_Montenegro_04.jpg/960px-Kaymak_from_Montenegro_04.jpg', // Kajmak
+  'rakija slivovitz plum brandy balkan shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/%C5%A0ljivovica_%28Serbian_Slivovitz%29.jpg/960px-%C5%A0ljivovica_%28Serbian_Slivovitz%29.jpg', // Rakija
+  'baklava balkan filo walnut syrup sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Baklava_in_Sarajevo_84_in_LJubljana.jpg/960px-Baklava_in_Sarajevo_84_in_LJubljana.jpg', // Baklava
+  'sarma balkan stuffed cabbage roll rice pork sour': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Serbian_Sarma.jpg/960px-Serbian_Sarma.jpg', // Sarma
+  'tavce gravce north macedonian bean clay pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/%D0%A2%D0%B0%D0%B2%D1%87%D0%B5_%D0%93%D1%80%D0%B0%D0%B2%D1%87%D0%B5.jpg/960px-%D0%A2%D0%B0%D0%B2%D1%87%D0%B5_%D0%93%D1%80%D0%B0%D0%B2%D1%87%D0%B5.jpg', // Tavče Gravče
+  'karadjordjeva snicla serbian stuffed schnitzel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Kara%C4%91or%C4%91eva_%C5%A1nicla.jpg/960px-Kara%C4%91or%C4%91eva_%C5%A1nicla.jpg', // Karađorđeva Šnicla
+  'pasulj serbian bean soup smoked meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pasulj_%2810291319804%29.jpg/960px-Pasulj_%2810291319804%29.jpg', // Pasulj
+  'gibanica serbian cheese phyllo pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Gibanica_single_slice_with_full_pie_in_background.jpg/500px-Gibanica_single_slice_with_full_pie_in_background.jpg', // Gibanica
+  'paprikas croatian chicken paprika stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Pile%C4%87i_Paprika%C5%A1_sa_Doma%C4%87im_Noklicama.jpg/960px-Pile%C4%87i_Paprika%C5%A1_sa_Doma%C4%87im_Noklicama.jpg', // Paprikaš
+  'strukli croatian cheese pastry dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/960px-%C5%A0trukli_iz_Okrugljaka.jpg', // Strukli
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1949,4 +1963,18 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Meshana Skara', file: 'Bulgarian cuisine Meat dish with garnish and lyutenitsa sauce (Cucina Bulgara) 01.jpg', author: 'EvelinaRibarova', license: 'CC BY-SA 4.0' },
   { word: 'Rakia', file: 'ЕленскаСливова.jpg', author: 'Blue (Bulgarian Wikipedia)', license: 'CC BY-SA 3.0' },
   { word: 'Boza', file: 'Boza bg.jpg', author: 'Ikonact', license: 'CC BY-SA 3.0' },
+  { word: 'Ćevapi', file: 'Cevapi s kajmakom.jpg', author: 'Christian Paul', license: 'CC BY-SA 2.0' },
+  { word: 'Burek', file: 'Meat burek (GAK bakery, Belgrade, Serbia).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Pljeskavica', file: 'Pleskavitsa.JPG', author: 'Biso', license: 'CC BY 3.0' },
+  { word: 'Ajvar', file: 'Ajvar1 bright.jpg', author: 'Off-shell', license: 'CC BY-SA 4.0' },
+  { word: 'Kajmak', file: 'Kaymak from Montenegro 04.jpg', author: 'Milica Buha', license: 'CC BY-SA 4.0' },
+  { word: 'Rakija', file: 'Šljivovica (Serbian Slivovitz).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Baklava', file: 'Baklava in Sarajevo 84 in LJubljana.jpg', author: 'Alex Sirac', license: 'CC BY 4.0' },
+  { word: 'Sarma', file: 'Serbian Sarma.jpg', author: 'Goran Andjelic', license: 'CC BY-SA 4.0' },
+  { word: 'Tavče Gravče', file: 'Тавче Гравче.jpg', author: 'Cuklev', license: 'CC BY-SA 4.0' },
+  { word: 'Karađorđeva Šnicla', file: 'Karađorđeva šnicla.jpg', author: 'Vacant0', license: 'CC BY 4.0' },
+  { word: 'Pasulj', file: 'Pasulj (10291319804).jpg', author: 'Ivana Sokolović', license: 'CC BY 2.0' },
+  { word: 'Gibanica', file: 'Gibanica single slice with full pie in background.jpg', author: 'Cyrus Roepers (Arousing Appetites)', license: 'CC BY-SA 3.0' },
+  { word: 'Paprikaš', file: 'Pileći Paprikaš sa Domaćim Noklicama.jpg', author: 'Tradition on a Plate', license: 'CC BY-SA 4.0' },
+  { word: 'Strukli', file: 'Štrukli iz Okrugljaka.jpg', author: 'Bonč', license: 'CC BY-SA 3.0' },
 ];
