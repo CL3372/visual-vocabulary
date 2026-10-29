@@ -937,7 +937,21 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pisco sour peruvian cocktail egg white foam lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Pisco_sour_20100613b.JPG/960px-Pisco_sour_20100613b.JPG', // Pisco Sour
   'arroz con leche peruvian rice pudding cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Arroz_con_leche%2C_postre.jpg/960px-Arroz_con_leche%2C_postre.jpg', // Arroz con Leche
   'tiradito peruvian fish slices sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tiradito.jpg/960px-Tiradito.jpg', // Tiradito
-  'cuy guinea pig roasted peruvian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cuy_Chactado.jpg/960px-Cuy_Chactado.jpg', // Cuy
+  'cuy guinea pig roasted peruvian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cuy_Chactado.jpg/960px-Cuy_Chactado.jpg', // Cuy,
+  'lecso hungarian pepper tomato stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg/960px-Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg', // Lecsó
+  'palinka hungarian fruit brandy shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Sopron_barack_07.JPG/960px-Sopron_barack_07.JPG', // Pálinka
+  'turos csusza hungarian pasta cottage cheese bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/T%C3%BAr%C3%B3st%C3%A9szta.jpg/960px-T%C3%BAr%C3%B3st%C3%A9szta.jpg', // Túrós Csusza
+  'hungarian goulash beef paprika soup pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg', // Gulyás
+  'paprikas csirke hungarian chicken paprika sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chicken_Paprikash_%28Csirke_Paprik%C3%A1s%29.jpg/960px-Chicken_Paprikash_%28Csirke_Paprik%C3%A1s%29.jpg', // Paprikás Csirke
+  'porkolt hungarian beef stew paprika onion thick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/P%C3%B6rk%C3%B6lt.jpg/960px-P%C3%B6rk%C3%B6lt.jpg', // Pörkölt
+  'halaszle hungarian fishermans soup paprika carp': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pot_of_Hungarian_Fisherman%27s_Soup_%28Hal%C3%A1szl%C3%A9%2C_Karpfensuppe%29.jpg/500px-Pot_of_Hungarian_Fisherman%27s_Soup_%28Hal%C3%A1szl%C3%A9%2C_Karpfensuppe%29.jpg', // Halászlé
+  'toltott kaposzta hungarian stuffed cabbage sauerkraut smoked meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg/960px-T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg', // Töltött Káposzta
+  'langos hungarian fried dough sour cream cheese garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Langos_Eger_Hungary.jpg/960px-Langos_Eger_Hungary.jpg', // Lángos
+  'kurtoskalacs chimney cake spiral cinnamon sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/K%C3%BCrt%C5%91skal%C3%A1cs2011.jpg/960px-K%C3%BCrt%C5%91skal%C3%A1cs2011.jpg', // Kürtőskalács
+  'dobos torte hungarian chocolate caramel layer cake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg/960px-Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg', // Dobos Torta
+  'retes hungarian strudel cherry apple sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg', // Rétes
+  'unicum hungarian bitter herbal liqueur dark bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Unicumbottle.png/960px-Unicumbottle.png', // Unicum
+  'tokaji wine golden sweet hungarian botrytis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Szent_Tam%C3%A1s_Szamorodni_2013.jpg/500px-Szent_Tam%C3%A1s_Szamorodni_2013.jpg', // Tokaji
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1844,4 +1858,18 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Arroz con Leche', file: 'Arroz con leche, postre.jpg', author: 'Juan Emilio Prades Bel', license: 'CC BY-SA 4.0' },
   { word: 'Tiradito', file: 'Tiradito.jpg', author: 'Manuel González Olaechea', license: 'CC BY 3.0' },
   { word: 'Cuy', file: 'Cuy Chactado.jpg', author: 'MovEditor', license: 'CC BY-SA 4.0' },
+  { word: 'Lecsó', file: 'Warm Colors- my Mom\'s Hungarian Lecsó cropped.jpg', author: 'zeevveez', license: 'CC BY-SA 4.0' },
+  { word: 'Pálinka', file: 'Sopron barack 07.JPG', author: 'Traumrune', license: 'CC BY-SA 3.0' },
+  { word: 'Túrós Csusza', file: 'Túróstészta.jpg', author: 'Christo', license: 'CC BY-SA 4.0' },
+  { word: 'Gulyás', file: 'Gulyas080.jpg', author: 'Lily15', license: 'CC BY-SA 3.0' },
+  { word: 'Paprikás Csirke', file: 'Chicken Paprikash (Csirke Paprikás).jpg', author: 'Atilla the Great', license: 'CC BY-SA 4.0' },
+  { word: 'Pörkölt', file: 'Pörkölt.jpg', author: 'Orrling', license: 'CC BY-SA 3.0' },
+  { word: 'Halászlé', file: 'Pot of Hungarian Fisherman\'s Soup (Halászlé, Karpfensuppe).jpg', author: 'Wikiuser100', license: 'CC BY-SA 4.0' },
+  { word: 'Töltött Káposzta', file: 'Töltött káposzta, 2.jpg', author: 'Christo', license: 'CC BY-SA 4.0' },
+  { word: 'Lángos', file: 'Langos Eger Hungary.jpg', author: 'sikeri', license: 'CC BY-SA 4.0' },
+  { word: 'Kürtőskalács', file: 'Kürtőskalács2011.jpg', author: 'Cyril5555', license: 'CC BY-SA 3.0' },
+  { word: 'Dobos Torta', file: 'Dobos cake (Gerbeaud Confectionery Budapest Hungary).jpg', author: 'Savannah Grandfather', license: 'CC BY 2.0' },
+  { word: 'Rétes', file: 'Strudel.jpg', author: 'che', license: 'CC BY-SA 2.5' },
+  { word: 'Unicum', file: 'Unicumbottle.png', author: 'Zwack Sándor', license: 'CC BY-SA 4.0' },
+  { word: 'Tokaji', file: 'Szent Tamás Szamorodni 2013.jpg', author: 'SzentTamas86', license: 'CC BY-SA 4.0' },
 ];
