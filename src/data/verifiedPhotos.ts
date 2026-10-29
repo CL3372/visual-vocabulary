@@ -937,7 +937,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pisco sour peruvian cocktail egg white foam lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Pisco_sour_20100613b.JPG/960px-Pisco_sour_20100613b.JPG', // Pisco Sour
   'arroz con leche peruvian rice pudding cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Arroz_con_leche%2C_postre.jpg/960px-Arroz_con_leche%2C_postre.jpg', // Arroz con Leche
   'tiradito peruvian fish slices sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tiradito.jpg/960px-Tiradito.jpg', // Tiradito
-  'cuy guinea pig roasted peruvian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cuy_Chactado.jpg/960px-Cuy_Chactado.jpg', // Cuy,
   'lecso hungarian pepper tomato stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg/960px-Warm_Colors-_my_Mom%27s_Hungarian_Lecs%C3%B3_cropped.jpg', // Lecsó
   'palinka hungarian fruit brandy shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Sopron_barack_07.JPG/960px-Sopron_barack_07.JPG', // Pálinka
   'turos csusza hungarian pasta cottage cheese bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/T%C3%BAr%C3%B3st%C3%A9szta.jpg/960px-T%C3%BAr%C3%B3st%C3%A9szta.jpg', // Túrós Csusza
@@ -966,7 +965,18 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'cozonac romanian sweet bread walnut cocoa christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Cozonac-cu-nuca-103.jpg/960px-Cozonac-cu-nuca-103.jpg', // Cozonac
   'papanasi romanian fried cheese doughnut cream jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Papanasi_cu_cirese.jpg/960px-Papanasi_cu_cirese.jpg', // Papanași
   'palinca romanian fruit brandy plum spirit glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Palinc%C4%83.jpg/960px-Palinc%C4%83.jpg', // Pălincă
-  'salata de boeuf romanian potato vegetable mayonnaise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Salat%C4%83_de_boeuf3.png/960px-Salat%C4%83_de_boeuf3.png', // Salată de Boeuf
+  'salata de boeuf romanian potato vegetable mayonnaise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Salat%C4%83_de_boeuf3.png/960px-Salat%C4%83_de_boeuf3.png', // Salată de Boeuf,
+  'moules frites belgian mussels steamed fries': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Moules_Frites.jpg/500px-Moules_Frites.jpg', // Moules-Frites
+  'belgian frites fries cone mayo friture': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Belgian_frites_with_andalouse_sauce.jpg/960px-Belgian_frites_with_andalouse_sauce.jpg', // Belgian Frites
+  'carbonnade flamande belgian beef beer stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Jielbeaumadier_carbonade_flamande_2010.jpg/960px-Jielbeaumadier_carbonade_flamande_2010.jpg', // Carbonnade Flamande
+  'waterzooi belgian chicken fish stew cream vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Waterzooi_%28Fastaff%29.jpg/960px-Waterzooi_%28Fastaff%29.jpg', // Waterzooi
+  'belgian waffle liège brussels cream strawberry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Waffle_with_strawberries_and_confectioner%27s_sugar.jpg/960px-Waffle_with_strawberries_and_confectioner%27s_sugar.jpg', // Belgian Waffle
+  'belgian chocolate praline truffle box': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Belgian_chocolates.jpg/500px-Belgian_chocolates.jpg', // Belgian Chocolate
+  'speculoos spiced cookie belgium cinnamon caramelised': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Speculoos_Cookies_%2825841384343%29.jpg/960px-Speculoos_Cookies_%2825841384343%29.jpg', // Speculoos
+  'belgian beer trappist abbey glass golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Duvel_beer_in_beer_glass%2C_2024.jpg/960px-Duvel_beer_in_beer_glass%2C_2024.jpg', // Belgian Beer
+  'jenever belgian gin spirit juniper glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hasseltse_jenever.jpg/960px-Hasseltse_jenever.jpg', // Jenever
+  'stoemp mashed potato vegetables belgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Cod_and_stoemp.jpg/960px-Cod_and_stoemp.jpg', // Stoemp
+  'chicons au gratin chicory ham cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg/960px-Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg', // Chicons au Gratin
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1872,7 +1882,6 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Pisco Sour', file: 'Pisco sour 20100613b.JPG', author: 'Dtarazona', license: 'CC BY-SA 4.0' },
   { word: 'Arroz con Leche', file: 'Arroz con leche, postre.jpg', author: 'Juan Emilio Prades Bel', license: 'CC BY-SA 4.0' },
   { word: 'Tiradito', file: 'Tiradito.jpg', author: 'Manuel González Olaechea', license: 'CC BY 3.0' },
-  { word: 'Cuy', file: 'Cuy Chactado.jpg', author: 'MovEditor', license: 'CC BY-SA 4.0' },
   { word: 'Lecsó', file: 'Warm Colors- my Mom\'s Hungarian Lecsó cropped.jpg', author: 'zeevveez', license: 'CC BY-SA 4.0' },
   { word: 'Pálinka', file: 'Sopron barack 07.JPG', author: 'Traumrune', license: 'CC BY-SA 3.0' },
   { word: 'Túrós Csusza', file: 'Túróstészta.jpg', author: 'Christo', license: 'CC BY-SA 4.0' },
@@ -1902,4 +1911,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Papanași', file: 'Papanasi cu cirese.jpg', author: 'Nicubunu', license: 'CC BY-SA 3.0' },
   { word: 'Pălincă', file: 'Palincă.jpg', author: 'Morosanul', license: 'CC BY-SA 4.0' },
   { word: 'Salată de Boeuf', file: 'Salată de boeuf3.png', author: 'Sacha47', license: 'CC BY-SA 4.0' },
+  { word: 'Moules-Frites', file: 'Moules Frites.jpg', author: 'dennis and aimee jonez', license: 'CC BY-SA 2.0' },
+  { word: 'Belgian Frites', file: 'Belgian frites with andalouse sauce.jpg', author: 'anders pearson', license: 'CC BY-SA 2.0' },
+  { word: 'Carbonnade Flamande', file: 'Jielbeaumadier carbonade flamande 2010.jpg', author: 'Jiel Beaumadier', license: 'CC BY-SA 4.0' },
+  { word: 'Waterzooi', file: 'Waterzooi (Fastaff).jpg', author: 'Tamorlan', license: 'CC BY-SA 3.0' },
+  { word: 'Belgian Waffle', file: 'Waffle with strawberries and confectioner\'s sugar.jpg', author: 'Ralph Daily', license: 'CC BY 2.0' },
+  { word: 'Belgian Chocolate', file: 'Belgian chocolates.jpg', author: 'frank wouters', license: 'CC BY 2.0' },
+  { word: 'Speculoos', file: 'Speculoos Cookies (25841384343).jpg', author: 'The Marmot', license: 'CC BY 2.0' },
+  { word: 'Belgian Beer', file: 'Duvel beer in beer glass, 2024.jpg', author: 'Chris Olszewski', license: 'CC BY-SA 4.0' },
+  { word: 'Jenever', file: 'Hasseltse jenever.jpg', author: 'Paul Hermans', license: 'CC BY-SA 3.0' },
+  { word: 'Stoemp', file: 'Cod and stoemp.jpg', author: 'Simon Aughton', license: 'CC BY-SA 2.0' },
+  { word: 'Chicons au Gratin', file: 'Chicory (witlof), oven dish with ham and cheese.jpg', author: 'Vincent van Zeijst', license: 'CC BY-SA 4.0' },
 ];
