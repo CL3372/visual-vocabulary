@@ -976,7 +976,21 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'belgian beer trappist abbey glass golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Duvel_beer_in_beer_glass%2C_2024.jpg/960px-Duvel_beer_in_beer_glass%2C_2024.jpg', // Belgian Beer
   'jenever belgian gin spirit juniper glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hasseltse_jenever.jpg/960px-Hasseltse_jenever.jpg', // Jenever
   'stoemp mashed potato vegetables belgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Cod_and_stoemp.jpg/960px-Cod_and_stoemp.jpg', // Stoemp
-  'chicons au gratin chicory ham cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg/960px-Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg', // Chicons au Gratin
+  'chicons au gratin chicory ham cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg/960px-Chicory_%28witlof%29%2C_oven_dish_with_ham_and_cheese.jpg', // Chicons au Gratin,
+  'banitsa bulgarian filo pastry cheese egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B0_%D0%B1%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.JPG/960px-%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B0_%D0%B1%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.JPG', // Banitsa
+  'shopska salad bulgarian tomato cucumber pepper feta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Chopska.jpg/960px-Chopska.jpg', // Shopska Salad
+  'kavarma bulgarian pork stew clay pot mushroom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Kavarma.jpeg/960px-Kavarma.jpeg', // Kavarma
+  'tarator bulgarian cold cucumber yogurt soup dill': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Tarator_%28Bulgarian_cold_soup%29.jpg/960px-Tarator_%28Bulgarian_cold_soup%29.jpg', // Tarator
+  'sarmi bulgarian stuffed cabbage grape leaves rice pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Sarma_and_yugourt.JPG/960px-Sarma_and_yugourt.JPG', // Sarmi
+  'kebapche bulgarian grilled minced meat cumin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Kebapche_bg.jpg/960px-Kebapche_bg.jpg', // Kebapche
+  'shkembe chorba tripe soup bulgaria garlic vinegar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Shkembe-chorba_in_Kardzhali_2011.JPG/960px-Shkembe-chorba_in_Kardzhali_2011.JPG', // Shkembe Chorba
+  'lyutenitsa bulgarian red pepper tomato spread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/%D0%9B%D1%83%D1%82%D0%B5%D0%BD%D0%B8%D1%86%D0%B0.jpg/960px-%D0%9B%D1%83%D1%82%D0%B5%D0%BD%D0%B8%D1%86%D0%B0.jpg', // Lyutenitsa
+  'mekitsi bulgarian fried dough breakfast yogurt jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Mekici_and_jam.JPG/960px-Mekici_and_jam.JPG', // Mekitsi
+  'ayran bulgarian yogurt drink chilled': 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg', // Ayran
+  'kyufte bulgarian meatball grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kebapcheta.JPG/960px-Kebapcheta.JPG', // Kyufte
+  'meshana skara mixed grill bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg/960px-Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg', // Meshana Skara
+  'rakia bulgarian brandy shot': 'https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg', // Rakia
+  'boza fermented drink bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Boza_bg.jpg/960px-Boza_bg.jpg', // Boza
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1922,4 +1936,17 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Jenever', file: 'Hasseltse jenever.jpg', author: 'Paul Hermans', license: 'CC BY-SA 3.0' },
   { word: 'Stoemp', file: 'Cod and stoemp.jpg', author: 'Simon Aughton', license: 'CC BY-SA 2.0' },
   { word: 'Chicons au Gratin', file: 'Chicory (witlof), oven dish with ham and cheese.jpg', author: 'Vincent van Zeijst', license: 'CC BY-SA 4.0' },
+  { word: 'Banitsa', file: 'Вкусна домашна баница.JPG', author: 'Sheku80', license: 'CC BY-SA 3.0' },
+  { word: 'Shopska Salad', file: 'Chopska.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Kavarma', file: 'Kavarma.jpeg', author: 'Jeroen Kransen', license: 'CC BY-SA 2.5' },
+  { word: 'Tarator', file: 'Tarator (Bulgarian cold soup).jpg', author: 'Gillgaramond', license: 'CC BY-SA 4.0' },
+  { word: 'Sarmi', file: 'Sarma and yugourt.JPG', author: 'Biso', license: 'CC BY 3.0' },
+  { word: 'Kebapche', file: 'Kebapche bg.jpg', author: 'Ikonact', license: 'CC BY-SA 3.0' },
+  { word: 'Shkembe Chorba', file: 'Shkembe-chorba in Kardzhali 2011.JPG', author: 'Bin im Garten', license: 'CC BY-SA 3.0' },
+  { word: 'Lyutenitsa', file: 'Лутеница.jpg', author: 'Чакаровска', license: 'CC BY-SA 4.0' },
+  { word: 'Mekitsi', file: 'Mekici and jam.JPG', author: 'Biso (Biser Todorov)', license: 'CC BY-SA 3.0' },
+  { word: 'Kyufte', file: 'Kebapcheta.JPG', author: 'Biso', license: 'CC BY 3.0' },
+  { word: 'Meshana Skara', file: 'Bulgarian cuisine Meat dish with garnish and lyutenitsa sauce (Cucina Bulgara) 01.jpg', author: 'EvelinaRibarova', license: 'CC BY-SA 4.0' },
+  { word: 'Rakia', file: 'ЕленскаСливова.jpg', author: 'Blue (Bulgarian Wikipedia)', license: 'CC BY-SA 3.0' },
+  { word: 'Boza', file: 'Boza bg.jpg', author: 'Ikonact', license: 'CC BY-SA 3.0' },
 ];
