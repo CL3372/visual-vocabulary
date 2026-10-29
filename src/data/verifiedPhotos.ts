@@ -989,7 +989,7 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'ayran bulgarian yogurt drink chilled': 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg', // Ayran
   'kyufte bulgarian meatball grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kebapcheta.JPG/960px-Kebapcheta.JPG', // Kyufte
   'meshana skara mixed grill bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg/960px-Bulgarian_cuisine_Meat_dish_with_garnish_and_lyutenitsa_sauce_%28Cucina_Bulgara%29_01.jpg', // Meshana Skara
-  'rakia bulgarian brandy shot': 'https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg', // Rakia
+  'rakia bulgarian brandy shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg/330px-%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg', // Rakia
   'boza fermented drink bulgarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Boza_bg.jpg/960px-Boza_bg.jpg', // Boza
 };
 
