@@ -1004,7 +1004,18 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pasulj serbian bean soup smoked meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pasulj_%2810291319804%29.jpg/960px-Pasulj_%2810291319804%29.jpg', // Pasulj
   'gibanica serbian cheese phyllo pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Gibanica_single_slice_with_full_pie_in_background.jpg/500px-Gibanica_single_slice_with_full_pie_in_background.jpg', // Gibanica
   'paprikas croatian chicken paprika stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Pile%C4%87i_Paprika%C5%A1_sa_Doma%C4%87im_Noklicama.jpg/960px-Pile%C4%87i_Paprika%C5%A1_sa_Doma%C4%87im_Noklicama.jpg', // Paprikaš
-  'strukli croatian cheese pastry dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/960px-%C5%A0trukli_iz_Okrugljaka.jpg', // Strukli
+  'strukli croatian cheese pastry dumplings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/960px-%C5%A0trukli_iz_Okrugljaka.jpg', // Strukli,
+  'chelo kebab persian rice saffron grilled meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Chelo_Kabab_Soltani_Berlin_Kourosh.jpg/960px-Chelo_Kabab_Soltani_Berlin_Kourosh.jpg', // Chelo Kebab
+  'ghormeh sabzi persian herb stew kidney beans lamb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ghormeh_Sabzi.JPG/960px-Ghormeh_Sabzi.JPG', // Ghormeh Sabzi
+  'fesenjan persian walnut pomegranate chicken dark stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Khoresht-e_fesenjan.jpg/960px-Khoresht-e_fesenjan.jpg', // Fesenjan
+  'ash reshteh persian noodle soup herb kashk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Ash_Reshteh.JPG/960px-Ash_Reshteh.JPG', // Ash Reshteh
+  'tahdig persian crispy rice crust golden saffron': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png/960px-Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png', // Tahdig
+  'joojeh kabab persian saffron chicken skewer grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Jujeh_Kabab_by_Taha.7.13.jpg/960px-Jujeh_Kabab_by_Taha.7.13.jpg', // Joojeh Kabab
+  'bastani persian ice cream saffron rosewater pistachio': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Akbar_Mashti.JPG/500px-Akbar_Mashti.JPG', // Bastani
+  'zereshk polo barberry rice saffron chicken iran': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Zereshk_polo_-_Riso_con_crespini.jpg/960px-Zereshk_polo_-_Riso_con_crespini.jpg', // Zereshk Polo
+  'persian tea glass sugar cube saffron iran': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Persian_tea_glass.JPG/960px-Persian_tea_glass.JPG', // Persian Tea
+  'doogh persian yogurt mint drink fizzy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Dough_%28ayran_%29_dei_Qashqai_in_Iran.jpg/960px-Dough_%28ayran_%29_dei_Qashqai_in_Iran.jpg', // Doogh
+  'halva sesame saffron sweet persian dense': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Persian_halva.jpg/960px-Persian_halva.jpg', // Halva
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1977,4 +1988,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Gibanica', file: 'Gibanica single slice with full pie in background.jpg', author: 'Cyrus Roepers (Arousing Appetites)', license: 'CC BY-SA 3.0' },
   { word: 'Paprikaš', file: 'Pileći Paprikaš sa Domaćim Noklicama.jpg', author: 'Tradition on a Plate', license: 'CC BY-SA 4.0' },
   { word: 'Strukli', file: 'Štrukli iz Okrugljaka.jpg', author: 'Bonč', license: 'CC BY-SA 3.0' },
+  { word: 'Chelo Kebab', file: 'Chelo Kabab Soltani Berlin Kourosh.jpg', author: 'Benreis', license: 'CC BY 3.0' },
+  { word: 'Ghormeh Sabzi', file: 'Ghormeh Sabzi.JPG', author: 'Amin Majidi', license: 'CC0' },
+  { word: 'Fesenjan', file: 'Khoresht-e fesenjan.jpg', author: 'stringparts', license: 'CC BY 2.0' },
+  { word: 'Ash Reshteh', file: 'Ash Reshteh.JPG', author: 'AilinParsa', license: 'CC BY-SA 3.0' },
+  { word: 'Tahdig', file: 'Persianmom\'s mother\'s (persiangrandma) perfect tahdig rice.png', author: 'AninnymouseEditor', license: 'CC BY-SA 4.0' },
+  { word: 'Joojeh Kabab', file: 'Jujeh Kabab by Taha.7.13.jpg', author: 'طاها حجتی', license: 'CC BY-SA 4.0' },
+  { word: 'Bastani', file: 'Akbar Mashti.JPG', author: 'IDangerMouse', license: 'Public domain' },
+  { word: 'Zereshk Polo', file: 'Zereshk polo - Riso con crespini.jpg', author: 'Marcuscalabresus', license: 'CC BY-SA 4.0' },
+  { word: 'Persian Tea', file: 'Persian tea glass.JPG', author: 'Mondephile', license: 'Public domain' },
+  { word: 'Doogh', file: 'Dough (ayran ) dei Qashqai in Iran.jpg', author: 'Marcuscalabresus', license: 'CC BY-SA 4.0' },
+  { word: 'Halva', file: 'Persian halva.jpg', author: 'مانفی', license: 'CC BY-SA 4.0' },
 ];
