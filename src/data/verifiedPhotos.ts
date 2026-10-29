@@ -824,6 +824,33 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'black white pudding irish breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Irish_black_and_white_pudding_slices.JPG/960px-Irish_black_and_white_pudding_slices.JPG', // Black and White Pudding
   'guinness beef stew dark beer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/IrishStew_Guinness.JPG/960px-IrishStew_Guinness.JPG', // Guinness Beef Stew
   'porter cake irish dark beer dried fruit christmas': '', // Porter Cake — no trustworthy photo yet
+  'harira moroccan tomato lentil soup': 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Harira.png', // Harira
+  'bastilla moroccan pigeon pie pastry': 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Bisteeya.jpg', // Bastilla
+  'msemen moroccan flatbread square': 'https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg', // Msemen
+  'zaalouk moroccan eggplant tomato dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Zaalouk-01.JPG/960px-Zaalouk-01.JPG', // Zaalouk
+  'chermoula moroccan herb marinade green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Poulet_chermoula_aux_olives_rouges.png/960px-Poulet_chermoula_aux_olives_rouges.png', // Chermoula
+  'makouda moroccan potato fritters': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Maakouda.jpg/960px-Maakouda.jpg', // Makouda
+  'moroccan mint tea glass pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mint_tea%2C_Marrakesh.jpg/960px-Mint_tea%2C_Marrakesh.jpg', // Moroccan Mint Tea
+  'rfissa moroccan chicken shredded bread': 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Rfissa_marocaine.jpg', // Rfissa
+  'tagine mrouzia sweet lamb raisins honey almond': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/IB_tajine_02.jpg/960px-IB_tajine_02.jpg', // Tagine Mrouzia
+  'tagine kefta meatball egg tomato moroccan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Tajine_kefta_%288348397161%29.jpg/960px-Tajine_kefta_%288348397161%29.jpg', // Tagine Kefta
+  'chicken tagine preserved lemon olives moroccan': 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Tajine-marocain-un-plat-varie-et-sain_%28cropped%29.jpg', // Tagine Poulet
+  'bissara moroccan split pea soup cumin olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Bissara_Moroccan_split_pea_and_fava_bean_soup.jpg/960px-Bissara_Moroccan_split_pea_and_fava_bean_soup.jpg', // Bissara
+  'chorba moroccan lamb tomato noodle soup ramadan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Chorba_cooked_in_the_home_kitchen.jpg/960px-Chorba_cooked_in_the_home_kitchen.jpg', // Chorba
+  'khobz moroccan round bread flat oven': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Pains_matlou_dans_une_boulangerie_de_la_rue_d%27Aligre%2C_%C3%A0_Paris.jpg/960px-Pains_matlou_dans_une_boulangerie_de_la_rue_d%27Aligre%2C_%C3%A0_Paris.jpg', // Khobz
+  'beghrir moroccan honeycomb pancake honey butter': 'https://upload.wikimedia.org/wikipedia/commons/d/d2/%D8%A8%D8%BA%D8%B1%D9%8A%D8%B1.jpg', // Beghrir
+  'harcha moroccan semolina flatbread pan fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ary-7ercha.JPG/960px-Ary-7ercha.JPG', // Harcha
+  'taktouka moroccan green pepper tomato salad cooked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Moroccan_Grilled_Red_Pepper_Salad.jpg/960px-Moroccan_Grilled_Red_Pepper_Salad.jpg', // Taktouka
+  'mechoui whole roast lamb pit moroccan feast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mechoui.jpg/960px-Mechoui.jpg', // Mechoui
+  'tangia marrakech slow cooked lamb clay urn': 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Tanjia-959.jpg', // Tangia
+  'merguez spicy lamb sausage grilled north africa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Merguez_sausages.jpg/960px-Merguez_sausages.jpg', // Merguez
+  'chebakia moroccan sesame honey cookie ramadan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Chebakia.jpg/960px-Chebakia.jpg', // Chebakia
+  'kaab el ghazal almond pastry gazelle horn moroccan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/%D9%83%D8%B9%D8%A8_%D8%A7%D9%84%D8%BA%D8%B2%D8%A7%D9%84.jpg/960px-%D9%83%D8%B9%D8%A8_%D8%A7%D9%84%D8%BA%D8%B2%D8%A7%D9%84.jpg', // Kaab el Ghazal
+  'sellou moroccan toasted flour almond sesame sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Sfouf.jpg/960px-Sfouf.jpg', // Sellou
+  'argan oil moroccan culinary bottle nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Huile_d%27argan_010.JPG/960px-Huile_d%27argan_010.JPG', // Argan Oil
+  'tagine moroccan stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Moroccan_dinner-02.jpg/960px-Moroccan_dinner-02.jpg', // Tagine
+  'couscous moroccan vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg', // Couscous
+  'moroccan mallow salad herb lemon olive oil': '', // Khoubiza — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1619,4 +1646,30 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Irish Seafood Chowder', file: 'Seafood chowder.jpg', author: 'Jazz Guy', license: 'CC BY 2.0' },
   { word: 'Black and White Pudding', file: 'Irish black and white pudding slices.JPG', author: 'O\'Dea', license: 'CC BY-SA 4.0' },
   { word: 'Guinness Beef Stew', file: 'IrishStew Guinness.JPG', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
+  { word: 'Harira', file: 'Harira.png', author: 'Kattusa24', license: 'Public domain' },
+  { word: 'Bastilla', file: 'Bisteeya.jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Msemen', file: 'مسمن.jpg', author: 'إيان', license: 'CC BY-SA 4.0' },
+  { word: 'Zaalouk', file: 'Zaalouk-01.JPG', author: 'Tamorlan', license: 'CC BY-SA 3.0' },
+  { word: 'Chermoula', file: 'Poulet chermoula aux olives rouges.png', author: 'Fzlaissi', license: 'CC BY-SA 4.0' },
+  { word: 'Makouda', file: 'Maakouda.jpg', author: 'Jeouit', license: 'CC BY-SA 3.0' },
+  { word: 'Moroccan Mint Tea', file: 'Mint tea, Marrakesh.jpg', author: 'Adam Harangozó', license: 'CC BY-SA 4.0' },
+  { word: 'Rfissa', file: 'Rfissa marocaine.jpg', author: 'Mokhtaroo', license: 'CC BY-SA 3.0' },
+  { word: 'Tagine Mrouzia', file: 'IB tajine 02.jpg', author: 'Iron Bishop', license: 'CC BY-SA 3.0' },
+  { word: 'Tagine Kefta', file: 'Tajine kefta (8348397161).jpg', author: 'Mzximvs VdB', license: 'CC BY-SA 2.0' },
+  { word: 'Tagine Poulet', file: 'Tajine-marocain-un-plat-varie-et-sain (cropped).jpg', author: 'BBouchra00', license: 'CC BY-SA 4.0' },
+  { word: 'Bissara', file: 'Bissara Moroccan split pea and fava bean soup.jpg', author: 'Ruby Josephine Smith', license: 'CC BY-SA 4.0' },
+  { word: 'Chorba', file: 'Chorba cooked in the home kitchen.jpg', author: 'Bgelo777', license: 'CC BY-SA 4.0' },
+  { word: 'Khobz', file: 'Pains matlou dans une boulangerie de la rue d\'Aligre, à Paris.jpg', author: 'Indif', license: 'CC BY-SA 3.0' },
+  { word: 'Beghrir', file: 'بغرير.jpg', author: 'فاطمة الزهراء', license: 'CC BY-SA 4.0' },
+  { word: 'Harcha', file: 'Ary-7ercha.JPG', author: 'Lucyin', license: 'CC BY-SA 4.0' },
+  { word: 'Taktouka', file: 'Moroccan Grilled Red Pepper Salad.jpg', author: 'Ni4535', license: 'CC BY 4.0' },
+  { word: 'Mechoui', file: 'Mechoui.jpg', author: 'Andre Piquet', license: 'CC BY 3.0' },
+  { word: 'Tangia', file: 'Tanjia-959.jpg', author: 'VraieMarocaine', license: 'Public domain' },
+  { word: 'Merguez', file: 'Merguez sausages.jpg', author: 'Stu Spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Chebakia', file: 'Chebakia.jpg', author: 'Indif', license: 'CC BY-SA 3.0' },
+  { word: 'Kaab el Ghazal', file: 'كعب الغزال.jpg', author: 'Sambasoccer27', license: 'CC BY-SA 4.0' },
+  { word: 'Sellou', file: 'Sfouf.jpg', author: 'DocteurCosmos', license: 'CC BY-SA 3.0' },
+  { word: 'Argan Oil', file: 'Huile d\'argan 010.JPG', author: 'Arnaud 25', license: 'CC BY-SA 3.0' },
+  { word: 'Tagine', file: 'Moroccan dinner-02.jpg', author: 'Matt Perreault', license: 'CC BY-SA 2.0' },
+  { word: 'Couscous', file: 'Moroccan cuscus, from Casablanca, September 2018.jpg', author: 'Lmmima', license: 'CC BY-SA 4.0' },
 ];
