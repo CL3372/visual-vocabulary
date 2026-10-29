@@ -893,11 +893,24 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'chimichurri sauce parsley garlic oregano green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Chimichurri_Sauce_Recipe_%2813294574784%29.jpg/960px-Chimichurri_Sauce_Recipe_%2813294574784%29.jpg', // Chimichurri
   'choripan argentine chorizo sandwich bread chimichurri': 'https://upload.wikimedia.org/wikipedia/commons/a/af/Choripan.jpg', // Choripán
   'milanesa argentina breaded beef schnitzel fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Milanesa_plated_with_lemon_slices_and_french_fries_%28in_Buenos_Aires%2C_Argentina%29.jpg/960px-Milanesa_plated_with_lemon_slices_and_french_fries_%28in_Buenos_Aires%2C_Argentina%29.jpg', // Milanesa
-  'locro argentinian stew white corn squash pork': 'https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg', // Locro
+  'locro argentinian stew white corn squash pork': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Locro_argentino.jpg/500px-Locro_argentino.jpg', // Locro
   'dulce de leche caramel spread argentina spoon jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/DulceDeLeche.jpg/960px-DulceDeLeche.jpg', // Dulce de Leche
   'alfajor argentina dulce de leche cookie chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/AlfajoresP1115215_02.jpg/960px-AlfajoresP1115215_02.jpg', // Alfajor
   'mate yerba argentina gourd bombilla green': 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Mate_en_calabaza.jpg', // Mate
-  'provoleta grilled cheese argentinian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg/960px-Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg', // Provoleta
+  'provoleta grilled cheese argentinian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg/960px-Provoleta_con_cazuela_%28porci%C3%B3n%29.jpg', // Provoleta,
+  'ayib ethiopian fresh cheese cottage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ayib_and_gomen.jpg/960px-Ayib_and_gomen.jpg', // Ayib
+  'ful ethiopian fava beans spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/ShahanFul.jpg/960px-ShahanFul.jpg', // Ethiopian Ful
+  'injera sourdough flatbread teff spongy ethiopia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Injera_from_ivory_teff.jpg/960px-Injera_from_ivory_teff.jpg', // Injera
+  'doro wat ethiopian chicken stew berbere egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Injera_and_doro_wat.jpg/960px-Injera_and_doro_wat.jpg', // Doro Wat
+  'misir wat red lentil stew berbere spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Misir_Wat_in_Pot.jpg/500px-Misir_Wat_in_Pot.jpg', // Misir Wat
+  'tibs ethiopian sauteed beef lamb onion rosemary': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Mutton_tibs_and_injera.jpg/960px-Mutton_tibs_and_injera.jpg', // Tibs
+  'kitfo ethiopian raw beef mitmita niter kibbeh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Ethiopian_Kitfo.JPG/500px-Ethiopian_Kitfo.JPG', // Kitfo
+  'shiro chickpea stew ethiopia powder sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Taita_and_shiro.jpg/960px-Taita_and_shiro.jpg', // Shiro
+  'gored gored raw beef cubed mitmita butter ethiopian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Gored_gored_plate%2C_July_2019.jpg/960px-Gored_gored_plate%2C_July_2019.jpg', // Gored Gored
+  'berbere ethiopian spice blend red chili fenugreek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Berberespice.jpg/960px-Berberespice.jpg', // Berbere
+  'tej ethiopian honey wine mead yellow flask': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Tej_%28Ethiopian_honey_wine%29_%2827241999346%29.jpg/960px-Tej_%28Ethiopian_honey_wine%29_%2827241999346%29.jpg', // Tej
+  'ethiopian coffee ceremony jebena pot green beans': 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Coffee_ceremony.jpg', // Ethiopian Coffee
+  'chechebsa ethiopian bread torn niter kibbeh berbere breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kitcha_fit_fit.png/500px-Kitcha_fit_fit.png', // Chechebsa
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1764,4 +1777,17 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Alfajor', file: 'AlfajoresP1115215 02.jpg', author: 'Alex Lozupone', license: 'CC BY 4.0' },
   { word: 'Mate', file: 'Mate en calabaza.jpg', author: 'Jorgealfonso', license: 'CC BY-SA 2.5' },
   { word: 'Provoleta', file: 'Provoleta con cazuela (porción).jpg', author: 'Horacio Cambeiro', license: 'CC BY 3.0' },
+  { word: 'Ayib', file: 'Ayib and gomen.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Ethiopian Ful', file: 'ShahanFul.jpg', author: 'Temesgen Woldezion (edited by Merhawie Woldezion)', license: 'CC BY-SA 2.5' },
+  { word: 'Injera', file: 'Injera from ivory teff.jpg', author: 'Edsel Little', license: 'CC BY-SA 2.0' },
+  { word: 'Doro Wat', file: 'Injera and doro wat.jpg', author: 'Edsel Little', license: 'CC BY-SA 2.0' },
+  { word: 'Misir Wat', file: 'Misir Wat in Pot.jpg', author: 'Omnipc', license: 'CC BY 4.0' },
+  { word: 'Tibs', file: 'Mutton tibs and injera.jpg', author: 'ShanaliCT', license: 'CC BY 4.0' },
+  { word: 'Kitfo', file: 'Ethiopian Kitfo.JPG', author: 'Kimtonga', license: 'CC BY-SA 4.0' },
+  { word: 'Shiro', file: 'Taita and shiro.jpg', author: 'Temesgen Woldezion (edited by Merhawie Woldezion)', license: 'CC BY-SA 2.5' },
+  { word: 'Gored Gored', file: 'Gored gored plate, July 2019.jpg', author: 'Thomson200', license: 'CC0' },
+  { word: 'Berbere', file: 'Berberespice.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Tej', file: 'Tej (Ethiopian honey wine) (27241999346).jpg', author: 'cotterillmike', license: 'CC0' },
+  { word: 'Ethiopian Coffee', file: 'Coffee ceremony.jpg', author: 'Hans van der Splinter', license: 'CC BY-SA 2.5' },
+  { word: 'Chechebsa', file: 'Kitcha fit fit.png', author: 'Merhawie', license: 'CC BY-SA 2.5' },
 ];
