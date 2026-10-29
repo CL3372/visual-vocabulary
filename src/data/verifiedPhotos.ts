@@ -951,7 +951,22 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'dobos torte hungarian chocolate caramel layer cake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg/960px-Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg', // Dobos Torta
   'retes hungarian strudel cherry apple sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg', // Rétes
   'unicum hungarian bitter herbal liqueur dark bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Unicumbottle.png/960px-Unicumbottle.png', // Unicum
-  'tokaji wine golden sweet hungarian botrytis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Szent_Tam%C3%A1s_Szamorodni_2013.jpg/500px-Szent_Tam%C3%A1s_Szamorodni_2013.jpg', // Tokaji
+  'tokaji wine golden sweet hungarian botrytis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Szent_Tam%C3%A1s_Szamorodni_2013.jpg/500px-Szent_Tam%C3%A1s_Szamorodni_2013.jpg', // Tokaji,
+  'zacusca romanian vegetable spread jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Zacusc%C4%83_bgiu.jpg/960px-Zacusc%C4%83_bgiu.jpg', // Zacuscă
+  'tochitura pork stew romanian polenta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Tochitura-moldoveneasca.jpg/960px-Tochitura-moldoveneasca.jpg', // Tochitura
+  'murături pickled vegetables romanian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Gogonic%C4%83_castrave%C5%A3i_conopid%C4%83_murate.jpg/960px-Gogonic%C4%83_castrave%C5%A3i_conopid%C4%83_murate.jpg', // Murături
+  'drob romanian lamb offal terrine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Drob_de_Miel.JPG/960px-Drob_de_Miel.JPG', // Drob
+  'mamaliga romanian polenta cornmeal pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Kulesha%26brunza.jpg/500px-Kulesha%26brunza.jpg', // Mămăligă
+  'sarmale romanian stuffed cabbage rolls pork rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sarmale_with_polenta_and_sour_cream.jpg/500px-Sarmale_with_polenta_and_sour_cream.jpg', // Sarmale
+  'ciorba de burta romanian tripe soup sour cream vinegar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ciorba_de_burta_2.jpg/960px-Ciorba_de_burta_2.jpg', // Ciorbă de Burtă
+  'mici romanian grilled skinless sausages mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Mititei_aufm_Grill.jpg/960px-Mititei_aufm_Grill.jpg', // Mici
+  'ciorba romanian sour vegetable soup borsch lovage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ciorb%C4%83_de_legume_2.jpg/960px-Ciorb%C4%83_de_legume_2.jpg', // Ciorbă de Legume
+  'tocanita romanian pork stew tomato paprika': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Toc%C4%83ni%C8%9B%C4%83_de_mur%C4%83turi.jpg/960px-Toc%C4%83ni%C8%9B%C4%83_de_mur%C4%83turi.jpg', // Tocăniță
+  'jumari romanian pork cracklings lard fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Pork_crackling_02.jpg/960px-Pork_crackling_02.jpg', // Jumări
+  'cozonac romanian sweet bread walnut cocoa christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Cozonac-cu-nuca-103.jpg/960px-Cozonac-cu-nuca-103.jpg', // Cozonac
+  'papanasi romanian fried cheese doughnut cream jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Papanasi_cu_cirese.jpg/960px-Papanasi_cu_cirese.jpg', // Papanași
+  'palinca romanian fruit brandy plum spirit glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Palinc%C4%83.jpg/960px-Palinc%C4%83.jpg', // Pălincă
+  'salata de boeuf romanian potato vegetable mayonnaise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Salat%C4%83_de_boeuf3.png/960px-Salat%C4%83_de_boeuf3.png', // Salată de Boeuf
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -1872,4 +1887,19 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Rétes', file: 'Strudel.jpg', author: 'che', license: 'CC BY-SA 2.5' },
   { word: 'Unicum', file: 'Unicumbottle.png', author: 'Zwack Sándor', license: 'CC BY-SA 4.0' },
   { word: 'Tokaji', file: 'Szent Tamás Szamorodni 2013.jpg', author: 'SzentTamas86', license: 'CC BY-SA 4.0' },
+  { word: 'Zacuscă', file: 'Zacuscă bgiu.jpg', author: 'Bogdan', license: 'CC BY-SA 3.0' },
+  { word: 'Tochitura', file: 'Tochitura-moldoveneasca.jpg', author: 'Nicubunu', license: 'CC BY-SA 3.0' },
+  { word: 'Murături', file: 'Gogonică castraveţi conopidă murate.jpg', author: 'Bogdan29roman', license: 'CC0' },
+  { word: 'Drob', file: 'Drob de Miel.JPG', author: 'Sacha47', license: 'CC BY-SA 4.0' },
+  { word: 'Mămăligă', file: 'Kulesha&brunza.jpg', author: 'Kagor', license: 'CC BY-SA 3.0' },
+  { word: 'Sarmale', file: 'Sarmale with polenta and sour cream.jpg', author: 'Alucard 7.33', license: 'CC BY-SA 4.0' },
+  { word: 'Ciorbă de Burtă', file: 'Ciorba de burta 2.jpg', author: 'Sacha47', license: 'CC BY-SA 4.0' },
+  { word: 'Mici', file: 'Mititei aufm Grill.jpg', author: 'Stoschmidt', license: 'CC BY 3.0' },
+  { word: 'Ciorbă de Legume', file: 'Ciorbă de legume 2.jpg', author: 'Sacha47', license: 'CC BY-SA 4.0' },
+  { word: 'Tocăniță', file: 'Tocăniță de murături.jpg', author: 'Mngck', license: 'CC BY-SA 4.0' },
+  { word: 'Jumări', file: 'Pork crackling 02.jpg', author: 'Athikhun.suw', license: 'CC BY-SA 4.0' },
+  { word: 'Cozonac', file: 'Cozonac-cu-nuca-103.jpg', author: 'Vvssmmaann', license: 'CC BY-SA 4.0' },
+  { word: 'Papanași', file: 'Papanasi cu cirese.jpg', author: 'Nicubunu', license: 'CC BY-SA 3.0' },
+  { word: 'Pălincă', file: 'Palincă.jpg', author: 'Morosanul', license: 'CC BY-SA 4.0' },
+  { word: 'Salată de Boeuf', file: 'Salată de boeuf3.png', author: 'Sacha47', license: 'CC BY-SA 4.0' },
 ];
