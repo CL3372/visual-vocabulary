@@ -1072,7 +1072,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'latvian lithuanian beer alus farmhouse dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Glass_of_beer_at_restaurant_Jura_in_Jurmala.jpg/960px-Glass_of_beer_at_restaurant_Jura_in_Jurmala.jpg', // Alus
   'sakotis lithuanian tree cake baumkuchen': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/%C5%A0akotis_display_at_Kaunas_Central_Market_%28Urmas%29_2025.jpg/960px-%C5%A0akotis_display_at_Kaunas_Central_Market_%28Urmas%29_2025.jpg', // Šakotis
   'grey peas bacon latvian traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Grey_peas_at_restaurant_Milda_in_Riga.jpg/960px-Grey_peas_at_restaurant_Milda_in_Riga.jpg', // Grey Peas & Bacon
-  'verivorst estonian blood sausage christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Verivorstid.jpg/960px-Verivorstid.jpg', // Verivorst
+  'verivorst estonian blood sausage christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Verivorstid.jpg/960px-Verivorstid.jpg', // Verivorst,
+  'cawl welsh lamb leek stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cawl_Cymreig.jpg/330px-Cawl_Cymreig.jpg', // Cawl
+  'welsh rarebit cheese sauce toast beer mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Welsh_rarebit.JPG/960px-Welsh_rarebit.JPG', // Welsh Rarebit
+  'bara brith welsh fruit bread tea speckled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bara_Brith_%283320696816%29.jpg/960px-Bara_Brith_%283320696816%29.jpg', // Bara Brith
+  'laverbread welsh seaweed breakfast cockles bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Laverbread_or_Bara_Lawr_%28Porphyra_umbilicalis%29_on_Toast.jpg/960px-Laverbread_or_Bara_Lawr_%28Porphyra_umbilicalis%29_on_Toast.jpg', // Laverbread
+  'welsh lamb roast leeks mountains hillside': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Roast_leg_of_lamb.jpg/960px-Roast_leg_of_lamb.jpg', // Welsh Lamb
+  'glamorgan sausage welsh cheese leek vegetarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Glamorgan_Sausages_with_Tomato_Chutney.jpg/960px-Glamorgan_Sausages_with_Tomato_Chutney.jpg', // Glamorgan Sausage
+  'caerphilly cheese welsh white crumbly': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Caerphilly_cheese.jpg/960px-Caerphilly_cheese.jpg', // Caerphilly Cheese
+  'welsh cake griddle scone dried fruit sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Closeup_of_Welsh_cakes%2C_February_2009.jpg/960px-Closeup_of_Welsh_cakes%2C_February_2009.jpg', // Welsh Cake
+  'crempog welsh pancakes stack': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Crempog_-_Anglesey_style.JPG/960px-Crempog_-_Anglesey_style.JPG', // Crempog
+  'faggots meatballs gravy welsh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Faggots-and-gravy.jpg/960px-Faggots-and-gravy.jpg', // Faggots
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2112,4 +2122,14 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Šakotis', file: 'Šakotis display at Kaunas Central Market (Urmas) 2025.jpg', author: 'Bdx', license: 'CC0' },
   { word: 'Grey Peas & Bacon', file: 'Grey peas at restaurant Milda in Riga.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
   { word: 'Verivorst', file: 'Verivorstid.jpg', author: 'Pikk de Päkk', license: 'CC BY-SA 3.0' },
+  { word: 'Cawl', file: 'Cawl Cymreig.jpg', author: 'Rhyshuw1', license: 'CC BY-SA 3.0' },
+  { word: 'Welsh Rarebit', file: 'Welsh rarebit.JPG', author: 'Worm That Turned', license: 'CC BY-SA 4.0' },
+  { word: 'Bara Brith', file: 'Bara Brith (3320696816).jpg', author: 'zingyyellow', license: 'CC BY 2.0' },
+  { word: 'Laverbread', file: 'Laverbread or Bara Lawr (Porphyra umbilicalis) on Toast.jpg', author: 'Rosser1954', license: 'CC BY-SA 4.0' },
+  { word: 'Welsh Lamb', file: 'Roast leg of lamb.jpg', author: 'CNEcija12345', license: 'CC BY-SA 4.0' },
+  { word: 'Glamorgan Sausage', file: 'Glamorgan Sausages with Tomato Chutney.jpg', author: 'Medievalist', license: 'CC BY-SA 3.0' },
+  { word: 'Caerphilly Cheese', file: 'Caerphilly cheese.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Welsh Cake', file: 'Closeup of Welsh cakes, February 2009.jpg', author: 'zingyyellow', license: 'CC BY 2.0' },
+  { word: 'Crempog', file: 'Crempog - Anglesey style.JPG', author: 'FruitMonkey', license: 'CC BY-SA 4.0' },
+  { word: 'Faggots', file: 'Faggots-and-gravy.jpg', author: 'Judgej', license: 'CC BY-SA 3.0' },
 ];
