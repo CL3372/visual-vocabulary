@@ -1145,6 +1145,15 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tanzanian banana soup green plantain coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Mtori.jpg/960px-Mtori.jpg', // Supu ya Ndizi
   'east african chapati flatbread kenya layered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2_Chapati_warm_and_ready_to_be_eaten.jpg/960px-2_Chapati_warm_and_ready_to_be_eaten.jpg', // Chapati
   'kenyan chai tea spiced milk ginger cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Chai_In_Sakora.jpg/500px-Chai_In_Sakora.jpg', // Chai Masala
+  'lumpia filipino spring rolls crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Lumpiang_Shanghai_2023.jpg/960px-Lumpiang_Shanghai_2023.jpg', // Lumpia
+  'adobo filipino chicken pork soy vinegar garlic braised': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Chicken_adobo.jpg/960px-Chicken_adobo.jpg', // Adobo
+  'sinigang filipino sour tamarind soup pork vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Best_Sinigang_Cuisine.jpg/960px-The_Best_Sinigang_Cuisine.jpg', // Sinigang
+  'lechon philippine whole roasted pig crispy skin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Lechon_Baboy%2C_June_2025_%281%29.jpg/960px-Lechon_Baboy%2C_June_2025_%281%29.jpg', // Lechon
+  'kare kare filipino oxtail peanut stew bagoong': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Mac_MG_5939.jpg/960px-Mac_MG_5939.jpg', // Kare-Kare
+  'sisig filipino chopped pork sizzling plate calamansi': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Authentic_Kapampangan_Sisig.jpg/960px-Authentic_Kapampangan_Sisig.jpg', // Sisig
+  'pancit filipino noodle stir fry shrimp pork birthday': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pancit_Ilonggo_Style_-_12110747826.jpg/960px-Pancit_Ilonggo_Style_-_12110747826.jpg', // Pancit
+  'halo halo filipino shaved ice ube purple taro': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Halo-Halo.jpg/960px-Halo-Halo.jpg', // Halo-Halo
+  'balut fertilized duck egg philippine street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/EGG_BALUT.jpg/960px-EGG_BALUT.jpg', // Balut
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2254,4 +2263,13 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Supu ya Ndizi', file: 'Mtori.jpg', author: 'LittleT889', license: 'CC BY-SA 4.0' },
   { word: 'Chapati', file: '2 Chapati warm and ready to be eaten.jpg', author: 'KittyKaht', license: 'CC BY-SA 2.0' },
   { word: 'Chai Masala', file: 'Chai In Sakora.jpg', author: 'Dadhichbittu007', license: 'CC BY-SA 4.0' },
+  { word: 'Lumpia', file: 'Lumpiang Shanghai 2023.jpg', author: 'Roderick Suñaz Sumalinog', license: 'CC BY-SA 4.0' },
+  { word: 'Adobo', file: 'Chicken adobo.jpg', author: 'dbgg1979', license: 'CC BY 2.0' },
+  { word: 'Sinigang', file: 'The Best Sinigang Cuisine.jpg', author: 'Jessartcam', license: 'CC BY-SA 4.0' },
+  { word: 'Lechon', file: 'Lechon Baboy, June 2025 (1).jpg', author: 'Ralff Nestor Nacor', license: 'CC BY-SA 4.0' },
+  { word: 'Kare-Kare', file: 'Mac MG 5939.jpg', author: 'GwennVienn', license: 'CC BY-SA 4.0' },
+  { word: 'Sisig', file: 'Authentic Kapampangan Sisig.jpg', author: 'Joy L. Cruz', license: 'CC BY-SA 4.0' },
+  { word: 'Pancit', file: 'Pancit Ilonggo Style - 12110747826.jpg', author: 'pulaw', license: 'CC BY 2.0' },
+  { word: 'Halo-Halo', file: 'Halo-Halo.jpg', author: 'Herbertkikoy', license: 'CC BY-SA 4.0' },
+  { word: 'Balut', file: 'EGG BALUT.jpg', author: 'Melchior22', license: 'CC BY-SA 4.0' },
 ];
