@@ -1092,7 +1092,16 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'gouda dutch cheese market wheel aged': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Chesses_gouda_affinage.JPG/960px-Chesses_gouda_affinage.JPG', // Gouda
   'appelgebak dutch apple cake cinnamon cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Apple_pie_7.jpg/960px-Apple_pie_7.jpg', // Appelgebak
   'hutspot dutch carrot potato mash': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hutspot_met_stooflap_op_bord.JPG/500px-Hutspot_met_stooflap_op_bord.JPG', // Hutspot
-  'rookworst dutch smoked sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Rookworst_gedeeltelijk_in_plakjes_2025.jpg/960px-Rookworst_gedeeltelijk_in_plakjes_2025.jpg', // Rookworst
+  'rookworst dutch smoked sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Rookworst_gedeeltelijk_in_plakjes_2025.jpg/960px-Rookworst_gedeeltelijk_in_plakjes_2025.jpg', // Rookworst,
+  'fondue swiss cheese gruyere caquelon bread dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Swiss_cheese_fondue.JPG/960px-Swiss_cheese_fondue.JPG', // Fondue
+  'raclette swiss melted cheese potato pickle machine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Raclette_20040817_140816.jpg/960px-Raclette_20040817_140816.jpg', // Raclette
+  'rosti swiss potato pancake crispy golden fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Roesti.jpg/500px-Roesti.jpg', // Rösti
+  'zurcher geschnetzeltes swiss veal mushroom cream sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Z%C3%BCrcher_Geschnetzeltes_at_Zur_rote_Buech.jpg/960px-Z%C3%BCrcher_Geschnetzeltes_at_Zur_rote_Buech.jpg', // Zürcher Geschnetzeltes
+  'swiss chocolate lindt bar milky smooth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/L%C3%A4derach.jpg/960px-L%C3%A4derach.jpg', // Swiss Chocolate
+  'birchermuesli swiss oat overnight yogurt apple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Muesli.jpg/960px-Muesli.jpg', // Birchermüesli
+  'alplermagronen swiss alpine macaroni potato cheese onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%C3%84lplermagronen_2021.jpeg/960px-%C3%84lplermagronen_2021.jpeg', // Älplermagronen
+  'rivella swiss soft drink whey lactose bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kleine_Rivellas_in_Bern_2024.jpg/960px-Kleine_Rivellas_in_Bern_2024.jpg', // Rivella
+  'leckerli swiss spiced biscuit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Basler_L%C3%A4ckerli_02.jpeg/500px-Basler_L%C3%A4ckerli_02.jpeg', // Leckerli
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2152,4 +2161,13 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Appelgebak', file: 'Apple pie 7.jpg', author: 'Shisma', license: 'CC BY 4.0' },
   { word: 'Hutspot', file: 'Hutspot met stooflap op bord.JPG', author: 'Ellywa', license: 'CC BY-SA 3.0' },
   { word: 'Rookworst', file: 'Rookworst gedeeltelijk in plakjes 2025.jpg', author: 'JopkeB', license: 'CC BY-SA 4.0' },
+  { word: 'Fondue', file: 'Swiss cheese fondue.JPG', author: 'Brücke-Osteuropa', license: 'CC0' },
+  { word: 'Raclette', file: 'Raclette 20040817 140816.jpg', author: 'Ka23 13', license: 'CC BY-SA 4.0' },
+  { word: 'Rösti', file: 'Roesti.jpg', author: 'Benutzer:Mussklprozz', license: 'CC BY-SA 3.0' },
+  { word: 'Zürcher Geschnetzeltes', file: 'Zürcher Geschnetzeltes at Zur rote Buech.jpg', author: 'Jpatokal', license: 'CC BY-SA 3.0' },
+  { word: 'Swiss Chocolate', file: 'Läderach.jpg', author: 'bigbirdz', license: 'CC BY 2.0' },
+  { word: 'Birchermüesli', file: 'Muesli.jpg', author: 'VirtualSteve', license: 'CC BY-SA 2.5' },
+  { word: 'Älplermagronen', file: 'Älplermagronen 2021.jpeg', author: 'Adrian Michael', license: 'CC BY-SA 4.0' },
+  { word: 'Rivella', file: 'Kleine Rivellas in Bern 2024.jpg', author: 'Venca24', license: 'CC0' },
+  { word: 'Leckerli', file: 'Basler Läckerli 02.jpeg', author: 'Manuel Schneider', license: 'CC BY-SA 3.0' },
 ];
