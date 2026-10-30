@@ -1101,7 +1101,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'birchermuesli swiss oat overnight yogurt apple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Muesli.jpg/960px-Muesli.jpg', // Birchermüesli
   'alplermagronen swiss alpine macaroni potato cheese onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%C3%84lplermagronen_2021.jpeg/960px-%C3%84lplermagronen_2021.jpeg', // Älplermagronen
   'rivella swiss soft drink whey lactose bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kleine_Rivellas_in_Bern_2024.jpg/960px-Kleine_Rivellas_in_Bern_2024.jpg', // Rivella
-  'leckerli swiss spiced biscuit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Basler_L%C3%A4ckerli_02.jpeg/500px-Basler_L%C3%A4ckerli_02.jpeg', // Leckerli
+  'leckerli swiss spiced biscuit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Basler_L%C3%A4ckerli_02.jpeg/500px-Basler_L%C3%A4ckerli_02.jpeg', // Leckerli,
+  'wiener schnitzel veal breaded fried lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Wiener-Schnitzel02.jpg/960px-Wiener-Schnitzel02.jpg', // Wiener Schnitzel
+  'tafelspitz boiled beef austrian horseradish apple sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Tafelspitz.jpg/960px-Tafelspitz.jpg', // Tafelspitz
+  'sachertorte chocolate apricot cake vienna': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Sachertorte_in_Vienna.jpg/960px-Sachertorte_in_Vienna.jpg', // Sachertorte
+  'kaiserschmarrn austrian shredded pancake plum compote': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg/960px-2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg', // Kaiserschmarrn
+  'gulasch viennese beef paprika stew bread roll': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Fiaker_Gulasch_Pumpe_Klagenfurt.jpg/960px-Fiaker_Gulasch_Pumpe_Klagenfurt.jpg', // Gulasch
+  'viennese coffee house melange einspanner schlagobers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wiener_Melange_2.JPG/960px-Wiener_Melange_2.JPG', // Viennese Coffee
+  'knodel bread dumplings austrian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Semmelkn%C3%B6del.jpg/960px-Semmelkn%C3%B6del.jpg', // Knödel
+  'linzer torte almond jam tart austrian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Linzer_Torte%2C_2023.jpg/960px-Linzer_Torte%2C_2023.jpg', // Linzer Torte
+  'apfelstrudel apple strudel pastry vienna cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg', // Apfelstrudel (same photo as German Cuisine)
+  'leberkase austrian meat loaf slice roll mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Leberk%C3%A4se-1.jpg/960px-Leberk%C3%A4se-1.jpg', // Leberkäse (same photo as German Cuisine)
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2170,4 +2180,12 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Älplermagronen', file: 'Älplermagronen 2021.jpeg', author: 'Adrian Michael', license: 'CC BY-SA 4.0' },
   { word: 'Rivella', file: 'Kleine Rivellas in Bern 2024.jpg', author: 'Venca24', license: 'CC0' },
   { word: 'Leckerli', file: 'Basler Läckerli 02.jpeg', author: 'Manuel Schneider', license: 'CC BY-SA 3.0' },
+  { word: 'Wiener Schnitzel', file: 'Wiener-Schnitzel02.jpg', author: 'Kobako', license: 'CC BY-SA 2.5' },
+  { word: 'Tafelspitz', file: 'Tafelspitz.jpg', author: 'RobertK', license: 'CC BY-SA 2.5' },
+  { word: 'Sachertorte', file: 'Sachertorte in Vienna.jpg', author: 'Rizka', license: 'CC BY-SA 4.0' },
+  { word: 'Kaiserschmarrn', file: '2015 0731 Kaiserschmarrn Apfelsoße Edelweisshütte Sölden.jpg', author: 'Takeaway', license: 'CC BY-SA 4.0' },
+  { word: 'Gulasch', file: 'Fiaker Gulasch Pumpe Klagenfurt.jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
+  { word: 'Viennese Coffee', file: 'Wiener Melange 2.JPG', author: 'Dr. Bernd Gross', license: 'CC BY-SA 4.0' },
+  { word: 'Knödel', file: 'Semmelknödel.jpg', author: 'Kobako', license: 'CC BY-SA 2.5' },
+  { word: 'Linzer Torte', file: 'Linzer Torte, 2023.jpg', author: 'Burkhard Mücke', license: 'CC BY-SA 4.0' },
 ];
