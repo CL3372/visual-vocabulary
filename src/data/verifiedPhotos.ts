@@ -1123,6 +1123,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'gravlaks norwegian cured salmon dill mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Graved_Lachs_Kartoffeln_Senfsosse.JPG/960px-Graved_Lachs_Kartoffeln_Senfsosse.JPG', // Gravlaks
   'brunost norwegian brown cheese caramel sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Brunost_-_Brown_cheese.jpg/960px-Brunost_-_Brown_cheese.jpg', // Brunost
   'krumkake norwegian cone wafer cookie cream christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Krumkaker.JPG/960px-Krumkaker.JPG', // Krumkake
+  'red red ghanaian black eyed peas plantain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Red_red_and_ripe_plantain.jpg/500px-Red_red_and_ripe_plantain.jpg', // Red Red
+  'kontomire taro leaf stew ghanaian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Kontomire_Stew%2C_Eggs_and_Plantian.jpg/960px-Kontomire_Stew%2C_Eggs_and_Plantian.jpg', // Kontomire Stew
+  'kenkey fermented corn dumpling ghana': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kenkey_and_ground_pepper_with_sardine.jpg/960px-Kenkey_and_ground_pepper_with_sardine.jpg', // Kenkey
+  'jollof rice ghanaian tomato stew one pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg', // Jollof Rice
+  'fufu ghanaian cassava plantain pounded stew soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Fufu_with_light_soup_and_chicken_in_a_ceramic_bowl.jpg/500px-Fufu_with_light_soup_and_chicken_in_a_ceramic_bowl.jpg', // Fufu
+  'waakye ghanaian rice beans sorghum red sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Waakye_with_vegetables%2C_fish_and_egg_with_ripe_plantains.jpg/500px-Waakye_with_vegetables%2C_fish_and_egg_with_ripe_plantains.jpg', // Waakye
+  'kelewele ghanaian spiced fried plantain ginger': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/%E2%80%9CKelewele%E2%80%9D_in_Ghana.jpg/960px-%E2%80%9CKelewele%E2%80%9D_in_Ghana.jpg', // Kelewele
+  'groundnut soup ghana peanut chicken tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Fufuo_and_peanut_butter_soup.jpg/960px-Fufuo_and_peanut_butter_soup.jpg', // Groundnut Soup
+  'banku ghana fermented corn cassava dough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Banku_with_pepper_in_Asanka.jpg/960px-Banku_with_pepper_in_Asanka.jpg', // Banku
+  'palm nut soup ghana banga red oily stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Palm_nut_soup_with_fish.jpg/960px-Palm_nut_soup_with_fish.jpg', // Palm Nut Soup
+  'sobolo hibiscus drink ghana red ginger spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Homemade_sorrel_drink.jpg/960px-Homemade_sorrel_drink.jpg', // Sobolo
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2210,4 +2221,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Gravlaks', file: 'Graved Lachs Kartoffeln Senfsosse.JPG', author: 'Benreis', license: 'CC BY 3.0' },
   { word: 'Brunost', file: 'Brunost - Brown cheese.jpg', author: 'color line', license: 'CC BY 2.0' },
   { word: 'Krumkake', file: 'Krumkaker.JPG', author: 'Jonathunder', license: 'CC BY-SA 3.0' },
+  { word: 'Red Red', file: 'Red red and ripe plantain.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
+  { word: 'Kontomire Stew', file: 'Kontomire Stew, Eggs and Plantian.jpg', author: 'Robertjamal12', license: 'CC BY-SA 4.0' },
+  { word: 'Kenkey', file: 'Kenkey and ground pepper with sardine.jpg', author: 'Mwintirew', license: 'CC BY-SA 4.0' },
+  { word: 'Jollof Rice', file: 'Jollof Rice with Stew.jpg', author: 'Noahalorwu', license: 'CC BY-SA 4.0' },
+  { word: 'Fufu', file: 'Fufu with light soup and chicken in a ceramic bowl.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
+  { word: 'Waakye', file: 'Waakye with vegetables, fish and egg with ripe plantains.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
+  { word: 'Kelewele', file: '“Kelewele” in Ghana.jpg', author: 'Edithobayaa1', license: 'CC BY-SA 4.0' },
+  { word: 'Groundnut Soup', file: 'Fufuo and peanut butter soup.jpg', author: 'Rberchie', license: 'CC BY-SA 4.0' },
+  { word: 'Banku', file: 'Banku with pepper in Asanka.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
+  { word: 'Palm Nut Soup', file: 'Palm nut soup with fish.jpg', author: 'Rberchie', license: 'CC BY-SA 4.0' },
+  { word: 'Sobolo', file: 'Homemade sorrel drink.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
 ];
