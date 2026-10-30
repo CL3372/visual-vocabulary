@@ -1134,6 +1134,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'banku ghana fermented corn cassava dough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Banku_with_pepper_in_Asanka.jpg/960px-Banku_with_pepper_in_Asanka.jpg', // Banku
   'palm nut soup ghana banga red oily stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Palm_nut_soup_with_fish.jpg/960px-Palm_nut_soup_with_fish.jpg', // Palm Nut Soup
   'sobolo hibiscus drink ghana red ginger spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Homemade_sorrel_drink.jpg/960px-Homemade_sorrel_drink.jpg', // Sobolo
+  'sukuma wiki kenyan collard greens': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ugali_%26_Sukuma_Wiki.jpg/500px-Ugali_%26_Sukuma_Wiki.jpg', // Sukuma Wiki
+  'githeri kenyan beans corn stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Githeri_Meal.jpg/960px-Githeri_Meal.jpg', // Githeri
+  'maharagwe kenyan coconut milk beans': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/MaharaGwe_yaliyoungwa_kwa_nazi.jpg/960px-MaharaGwe_yaliyoungwa_kwa_nazi.jpg', // Maharagwe
+  'ugali kenyan cornmeal porridge stiff white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Ugali_and_cabbage.jpg/960px-Ugali_and_cabbage.jpg', // Ugali
+  'nyama choma kenyan roasted goat meat charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Nyama_choma_barbeque.jpg/960px-Nyama_choma_barbeque.jpg', // Nyama Choma
+  'pilau kenyan spiced rice meat cumin cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Pilau_Food_in_Kenya.jpg/960px-Pilau_Food_in_Kenya.jpg', // Pilau
+  'matoke ugandan green banana stew steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Matoke_and_Chicken.jpg/960px-Matoke_and_Chicken.jpg', // Matoke
+  'mandazi east african fried dough coconut cardamom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Bowl_of_mandazi.jpg/500px-Bowl_of_mandazi.jpg', // Mandazi
+  'tanzanian banana soup green plantain coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Mtori.jpg/960px-Mtori.jpg', // Supu ya Ndizi
+  'east african chapati flatbread kenya layered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2_Chapati_warm_and_ready_to_be_eaten.jpg/960px-2_Chapati_warm_and_ready_to_be_eaten.jpg', // Chapati
+  'kenyan chai tea spiced milk ginger cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Chai_In_Sakora.jpg/500px-Chai_In_Sakora.jpg', // Chai Masala
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2232,4 +2243,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Banku', file: 'Banku with pepper in Asanka.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
   { word: 'Palm Nut Soup', file: 'Palm nut soup with fish.jpg', author: 'Rberchie', license: 'CC BY-SA 4.0' },
   { word: 'Sobolo', file: 'Homemade sorrel drink.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Sukuma Wiki', file: 'Ugali & Sukuma Wiki.jpg', author: 'Paresh Jai', license: 'CC BY 2.0' },
+  { word: 'Githeri', file: 'Githeri Meal.jpg', author: 'safaritravelplus', license: 'CC0' },
+  { word: 'Maharagwe', file: 'MaharaGwe yaliyoungwa kwa nazi.jpg', author: 'saM Fumbwani', license: 'CC BY-SA 4.0' },
+  { word: 'Ugali', file: 'Ugali and cabbage.jpg', author: 'Mark Skipper', license: 'CC BY 2.0' },
+  { word: 'Nyama Choma', file: 'Nyama choma barbeque.jpg', author: 'safaritravelplus', license: 'CC0' },
+  { word: 'Pilau', file: 'Pilau Food in Kenya.jpg', author: 'Cmwaura', license: 'CC BY-SA 4.0' },
+  { word: 'Matoke', file: 'Matoke and Chicken.jpg', author: 'Krugen', license: 'CC BY-SA 4.0' },
+  { word: 'Mandazi', file: 'Bowl of mandazi.jpg', author: 'ChildofMidnight', license: 'CC BY 2.0' },
+  { word: 'Supu ya Ndizi', file: 'Mtori.jpg', author: 'LittleT889', license: 'CC BY-SA 4.0' },
+  { word: 'Chapati', file: '2 Chapati warm and ready to be eaten.jpg', author: 'KittyKaht', license: 'CC BY-SA 2.0' },
+  { word: 'Chai Masala', file: 'Chai In Sakora.jpg', author: 'Dadhichbittu007', license: 'CC BY-SA 4.0' },
 ];
