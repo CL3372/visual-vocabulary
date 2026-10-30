@@ -1184,6 +1184,18 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'manuka honey jar toast new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Manuka_honey_in_a_bowl.jpg/960px-Manuka_honey_in_a_bowl.jpg', // Mānuka Honey Toast
   'kumara sweet potato soup new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Butternut_squash_soup_%285171665819%29.jpg/960px-Butternut_squash_soup_%285171665819%29.jpg', // Kumara Soup
   'lemon paeroa l&p new zealand drink bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/L%26P_600ml_bottle_2023.jpg/960px-L%26P_600ml_bottle_2023.jpg', // L&P
+  'chorba tunisian lamb soup tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chorba_in_Tunisia.jpg/500px-Chorba_in_Tunisia.jpg', // Chorba
+  'fricassee tunisienne fried bun tuna olives': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Le_fricass%C3%A9.JPG/960px-Le_fricass%C3%A9.JPG', // Fricassee Tunisienne
+  'assida tunisian semolina pudding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Tunisian_Assida_2018_2.jpg/960px-Tunisian_Assida_2018_2.jpg', // Assida
+  'harissa tunisian chili paste red spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Harissa_Sauce.JPG/960px-Harissa_Sauce.JPG', // Harissa
+  'brik tunisian fried pastry egg tuna': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tunisian_Briks.JPG/960px-Tunisian_Briks.JPG', // Brik
+  'lablabi tunisian chickpea soup harissa bread egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg/960px-Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg', // Lablabi
+  'mechouia tunisian grilled salad pepper tomato tuna olive': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Salade_Mechouwya%2C_Tunisie%2C_juin_2021.jpg/960px-Salade_Mechouwya%2C_Tunisie%2C_juin_2021.jpg', // Mechouia
+  'couscous tunisian lamb vegetable harissa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Couscous_merguez%2C_kedid%2C_Tunisie_2021.jpg/960px-Couscous_merguez%2C_kedid%2C_Tunisie_2021.jpg', // Couscous Tunisien
+  'ojja tunisian egg tomato pepper shakshouka merguez': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Ojja_merguez_photo1_%D8%B9%D8%AC%D8%A9_%D9%85%D8%B1%D9%82%D8%A7%D8%B2.jpg/960px-Ojja_merguez_photo1_%D8%B9%D8%AC%D8%A9_%D9%85%D8%B1%D9%82%D8%A7%D8%B2.jpg', // Ojja
+  'makroudh tunisian semolina date pastry honey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Makrouds.JPG/960px-Makrouds.JPG', // Makroudh
+  'mint tea tunisian green glass pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg', // Mint Tea
+  'merguez spicy lamb sausage grilled north african': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Merguez_sausages.jpg/960px-Merguez_sausages.jpg', // Merguez (same photo as Moroccan Cuisine Merguez)
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2332,4 +2344,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Mānuka Honey Toast', file: 'Manuka honey in a bowl.jpg', author: 'Sage Ross', license: 'CC BY-SA 3.0' },
   { word: 'Kumara Soup', file: 'Butternut squash soup (5171665819).jpg', author: 'Karen and Brad Emerson', license: 'CC BY 2.0' },
   { word: 'L&P', file: 'L&P 600ml bottle 2023.jpg', author: 'Yvanyblog', license: 'CC BY-SA 4.0' },
+  { word: 'Chorba', file: 'Chorba in Tunisia.jpg', author: 'Shoestring', license: 'CC BY-SA 4.0' },
+  { word: 'Fricassee Tunisienne', file: 'Le fricassé.JPG', author: 'Yamen', license: 'CC BY-SA 3.0' },
+  { word: 'Assida', file: 'Tunisian Assida 2018 2.jpg', author: 'MedaliKaouaja', license: 'CC BY-SA 4.0' },
+  { word: 'Harissa', file: 'Harissa Sauce.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Brik', file: 'Tunisian Briks.JPG', author: 'Souad Anane Lesina', license: 'CC BY-SA 3.0' },
+  { word: 'Lablabi', file: 'Bol de Leblabi de Tunisie, 21 mars 2017.jpg', author: 'Habib M\'henni', license: 'CC BY-SA 4.0' },
+  { word: 'Mechouia', file: 'Salade Mechouwya, Tunisie, juin 2021.jpg', author: 'Habib M\'henni', license: 'CC BY-SA 4.0' },
+  { word: 'Couscous Tunisien', file: 'Couscous merguez, kedid, Tunisie 2021.jpg', author: 'Habib M\'henni', license: 'CC BY-SA 4.0' },
+  { word: 'Ojja', file: 'Ojja merguez photo1 عجة مرقاز.jpg', author: 'Sami Mlouhi', license: 'CC BY-SA 4.0' },
+  { word: 'Makroudh', file: 'Makrouds.JPG', author: 'Mourad Ben Abdallah', license: 'Public domain' },
+  { word: 'Mint Tea', file: 'Tunisian Tea with pine nuts.jpg', author: 'sky#walker', license: 'CC BY-SA 2.0' },
 ];
