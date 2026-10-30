@@ -1112,6 +1112,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'linzer torte almond jam tart austrian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Linzer_Torte%2C_2023.jpg/960px-Linzer_Torte%2C_2023.jpg', // Linzer Torte
   'apfelstrudel apple strudel pastry vienna cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg', // Apfelstrudel (same photo as German Cuisine)
   'leberkase austrian meat loaf slice roll mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Leberk%C3%A4se-1.jpg/960px-Leberk%C3%A4se-1.jpg', // Leberkäse (same photo as German Cuisine)
+  'lutefisk dried cod norwegian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/ForkLutefisk.jpg/960px-ForkLutefisk.jpg', // Lutefisk
+  'pinnekjott dried lamb ribs norwegian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Pinnekjott.jpg/960px-Pinnekjott.jpg', // Pinnekjøtt
+  'rommegrot sour cream porridge norwegian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/R%C3%B6mmegr%C3%B6t.jpg/500px-R%C3%B6mmegr%C3%B6t.jpg', // Rømmegrøt
+  'rakfisk norwegian fermented trout flatbread sour cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Sliced_rakfisk.jpg/960px-Sliced_rakfisk.jpg', // Rakfisk
+  'farikol norwegian lamb cabbage stew pepper national dish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/F%C3%A5r_i_k%C3%A5l.jpg/960px-F%C3%A5r_i_k%C3%A5l.jpg', // Fårikål
+  'lefse norwegian potato flatbread butter sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Rolled_lefse.jpg/960px-Rolled_lefse.jpg', // Lefse
+  'klippfisk norwegian salt dried cod bacalao': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Klippfisk.jpg/960px-Klippfisk.jpg', // Klippfisk
+  'kjottkaker norwegian meatballs gravy potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Traditional_Kj%C3%B8ttkaker.jpg/960px-Traditional_Kj%C3%B8ttkaker.jpg', // Kjøttkaker
+  'gravlaks norwegian cured salmon dill mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Graved_Lachs_Kartoffeln_Senfsosse.JPG/960px-Graved_Lachs_Kartoffeln_Senfsosse.JPG', // Gravlaks
+  'brunost norwegian brown cheese caramel sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Brunost_-_Brown_cheese.jpg/960px-Brunost_-_Brown_cheese.jpg', // Brunost
+  'krumkake norwegian cone wafer cookie cream christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Krumkaker.JPG/960px-Krumkaker.JPG', // Krumkake
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2188,4 +2199,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Viennese Coffee', file: 'Wiener Melange 2.JPG', author: 'Dr. Bernd Gross', license: 'CC BY-SA 4.0' },
   { word: 'Knödel', file: 'Semmelknödel.jpg', author: 'Kobako', license: 'CC BY-SA 2.5' },
   { word: 'Linzer Torte', file: 'Linzer Torte, 2023.jpg', author: 'Burkhard Mücke', license: 'CC BY-SA 4.0' },
+  { word: 'Lutefisk', file: 'ForkLutefisk.jpg', author: 'Jonathunder', license: 'CC BY-SA 3.0' },
+  { word: 'Pinnekjøtt', file: 'Pinnekjott.jpg', author: 'Jarvin', license: 'CC BY-SA 3.0' },
+  { word: 'Rømmegrøt', file: 'Römmegröt.jpg', author: 'Tomas Eklund', license: 'Public domain' },
+  { word: 'Rakfisk', file: 'Sliced rakfisk.jpg', author: 'Aslak Raanes', license: 'CC BY 2.0' },
+  { word: 'Fårikål', file: 'Får i kål.jpg', author: 'Jarvin', license: 'CC BY 3.0' },
+  { word: 'Lefse', file: 'Rolled lefse.jpg', author: 'Funknendai', license: 'CC0' },
+  { word: 'Klippfisk', file: 'Klippfisk.jpg', author: 'Karl Ragnar Gjertsen', license: 'CC BY-SA 3.0' },
+  { word: 'Kjøttkaker', file: 'Traditional Kjøttkaker.jpg', author: 'Edward Russell', license: 'CC BY 2.0' },
+  { word: 'Gravlaks', file: 'Graved Lachs Kartoffeln Senfsosse.JPG', author: 'Benreis', license: 'CC BY 3.0' },
+  { word: 'Brunost', file: 'Brunost - Brown cheese.jpg', author: 'color line', license: 'CC BY 2.0' },
+  { word: 'Krumkake', file: 'Krumkaker.JPG', author: 'Jonathunder', license: 'CC BY-SA 3.0' },
 ];
