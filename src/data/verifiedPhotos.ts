@@ -1170,6 +1170,20 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'fairy bread hundreds thousands sprinkles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Fairy_Bread.jpg/960px-Fairy_Bread.jpg', // Fairy Bread
   'bush tucker australian native food indigenous': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Australian_bush_tucker%2C_Alice_Springs.jpg/500px-Australian_bush_tucker%2C_Alice_Springs.jpg', // Bush Tucker
   'pavlova meringue cream fruit dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pavlova_dessert.JPG/960px-Pavlova_dessert.JPG', // Pavlova
+  'hangi maori earth oven new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/EDC_hangi_2010.jpg/960px-EDC_hangi_2010.jpg', // Hāngī
+  'whitebait fritters new zealand fish patty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Whitebait_Fritter.JPG/960px-Whitebait_Fritter.JPG', // Whitebait Fritters
+  'green lipped mussels new zealand shell': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Steamed_mussels_-_Napier%2C_New_Zealand.jpg/960px-Steamed_mussels_-_Napier%2C_New_Zealand.jpg', // Green-lipped Mussels
+  'paua abalone new zealand shell iridescent': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Haliotis_iris_LC0282.jpg/960px-Haliotis_iris_LC0282.jpg', // Pāua
+  'hokey pokey ice cream honeycomb new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Honeycomb_ice_cream_and_hot_toffee_sauce_%285725734559%29.jpg/960px-Honeycomb_ice_cream_and_hot_toffee_sauce_%285725734559%29.jpg', // Hokey Pokey Ice Cream
+  'rewena bread maori sourdough potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Rewena.jpg/960px-Rewena.jpg', // Rewena Bread
+  'bluff oysters new zealand raw shell': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Bluff_oysters_on_ice.jpg/960px-Bluff_oysters_on_ice.jpg', // Bluff Oysters
+  'new zealand lamb roast rosemary': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Lamb_Sunday_roast_at_Black_Horse_Inn%2C_Nuthurst_West_Sussex_England.jpg/960px-Lamb_Sunday_roast_at_Black_Horse_Inn%2C_Nuthurst_West_Sussex_England.jpg', // NZ Lamb Roast
+  'bacon egg pie new zealand pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Bacon%26egg_pie.jpg/960px-Bacon%26egg_pie.jpg', // Bacon & Egg Pie
+  'feijoa crumble dessert new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Feijoa_Sorbet_%284202806392%29.jpg/960px-Feijoa_Sorbet_%284202806392%29.jpg', // Feijoa Crumble
+  'kiwi burger beetroot egg new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Kiwiburger_sitting_on_the_top_of_the_container.jpg/960px-Kiwiburger_sitting_on_the_top_of_the_container.jpg', // Kiwi Burger
+  'manuka honey jar toast new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Manuka_honey_in_a_bowl.jpg/960px-Manuka_honey_in_a_bowl.jpg', // Mānuka Honey Toast
+  'kumara sweet potato soup new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Butternut_squash_soup_%285171665819%29.jpg/960px-Butternut_squash_soup_%285171665819%29.jpg', // Kumara Soup
+  'lemon paeroa l&p new zealand drink bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/L%26P_600ml_bottle_2023.jpg/960px-L%26P_600ml_bottle_2023.jpg', // L&P
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2304,4 +2318,18 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Fairy Bread', file: 'Fairy Bread.jpg', author: 'Gemsling', license: 'Public domain' },
   { word: 'Bush Tucker', file: 'Australian bush tucker, Alice Springs.jpg', author: 'Tourism NT', license: 'Attribution' },
   { word: 'Pavlova', file: 'Pavlova dessert.JPG', author: 'Hazel Fowler', license: 'Public domain' },
+  { word: 'Hāngī', file: 'EDC hangi 2010.jpg', author: 'Sarah Stewart', license: 'CC BY 2.0' },
+  { word: 'Whitebait Fritters', file: 'Whitebait Fritter.JPG', author: 'Inanga', license: 'Public domain' },
+  { word: 'Green-lipped Mussels', file: 'Steamed mussels - Napier, New Zealand.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Pāua', file: 'Haliotis iris LC0282.jpg', author: 'Jörg Hempel', license: 'CC BY-SA 3.0 de' },
+  { word: 'Hokey Pokey Ice Cream', file: 'Honeycomb ice cream and hot toffee sauce (5725734559).jpg', author: 'Ben Sutherland', license: 'CC BY 2.0' },
+  { word: 'Rewena Bread', file: 'Rewena.jpg', author: 'Groot42', license: 'CC0' },
+  { word: 'Bluff Oysters', file: 'Bluff oysters on ice.jpg', author: 'George Pollard', license: 'CC BY-SA 4.0' },
+  { word: 'NZ Lamb Roast', file: 'Lamb Sunday roast at Black Horse Inn, Nuthurst West Sussex England.jpg', author: 'Acabashi', license: 'CC BY-SA 4.0' },
+  { word: 'Bacon & Egg Pie', file: 'Bacon&egg pie.jpg', author: 'Ottomachin', license: 'CC0' },
+  { word: 'Feijoa Crumble', file: 'Feijoa Sorbet (4202806392).jpg', author: 'Arnold Gatilao', license: 'CC BY 2.0' },
+  { word: 'Kiwi Burger', file: 'Kiwiburger sitting on the top of the container.jpg', author: 'Alexeyevitch', license: 'CC BY-SA 4.0' },
+  { word: 'Mānuka Honey Toast', file: 'Manuka honey in a bowl.jpg', author: 'Sage Ross', license: 'CC BY-SA 3.0' },
+  { word: 'Kumara Soup', file: 'Butternut squash soup (5171665819).jpg', author: 'Karen and Brad Emerson', license: 'CC BY 2.0' },
+  { word: 'L&P', file: 'L&P 600ml bottle 2023.jpg', author: 'Yvanyblog', license: 'CC BY-SA 4.0' },
 ];
