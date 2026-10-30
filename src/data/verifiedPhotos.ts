@@ -1154,6 +1154,22 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pancit filipino noodle stir fry shrimp pork birthday': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pancit_Ilonggo_Style_-_12110747826.jpg/960px-Pancit_Ilonggo_Style_-_12110747826.jpg', // Pancit
   'halo halo filipino shaved ice ube purple taro': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Halo-Halo.jpg/960px-Halo-Halo.jpg', // Halo-Halo
   'balut fertilized duck egg philippine street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/EGG_BALUT.jpg/960px-EGG_BALUT.jpg', // Balut
+  'meat pie australian pastry gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Aussie_meat_pie_%28cropped%29.jpg/500px-Aussie_meat_pie_%28cropped%29.jpg', // Meat Pie
+  'sausage roll pastry flaky golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Sausage_roll_-_One_Market%2C_One_Garden_Brighton_%28cropped%29.jpg/960px-Sausage_roll_-_One_Market%2C_One_Garden_Brighton_%28cropped%29.jpg', // Sausage Roll
+  'vegemite toast butter australian breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Vegemite_on_toast.jpg/330px-Vegemite_on_toast.jpg', // Vegemite Toast
+  'lamington australian coconut chocolate sponge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mocha_Flake_amingtons.jpg/960px-Mocha_Flake_amingtons.jpg', // Lamington
+  'anzac biscuits golden oat australian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/ANZAC_biscuits_%2814_April_2006%29.jpg/960px-ANZAC_biscuits_%2814_April_2006%29.jpg', // ANZAC Biscuits
+  'damper australian bush bread campfire': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wattleseed_Damper_%28cropped%29.jpg/960px-Wattleseed_Damper_%28cropped%29.jpg', // Damper
+  'barramundi fish chips australian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Noosa_-_Barramundi_and_chips.jpg/960px-Noosa_-_Barramundi_and_chips.jpg', // Barramundi & Chips
+  'chicken parmigiana parma australian pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Chicken_parmigiana.jpg/960px-Chicken_parmigiana.jpg', // Chicken Parma
+  'smashed avocado toast sourdough cafe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Smashed_Avocado_On_Toast_%28with_one_poached_egg%29_-_Jonny%27s_2026-01-06.jpg/960px-Smashed_Avocado_On_Toast_%28with_one_poached_egg%29_-_Jonny%27s_2026-01-06.jpg', // Smashed Avo
+  'flat white coffee australian espresso milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg/960px-Flat_white_coffee_with_pretty_feather_pattern.jpg', // Flat White
+  'tim tam chocolate biscuit australian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tim_Tams.jpg/960px-Tim_Tams.jpg', // Tim Tam
+  'chiko roll australian deep fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Chiko_roll_wrapped_in_bag_and_handheld.jpg/960px-Chiko_roll_wrapped_in_bag_and_handheld.jpg', // Chiko Roll
+  'kangaroo steak game meat red australian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kangaroo_steak_at_a_restaurant_in_Sydney%2C_Australia.jpg/960px-Kangaroo_steak_at_a_restaurant_in_Sydney%2C_Australia.jpg', // Kangaroo Steak
+  'fairy bread hundreds thousands sprinkles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Fairy_Bread.jpg/960px-Fairy_Bread.jpg', // Fairy Bread
+  'bush tucker australian native food indigenous': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Australian_bush_tucker%2C_Alice_Springs.jpg/500px-Australian_bush_tucker%2C_Alice_Springs.jpg', // Bush Tucker
+  'pavlova meringue cream fruit dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pavlova_dessert.JPG/960px-Pavlova_dessert.JPG', // Pavlova
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2272,4 +2288,20 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Pancit', file: 'Pancit Ilonggo Style - 12110747826.jpg', author: 'pulaw', license: 'CC BY 2.0' },
   { word: 'Halo-Halo', file: 'Halo-Halo.jpg', author: 'Herbertkikoy', license: 'CC BY-SA 4.0' },
   { word: 'Balut', file: 'EGG BALUT.jpg', author: 'Melchior22', license: 'CC BY-SA 4.0' },
+  { word: 'Meat Pie', file: 'Aussie meat pie (cropped).jpg', author: 'Finbar.concaig', license: 'CC BY-SA 4.0' },
+  { word: 'Sausage Roll', file: 'Sausage roll - One Market, One Garden Brighton (cropped).jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Vegemite Toast', file: 'Vegemite on toast.jpg', author: 'Tristanb', license: 'CC BY-SA 3.0' },
+  { word: 'Lamington', file: 'Mocha Flake amingtons.jpg', author: 'Zeitgeistlondon', license: 'CC BY-SA 3.0' },
+  { word: 'ANZAC Biscuits', file: 'ANZAC biscuits (14 April 2006).jpg', author: 'pfctdayelise', license: 'CC BY-SA 2.5' },
+  { word: 'Damper', file: 'Wattleseed Damper (cropped).jpg', author: 'Finbar.concaig', license: 'CC BY-SA 4.0' },
+  { word: 'Barramundi & Chips', file: 'Noosa - Barramundi and chips.jpg', author: 'GameBoy2936', license: 'CC BY-SA 4.0' },
+  { word: 'Chicken Parma', file: 'Chicken parmigiana.jpg', author: 'Tristan Kenney', license: 'CC BY 2.0' },
+  { word: 'Smashed Avo', file: 'Smashed Avocado On Toast (with one poached egg) - Jonny\'s 2026-01-06.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Flat White', file: 'Flat white coffee with pretty feather pattern.jpg', author: 'GeorgeMichaelFarewell', license: 'CC BY-SA 4.0' },
+  { word: 'Tim Tam', file: 'Tim Tams.jpg', author: 'Bilby', license: 'CC BY-SA 3.0' },
+  { word: 'Chiko Roll', file: 'Chiko roll wrapped in bag and handheld.jpg', author: 'Mike Seyfang', license: 'CC BY 2.0' },
+  { word: 'Kangaroo Steak', file: 'Kangaroo steak at a restaurant in Sydney, Australia.jpg', author: 'cogdogblog', license: 'CC0' },
+  { word: 'Fairy Bread', file: 'Fairy Bread.jpg', author: 'Gemsling', license: 'Public domain' },
+  { word: 'Bush Tucker', file: 'Australian bush tucker, Alice Springs.jpg', author: 'Tourism NT', license: 'Attribution' },
+  { word: 'Pavlova', file: 'Pavlova dessert.JPG', author: 'Hazel Fowler', license: 'Public domain' },
 ];
