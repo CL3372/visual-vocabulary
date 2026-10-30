@@ -1196,6 +1196,52 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'makroudh tunisian semolina date pastry honey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Makrouds.JPG/960px-Makrouds.JPG', // Makroudh
   'mint tea tunisian green glass pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg', // Mint Tea
   'merguez spicy lamb sausage grilled north african': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Merguez_sausages.jpg/960px-Merguez_sausages.jpg', // Merguez (same photo as Moroccan Cuisine Merguez)
+  'khorovats armenian barbecue pork skewer charcoal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Barbecue_Armenian.jpg/960px-Barbecue_Armenian.jpg', // Khorovats
+  'dolma armenian grape leaf stuffed rice lamb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Armenian_Dolma_with_grape_leaves.jpg/960px-Armenian_Dolma_with_grape_leaves.jpg', // Dolma
+  'harissa armenian wheat chicken porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG', // Harissa
+  'manti armenian baked dumplings yogurt tomato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Carousel_Restaurant_Hollywood_July_2022_Manti.JPG/960px-Carousel_Restaurant_Hollywood_July_2022_Manti.JPG', // Manti
+  'lahmajoun armenian flatbread minced meat thin pizza': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lahmajoun_%28armenian%29_-_2014_-_3.JPG/960px-Lahmajoun_%28armenian%29_-_2014_-_3.JPG', // Lahmajoun
+  'ghapama armenian stuffed pumpkin rice dried fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Ghapama.jpg/960px-Ghapama.jpg', // Ghapama
+  'basturma armenian cured beef fenugreek spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Basturma_or_Pastroma_from_Armenia_2.JPG/960px-Basturma_or_Pastroma_from_Armenia_2.JPG', // Basturma
+  'armenian brandy ararat cognac glass amber': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Ararat_brandy_%28cognac%29_bottles.jpg/960px-Ararat_brandy_%28cognac%29_bottles.jpg', // Armenian Brandy
+  'lavash armenian flatbread thin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Lavash_arm%C3%A9nien.jpg/960px-Lavash_arm%C3%A9nien.jpg', // Lavash
+  'soujouk spiced sausage armenian grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Yerevan%2C_Sujuk%2C_Basturma%2C_Armenian_dried_meat%2C_Armenia.jpg/960px-Yerevan%2C_Sujuk%2C_Basturma%2C_Armenian_dried_meat%2C_Armenia.jpg', // Soujouk
+  'dibi senegalese grilled lamb mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Dibi_accompagn%C3%A9_de_salades_et_frites.jpg/500px-Dibi_accompagn%C3%A9_de_salades_et_frites.jpg', // Dibi
+  'thiou senegalese rice stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Thiou%2C_plat_s%C3%A9n%C3%A9galais.png/500px-Thiou%2C_plat_s%C3%A9n%C3%A9galais.png', // Thiou
+  'thieboudienne senegalese fish rice one pot vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Ceebu_Jen%2C_Senegalese_dish.jpg/960px-Ceebu_Jen%2C_Senegalese_dish.jpg', // Thiéboudienne
+  'yassa poulet senegalese chicken lemon onion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Poulet_yassa_01.jpg/960px-Poulet_yassa_01.jpg', // Yassa Poulet
+  'mafe senegalese peanut stew beef lamb groundnut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mafe.malien.jpg/960px-Mafe.malien.jpg', // Mafé
+  'fataya senegalese fried pastry fish onion street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Fataya.jpg/960px-Fataya.jpg', // Fataya
+  'thiakry senegalese millet yogurt dessert sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gambia_Chakery_0001.jpg/960px-Gambia_Chakery_0001.jpg', // Thiakry
+  'cafe touba senegalese spiced coffee grains selim': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Caf%C3%A9_touba.jpg/960px-Caf%C3%A9_touba.jpg', // Café Touba
+  'bissap hibiscus drink senegal red chilled mint': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Bissap_%26_Ginger_Juice_%287558541174%29.jpg/960px-Bissap_%26_Ginger_Juice_%287558541174%29.jpg', // Bissap
+  'curry goat jamaican stew roti': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Curry_Goat_and_Rice.jpg/960px-Curry_Goat_and_Rice.jpg', // Curry Goat
+  'bammy jamaican cassava flatbread fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Bammies.jpg/960px-Bammies.jpg', // Bammy
+  'jerk chicken jamaican spiced grilled scotch bonnet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Jerk_chicken_as_served_july_05.jpg/960px-Jerk_chicken_as_served_july_05.jpg', // Jerk Chicken
+  'ackee saltfish jamaican national dish breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Ackee_and_Saltfish.jpg/960px-Ackee_and_Saltfish.jpg', // Ackee and Saltfish
+  'jamaican oxtail stew butter beans allspice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Jamaican_Oxtail_and_Butter_Beans.jpg/960px-Jamaican_Oxtail_and_Butter_Beans.jpg', // Oxtail
+  'rice peas jamaican coconut milk kidney beans': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rice_and_Peas.jpg/960px-Rice_and_Peas.jpg', // Rice and Peas
+  'jamaican patty yellow pastry beef spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Homemade_Jamaican_patties.jpg/960px-Homemade_Jamaican_patties.jpg', // Patty
+  'escovitch fish jamaican fried pickled vinegar pepper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Escovitch_fish%2C_fried_plaintains%2C_and_vegetables_on_top_of_rice.jpg/960px-Escovitch_fish%2C_fried_plaintains%2C_and_vegetables_on_top_of_rice.jpg', // Escovitch Fish
+  'jamaican rum punch tropical fruit juice lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Planters_Punch_2.jpg/960px-Planters_Punch_2.jpg', // Rum Punch
+  'mustikkapiirakka blueberry pie finnish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Finnish_blueberry_pie_with_ice_cream.jpg/960px-Finnish_blueberry_pie_with_ice_cream.jpg', // Mustikkapiirakka
+  'kalakukko fish pork bread finnish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Kalakukko_%28opened%29.jpg/500px-Kalakukko_%28opened%29.jpg', // Kalakukko
+  'karelian pasty rye rice porridge butter egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Karjalanpiirakka-20060227.jpg/960px-Karjalanpiirakka-20060227.jpg', // Karelian Pasty
+  'lohikeitto finnish salmon soup cream potato dill': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Lohikeitto_dish.jpg/960px-Lohikeitto_dish.jpg', // Lohikeitto
+  'finnish rye bread ruisleipa dark sour sourdough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Ruisleip%C3%A4-limppu_reik%C3%A4leip%C3%A4_reissumies_hapankorppu-1.JPG/960px-Ruisleip%C3%A4-limppu_reik%C3%A4leip%C3%A4_reissumies_hapankorppu-1.JPG', // Rye Bread
+  'mammi finnish rye malt easter pudding dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/M%C3%A4mmi_Kymppi.jpg/960px-M%C3%A4mmi_Kymppi.jpg', // Mämmi
+  'reindeer sauteed lapland finnish lingonberry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Poronk%C3%A4ristys.jpg/960px-Poronk%C3%A4ristys.jpg', // Reindeer
+  'salmiak finnish salmiakki salty liquorice candy black': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Salmiakki_-_Halva_-_composition.jpg/960px-Salmiakki_-_Halva_-_composition.jpg', // Salmiak
+  'lonkero finnish long drink gin grapefruit soda can': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Orange_Long_Drink.jpg/960px-Orange_Long_Drink.jpg', // Lonkero
+  'skyr icelandic dairy yogurt thick protein': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Skyr.is_me%C3%B0_vanillu.jpg/960px-Skyr.is_me%C3%B0_vanillu.jpg', // Skyr
+  'hakarl fermented shark iceland dried cubes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/H%C3%A1karl2.jpg/960px-H%C3%A1karl2.jpg', // Hákarl
+  'kjotsupar icelandic lamb soup root vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Kj%C3%B6ts%C3%BApa.JPG/960px-Kj%C3%B6ts%C3%BApa.JPG', // Lamb Soup
+  'plokkfiskur icelandic fish potato stew cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Plokkfiskur_2.jpg/960px-Plokkfiskur_2.jpg', // Plokkfiskur
+  'rugbrad icelandic rye bread dark steam geothermal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/R%C3%BAgbrau%C3%B0_and_Flatbrau%C3%B0.jpg/960px-R%C3%BAgbrau%C3%B0_and_Flatbrau%C3%B0.jpg', // Rúgbrauð
+  'kleinur icelandic twisted doughnut fried cardamom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kleina.jpg/960px-Kleina.jpg', // Kleinur
+  'brennivin icelandic schnapps black death caraway': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Brennevin_500ml_bottle_on_the_table_with_various_icelandic_foods_in_background.jpg/960px-Brennevin_500ml_bottle_on_the_table_with_various_icelandic_foods_in_background.jpg', // Brennivín
+  'hangikjot icelandic smoked lamb leg sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hangikj%C3%B6t.jpg/960px-Hangikj%C3%B6t.jpg', // Hangikjöt
+  'icelandic hot dog pylsur reykjavik': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Hot_dog_from_B%C3%A6jarins_Beztu_Pylsur.jpg/960px-Hot_dog_from_B%C3%A6jarins_Beztu_Pylsur.jpg', // Pylsur
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2355,4 +2401,50 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Ojja', file: 'Ojja merguez photo1 عجة مرقاز.jpg', author: 'Sami Mlouhi', license: 'CC BY-SA 4.0' },
   { word: 'Makroudh', file: 'Makrouds.JPG', author: 'Mourad Ben Abdallah', license: 'Public domain' },
   { word: 'Mint Tea', file: 'Tunisian Tea with pine nuts.jpg', author: 'sky#walker', license: 'CC BY-SA 2.0' },
+  { word: 'Khorovats', file: 'Barbecue Armenian.jpg', author: 'Violettarmenia', license: 'CC BY-SA 3.0' },
+  { word: 'Dolma', file: 'Armenian Dolma with grape leaves.jpg', author: 'Beko', license: 'CC BY-SA 4.0' },
+  { word: 'Harissa', file: 'Armenian Harisa.JPG', author: 'Ketone16', license: 'CC BY-SA 4.0' },
+  { word: 'Manti', file: 'Carousel Restaurant Hollywood July 2022 Manti.JPG', author: 'Benoît Prieur', license: 'CC0' },
+  { word: 'Lahmajoun', file: 'Lahmajoun (armenian) - 2014 - 3.JPG', author: 'Benoît Prieur', license: 'CC0' },
+  { word: 'Ghapama', file: 'Ghapama.jpg', author: 'AndyHM', license: 'CC BY-SA 4.0' },
+  { word: 'Basturma', file: 'Basturma or Pastroma from Armenia 2.JPG', author: 'RosarioVanTulpe', license: 'Public domain' },
+  { word: 'Armenian Brandy', file: 'Ararat brandy (cognac) bottles.jpg', author: 'Yerevantsi', license: 'CC BY-SA 4.0' },
+  { word: 'Lavash', file: 'Lavash arménien.jpg', author: 'Combrian', license: 'CC0' },
+  { word: 'Soujouk', file: 'Yerevan, Sujuk, Basturma, Armenian dried meat, Armenia.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Dibi', file: 'Dibi accompagné de salades et frites.jpg', author: 'Kalsoum17', license: 'CC BY-SA 4.0' },
+  { word: 'Thiou', file: 'Thiou, plat sénégalais.png', author: 'Ajocom', license: 'CC BY-SA 4.0' },
+  { word: 'Thiéboudienne', file: 'Ceebu Jen, Senegalese dish.jpg', author: 'Alweaver2', license: 'CC BY-SA 4.0' },
+  { word: 'Yassa Poulet', file: 'Poulet yassa 01.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Mafé', file: 'Mafe.malien.jpg', author: 'Marshiayers', license: 'CC0' },
+  { word: 'Fataya', file: 'Fataya.jpg', author: 'Cheikh cherif', license: 'CC BY-SA 4.0' },
+  { word: 'Thiakry', file: 'Gambia Chakery 0001.jpg', author: 'Atamari', license: 'CC BY-SA 3.0' },
+  { word: 'Café Touba', file: 'Café touba.jpg', author: 'Sahm.diop', license: 'CC BY-SA 4.0' },
+  { word: 'Bissap', file: 'Bissap & Ginger Juice (7558541174).jpg', author: 'Jen Arrr', license: 'CC BY-SA 2.0' },
+  { word: 'Curry Goat', file: 'Curry Goat and Rice.jpg', author: 'Leon Brocard from London, UK', license: 'CC BY 2.0' },
+  { word: 'Bammy', file: 'Bammies.jpg', author: 'Jongleur100', license: 'Public domain' },
+  { word: 'Jerk Chicken', file: 'Jerk chicken as served july 05.jpg', author: 'Caroline Ford (Secretlondon)', license: 'CC BY-SA 2.0 UK' },
+  { word: 'Ackee and Saltfish', file: 'Ackee and Saltfish.jpg', author: 'gailf548 from New York State, USA', license: 'CC BY 2.0' },
+  { word: 'Oxtail', file: 'Jamaican Oxtail and Butter Beans.jpg', author: 'Sumit Surai', license: 'CC BY-SA 4.0' },
+  { word: 'Rice and Peas', file: 'Rice and Peas.jpg', author: 'Whispyhistory', license: 'CC BY-SA 4.0' },
+  { word: 'Patty', file: 'Homemade Jamaican patties.jpg', author: 'Lilpisomojado', license: 'CC BY-SA 4.0' },
+  { word: 'Escovitch Fish', file: 'Escovitch fish, fried plaintains, and vegetables on top of rice.jpg', author: 'K6ka', license: 'CC BY-SA 4.0' },
+  { word: 'Rum Punch', file: 'Planters Punch 2.jpg', author: 'Achim Schleuning', license: 'CC BY-SA 3.0 de' },
+  { word: 'Mustikkapiirakka', file: 'Finnish blueberry pie with ice cream.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Kalakukko', file: 'Kalakukko (opened).jpg', author: 'Rst2000', license: 'CC BY-SA 3.0' },
+  { word: 'Karelian Pasty', file: 'Karjalanpiirakka-20060227.jpg', author: 'Jarno Elonen', license: 'Public domain' },
+  { word: 'Lohikeitto', file: 'Lohikeitto dish.jpg', author: 'Nonepse', license: 'CC BY-SA 4.0' },
+  { word: 'Rye Bread', file: 'Ruisleipä-limppu reikäleipä reissumies hapankorppu-1.JPG', author: 'Hellahulla', license: 'CC BY-SA 3.0' },
+  { word: 'Mämmi', file: 'Mämmi Kymppi.jpg', author: 'Martin Terber from Cologne, Germany', license: 'CC BY 2.0' },
+  { word: 'Reindeer', file: 'Poronkäristys.jpg', author: 'Htm', license: 'Public domain' },
+  { word: 'Salmiak', file: 'Salmiakki - Halva - composition.jpg', author: 'Shaddack', license: 'Public domain' },
+  { word: 'Lonkero', file: 'Orange Long Drink.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Skyr', file: 'Skyr.is með vanillu.jpg', author: 'Schnee', license: 'CC BY-SA 4.0' },
+  { word: 'Hákarl', file: 'Hákarl2.jpg', author: 'Xfigpower', license: 'CC BY-SA 3.0' },
+  { word: 'Lamb Soup', file: 'Kjötsúpa.JPG', author: 'Ypsilon from Finland', license: 'CC0' },
+  { word: 'Plokkfiskur', file: 'Plokkfiskur 2.jpg', author: 'Jasnaah', license: 'CC BY-SA 4.0' },
+  { word: 'Rúgbrauð', file: 'Rúgbrauð and Flatbrauð.jpg', author: 'The blanz', license: 'CC BY-SA 3.0' },
+  { word: 'Kleinur', file: 'Kleina.jpg', author: 'Steinninn ♨', license: 'CC BY-SA 3.0' },
+  { word: 'Brennivín', file: 'Brennevin 500ml bottle on the table with various icelandic foods in background.jpg', author: 'Alexander Grebenkov', license: 'CC BY 3.0' },
+  { word: 'Hangikjöt', file: 'Hangikjöt.jpg', author: 'Martin Sønderlev Christensen', license: 'CC BY-SA 2.0' },
+  { word: 'Pylsur', file: 'Hot dog from Bæjarins Beztu Pylsur.jpg', author: 'Jschildk', license: 'CC BY-SA 3.0' },
 ];
