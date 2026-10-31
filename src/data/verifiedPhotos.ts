@@ -1419,6 +1419,30 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'kakik guatemalan mayan turkey chile soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg/960px-2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg', // Kak'ik
   'chuchitos guatemalan small tamale corn masa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Chuchitos_%28639489829%29.jpg/960px-Chuchitos_%28639489829%29.jpg', // Chuchitos
   'horchata guatemalan rice drink cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Horchata%2C_my_drink_of_choice_in_Mexico_-_Merida_Yucatan_21_March_2021.jpg/960px-Horchata%2C_my_drink_of_choice_in_Mexico_-_Merida_Yucatan_21_March_2021.jpg', // Horchata
+  'hummus israeli creamy chickpea tahini olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Liat_Portal_for_Foodie_Disorder_-_Hummus_with_spiced_chickpeas.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Hummus_with_spiced_chickpeas.jpg', // Hummus
+  'shakshuka eggs tomato pepper israeli spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/960px-Shakshuka_by_Calliopejen1.jpg', // Shakshuka
+  'sabich israeli pita eggplant egg hummus tahini': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sabich.jpg/960px-Sabich.jpg', // Sabich
+  'falafel israeli chickpea fried ball pita vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Falafel_in_a_pita.jpg/960px-Falafel_in_a_pita.jpg', // Falafel
+  'malabi israeli milk pudding rosewater coconut syrup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg/960px-Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg', // Malabi
+  'knafeh kunafa cheese pastry orange syrup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Knafeh_From_Yaffa_Knafeh.jpg/960px-Knafeh_From_Yaffa_Knafeh.jpg', // Knafeh
+  'malawach yemenite flatbread flaky butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Malawach.jpg/500px-Malawach.jpg', // Malawach
+  'jerusalem mixed grill offal pita israeli': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Me%27orav_Yerushalmi_-_Jerusalem_mixed_grill.jpg/960px-Me%27orav_Yerushalmi_-_Jerusalem_mixed_grill.jpg', // Jerusalem Grill
+  'kabsa saudi rice lamb chicken spiced one pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Kabsa.jpg/960px-Kabsa.jpg', // Kabsa
+  'mandi saudi lamb rice pit cooked smoky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mandi_Lamb_Shank%2C_Lepak_%40_Sultan%2C_62_Bussorah_St%2C_Singapore_%2801%29.jpg/960px-Mandi_Lamb_Shank%2C_Lepak_%40_Sultan%2C_62_Bussorah_St%2C_Singapore_%2801%29.jpg', // Mandi
+  'harees saudi wheat porridge lamb butter ramadan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Al_fanar_harees_%287797136886%29.jpg/960px-Al_fanar_harees_%287797136886%29.jpg', // Harees
+  'arabic coffee qahwa saudi cardamom saffron dallah': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg/500px-A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg', // Arabic Coffee
+  'arepa venezuelan corn bread split filled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Arepas_3.jpg/960px-Arepas_3.jpg', // Arepas
+  'pabellon criollo venezuelan black beans rice beef plantain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pabell%C3%B3n_Criollo_Venezolano.jpg/960px-Pabell%C3%B3n_Criollo_Venezolano.jpg', // Pabellón Criollo
+  'hallaca venezuelan christmas tamale banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg/960px-Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg', // Hallacas
+  'tequenos venezuelan cheese bread fried sticks': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Teque%C3%B1os_Venezolanos.jpg/960px-Teque%C3%B1os_Venezolanos.jpg', // Tequeños
+  'cachapa venezuelan sweet corn pancake cheese thick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Cachapa_1.jpg/960px-Cachapa_1.jpg', // Cachapa
+  'piri piri chicken mozambique chili grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/2018-02-03_Chicken_Piri-Piri%2C_Albufeira_%281%29.JPG/960px-2018-02-03_Chicken_Piri-Piri%2C_Albufeira_%281%29.JPG', // Piri-Piri Chicken
+  'mozambican prawns garlic piri piri': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/DZ6_0480_Juicy_prawns_sizzling_on_a_charcoal_grill_their_shells_turning_golden_as_they_cook.jpg/960px-DZ6_0480_Juicy_prawns_sizzling_on_a_charcoal_grill_their_shells_turning_golden_as_they_cook.jpg', // Camarão Moçambicano
+  'matapa mozambique cassava leaf coconut stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Matapa.jpg/960px-Matapa.jpg', // Matapa
+  'xima mozambique maize porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ugali_%26_Sukuma_Wiki.jpg/500px-Ugali_%26_Sukuma_Wiki.jpg', // Xima
+  'moamba de galinha angolan palm oil chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Moambe_-_noix_de_palme_sauce_with_chicken.jpg/500px-Moambe_-_noix_de_palme_sauce_with_chicken.jpg', // Moamba de Galinha
+  'calulu angolan fish okra stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Calulu.jpg/960px-Calulu.jpg', // Calulu
+  'funge angolan cassava porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Moamba_traditional_dish_in_Luanda.JPG/960px-Moamba_traditional_dish_in_Luanda.JPG', // Funge
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2801,4 +2825,28 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Kak\'ik', file: '2010.05.13.141849 Kac-iq Fonda Calle Real Antigua Guatemala.jpg', author: 'Hermann Luyken', license: 'CC BY-SA 3.0' },
   { word: 'Chuchitos', file: 'Chuchitos (639489829).jpg', author: 'Simon Law', license: 'CC BY-SA 2.0' },
   { word: 'Horchata', file: 'Horchata, my drink of choice in Mexico - Merida Yucatan 21 March 2021.jpg', author: 'Sharon Hahn Darlin', license: 'CC BY 2.0' },
+  { word: 'Hummus', file: 'Liat Portal for Foodie Disorder - Hummus with spiced chickpeas.jpg', author: 'HaJunkiyada', license: 'CC BY-SA 4.0' },
+  { word: 'Shakshuka', file: 'Shakshuka by Calliopejen1.jpg', author: 'Calliopejen1', license: 'CC BY-SA 3.0' },
+  { word: 'Sabich', file: 'Sabich.jpg', author: 'Gilabrand', license: 'CC BY-SA 3.0' },
+  { word: 'Falafel', file: 'Falafel in a pita.jpg', author: 'Israel photo gallery', license: 'CC BY-SA 2.0' },
+  { word: 'Malabi', file: 'Mhallabiyyeh (Arabic milk pudding).jpg', author: 'Jktab', license: 'CC BY-SA 4.0' },
+  { word: 'Knafeh', file: 'Knafeh From Yaffa Knafeh.jpg', author: 'Theipu', license: 'CC0' },
+  { word: 'Malawach', file: 'Malawach.jpg', author: 'Ayala Sender', license: 'CC BY 2.0' },
+  { word: 'Jerusalem Grill', file: 'Me\'orav Yerushalmi - Jerusalem mixed grill.jpg', author: 'Maor X', license: 'CC BY-SA 3.0' },
+  { word: 'Kabsa', file: 'Kabsa.jpg', author: 'Basel15', license: 'Public domain' },
+  { word: 'Mandi', file: 'Mandi Lamb Shank, Lepak @ Sultan, 62 Bussorah St, Singapore (01).jpg', author: 'Moheen Reeyad', license: 'CC BY-SA 4.0' },
+  { word: 'Harees', file: 'Al fanar harees (7797136886).jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Arabic Coffee', file: 'A dallah a traditional Arabic coffee pot with cups and coffee beans.jpg', author: 'Canbel', license: 'CC BY-SA 4.0' },
+  { word: 'Arepas', file: 'Arepas 3.jpg', author: 'Fora do Eixo', license: 'CC BY-SA 2.0' },
+  { word: 'Pabellón Criollo', file: 'Pabellón Criollo Venezolano.jpg', author: 'Wilfredor', license: 'CC BY-SA 4.0' },
+  { word: 'Hallacas', file: 'Hallacas con pan de jamon, plato Venezuelano.jpg', author: 'Wilfredor', license: 'CC BY-SA 4.0' },
+  { word: 'Tequeños', file: 'Tequeños Venezolanos.jpg', author: 'Rodolfo pimentel', license: 'CC BY-SA 4.0' },
+  { word: 'Cachapa', file: 'Cachapa 1.jpg', author: 'Caldobasico', license: 'CC BY-SA 4.0' },
+  { word: 'Piri-Piri Chicken', file: '2018-02-03 Chicken Piri-Piri, Albufeira (1).JPG', author: 'Kolforn', license: 'CC BY-SA 4.0' },
+  { word: 'Camarão Moçambicano', file: 'DZ6 0480 Juicy prawns sizzling on a charcoal grill their shells turning golden as they cook.jpg', author: 'PattayaPatrol', license: 'CC BY-SA 4.0' },
+  { word: 'Matapa', file: 'Matapa.jpg', author: 'PrestigiousSwazi', license: 'CC BY-SA 4.0' },
+  { word: 'Xima', file: 'Ugali & Sukuma Wiki.jpg', author: 'Paresh Jai', license: 'CC BY 2.0' },
+  { word: 'Moamba de Galinha', file: 'Moambe - noix de palme sauce with chicken.jpg', author: 'T.K. Naliaka', license: 'CC BY-SA 4.0' },
+  { word: 'Calulu', file: 'Calulu.jpg', author: 'elingunnur', license: 'CC BY 3.0' },
+  { word: 'Funge', file: 'Moamba traditional dish in Luanda.JPG', author: 'Rui Gabriel Correia', license: 'CC BY-SA 3.0' },
 ];
