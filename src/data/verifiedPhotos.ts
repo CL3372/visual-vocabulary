@@ -1443,6 +1443,26 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'moamba de galinha angolan palm oil chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Moambe_-_noix_de_palme_sauce_with_chicken.jpg/500px-Moambe_-_noix_de_palme_sauce_with_chicken.jpg', // Moamba de Galinha
   'calulu angolan fish okra stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Calulu.jpg/960px-Calulu.jpg', // Calulu
   'funge angolan cassava porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Moamba_traditional_dish_in_Luanda.JPG/960px-Moamba_traditional_dish_in_Luanda.JPG', // Funge
+  'masgouf iraqi grilled carp fish riverside': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Masgouf.jpg/960px-Masgouf.jpg', // Masgouf
+  'quzi iraqi whole roast lamb rice celebration': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Iraqi_Quzi.jpg/960px-Iraqi_Quzi.jpg', // Quzi
+  'tashreeb iraqi lamb stew bread soaked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tashreeb_Iraqi.JPG/960px-Tashreeb_Iraqi.JPG', // Tashreeb
+  'kleicha iraqi date filled cookies': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kleicha_%28%D9%83%D9%84%D9%8A%D8%AC%D8%A9%29.jpg/960px-Kleicha_%28%D9%83%D9%84%D9%8A%D8%AC%D8%A9%29.jpg', // Kleicha
+  'saltah yemeni stew fenugreek foam clay bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Saltah.jpg/960px-Saltah.jpg', // Saltah
+  'bint al sahn yemeni honey cake flaky layers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bint_al_Sahn.png/960px-Bint_al_Sahn.png', // Bint al-Sahn
+  'aseed yemeni dough porridge stew honey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg/960px-%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg', // Aseed
+  'fahsa yemeni lamb stew stone pot bubbling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Fahsa.jpg/960px-Fahsa.jpg', // Fahsa
+  'saltena bolivian baked empanada juicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Salte%C3%B1as_de_Bolivia.jpg/960px-Salte%C3%B1as_de_Bolivia.jpg', // Salteña
+  'sopa de mani bolivian peanut soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Sopa_de_man%C3%AD_cochabambino%2C_Bolivia.jpg/960px-Sopa_de_man%C3%AD_cochabambino%2C_Bolivia.jpg', // Sopa de Maní
+  'silpancho bolivian breaded meat rice egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Silpancho_cochabambino.jpg/960px-Silpancho_cochabambino.jpg', // Silpancho
+  'bolivian fricasse pork soup hominy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Fricas%C3%A9_de_Cerdo.jpg/960px-Fricas%C3%A9_de_Cerdo.jpg', // Fricasé
+  'llapingachos ecuadorian potato pancakes cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Llapingachos._%2840491622163%29.jpg/960px-Llapingachos._%2840491622163%29.jpg', // Llapingachos
+  'encebollado ecuadorian tuna soup yuca': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg/960px-Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg', // Encebollado
+  'seco de pollo ecuadorian chicken stew rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Seco_de_Pollo.jpg/960px-Seco_de_Pollo.jpg', // Seco de Pollo
+  'caldo de bola ecuadorian meatball plantain soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Caldo_de_bola.jpg/960px-Caldo_de_bola.jpg', // Caldo de Bola
+  'pupusas salvadoran stuffed corn cake grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pupusas_El_Salvador_Centro_America.JPG/960px-Pupusas_El_Salvador_Centro_America.JPG', // Pupusas
+  'curtido salvadoran fermented cabbage slaw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Curtido_para_pupusa_en_San_Salvador.jpg/960px-Curtido_para_pupusa_en_San_Salvador.jpg', // Curtido
+  'yuca frita fried cassava chicharron': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Yuca_frita.jpg/960px-Yuca_frita.jpg', // Yuca Frita
+  'sopa de pata salvadoran cow trotter soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sopa_de_pata.jpg/960px-Sopa_de_pata.jpg', // Sopa de Pata
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2849,4 +2869,24 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Moamba de Galinha', file: 'Moambe - noix de palme sauce with chicken.jpg', author: 'T.K. Naliaka', license: 'CC BY-SA 4.0' },
   { word: 'Calulu', file: 'Calulu.jpg', author: 'elingunnur', license: 'CC BY 3.0' },
   { word: 'Funge', file: 'Moamba traditional dish in Luanda.JPG', author: 'Rui Gabriel Correia', license: 'CC BY-SA 3.0' },
+  { word: 'Masgouf', file: 'Masgouf.jpg', author: 'Hill93', license: 'CC BY-SA 4.0' },
+  { word: 'Quzi', file: 'Iraqi Quzi.jpg', author: 'Abdulsalam Al Dabbagh', license: 'CC BY-SA 4.0' },
+  { word: 'Tashreeb', file: 'Tashreeb Iraqi.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Kleicha', file: 'Kleicha (كليجة).jpg', author: 'Faisal1904', license: 'CC BY-SA 4.0' },
+  { word: 'Saltah', file: 'Saltah.jpg', author: 'Rania al-Bahara', license: 'CC BY-SA 4.0' },
+  { word: 'Bint al-Sahn', file: 'Bint al Sahn.png', author: 'Rukn950', license: 'CC BY-SA 3.0' },
+  { word: 'Aseed', file: 'عصيدة-قطيفية.jpg', author: 'Mustafa Al-Elq', license: 'CC BY-SA 4.0' },
+  { word: 'Fahsa', file: 'Fahsa.jpg', author: 'غسان السقاف', license: 'CC BY-SA 3.0' },
+  { word: 'Salteña', file: 'Salteñas de Bolivia.jpg', author: 'EEJCC', license: 'CC BY-SA 4.0' },
+  { word: 'Sopa de Maní', file: 'Sopa de maní cochabambino, Bolivia.jpg', author: 'Isaacromanfl', license: 'CC BY-SA 4.0' },
+  { word: 'Silpancho', file: 'Silpancho cochabambino.jpg', author: 'Ever Lecoña Hilari', license: 'CC BY-SA 4.0' },
+  { word: 'Fricasé', file: 'Fricasé de Cerdo.jpg', author: 'Aylin Oporto', license: 'CC BY-SA 4.0' },
+  { word: 'Llapingachos', file: 'Llapingachos. (40491622163).jpg', author: 'young shanahan', license: 'CC BY 2.0' },
+  { word: 'Encebollado', file: 'Semifinal del Campeonato del Encebollado en Esmeraldas 2015 (18062294436).jpg', author: 'Ministerio de Turismo Ecuador', license: 'CC BY-SA 2.0' },
+  { word: 'Seco de Pollo', file: 'Seco de Pollo.jpg', author: 'Maryte Peralta', license: 'CC BY-SA 4.0' },
+  { word: 'Caldo de Bola', file: 'Caldo de bola.jpg', author: 'Aaronmormot', license: 'CC BY-SA 4.0' },
+  { word: 'Pupusas', file: 'Pupusas El Salvador Centro America.JPG', author: 'JMRAFFi', license: 'CC BY-SA 4.0' },
+  { word: 'Curtido', file: 'Curtido para pupusa en San Salvador.jpg', author: 'Rick McCharles', license: 'CC BY 2.0' },
+  { word: 'Yuca Frita', file: 'Yuca frita.jpg', author: 'Francesc Fort', license: 'CC BY-SA 4.0' },
+  { word: 'Sopa de Pata', file: 'Sopa de pata.jpg', author: 'Mima', license: 'CC BY 2.0' },
 ];
