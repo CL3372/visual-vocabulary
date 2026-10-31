@@ -1340,6 +1340,52 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'puff puff nigerian fried dough balls': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Nigerian-puff-puff-recipe_cropped.jpg/500px-Nigerian-puff-puff-recipe_cropped.jpg', // Puff Puff
   'eba garri cassava nigerian dough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Nigerian_Garri_%28Eba%29_and_Egusi_Soup.jpg/960px-Nigerian_Garri_%28Eba%29_and_Egusi_Soup.jpg', // Eba
   'banga soup palm nut nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eba_served_with_Fresh_fish_banga_soup_in_a_clay_pot.jpg/960px-Eba_served_with_Fresh_fish_banga_soup_in_a_clay_pot.jpg', // Banga Soup
+  'boerewors south african sausage coil braai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Boerewors_braai.jpg/960px-Boerewors_braai.jpg', // Boerewors
+  'biltong south african dried cured meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sliced_Biltong.jpg/960px-Sliced_Biltong.jpg', // Biltong
+  'bobotie south african spiced meat egg custard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Bobotie_South_Africa.jpg/960px-Bobotie_South_Africa.jpg', // Bobotie
+  'bunny chow curry bread bowl south africa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Durban%27s_Famous_Mutton_Bunny_Chow.jpg/960px-Durban%27s_Famous_Mutton_Bunny_Chow.jpg', // Bunny Chow
+  'potjiekos south african cast iron stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/The_Potjie_is_ready.JPG/960px-The_Potjie_is_ready.JPG', // Potjiekos
+  'melktert south african milk tart': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Melktert.jpg/960px-Melktert.jpg', // Melktert
+  'koeksister south african syrup pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Koeksisters.JPG/960px-Koeksisters.JPG', // Koeksister
+  'vetkoek south african fried bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vetkoek.jpg/960px-Vetkoek.jpg', // Vetkoek
+  'chakalaka south african vegetable relish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Chakalaka.jpg/960px-Chakalaka.jpg', // Chakalaka
+  'pap south african maize porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Pap_with_sheba%2C_wors_and_mutton_chop.jpg/960px-Pap_with_sheba%2C_wors_and_mutton_chop.jpg', // Pap
+  'braai south african barbecue grill': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/South_African_Braai_fire_used.jpg/960px-South_African_Braai_fire_used.jpg', // Braai
+  'tostones twice fried green plantain flat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG', // Tostones
+  'cuban flan caramel custard dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Homemade_Flan.jpg/960px-Homemade_Flan.jpg', // Flan Cubano
+  'ropa vieja cuban shredded beef tomato peppers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/RealRopaVieja.jpg/960px-RealRopaVieja.jpg', // Ropa Vieja
+  'moros y cristianos cuban black beans rice together': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Moros_y_Cristianos%2C_Cuba_%289419810743%29.jpg/960px-Moros_y_Cristianos%2C_Cuba_%289419810743%29.jpg', // Moros y Cristianos
+  'cuban sandwich pressed roasted pork ham swiss': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tampa_Cuban_sandwich.jpg/500px-Tampa_Cuban_sandwich.jpg', // Cuban Sandwich
+  'lechon asado cuban roast pork mojo citrus garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Pernil.1.jpg/960px-Pernil.1.jpg', // Lechón Asado
+  'mojito cuban rum mint lime soda glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Drinks_-_Virgin_Mojito%2C_Orange_Juice.jpg/960px-Drinks_-_Virgin_Mojito%2C_Orange_Juice.jpg', // Mojito
+  'cuban coffee colada espresso shot sweet dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Cuban_coffee-_2013-04-05_14-30.jpg/960px-Cuban_coffee-_2013-04-05_14-30.jpg', // Cuban Coffee
+  'khachapuri georgian cheese bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg/960px-Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg', // Khachapuri
+  'khinkali georgian dumplings meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Khinkali%2C_Restaurant_Aragvi.jpg/960px-Khinkali%2C_Restaurant_Aragvi.jpg', // Khinkali
+  'mtsvadi georgian shashlik skewer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Grilled_shashlik.jpg/960px-Grilled_shashlik.jpg', // Mtsvadi
+  'chakhokhbili georgian chicken herb stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/%D0%A7%D0%B0%D1%85%D0%BE%D1%85%D0%B1%D0%B8%D0%BB%D0%B8.JPG/960px-%D0%A7%D0%B0%D1%85%D0%BE%D1%85%D0%B1%D0%B8%D0%BB%D0%B8.JPG', // Chakhokhbili
+  'badrijani nigvzit eggplant walnut georgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Badrijani_%28cropped%29.jpg/960px-Badrijani_%28cropped%29.jpg', // Badrijani Nigvzit
+  'satsivi georgian walnut sauce chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Satsivi_%282%29.jpg/960px-Satsivi_%282%29.jpg', // Satsivi
+  'churchkhela georgian walnut candy grape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Churchkhela%2C_Tbilisi_%282023%29.jpg/960px-Churchkhela%2C_Tbilisi_%282023%29.jpg', // Churchkhela
+  'lobiani georgian bean bread pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Lobiani%2C_Restaurant_Aragvi.jpg/960px-Lobiani%2C_Restaurant_Aragvi.jpg', // Lobiani
+  'tkemali georgian plum sauce condiment': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Red_and_brown_tkemali.jpg/960px-Red_and_brown_tkemali.jpg', // Tkemali
+  'adjarian khachapuri boat egg cheese georgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Khachapuri_Adjaruli_with_egg_and_butter_2016.jpg/960px-Khachapuri_Adjaruli_with_egg_and_butter_2016.jpg', // Adjarian Khachapuri
+  'chakapuli georgian lamb tarragon stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Chakapuli.jpg/960px-Chakapuli.jpg', // Chakapuli
+  'rechta algerian flat noodles chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/20161201_211344_rechta.jpg/960px-20161201_211344_rechta.jpg', // Rechta
+  'berkoukes algerian pearl pasta stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Berkoukes.jpg/960px-Berkoukes.jpg', // Berkoukes
+  'tagine olives chicken algerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Chicken_Tajine_1.jpg/960px-Chicken_Tajine_1.jpg', // Tagine Zitoune
+  'bourek algerian fried roll meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Bourek_laadjine.jpg/960px-Bourek_laadjine.jpg', // Bourek
+  'algerian couscous lamb chickpeas vegetables broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Liat_Portal_for_Foodie_Disorder_-_Algerian_Couscous_with_Vegetables.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Algerian_Couscous_with_Vegetables.jpg', // Couscous Algérien
+  'chakhchoukha algerian torn bread stew lamb sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Lyon_7e_-_Restaurant_Air_du_Pays_-_Chakhchoukha_Biskra_Poulet.jpg/960px-Lyon_7e_-_Restaurant_Air_du_Pays_-_Chakhchoukha_Biskra_Poulet.jpg', // Chakhchoukha
+  'merguez algerian lamb spicy sausage grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Merguez_grilled.jpg/960px-Merguez_grilled.jpg', // Merguez
+  'makrout algerian semolina date pastry honey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Makroudh_-_%D9%85%D9%82%D8%B1%D9%88%D8%B6_-_Makroud_photo2.jpg/960px-Makroudh_-_%D9%85%D9%82%D8%B1%D9%88%D8%B6_-_Makroud_photo2.jpg', // Makrout
+  'algerian mint tea gunpowder glass sugar cube pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg', // Mint Tea
+  'wonton mee noodles singapore': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Singapore_Wonton_noodles_%28cropped%29.jpg/960px-Singapore_Wonton_noodles_%28cropped%29.jpg', // Wonton Mee
+  'ice kachang shaved ice dessert singapore colorful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Ais_kacang.jpg/960px-Ais_kacang.jpg', // Ice Kachang
+  'chilli crab singapore mudcrab tomato sauce mantou': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Chilli_crab-01.jpg/960px-Chilli_crab-01.jpg', // Chilli Crab
+  'hainanese chicken rice singapore poached ginger soy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Hainanese_chicken_rice_in_Singapore.jpg/960px-Hainanese_chicken_rice_in_Singapore.jpg', // Chicken Rice
+  'singapore laksa coconut curry noodle prawn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Katong_laksa.jpg/960px-Katong_laksa.jpg', // Laksa
+  'char kway teow singapore wok hei flat noodle prawn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Char_kway_teow.jpg/500px-Char_kway_teow.jpg', // Char Kway Teow
+  'kaya toast singapore coconut jam butter coffee eggs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kaya_toast_on_a_plate.jpg/960px-Kaya_toast_on_a_plate.jpg', // Kaya Toast
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2643,4 +2689,50 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Puff Puff', file: 'Nigerian-puff-puff-recipe cropped.jpg', author: 'Afrolems', license: 'CC BY-SA 4.0' },
   { word: 'Eba', file: 'Nigerian Garri (Eba) and Egusi Soup.jpg', author: 'NiferO', license: 'CC BY-SA 4.0' },
   { word: 'Banga Soup', file: 'Eba served with Fresh fish banga soup in a clay pot.jpg', author: 'Justdifference', license: 'CC BY-SA 4.0' },
+  { word: 'Boerewors', file: 'Boerewors braai.jpg', author: 'Ossewa', license: 'CC BY-SA 4.0' },
+  { word: 'Biltong', file: 'Sliced Biltong.jpg', author: 'Delia du Plessis', license: 'CC BY-SA 3.0' },
+  { word: 'Bobotie', file: 'Bobotie South Africa.jpg', author: 'Olivier Lemoine', license: 'CC BY-SA 4.0' },
+  { word: 'Bunny Chow', file: 'Durban\'s Famous Mutton Bunny Chow.jpg', author: 'Djreddy1985', license: 'CC BY-SA 4.0' },
+  { word: 'Potjiekos', file: 'The Potjie is ready.JPG', author: 'Chrstphr.jones', license: 'CC BY-SA 4.0' },
+  { word: 'Melktert', file: 'Melktert.jpg', author: 'DimiTalen', license: 'CC BY-SA 3.0' },
+  { word: 'Koeksister', file: 'Koeksisters.JPG', author: 'DO\'Neil', license: 'CC BY-SA 3.0' },
+  { word: 'Vetkoek', file: 'Vetkoek.jpg', author: 'Stasia007', license: 'CC BY-SA 4.0' },
+  { word: 'Chakalaka', file: 'Chakalaka.jpg', author: 'philipp', license: 'CC BY 2.0' },
+  { word: 'Pap', file: 'Pap with sheba, wors and mutton chop.jpg', author: 'Pietersielie', license: 'CC BY-SA 4.0' },
+  { word: 'Braai', file: 'South African Braai fire used.jpg', author: 'Thulani Godfrey Timba', license: 'CC BY-SA 4.0' },
+  { word: 'Tostones', file: 'Tostones.JPG', author: 'AMartiniouk', license: 'CC BY-SA 3.0' },
+  { word: 'Flan Cubano', file: 'Homemade Flan.jpg', author: 'Cary Bass', license: 'CC BY-SA 2.5' },
+  { word: 'Ropa Vieja', file: 'RealRopaVieja.jpg', author: 'TGrey89', license: 'CC0' },
+  { word: 'Moros y Cristianos', file: 'Moros y Cristianos, Cuba (9419810743).jpg', author: 'Rinaldo Wurglitsch', license: 'CC BY 2.0' },
+  { word: 'Cuban Sandwich', file: 'Tampa Cuban sandwich.jpg', author: 'Zeng8r', license: 'CC BY-SA 4.0' },
+  { word: 'Lechón Asado', file: 'Pernil.1.jpg', author: 'Ekem', license: 'CC BY-SA 4.0' },
+  { word: 'Mojito', file: 'Drinks - Virgin Mojito, Orange Juice.jpg', author: 'Aditijuneja2023', license: 'CC BY-SA 4.0' },
+  { word: 'Cuban Coffee', file: 'Cuban coffee- 2013-04-05 14-30.jpg', author: 'Colinkb7', license: 'CC BY-SA 3.0' },
+  { word: 'Khachapuri', file: 'Old Tbilisi, Georgian khachapuri, Georgia.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Khinkali', file: 'Khinkali, Restaurant Aragvi.jpg', author: 'Sandra C', license: 'CC BY-SA 2.0' },
+  { word: 'Mtsvadi', file: 'Grilled shashlik.jpg', author: 'Alandislands', license: 'CC BY-SA 4.0' },
+  { word: 'Chakhokhbili', file: 'Чахохбили.JPG', author: 'Victor Vizu', license: 'CC BY-SA 3.0' },
+  { word: 'Badrijani Nigvzit', file: 'Badrijani (cropped).jpg', author: 'salvagekat', license: 'CC BY-SA 2.0' },
+  { word: 'Satsivi', file: 'Satsivi (2).jpg', author: 'Lesya Dolyk', license: 'CC BY-SA 2.0' },
+  { word: 'Churchkhela', file: 'Churchkhela, Tbilisi (2023).jpg', author: 'Lessormore', license: 'CC BY 4.0' },
+  { word: 'Lobiani', file: 'Lobiani, Restaurant Aragvi.jpg', author: 'Sandra C', license: 'CC BY-SA 2.0' },
+  { word: 'Tkemali', file: 'Red and brown tkemali.jpg', author: 'Jelger Groeneveld', license: 'CC BY 2.0' },
+  { word: 'Adjarian Khachapuri', file: 'Khachapuri Adjaruli with egg and butter 2016.jpg', author: 'Eugene Krasnaok', license: 'CC BY 4.0' },
+  { word: 'Chakapuli', file: 'Chakapuli.jpg', author: 'Georgia About', license: 'CC BY 3.0' },
+  { word: 'Rechta', file: '20161201 211344 rechta.jpg', author: 'ABBASHouda', license: 'CC BY-SA 4.0' },
+  { word: 'Berkoukes', file: 'Berkoukes.jpg', author: 'Indif', license: 'CC BY-SA 3.0' },
+  { word: 'Tagine Zitoune', file: 'Chicken Tajine 1.jpg', author: 'Emna Mizouni', license: 'CC BY-SA 4.0' },
+  { word: 'Bourek', file: 'Bourek laadjine.jpg', author: 'Waran18', license: 'CC BY-SA 4.0' },
+  { word: 'Couscous Algérien', file: 'Liat Portal for Foodie Disorder - Algerian Couscous with Vegetables.jpg', author: 'HaJunkiyada', license: 'CC BY-SA 4.0' },
+  { word: 'Chakhchoukha', file: 'Lyon 7e - Restaurant Air du Pays - Chakhchoukha Biskra Poulet.jpg', author: 'Sebleouf', license: 'CC BY-SA 4.0' },
+  { word: 'Merguez', file: 'Merguez grilled.jpg', author: 'Thogru', license: 'CC BY-SA 3.0' },
+  { word: 'Makrout', file: 'Makroudh - مقروض - Makroud photo2.jpg', author: 'Sami Mlouhi', license: 'CC BY-SA 4.0' },
+  { word: 'Mint Tea', file: 'Tunisian Tea with pine nuts.jpg', author: 'sky#walker', license: 'CC BY-SA 2.0' },
+  { word: 'Wonton Mee', file: 'Singapore Wonton noodles (cropped).jpg', author: 'Banej', license: 'CC BY-SA 3.0' },
+  { word: 'Ice Kachang', file: 'Ais kacang.jpg', author: 'Andrew Bogott', license: 'CC BY-SA 3.0' },
+  { word: 'Chilli Crab', file: 'Chilli crab-01.jpg', author: 'Dekcuf', license: 'CC BY-SA 2.0' },
+  { word: 'Chicken Rice', file: 'Hainanese chicken rice in Singapore.jpg', author: 'Pauloleong2002', license: 'CC BY-SA 4.0' },
+  { word: 'Laksa', file: 'Katong laksa.jpg', author: 'ProjectManhattan.', license: 'CC0' },
+  { word: 'Char Kway Teow', file: 'Char kway teow.jpg', author: 'Elizetang', license: 'Public domain' },
+  { word: 'Kaya Toast', file: 'Kaya toast on a plate.jpg', author: 'Pinklily08', license: 'CC BY-SA 4.0' },
 ];
