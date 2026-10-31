@@ -1481,6 +1481,22 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pernil puerto rican roast pork shoulder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Pernil.1.jpg/960px-Pernil.1.jpg', // Pernil
   'arroz con gandules puerto rican rice pigeon peas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Arrozcongandules2.jpg/500px-Arrozcongandules2.jpg', // Arroz con Gandules
   'tembleque puerto rican coconut pudding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tembleque_-_coconut_pudding.jpg/500px-Tembleque_-_coconut_pudding.jpg', // Tembleque
+  'griot haitian fried pork crispy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%E3%82%B0%E3%83%AA%E3%82%AA%EF%BC%88%E3%83%8F%E3%82%A4%E3%83%81%E6%96%99%E7%90%86%E3%83%BBCHERIE%E3%83%BB%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC%EF%BC%8920250122-P1063458.jpg/960px-%E3%82%B0%E3%83%AA%E3%82%AA%EF%BC%88%E3%83%8F%E3%82%A4%E3%83%81%E6%96%99%E7%90%86%E3%83%BBCHERIE%E3%83%BB%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC%EF%BC%8920250122-P1063458.jpg', // Griot
+  'pikliz haitian pickled spicy cabbage scotch bonnet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Haitian_Pikliz.jpg/960px-Haitian_Pikliz.jpg', // Pikliz
+  'akra haitian malanga fritters fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Frituras_de_malanga.jpg/960px-Frituras_de_malanga.jpg', // Akra
+  'mohinga myanmar fish noodle soup breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/IMG_Mohinga.JPG/960px-IMG_Mohinga.JPG', // Mohinga
+  'lahpet thoke myanmar tea leaf salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Laphet_thoke.JPG/960px-Laphet_thoke.JPG', // Lahpet Thoke
+  'shan noodles myanmar tomato pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/IMG_Shanhkauksw%C3%A8.JPG/960px-IMG_Shanhkauksw%C3%A8.JPG', // Shan Noodles
+  'ohn no khao swe myanmar coconut noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Ohn_No_Khao_Swe_at_Sapphire_Asian_Cuisine_%2810988302274%29.jpg/960px-Ohn_No_Khao_Swe_at_Sapphire_Asian_Cuisine_%2810988302274%29.jpg', // Ohn No Khao Swè
+  'dal bhat nepalese lentil rice thali': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Nepali_dal-bhat-tarkari.jpg/960px-Nepali_dal-bhat-tarkari.jpg', // Dal Bhat
+  'momo nepalese tibetan dumplings steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Momo_nepal.jpg/960px-Momo_nepal.jpg', // Momo
+  'thukpa tibetan nepalese noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Thukpa%2C_Manali%2C_Himachal_Pradesh.JPG/960px-Thukpa%2C_Manali%2C_Himachal_Pradesh.JPG', // Thukpa
+  'sel roti nepalese fried rice doughnut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sel_Roti.jpg/960px-Sel_Roti.jpg', // Sel Roti
+  'buuz mongolian steamed dumplings meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Buuz.jpg/960px-Buuz.jpg', // Buuz
+  'tsuivan mongolian stir fried noodles mutton': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Cujwan.JPG/960px-Cujwan.JPG', // Tsuivan
+  'khorkhog mongolian hot stone barbecue': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Khorkhog_2.JPG/960px-Khorkhog_2.JPG', // Khorkhog
+  'airag mongolian fermented mare milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Homemade_airag_in_Mongolia.jpg/960px-Homemade_airag_in_Mongolia.jpg', // Airag
+  'lap lap vanuatu taro yam grated banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Laplap_02.jpg/960px-Laplap_02.jpg', // Lap Lap
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2925,4 +2941,20 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Pernil', file: 'Pernil.1.jpg', author: 'Ekem', license: 'CC BY-SA 4.0' },
   { word: 'Arroz con Gandules', file: 'Arrozcongandules2.jpg', author: 'Portorricensis', license: 'Public domain' },
   { word: 'Tembleque', file: 'Tembleque - coconut pudding.jpg', author: 'Arnold Gatilao', license: 'CC BY 2.0' },
+  { word: 'Griot', file: 'グリオ（ハイチ料理・CHERIE・キッチンカー）20250122-P1063458.jpg', author: 'くろふね', license: 'CC BY 4.0' },
+  { word: 'Pikliz', file: 'Haitian Pikliz.jpg', author: 'Aliceba', license: 'CC BY-SA 4.0' },
+  { word: 'Akra', file: 'Frituras de malanga.jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Mohinga', file: 'IMG Mohinga.JPG', author: 'Wagaung', license: 'CC BY-SA 3.0' },
+  { word: 'Lahpet Thoke', file: 'Laphet thoke.JPG', author: 'Wagaung', license: 'CC BY-SA 3.0' },
+  { word: 'Shan Noodles', file: 'IMG Shanhkaukswè.JPG', author: 'Wagaung', license: 'CC BY-SA 3.0' },
+  { word: 'Ohn No Khao Swè', file: 'Ohn No Khao Swe at Sapphire Asian Cuisine (10988302274).jpg', author: 'Gary Stevens', license: 'CC BY 2.0' },
+  { word: 'Dal Bhat', file: 'Nepali dal-bhat-tarkari.jpg', author: 'Subhashish Panigrahi', license: 'CC BY-SA 4.0' },
+  { word: 'Momo', file: 'Momo nepal.jpg', author: 'Kushal Goyal', license: 'CC BY-SA 3.0' },
+  { word: 'Thukpa', file: 'Thukpa, Manali, Himachal Pradesh.JPG', author: 'Amanbedi1', license: 'CC BY-SA 4.0' },
+  { word: 'Sel Roti', file: 'Sel Roti.jpg', author: 'Swapnil Acharya', license: 'CC BY-SA 3.0' },
+  { word: 'Buuz', file: 'Buuz.jpg', author: 'Mizu_Basyo', license: 'CC BY-SA 3.0' },
+  { word: 'Tsuivan', file: 'Cujwan.JPG', author: 'Marcin Konsek', license: 'CC BY-SA 4.0' },
+  { word: 'Khorkhog', file: 'Khorkhog 2.JPG', author: 'Brücke-Osteuropa', license: 'Public domain' },
+  { word: 'Airag', file: 'Homemade airag in Mongolia.jpg', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
+  { word: 'Lap Lap', file: 'Laplap 02.jpg', author: 'Ronoleo', license: 'CC BY-SA 3.0' },
 ];
