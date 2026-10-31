@@ -1521,6 +1521,16 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'kiviak greenlandic fermented auk bird traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Alle_alle_08%28js%29%2C_Hornsund.jpg/960px-Alle_alle_08%28js%29%2C_Hornsund.jpg', // Kiviak
   'majboos omani spiced rice meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Kabsa.jpg/960px-Kabsa.jpg', // Majboos
   'omani halwa rosewater saffron jelly sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Omani_Halwa_with_saffron.jpg/960px-Omani_Halwa_with_saffron.jpg', // Omani Halwa
+  'chivito uruguayan steak sandwich egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Chivito_Uruguayo_casero_en_un_plato.jpg/960px-Chivito_Uruguayo_casero_en_un_plato.jpg', // Chivito
+  'uruguayan asado grill beef outdoors': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Asado_uruguayo_familiar.jpg/960px-Asado_uruguayo_familiar.jpg', // Asado Uruguayo
+  'tortas fritas uruguayan fried dough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/TortaFrita.jpg/960px-TortaFrita.jpg', // Torta Fritas
+  'zeama moldovan chicken noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Zeam%C4%83_from_Moldovan_restaurant_CumatraTa_in_Postdam%2C_October_2026.jpg/960px-Zeam%C4%83_from_Moldovan_restaurant_CumatraTa_in_Postdam%2C_October_2026.jpg', // Zeamă
+  'placinta moldovan pastry cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Placinta.jpg/960px-Placinta.jpg', // Plăcintă
+  'draniki belarusian potato pancakes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/2024.04.19_Potato_Pancakes_Belarusian_Draniki_Restaurants_of_Gostiny_Dwor_Nekhachevo.jpg/960px-2024.04.19_Potato_Pancakes_Belarusian_Draniki_Restaurants_of_Gostiny_Dwor_Nekhachevo.jpg', // Draniki
+  'kokoda fijian coconut lime marinated fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Kokodafood.jpg/960px-Kokodafood.jpg', // Kokoda
+  'lovo fijian earth oven feast banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Lovo.jpg/960px-Lovo.jpg', // Lovo
+  'palusami samoan taro leaves coconut cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Laulau_unwrapped_with_coconut_cream_and_onions.jpg/960px-Laulau_unwrapped_with_coconut_cream_and_onions.jpg', // Palusami
+  'umu samoan earth oven taro pig feast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Umu_in_Samoa_-_removing_rocks.jpeg/960px-Umu_in_Samoa_-_removing_rocks.jpeg', // Umu Feast
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3005,4 +3015,14 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Kiviak', file: 'Alle alle 08(js), Hornsund.jpg', author: 'Jerzy Strzelecki', license: 'CC BY-SA 3.0' },
   { word: 'Majboos', file: 'Kabsa.jpg', author: 'Basel15 at en.wikipedia', license: 'Public domain' },
   { word: 'Omani Halwa', file: 'Omani Halwa with saffron.jpg', author: 'Slywire', license: 'CC BY-SA 4.0' },
+  { word: 'Chivito', file: 'Chivito Uruguayo casero en un plato.jpg', author: 'Diosverde', license: 'CC BY-SA 4.0' },
+  { word: 'Asado Uruguayo', file: 'Asado uruguayo familiar.jpg', author: 'Fernando da Rosa (Fedaro)', license: 'CC BY-SA 3.0' },
+  { word: 'Torta Fritas', file: 'TortaFrita.jpg', author: 'Jerowiki', license: 'CC BY-SA 4.0' },
+  { word: 'Zeamă', file: 'Zeamă from Moldovan restaurant CumatraTa in Postdam, October 2026.jpg', author: 'Superraptor123', license: 'CC BY-SA 4.0' },
+  { word: 'Plăcintă', file: 'Placinta.jpg', author: 'Zserghei', license: 'Public domain' },
+  { word: 'Draniki', file: '2024.04.19 Potato Pancakes Belarusian Draniki Restaurants of Gostiny Dwor Nekhachevo.jpg', author: 'Rabbi Mendl', license: 'CC BY-SA 4.0' },
+  { word: 'Kokoda', file: 'Kokodafood.jpg', author: 'yuko_ppp2501', license: 'CC BY 2.0' },
+  { word: 'Lovo', file: 'Lovo.jpg', author: 'Jaejay77', license: 'CC BY-SA 4.0' },
+  { word: 'Palusami', file: 'Laulau unwrapped with coconut cream and onions.jpg', author: 'Chedlund808', license: 'CC BY-SA 4.0' },
+  { word: 'Umu Feast', file: 'Umu in Samoa - removing rocks.jpeg', author: 'Polynesian Xplorer', license: 'CC BY 2.0' },
 ];
