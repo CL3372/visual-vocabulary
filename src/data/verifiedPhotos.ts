@@ -1242,6 +1242,52 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'brennivin icelandic schnapps black death caraway': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Brennevin_500ml_bottle_on_the_table_with_various_icelandic_foods_in_background.jpg/960px-Brennevin_500ml_bottle_on_the_table_with_various_icelandic_foods_in_background.jpg', // Brennivín
   'hangikjot icelandic smoked lamb leg sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hangikj%C3%B6t.jpg/960px-Hangikj%C3%B6t.jpg', // Hangikjöt
   'icelandic hot dog pylsur reykjavik': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Hot_dog_from_B%C3%A6jarins_Beztu_Pylsur.jpg/960px-Hot_dog_from_B%C3%A6jarins_Beztu_Pylsur.jpg', // Pylsur
+  'koshari egyptian rice lentils pasta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Egyptian_food_Koshary.jpg/960px-Egyptian_food_Koshary.jpg', // Koshari
+  'ful medames fava beans egyptian breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Ful_Medames.JPG/960px-Ful_Medames.JPG', // Ful Medames
+  'molokhia jute leaf soup egyptian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Molokheya_hi_res.JPG/960px-Molokheya_hi_res.JPG', // Molokhia
+  'hawawshi egyptian spiced meat sandwich': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Egyptian_meatloaf.jpg/960px-Egyptian_meatloaf.jpg', // Hawawshi
+  'feteer meshaltet egyptian layered pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Egyptian-food-16.jpg/960px-Egyptian-food-16.jpg', // Feteer Meshaltet
+  'om ali egyptian bread pudding cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Umm_Ali.JPG/960px-Umm_Ali.JPG', // Om Ali
+  'basbousa semolina cake syrup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Basboosa.jpg/960px-Basboosa.jpg', // Basbousa
+  'fattah egyptian bread rice lamb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Egyptian_Fattah.jpg/960px-Egyptian_Fattah.jpg', // Fattah
+  'shawarma meat wrap bread middle east': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Shawarma-sandwich-01.jpg/500px-Shawarma-sandwich-01.jpg', // Shawarma
+  'kofta grilled meat skewer middle east': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Koftet-el-hati.jpg/960px-Koftet-el-hati.jpg', // Kofta
+  'mahshi stuffed vegetables zucchini pepper rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/EgyptianMahshyStuffedAubergineTomatoWithRice_PhotoByWaelNawara.jpg/960px-EgyptianMahshyStuffedAubergineTomatoWithRice_PhotoByWaelNawara.jpg', // Mahshi
+  'pelmeni russian dumplings meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/960px-Pelmeni_Russian.jpg', // Pelmeni
+  'beef stroganoff cream sauce mushroom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Beef_Stroganoff_%26_Egg_Noodles.jpg/960px-Beef_Stroganoff_%26_Egg_Noodles.jpg', // Beef Stroganoff
+  'blini russian pancakes caviar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Singer_Caf%C3%A9_-_Blini_with_sour_cream_and_red_caviar_IMG_3424.JPG/960px-Singer_Caf%C3%A9_-_Blini_with_sour_cream_and_red_caviar_IMG_3424.JPG', // Blini
+  'olivier salad russian potato mayo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg/960px-%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg', // Olivier Salad
+  'shchi russian cabbage soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/960px-Schi.jpg', // Shchi
+  'pirozhki russian stuffed buns': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Piroshki.JPG/960px-Piroshki.JPG', // Pirozhki
+  'solyanka russian sour soup meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Soljanka_food_05.jpg/960px-Soljanka_food_05.jpg', // Solyanka
+  'okroshka cold kvass soup russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%D0%9E%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B0_Okroshka_05.jpg/960px-%D0%9E%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B0_Okroshka_05.jpg', // Okroshka
+  'medovik honey cake russian layers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Medovik.jpg/960px-Medovik.jpg', // Medovik
+  'syrniki cottage cheese pancakes russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Syrniki6.jpg/960px-Syrniki6.jpg', // Syrniki
+  'kvass russian fermented bread drink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Mint_bread_kvas.jpg/960px-Mint_bread_kvas.jpg', // Kvass
+  'kasha buckwheat porridge russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%D0%93%D1%80%D0%B5%D1%87%D0%BD%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BA%D0%B0%D1%88%D0%B0.jpg/960px-%D0%93%D1%80%D0%B5%D1%87%D0%BD%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BA%D0%B0%D1%88%D0%B0.jpg', // Kasha
+  'holodets aspic meat jelly russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Aspic-with-eggs.jpg/500px-Aspic-with-eggs.jpg', // Holodets
+  'wild alaska salmon fillet grilled cedar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Grilled_plated_salmon_fillet.jpg/960px-Grilled_plated_salmon_fillet.jpg', // Salmon
+  'alaska king crab legs steamed red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Alaskan_King_Crab_Legs_%283241225745%29.jpg/960px-Alaskan_King_Crab_Legs_%283241225745%29.jpg', // King Crab
+  'halibut alaska pacific white fish grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Grilled_halibut_with_smoked_Chilliwack_corn_puree%2C_faro_verde_risotto%2C_campari_tomato_chutney%2C_and_bitter_green_salad.jpg/960px-Grilled_halibut_with_smoked_Chilliwack_corn_puree%2C_faro_verde_risotto%2C_campari_tomato_chutney%2C_and_bitter_green_salad.jpg', // Halibut
+  'akutaq eskimo ice cream alaska berries fat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Akutaq.jpg/960px-Akutaq.jpg', // Akutaq
+  'bannock alaska native fry bread campfire': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bannock_3.JPG/960px-Bannock_3.JPG', // Bannock
+  'fireweed honey alaska pink flower meadow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%D0%9C%D1%91%D0%B4_%D0%B8%D0%B2%D0%B0%D0%BD-%D1%87%D0%B0%D1%8F_%D1%83%D0%B7%D0%BA%D0%BE%D0%BB%D0%B8%D1%81%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%28honey_of_fireweed%29.jpg/330px-%D0%9C%D1%91%D0%B4_%D0%B8%D0%B2%D0%B0%D0%BD-%D1%87%D0%B0%D1%8F_%D1%83%D0%B7%D0%BA%D0%BE%D0%BB%D0%B8%D1%81%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%28honey_of_fireweed%29.jpg', // Fireweed Honey
+  'reindeer sausage alaska grilled hot dog bun': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Buttermilk_pancake_and_reindeer_sausage_%282526754309%29.jpg/960px-Buttermilk_pancake_and_reindeer_sausage_%282526754309%29.jpg', // Reindeer Sausage
+  'muktuk whale skin blubber arctic indigenous': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/2013-365-282_Mmmmm_Muktuk_%2810184839444%29.jpg/960px-2013-365-282_Mmmmm_Muktuk_%2810184839444%29.jpg', // Muktuk
+  'string hoppers sri lankan rice noodle nest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Idiyappam_in_plate_1.jpg/960px-Idiyappam_in_plate_1.jpg', // String Hoppers
+  'sri lankan rice curry dahl coconut multiple dishes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Sri_Lankan_Rice_and_Curry.jpg/960px-Sri_Lankan_Rice_and_Curry.jpg', // Rice and Curry
+  'hoppers sri lankan bowl shaped rice coconut egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Sri_Lanka-Egg_hoppers.jpg/960px-Sri_Lanka-Egg_hoppers.jpg', // Hoppers
+  'kottu roti sri lankan chopped flatbread egg vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chicken_Kottu.jpg/960px-Chicken_Kottu.jpg', // Kottu Roti
+  'lamprais dutch burgher sri lankan banana leaf rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lamprais_%282%29.jpg/960px-Lamprais_%282%29.jpg', // Lamprais
+  'pol sambol sri lankan coconut chili onion condiment': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Pol_Sambol.jpg/960px-Pol_Sambol.jpg', // Pol Sambol
+  'ceylon tea sri lankan plantation orange pekoe cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Sri_Lanka-Broken_Orange_Pekoe.jpg/960px-Sri_Lanka-Broken_Orange_Pekoe.jpg', // Ceylon Tea
+  'empanada chilena oven baked beef olive egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Empanada_de_pino.jpg/960px-Empanada_de_pino.jpg', // Empanada de Pino
+  'cazuela chilena chicken beef stew potato corn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Cazuela_de_pollo_chilena_%282021%29.jpg/960px-Cazuela_de_pollo_chilena_%282021%29.jpg', // Cazuela
+  'pastel de choclo chilean corn pie beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Pastel_de_choclo.jpg/960px-Pastel_de_choclo.jpg', // Pastel de Choclo
+  'completo chilean hot dog avocado sauerkraut mayo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Completo_italiano_-_Flickr_-_B%C3%A1rb_Santelices.jpg/960px-Completo_italiano_-_Flickr_-_B%C3%A1rb_Santelices.jpg', // Completo
+  'curanto chiloé earth pit seafood shellfish potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Curanto_al_Hoyo_Chilo%C3%A9.JPG/960px-Curanto_al_Hoyo_Chilo%C3%A9.JPG', // Curanto
+  'pisco sour chilean cocktail lemon egg white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Pisco_sour_20100613b.JPG/960px-Pisco_sour_20100613b.JPG', // Pisco Sour
+  'sopaipillas chilean fried pumpkin bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Sopaipillas_con_Chancho_en_Piedra.jpg/960px-Sopaipillas_con_Chancho_en_Piedra.jpg', // Sopaipillas
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2447,4 +2493,50 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Brennivín', file: 'Brennevin 500ml bottle on the table with various icelandic foods in background.jpg', author: 'Alexander Grebenkov', license: 'CC BY 3.0' },
   { word: 'Hangikjöt', file: 'Hangikjöt.jpg', author: 'Martin Sønderlev Christensen', license: 'CC BY-SA 2.0' },
   { word: 'Pylsur', file: 'Hot dog from Bæjarins Beztu Pylsur.jpg', author: 'Jschildk', license: 'CC BY-SA 3.0' },
+  { word: 'Koshari', file: 'Egyptian food Koshary.jpg', author: 'Dina Said', license: 'CC BY-SA 4.0' },
+  { word: 'Ful Medames', file: 'Ful Medames.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Molokhia', file: 'Molokheya hi res.JPG', author: 'Yosi I', license: 'CC BY 2.5' },
+  { word: 'Hawawshi', file: 'Egyptian meatloaf.jpg', author: 'Mkevy', license: 'CC BY-SA 4.0' },
+  { word: 'Feteer Meshaltet', file: 'Egyptian-food-16.jpg', author: 'Mohamed Ouda', license: 'CC BY-SA 4.0' },
+  { word: 'Om Ali', file: 'Umm Ali.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Basbousa', file: 'Basboosa.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Fattah', file: 'Egyptian Fattah.jpg', author: 'Oh127', license: 'CC BY-SA 4.0' },
+  { word: 'Shawarma', file: 'Shawarma-sandwich-01.jpg', author: 'Vera Yu and David Li', license: 'CC BY 2.0' },
+  { word: 'Kofta', file: 'Koftet-el-hati.jpg', author: 'Turnopoems', license: 'CC BY-SA 4.0' },
+  { word: 'Mahshi', file: 'EgyptianMahshyStuffedAubergineTomatoWithRice PhotoByWaelNawara.jpg', author: 'Wael Nawara', license: 'CC BY-SA 4.0' },
+  { word: 'Pelmeni', file: 'Pelmeni Russian.jpg', author: 'Eugene Kim', license: 'CC BY 2.0' },
+  { word: 'Beef Stroganoff', file: 'Beef Stroganoff & Egg Noodles.jpg', author: 'Buck', license: 'CC BY 2.0' },
+  { word: 'Blini', file: 'Singer Café - Blini with sour cream and red caviar IMG 3424.JPG', author: 'Deror avi', license: 'CC BY-SA 3.0' },
+  { word: 'Olivier Salad', file: 'Салат Оливье 03.jpg', author: 'Pannet', license: 'CC BY-SA 4.0' },
+  { word: 'Shchi', file: 'Schi.jpg', author: 'Шнапс', license: 'Public domain' },
+  { word: 'Pirozhki', file: 'Piroshki.JPG', author: 'Evilmonkey0013', license: 'CC BY 3.0' },
+  { word: 'Solyanka', file: 'Soljanka food 05.jpg', author: 'Pannet', license: 'CC BY 4.0' },
+  { word: 'Okroshka', file: 'Окрошка Okroshka 05.jpg', author: 'Nikkolo', license: 'CC BY-SA 3.0' },
+  { word: 'Medovik', file: 'Medovik.jpg', author: 'Edinburgh blog', license: 'CC BY 2.0' },
+  { word: 'Syrniki', file: 'Syrniki6.jpg', author: 'Tatyana Morozyuk', license: 'CC BY-SA 3.0' },
+  { word: 'Kvass', file: 'Mint bread kvas.jpg', author: 'Mr.Icon', license: 'CC BY-SA 3.0' },
+  { word: 'Kasha', file: 'Гречневая каша.jpg', author: 'Laitr Keiows', license: 'CC BY-SA 3.0' },
+  { word: 'Holodets', file: 'Aspic-with-eggs.jpg', author: 'Anthony Georgeff', license: 'CC BY 2.0' },
+  { word: 'Salmon', file: 'Grilled plated salmon fillet.jpg', author: 'DanaTentis', license: 'CC0' },
+  { word: 'King Crab', file: 'Alaskan King Crab Legs (3241225745).jpg', author: 'missbossy', license: 'CC BY 2.0' },
+  { word: 'Halibut', file: 'Grilled halibut with smoked Chilliwack corn puree, faro verde risotto, campari tomato chutney, and bitter green salad.jpg', author: 'ppacificvancouver', license: 'CC BY 2.0' },
+  { word: 'Akutaq', file: 'Akutaq.jpg', author: 'Matyáš Havel', license: 'CC BY-SA 3.0' },
+  { word: 'Bannock', file: 'Bannock 3.JPG', author: 'Skorp', license: 'CC0' },
+  { word: 'Fireweed Honey', file: 'Мёд иван-чая узколистного (honey of fireweed).jpg', author: 'Vladlen Terezhe', license: 'CC BY-SA 4.0' },
+  { word: 'Reindeer Sausage', file: 'Buttermilk pancake and reindeer sausage (2526754309).jpg', author: 'WordRidden', license: 'CC BY 2.0' },
+  { word: 'Muktuk', file: '2013-365-282 Mmmmm Muktuk (10184839444).jpg', author: 'cogdogblog', license: 'CC BY 2.0' },
+  { word: 'String Hoppers', file: 'Idiyappam in plate 1.jpg', author: 'Ramesh NG', license: 'CC BY-SA 2.0' },
+  { word: 'Rice and Curry', file: 'Sri Lankan Rice and Curry.jpg', author: 'Lankan Foodie', license: 'CC BY-SA 4.0' },
+  { word: 'Hoppers', file: 'Sri Lanka-Egg hoppers.jpg', author: 'Ji-Elle', license: 'CC BY-SA 3.0' },
+  { word: 'Kottu Roti', file: 'Chicken Kottu.jpg', author: 'Dan arndt', license: 'CC BY-SA 4.0' },
+  { word: 'Lamprais', file: 'Lamprais (2).jpg', author: 'Dan arndt', license: 'CC BY-SA 4.0' },
+  { word: 'Pol Sambol', file: 'Pol Sambol.jpg', author: 'Dan arndt', license: 'CC BY-SA 4.0' },
+  { word: 'Ceylon Tea', file: 'Sri Lanka-Broken Orange Pekoe.jpg', author: 'Ji-Elle', license: 'CC BY-SA 3.0' },
+  { word: 'Empanada de Pino', file: 'Empanada de pino.jpg', author: 'J B', license: 'CC BY 2.0' },
+  { word: 'Cazuela', file: 'Cazuela de pollo chilena (2021).jpg', author: 'LuisCG11', license: 'CC BY-SA 4.0' },
+  { word: 'Pastel de Choclo', file: 'Pastel de choclo.jpg', author: 'Paloma Baytelman', license: 'CC BY-SA 2.0' },
+  { word: 'Completo', file: 'Completo italiano - Flickr - Bárb Santelices.jpg', author: 'Bárb Santelices', license: 'CC0' },
+  { word: 'Curanto', file: 'Curanto al Hoyo Chiloé.JPG', author: 'Fabiola Cárcamo', license: 'CC BY-SA 3.0' },
+  { word: 'Pisco Sour', file: 'Pisco sour 20100613b.JPG', author: 'Dtarazona', license: 'CC BY-SA 4.0' },
+  { word: 'Sopaipillas', file: 'Sopaipillas con Chancho en Piedra.jpg', author: 'Mariel.loyola', license: 'CC BY-SA 4.0' },
 ];
