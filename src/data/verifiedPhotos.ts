@@ -1512,6 +1512,15 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'sancocho panamanian chicken soup yuca corn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Sancocho_de_gallina.jpg/500px-Sancocho_de_gallina.jpg', // Sancocho Panameño
   'ropa vieja shredded beef stew cuban': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/RealRopaVieja.jpg/960px-RealRopaVieja.jpg', // Ropa Vieja
   'ceviche panamanian fish lime onion cilantro': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG', // Ceviche Panameño
+  'mangu dominican mashed plantains butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Dominican_Mangu.jpg/960px-Dominican_Mangu.jpg', // Mangú
+  'sancocho dominican stew seven meats': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Sancocho_dominican.jpg/960px-Sancocho_dominican.jpg', // Sancocho Dominicano
+  'flying fish cou cou barbadian national dish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/COO_COOO.jpg/960px-COO_COOO.jpg', // Flying Fish & Cou-Cou
+  'fish cakes barbadian saltfish fritters fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Fish_cakes_food_dinner.jpg/960px-Fish_cakes_food_dinner.jpg', // Fish Cakes
+  'skerpikjot faroese wind dried mutton': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Skerpikj%C3%B8t_%282%29.jpg/960px-Skerpikj%C3%B8t_%282%29.jpg', // Skerpikjøt
+  'arctic char fish pink fillet grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Arctic_charr_smoked_fillet_%28cropped%29.jpg/960px-Arctic_charr_smoked_fillet_%28cropped%29.jpg', // Arctic Char
+  'kiviak greenlandic fermented auk bird traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Alle_alle_08%28js%29%2C_Hornsund.jpg/960px-Alle_alle_08%28js%29%2C_Hornsund.jpg', // Kiviak
+  'majboos omani spiced rice meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Kabsa.jpg/960px-Kabsa.jpg', // Majboos
+  'omani halwa rosewater saffron jelly sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Omani_Halwa_with_saffron.jpg/960px-Omani_Halwa_with_saffron.jpg', // Omani Halwa
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2987,4 +2996,13 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Sancocho Panameño', file: 'Sancocho de gallina.jpg', author: 'Luis Angel Camargo', license: 'CC BY-SA 2.0' },
   { word: 'Ropa Vieja', file: 'RealRopaVieja.jpg', author: 'TGrey89', license: 'CC0' },
   { word: 'Ceviche Panameño', file: 'Cebiche de corvina.JPG', author: 'Picanteria karol', license: 'CC BY-SA 4.0' },
+  { word: 'Mangú', file: 'Dominican Mangu.jpg', author: 'Ll1324', license: 'CC0' },
+  { word: 'Sancocho Dominicano', file: 'Sancocho dominican.jpg', author: 'Arlene Campusano', license: 'CC BY-SA 4.0' },
+  { word: 'Flying Fish & Cou-Cou', file: 'COO COOO.jpg', author: 'KINGBROBLOXZZZ', license: 'CC BY-SA 4.0' },
+  { word: 'Fish Cakes', file: 'Fish cakes food dinner.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Skerpikjøt', file: 'Skerpikjøt (2).jpg', author: 'Erik Christensen', license: 'CC BY-SA 3.0' },
+  { word: 'Arctic Char', file: 'Arctic charr smoked fillet (cropped).jpg', author: 'Yozh', license: 'CC BY-SA 4.0' },
+  { word: 'Kiviak', file: 'Alle alle 08(js), Hornsund.jpg', author: 'Jerzy Strzelecki', license: 'CC BY-SA 3.0' },
+  { word: 'Majboos', file: 'Kabsa.jpg', author: 'Basel15 at en.wikipedia', license: 'Public domain' },
+  { word: 'Omani Halwa', file: 'Omani Halwa with saffron.jpg', author: 'Slywire', license: 'CC BY-SA 4.0' },
 ];
