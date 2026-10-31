@@ -33,14 +33,11 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'linguado grelhado sole fish grilled portuguese lemon': '', // Linguado Grelhado — no trustworthy photo yet
   'choco frito fried cuttlefish setubal portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tapa_de_Chocos_fritos.jpg/960px-Tapa_de_Chocos_fritos.jpg', // Choco Frito
   'lagosta suada lobster steamed portuguese azores': '', // Lagosta Suada — no trustworthy photo yet
-  'ovos mexidos scrambled eggs tuna portuguese': '', // Ovos Mexidos com Atum — no trustworthy photo yet
   'queijo serra estrela soft sheep cheese portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Queijo_Serra_da_Estrela.jpg/960px-Queijo_Serra_da_Estrela.jpg', // Queijo Serra da Estrela
   'migas alentejo bread pork portuguese side dish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Migas-alentejanas-ricardo.jpg/960px-Migas-alentejanas-ricardo.jpg', // Migas à Alentejana
-  'grelos turnip greens garlic olive oil portuguese': '', // Grelos Salteados — no trustworthy photo yet
   'chourico portuguese smoked sausage paprika': 'https://upload.wikimedia.org/wikipedia/commons/2/25/Chorizos_P6021974.jpg', // Chouriço
   'paio portuguese cured pork shoulder sausage': 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Paios.jpg', // Paio
   'presunto portuguese cured ham charcuterie': 'https://upload.wikimedia.org/wikipedia/commons/4/40/Presunto_de_Chaves.jpg', // Presunto
-  'morcela blood sausage portuguese grilled': '', // Morcela — no trustworthy photo yet
   'broa milho cornbread portuguese dense crusty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Broa_de_milho_%28Portugal%29%2C_Brona_de_millo_%28Galicia%29.jpg/960px-Broa_de_milho_%28Portugal%29%2C_Brona_de_millo_%28Galicia%29.jpg', // Broa de Milho
   'bola berlim portuguese donut custard beach': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Bola_de_Berlim_1_by_wax115.jpg/960px-Bola_de_Berlim_1_by_wax115.jpg', // Bola de Berlim
   'travesseiro sintra almond pastry pillow puff': 'https://upload.wikimedia.org/wikipedia/commons/7/75/Piriquita_%2814401986732%29.jpg', // Travesseiro de Sintra
@@ -82,7 +79,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pastel fried pastry street market brazil filling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Brazilian_pastel.jpg/960px-Brazilian_pastel.jpg', // Pastel
   'esfirra esfiha brazilian arab pastry minced meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sfiha2.jpg/960px-Sfiha2.jpg', // Esfirra
   'tapioca brazilian crepe cassava starch filled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Tapioca_de_trancoso_2.jpg/960px-Tapioca_de_trancoso_2.jpg', // Tapioca
-  'couve refogada kale collard greens garlic brazilian': '', // Couve Refogada — no trustworthy photo yet
   'mandioca frita fried cassava crispy brazil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Mandioca_frita_en_restaurante_de_Argentina.jpg/960px-Mandioca_frita_en_restaurante_de_Argentina.jpg', // Mandioca Frita
   'quindim yellow coconut egg yolk brazilian dessert': 'https://upload.wikimedia.org/wikipedia/commons/4/44/Quindim.jpg', // Quindim
   'beijinho coconut condensed milk truffle sweet brazilian party': 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Beijinho.jpg', // Beijinho
@@ -133,7 +129,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'ajo blanco white gazpacho almond garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Ajo_blanco.jpg/960px-Ajo_blanco.jpg', // Ajo Blanco
   'salmorejo cordoba thick tomato soup egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Salmorejo_cordobes.jpg/960px-Salmorejo_cordobes.jpg', // Salmorejo
   'bacalao pil pil cod basque olive oil garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg/960px-Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg', // Bacalao al Pil-Pil
-  'txangurro spider crab basque stuffed baked': '', // Txangurro — no trustworthy photo yet
   'almejas clams white wine garlic spanish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Almejas_a_la_marinera-2009.jpg/960px-Almejas_a_la_marinera-2009.jpg', // Almejas a la Marinera
   'vieiras scallops galicia baked shell': 'https://upload.wikimedia.org/wikipedia/commons/0/09/Argopecten_irradians.jpg', // Vieiras
   'cochinillo asado roast suckling pig segovian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Cochinillo_asado-Madrid.jpg/960px-Cochinillo_asado-Madrid.jpg', // Cochinillo Asado
@@ -162,7 +157,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'rebujito sherry manzanilla lemonade seville': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Course_-1-_Rebujito_%28cropped%29.jpg/960px-Course_-1-_Rebujito_%28cropped%29.jpg', // Rebujito
   'papas arrugadas wrinkled salt potatoes canary islands mojo sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Papasarrugadas.jpg/960px-Papasarrugadas.jpg', // Papas Arrugadas
   'mojo rojo red sauce canary islands garlic chilli pepper bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Papasarrugadas.jpg/960px-Papasarrugadas.jpg', // Mojo Rojo
-  'ropa vieja stewed shredded beef chickpeas tomato rich sauce canarian': '', // Ropa Vieja Canaria — no trustworthy photo yet
   'almond cream dessert sweet sauce honey canary islands': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/CanaryBienmesabe.jpg/960px-CanaryBienmesabe.jpg', // Bienmesabe
   'paella spanish rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/960px-01_Paella_Valenciana_original.jpg', // Paella
   'gazpacho cold soup spanish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Gazpacho_Malague%C3%B1o_con_su_%E2%80%9Cpica%C3%ADto%E2%80%9D_-_Moreno%2C_Playa_Burriana_%28cropped%29.jpg/960px-Gazpacho_Malague%C3%B1o_con_su_%E2%80%9Cpica%C3%ADto%E2%80%9D_-_Moreno%2C_Playa_Burriana_%28cropped%29.jpg', // Gazpacho
@@ -370,7 +364,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'udon noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg', // Udon
   'tonkatsu pork cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg', // Tonkatsu
   'teriyaki chicken glaze': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Teriyaki_003.jpg/960px-Teriyaki_003.jpg', // Teriyaki
-  'ponzu citrus soy sauce japanese dipping': '', // Ponzu — no trustworthy photo yet
   'dosa south indian crispy crepe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Masala_dosa_01.jpg/960px-Masala_dosa_01.jpg', // Dosa
   'idli steamed rice cake south indian': 'https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG', // Idli
   'chana masala chickpea curry indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Chana_masala.jpg/960px-Chana_masala.jpg', // Chana Masala
@@ -850,7 +843,6 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'argan oil moroccan culinary bottle nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Huile_d%27argan_010.JPG/960px-Huile_d%27argan_010.JPG', // Argan Oil
   'tagine moroccan stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Moroccan_dinner-02.jpg/960px-Moroccan_dinner-02.jpg', // Tagine
   'couscous moroccan vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg', // Couscous
-  'moroccan mallow salad herb lemon olive oil': '', // Khoubiza — no trustworthy photo yet
   'bun cha vietnamese grilled pork noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg/960px-B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg', // Bun Cha
   'goi cuon vietnamese fresh spring rolls': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Homemade_spring_rolls_%287010969349%29.jpg/960px-Homemade_spring_rolls_%287010969349%29.jpg', // Goi Cuon
   'banh xeo vietnamese sizzling crepe shrimp': 'https://upload.wikimedia.org/wikipedia/commons/5/59/Banh_Xeo_with_fish_sauce_and_vegetables.jpg', // Banh Xeo
@@ -1531,6 +1523,25 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'lovo fijian earth oven feast banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Lovo.jpg/960px-Lovo.jpg', // Lovo
   'palusami samoan taro leaves coconut cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Laulau_unwrapped_with_coconut_cream_and_onions.jpg/960px-Laulau_unwrapped_with_coconut_cream_and_onions.jpg', // Palusami
   'umu samoan earth oven taro pig feast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Umu_in_Samoa_-_removing_rocks.jpeg/960px-Umu_in_Samoa_-_removing_rocks.jpeg', // Umu Feast
+  'poisson cru tahitian raw fish coconut lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Poisson_cru_%C3%A0_la_tahitienne.jpg/960px-Poisson_cru_%C3%A0_la_tahitienne.jpg', // Poisson Cru
+  'hangi maori earth oven new zealand steam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/H%C4%81ngi_dinner.jpg/960px-H%C4%81ngi_dinner.jpg', // Hāngī
+  'ika mata cook islands raw fish coconut lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ika_mata.jpg/960px-Ika_mata.jpg', // Ika Mata
+  'rougail saucisses reunion sausage tomato chili': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bourbon_Saveur_974_%28Belley%29_-_rougail_saucisses.jpg/960px-Bourbon_Saveur_974_%28Belley%29_-_rougail_saucisses.jpg', // Rougail Saucisses
+  'carry poulet reunion creole chicken curry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Carry_de_poulet_004.jpg/960px-Carry_de_poulet_004.jpg', // Carry Poulet
+  'ovos mexidos scrambled eggs tuna portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Scrambled-Eggs-And-Tuna-On-Toast-2007.jpg/960px-Scrambled-Eggs-And-Tuna-On-Toast-2007.jpg', // Ovos Mexidos com Atum
+  'grelos turnip greens garlic olive oil portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Grelos_al_febrer.jpg/960px-Grelos_al_febrer.jpg', // Grelos Salteados
+  'morcela blood sausage portuguese grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/20260915_Blood_sausage_in_Minsk.jpg/960px-20260915_Blood_sausage_in_Minsk.jpg', // Morcela
+  'ponzu citrus soy sauce japanese dipping': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Ponzu_sauce_%E3%83%9D%E3%83%B3%E9%85%A23.jpg/960px-Ponzu_sauce_%E3%83%9D%E3%83%B3%E9%85%A23.jpg', // Ponzu
+  'moroccan mallow salad herb lemon olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Khobiza_03.jpg/960px-Khobiza_03.jpg', // Khoubiza
+  'musakhan palestinian sumac chicken flatbread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Musakhan.jpg/960px-Musakhan.jpg', // Musakhan
+  'fatteh lebanese pita chickpea yogurt pine nuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Hummus_Fatteh_with_Meat.jpg/960px-Hummus_Fatteh_with_Meat.jpg', // Fatteh
+  'mansaf jordanian lamb yogurt jameed rice bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Mansaf_1.jpg/960px-Mansaf_1.jpg', // Mansaf
+  'maqluba upside down rice eggplant chicken': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Makluba.JPG/960px-Makluba.JPG', // Maqluba
+  'sopa paraguaya cornbread cheese baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Sopa_Paraguaya_2.jpg/500px-Sopa_Paraguaya_2.jpg', // Sopa Paraguaya
+  'chipa paraguayan cheese bread ring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Chipa_Paraguay.jpg/960px-Chipa_Paraguay.jpg', // Chipá
+  'couve refogada kale collard greens garlic brazilian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Collard-Greens-Bundle.jpg/960px-Collard-Greens-Bundle.jpg', // Couve Refogada
+  'txangurro spider crab basque stuffed baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Txangurro_betea.jpg/960px-Txangurro_betea.jpg', // Txangurro
+  'ropa vieja stewed shredded beef chickpeas tomato rich sauce canarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG/960px-Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG', // Ropa Vieja Canaria
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3025,4 +3036,23 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Lovo', file: 'Lovo.jpg', author: 'Jaejay77', license: 'CC BY-SA 4.0' },
   { word: 'Palusami', file: 'Laulau unwrapped with coconut cream and onions.jpg', author: 'Chedlund808', license: 'CC BY-SA 4.0' },
   { word: 'Umu Feast', file: 'Umu in Samoa - removing rocks.jpeg', author: 'Polynesian Xplorer', license: 'CC BY 2.0' },
+  { word: 'Poisson Cru', file: 'Poisson cru à la tahitienne.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Hāngī', file: 'Hāngi dinner.jpg', author: 'einalem', license: 'CC BY-SA 2.0' },
+  { word: 'Ika Mata', file: 'Ika mata.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Rougail Saucisses', file: 'Bourbon Saveur 974 (Belley) - rougail saucisses.jpg', author: 'Benoît Prieur', license: 'CC0' },
+  { word: 'Carry Poulet', file: 'Carry de poulet 004.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Ovos Mexidos com Atum', file: 'Scrambled-Eggs-And-Tuna-On-Toast-2007.jpg', author: 'Kham Tran - www.khamtran.com', license: 'CC BY-SA 3.0' },
+  { word: 'Grelos Salteados', file: 'Grelos al febrer.jpg', author: 'Victor M. Vicente Selvas', license: 'Public domain' },
+  { word: 'Morcela', file: '20260915 Blood sausage in Minsk.jpg', author: 'Sergey A. Demidov', license: 'CC BY 4.0' },
+  { word: 'Ponzu', file: 'Ponzu sauce ポン酢3.jpg', author: 'Valenzuela400', license: 'CC BY-SA 4.0' },
+  { word: 'Khoubiza', file: 'Khobiza 03.jpg', author: 'school Fadhline Monastir', license: 'CC BY 4.0' },
+  { word: 'Musakhan', file: 'Musakhan.jpg', author: 'Amaiursancho5', license: 'CC BY-SA 4.0' },
+  { word: 'Fatteh', file: 'Hummus Fatteh with Meat.jpg', author: 'روتانا', license: 'CC BY 4.0' },
+  { word: 'Mansaf', file: 'Mansaf 1.jpg', author: 'Abdulla aljammal', license: 'CC BY-SA 4.0' },
+  { word: 'Maqluba', file: 'Makluba.JPG', author: 'Arafataslan', license: 'Public domain' },
+  { word: 'Sopa Paraguaya', file: 'Sopa Paraguaya 2.jpg', author: 'Aterovi', license: 'Public domain' },
+  { word: 'Chipá', file: 'Chipa Paraguay.jpg', author: 'Ekem at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Couve Refogada', file: 'Collard-Greens-Bundle.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Txangurro', file: 'Txangurro betea.jpg', author: 'Gaztarrotz', license: 'CC BY-SA 4.0' },
+  { word: 'Ropa Vieja Canaria', file: 'Ropa vieja Canarian style in Fataga, Gran Canaria, the Canary Islands.JPG', author: 'Kpjas', license: 'CC BY-SA 4.0' },
 ];
