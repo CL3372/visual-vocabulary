@@ -1463,6 +1463,24 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'curtido salvadoran fermented cabbage slaw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Curtido_para_pupusa_en_San_Salvador.jpg/960px-Curtido_para_pupusa_en_San_Salvador.jpg', // Curtido
   'yuca frita fried cassava chicharron': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Yuca_frita.jpg/960px-Yuca_frita.jpg', // Yuca Frita
   'sopa de pata salvadoran cow trotter soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sopa_de_pata.jpg/960px-Sopa_de_pata.jpg', // Sopa de Pata
+  'baleadas honduran tortilla beans cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Baleada.jpg/500px-Baleada.jpg', // Baleadas
+  'sopa de caracol conch coconut soup honduran': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%22Sopa_de_Caracol%22.jpg/500px-%22Sopa_de_Caracol%22.jpg', // Sopa de Caracol
+  'gallo pinto rice black beans central american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Gallo_Pinto.jpg/960px-Gallo_Pinto.jpg', // Gallo Pinto
+  'vigoron nicaraguan yuca chicharron cabbage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/VIGORON.JPG/960px-VIGORON.JPG', // Vigorón
+  'nacatamal nicaraguan large corn masa pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Nicaraguan_Nacatamal.jpg/500px-Nicaraguan_Nacatamal.jpg', // Nacatamal
+  'indio viejo nicaraguan corn beef stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Indio-viejo-nicaraguense.jpg/960px-Indio-viejo-nicaraguense.jpg', // Indio Viejo
+  'casado costa rican plate rice beans meat salad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Casado_Tico.jpg/960px-Casado_Tico.jpg', // Casado
+  'olla de carne costa rican beef vegetable stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Olla_de_carne.jpg/960px-Olla_de_carne.jpg', // Olla de Carne
+  'tres leches cake milk soaked white cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Tres_Leches_Cake_%284%29.jpg/960px-Tres_Leches_Cake_%284%29.jpg', // Tres Leches
+  'chifrijo costa rican chicharron rice beans': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Chifrijo_tico.jpg/960px-Chifrijo_tico.jpg', // Chifrijo
+  'doubles trinidad fried bara chickpea curry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/FOOD_Doubles_2.jpg/960px-FOOD_Doubles_2.jpg', // Doubles
+  'pelau trinidadian caramel chicken rice peas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Trinidadian_Chicken_Pelau_%2815399269506%29.jpg/500px-Trinidadian_Chicken_Pelau_%2815399269506%29.jpg', // Pelau
+  'callaloo caribbean taro leaf green stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg', // Callaloo
+  'bake and shark trinidadian fried bread sandwich': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/MISC_Bake_%26_Shark.jpg/960px-MISC_Bake_%26_Shark.jpg', // Bake and Shark
+  'mofongo puerto rican mashed plantain garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Mofongo.jpg/960px-Mofongo.jpg', // Mofongo
+  'pernil puerto rican roast pork shoulder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Pernil.1.jpg/960px-Pernil.1.jpg', // Pernil
+  'arroz con gandules puerto rican rice pigeon peas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Arrozcongandules2.jpg/500px-Arrozcongandules2.jpg', // Arroz con Gandules
+  'tembleque puerto rican coconut pudding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tembleque_-_coconut_pudding.jpg/500px-Tembleque_-_coconut_pudding.jpg', // Tembleque
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2889,4 +2907,22 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Curtido', file: 'Curtido para pupusa en San Salvador.jpg', author: 'Rick McCharles', license: 'CC BY 2.0' },
   { word: 'Yuca Frita', file: 'Yuca frita.jpg', author: 'Francesc Fort', license: 'CC BY-SA 4.0' },
   { word: 'Sopa de Pata', file: 'Sopa de pata.jpg', author: 'Mima', license: 'CC BY 2.0' },
+  { word: 'Baleadas', file: 'Baleada.jpg', author: 'Ipaz0185', license: 'CC BY-SA 3.0' },
+  { word: 'Sopa de Caracol', file: '"Sopa de Caracol".jpg', author: 'Jislorimers', license: 'CC BY-SA 4.0' },
+  { word: 'Gallo Pinto', file: 'Gallo Pinto.jpg', author: 'Gmasmcal', license: 'CC BY 4.0' },
+  { word: 'Vigorón', file: 'VIGORON.JPG', author: 'Nicaraguan food', license: 'Public domain' },
+  { word: 'Nacatamal', file: 'Nicaraguan Nacatamal.jpg', author: 'MiguelRamirez77', license: 'CC BY-SA 4.0' },
+  { word: 'Indio Viejo', file: 'Indio-viejo-nicaraguense.jpg', author: 'MiguelRamirez77', license: 'CC BY-SA 4.0' },
+  { word: 'Casado', file: 'Casado Tico.jpg', author: 'Richie Diesterheft', license: 'CC BY 2.0' },
+  { word: 'Olla de Carne', file: 'Olla de carne.jpg', author: 'Rodtico21', license: 'CC BY-SA 3.0' },
+  { word: 'Tres Leches', file: 'Tres Leches Cake (4).jpg', author: 'Hungry Dudes', license: 'CC BY 2.0' },
+  { word: 'Chifrijo', file: 'Chifrijo tico.jpg', author: 'Aleat88', license: 'CC BY-SA 4.0' },
+  { word: 'Doubles', file: 'FOOD Doubles 2.jpg', author: 'Grueslayer', license: 'CC BY-SA 4.0' },
+  { word: 'Pelau', file: 'Trinidadian Chicken Pelau (15399269506).jpg', author: 'Arnold Gatilao', license: 'CC BY 2.0' },
+  { word: 'Callaloo', file: 'Callaloo.jpg', author: '67276179@N08 (Flickr)', license: 'CC BY 2.0' },
+  { word: 'Bake and Shark', file: 'MISC Bake & Shark.jpg', author: 'Grueslayer', license: 'CC BY-SA 4.0' },
+  { word: 'Mofongo', file: 'Mofongo.jpg', author: 'Diane', license: 'CC BY 2.0' },
+  { word: 'Pernil', file: 'Pernil.1.jpg', author: 'Ekem', license: 'CC BY-SA 4.0' },
+  { word: 'Arroz con Gandules', file: 'Arrozcongandules2.jpg', author: 'Portorricensis', license: 'Public domain' },
+  { word: 'Tembleque', file: 'Tembleque - coconut pudding.jpg', author: 'Arnold Gatilao', license: 'CC BY 2.0' },
 ];
