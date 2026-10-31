@@ -1288,6 +1288,58 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'curanto chiloé earth pit seafood shellfish potato': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Curanto_al_Hoyo_Chilo%C3%A9.JPG/960px-Curanto_al_Hoyo_Chilo%C3%A9.JPG', // Curanto
   'pisco sour chilean cocktail lemon egg white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Pisco_sour_20100613b.JPG/960px-Pisco_sour_20100613b.JPG', // Pisco Sour
   'sopaipillas chilean fried pumpkin bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Sopaipillas_con_Chancho_en_Piedra.jpg/960px-Sopaipillas_con_Chancho_en_Piedra.jpg', // Sopaipillas
+  'ajiaco colombian chicken potato soup cream capers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ajiaco_in_Bogot%C3%A1.jpg/960px-Ajiaco_in_Bogot%C3%A1.jpg', // Ajiaco
+  'bandeja paisa colombian platter beans rice pork egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bandeja_paisa_30062011.jpg/960px-Bandeja_paisa_30062011.jpg', // Bandeja Paisa
+  'arepa colombian corn cake grilled cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Arepas_1.jpg/960px-Arepas_1.jpg', // Arepa
+  'sancocho colombian chicken stew yuca plantain corn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sancocho_de_gallina_yopal.jpg/960px-Sancocho_de_gallina_yopal.jpg', // Sancocho
+  'aguardiente colombian anise liquor shot glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Aguardiente_Antioque%C3%B1o_botellas.jpg/960px-Aguardiente_Antioque%C3%B1o_botellas.jpg', // Aguardiente
+  'bunuelo colombian cheese fritter christmas round': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Bu%C3%B1uelos_Colombianos_%2824221303805%29.jpg/960px-Bu%C3%B1uelos_Colombianos_%2824221303805%29.jpg', // Buñuelo
+  'changua colombian milk soup egg breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Changua_Soup.jpg/960px-Changua_Soup.jpg', // Changua
+  'lechona colombian stuffed roast pig': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Lechona.JPG/960px-Lechona.JPG', // Lechona
+  'pierogi polish dumplings boiled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pierogi_z_mas%C5%82em_-_2023.03.31.jpg/960px-Pierogi_z_mas%C5%82em_-_2023.03.31.jpg', // Pierogi
+  'bigos hunter stew sauerkraut polish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Bigos%2C_March_2023_%281%29.jpg/960px-Bigos%2C_March_2023_%281%29.jpg', // Bigos
+  'zurek sour rye soup polish egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/02026_Gut-Healing_Sour_Rye_Soup_with_a_Collagen_Broth.jpg/960px-02026_Gut-Healing_Sour_Rye_Soup_with_a_Collagen_Broth.jpg', // Żurek
+  'barszcz beetroot borscht polish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Barszcz_czerwony_-_2.jpg/960px-Barszcz_czerwony_-_2.jpg', // Barszcz
+  'kotlet schabowy breaded pork cutlet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Kotlet_Schabowy.jpg/960px-Kotlet_Schabowy.jpg', // Kotlet Schabowy
+  'golabki stuffed cabbage rolls polish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Golabki_jacek.jpg/960px-Golabki_jacek.jpg', // Gołąbki
+  'kielbasa polish sausage grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Polish_sausage%2C_Pozna%C5%84_2014.jpg/960px-Polish_sausage%2C_Pozna%C5%84_2014.jpg', // Kiełbasa
+  'oscypek smoked cheese polish mountain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Oscypek_z_grilla.jpg/960px-Oscypek_z_grilla.jpg', // Oscypek
+  'makowiec poppy seed roll polish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/020211119_160347_silesian_poppy_seed_cake.jpg/960px-020211119_160347_silesian_poppy_seed_cake.jpg', // Makowiec
+  'sernik polish cheesecake baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/2023_Sernik_polski_%281%29.jpg/960px-2023_Sernik_polski_%281%29.jpg', // Sernik
+  'rosol polish chicken broth noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/20221127_ros%C3%B3%C5%82_04.jpg/960px-20221127_ros%C3%B3%C5%82_04.jpg', // Rosół
+  'placki ziemniaczane potato pancakes polish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Potato_pancakes.jpg/960px-Potato_pancakes.jpg', // Placki Ziemniaczane
+  'poke bowl hawaii ahi tuna sesame seaweed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Poke_bowl_001.jpg/960px-Poke_bowl_001.jpg', // Poke
+  'hawaiian plate lunch macaroni salad two scoops rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Wardsplatelunch.jpg/960px-Wardsplatelunch.jpg', // Plate Lunch
+  'kalua pig imu underground oven hawaii shredded pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Homemade_Kalua_Pig.jpg/960px-Homemade_Kalua_Pig.jpg', // Kalua Pig
+  'loco moco hawaii hamburger rice egg gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Loco_moco_001.jpg/960px-Loco_moco_001.jpg', // Loco Moco
+  'spam musubi hawaii sushi seaweed rice can': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Spam_musubi_001.jpg/960px-Spam_musubi_001.jpg', // Spam Musubi
+  'shave ice hawaii rainbow syrup azuki matcha': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Hilo_Ice_Shave.JPG/960px-Hilo_Ice_Shave.JPG', // Shave Ice
+  'poi taro paste purple hawaiian traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Bowl_of_poi.jpg/960px-Bowl_of_poi.jpg', // Poi
+  'lomi lomi salmon hawaiian tomato salt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Lomi_lomi_salmon.jpg/960px-Lomi_lomi_salmon.jpg', // Lomi Salmon
+  'haupia hawaiian coconut pudding white square': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Haupia.jpg/960px-Haupia.jpg', // Haupia
+  'poutine canadian fries cheese curds gravy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Poutine_from_Windsor%2C_ON.jpg/960px-Poutine_from_Windsor%2C_ON.jpg', // Poutine
+  'butter tarts canadian golden sweet pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Butter_tarts_on_cutting_board%288293490785%29.jpg/960px-Butter_tarts_on_cutting_board%288293490785%29.jpg', // Butter Tarts
+  'nanaimo bars canadian chocolate custard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Nanaimo_Bars%2C_stacked.jpg/960px-Nanaimo_Bars%2C_stacked.jpg', // Nanaimo Bars
+  'tourtiere quebec meat pie christmas pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Warm_Tourtiere.jpg/960px-Warm_Tourtiere.jpg', // Tourtière
+  'beaver tails canadian fried pastry cinnamon sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Three_BeaverTails_pastry_flavours.jpg/960px-Three_BeaverTails_pastry_flavours.jpg', // BeaverTails
+  'montreal smoked meat sandwich rye bread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Smoked_meat_sandwich.jpg/960px-Smoked_meat_sandwich.jpg', // Montreal Smoked Meat
+  'bannock indigenous canadian bread fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bannock_3.JPG/960px-Bannock_3.JPG', // Bannock
+  'peameal bacon canadian back bacon cornmeal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Flickr_bokchoi-snowpea_4266923676--Roast_peameal_bacon.jpg/960px-Flickr_bokchoi-snowpea_4266923676--Roast_peameal_bacon.jpg', // Peameal Bacon
+  'saskatoon berry pie canadian prairie purple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Saskatoon_berry_pie_served_at_The_Berry_Barn_outside_Saskatoon.jpg/960px-Saskatoon_berry_pie_served_at_The_Berry_Barn_outside_Saskatoon.jpg', // Saskatoon Berry Pie
+  'newfoundland salt cod dried bread brewis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/FishAndBrewisWithScrunchions.jpg/960px-FishAndBrewisWithScrunchions.jpg', // Fish and Brewis
+  'wild pacific salmon cedar plank barbecue canada': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Cedar_Plank_Salmon_with_Balsamic_Ginger_Marinade_%2828836223862%29.jpg/960px-Cedar_Plank_Salmon_with_Balsamic_Ginger_Marinade_%2828836223862%29.jpg', // Wild Salmon
+  'maple taffy sugar shack snow tire canada': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Maple_toffee.JPG/500px-Maple_toffee.JPG', // Maple Syrup Taffy
+  'jollof rice west african tomato spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg', // Jollof Rice
+  'egusi soup melon seed nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Egusi_soup_in_a_plate.jpg/960px-Egusi_soup_in_a_plate.jpg', // Egusi Soup
+  'pounded yam nigerian dough white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pounded_yam_%28Iy%C3%A0n%29.jpg/960px-Pounded_yam_%28Iy%C3%A0n%29.jpg', // Pounded Yam
+  'suya nigerian spiced beef skewer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SuyavarietiesTX.JPG/960px-SuyavarietiesTX.JPG', // Suya
+  'akara black eyed pea fritters nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Beans_Ball-Akara.jpg/500px-Beans_Ball-Akara.jpg', // Akara
+  'moi moi steamed bean pudding nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Moin-Moin-good.jpg/960px-Moin-Moin-good.jpg', // Moi Moi
+  'pepper soup nigerian spicy broth meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Fish_pepper_soup.jpg/960px-Fish_pepper_soup.jpg', // Pepper Soup
+  'ogbono soup wild mango seed nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Ogbono_soup.jpg/960px-Ogbono_soup.jpg', // Ogbono Soup
+  'puff puff nigerian fried dough balls': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Nigerian-puff-puff-recipe_cropped.jpg/500px-Nigerian-puff-puff-recipe_cropped.jpg', // Puff Puff
+  'eba garri cassava nigerian dough': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Nigerian_Garri_%28Eba%29_and_Egusi_Soup.jpg/960px-Nigerian_Garri_%28Eba%29_and_Egusi_Soup.jpg', // Eba
+  'banga soup palm nut nigerian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eba_served_with_Fresh_fish_banga_soup_in_a_clay_pot.jpg/960px-Eba_served_with_Fresh_fish_banga_soup_in_a_clay_pot.jpg', // Banga Soup
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2539,4 +2591,56 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Curanto', file: 'Curanto al Hoyo Chiloé.JPG', author: 'Fabiola Cárcamo', license: 'CC BY-SA 3.0' },
   { word: 'Pisco Sour', file: 'Pisco sour 20100613b.JPG', author: 'Dtarazona', license: 'CC BY-SA 4.0' },
   { word: 'Sopaipillas', file: 'Sopaipillas con Chancho en Piedra.jpg', author: 'Mariel.loyola', license: 'CC BY-SA 4.0' },
+  { word: 'Ajiaco', file: 'Ajiaco in Bogotá.jpg', author: 'Bernard Gagnon', license: 'CC BY-SA 4.0' },
+  { word: 'Bandeja Paisa', file: 'Bandeja paisa 30062011.jpg', author: 'Dtarazona', license: 'CC BY-SA 3.0' },
+  { word: 'Arepa', file: 'Arepas 1.jpg', author: 'Debray05', license: 'CC0' },
+  { word: 'Sancocho', file: 'Sancocho de gallina yopal.jpg', author: 'Daniestrella123', license: 'CC BY-SA 4.0' },
+  { word: 'Aguardiente', file: 'Aguardiente Antioqueño botellas.jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Buñuelo', file: 'Buñuelos Colombianos (24221303805).jpg', author: 'John Alexis Guerra Gómez', license: 'CC BY-SA 2.0' },
+  { word: 'Changua', file: 'Changua Soup.jpg', author: 'Jorvato', license: 'CC BY-SA 4.0' },
+  { word: 'Lechona', file: 'Lechona.JPG', author: 'Tamorlan', license: 'CC BY-SA 3.0' },
+  { word: 'Pierogi', file: 'Pierogi z masłem - 2023.03.31.jpg', author: 'Aw58', license: 'CC BY-SA 4.0' },
+  { word: 'Bigos', file: 'Bigos, March 2023 (1).jpg', author: 'MichalPL', license: 'CC BY-SA 4.0' },
+  { word: 'Żurek', file: '02026 Gut-Healing Sour Rye Soup with a Collagen Broth.jpg', author: 'Marsilar', license: 'CC BY-SA 4.0' },
+  { word: 'Barszcz', file: 'Barszcz czerwony - 2.jpg', author: 'Игорь Хмиловский', license: 'CC0' },
+  { word: 'Kotlet Schabowy', file: 'Kotlet Schabowy.jpg', author: 'Dmitry Dzema', license: 'CC BY-SA 4.0' },
+  { word: 'Gołąbki', file: 'Golabki jacek.jpg', author: 'Jacaldinho1', license: 'Public domain' },
+  { word: 'Kiełbasa', file: 'Polish sausage, Poznań 2014.jpg', author: 'Kapsuglan', license: 'CC BY-SA 4.0' },
+  { word: 'Oscypek', file: 'Oscypek z grilla.jpg', author: 'Аимаина хикари', license: 'CC0' },
+  { word: 'Makowiec', file: '020211119 160347 silesian poppy seed cake.jpg', author: 'Silar', license: 'CC BY-SA 4.0' },
+  { word: 'Sernik', file: '2023 Sernik polski (1).jpg', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Rosół', file: '20221127 rosół 04.jpg', author: 'Abraham', license: 'CC BY-SA 4.0' },
+  { word: 'Placki Ziemniaczane', file: 'Potato pancakes.jpg', author: 'Daniel Spils', license: 'CC BY-SA 2.0' },
+  { word: 'Poke', file: 'Poke bowl 001.jpg', author: 'Arnaud 25', license: 'CC0' },
+  { word: 'Plate Lunch', file: 'Wardsplatelunch.jpg', author: 'Christian Razukas', license: 'CC BY-SA 2.0' },
+  { word: 'Kalua Pig', file: 'Homemade Kalua Pig.jpg', author: 'Pacamah', license: 'CC BY 4.0' },
+  { word: 'Loco Moco', file: 'Loco moco 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Spam Musubi', file: 'Spam musubi 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Shave Ice', file: 'Hilo Ice Shave.JPG', author: 'AlaskaDave', license: 'CC BY-SA 3.0' },
+  { word: 'Poi', file: 'Bowl of poi.jpg', author: 'Bshams', license: 'Public domain' },
+  { word: 'Lomi Salmon', file: 'Lomi lomi salmon.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Haupia', file: 'Haupia.jpg', author: 'Arnold Gatilao', license: 'CC BY 2.0' },
+  { word: 'Poutine', file: 'Poutine from Windsor, ON.jpg', author: 'Antonydstevens', license: 'CC0' },
+  { word: 'Butter Tarts', file: 'Butter tarts on cutting board(8293490785).jpg', author: 'Rob Campbell', license: 'CC BY 2.0' },
+  { word: 'Nanaimo Bars', file: 'Nanaimo Bars, stacked.jpg', author: 'Craig Dugas', license: 'CC BY-SA 2.0' },
+  { word: 'Tourtière', file: 'Warm Tourtiere.jpg', author: 'Craig Dugas', license: 'CC BY-SA 2.0' },
+  { word: 'BeaverTails', file: 'Three BeaverTails pastry flavours.jpg', author: 'BeaverTails', license: 'CC BY-SA 4.0' },
+  { word: 'Montreal Smoked Meat', file: 'Smoked meat sandwich.jpg', author: 'James Teterenko', license: 'CC BY-SA 3.0' },
+  { word: 'Bannock', file: 'Bannock 3.JPG', author: 'Skorp', license: 'CC0' },
+  { word: 'Peameal Bacon', file: 'Flickr bokchoi-snowpea 4266923676--Roast peameal bacon.jpg', author: 'snowpea and bokchoi', license: 'CC BY 2.0' },
+  { word: 'Saskatoon Berry Pie', file: 'Saskatoon berry pie served at The Berry Barn outside Saskatoon.jpg', author: 'Jonathan Schilling', license: 'CC BY-SA 4.0' },
+  { word: 'Fish and Brewis', file: 'FishAndBrewisWithScrunchions.jpg', author: 'Keith Pomakis', license: 'CC BY-SA 3.0' },
+  { word: 'Wild Salmon', file: 'Cedar Plank Salmon with Balsamic Ginger Marinade (28836223862).jpg', author: 'Sharon Chen', license: 'CC BY 2.0' },
+  { word: 'Maple Syrup Taffy', file: 'Maple toffee.JPG', author: 'SimonP', license: 'CC BY-SA 3.0' },
+  { word: 'Jollof Rice', file: 'Jollof Rice with Stew.jpg', author: 'Noahalorwu', license: 'CC BY-SA 4.0' },
+  { word: 'Egusi Soup', file: 'Egusi soup in a plate.jpg', author: 'Tesleemah', license: 'CC BY-SA 4.0' },
+  { word: 'Pounded Yam', file: 'Pounded yam (Iyàn).jpg', author: 'Taoheedah', license: 'CC BY-SA 4.0' },
+  { word: 'Suya', file: 'SuyavarietiesTX.JPG', author: 'WhisperToMe', license: 'CC0' },
+  { word: 'Akara', file: 'Beans Ball-Akara.jpg', author: 'AkinkuotuFunmi', license: 'CC BY-SA 4.0' },
+  { word: 'Moi Moi', file: 'Moin-Moin-good.jpg', author: 'ProVeg International', license: 'CC0' },
+  { word: 'Pepper Soup', file: 'Fish pepper soup.jpg', author: 'Salma kyari', license: 'CC BY-SA 4.0' },
+  { word: 'Ogbono Soup', file: 'Ogbono soup.jpg', author: 'Xtacywura', license: 'CC BY-SA 4.0' },
+  { word: 'Puff Puff', file: 'Nigerian-puff-puff-recipe cropped.jpg', author: 'Afrolems', license: 'CC BY-SA 4.0' },
+  { word: 'Eba', file: 'Nigerian Garri (Eba) and Egusi Soup.jpg', author: 'NiferO', license: 'CC BY-SA 4.0' },
+  { word: 'Banga Soup', file: 'Eba served with Fresh fish banga soup in a clay pot.jpg', author: 'Justdifference', license: 'CC BY-SA 4.0' },
 ];
