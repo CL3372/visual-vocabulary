@@ -1497,6 +1497,21 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'khorkhog mongolian hot stone barbecue': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Khorkhog_2.JPG/960px-Khorkhog_2.JPG', // Khorkhog
   'airag mongolian fermented mare milk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Homemade_airag_in_Mongolia.jpg/960px-Homemade_airag_in_Mongolia.jpg', // Airag
   'lap lap vanuatu taro yam grated banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Laplap_02.jpg/960px-Laplap_02.jpg', // Lap Lap
+  'fenkata maltese rabbit stew wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Stuffat_tal-fenek_%28Las_Siete_Orillas_project%29.jpg/960px-Stuffat_tal-fenek_%28Las_Siete_Orillas_project%29.jpg', // Fenkata
+  'pastizzi maltese flaky pastry ricotta peas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Pastizzi_in_Rabat_Nov_2014.JPG/960px-Pastizzi_in_Rabat_Nov_2014.JPG', // Pastizzi
+  'hobz biz zejt maltese bread tomato olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/A_typical_Maltese_bruschetta_with_fresh_Mediterranean_ingredients.jpg/960px-A_typical_Maltese_bruschetta_with_fresh_Mediterranean_ingredients.jpg', // Ħobż biż-Żejt
+  'kleftiko cypriot slow cooked lamb foil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Kleftiko.JPG/960px-Kleftiko.JPG', // Kleftiko
+  'souvla cypriot rotisserie pork lamb spit roast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Souvla.jpg/960px-Souvla.jpg', // Souvla
+  'sheftalia cypriot sausage caul fat grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Sheftalies.jpg/960px-Sheftalies.jpg', // Sheftalia
+  'loukoumades honey doughnuts cinnamon greek cypriot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Loukoumades.jpg/500px-Loukoumades.jpg', // Loukoumades
+  'cachupa cape verde corn beans fish stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cachupa_2.jpg/960px-Cachupa_2.jpg', // Cachupa
+  'xerem cape verde cornmeal porridge clams': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Xar%C3%A9m_algarvio.jpg/960px-Xar%C3%A9m_algarvio.jpg', // Xerém
+  'dholl puri mauritius flatbread yellow split pea': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Dholl_puri.jpg/960px-Dholl_puri.jpg', // Dholl Puri
+  'gateau piment mauritius chili cake fried street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Bonbons_piment.JPG/960px-Bonbons_piment.JPG', // Gâteau Piment
+  'bol renverse mauritius inverted rice bowl soy sauce egg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/1_bol_renverse_on_december_2023.jpg/960px-1_bol_renverse_on_december_2023.jpg', // Bol Renversé
+  'sancocho panamanian chicken soup yuca corn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Sancocho_de_gallina.jpg/500px-Sancocho_de_gallina.jpg', // Sancocho Panameño
+  'ropa vieja shredded beef stew cuban': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/RealRopaVieja.jpg/960px-RealRopaVieja.jpg', // Ropa Vieja
+  'ceviche panamanian fish lime onion cilantro': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG', // Ceviche Panameño
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2957,4 +2972,19 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Khorkhog', file: 'Khorkhog 2.JPG', author: 'Brücke-Osteuropa', license: 'Public domain' },
   { word: 'Airag', file: 'Homemade airag in Mongolia.jpg', author: 'Jpatokal', license: 'CC BY-SA 4.0' },
   { word: 'Lap Lap', file: 'Laplap 02.jpg', author: 'Ronoleo', license: 'CC BY-SA 3.0' },
+  { word: 'Fenkata', file: 'Stuffat tal-fenek (Las Siete Orillas project).jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Pastizzi', file: 'Pastizzi in Rabat Nov 2014.JPG', author: 'Kritzolina', license: 'CC BY-SA 4.0' },
+  { word: 'Ħobż biż-Żejt', file: 'A typical Maltese bruschetta with fresh Mediterranean ingredients.jpg', author: 'Patrickfarrugia', license: 'CC BY-SA 4.0' },
+  { word: 'Kleftiko', file: 'Kleftiko.JPG', author: 'Lord Mountbatten', license: 'CC BY-SA 3.0' },
+  { word: 'Souvla', file: 'Souvla.jpg', author: 'George Groutas', license: 'CC BY 2.0' },
+  { word: 'Sheftalia', file: 'Sheftalies.jpg', author: 'Georgios LCA', license: 'CC BY-SA 4.0' },
+  { word: 'Loukoumades', file: 'Loukoumades.jpg', author: 'avlxyz', license: 'CC BY-SA 2.0' },
+  { word: 'Cachupa', file: 'Cachupa 2.jpg', author: 'Xandu', license: 'Public domain' },
+  { word: 'Xerém', file: 'Xarém algarvio.jpg', author: 'Adriao', license: 'CC BY 3.0' },
+  { word: 'Dholl Puri', file: 'Dholl puri.jpg', author: 'Yoann74', license: 'CC BY-SA 4.0' },
+  { word: 'Gâteau Piment', file: 'Bonbons piment.JPG', author: 'Anoha', license: 'CC BY-SA 3.0' },
+  { word: 'Bol Renversé', file: '1 bol renverse on december 2023.jpg', author: 'Blackberrijack', license: 'CC0' },
+  { word: 'Sancocho Panameño', file: 'Sancocho de gallina.jpg', author: 'Luis Angel Camargo', license: 'CC BY-SA 2.0' },
+  { word: 'Ropa Vieja', file: 'RealRopaVieja.jpg', author: 'TGrey89', license: 'CC0' },
+  { word: 'Ceviche Panameño', file: 'Cebiche de corvina.JPG', author: 'Picanteria karol', license: 'CC BY-SA 4.0' },
 ];
