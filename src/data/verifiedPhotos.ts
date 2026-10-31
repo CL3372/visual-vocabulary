@@ -1386,6 +1386,39 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'singapore laksa coconut curry noodle prawn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Katong_laksa.jpg/960px-Katong_laksa.jpg', // Laksa
   'char kway teow singapore wok hei flat noodle prawn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Char_kway_teow.jpg/500px-Char_kway_teow.jpg', // Char Kway Teow
   'kaya toast singapore coconut jam butter coffee eggs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kaya_toast_on_a_plate.jpg/960px-Kaya_toast_on_a_plate.jpg', // Kaya Toast
+  'sauce arachide west african peanut sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mafe.malien.jpg/960px-Mafe.malien.jpg', // Sauce Arachide
+  'foutou pounded yam plantain ivory coast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Du_foutou_%C3%A0_la_banane_plantain_05.jpg/960px-Du_foutou_%C3%A0_la_banane_plantain_05.jpg', // Foutou
+  'attieke ivorian fermented cassava couscous fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Attieke.JPG/960px-Attieke.JPG', // Attiéké
+  'garba attieke tuna abidjan street food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Traditional_Garba.jpg/500px-Traditional_Garba.jpg', // Garba
+  'aloco ivorian fried ripe plantain spicy sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Fried_plantain_alloco.jpg/500px-Fried_plantain_alloco.jpg', // Aloco
+  'kedjenou ivory coast chicken clay pot tomato pepper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kedjenou.JPG/960px-Kedjenou.JPG', // Kedjenou
+  'palm wine bangui ivory coast gourd white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Toddy_Bottle_and_Glass.jpg/500px-Toddy_Bottle_and_Glass.jpg', // Bangui
+  'kuy teav cambodian noodle soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Kuyteav.jpg/500px-Kuyteav.jpg', // Kuy Teav
+  'fish amok cambodian steamed coconut curry banana leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Fish_Amok_with_Rice.jpg/960px-Fish_Amok_with_Rice.jpg', // Fish Amok
+  'lok lak cambodian stir fry beef lime pepper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Beef_Lok_Lak_at_Krong_Kracheh.jpg/960px-Beef_Lok_Lak_at_Krong_Kracheh.jpg', // Lok Lak
+  'nom banh chok cambodian rice noodle fish curry green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Num_Banh_Chok_Somlar_Kari.jpg/960px-Num_Banh_Chok_Somlar_Kari.jpg', // Nom Banh Chok
+  'kampot pepper cambodia green red black vine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kampot_peppercorns_in_a_mango_wooden_bowl.jpg/960px-Kampot_peppercorns_in_a_mango_wooden_bowl.jpg', // Kampot Pepper
+  'lu rou fan taiwanese braised pork rice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Lurou_fan%28Taiwanese_cuisine%29.jpg/960px-Lurou_fan%28Taiwanese_cuisine%29.jpg', // Lu Rou Fan
+  'oyster omelette taiwanese night market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg/960px-Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg', // Oyster Omelette
+  'taiwanese beef noodle soup braised broth noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Taiwanese_Beef_Noodle_Soup.jpg/960px-Taiwanese_Beef_Noodle_Soup.jpg', // Beef Noodle Soup
+  'scallion pancake taiwan cong you bing crispy layered': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Plate_of_scallion_pancakes.jpg/960px-Plate_of_scallion_pancakes.jpg', // Scallion Pancake
+  'oyster vermicelli taiwan night market starch soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Oyster_Vermicelli.jpg/960px-Oyster_Vermicelli.jpg', // Oyster Vermicelli
+  'bubble tea boba taiwan milk tapioca pearls straw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg/960px-Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg', // Bubble Tea
+  'pineapple cake taiwan souvenir shortbread jam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Taiwanese_Pineapple_Cake_001.jpg/960px-Taiwanese_Pineapple_Cake_001.jpg', // Pineapple Cake
+  'seekh kebab grilled minced meat skewer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Seekh_Kabab_1.JPG/960px-Seekh_Kabab_1.JPG', // Seekh Kebab
+  'nihari pakistani slow cooked beef shank spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Beef_Nihari.JPG/960px-Beef_Nihari.JPG', // Nihari
+  'karachi biryani pakistani rice meat spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sindhi_Biryani.JPG/960px-Sindhi_Biryani.JPG', // Biryani
+  'chapli kebab pashtun beef patty flat spiced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Chapli_Kebab.jpg/960px-Chapli_Kebab.jpg', // Chapli Kebab
+  'haleem pakistani wheat lentil meat stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pakistani_Haleem_served_with_garnish.jpg/960px-Pakistani_Haleem_served_with_garnish.jpg', // Haleem
+  'chicken karahi pakistani iron wok tomato ginger': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Karahi_Chicken.jpg/960px-Karahi_Chicken.jpg', // Karahi
+  'fiambre guatemalan cold cuts salad all saints': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Fiambre_-_11042021_%28cropped%29.jpg/960px-Fiambre_-_11042021_%28cropped%29.jpg', // Fiambre
+  'hilachas guatemalan shredded beef tomato stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Hilacha.jpg/960px-Hilacha.jpg', // Hilachas
+  'atole de elote corn drink warm guatemalan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/100320_atol_de_elote_guatemala.JPG/960px-100320_atol_de_elote_guatemala.JPG', // Atol de Elote
+  'pepian guatemalan mole chicken squash seed sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Catalinos_Restaurant_New_Orleans_October_2018_Pepian.jpg/960px-Catalinos_Restaurant_New_Orleans_October_2018_Pepian.jpg', // Pepián
+  'jocon guatemalan chicken tomatillo green sauce cilantro': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Jocon.jpg/330px-Jocon.jpg', // Jocon
+  'kakik guatemalan mayan turkey chile soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg/960px-2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg', // Kak'ik
+  'chuchitos guatemalan small tamale corn masa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Chuchitos_%28639489829%29.jpg/960px-Chuchitos_%28639489829%29.jpg', // Chuchitos
+  'horchata guatemalan rice drink cinnamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Horchata%2C_my_drink_of_choice_in_Mexico_-_Merida_Yucatan_21_March_2021.jpg/960px-Horchata%2C_my_drink_of_choice_in_Mexico_-_Merida_Yucatan_21_March_2021.jpg', // Horchata
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -2735,4 +2768,37 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Laksa', file: 'Katong laksa.jpg', author: 'ProjectManhattan.', license: 'CC0' },
   { word: 'Char Kway Teow', file: 'Char kway teow.jpg', author: 'Elizetang', license: 'Public domain' },
   { word: 'Kaya Toast', file: 'Kaya toast on a plate.jpg', author: 'Pinklily08', license: 'CC BY-SA 4.0' },
+  { word: 'Sauce Arachide', file: 'Mafe.malien.jpg', author: 'Marshiayers', license: 'CC0' },
+  { word: 'Foutou', file: 'Du foutou à la banane plantain 05.jpg', author: 'Mognissan', license: 'CC BY-SA 4.0' },
+  { word: 'Attiéké', file: 'Attieke.JPG', author: 'Serein', license: 'CC BY-SA 3.0' },
+  { word: 'Garba', file: 'Traditional Garba.jpg', author: 'Jburgos', license: 'CC BY-SA 4.0' },
+  { word: 'Aloco', file: 'Fried plantain alloco.jpg', author: 'Saudarh2', license: 'CC0' },
+  { word: 'Kedjenou', file: 'Kedjenou.JPG', author: 'Serein', license: 'CC BY-SA 3.0' },
+  { word: 'Bangui', file: 'Toddy Bottle and Glass.jpg', author: 'Dhruvarahjs', license: 'CC BY 3.0' },
+  { word: 'Kuy Teav', file: 'Kuyteav.jpg', author: 'Goomba King', license: 'CC BY-SA 4.0' },
+  { word: 'Fish Amok', file: 'Fish Amok with Rice.jpg', author: 'sharonang', license: 'CC0' },
+  { word: 'Lok Lak', file: 'Beef Lok Lak at Krong Kracheh.jpg', author: 'Satdeep Gill', license: 'CC BY-SA 4.0' },
+  { word: 'Nom Banh Chok', file: 'Num Banh Chok Somlar Kari.jpg', author: 'Turaids', license: 'CC BY-SA 4.0' },
+  { word: 'Kampot Pepper', file: 'Kampot peppercorns in a mango wooden bowl.jpg', author: 'Turaids', license: 'CC BY-SA 4.0' },
+  { word: 'Lu Rou Fan', file: 'Lurou fan(Taiwanese cuisine).jpg', author: 'Jzest', license: 'CC BY-SA 2.5' },
+  { word: 'Oyster Omelette', file: 'Oyster omelette, Taipei, Taiwan. (8447333000) (2).jpg', author: 'istolethetv', license: 'CC BY 2.0' },
+  { word: 'Beef Noodle Soup', file: 'Taiwanese Beef Noodle Soup.jpg', author: 'Jjj84206', license: 'CC BY-SA 4.0' },
+  { word: 'Scallion Pancake', file: 'Plate of scallion pancakes.jpg', author: 'Infrogmation', license: 'CC BY 2.0' },
+  { word: 'Oyster Vermicelli', file: 'Oyster Vermicelli.jpg', author: 'Jjj84206', license: 'CC BY-SA 4.0' },
+  { word: 'Bubble Tea', file: 'Pearl Milk Tea in Chun Shui Tang.jpg', author: 'Battlesnake1', license: 'CC0' },
+  { word: 'Pineapple Cake', file: 'Taiwanese Pineapple Cake 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Seekh Kebab', file: 'Seekh Kabab 1.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Nihari', file: 'Beef Nihari.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Biryani', file: 'Sindhi Biryani.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Chapli Kebab', file: 'Chapli Kebab.jpg', author: 'Murcotipton', license: 'CC BY-SA 3.0' },
+  { word: 'Haleem', file: 'Pakistani Haleem served with garnish.jpg', author: 'Halt123halt', license: 'CC BY-SA 3.0' },
+  { word: 'Karahi', file: 'Karahi Chicken.jpg', author: 'Pankajrawat3', license: 'CC BY-SA 4.0' },
+  { word: 'Fiambre', file: 'Fiambre - 11042021 (cropped).jpg', author: 'Gobierno de Guatemala', license: 'CC0' },
+  { word: 'Hilachas', file: 'Hilacha.jpg', author: 'Joshua Heller', license: 'CC BY 2.0' },
+  { word: 'Atol de Elote', file: '100320 atol de elote guatemala.JPG', author: 'Luisfi', license: 'CC BY-SA 3.0' },
+  { word: 'Pepián', file: 'Catalinos Restaurant New Orleans October 2018 Pepian.jpg', author: 'Infrogmation', license: 'CC BY-SA 4.0' },
+  { word: 'Jocon', file: 'Jocon.jpg', author: 'Andreamichell11', license: 'CC BY-SA 4.0' },
+  { word: 'Kak\'ik', file: '2010.05.13.141849 Kac-iq Fonda Calle Real Antigua Guatemala.jpg', author: 'Hermann Luyken', license: 'CC BY-SA 3.0' },
+  { word: 'Chuchitos', file: 'Chuchitos (639489829).jpg', author: 'Simon Law', license: 'CC BY-SA 2.0' },
+  { word: 'Horchata', file: 'Horchata, my drink of choice in Mexico - Merida Yucatan 21 March 2021.jpg', author: 'Sharon Hahn Darlin', license: 'CC BY 2.0' },
 ];
