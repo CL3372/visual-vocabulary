@@ -2651,6 +2651,27 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'sofa couch': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sofa_MET_DP-12204-001.jpg/960px-Sofa_MET_DP-12204-001.jpg', // Sofa
   'mirror': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Golden_mirror_%28France%29.jpg/960px-Golden_mirror_%28France%29.jpg', // Mirror
   'clock': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg/960px-Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg', // Clock
+  'belly stomach body': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Male_chest_abdomen_anatomy.jpg/960px-Male_chest_abdomen_anatomy.jpg', // Belly
+  'blood donation medical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Blood_drop_%28NIH_BioArt_660%29.png/960px-Blood_drop_%28NIH_BioArt_660%29.png', // Blood
+  'human hand open palm': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/960px-Hand%2C_fingers_-_back.jpg', // Hand
+  'eye closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Human_eye_with_blood_vessels.jpg/960px-Human_eye_with_blood_vessels.jpg', // Eye
+  'human nose face closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Nose_Example.jpg/960px-Nose_Example.jpg', // Nose
+  'human mouth lips smile': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Textured_3D_model_of_the_human_mouth_%28still_3%29.png/960px-Textured_3D_model_of_the_human_mouth_%28still_3%29.png', // Mouth
+  'human ear closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Human_right_ear_%28cropped%29.jpg/960px-Human_right_ear_%28cropped%29.jpg', // Ear
+  'hair': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Blond_hair_going_gray_01.jpg/960px-Blond_hair_going_gray_01.jpg', // Hair
+  'human heart anatomy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Heart_anterior_exterior_view.png/500px-Heart_anterior_exterior_view.png', // Heart
+  'foot barefoot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Foot_on_white_background.jpg/960px-Foot_on_white_background.jpg', // Foot
+  'human arm muscle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Extended_arm.jpg/960px-Extended_arm.jpg', // Arm
+  'human finger hand close': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/A_finger_pointing_at_the_moon.jpg/960px-A_finger_pointing_at_the_moon.jpg', // Finger
+  'shoulder upper body': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Left_shoulder.jpg/960px-Left_shoulder.jpg', // Shoulder
+  'knee joint leg': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Human_knees.jpg/960px-Human_knees.jpg', // Knee
+  'human back spine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Man_Standing_-_Back_View_-_Kolkata_2011-01-25_0236.JPG/960px-Man_Standing_-_Back_View_-_Kolkata_2011-01-25_0236.JPG', // Back
+  'chest torso upper body': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Chest.jpg/500px-Chest.jpg', // Chest
+  'neck shoulder human': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Female_neck.jpg/960px-Female_neck.jpg', // Neck
+  'thumb up hand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Liam_Thumb.jpg/960px-Liam_Thumb.jpg', // Thumb
+  'beautiful lips red lipstick portrait closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Close-Up-Girl-Lips_Blonde-Girl.jpg/960px-Close-Up-Girl-Lips_Blonde-Girl.jpg', // Lip
+  'tongue taste buds macro closeup pink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg/500px-%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg', // Tongue
+  'woman legs walking sunlight elegant bare skin': 'data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E7F5FF%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23D0EBFF%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22jn%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%234C6EF5%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23364FC7%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23bg)%22%2F%3E%3Crect%20x%3D%220%22%20y%3D%22330%22%20width%3D%22400%22%20height%3D%2270%22%20fill%3D%22%23CED4DA%22%20opacity%3D%22.6%22%2F%3E%3Cpath%20d%3D%22M120%2030%20H280%20V80%20L268%20300%20H208%20L200%20130%20L192%20300%20H132%20L120%2080Z%22%20fill%3D%22url(%23jn)%22%2F%3E%3Cg%20fill%3D%22%23fff%22%20stroke%3D%22%23868E96%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M128%20296%20H196%20V325%20Q196%20338%20182%20338%20H110%20Q102%20338%20102%20326%20Q102%20316%20112%20314Z%22%2F%3E%3Cpath%20d%3D%22M204%20296%20H272%20L288%20314%20Q298%20316%20298%20326%20Q298%20338%20290%20338%20H218%20Q204%20338%20204%20325Z%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%234263EB%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M104%20330%20H196%20M204%20330%20H296%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M200%20130%20L200%20300%22%20stroke%3D%22%232B3A9E%22%20stroke-width%3D%223%22%20opacity%3D%22.5%22%2F%3E%3C%2Fsvg%3E', // Leg
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5220,4 +5241,24 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Sofa', file: 'Sofa MET DP-12204-001.jpg', author: 'The Metropolitan Museum of Art', license: 'CC0' },
   { word: 'Mirror', file: 'Golden mirror (France).jpg', author: 'Tangopaso', license: 'Public domain' },
   { word: 'Clock', file: 'Pendulum clock by Jacob Kock, antique furniture photography, IMG 0931 edit.jpg', author: 'Christoph Braun', license: 'CC0' },
+  { word: 'Belly', file: 'Male chest abdomen anatomy.jpg', author: 'Robystarm07', license: 'CC BY-SA 4.0' },
+  { word: 'Blood', file: 'Blood drop (NIH BioArt 660).png', author: 'NIH NIAID', license: 'Public domain' },
+  { word: 'Hand', file: 'Hand, fingers - back.jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Eye', file: 'Human eye with blood vessels.jpg', author: 'ROTFLOLEB', license: 'CC BY-SA 3.0' },
+  { word: 'Nose', file: 'Nose Example.jpg', author: 'TheNoseKnows2Much', license: 'CC BY-SA 4.0' },
+  { word: 'Mouth', file: 'Textured 3D model of the human mouth (still 3).png', author: 'Mince', license: 'CC BY 4.0' },
+  { word: 'Ear', file: 'Human right ear (cropped).jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Hair', file: 'Blond hair going gray 01.jpg', author: 'Kritzolina', license: 'CC BY-SA 4.0' },
+  { word: 'Heart', file: 'Heart anterior exterior view.png', author: 'Jerm', license: 'CC BY 2.5' },
+  { word: 'Foot', file: 'Foot on white background.jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Arm', file: 'Extended arm.jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Finger', file: 'A finger pointing at the moon.jpg', author: '☻☺', license: 'CC BY-SA 2.0' },
+  { word: 'Shoulder', file: 'Left shoulder.jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Knee', file: 'Human knees.jpg', author: 'Genusfotografen (Tomas Gunnarsson)', license: 'CC BY-SA 4.0' },
+  { word: 'Back', file: 'Man Standing - Back View - Kolkata 2011-01-25 0236.JPG', author: 'Biswarup Ganguly', license: 'CC BY 3.0' },
+  { word: 'Chest', file: 'Chest.jpg', author: 'Chikumaya', license: 'CC BY-SA 3.0' },
+  { word: 'Neck', file: 'Female neck.jpg', author: 'FotoFyl / Erifyli Tsavdari', license: 'CC BY 2.0' },
+  { word: 'Thumb', file: 'Liam Thumb.jpg', author: 'Bwyell80', license: 'CC0' },
+  { word: 'Lip', file: 'Close-Up-Girl-Lips Blonde-Girl.jpg', author: 'Robert & Mihaela Vicol', license: 'Public domain' },
+  { word: 'Tongue', file: 'زبان tongue.jpg', author: 'Mahdiabbasinv', license: 'CC BY-SA 4.0' },
 ];
