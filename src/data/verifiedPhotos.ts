@@ -2278,6 +2278,29 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'muhallebi milk pudding rosewater pistachio': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg/960px-Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg', // Muhallebi
   'pastel de nata portuguese egg tart custard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Pasteis_de_Belem.jpg/960px-Pasteis_de_Belem.jpg', // Pastel de Nata
   'malva pudding south african sponge apricot cream sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Malva_Pudding.jpg/960px-Malva_Pudding.jpg', // Malva Pudding
+  'pizza': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/960px-Pizza-3007395.jpg', // Pizza
+  'soup bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Asparagus_soup_%28spargelsuppe%29.jpg/960px-Asparagus_soup_%28spargelsuppe%29.jpg', // Soup
+  'salad fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Green_Salad_-_Flat_Iron_2026-02-24.jpg/960px-Green_Salad_-_Flat_Iron_2026-02-24.jpg', // Salad
+  'sandwich': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sandwich_on_a_cutting_board.jpg/960px-Sandwich_on_a_cutting_board.jpg', // Sandwich
+  'paella': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Paella-Cullera-2009.jpg/960px-Paella-Cullera-2009.jpg', // Paella
+  'stew pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lamb-stew.jpg/960px-Lamb-stew.jpg', // Stew
+  'hors d\'oeuvre appetizer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Ringier_175_Jahre_Jubil%C3%A4um_%282499873203%29_%282%29.jpg/960px-Ringier_175_Jahre_Jubil%C3%A4um_%282499873203%29_%282%29.jpg', // Hors d'oeuvre
+  'meatball': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Spaghetti_and_meatballs_1.jpg/960px-Spaghetti_and_meatballs_1.jpg', // Meatball
+  'vol au vent pastry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Vol-au-vent_20_cm.jpg/500px-Vol-au-vent_20_cm.jpg', // Vol-au-vent
+  'demitasse espresso cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Demitasse_set.jpg/960px-Demitasse_set.jpg', // Demi-tasse
+  'mixed toast ham cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Ham_%26_cheese_toasted_sandwich_-_Potatoast_2026-05-02.jpg/960px-Ham_%26_cheese_toasted_sandwich_-_Potatoast_2026-05-02.jpg', // Mixed Toast
+  'toast bread golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Toast-2.jpg/960px-Toast-2.jpg', // Toast
+  'slice food portion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/White_cheddar_cheese_sliced_CNE.jpg/960px-White_cheddar_cheese_sliced_CNE.jpg', // Slice
+  'souffle baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bacon_and_Cheddar_Cheese_Souffl%C3%A9.jpg/960px-Bacon_and_Cheddar_Cheese_Souffl%C3%A9.jpg', // Soufflé
+  'fish soup bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Fish_soup%2C_Ibiza.jpg/960px-Fish_soup%2C_Ibiza.jpg', // Fish Soup
+  'seafood soup bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Seafood_chowder_with_bread_-_Taupo%2C_New_Zealand.jpg/960px-Seafood_chowder_with_bread_-_Taupo%2C_New_Zealand.jpg', // Seafood Soup
+  'sauteed vegetables pan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Leek-Saut%C3%A9.JPG/960px-Leek-Saut%C3%A9.JPG', // Sautéed
+  'mixed salad greens': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mixed_green_salad.jpg/960px-Mixed_green_salad.jpg', // Mixed Salad
+  'portuguese rissoles fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Risole1.JPG/960px-Risole1.JPG', // Rissoles
+  'soffritto onion garlic cooking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Mirepoix_on_cutting_board.jpg/960px-Mirepoix_on_cutting_board.jpg', // Soffritto
+  'french toast rabanada': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/French_toast_001.jpg/960px-French_toast_001.jpg', // French Toast
+  'meal plate food table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Dinner_meal_MyPlate_20210810-FNS-UNC-0016.jpg/960px-Dinner_meal_MyPlate_20210810-FNS-UNC-0016.jpg', // Meal
+  'stuffed peppers filled food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Quinoa_stuffed_peppers.jpg/960px-Quinoa_stuffed_peppers.jpg', // Stuffed
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -4526,4 +4549,27 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Muhallebi', file: 'Mhallabiyyeh (Arabic milk pudding).jpg', author: 'Jktab', license: 'CC BY-SA 4.0' },
   { word: 'Pastel de Nata', file: 'Pasteis de Belem.jpg', author: 'Mon Œil', license: 'CC BY 2.0' },
   { word: 'Malva Pudding', file: 'Malva Pudding.jpg', author: 'Jon Mountjoy', license: 'CC BY 2.0' },
+  { word: 'Pizza', file: 'Pizza-3007395.jpg', author: 'igorovsyannykov', license: 'CC0' },
+  { word: 'Soup', file: 'Asparagus soup (spargelsuppe).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Salad', file: 'Green Salad - Flat Iron 2026-02-24.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Sandwich', file: 'Sandwich on a cutting board.jpg', author: 'Revital Salomon', license: 'CC BY-SA 4.0' },
+  { word: 'Paella', file: 'Paella-Cullera-2009.jpg', author: 'Tamorlan', license: 'CC BY 3.0' },
+  { word: 'Stew', file: 'Lamb-stew.jpg', author: 'FiveRings', license: 'CC BY 3.0' },
+  { word: 'Hors d\'oeuvre', file: 'Ringier 175 Jahre Jubiläum (2499873203) (2).jpg', author: 'Chris Schaer from Zofingen, Schweiz', license: 'CC BY-SA 2.0' },
+  { word: 'Meatball', file: 'Spaghetti and meatballs 1.jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'Vol-au-vent', file: 'Vol-au-vent 20 cm.jpg', author: 'Hautbois', license: 'CC BY-SA 4.0' },
+  { word: 'Demi-tasse', file: 'Demitasse set.jpg', author: 'Bonniemuffin', license: 'Public domain' },
+  { word: 'Mixed Toast', file: 'Ham & cheese toasted sandwich - Potatoast 2026-05-02.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Toast', file: 'Toast-2.jpg', author: 'Rainer Z ...', license: 'CC BY-SA 3.0' },
+  { word: 'Slice', file: 'White cheddar cheese sliced CNE.jpg', author: 'CNEcija12345', license: 'CC BY-SA 4.0' },
+  { word: 'Soufflé', file: 'Bacon and Cheddar Cheese Soufflé.jpg', author: 'Mark Miller', license: 'CC BY-SA 4.0' },
+  { word: 'Fish Soup', file: 'Fish soup, Ibiza.jpg', author: 'Gerda Arendt', license: 'CC0' },
+  { word: 'Seafood Soup', file: 'Seafood chowder with bread - Taupo, New Zealand.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Sautéed', file: 'Leek-Sauté.JPG', author: 'Jasenlee', license: 'CC BY-SA 3.0' },
+  { word: 'Mixed Salad', file: 'Mixed green salad.jpg', author: 'FranHogan', license: 'CC BY-SA 4.0' },
+  { word: 'Rissoles', file: 'Risole1.JPG', author: 'PD-self', license: 'Public domain' },
+  { word: 'Soffritto', file: 'Mirepoix on cutting board.jpg', author: 'Pigup', license: 'CC BY-SA 3.0' },
+  { word: 'French Toast', file: 'French toast 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Meal', file: 'Dinner meal MyPlate 20210810-FNS-UNC-0016.jpg', author: 'U.S. Department of Agriculture', license: 'Public domain' },
+  { word: 'Stuffed', file: 'Quinoa stuffed peppers.jpg', author: 'Mark Bonica', license: 'CC BY 2.0' },
 ];
