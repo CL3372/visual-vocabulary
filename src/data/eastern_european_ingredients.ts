@@ -5,7 +5,7 @@ export const EASTERN_EUROPEAN_INGREDIENT_WORDS: Word[] = [
 
   // ── Dairy ─────────────────────────────────────────────────────────────────────
   { id: 'eei1', word: 'Kefir',          translations: { es: 'Kéfir',          pt: 'Kefir', 'pt-br': 'Kefir',          fr: 'Kéfir',           de: 'Kefir',           it: 'Kefir',           ja: 'ケフィア',         zh: '开菲尔',    ko: '케피어', ar: 'كفير' }, category: 'Dairy & Eggs', unsplashQuery: 'kefir fermented milk drink' },
-  { id: 'eei2', word: 'Tvorog',         translations: { es: 'Tvorog',         pt: 'Tvorog', 'pt-br': 'Tvorog',         fr: 'Tvorog',          de: 'Quark',           it: 'Ricotta russa',   ja: 'トヴォロク',       zh: '俄式农家奶酪', ko: '트보로그', ar: 'تفوروغ' }, category: 'Dairy & Eggs', unsplashQuery: 'tvorog cottage cheese white russian' },
+  { id: 'eei2', word: 'Tvorog',         translations: { es: 'Tvorog',         pt: 'Tvorog', 'pt-br': 'Tvorog',         fr: 'Tvorog',          de: 'Quark',           it: 'Tvorog',   ja: 'トヴォロク',       zh: '俄式农家奶酪', ko: '트보로그', ar: 'تفوروغ' }, category: 'Dairy & Eggs', unsplashQuery: 'tvorog cottage cheese white russian' },
   { id: 'eei3', word: 'Matsoni',        translations: { es: 'Matsoni',        pt: 'Matsoni', 'pt-br': 'Matsoni',        fr: 'Matsoni',         de: 'Matsoni',         it: 'Matsoni',         ja: 'マツォーニ',       zh: '格鲁吉亚酸奶', ko: '마초니', ar: 'ماتسوني' }, category: 'Dairy & Eggs', unsplashQuery: 'matsoni georgian yogurt fermented' },
 
   // ── Bread & Grains ────────────────────────────────────────────────────────────
