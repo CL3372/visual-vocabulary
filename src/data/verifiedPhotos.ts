@@ -1542,6 +1542,107 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'couve refogada kale collard greens garlic brazilian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Collard-Greens-Bundle.jpg/960px-Collard-Greens-Bundle.jpg', // Couve Refogada
   'txangurro spider crab basque stuffed baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Txangurro_betea.jpg/960px-Txangurro_betea.jpg', // Txangurro
   'ropa vieja stewed shredded beef chickpeas tomato rich sauce canarian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG/960px-Ropa_vieja_Canarian_style_in_Fataga%2C_Gran_Canaria%2C_the_Canary_Islands.JPG', // Ropa Vieja Canaria
+  'dates palm fruit dried brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Date_Fruits-Duo.jpg/960px-Date_Fruits-Duo.jpg', // Dates
+  'tamarind pod fruit sour': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Tamarindus_indica_pods.JPG/500px-Tamarindus_indica_pods.JPG', // Tamarind
+  'baobab fruit powder africa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Adansonia_digitata_fruit_MHNT.jpg/960px-Adansonia_digitata_fruit_MHNT.jpg', // Baobab
+  'lychee fruit white sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Lychee_fruits_and_seed.jpg/960px-Lychee_fruits_and_seed.jpg', // Lychee
+  'jackfruit large tropical spiky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/The_jackfruit_is_holding_on_to_the_tree.jpg/960px-The_jackfruit_is_holding_on_to_the_tree.jpg', // Jackfruit
+  'durian spiky fruit southeast asia': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Durian_in_black.jpg/960px-Durian_in_black.jpg', // Durian
+  'longan fruit small brown asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Dimocarpus_longan_%284%29.jpg/960px-Dimocarpus_longan_%284%29.jpg', // Longan
+  'rambutan red hairy fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Rambutans_with_seed.jpg/960px-Rambutans_with_seed.jpg', // Rambutan
+  'dragon fruit pink white seeds': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/960px-Pitaya_cross_section_ed2.jpg', // Dragonfruit
+  'lime green citrus fruit halved sliced fresh juice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Lime_-_whole_and_halved.jpg/960px-Lime_-_whole_and_halved.jpg', // Lime
+  'ackee jamaican fruit yellow open pod': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Ripe_ackee_fruit_in_Jamaica._The_white_flesh_is_eaten_cooked_for_breakfast%2C_with_salt_fish_or_the_like._%2833317955982%29.jpg/960px-Ripe_ackee_fruit_in_Jamaica._The_white_flesh_is_eaten_cooked_for_breakfast%2C_with_salt_fish_or_the_like._%2833317955982%29.jpg', // Ackee
+  'bitter orange seville sour citrus': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Citrus_aurantium.jpg/960px-Citrus_aurantium.jpg', // Bitter Orange
+  'lingonberry red scandinavian berry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Cowberry.jpg/960px-Cowberry.jpg', // Lingonberry
+  'cloudberry orange arctic berry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hjortron.jpg/960px-Hjortron.jpg', // Cloudberry
+  'quince yellow fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Quince_%2810889s%29.jpg/960px-Quince_%2810889s%29.jpg', // Quince
+  'apple fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/960px-Red_Apple.jpg', // Apple
+  'banana': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Bananas_on_black_background_02.jpg/960px-Bananas_on_black_background_02.jpg', // Banana
+  'orange fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/960px-Oranges_-_whole-halved-segment.jpg', // Orange
+  'strawberry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/960px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg', // Strawberry
+  'lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Lemon_-_whole_and_split.jpg/960px-Lemon_-_whole_and_split.jpg', // Lemon
+  'mango ripe tropical yellow orange flesh halved': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mangos_-_single_and_halved.jpg/960px-Mangos_-_single_and_halved.jpg', // Mango
+  'pineapple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pineapple_fruit_2.jpg/960px-Pineapple_fruit_2.jpg', // Pineapple
+  'grapes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Grapes%2C_Rostov-on-Don%2C_Russia.jpg/960px-Grapes%2C_Rostov-on-Don%2C_Russia.jpg', // Grapes
+  'watermelon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/960px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg', // Watermelon
+  'peach fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Autumn_Red_peaches.jpg/960px-Autumn_Red_peaches.jpg', // Peach
+  'conference pear ripe green yellow fresh fruit closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Pear_DS.jpg/960px-Pear_DS.jpg', // Pear
+  'cherry fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/960px-Cherry_Stella444.jpg', // Cherry
+  'blueberry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Dish_of_blueberries.jpg/960px-Dish_of_blueberries.jpg', // Blueberry
+  'fresh red raspberries bowl closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Raspberry_-_whole_%28Rubus_idaeus%29.jpg/960px-Raspberry_-_whole_%28Rubus_idaeus%29.jpg', // Raspberry
+  'coconut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Coconuts_-_single_and_cracked_open.jpg/960px-Coconuts_-_single_and_cracked_open.jpg', // Coconut
+  'avocado': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/960px-Avocado_Hass_-_single_and_halved.jpg', // Avocado
+  'pomegranate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Pomegranate_fruit_-_whole_and_piece_with_arils.jpg/960px-Pomegranate_fruit_-_whole_and_piece_with_arils.jpg', // Pomegranate
+  'fig fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Fig_%28Ficus_carica%29_fruit_halved.jpg/960px-Fig_%28Ficus_carica%29_fruit_halved.jpg', // Fig
+  'melon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Cantaloupe_and_canary_melon.jpg/960px-Cantaloupe_and_canary_melon.jpg', // Melon
+  'papaya': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Papaya_-_longitudinal_section.jpg/960px-Papaya_-_longitudinal_section.jpg', // Papaya
+  'plum fruit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Plums_African_Rose_-_whole%2C_halved_and_slice.jpg/960px-Plums_African_Rose_-_whole%2C_halved_and_slice.jpg', // Plum
+  'prune dried plum': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Rosales_-_Dried_Prunus_domestica_d.jpg/960px-Rosales_-_Dried_Prunus_domestica_d.jpg', // Prune
+  'carob': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Ceratonia_siliqua_Keciboynuzu_1370984_Nevit.jpg/960px-Ceratonia_siliqua_Keciboynuzu_1370984_Nevit.jpg', // Carob
+  'crowberry black berry arctic tundra': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Empetrum_nigrum_by_Maseltov_2.jpg/960px-Empetrum_nigrum_by_Maseltov_2.jpg', // Crowberry
+  'barberries zereshk dried red sour persian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Berberis_vulgaris_berries._-_Flickr_-_gailhampshire.jpg/960px-Berberis_vulgaris_berries._-_Flickr_-_gailhampshire.jpg', // Barberries
+  'cranberry red berries bog fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Cranberry_bog.jpg/960px-Cranberry_bog.jpg', // Cranberry
+  'saskatoon berries purple serviceberry canadian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Saskatoon_Berries_in_Alberta.jpg/960px-Saskatoon_Berries_in_Alberta.jpg', // Saskatoon Berries
+  'finger lime caviar pearls australian native': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Finger_lime_with_juice_vesicles_and_seeds_partially_extracted.jpg/960px-Finger_lime_with_juice_vesicles_and_seeds_partially_extracted.jpg', // Finger Lime
+  'quandong red native australian fruit bush food desert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Santalum_acuminatum_fruit1.JPG/960px-Santalum_acuminatum_fruit1.JPG', // Quandong
+  'feijoa pineapple guava green fruit new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Acca_sellowiana_Fruit_MHNT_Fronton.jpg/960px-Acca_sellowiana_Fruit_MHNT_Fronton.jpg', // Feijoa
+  'kiwifruit green inside slice new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg/960px-Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg', // Kiwifruit
+  'white grape bunch vineyard fresh green chardonnay': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Green_Grape_3.jpg/960px-Green_Grape_3.jpg', // White Grape
+  'muscat grape green white translucent bunch vineyard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Muscat_blanc_et_Muscat_noir_by_JM_Rosier.jpg/960px-Muscat_blanc_et_Muscat_noir_by_JM_Rosier.jpg', // Muscat Grape
+  'raisins dried grapes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Raisins_01.jpg/960px-Raisins_01.jpg', // Raisins
+  'black grapes dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Black_Grapes_of_Salem.jpg/960px-Black_Grapes_of_Salem.jpg', // Black Grapes
+  'grapefruit citrus': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Grapefruits_-_whole-halved-segments.jpg/960px-Grapefruits_-_whole-halved-segments.jpg', // Grapefruit
+  'tangerine mandarin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/TangerineFruit.jpg/500px-TangerineFruit.jpg', // Tangerine
+  'apricot fresh ripe orange fruit basket': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Apricots_one_open.jpg/960px-Apricots_one_open.jpg', // Apricot
+  'blackberry fresh ripe dark berries closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Blackberries_%28Rubus_fruticosus%29.jpg/960px-Blackberries_%28Rubus_fruticosus%29.jpg', // Blackberry
+  'nectarine smooth skin ripe stone fruit red yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Nectarine_on_white.jpg/960px-Nectarine_on_white.jpg', // Nectarine
+  'guava tropical fruit pink flesh halved': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Guava_pink_fruit.jpg/960px-Guava_pink_fruit.jpg', // Guava
+  'persimmon orange autumn fruit fuyu harvest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Fuyu_Persimmon_%28Diospyros_Kaki%29.jpg/960px-Fuyu_Persimmon_%28Diospyros_Kaki%29.jpg', // Persimmon
+  'gooseberry green translucent berry bush fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gooseberries.jpg/960px-Gooseberries.jpg', // Gooseberry
+  'carambola star fruit yellow sliced five point star': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Carambola_Starfruit.jpg/960px-Carambola_Starfruit.jpg', // Star Fruit
+  'pomelo large citrus fruit peeled segment fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Pomelo_fruit.jpg/960px-Pomelo_fruit.jpg', // Pomelo
+  'reinette apple variety': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Cross_section_of_Crawley_Reinette%2C_National_Fruit_Collection_%28acc._1941-025%29.jpg/500px-Cross_section_of_Crawley_Reinette%2C_National_Fruit_Collection_%28acc._1941-025%29.jpg', // Reinette Apple
+  'acai berry purple dark amazon brazil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fruto_do_a%C3%A7a%C3%AD.jpg/960px-Fruto_do_a%C3%A7a%C3%AD.jpg', // Açaí
+  'physalis cape gooseberry golden husk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Physalis_peruviana_calix_open_close-up.jpg/960px-Physalis_peruviana_calix_open_close-up.jpg', // Physalis
+  'passion fruit maracuya yellow halved seeds': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Passion_fruits_-_whole_and_halved.jpg/960px-Passion_fruits_-_whole_and_halved.jpg', // Passionfruit
+  'guarana berry red seeds amazon brazil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Flickr_-_ggallice_-_Guarana_%281%29.jpg/960px-Flickr_-_ggallice_-_Guarana_%281%29.jpg', // Guaraná
+  'paneer indian fresh cheese cubed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Panir_Paneer_Indian_cheese_fresh.jpg/960px-Panir_Paneer_Indian_cheese_fresh.jpg', // Paneer
+  'kefir fermented milk drink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Kefir_glass_london_feb_10.jpg/960px-Kefir_glass_london_feb_10.jpg', // Kefir
+  'tvorog cottage cheese white russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%A2%D0%B2%D0%BE%D1%80%D0%BE%D0%B3.jpg/500px-%D0%A2%D0%B2%D0%BE%D1%80%D0%BE%D0%B3.jpg', // Tvorog
+  'matsoni georgian yogurt fermented': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/%D5%87%D5%A1%D5%AC%D5%B8%D5%BF%D5%B8%D5%BE_%D5%B4%D5%A1%D5%AE%D5%B8%D6%82%D5%B6_%D5%B6%D5%A1%D5%B6%D5%A1%D5%B5%D5%B8%D5%BE.JPG/960px-%D5%87%D5%A1%D5%AC%D5%B8%D5%BF%D5%B8%D5%BE_%D5%B4%D5%A1%D5%AE%D5%B8%D6%82%D5%B6_%D5%B6%D5%A1%D5%B6%D5%A1%D5%B5%D5%B8%D5%BE.JPG', // Matsoni
+  'sour cream thick white dollop': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Sour_Cream.jpg/960px-Sour_Cream.jpg', // Sour Cream
+  'quark fresh white cheese german': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Skimmed_milk_quark_on_spoon.jpg/960px-Skimmed_milk_quark_on_spoon.jpg', // Quark
+  'creme fraiche thick french cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Cr%C3%A8me_d%27Isigny_2.JPG/960px-Cr%C3%A8me_d%27Isigny_2.JPG', // Crème Fraîche
+  'chicken eggs white brown shell nest closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Eggs_in_basket_2020_G1.jpg/960px-Eggs_in_basket_2020_G1.jpg', // Egg
+  'milk glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Glass_of_Milk_%2833657535532%29.jpg/960px-Glass_of_Milk_%2833657535532%29.jpg', // Milk
+  'cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Cheese_platter.jpg/960px-Cheese_platter.jpg', // Cheese
+  'butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2023_Mas%C5%82o_w_maselniczce.jpg/960px-2023_Mas%C5%82o_w_maselniczce.jpg', // Butter
+  'yogurt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Joghurt.jpg/960px-Joghurt.jpg', // Yogurt
+  'cream dairy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Lyzka_smietany.JPG/960px-Lyzka_smietany.JPG', // Cream
+  'mozzarella cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Mozzarella_cheese.jpg/960px-Mozzarella_cheese.jpg', // Mozzarella
+  'skyr icelandic yogurt thick white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Skyr.is_me%C3%B0_vanillu.jpg/960px-Skyr.is_me%C3%B0_vanillu.jpg', // Skyr
+  'halloumi grilled cheese cypriot seared': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Grilled_Halloumi.jpg/960px-Grilled_Halloumi.jpg', // Halloumi
+  'labneh strained yogurt white cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Labneh01.jpg/500px-Labneh01.jpg', // Labneh
+  'kashk dried yogurt whey persian white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Kashk_01.jpg/960px-Kashk_01.jpg', // Kashk
+  'cream cheese block white spreader': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Philadelphia_cream_cheese_%28flash%29.jpg/960px-Philadelphia_cream_cheese_%28flash%29.jpg', // Cream Cheese
+  'cheddar cheese orange block sharp': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Somerset-Cheddar.jpg/500px-Somerset-Cheddar.jpg', // Cheddar
+  'cheese curds white squeaky fresh poutine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Cheese_Curds.jpg/960px-Cheese_Curds.jpg', // Cheese Curds
+  'requeijao soft cheese portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Requeij%C3%A3o_Portugu%C3%AAs.jpg/960px-Requeij%C3%A3o_Portugu%C3%AAs.jpg', // Requeijão
+  'grated cheese parmesan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Grated_cheese_%28331496238%29.jpg/960px-Grated_cheese_%28331496238%29.jpg', // Grated Cheese
+  'semi-cured cheese wheel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/A_semi_hard_giant_cheese_with_slices.jpg/960px-A_semi_hard_giant_cheese_with_slices.jpg', // Semi-cured Cheese
+  'fresh cheese white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Cheese_55_bg_061806.jpg/960px-Cheese_55_bg_061806.jpg', // Fresh Cheese
+  'edam cheese red wax': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/SmallEdamCheese.jpg/960px-SmallEdamCheese.jpg', // Edam Cheese
+  'aged cheese cured': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Meule_du_Plateau_cheese_wheels_in_the_ripening_cellar%2C_Terre_de_fromages%2C_Herve%2C_2025.jpg/960px-Meule_du_Plateau_cheese_wheels_in_the_ripening_cellar%2C_Terre_de_fromages%2C_Herve%2C_2025.jpg', // Aged Cheese
+  'sheep cheese pecorino': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Sheep%27s_milk_cheese.png/960px-Sheep%27s_milk_cheese.png', // Sheep's Cheese
+  'goat cheese white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Crottin_02.jpg/960px-Crottin_02.jpg', // Goat's Cheese
+  'parmesan cheese block': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Parmigiano_reggiano_piece.jpg/500px-Parmigiano_reggiano_piece.jpg', // Parmesan
+  'feta cheese greek crumbled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Feta_Cheese.jpg/960px-Feta_Cheese.jpg', // Feta
+  'mascarpone cream cheese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Mascarpone_2.jpg/960px-Mascarpone_2.jpg', // Mascarpone
+  'clotted cream scone british': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Clotted_cream_%28cropped%29.JPG/960px-Clotted_cream_%28cropped%29.JPG', // Clotted Cream
+  'suet fat cooking british': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Beef_suet-01.jpg/960px-Beef_suet-01.jpg', // Suet
+  'tofu block soybean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG/960px-Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG', // Tofu
+  'lucuma peruvian fruit orange flesh': '', // Lucuma — no trustworthy photo yet
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3055,4 +3156,104 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Couve Refogada', file: 'Collard-Greens-Bundle.jpg', author: 'Evan-Amos', license: 'Public domain' },
   { word: 'Txangurro', file: 'Txangurro betea.jpg', author: 'Gaztarrotz', license: 'CC BY-SA 4.0' },
   { word: 'Ropa Vieja Canaria', file: 'Ropa vieja Canarian style in Fataga, Gran Canaria, the Canary Islands.JPG', author: 'Kpjas', license: 'CC BY-SA 4.0' },
+  { word: 'Dates', file: 'Date Fruits-Duo.jpg', author: 'J.P.Lon', license: 'CC BY-SA 4.0' },
+  { word: 'Tamarind', file: 'Tamarindus indica pods.JPG', author: 'B.navez', license: 'CC BY 2.5' },
+  { word: 'Baobab', file: 'Adansonia digitata fruit MHNT.jpg', author: 'Roger Culos', license: 'CC BY-SA 3.0' },
+  { word: 'Lychee', file: 'Lychee fruits and seed.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Jackfruit', file: 'The jackfruit is holding on to the tree.jpg', author: 'This work was made by Tushar Hossain and released under the license(s)', license: 'CC BY-SA 4.0' },
+  { word: 'Durian', file: 'Durian in black.jpg', author: 'مانفی', license: 'CC BY-SA 4.0' },
+  { word: 'Longan', file: 'Dimocarpus longan (4).jpg', author: 'Dinkun Chen', license: 'CC BY-SA 4.0' },
+  { word: 'Rambutan', file: 'Rambutans with seed.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Dragonfruit', file: 'Pitaya cross section ed2.jpg', author: 'SMasters', license: 'CC BY-SA 3.0' },
+  { word: 'Lime', file: 'Lime - whole and halved.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Ackee', file: 'Ripe ackee fruit in Jamaica. The white flesh is eaten cooked for breakfast, with salt fish or the like. (33317955982).jpg', author: 'Ralf Steinberger from Northern Italy and Berlin', license: 'CC BY 2.0' },
+  { word: 'Bitter Orange', file: 'Citrus aurantium.jpg', author: 'A. Barra', license: 'CC BY-SA 4.0' },
+  { word: 'Lingonberry', file: 'Cowberry.jpg', author: 'Jonas Bergsten', license: 'Public domain' },
+  { word: 'Cloudberry', file: 'Hjortron.jpg', author: 'Philipum', license: 'Public domain' },
+  { word: 'Quince', file: 'Quince (10889s).jpg', author: 'Rhododendrites', license: 'CC BY-SA 4.0' },
+  { word: 'Apple', file: 'Red Apple.jpg', author: 'Abhijit Tembhekar from Mumbai, India', license: 'CC BY 2.0' },
+  { word: 'Banana', file: 'Bananas on black background 02.jpg', author: 'Krzysztof Golik', license: 'CC BY-SA 4.0' },
+  { word: 'Orange', file: 'Oranges - whole-halved-segment.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Strawberry', file: 'Garden strawberry (Fragaria × ananassa) single2.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Lemon', file: 'Lemon - whole and split.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Mango', file: 'Mangos - single and halved.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Pineapple', file: 'Pineapple fruit 2.jpg', author: 'Wilfredor', license: 'CC0' },
+  { word: 'Grapes', file: 'Grapes, Rostov-on-Don, Russia.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Watermelon', file: 'Taiwan 2009 Tainan City Organic Farm Watermelon FRD 7962.jpg', author: 'Fred Hsu (Wikipedia:User:Fred Hsu on en.wikipedia)', license: 'CC BY-SA 3.0' },
+  { word: 'Peach', file: 'Autumn Red peaches.jpg', author: 'Jack Dykinga, USDA', license: 'Public domain' },
+  { word: 'Pear', file: 'Pear DS.jpg', author: 'Augustus Binu : flickr', license: 'CC BY-SA 3.0' },
+  { word: 'Cherry', file: 'Cherry Stella444.jpg', author: 'Benjamint444, edited by Fir0002', license: 'CC BY-SA 3.0' },
+  { word: 'Blueberry', file: 'Dish of blueberries.jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Raspberry', file: 'Raspberry - whole (Rubus idaeus).jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Coconut', file: 'Coconuts - single and cracked open.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Avocado', file: 'Avocado Hass - single and halved.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Pomegranate', file: 'Pomegranate fruit - whole and piece with arils.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Fig', file: 'Fig (Ficus carica) fruit halved.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Melon', file: 'Cantaloupe and canary melon.jpg', author: 'Atomicbre at English Wikipedia', license: 'CC BY 3.0' },
+  { word: 'Papaya', file: 'Papaya - longitudinal section.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Plum', file: 'Plums African Rose - whole, halved and slice.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Prune', file: 'Rosales - Dried Prunus domestica d.jpg', author: 'Emőke Dénes', license: 'CC BY-SA 4.0' },
+  { word: 'Carob', file: 'Ceratonia siliqua Keciboynuzu 1370984 Nevit.jpg', author: 'Nevit Dilmen (talk)', license: 'CC BY-SA 3.0' },
+  { word: 'Crowberry', file: 'Empetrum nigrum by Maseltov 2.jpg', author: 'Maseltov', license: 'CC BY-SA 3.0 de' },
+  { word: 'Barberries', file: 'Berberis vulgaris berries. - Flickr - gailhampshire.jpg', author: 'gailhampshire from Cradley, Malvern, U.K', license: 'CC BY 2.0' },
+  { word: 'Cranberry', file: 'Cranberry bog.jpg', author: 'Photo by Keith Weller', license: 'Public domain' },
+  { word: 'Saskatoon Berries', file: 'Saskatoon Berries in Alberta.jpg', author: 'Ken Eckert', license: 'CC BY-SA 4.0' },
+  { word: 'Finger Lime', file: 'Finger lime with juice vesicles and seeds partially extracted.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Quandong', file: 'Santalum acuminatum fruit1.JPG', author: 'John Moss', license: 'Public domain' },
+  { word: 'Feijoa', file: 'Acca sellowiana Fruit MHNT Fronton.jpg', author: 'Didier Descouens', license: 'CC BY-SA 4.0' },
+  { word: 'Kiwifruit', file: 'Kiwi (Actinidia chinensis) 1 Luc Viatour.jpg', author: 'Luc Viatour', license: 'CC BY-SA 2.5' },
+  { word: 'White Grape', file: 'Green Grape 3.jpg', author: 'Martin Kozák', license: 'Public domain' },
+  { word: 'Muscat Grape', file: 'Muscat blanc et Muscat noir by JM Rosier.jpg', author: 'Jean-Marc Rosier', license: 'CC BY-SA 3.0' },
+  { word: 'Raisins', file: 'Raisins 01.jpg', author: 'Paweł Kuźniar (Jojo_1, Jojo)', license: 'CC BY-SA 3.0' },
+  { word: 'Black Grapes', file: 'Black Grapes of Salem.jpg', author: 'Thamizhpparithi Maari', license: 'CC BY-SA 3.0' },
+  { word: 'Grapefruit', file: 'Grapefruits - whole-halved-segments.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Tangerine', file: 'TangerineFruit.jpg', author: 'Barfooz (Brent Ramerth)', license: 'CC BY-SA 3.0' },
+  { word: 'Apricot', file: 'Apricots one open.jpg', author: 'MatthiasKabel', license: 'CC BY-SA 3.0' },
+  { word: 'Blackberry', file: 'Blackberries (Rubus fruticosus).jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Nectarine', file: 'Nectarine on white.jpg', author: 'Rhododendrites', license: 'CC BY-SA 4.0' },
+  { word: 'Guava', file: 'Guava pink fruit.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Persimmon', file: 'Fuyu Persimmon (Diospyros Kaki).jpg', author: 'Joe Ravi', license: 'CC BY-SA 3.0' },
+  { word: 'Gooseberry', file: 'Gooseberries.jpg', author: 'neurovelho', license: 'CC BY-SA 3.0' },
+  { word: 'Star Fruit', file: 'Carambola Starfruit.jpg', author: 'SMasters', license: 'CC BY-SA 3.0' },
+  { word: 'Pomelo', file: 'Pomelo fruit.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Reinette Apple', file: 'Cross section of Crawley Reinette, National Fruit Collection (acc. 1941-025).jpg', author: 'National Fruit Collection, Brogdale.', license: 'OGL 2' },
+  { word: 'Açaí', file: 'Fruto do açaí.jpg', author: 'Jéssica Karoline Alves Portugal', license: 'CC BY-SA 4.0' },
+  { word: 'Physalis', file: 'Physalis peruviana calix open close-up.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Passionfruit', file: 'Passion fruits - whole and halved.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Guaraná', file: 'Flickr - ggallice - Guarana (1).jpg', author: 'Geoff Gallice from Gainesville, FL, USA', license: 'CC BY 2.0' },
+  { word: 'Paneer', file: 'Panir Paneer Indian cheese fresh.jpg', author: 'Sonja Pauen - Stanhopea', license: 'CC BY 2.0 de' },
+  { word: 'Kefir', file: 'Kefir glass london feb 10.jpg', author: 'secretlondon123', license: 'CC BY-SA 2.0' },
+  { word: 'Tvorog', file: 'Творог.jpg', author: 'Loyna', license: 'CC BY-SA 2.5' },
+  { word: 'Matsoni', file: 'Շալոտով մածուն նանայով.JPG', author: 'Chaojoker', license: 'CC BY-SA 3.0' },
+  { word: 'Sour Cream', file: 'Sour Cream.jpg', author: 'jules', license: 'CC BY 2.0' },
+  { word: 'Quark', file: 'Skimmed milk quark on spoon.jpg', author: 'SKopp', license: 'CC BY-SA 4.0' },
+  { word: 'Crème Fraîche', file: 'Crème d\'Isigny 2.JPG', author: 'Patafisik', license: 'CC BY-SA 4.0' },
+  { word: 'Egg', file: 'Eggs in basket 2020 G1.jpg', author: 'George Chernilevsky', license: 'CC BY-SA 4.0' },
+  { word: 'Milk', file: 'Glass of Milk (33657535532).jpg', author: 'NIAID', license: 'CC BY 2.0' },
+  { word: 'Cheese', file: 'Cheese platter.jpg', author: 'Puffin', license: 'CC BY-SA 3.0' },
+  { word: 'Butter', file: '2023 Masło w maselniczce.jpg', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Yogurt', file: 'Joghurt.jpg', author: 'No machine-readable author provided. Rainer Zenz assumed (based on cop', license: 'CC BY-SA 3.0' },
+  { word: 'Cream', file: 'Lyzka smietany.JPG', author: 'Dobromila', license: 'CC BY-SA 4.0' },
+  { word: 'Mozzarella', file: 'Mozzarella cheese.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Skyr', file: 'Skyr.is með vanillu.jpg', author: 'Schnee (talk)', license: 'CC BY-SA 4.0' },
+  { word: 'Halloumi', file: 'Grilled Halloumi.jpg', author: 'Hmioannou', license: 'CC BY 3.0' },
+  { word: 'Labneh', file: 'Labneh01.jpg', author: 'No machine-readable author provided. Omernos~commonswiki assumed (base', license: 'Public domain' },
+  { word: 'Kashk', file: 'Kashk 01.jpg', author: 'Shams948', license: 'CC0' },
+  { word: 'Cream Cheese', file: 'Philadelphia cream cheese (flash).jpg', author: 'Bodhi Peace', license: 'CC BY-SA 4.0' },
+  { word: 'Cheddar', file: 'Somerset-Cheddar.jpg', author: 'J.P.Lon', license: 'CC BY-SA 3.0' },
+  { word: 'Cheese Curds', file: 'Cheese Curds.jpg', author: 'Holger B', license: 'CC BY-SA 4.0' },
+  { word: 'Requeijão', file: 'Requeijão Português.jpg', author: 'Comte0', license: 'CC BY-SA 4.0' },
+  { word: 'Grated Cheese', file: 'Grated cheese (331496238).jpg', author: 'Mack Male from Edmonton, AB, Canada', license: 'CC BY-SA 2.0' },
+  { word: 'Semi-cured Cheese', file: 'A semi hard giant cheese with slices.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Fresh Cheese', file: 'Cheese 55 bg 061806.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Edam Cheese', file: 'SmallEdamCheese.jpg', author: 'Yvwv', license: 'CC BY-SA 3.0' },
+  { word: 'Aged Cheese', file: 'Meule du Plateau cheese wheels in the ripening cellar, Terre de fromages, Herve, 2025.jpg', author: 'DimiTalen', license: 'CC0' },
+  { word: 'Sheep\'s Cheese', file: 'Sheep\'s milk cheese.png', author: 'Tiia Monto', license: 'CC BY 4.0' },
+  { word: 'Goat\'s Cheese', file: 'Crottin 02.jpg', author: 'Coyau', license: 'CC BY-SA 3.0' },
+  { word: 'Parmesan', file: 'Parmigiano reggiano piece.jpg', author: 'Zerohund', license: 'CC BY-SA 3.0' },
+  { word: 'Feta', file: 'Feta Cheese.jpg', author: 'JJ Harrison (https://www.jjharrison.com.au/)', license: 'CC BY-SA 2.5' },
+  { word: 'Mascarpone', file: 'Mascarpone 2.jpg', author: 'Ramagliolo9 at Italian Wikipedia', license: 'CC BY-SA 4.0' },
+  { word: 'Clotted Cream', file: 'Clotted cream (cropped).JPG', author: 'Biggishben', license: 'CC BY-SA 3.0' },
+  { word: 'Suet', file: 'Beef suet-01.jpg', author: 'FotoosvanRobin', license: 'CC BY-SA 2.0' },
+  { word: 'Tofu', file: 'Japanese SilkyTofu (Kinugoshi Tofu).JPG', author: 'DryPot', license: 'CC BY-SA 3.0' },
 ];
