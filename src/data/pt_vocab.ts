@@ -260,7 +260,6 @@ export const PT_VOCAB_WORDS: Word[] = [
   // ── Kitchen (batch 3) ────────────────────────────────────────────────────────
   { id: 'pv194', word: 'Cork',           translations: { es: 'Corcho',          pt: 'Rolha', 'pt-br': 'Rolha',          fr: 'Bouchon',           de: 'Korken',             it: 'Tappo di sughero',   ja: 'コルク',         zh: '软木塞'   }, category: 'Kitchen', unsplashQuery: 'wine cork stopper natural wood cylinder closeup bottle' },
   { id: 'pv195', word: 'Round Slice',    translations: { es: 'Rodaja',          pt: 'Rodela', 'pt-br': 'Rodela',         fr: 'Rondelle',          de: 'Scheibe',            it: 'Rondella',           ja: '輪切り',         zh: '圆切片'   }, category: 'Kitchen', unsplashQuery: 'cucumber round slices fresh green cross section closeup' },
-  { id: 'pv196', word: 'Grater',         translations: { es: 'Rallador',        pt: 'Raspador', 'pt-br': 'Raspador',       fr: 'Râpe',              de: 'Reibe',              it: 'Grattugia',          ja: 'おろし器',       zh: '磨碎器'   }, category: 'Kitchen', unsplashQuery: 'box grater stainless steel cheese shredding kitchen closeup' },
   { id: 'pv197', word: 'Nutcracker',     translations: { es: 'Cascanueces',     pt: 'Quebra-nozes', 'pt-br': 'Quebra-nozes',   fr: 'Casse-noix',        de: 'Nussknacker',        it: 'Schiaccianoci',      ja: 'くるみ割り',     zh: '胡桃夹'   }, category: 'Kitchen', unsplashQuery: 'metal nutcracker cracking walnut shell closeup kitchen tool' },
 
   // ── Concepts (batch 3) ───────────────────────────────────────────────────────
