@@ -9,8 +9,8 @@ export const EASTERN_EUROPEAN_INGREDIENT_WORDS: Word[] = [
   { id: 'eei3', word: 'Matsoni',        translations: { es: 'Matsoni',        pt: 'Matsoni', 'pt-br': 'Matsoni',        fr: 'Matsoni',         de: 'Matsoni',         it: 'Matsoni',         ja: 'マツォーニ',       zh: '格鲁吉亚酸奶', ko: '마초니', ar: 'ماتسوني' }, category: 'Dairy & Eggs', unsplashQuery: 'matsoni georgian yogurt fermented' },
 
   // ── Bread & Grains ────────────────────────────────────────────────────────────
-  { id: 'eei4', word: 'Millet',         translations: { es: 'Mijo',           pt: 'Milho miúdo', 'pt-br': 'Milho miúdo',    fr: 'Millet',          de: 'Hirse',           it: 'Miglio',          ja: 'キビ',             zh: '小米',      ko: '기장', ar: 'دخن' }, category: 'Bread & Grains', unsplashQuery: 'millet grain yellow cereal' },
-  { id: 'eei5', word: 'Semolina',       translations: { es: 'Sémola',         pt: 'Sêmola', 'pt-br': 'Sêmola',         fr: 'Semoule',         de: 'Grieß',           it: 'Semolino',        ja: 'セモリナ',         zh: '粗粒小麦粉', ko: '세몰리나', ar: 'سميد' }, category: 'Bread & Grains', unsplashQuery: 'semolina wheat flour coarse' },
+  { id: 'eei4', word: 'Millet',         translations: { es: 'Mijo',           pt: 'Milho miúdo', 'pt-br': 'Milho miúdo',    fr: 'Millet',          de: 'Hirse',           it: 'Miglio',          ja: 'キビ',             zh: '小米',      ko: '기장', ar: 'دخن', nl: 'Gierst' }, category: 'Bread & Grains', unsplashQuery: 'millet grain yellow cereal' },
+  { id: 'eei5', word: 'Semolina',       translations: { es: 'Sémola',         pt: 'Sêmola', 'pt-br': 'Sêmola',         fr: 'Semoule',         de: 'Grieß',           it: 'Semolino',        ja: 'セモリナ',         zh: '粗粒小麦粉', ko: '세몰리나', ar: 'سميد', nl: 'Griesmeel' }, category: 'Bread & Grains', unsplashQuery: 'semolina wheat flour coarse' },
 
   // ── Condiments & Pantry ───────────────────────────────────────────────────────
   { id: 'eei6', word: 'Sunflower Oil',  translations: { es: 'Aceite de girasol', pt: 'Óleo de girassol', 'pt-br': 'Óleo de girassol', fr: 'Huile de tournesol', de: 'Sonnenblumenöl', it: 'Olio di girasole', ja: 'ひまわり油',     zh: '葵花籽油',  ko: '해바라기유', ar: 'زيت عباد الشمس' }, category: 'Condiments', unsplashQuery: 'sunflower oil bottle cooking' },
@@ -27,9 +27,8 @@ export const EASTERN_EUROPEAN_INGREDIENT_WORDS: Word[] = [
   { id: 'eei14', word: 'Lovage',        translations: { es: 'Levístico',       pt: 'Levístico', 'pt-br': 'Levístico',      fr: 'Livèche',         de: 'Liebstöckel',     it: 'Levistico',       ja: 'ラヴェジ',         zh: '欧洲当归',  ko: '러비지', ar: 'الكرفس الجبلي' }, category: 'Herbs & Spices', unsplashQuery: 'lovage herb plant Eastern European' },
 
   // ── Vegetables ────────────────────────────────────────────────────────────────
-  { id: 'eei15', word: 'Kale',          translations: { es: 'Col rizada',      pt: 'Couve-galega', 'pt-br': 'Couve-galega',   fr: 'Chou frisé',      de: 'Grünkohl',        it: 'Cavolo riccio',   ja: 'ケール',           zh: '羽衣甘蓝',  ko: '케일', ar: 'كرنب أجعد' }, category: 'Vegetables', unsplashQuery: 'kale curly dark green leaf' },
-  { id: 'eei16', word: 'Sorrel',        translations: { es: 'Acedera',         pt: 'Azeda', 'pt-br': 'Azeda',          fr: 'Oseille',         de: 'Sauerampfer',     it: 'Acetosa',         ja: 'スイバ',           zh: '酸模',      ko: '수영', ar: 'حميض' }, category: 'Vegetables', unsplashQuery: 'sorrel leaf sour green herb' },
-  { id: 'eei17', word: 'Celeriac',      translations: { es: 'Apio-nabo',       pt: 'Aipo-rábano', 'pt-br': 'Aipo-rábano',    fr: 'Céleri-rave',     de: 'Knollensellerie', it: 'Sedano rapa',     ja: 'セロリアック',     zh: '根芹菜',    ko: '셀러리악', ar: 'كرفس الجذر' }, category: 'Vegetables', unsplashQuery: 'celeriac root celery vegetable pale' },
+  { id: 'eei15', word: 'Kale',          translations: { es: 'Col rizada',      pt: 'Couve-galega', 'pt-br': 'Couve-galega',   fr: 'Chou frisé',      de: 'Grünkohl',        it: 'Cavolo riccio',   ja: 'ケール',           zh: '羽衣甘蓝',  ko: '케일', ar: 'كرنب أجعد', nl: 'Boerenkool' }, category: 'Vegetables', unsplashQuery: 'kale curly dark green leaf' },
+  { id: 'eei16', word: 'Sorrel',        translations: { es: 'Acedera',         pt: 'Azeda', 'pt-br': 'Azeda',          fr: 'Oseille',         de: 'Sauerampfer',     it: 'Acetosa',         ja: 'スイバ',           zh: '酸模',      ko: '수영', ar: 'حميض', nl: 'Zuring' }, category: 'Vegetables', unsplashQuery: 'sorrel leaf sour green herb' },
 
   // ── Meat ──────────────────────────────────────────────────────────────────────
 
