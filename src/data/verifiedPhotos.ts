@@ -2211,6 +2211,73 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'garam masala indian spice blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Garammasalaphoto.jpg/960px-Garammasalaphoto.jpg', // Garam Masala
   'mint fresh herb leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fresh_Mint_leaves.jpg/960px-Fresh_Mint_leaves.jpg', // Mint
   'huacatay black mint peruvian herb green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Starr-120608-7386-Tagetes_minuta-flowers-Ulupalakua_Ranch-Maui_%2825145434025%29.jpg/960px-Starr-120608-7386-Tagetes_minuta-flowers-Ulupalakua_Ranch-Maui_%2825145434025%29.jpg', // Huacatay
+  'egusi melon seeds west africa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/EGUSI.JPG/960px-EGUSI.JPG', // Egusi
+  'pigeon peas gandules caribbean green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Cajanus_cajan_MHNT.BOT.2015.2.47.jpg/960px-Cajanus_cajan_MHNT.BOT.2015.2.47.jpg', // Pigeon Peas
+  'beans legumes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rajmah_beans_in_Kullu_district%2C_Himachal_Pradesh%2C2.jpg/960px-Rajmah_beans_in_Kullu_district%2C_Himachal_Pradesh%2C2.jpg', // Beans
+  'peanuts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Peanuts_in_their_shells.jpg/960px-Peanuts_in_their_shells.jpg', // Peanuts
+  'red lentils orange dried raw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Split_Red_Lentil.jpg/960px-Split_Red_Lentil.jpg', // Red Lentils
+  'cashew nuts raw bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/CASHEW_NUTS.jpg/960px-CASHEW_NUTS.jpg', // Cashew
+  'hazelnut nuts roasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Hazelnuts_%28Corylus_avellana%29_-_whole_with_kernels.jpg/960px-Hazelnuts_%28Corylus_avellana%29_-_whole_with_kernels.jpg', // Hazelnut
+  'brazil nut large whole raw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bertholletia_excelsa_seeds_closeup.jpg/960px-Bertholletia_excelsa_seeds_closeup.jpg', // Brazil Nut
+  'pecan nuts halves caramel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/2_pecan_nut_halves.jpg/500px-2_pecan_nut_halves.jpg', // Pecan
+  'chestnut roasted autumn market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Frucht_der_Edelkastanie.jpg/960px-Frucht_der_Edelkastanie.jpg', // Chestnut
+  'walnut halves brown crinkled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Walnuts_-_whole_and_open_with_halved_kernel.jpg/960px-Walnuts_-_whole_and_open_with_halved_kernel.jpg', // Walnut
+  'almond nuts raw whole': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg/960px-Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg', // Almond
+  'pistachio green nuts open shell': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pistachio_vera.jpg/960px-Pistachio_vera.jpg', // Pistachio
+  'macadamia nuts white buttery hawaii': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Macadamia_nuts.jpg/960px-Macadamia_nuts.jpg', // Macadamia
+  'tiger nut chufa small round': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cyperus_esculentus_012.jpg/960px-Cyperus_esculentus_012.jpg', // Tiger Nut
+  'ginkgo nut biloba yellow seed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Raw_ginkgo_nuts.jpg/960px-Raw_ginkgo_nuts.jpg', // Ginkgo Nut
+  'lotus seeds dried white chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/White_lotus_seeds.jpg/960px-White_lotus_seeds.jpg', // Lotus Seed
+  'candlenut indonesian cooking nut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Kemiri_atau_damo.jpg/960px-Kemiri_atau_damo.jpg', // Candlenut
+  'lentils green brown red dry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Green_Lentil_-_%E0%B4%AA%E0%B4%B0%E0%B4%BF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8D.jpg/960px-Green_Lentil_-_%E0%B4%AA%E0%B4%B0%E0%B4%BF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8D.jpg', // Lentil
+  'chickpeas cooked can bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ordinary_chickpeas_in_a_ceramic_bowl.jpg/960px-Ordinary_chickpeas_in_a_ceramic_bowl.jpg', // Chickpea
+  'black beans bowl cooked latin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Black_Turtle_Bean.jpg/960px-Black_Turtle_Bean.jpg', // Black Bean
+  'kidney beans red cooked bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Red_kidney_beans_2024-11-27.jpg/960px-Red_kidney_beans_2024-11-27.jpg', // Kidney Bean
+  'butter beans large white creamy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Phaseoulus_lunatus.jpg/500px-Phaseoulus_lunatus.jpg', // Butter Bean
+  'borlotti beans speckled pink italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Roman_beans.jpg/960px-Roman_beans.jpg', // Borlotti Bean
+  'cannellini beans white tuscan italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/White_kidney_beans%F0%9F%AB%98.jpg/960px-White_kidney_beans%F0%9F%AB%98.jpg', // Cannellini Bean
+  'adzuki beans red small asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Azuki_Beans.jpg/960px-Azuki_Beans.jpg', // Adzuki Bean
+  'mung bean green small sprouted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Mung_beans_%28Vigna_radiata%29.jpg/960px-Mung_beans_%28Vigna_radiata%29.jpg', // Mung Bean
+  'black eyed peas beans cooked southern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/BlackEyedPeas.JPG/960px-BlackEyedPeas.JPG', // Black-Eyed Pea
+  'split peas green yellow dry soup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Split_pea.jpg/960px-Split_pea.jpg', // Split Pea
+  'broad beans fava green fresh pod': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Broad_bean_pile.jpg/960px-Broad_bean_pile.jpg', // Broad Bean
+  'soybean plant pod harvest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Dried_soybeans.jpg/960px-Dried_soybeans.jpg', // Soybean
+  'pinto beans speckled dry brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Pinto_Beans_Seeds.jpg/960px-Pinto_Beans_Seeds.jpg', // Pinto Bean
+  'lupini beans yellow brine pickled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Ciotola_di_lupini.jpg/960px-Ciotola_di_lupini.jpg', // Lupini Bean
+  'tofu block white silken soy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG/960px-Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG', // Tofu
+  'sunflower seeds raw snack bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Sunflower_Seeds_Kaldari.jpg/960px-Sunflower_Seeds_Kaldari.jpg', // Sunflower Seeds
+  'pumpkin seeds pepitas green snack': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pepita_de_calabaza.jpg/960px-Pepita_de_calabaza.jpg', // Pumpkin Seeds
+  'flaxseed linseed brown golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Brown_Flax_Seeds.jpg/960px-Brown_Flax_Seeds.jpg', // Flaxseed
+  'chia seeds black white pudding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Chia_seeds_in_a_cup.jpg/960px-Chia_seeds_in_a_cup.jpg', // Chia Seed
+  'hemp seeds green protein superfood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Hemp_seeds_protein.jpg/960px-Hemp_seeds_protein.jpg', // Hemp Seed
+  'sesame seeds white black sprinkle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Sa_white_sesame_seeds.jpg/960px-Sa_white_sesame_seeds.jpg', // Sesame Seed
+  'pine nuts seeds': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Shelled_pine_nuts.jpg/960px-Shelled_pine_nuts.jpg', // Pine Nuts
+  'cake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/500px-Pound_layer_cake.jpg', // Cake
+  'ice cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Ice_cream_cone_with_spoon.jpg/960px-Ice_cream_cone_with_spoon.jpg', // Ice Cream
+  'chocolate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Three_Bars_%281%29.jpg/960px-Three_Bars_%281%29.jpg', // Chocolate
+  'cookie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Choc-Chip-Cookie.jpg/960px-Choc-Chip-Cookie.jpg', // Cookie
+  'doughnut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Glazed-Donut.jpg/960px-Glazed-Donut.jpg', // Doughnut
+  'cheesecake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Baked_cheesecake_with_raspberries_and_blueberries.jpg/960px-Baked_cheesecake_with_raspberries_and_blueberries.jpg', // Cheesecake
+  'pudding dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Blanc-manger_on_glass_platter%2C_full_view.jpg/960px-Blanc-manger_on_glass_platter%2C_full_view.jpg', // Pudding
+  'caramel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Caramel-2.jpg/960px-Caramel-2.jpg', // Caramel
+  'meringue dessert white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Merengues-Spain.jpg/960px-Merengues-Spain.jpg', // Meringue
+  'chocolate truffle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Truffles_with_nuts_and_chocolate_dusting_in_detail.jpg/960px-Truffles_with_nuts_and_chocolate_dusting_in_detail.jpg', // Truffle
+  'sorbet ice cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Strawberry_sorbet_zoomed.jpg/960px-Strawberry_sorbet_zoomed.jpg', // Sorbet
+  'fruit salad bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Fruktsallad_%28Fruit_salad%29.jpg/960px-Fruktsallad_%28Fruit_salad%29.jpg', // Fruit Salad
+  'queijada cheese tart portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Queijada_e_bica%2C_La_Vie%2C_Funchal%2C_Madeira_-_IMG_20190530_180417.jpg/960px-Queijada_e_bica%2C_La_Vie%2C_Funchal%2C_Madeira_-_IMG_20190530_180417.jpg', // Cheese Tart
+  'apple crumble baked dish golden oat crust bowl dessert': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Fresh_baked_apple_crisp_01.jpg/960px-Fresh_baked_apple_crisp_01.jpg', // Apple Crumble
+  'rice pudding creamy milk dessert bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Kheer_with_condensed_milk..JPG/960px-Kheer_with_condensed_milk..JPG', // Rice Pudding
+  'black forest cake chocolate cherry cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Black_Forest_gateau.jpg/960px-Black_Forest_gateau.jpg', // Black Forest Cake
+  'brownie chocolate fudge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolatebrownie.JPG/960px-Chocolatebrownie.JPG', // Brownie
+  'pumpkin pie autumn thanksgiving': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Pumpkin-Pie-Whole-Slice.jpg/960px-Pumpkin-Pie-Whole-Slice.jpg', // Pumpkin Pie
+  'tangyuan glutinous rice balls soup sesame': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Wufangzhai_Tangyuan_in_Wuhan.jpg/960px-Wufangzhai_Tangyuan_in_Wuhan.jpg', // Tangyuan
+  'mooncake chinese mid autumn festival': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Mooncake.jpg/960px-Mooncake.jpg', // Mooncake
+  'klepon indonesian green rice cake coconut palm sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Klepon_Khas_Tulungagung.jpg/960px-Klepon_Khas_Tulungagung.jpg', // Klepon
+  'bibingka filipino rice cake coconut christmas': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bibingka_%28Philippines%29.jpg/960px-Bibingka_%28Philippines%29.jpg', // Bibingka
+  'kue lapis indonesian layer cake colorful steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Kue_Lapis.jpg/960px-Kue_Lapis.jpg', // Kue Lapis
+  'muhallebi milk pudding rosewater pistachio': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg/960px-Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg', // Muhallebi
+  'pastel de nata portuguese egg tart custard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Pasteis_de_Belem.jpg/960px-Pasteis_de_Belem.jpg', // Pastel de Nata
+  'malva pudding south african sponge apricot cream sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Malva_Pudding.jpg/960px-Malva_Pudding.jpg', // Malva Pudding
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -4392,4 +4459,71 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Garam Masala', file: 'Garammasalaphoto.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
   { word: 'Mint', file: 'Fresh Mint leaves.jpg', author: 'Mangosapiens', license: 'CC BY-SA 4.0' },
   { word: 'Huacatay', file: 'Starr-120608-7386-Tagetes minuta-flowers-Ulupalakua Ranch-Maui (25145434025).jpg', author: 'Forest and Kim Starr', license: 'CC BY 3.0' },
+  { word: 'Egusi', file: 'EGUSI.JPG', author: 'Zz411 at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Pigeon Peas', file: 'Cajanus cajan MHNT.BOT.2015.2.47.jpg', author: 'Roger Culos', license: 'CC BY-SA 3.0' },
+  { word: 'Beans', file: 'Rajmah beans in Kullu district, Himachal Pradesh,2.jpg', author: 'Rajani Gairshail', license: 'CC BY-SA 4.0' },
+  { word: 'Peanuts', file: 'Peanuts in their shells.jpg', author: 'TorbeyCharbel', license: 'CC BY 4.0' },
+  { word: 'Red Lentils', file: 'Split Red Lentil.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 4.0' },
+  { word: 'Cashew', file: 'CASHEW NUTS.jpg', author: 'Ranjithkumar Murugesan', license: 'CC0' },
+  { word: 'Hazelnut', file: 'Hazelnuts (Corylus avellana) - whole with kernels.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Brazil Nut', file: 'Bertholletia excelsa seeds closeup.jpg', author: 'רנדום', license: 'CC BY-SA 3.0' },
+  { word: 'Pecan', file: '2 pecan nut halves.jpg', author: 'Firetwister', license: 'CC BY-SA 3.0' },
+  { word: 'Chestnut', file: 'Frucht der Edelkastanie.jpg', author: 'Benjamin Gimmel, BenHur', license: 'CC BY-SA 3.0' },
+  { word: 'Walnut', file: 'Walnuts - whole and open with halved kernel.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Almond', file: 'Almonds - in shell, shell cracked open, shelled, blanched.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Pistachio', file: 'Pistachio vera.jpg', author: 'THOR', license: 'CC BY 2.0' },
+  { word: 'Macadamia', file: 'Macadamia nuts.jpg', author: 'စာကလေး SarKaLay', license: 'CC0' },
+  { word: 'Tiger Nut', file: 'Cyperus esculentus 012.jpg', author: 'Tamorlan', license: 'CC BY 3.0' },
+  { word: 'Ginkgo Nut', file: 'Raw ginkgo nuts.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Lotus Seed', file: 'White lotus seeds.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Candlenut', file: 'Kemiri atau damo.jpg', author: 'Andri Kesenja 01', license: 'CC BY-SA 4.0' },
+  { word: 'Lentil', file: 'Green Lentil - പരിപ്പ്.jpg', author: 'Shijan Kaakkara', license: 'CC BY-SA 4.0' },
+  { word: 'Chickpea', file: 'Ordinary chickpeas in a ceramic bowl.jpg', author: 'AlixSaz', license: 'CC BY-SA 4.0' },
+  { word: 'Black Bean', file: 'Black Turtle Bean.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 3.0' },
+  { word: 'Kidney Bean', file: 'Red kidney beans 2024-11-27.jpg', author: 'Bean appreciator', license: 'CC0' },
+  { word: 'Butter Bean', file: 'Phaseoulus lunatus.jpg', author: 'Howard F. Schwartz, Colorado State University', license: 'CC BY 3.0' },
+  { word: 'Borlotti Bean', file: 'Roman beans.jpg', author: 'Bean appreciator', license: 'CC0' },
+  { word: 'Cannellini Bean', file: 'White kidney beans🫘.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Adzuki Bean', file: 'Azuki Beans.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 3.0' },
+  { word: 'Mung Bean', file: 'Mung beans (Vigna radiata).jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Black-Eyed Pea', file: 'BlackEyedPeas.JPG', author: 'Toby Hudson', license: 'CC BY-SA 3.0' },
+  { word: 'Split Pea', file: 'Split pea.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 3.0' },
+  { word: 'Broad Bean', file: 'Broad bean pile.jpg', author: 'Bodhi Peace', license: 'CC BY-SA 4.0' },
+  { word: 'Soybean', file: 'Dried soybeans.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Pinto Bean', file: 'Pinto Beans Seeds.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 4.0' },
+  { word: 'Lupini Bean', file: 'Ciotola di lupini.jpg', author: 'Lupino', license: 'CC0' },
+  { word: 'Tofu', file: 'Japanese SilkyTofu (Kinugoshi Tofu).JPG', author: 'DryPot', license: 'CC BY-SA 3.0' },
+  { word: 'Sunflower Seeds', file: 'Sunflower Seeds Kaldari.jpg', author: 'Kaldari', license: 'Public domain' },
+  { word: 'Pumpkin Seeds', file: 'Pepita de calabaza.jpg', author: 'Dmitry Makeev', license: 'CC BY-SA 4.0' },
+  { word: 'Flaxseed', file: 'Brown Flax Seeds.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 3.0' },
+  { word: 'Chia Seed', file: 'Chia seeds in a cup.jpg', author: 'Zenyrgarden', license: 'CC BY-SA 4.0' },
+  { word: 'Hemp Seed', file: 'Hemp seeds protein.jpg', author: 'MPart4', license: 'CC BY-SA 4.0' },
+  { word: 'Sesame Seed', file: 'Sa white sesame seeds.jpg', author: 'Sanjay ach', license: 'CC BY-SA 3.0' },
+  { word: 'Pine Nuts', file: 'Shelled pine nuts.jpg', author: 'Paul Goyette', license: 'CC BY-SA 2.0' },
+  { word: 'Cake', file: 'Pound layer cake.jpg', author: 'Scheinwerfermann', license: 'Public domain' },
+  { word: 'Ice Cream', file: 'Ice cream cone with spoon.jpg', author: 'Thegreatmutata', license: 'CC0' },
+  { word: 'Chocolate', file: 'Three Bars (1).jpg', author: 'Lynnereal', license: 'CC BY-SA 4.0' },
+  { word: 'Cookie', file: 'Choc-Chip-Cookie.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Doughnut', file: 'Glazed-Donut.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Cheesecake', file: 'Baked cheesecake with raspberries and blueberries.jpg', author: 'zingyyellow', license: 'CC BY 2.0' },
+  { word: 'Pudding', file: 'Blanc-manger on glass platter, full view.jpg', author: 'SKopp', license: 'CC BY-SA 3.0' },
+  { word: 'Caramel', file: 'Caramel-2.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Meringue', file: 'Merengues-Spain.jpg', author: 'Tamorlan', license: 'CC BY 3.0' },
+  { word: 'Truffle', file: 'Truffles with nuts and chocolate dusting in detail.jpg', author: 'David Leggett', license: 'CC BY 2.0' },
+  { word: 'Sorbet', file: 'Strawberry sorbet zoomed.jpg', author: 'star5112', license: 'CC BY-SA 2.0' },
+  { word: 'Fruit Salad', file: 'Fruktsallad (Fruit salad).jpg', author: 'dnm', license: 'CC BY-SA 3.0' },
+  { word: 'Cheese Tart', file: 'Queijada e bica, La Vie, Funchal, Madeira - IMG 20190530 180417.jpg', author: 'Paulo SP/ Wikimedia', license: 'CC BY-SA 4.0' },
+  { word: 'Apple Crumble', file: 'Fresh baked apple crisp 01.jpg', author: 'Infrogmation of New Orleans', license: 'CC BY-SA 4.0' },
+  { word: 'Rice Pudding', file: 'Kheer with condensed milk..JPG', author: 'Shivangisj', license: 'CC BY-SA 4.0' },
+  { word: 'Black Forest Cake', file: 'Black Forest gateau.jpg', author: 'Mikelo', license: 'CC BY-SA 2.0' },
+  { word: 'Brownie', file: 'Chocolatebrownie.JPG', author: 'Ɱ', license: 'CC BY-SA 3.0' },
+  { word: 'Pumpkin Pie', file: 'Pumpkin-Pie-Whole-Slice.jpg', author: 'Evan-Amos', license: 'CC BY-SA 3.0' },
+  { word: 'Tangyuan', file: 'Wufangzhai Tangyuan in Wuhan.jpg', author: 'Zheng Zhou', license: 'CC BY-SA 4.0' },
+  { word: 'Mooncake', file: 'Mooncake.jpg', author: 'Lybil BER', license: 'CC BY-SA 3.0' },
+  { word: 'Klepon', file: 'Klepon Khas Tulungagung.jpg', author: 'Robijuniarta', license: 'CC BY-SA 4.0' },
+  { word: 'Bibingka', file: 'Bibingka (Philippines).jpg', author: 'Obsidian Soul', license: 'CC0' },
+  { word: 'Kue Lapis', file: 'Kue Lapis.jpg', author: 'Shitadevi', license: 'CC BY-SA 4.0' },
+  { word: 'Muhallebi', file: 'Mhallabiyyeh (Arabic milk pudding).jpg', author: 'Jktab', license: 'CC BY-SA 4.0' },
+  { word: 'Pastel de Nata', file: 'Pasteis de Belem.jpg', author: 'Mon Œil', license: 'CC BY 2.0' },
+  { word: 'Malva Pudding', file: 'Malva Pudding.jpg', author: 'Jon Mountjoy', license: 'CC BY 2.0' },
 ];
