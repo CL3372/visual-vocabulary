@@ -18,7 +18,6 @@ export const ISLAND_INGREDIENT_WORDS: Word[] = [
   { id: 'isli13', word: 'Coconut Crab',    translations: { es: 'Cangrejo coco',    pt: 'Caranguejo de coco', 'pt-br': 'Caranguejo de coco', fr: 'Crabe des cocotiers', de: 'Kokoskrabbe',    it: 'Granchio del cocco', ja: 'ヤシガニ',          zh: '椰子蟹', nl: 'Kokoskrab', ko: '야자집게', ar: 'سرطان جوز الهند'       }, category: 'Seafood',        unsplashQuery: 'coconut crab large tropical island' },
 
   // ── Mediterranean Islands ─────────────────────────────────────────────────────
-  { id: 'isli14', word: 'Carob',           translations: { es: 'Algarroba',        pt: 'Alfarroba', 'pt-br': 'Alfarroba',        fr: 'Caroube',           de: 'Johannisbrot',      it: 'Carruba',           ja: 'カロブ',             zh: '角豆', nl: 'Carob'         }, category: 'Nuts & Legumes', unsplashQuery: 'carob pods dried brown mediterranean malta' },
   { id: 'isli16', word: 'Rabbit',          translations: { es: 'Conejo',           pt: 'Coelho', 'pt-br': 'Coelho',           fr: 'Lapin',             de: 'Kaninchen',         it: 'Coniglio',          ja: 'ウサギ肉',           zh: '兔肉', nl: 'Konijn', ko: '토끼고기', ar: 'أرنب'         }, category: 'Meat',           unsplashQuery: 'rabbit meat raw game maltese' },
 
 
