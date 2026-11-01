@@ -1643,6 +1643,125 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'suet fat cooking british': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Beef_suet-01.jpg/960px-Beef_suet-01.jpg', // Suet
   'tofu block soybean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG/960px-Japanese_SilkyTofu_%28Kinugoshi_Tofu%29.JPG', // Tofu
   'lucuma peruvian fruit orange flesh': '', // Lucuma — no trustworthy photo yet
+  'plantain cooking banana green yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/An_entire_cluster_of_plantains.jpg/960px-An_entire_cluster_of_plantains.jpg', // Plantain
+  'cassava yuca root african': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Harvested_cassava_roots_02.jpg/960px-Harvested_cassava_roots_02.jpg', // Cassava
+  'yam tuber west africa root': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kambar_wh.jpg/960px-Kambar_wh.jpg', // Yam
+  'taro root corm purple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Taro_corms_2.jpg/960px-Taro_corms_2.jpg', // Taro
+  'molokhia jute leaf green egyptian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Corchorus_olitorius_%282%29.JPG/960px-Corchorus_olitorius_%282%29.JPG', // Molokhia
+  'collard greens dark leaf vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Collard-Greens-Bundle.jpg/960px-Collard-Greens-Bundle.jpg', // Collard Greens
+  'bok choy pak choi white stem green leaves fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Brassica_rapa_var._chinensis_%28leaf%29.jpg/960px-Brassica_rapa_var._chinensis_%28leaf%29.jpg', // Bok Choy
+  'daikon white radish japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Daikon.Japan.jpg/500px-Daikon.Japan.jpg', // Daikon
+  'bamboo shoots fresh sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Bamboo_shoots.jpg/960px-Bamboo_shoots.jpg', // Bamboo Shoots
+  'water chestnuts crunchy asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Peeled_water_chestnuts.jpg/960px-Peeled_water_chestnuts.jpg', // Water Chestnuts
+  'lotus root sliced holes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Lotus_root.jpg/960px-Lotus_root.jpg', // Lotus Root
+  'bitter melon gourd warty green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Momordica_charantia_22052014.jpg/960px-Momordica_charantia_22052014.jpg', // Bitter Melon
+  'napa cabbage elongated pale yellow white leaves chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/960px-Napa_cabbages.png', // Napa Cabbage
+  'habanero pepper orange wrinkled closeup hot chilli vibrant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Habanero_closeup_edit2.jpg/960px-Habanero_closeup_edit2.jpg', // Habanero
+  'scotch bonnet yellow orange wrinkled chilli jamaican closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Scotch_bonnet_chili_pepper.jpg/960px-Scotch_bonnet_chili_pepper.jpg', // Scotch Bonnet
+  'tomatillo green husk tomato mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Tomatillo.jpg/960px-Tomatillo.jpg', // Tomatillo
+  'jicama white crispy root vegetable mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Bangkuang_070612-056_stgd.jpg/500px-Bangkuang_070612-056_stgd.jpg', // Jicama
+  'chayote squash green central american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Sechium_edule_dsc07767.jpg/960px-Sechium_edule_dsc07767.jpg', // Chayote
+  'nopales cactus paddle mexican green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Opuntia.png/960px-Opuntia.png', // Nopales
+  'malanga taro root caribbean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Root_vegetables_%22Malanga%22_at_Cuban_street_market.jpg/960px-Root_vegetables_%22Malanga%22_at_Cuban_street_market.jpg', // Malanga
+  'kale curly dark green leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/960px-Boerenkool.jpg', // Kale
+  'sorrel leaf sour green herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%28MHNT%29_Rumex_acetosa_-_Habit.jpg/960px-%28MHNT%29_Rumex_acetosa_-_Habit.jpg', // Sorrel
+  'beetroot red beet vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Beets-Bundle.jpg/960px-Beets-Bundle.jpg', // Beetroot
+  'chicory endive white belgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Zuckerhut_%28Cichorium_intybus_var._foliosum%29_Marktangebot--Josef_Schlaghecken.jpg/960px-Zuckerhut_%28Cichorium_intybus_var._foliosum%29_Marktangebot--Josef_Schlaghecken.jpg', // Chicory
+  'celeriac celery root vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/C%C3%A9leri-rave-fendu.jpg/960px-C%C3%A9leri-rave-fendu.jpg', // Celeriac
+  'grape vine leaves fresh green stack mediterranean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Pickled_grape_leaves.jpg/960px-Pickled_grape_leaves.jpg', // Vine Leaves
+  'ripe red tomatoes vine fresh garden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/960px-Tomato_je.jpg', // Tomato
+  'carrots fresh orange bunch roots garden harvest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/960px-Vegetable-Carrot-Bundle-wStalks.jpg', // Carrot
+  'potatoes raw whole brown skin pile harvest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/960px-Patates.jpg', // Potato
+  'onion brown bulb whole halved white inside': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/960px-Onion_on_White.JPG', // Onion
+  'garlic bulb cloves fresh white aromatic market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Garlic_bulbs_and_cloves.jpg/960px-Garlic_bulbs_and_cloves.jpg', // Garlic
+  'broccoli head green fresh isolated white background': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Fire-Tuscarora_Organic_Growers_-_Broccoli_head.jpg/960px-Fire-Tuscarora_Organic_Growers_-_Broccoli_head.jpg', // Broccoli
+  'spinach fresh green leaves bowl healthy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Spinach_leaves.jpg/960px-Spinach_leaves.jpg', // Spinach
+  'iceberg lettuce fresh crisp green leaves market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Romaine_lettuce.jpg/960px-Romaine_lettuce.jpg', // Lettuce
+  'cucumber': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Ryerson_Market_cucumbers_on_sale.jpg/960px-Ryerson_Market_cucumbers_on_sale.jpg', // Cucumber
+  'bell pepper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Green-Yellow-Red-Pepper-2009.jpg/960px-Green-Yellow-Red-Pepper-2009.jpg', // Bell Pepper
+  'eggplant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/960px-Solanum_melongena_24_08_2012_%281%29.JPG', // Eggplant
+  'zucchini': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/CSA-Striped-Zucchini.jpg/960px-CSA-Striped-Zucchini.jpg', // Zucchini
+  'mushrooms wild forest fresh brown earthy basket': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/ChampignonMushroom.jpg/500px-ChampignonMushroom.jpg', // Mushroom
+  'corn on the cob sweet yellow kernels fresh summer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/VegCorn.jpg/500px-VegCorn.jpg', // Corn
+  'fresh green peas open pod garden spring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Doperwt_rijserwt_peulen_Pisum_sativum.jpg/960px-Doperwt_rijserwt_peulen_Pisum_sativum.jpg', // Peas
+  'asparagus green spears bunch fresh tied': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Asparagus-Bundle.jpg/960px-Asparagus-Bundle.jpg', // Asparagus
+  'artichoke': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Artichoke_ready_to_cook.jpg/960px-Artichoke_ready_to_cook.jpg', // Artichoke
+  'leek vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/960px-Leek_on_white_background_-_0947.jpg', // Leek
+  'cauliflower': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/960px-Chou-fleur_02.jpg', // Cauliflower
+  'green cabbage round head vegetable fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Brassica_oleracea_2011_G1.jpg/960px-Brassica_oleracea_2011_G1.jpg', // Cabbage
+  'pumpkin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/960px-FrenchMarketPumpkinsB.jpg', // Pumpkin
+  'celery stalks green fresh bunch white background': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Celery_1.jpg/960px-Celery_1.jpg', // Celery
+  'watercress': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Watercress_%282%29.JPG/960px-Watercress_%282%29.JPG', // Watercress
+  'seaweed algae': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Nori.jpg/960px-Nori.jpg', // Seaweed
+  'taro leaves large green tropical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Starr_061108-9805_Colocasia_esculenta.jpg/960px-Starr_061108-9805_Colocasia_esculenta.jpg', // Taro Leaves
+  'poi taro paste purple hawaiian fermented': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Bowl_of_poi.jpg/960px-Bowl_of_poi.jpg', // Poi
+  'palm heart white cylindrical can tropical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Heart_of_palm.jpg/960px-Heart_of_palm.jpg', // Palm Heart
+  'breadfruit green round starchy tropical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg', // Breadfruit
+  'kumara sweet potato orange new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/960px-Ipomoea_batatas_006.JPG', // Kumara
+  'green beans': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Green_Beans_1.jpg/960px-Green_Beans_1.jpg', // Green Beans
+  'stinging nettle plant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Brandnetel%2C_Urtica_dioica%2C_Locatie%2C_Famberhorst.jpg/960px-Brandnetel%2C_Urtica_dioica%2C_Locatie%2C_Famberhorst.jpg', // Stinging Nettle
+  'clover plant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Trifolium_repens_%28inflorescense%29_Edit.jpg/960px-Trifolium_repens_%28inflorescense%29_Edit.jpg', // Clover
+  'rocket arugula leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eruca_sativa.jpg/500px-Eruca_sativa.jpg', // Rocket
+  'white cabbage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Chou_cabus_blanc_01.jpg/960px-Chou_cabus_blanc_01.jpg', // White Cabbage
+  'sprout shoot vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Organic_mixed_beans_shoots.jpg/960px-Organic_mixed_beans_shoots.jpg', // Sprout
+  'radish red vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/960px-Radish_3371103037_4ab07db0bf_o.jpg', // Radish
+  'horseradish root': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Gem%C3%BCsestand_am_Viktualienmarkt_M%C3%BCnchen_04.jpg/960px-Gem%C3%BCsestand_am_Viktualienmarkt_M%C3%BCnchen_04.jpg', // Horseradish
+  'okra vegetable green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Quiabo.jpg/960px-Quiabo.jpg', // Okra
+  'shallot onion small': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Shallots_-_sliced_and_whole.jpg/500px-Shallots_-_sliced_and_whole.jpg', // Shallot
+  'spring onion scallion green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/CSA-Red-Spring-Onions.jpg/960px-CSA-Red-Spring-Onions.jpg', // Spring Onion
+  'sweet potato orange': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Sweet_Potato.jpg/960px-Sweet_Potato.jpg', // Sweet Potato
+  'turnip white purple root vegetable fresh harvest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Turnip_2622027.jpg/960px-Turnip_2622027.jpg', // Turnip
+  'swede rutabaga purple yellow root vegetable winter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Steckr%C3%BCbe_%28Brassica_napus_subsp_rapifera%29.jpg/960px-Steckr%C3%BCbe_%28Brassica_napus_subsp_rapifera%29.jpg', // Swede
+  'fennel bulb vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Fennel_bulbs_-_Wellington%2C_New_Zealand.jpg/960px-Fennel_bulbs_-_Wellington%2C_New_Zealand.jpg', // Fennel
+  'edamame soybeans green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Edamame_by_Zesmerelda_in_Chicago.jpg/960px-Edamame_by_Zesmerelda_in_Chicago.jpg', // Edamame
+  'jalapeno chili pepper green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Liat_Portal_for_Foodie_Disorder_-_Jalape%C3%B1o_Peppers.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Jalape%C3%B1o_Peppers.jpg', // Jalapeño
+  'lemongrass stalks': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/YosriNov04Pokok_Serai.JPG/500px-YosriNov04Pokok_Serai.JPG', // Lemongrass
+  'galangal fresh rhizome root sliced white thai spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Thai_ginger_%28Alpinia_galanga%29.jpg/960px-Thai_ginger_%28Alpinia_galanga%29.jpg', // Galangal
+  'aji amarillo bright yellow chilli fresh peru market vibrant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Aji_Amarillo_pepper.jpg/960px-Aji_Amarillo_pepper.jpg', // Aji Amarillo
+  'rocoto pepper round red hot andean peru market closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Rocoto.jpg/960px-Rocoto.jpg', // Rocoto Pepper
+  'malagueta pepper small red hot brazilian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Pimenta_malagueta.jpg/960px-Pimenta_malagueta.jpg', // Malagueta Pepper
+  'choclo andean corn large kernels white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Comida_peruana.jpg/960px-Comida_peruana.jpg', // Choclo
+  'oca andean tuber colorful root vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Oca_%28Oxalis_tuberosa%29.jpg/960px-Oca_%28Oxalis_tuberosa%29.jpg', // Oca
+  'chuno freeze dried potato andean black': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Chu%C3%B1o.jpg/960px-Chu%C3%B1o.jpg', // Chuño
+  'purple corn maiz morado peruvian dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Zea_mays_%27morado%27_MHNT.BOT.2015.34.11.jpg/960px-Zea_mays_%27morado%27_MHNT.BOT.2015.34.11.jpg', // Purple Corn
+  'teff grain ethiopian tiny': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Tell_grains_in_USA.jpg/960px-Tell_grains_in_USA.jpg', // Teff
+  'sorghum grain african cereal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/A_plate_of_sorghum_grain.jpg/960px-A_plate_of_sorghum_grain.jpg', // Sorghum
+  'cornmeal maize flour yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Polenta_uncooked.jpg/960px-Polenta_uncooked.jpg', // Cornmeal
+  'glass noodles transparent vermicelli': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Cooked_dangmyeon.jpg/960px-Cooked_dangmyeon.jpg', // Glass Noodles
+  'rice paper wrapper transparent vietnamese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/B%C3%A1nh_Tr%C3%A1ng_C%C3%B9_Lao_M%C3%A2y.JPG/960px-B%C3%A1nh_Tr%C3%A1ng_C%C3%B9_Lao_M%C3%A2y.JPG', // Rice Paper
+  'rice flour white fine powder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Two_kinds_of_rice_flour.jpg/500px-Two_kinds_of_rice_flour.jpg', // Rice Flour
+  'glutinous rice sticky white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Chapssal_%28glutinous_rice%29.jpg/960px-Chapssal_%28glutinous_rice%29.jpg', // Glutinous Rice
+  'tapioca pearls boba bubble tea': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/A_plate_of_Tapioca.jpg/960px-A_plate_of_Tapioca.jpg', // Tapioca
+  'masa harina corn flour mexican white bag': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Masa_de_tortillas.jpg/960px-Masa_de_tortillas.jpg', // Masa Harina
+  'millet grain yellow cereal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Millet_grains_sold_at_Kargil_Bazaar.jpg/960px-Millet_grains_sold_at_Kargil_Bazaar.jpg', // Millet
+  'semolina wheat flour coarse': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Sa_semolina_far.jpg/960px-Sa_semolina_far.jpg', // Semolina
+  'rye grain dark bread cereal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Rye_grains.JPG/960px-Rye_grains.JPG', // Rye
+  'polenta cornmeal yellow italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Polenta_argentina_con_salsa_de_carne_%28plato_gourmet%29.jpg/960px-Polenta_argentina_con_salsa_de_carne_%28plato_gourmet%29.jpg', // Polenta
+  'buckwheat grain seeds dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Boiled_buckwheat_groats.jpg/960px-Boiled_buckwheat_groats.jpg', // Buckwheat
+  'bread bakery': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Home_made_sour_dough_bread.jpg/960px-Home_made_sour_dough_bread.jpg', // Bread
+  'rice bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Meshi_001.jpg/960px-Meshi_001.jpg', // Rice
+  'pasta': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg', // Pasta
+  'noodles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Noodles_2.png/960px-Noodles_2.png', // Noodles
+  'flour baking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/All-Purpose_Flour_%284107895947%29.jpg/960px-All-Purpose_Flour_%284107895947%29.jpg', // Flour
+  'oats cereal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Avena_sativa_MHNT.BOT.2015.2.33.jpg/960px-Avena_sativa_MHNT.BOT.2015.2.33.jpg', // Oats
+  'croissant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/960px-Croissant-Petr_Kratochvil.jpg', // Croissant
+  'bagel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bagel-Plain-Alt.jpg/960px-Bagel-Plain-Alt.jpg', // Bagel
+  'quinoa grain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Quinoa_closeup.jpg/960px-Quinoa_closeup.jpg', // Quinoa
+  'cornflour starch': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Cornstarch_mixed_with_water.jpg/960px-Cornstarch_mixed_with_water.jpg', // Cornflour
+  'raw sugar cane': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Raw_cane_sugar_Demerara.JPG/960px-Raw_cane_sugar_Demerara.JPG', // Raw Sugar
+  'brown sugar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Brown_sugar.jpg/960px-Brown_sugar.jpg', // Brown Sugar
+  'bulgur wheat cracked coarse grain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Bulgur.jpg/960px-Bulgur.jpg', // Bulgur
+  'freekeh roasted green wheat grain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Freekeh_%28uncooked%29.jpg/960px-Freekeh_%28uncooked%29.jpg', // Freekeh
+  'filo pastry thin sheets layers transparent': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Phyllo_for_bastilla.jpg/500px-Phyllo_for_bastilla.jpg', // Filo Pastry
+  'wild rice black grain indigenous north american': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wild_rice_%286213123029%29.jpg/960px-Wild_rice_%286213123029%29.jpg', // Wild Rice
+  'wheat field grain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/960px-Vehn%C3%A4pelto_6.jpg', // Wheat
+  'barley grain cereal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Barley_Seeds.jpg/960px-Barley_Seeds.jpg', // Barley
+  'basmati rice indian long grain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Basmati_rice_in_Bangladesh.jpg/960px-Basmati_rice_in_Bangladesh.jpg', // Basmati Rice
+  'oatmeal rolled oats porridge': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Rolled_oats.jpg/500px-Rolled_oats.jpg', // Oatmeal
+  'pita bread flatbread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Pita_Bread.jpg/960px-Pita_Bread.jpg', // Pita Bread
+  'corn tortilla mexican yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tortillas_de_maiz_blanco_%28M%C3%A9xico%29_01.jpg/960px-Tortillas_de_maiz_blanco_%28M%C3%A9xico%29_01.jpg', // Corn Tortilla
+  'amaranth grain ancient south american red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Amaranth_Grain.jpg/960px-Amaranth_Grain.jpg', // Amaranth
+  'cassava flour white farofa coarse': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Cassava_and_Maize_flour.jpg/960px-Cassava_and_Maize_flour.jpg', // Cassava Flour
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3256,4 +3375,123 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Clotted Cream', file: 'Clotted cream (cropped).JPG', author: 'Biggishben', license: 'CC BY-SA 3.0' },
   { word: 'Suet', file: 'Beef suet-01.jpg', author: 'FotoosvanRobin', license: 'CC BY-SA 2.0' },
   { word: 'Tofu', file: 'Japanese SilkyTofu (Kinugoshi Tofu).JPG', author: 'DryPot', license: 'CC BY-SA 3.0' },
+  { word: 'Plantain', file: 'An entire cluster of plantains.jpg', author: 'Thamizhpparithi Maari', license: 'CC BY-SA 3.0' },
+  { word: 'Cassava', file: 'Harvested cassava roots 02.jpg', author: 'Denis kasozi', license: 'CC BY-SA 4.0' },
+  { word: 'Yam', file: 'Kambar wh.jpg', author: 'Remi Tournebize', license: 'CC BY-SA 3.0' },
+  { word: 'Taro', file: 'Taro corms 2.jpg', author: 'Yongxinge', license: 'CC BY-SA 3.0' },
+  { word: 'Molokhia', file: 'Corchorus olitorius (2).JPG', author: 'Prenn', license: 'CC BY-SA 3.0' },
+  { word: 'Collard Greens', file: 'Collard-Greens-Bundle.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Bok Choy', file: 'Brassica rapa var. chinensis (leaf).jpg', author: 'おむこさん志望', license: 'CC BY 2.5' },
+  { word: 'Daikon', file: 'Daikon.Japan.jpg', author: 'Chris 73', license: 'CC BY-SA 3.0' },
+  { word: 'Bamboo Shoots', file: 'Bamboo shoots.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Water Chestnuts', file: 'Peeled water chestnuts.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Lotus Root', file: 'Lotus root.jpg', author: 'FotoosRobin', license: 'CC BY-SA 2.0' },
+  { word: 'Bitter Melon', file: 'Momordica charantia 22052014.jpg', author: 'Joydeep', license: 'CC BY-SA 3.0' },
+  { word: 'Napa Cabbage', file: 'Napa cabbages.png', author: 'Bayartai', license: 'CC0' },
+  { word: 'Habanero', file: 'Habanero closeup edit2.jpg', author: 'Fir0002', license: 'CC BY 2.5' },
+  { word: 'Scotch Bonnet', file: 'Scotch bonnet chili pepper.jpg', author: 'Temaciejewski', license: 'CC BY-SA 4.0' },
+  { word: 'Tomatillo', file: 'Tomatillo.jpg', author: 'Molekuel', license: 'Public domain' },
+  { word: 'Jicama', file: 'Bangkuang 070612-056 stgd.jpg', author: 'Wibowo Djatmiko (Wie146)', license: 'CC BY-SA 3.0' },
+  { word: 'Chayote', file: 'Sechium edule dsc07767.jpg', author: 'David.Monniaux', license: 'CC BY-SA 3.0' },
+  { word: 'Nopales', file: 'Opuntia.png', author: 'Chado07', license: 'CC0' },
+  { word: 'Malanga', file: 'Root vegetables "Malanga" at Cuban street market.jpg', author: 'sarang', license: 'Public domain' },
+  { word: 'Kale', file: 'Boerenkool.jpg', author: 'Rasbak', license: 'CC BY-SA 3.0' },
+  { word: 'Sorrel', file: '(MHNT) Rumex acetosa - Habit.jpg', author: 'Didier Descouens', license: 'CC BY-SA 4.0' },
+  { word: 'Beetroot', file: 'Beets-Bundle.jpg', author: 'Evan-Amos', license: 'CC0' },
+  { word: 'Chicory', file: 'Zuckerhut (Cichorium intybus var. foliosum) Marktangebot--Josef Schlaghecken.jpg', author: 'Schlaghecken Josef', license: 'CC BY-SA 4.0' },
+  { word: 'Celeriac', file: 'Céleri-rave-fendu.jpg', author: 'DocteurCosmos', license: 'CC BY-SA 3.0' },
+  { word: 'Vine Leaves', file: 'Pickled grape leaves.jpg', author: 'Oksana Makarenko (UA-Lora)', license: 'CC BY-SA 4.0' },
+  { word: 'Tomato', file: 'Tomato je.jpg', author: 'Softeis', license: 'CC BY-SA 3.0' },
+  { word: 'Carrot', file: 'Vegetable-Carrot-Bundle-wStalks.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Potato', file: 'Patates.jpg', author: 'Scott Bauer, USDA ARS', license: 'Public domain' },
+  { word: 'Onion', file: 'Onion on White.JPG', author: 'Colin', license: 'CC BY-SA 3.0' },
+  { word: 'Garlic', file: 'Garlic bulbs and cloves.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Broccoli', file: 'Fire-Tuscarora Organic Growers - Broccoli head.jpg', author: 'U.S. Department of Agriculture', license: 'Public domain' },
+  { word: 'Spinach', file: 'Spinach leaves.jpg', author: 'Nillerdk', license: 'CC BY 3.0' },
+  { word: 'Lettuce', file: 'Romaine lettuce.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Cucumber', file: 'Ryerson Market cucumbers on sale.jpg', author: 'Jason Zhang', license: 'CC BY-SA 3.0' },
+  { word: 'Bell Pepper', file: 'Green-Yellow-Red-Pepper-2009.jpg', author: 'Kham Tran - www.khamtran.com', license: 'CC BY-SA 3.0' },
+  { word: 'Eggplant', file: 'Solanum melongena 24 08 2012 (1).JPG', author: 'Joydeep', license: 'CC BY-SA 3.0' },
+  { word: 'Zucchini', file: 'CSA-Striped-Zucchini.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Mushroom', file: 'ChampignonMushroom.jpg', author: 'chris_73', license: 'CC BY-SA 3.0' },
+  { word: 'Corn', file: 'VegCorn.jpg', author: 'wstoakLL', license: 'Public domain' },
+  { word: 'Peas', file: 'Doperwt rijserwt peulen Pisum sativum.jpg', author: 'Rasbak', license: 'CC BY-SA 3.0' },
+  { word: 'Asparagus', file: 'Asparagus-Bundle.jpg', author: 'Evan-Amos', license: 'CC BY-SA 3.0' },
+  { word: 'Artichoke', file: 'Artichoke ready to cook.jpg', author: 'Keagiles', license: 'CC BY-SA 3.0' },
+  { word: 'Leek', file: 'Leek on white background - 0947.jpg', author: 'Amada44', license: 'CC BY-SA 4.0' },
+  { word: 'Cauliflower', file: 'Chou-fleur 02.jpg', author: 'Coyau', license: 'CC BY-SA 3.0' },
+  { word: 'Cabbage', file: 'Brassica oleracea 2011 G1.jpg', author: 'George Chernilevsky', license: 'Public domain' },
+  { word: 'Pumpkin', file: 'FrenchMarketPumpkinsB.jpg', author: 'Infrogmation of New Orleans', license: 'CC BY-SA 3.0' },
+  { word: 'Celery', file: 'Celery 1.jpg', author: 'Lombroso', license: 'Public domain' },
+  { word: 'Watercress', file: 'Watercress (2).JPG', author: 'Masparasol', license: 'CC BY 3.0' },
+  { word: 'Seaweed', file: 'Nori.jpg', author: 'Alice Wiegand, (Lyzzy)', license: 'CC BY-SA 3.0' },
+  { word: 'Taro Leaves', file: 'Starr 061108-9805 Colocasia esculenta.jpg', author: 'Forest & Kim Starr', license: 'CC BY 3.0' },
+  { word: 'Poi', file: 'Bowl of poi.jpg', author: 'Bshams', license: 'Public domain' },
+  { word: 'Palm Heart', file: 'Heart of palm.jpg', author: 'mhoenig', license: 'CC BY-SA 3.0' },
+  { word: 'Breadfruit', file: 'Artocarpus altilis (fruit).jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 3.0' },
+  { word: 'Kumara', file: 'Ipomoea batatas 006.JPG', author: 'Llez', license: 'CC BY-SA 3.0' },
+  { word: 'Green Beans', file: 'Green Beans 1.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY-SA 4.0' },
+  { word: 'Stinging Nettle', file: 'Brandnetel, Urtica dioica, Locatie, Famberhorst.jpg', author: 'Dominicus Johannes Bergsma', license: 'CC BY-SA 4.0' },
+  { word: 'Clover', file: 'Trifolium repens (inflorescense) Edit.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 3.0' },
+  { word: 'Rocket', file: 'Eruca sativa.jpg', author: 'Whut', license: 'CC BY-SA 3.0' },
+  { word: 'White Cabbage', file: 'Chou cabus blanc 01.jpg', author: 'Coyau', license: 'CC BY-SA 3.0' },
+  { word: 'Sprout', file: 'Organic mixed beans shoots.jpg', author: 'Hohum', license: 'CC BY-SA 3.0' },
+  { word: 'Radish', file: 'Radish 3371103037 4ab07db0bf o.jpg', author: 'Self, en:User:Jengod', license: 'Public domain' },
+  { word: 'Horseradish', file: 'Gemüsestand am Viktualienmarkt München 04.jpg', author: 'Kritzolina', license: 'CC BY-SA 4.0' },
+  { word: 'Okra', file: 'Quiabo.jpg', author: 'ArionStar', license: 'CC0' },
+  { word: 'Shallot', file: 'Shallots - sliced and whole.jpg', author: 'Charles P.', license: 'Public domain' },
+  { word: 'Spring Onion', file: 'CSA-Red-Spring-Onions.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Sweet Potato', file: 'Sweet Potato.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY-SA 4.0' },
+  { word: 'Turnip', file: 'Turnip 2622027.jpg', author: 'thebittenword.com', license: 'CC BY 2.0' },
+  { word: 'Swede', file: 'Steckrübe (Brassica napus subsp rapifera).jpg', author: 'Garitzko', license: 'Public domain' },
+  { word: 'Fennel', file: 'Fennel bulbs - Wellington, New Zealand.jpg', author: 'Daderot', license: 'CC0' },
+  { word: 'Edamame', file: 'Edamame by Zesmerelda in Chicago.jpg', author: 'Tammy Green (Zesmerelda)', license: 'CC BY-SA 2.0' },
+  { word: 'Jalapeño', file: 'Liat Portal for Foodie Disorder - Jalapeño Peppers.jpg', author: 'HaJunkiyada', license: 'CC BY-SA 4.0' },
+  { word: 'Lemongrass', file: 'YosriNov04Pokok Serai.JPG', author: 'Henna', license: 'CC BY 2.0' },
+  { word: 'Galangal', file: 'Thai ginger (Alpinia galanga).jpg', author: 'Susan Slater', license: 'CC BY-SA 4.0' },
+  { word: 'Aji Amarillo', file: 'Aji Amarillo pepper.jpg', author: 'Luis Tamayo', license: 'CC BY-SA 2.0' },
+  { word: 'Rocoto Pepper', file: 'Rocoto.jpg', author: 'Sebastian Aguilar (DrCooling)', license: 'CC BY-SA 4.0' },
+  { word: 'Malagueta Pepper', file: 'Pimenta malagueta.jpg', author: 'João José da Silva Pereira', license: 'CC BY-SA 3.0' },
+  { word: 'Choclo', file: 'Comida peruana.jpg', author: 'HugoMon', license: 'CC BY-SA 3.0' },
+  { word: 'Oca', file: 'Oca (Oxalis tuberosa).jpg', author: 'Ceseonico', license: 'CC BY-SA 4.0' },
+  { word: 'Chuño', file: 'Chuño.jpg', author: 'Eric in SF', license: 'CC BY-SA 3.0' },
+  { word: 'Purple Corn', file: 'Zea mays \'morado\' MHNT.BOT.2015.34.11.jpg', author: 'Roger Culos', license: 'CC BY-SA 3.0' },
+  { word: 'Teff', file: 'Tell grains in USA.jpg', author: 'Tom Banse', license: 'Public domain' },
+  { word: 'Sorghum', file: 'A plate of sorghum grain.jpg', author: 'Salil Kumar Mukherjee', license: 'CC BY-SA 4.0' },
+  { word: 'Cornmeal', file: 'Polenta uncooked.jpg', author: 'Popo le Chien', license: 'CC BY-SA 3.0' },
+  { word: 'Glass Noodles', file: 'Cooked dangmyeon.jpg', author: '토리랑', license: 'CC BY 4.0' },
+  { word: 'Rice Paper', file: 'Bánh Tráng Cù Lao Mây.JPG', author: 'Hoangvantoanajc', license: 'CC BY-SA 3.0' },
+  { word: 'Rice Flour', file: 'Two kinds of rice flour.jpg', author: 'FotoosVanRobin', license: 'CC BY-SA 2.0' },
+  { word: 'Glutinous Rice', file: 'Chapssal (glutinous rice).jpg', author: '국립국어원', license: 'CC BY-SA 2.0 kr' },
+  { word: 'Tapioca', file: 'A plate of Tapioca.jpg', author: 'Linason Blessing', license: 'CC BY-SA 4.0' },
+  { word: 'Masa Harina', file: 'Masa de tortillas.jpg', author: 'Artemisa Martínez', license: 'CC0' },
+  { word: 'Millet', file: 'Millet grains sold at Kargil Bazaar.jpg', author: 'Rajani Gairshail', license: 'CC BY-SA 4.0' },
+  { word: 'Semolina', file: 'Sa semolina far.jpg', author: 'Sanjay ach', license: 'CC BY-SA 3.0' },
+  { word: 'Rye', file: 'Rye grains.JPG', author: 'Agronom', license: 'CC BY-SA 3.0' },
+  { word: 'Polenta', file: 'Polenta argentina con salsa de carne (plato gourmet).jpg', author: 'Horacio Cambeiro', license: 'CC BY 3.0' },
+  { word: 'Buckwheat', file: 'Boiled buckwheat groats.jpg', author: 'V.Boldychev', license: 'CC BY-SA 4.0' },
+  { word: 'Bread', file: 'Home made sour dough bread.jpg', author: 'Tomascastelazo', license: 'CC BY-SA 4.0' },
+  { word: 'Rice', file: 'Meshi 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Pasta', file: '(Pasta) by David Adam Kess (pic.2).jpg', author: 'David Adam Kess', license: 'CC BY-SA 4.0' },
+  { word: 'Noodles', file: 'Noodles 2.png', author: 'Tiia Monto', license: 'CC BY-SA 3.0' },
+  { word: 'Flour', file: 'All-Purpose Flour (4107895947).jpg', author: 'Veganbaking.net from USA', license: 'CC BY-SA 2.0' },
+  { word: 'Oats', file: 'Avena sativa MHNT.BOT.2015.2.33.jpg', author: 'Roger Culos', license: 'CC BY-SA 3.0' },
+  { word: 'Croissant', file: 'Croissant-Petr Kratochvil.jpg', author: 'Petr Kratochvil', license: 'CC0' },
+  { word: 'Bagel', file: 'Bagel-Plain-Alt.jpg', author: 'Evan-Amos', license: 'Public domain' },
+  { word: 'Quinoa', file: 'Quinoa closeup.jpg', author: 'Pom²', license: 'CC BY-SA 3.0' },
+  { word: 'Cornflour', file: 'Cornstarch mixed with water.jpg', author: 'kalaya', license: 'CC BY-SA 3.0' },
+  { word: 'Raw Sugar', file: 'Raw cane sugar Demerara.JPG', author: 'Fritzs', license: 'CC BY-SA 3.0' },
+  { word: 'Brown Sugar', file: 'Brown sugar.jpg', author: 'EstherDje', license: 'CC BY-SA 4.0' },
+  { word: 'Bulgur', file: 'Bulgur.jpg', author: 'Alex Ex', license: 'CC BY-SA 3.0' },
+  { word: 'Freekeh', file: 'Freekeh (uncooked).jpg', author: 'Wribln', license: 'CC BY-SA 4.0' },
+  { word: 'Filo Pastry', file: 'Phyllo for bastilla.jpg', author: 'The Boreka Diary', license: 'CC BY-SA 2.0' },
+  { word: 'Wild Rice', file: 'Wild rice (6213123029).jpg', author: 'Leslie Seaton from Seattle, WA, USA', license: 'CC BY 2.0' },
+  { word: 'Wheat', file: 'Vehnäpelto 6.jpg', author: 'kallerna', license: 'CC BY-SA 4.0' },
+  { word: 'Barley', file: 'Barley Seeds.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 4.0' },
+  { word: 'Basmati Rice', file: 'Basmati rice in Bangladesh.jpg', author: 'Mashkawat.ahsan', license: 'CC BY-SA 4.0' },
+  { word: 'Oatmeal', file: 'Rolled oats.jpg', author: 'en:user:Hankwang', license: 'Public domain' },
+  { word: 'Pita Bread', file: 'Pita Bread.jpg', author: 'Azure Dragon of the East', license: 'CC BY-SA 3.0' },
+  { word: 'Corn Tortilla', file: 'Tortillas de maiz blanco (México) 01.jpg', author: 'ProtoplasmaKid', license: 'CC BY-SA 3.0' },
+  { word: 'Amaranth', file: 'Amaranth Grain.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY 4.0' },
+  { word: 'Cassava Flour', file: 'Cassava and Maize flour.jpg', author: 'Confidence24', license: 'CC BY-SA 4.0' },
 ];
