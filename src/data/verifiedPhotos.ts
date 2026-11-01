@@ -1762,6 +1762,147 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'corn tortilla mexican yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tortillas_de_maiz_blanco_%28M%C3%A9xico%29_01.jpg/960px-Tortillas_de_maiz_blanco_%28M%C3%A9xico%29_01.jpg', // Corn Tortilla
   'amaranth grain ancient south american red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Amaranth_Grain.jpg/960px-Amaranth_Grain.jpg', // Amaranth
   'cassava flour white farofa coarse': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Cassava_and_Maize_flour.jpg/960px-Cassava_and_Maize_flour.jpg', // Cassava Flour
+  'smoked pork meat eastern european': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Smoked_Pork_Loin_Roast_%283153426991%29.jpg/960px-Smoked_Pork_Loin_Roast_%283153426991%29.jpg', // Smoked Pork
+  'reindeer meat scandinavian game': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Dried_reindeer_meat.jpg/960px-Dried_reindeer_meat.jpg', // Reindeer
+  'veal escalope milanese breaded golden cutlet italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Veal-shank.jpg/500px-Veal-shank.jpg', // Veal
+  'black pudding blood sausage sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Stornoway_Black_Pudding.jpg/960px-Stornoway_Black_Pudding.jpg', // Black Pudding
+  'chicken meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ayam_kampung_free_range_chicken_meat_Indonesia.JPG/960px-Ayam_kampung_free_range_chicken_meat_Indonesia.JPG', // Chicken
+  'beef steak': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Standing-rib-roast.jpg/500px-Standing-rib-roast.jpg', // Beef
+  'pork meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/HK_food_ingredient_red_meat_frozen_pork_chop_raw_butt_steak_October_2021_SS2_011.jpg/960px-HK_food_ingredient_red_meat_frozen_pork_chop_raw_butt_steak_October_2021_SS2_011.jpg', // Pork
+  'lamb meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Lamb_meat_%281%29.jpg/960px-Lamb_meat_%281%29.jpg', // Lamb
+  'turkey roast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Thanksgiving_Turkey.jpg/960px-Thanksgiving_Turkey.jpg', // Turkey
+  'duck roast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Roast_duck_fs.JPG/960px-Roast_duck_fs.JPG', // Duck
+  'ham prosciutto': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Ham_%284%29.jpg/960px-Ham_%284%29.jpg', // Ham
+  'sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Raw_sausages_on_skewers_in_Taiwan_20131231.jpg/960px-Raw_sausages_on_skewers_in_Taiwan_20131231.jpg', // Sausage
+  'bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Bacon_strips.jpg/960px-Bacon_strips.jpg', // Bacon
+  'steak grilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Steak_with_shitaki_mushrooms.jpg/960px-Steak_with_shitaki_mushrooms.jpg', // Steak
+  'fore ribs beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/-2021-10-31_Rib_of_Beef%2C_Trimingham%2C_Norfolk.JPG/960px--2021-10-31_Rib_of_Beef%2C_Trimingham%2C_Norfolk.JPG', // Fore Ribs
+  'rump steak': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Rump_steak.jpg/960px-Rump_steak.jpg', // Rump Steak
+  'rabbit meat raw game maltese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jumbo_rabbit_meat.jpg/960px-Jumbo_rabbit_meat.jpg', // Rabbit
+  'quail bird roasted game': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Quail_Roast.jpg/960px-Quail_Roast.jpg', // Quail
+  'pheasant game bird roast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Fasanenbrust_Karches_%281%29.jpg/960px-Fasanenbrust_Karches_%281%29.jpg', // Pheasant
+  'pigeon squab roasted game bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Roast_Pigeon_%2814071176646%29.jpg/960px-Roast_Pigeon_%2814071176646%29.jpg', // Pigeon
+  'goose roast christmas bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Christmas-goose-%28Weihnachtsgans%29_1.jpg/960px-Christmas-goose-%28Weihnachtsgans%29_1.jpg', // Goose
+  'guinea fowl roasted whole golden skin game bird platter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Restaurant_at_St_Pauls%2C_St_Pauls%2C_London_%285243041641%29.jpg/960px-Restaurant_at_St_Pauls%2C_St_Pauls%2C_London_%285243041641%29.jpg', // Guinea Fowl
+  'partridge game bird roast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Hix_Oyster_and_Chop_House%2C_Smithfield%2C_London_%284337483788%29.jpg/960px-Hix_Oyster_and_Chop_House%2C_Smithfield%2C_London_%284337483788%29.jpg', // Partridge
+  'ribeye steak grilled beef marbled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Rib_eye_steak_from_Harris_Ranch_-_August_2023_-_Sarah_Stierch.jpg/960px-Rib_eye_steak_from_Harris_Ranch_-_August_2023_-_Sarah_Stierch.jpg', // Ribeye
+  'fillet steak tenderloin beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Profile_of_medium_well_beef_tenderloin_at_Miam_Miam_%2820191126172134%29.jpg/960px-Profile_of_medium_well_beef_tenderloin_at_Miam_Miam_%2820191126172134%29.jpg', // Fillet Steak
+  't-bone steak seared cast iron medium rare thick cut': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/T-Bone_Steak_with_Corn_%26_Fries.jpg/960px-T-Bone_Steak_with_Corn_%26_Fries.jpg', // T-Bone
+  'wagyu beef intensely marbled slab closeup japanese luxury': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wagy%C5%AB_on_plate.jpg/960px-Wagy%C5%AB_on_plate.jpg', // Wagyu
+  'oxtail braised slow cooked rich dark stew bone gelatinous': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Oxtail-93256.jpg/960px-Oxtail-93256.jpg', // Ox Tail
+  'beef short ribs braised bone caramelized dark sauce sticky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Bone-in_chuck_short_ribs.jpg/960px-Bone-in_chuck_short_ribs.jpg', // Short Rib
+  'pork belly crispy roasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Schweinebauch-2.jpg/960px-Schweinebauch-2.jpg', // Pork Belly
+  'pork chop grilled bone': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Pork_chops_167541218.jpg/960px-Pork_chops_167541218.jpg', // Pork Chop
+  'pulled pork sandwich bbq smoky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pulled_pork_while_pulling.JPG/960px-Pulled_pork_while_pulling.JPG', // Pulled Pork
+  'lamb chop grilled herb rosemary': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Liat_Portal_for_Foodie_Disorder_%E2%80%93_Lamb_chops_with_asparagus.jpg/960px-Liat_Portal_for_Foodie_Disorder_%E2%80%93_Lamb_chops_with_asparagus.jpg', // Lamb Chop
+  'mutton meat stew slow cooked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Mutton_chop.jpg/960px-Mutton_chop.jpg', // Mutton
+  'rack of lamb frenched roasted herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Rack_Carr%C3%A9_d%27agneau.JPG/960px-Rack_Carr%C3%A9_d%27agneau.JPG', // Rack of Lamb
+  'wild boar game meat stew': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg/960px-Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg', // Wild Boar
+  'hare wild rabbit game meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Scrub_Hare_%28Lepus_saxatilis%29_close-up_%2830544290256%29_%282%29.jpg/960px-Scrub_Hare_%28Lepus_saxatilis%29_close-up_%2830544290256%29_%282%29.jpg', // Hare
+  'alligator meat cajun fried exotic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Alligator_meat_in_Orlando.jpg/960px-Alligator_meat_in_Orlando.jpg', // Alligator
+  'ostrich steak red meat africa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ostrich_meat.jpg/960px-Ostrich_meat.jpg', // Ostrich
+  'alpaca meat peru andean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alpaga.jpg/960px-Alpaga.jpg', // Alpaca
+  'llama meat south america andean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg', // Llama
+  'liver pan fried onions organ': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Pig%27s_liver_with_sauteed_onion.jpg/500px-Pig%27s_liver_with_sauteed_onion.jpg', // Liver
+  'foie gras duck liver luxury french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Foie_gras_IMGP2349.jpg/960px-Foie_gras_IMGP2349.jpg', // Foie Gras
+  'salami sliced charcuterie italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Salami_aka.jpg/960px-Salami_aka.jpg', // Salami
+  'pepperoni pizza spicy sausage': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Lamb_pepperoni_cropped.jpg/960px-Lamb_pepperoni_cropped.jpg', // Pepperoni
+  'mortadella bologna italian deli sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mortadella_tagliata.jpg/500px-Mortadella_tagliata.jpg', // Mortadella
+  'bresaola beef cured italian thin sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Brisaula.jpg/960px-Brisaula.jpg', // Bresaola
+  'serrano ham sliced thin charcuterie board spanish jamon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Jamon_Serrano.jpg/960px-Jamon_Serrano.jpg', // Serrano Ham
+  'jamon iberico leg cured acorn fed sliced spanish presunto': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Jamon_iberico_de_bellota_2_%28cinco_jotas%29.jpg/960px-Jamon_iberico_de_bellota_2_%28cinco_jotas%29.jpg', // Ibérico Ham
+  'goat meat curry stew braised richly spiced dark sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Goat_chops.jpg/960px-Goat_chops.jpg', // Goat
+  'frog legs french cuisine fried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2012_Froschschenkel_anagoria.JPG/960px-2012_Froschschenkel_anagoria.JPG', // Frog Legs
+  'escargot snail garlic butter french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Escargots_%C3%A0_la_Bourguignonne.jpg/960px-Escargots_%C3%A0_la_Bourguignonne.jpg', // Snail
+  'smoked brisket texas bbq sliced bark dark smoke ring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Smoked_Brisket_with_smoke_ring.jpg/960px-Smoked_Brisket_with_smoke_ring.jpg', // Brisket
+  'andouille sausage cajun smoked dark casing sliced louisiana': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Andouille.jpg/500px-Andouille.jpg', // Andouille Sausage
+  'bison buffalo burger patty american plains': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg', // Bison
+  'kangaroo meat raw australia game': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Kangaroo_Meat.jpg/960px-Kangaroo_Meat.jpg', // Kangaroo
+  'emu meat steak dark red game bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg', // Emu
+  'crocodile meat australian exotic white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Nile_crocodile_head.jpg/960px-Nile_crocodile_head.jpg', // Crocodile
+  'pork spare ribs smoky rack bbq glazed caramelized': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Spareribs_20160506_182617113.jpg/960px-Spareribs_20160506_182617113.jpg', // Spare Ribs
+  'sirloin steak beef': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sirloin_Steak_with_Potato_Wedges.jpg/960px-Sirloin_Steak_with_Potato_Wedges.jpg', // Sirloin
+  'venison deer loin steak dark red game sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Venison_Steaks.jpg/500px-Venison_Steaks.jpg', // Venison
+  'roasted bone marrow canoe cut halved cross section butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Roast_Bone_Marrow_%26_Parsley_Salad_%283512154149%29.jpg/960px-Roast_Bone_Marrow_%26_Parsley_Salad_%283512154149%29.jpg', // Bone Marrow
+  'tripe offal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Trippa2.jpg/960px-Trippa2.jpg', // Tripe
+  'smoked bacon rashers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Made20bacon.png/500px-Made20bacon.png', // Smoked Bacon
+  'lard fat pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Homelard.jpg/960px-Homelard.jpg', // Lard
+  'tournedos fillet steak': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Tournedos_Rossini_1.jpg/960px-Tournedos_Rossini_1.jpg', // Tournedos
+  'pork crackling chicharron': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Pork_prrr.jpg/960px-Pork_prrr.jpg', // Pork Crackling
+  'salpicao portuguese smoked pork cured sausage sliced charcuterie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Salpic%C3%A3o.jpg/960px-Salpic%C3%A3o.jpg', // Salpicão
+  'saddle lamb roast meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Elysian_Fields_Farm_Lamb_Saddle_-_Long_of_Naples_squash%2C_compressed_sour_apple%2C_black_trumpet_mushrooms_and_%22sauce_bordelaise%22_%2811901264574%29.jpg/960px-Elysian_Fields_Farm_Lamb_Saddle_-_Long_of_Naples_squash%2C_compressed_sour_apple%2C_black_trumpet_mushrooms_and_%22sauce_bordelaise%22_%2811901264574%29.jpg', // Saddle of Lamb
+  'roast beef sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Rostas_%28ready_and_served%29.JPG/960px-Rostas_%28ready_and_served%29.JPG', // Roast Beef
+  'meatloaf baked': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/MeatloafWithSauce.jpg/960px-MeatloafWithSauce.jpg', // Meatloaf
+  'fried pork pieces portuguese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Roj%C3%B5es_%C3%A0_moda_do_minho_com_arroz_de_sarrabulho.jpg/500px-Roj%C3%B5es_%C3%A0_moda_do_minho_com_arroz_de_sarrabulho.jpg', // Rojões
+  'kidney offal meat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Lammnieren-gebraten.jpg/960px-Lammnieren-gebraten.jpg', // Kidney
+  'chorizo sausage sliced': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Chorizos_P6021974.jpg/500px-Chorizos_P6021974.jpg', // Chorizo
+  'pancetta italian bacon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Pancetta.jpg/960px-Pancetta.jpg', // Pancetta
+  'guanciale italian pork cheek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Guanciale_closeup_%28cropped%29.jpg/960px-Guanciale_closeup_%28cropped%29.jpg', // Guanciale
+  'prosciutto ham italian thin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Parma_Ham_Prosciutto_02.jpg/960px-Parma_Ham_Prosciutto_02.jpg', // Prosciutto
+  'tilapia whole fresh fish market closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Oreochromis-niloticus-Nairobi.JPG/960px-Oreochromis-niloticus-Nairobi.JPG', // Tilapia
+  'katsuobushi bonito flakes bowl japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Katsuobushi_02.jpg/960px-Katsuobushi_02.jpg', // Bonito Flakes
+  'kombu dried kelp seaweed japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kombu.jpg/500px-Kombu.jpg', // Kombu
+  'dried shrimp small orange asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Dried_shrimp_%28penaeus_chinensis%29.jpg/960px-Dried_shrimp_%28penaeus_chinensis%29.jpg', // Dried Shrimp
+  'salmon fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Pink_salmon_FWS.jpg/960px-Pink_salmon_FWS.jpg', // Salmon
+  'tuna fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/960px-Bluefin-big.jpg', // Tuna
+  'cod fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Frozen_cod_fillet.jpg/960px-Frozen_cod_fillet.jpg', // Cod
+  'shrimp seafood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/A_heap_of_shrimp_shells_on_a_plate_in_Tuntorp_1.jpg/960px-A_heap_of_shrimp_shells_on_a_plate_in_Tuntorp_1.jpg', // Shrimp
+  'lobster': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/KreeftbijDenOsse.jpg/960px-KreeftbijDenOsse.jpg', // Lobster
+  'crab seafood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Cancer_pagurus.jpg/960px-Cancer_pagurus.jpg', // Crab
+  'octopus eight arms underwater ocean vibrant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg', // Octopus
+  'squid calamari': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Loligo_vulgaris.jpg/960px-Loligo_vulgaris.jpg', // Squid
+  'oyster': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Oysters_served_on_ice%2C_with_lemon_and_parsley.jpg/960px-Oysters_served_on_ice%2C_with_lemon_and_parsley.jpg', // Oyster
+  'mussel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/CornishMussels.JPG/960px-CornishMussels.JPG', // Mussel
+  'clam seafood': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Clams%2C_Mumbai_seafood_02.jpg/960px-Clams%2C_Mumbai_seafood_02.jpg', // Clam
+  'anchovies': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Anchovy_closeup.jpg/960px-Anchovy_closeup.jpg', // Anchovies
+  'sea bass fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Sealife%2C_Bray%2C_Ireland._%286985874908%29.jpg/960px-Sealife%2C_Bray%2C_Ireland._%286985874908%29.jpg', // Sea Bass
+  'trout fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Salmo_trutta.jpg/960px-Salmo_trutta.jpg', // Trout
+  'swordfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Xiphias_gladius_stuffed.jpg/960px-Xiphias_gladius_stuffed.jpg', // Swordfish
+  'halibut fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Hippoglossus_hippoglossus1.jpg/960px-Hippoglossus_hippoglossus1.jpg', // Halibut
+  'herring fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Catch_of_Atlantic_herring.jpg/500px-Catch_of_Atlantic_herring.jpg', // Herring
+  'saithe pollock': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Seelachs%2C_K%C3%B6hler_%28Pollachius_virens%29.jpg/960px-Seelachs%2C_K%C3%B6hler_%28Pollachius_virens%29.jpg', // Saithe
+  'garfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Belone_belone_-_Garfish.jpg/960px-Belone_belone_-_Garfish.jpg', // Garfish
+  'lemon sole fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Microstomus_kitt_1.jpg/960px-Microstomus_kitt_1.jpg', // Lemon Sole
+  'whiting fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Merlangius_merlangus.jpg/960px-Merlangius_merlangus.jpg', // Whiting
+  'dogfish shark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Squalus_acanthias_stellwagen.jpg/960px-Squalus_acanthias_stellwagen.jpg', // Dogfish
+  'periwinkle shellfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Littorina_littorea_02.JPG/960px-Littorina_littorea_02.JPG', // Periwinkle
+  'salt cod bacalhau': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Bacalhau_%28Porto%29.jpg/500px-Bacalhau_%28Porto%29.jpg', // Bacalhau
+  'toadfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Opsanus_tau_156068452.jpg/960px-Opsanus_tau_156068452.jpg', // Toadfish
+  'rays bream fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Brama_brama_McCoy.jpg/960px-Brama_brama_McCoy.jpg', // Ray's Bream
+  'scallop shellfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Scallops_at_Capital_Grille.jpg/960px-Scallops_at_Capital_Grille.jpg', // Scallop
+  'arctic char salmon pink fillet fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Salvelinus_alpinus_311639131.jpg/960px-Salvelinus_alpinus_311639131.jpg', // Arctic Char
+  'king crab leg red alaska steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Paralithodes_camtschaticus_cheliped.jpg/960px-Paralithodes_camtschaticus_cheliped.jpg', // King Crab
+  'dried cod stockfish hanging traditional nordic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Torsk-Bacalao-Cod-Gjesv%C3%A6r.jpg/960px-Torsk-Bacalao-Cod-Gjesv%C3%A6r.jpg', // Dried Cod
+  'ahi tuna steak raw sushi grade red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Yellowfin_tuna_nurp.jpg/960px-Yellowfin_tuna_nurp.jpg', // Ahi Tuna
+  'coconut crab large tropical island': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg', // Coconut Crab
+  'blue crab chesapeake bay steamed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/The_Childrens_Museum_of_Indianapolis_-_Atlantic_blue_crab.jpg/500px-The_Childrens_Museum_of_Indianapolis_-_Atlantic_blue_crab.jpg', // Blue Crab
+  'crawfish crayfish louisiana boil red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Dish_of_crawdads.jpg/960px-Dish_of_crawdads.jpg', // Crawfish
+  'catfish fried southern american cornmeal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Channelcat.jpg/960px-Channelcat.jpg', // Catfish
+  'barramundi fish australian silver': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Lates_calcarifer_%28barramundi%29%2C_Airlie_Beach_IMGP0254.jpg/960px-Lates_calcarifer_%28barramundi%29%2C_Airlie_Beach_IMGP0254.jpg', // Barramundi
+  'paua abalone iridescent shell new zealand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Haliotis_iris_LC0282.jpg/960px-Haliotis_iris_LC0282.jpg', // Pāua Shell
+  'tarakihi fish new zealand white fillet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Nemadactylus_macropterus_%28Tarakihi%29.jpg/960px-Nemadactylus_macropterus_%28Tarakihi%29.jpg', // Tarakihi
+  'shark fish ocean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Corl0207_%2828225976491%29.jpg/960px-Corl0207_%2828225976491%29.jpg', // Shark
+  'sea trout salmon trout': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Wst_meerforelle_stoer_001.jpg/500px-Wst_meerforelle_stoer_001.jpg', // Sea Trout
+  'lake trout fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lake_trout_fishes_salvelinus_namaycush.jpg/960px-Lake_trout_fishes_salvelinus_namaycush.jpg', // Lake Trout
+  'rainbow trout fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg/960px-Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg', // Rainbow Trout
+  'electric ray torpedo fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Torpedo_torpedo_corsica3.jpg/500px-Torpedo_torpedo_corsica3.jpg', // Electric Ray
+  'grey mullet fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg/960px-M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg', // Grey Mullet
+  'monkfish anglerfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Monkfish.jpg/500px-Monkfish.jpg', // Monkfish
+  'plaice flatfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Pleuronectes_platessa.jpg/960px-Pleuronectes_platessa.jpg', // Plaice
+  'shad fish river': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Alosa_fallax.jpg/960px-Alosa_fallax.jpg', // Shad
+  'sea bream sargo fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Sargo_com%C3%BAn_%28Diplodus_sargus%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_29.jpg/960px-Sargo_com%C3%BAn_%28Diplodus_sargus%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_29.jpg', // Sea Bream
+  'spider crab shellfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Maja_brachydactyla_%28MNHN-IU-2013-4039%29_002.jpeg/960px-Maja_brachydactyla_%28MNHN-IU-2013-4039%29_002.jpeg', // Spider Crab
+  'mackerel fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Atlantic_mackerel_%28Scomber_scombrus%29.jpg/960px-Atlantic_mackerel_%28Scomber_scombrus%29.jpg', // Mackerel
+  'red mullet fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Rougets_01.jpg/960px-Rougets_01.jpg', // Red Mullet
+  'smoked salmon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Smoked_salmon_20080814_120624.jpg/960px-Smoked_salmon_20080814_120624.jpg', // Smoked Salmon
+  'sargassum seaweed ocean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Sargassum_weeds_closeup.jpg/500px-Sargassum_weeds_closeup.jpg', // Sargassum
+  'red gurnard fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Chelidonichthys_cuculus_-_Crazy_Kew_Fish.jpg/960px-Chelidonichthys_cuculus_-_Crazy_Kew_Fish.jpg', // Red Gurnard
+  'turbot flatfish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Psetta_maxima_Luc_Viatour.jpg/960px-Psetta_maxima_Luc_Viatour.jpg', // Turbot
+  'scorpion fish scorpaena': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Red_Scorpionfish_%28cropped%29.jpg/960px-Red_Scorpionfish_%28cropped%29.jpg', // Scorpion Fish
+  'thornback ray skate fish whole market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Raja_clavata_%28juv%29.jpg/960px-Raja_clavata_%28juv%29.jpg', // Skate
+  'nori seaweed sheet japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nori-ben_%2838864337205%29.jpg/960px-Nori-ben_%2838864337205%29.jpg', // Nori
+  'wasabi paste japanese green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Fresh_wasabi_rhizomes.jpg/500px-Fresh_wasabi_rhizomes.jpg', // Wasabi
+  'sardine fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2014_03_19_397_Eingelegte_Fische.jpg/960px-2014_03_19_397_Eingelegte_Fische.jpg', // Sardine
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3494,4 +3635,145 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Corn Tortilla', file: 'Tortillas de maiz blanco (México) 01.jpg', author: 'ProtoplasmaKid', license: 'CC BY-SA 3.0' },
   { word: 'Amaranth', file: 'Amaranth Grain.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY 4.0' },
   { word: 'Cassava Flour', file: 'Cassava and Maize flour.jpg', author: 'Confidence24', license: 'CC BY-SA 4.0' },
+  { word: 'Smoked Pork', file: 'Smoked Pork Loin Roast (3153426991).jpg', author: 'brian gautreau from Colorado Springs, USA', license: 'CC BY-SA 2.0' },
+  { word: 'Reindeer', file: 'Dried reindeer meat.jpg', author: 'LHOON (Peter Van den Bossche)', license: 'CC BY-SA 2.0' },
+  { word: 'Veal', file: 'Veal-shank.jpg', author: 'Mogens Engelund', license: 'CC BY-SA 3.0' },
+  { word: 'Black Pudding', file: 'Stornoway Black Pudding.jpg', author: 'Alexbrn', license: 'CC BY-SA 3.0' },
+  { word: 'Chicken', file: 'Ayam kampung free range chicken meat Indonesia.JPG', author: 'Sakurai Midori', license: 'CC BY 3.0' },
+  { word: 'Beef', file: 'Standing-rib-roast.jpg', author: 'Michael C. Berch, aka MCB at en.wikipedia', license: 'CC BY-SA 2.5' },
+  { word: 'Pork', file: 'HK food ingredient red meat frozen pork chop raw butt steak October 2021 SS2 011.jpg', author: 'Presixlla MOON', license: 'CC BY-SA 4.0' },
+  { word: 'Lamb', file: 'Lamb meat (1).jpg', author: 'I would appreciate being notified if you use my work outside Wikimedia', license: 'CC BY-SA 3.0' },
+  { word: 'Turkey', file: 'Thanksgiving Turkey.jpg', author: 'Patrick Fitzgerald from Atlanta, GA, USA', license: 'CC BY 2.0' },
+  { word: 'Duck', file: 'Roast duck fs.JPG', author: 'Chensiyuan', license: 'CC BY-SA 3.0' },
+  { word: 'Ham', file: 'Ham (4).jpg', author: 'Renee Comet (Photographer)', license: 'Public domain' },
+  { word: 'Sausage', file: 'Raw sausages on skewers in Taiwan 20131231.jpg', author: '褒忠國中 雲端網', license: 'CC BY 2.0' },
+  { word: 'Bacon', file: 'Bacon strips.jpg', author: 'Didriks from Cambridge, MA, USA', license: 'CC BY 2.0' },
+  { word: 'Steak', file: 'Steak with shitaki mushrooms.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Fore Ribs', file: '-2021-10-31 Rib of Beef, Trimingham, Norfolk.JPG', author: 'Kolforn', license: 'CC BY-SA 4.0' },
+  { word: 'Rump Steak', file: 'Rump steak.jpg', author: 'Blammermouth (talk)', license: 'CC BY 3.0' },
+  { word: 'Rabbit', file: 'Jumbo rabbit meat.jpg', author: 'Gacky-79', license: 'CC BY-SA 4.0' },
+  { word: 'Quail', file: 'Quail Roast.jpg', author: 'Banurekha68', license: 'CC BY-SA 4.0' },
+  { word: 'Pheasant', file: 'Fasanenbrust Karches (1).jpg', author: 'Benreis', license: 'CC BY-SA 4.0' },
+  { word: 'Pigeon', file: 'Roast Pigeon (14071176646).jpg', author: 'Charles Haynes', license: 'CC BY-SA 2.0' },
+  { word: 'Goose', file: 'Christmas-goose-(Weihnachtsgans) 1.jpg', author: 'Jürgen Howaldt', license: 'CC BY-SA 2.0 de' },
+  { word: 'Guinea Fowl', file: 'Restaurant at St Pauls, St Pauls, London (5243041641).jpg', author: 'Ewan Munro from London, UK', license: 'CC BY-SA 2.0' },
+  { word: 'Partridge', file: 'Hix Oyster and Chop House, Smithfield, London (4337483788).jpg', author: 'Ewan Munro from London, UK', license: 'CC BY-SA 2.0' },
+  { word: 'Ribeye', file: 'Rib eye steak from Harris Ranch - August 2023 - Sarah Stierch.jpg', author: 'Missvain', license: 'CC BY 4.0' },
+  { word: 'Fillet Steak', file: 'Profile of medium well beef tenderloin at Miam Miam (20191126172134).jpg', author: 'N509FZ', license: 'CC BY-SA 4.0' },
+  { word: 'T-Bone', file: 'T-Bone Steak with Corn & Fries.jpg', author: 'Ceeseven', license: 'CC BY-SA 4.0' },
+  { word: 'Wagyu', file: 'Wagyū on plate.jpg', author: 'Shisma', license: 'CC BY 4.0' },
+  { word: 'Ox Tail', file: 'Oxtail-93256.jpg', author: 'Raimond Spekking', license: 'CC BY-SA 4.0' },
+  { word: 'Short Rib', file: 'Bone-in chuck short ribs.jpg', author: 'Tim Evanson', license: 'CC BY-SA 2.0' },
+  { word: 'Pork Belly', file: 'Schweinebauch-2.jpg', author: 'Rainer Zenz', license: 'CC BY-SA 3.0' },
+  { word: 'Pork Chop', file: 'Pork chops 167541218.jpg', author: 'penny from Oakland, California, USA', license: 'CC BY 2.0' },
+  { word: 'Pulled Pork', file: 'Pulled pork while pulling.JPG', author: 'Thogru', license: 'CC BY-SA 3.0' },
+  { word: 'Lamb Chop', file: 'Liat Portal for Foodie Disorder – Lamb chops with asparagus.jpg', author: 'HaJunkiyada', license: 'CC BY-SA 4.0' },
+  { word: 'Mutton', file: 'Mutton chop.jpg', author: 'Tvabutzku1234', license: 'CC0' },
+  { word: 'Rack of Lamb', file: 'Rack Carré d\'agneau.JPG', author: 'User:Stephane8888 (Stephane8888 Wiktionnaire)', license: 'CC BY-SA 2.5' },
+  { word: 'Wild Boar', file: 'Wildschwein, Nähe Pulverstampftor (cropped).jpg', author: 'Valentin Panzirsch', license: 'CC BY-SA 3.0 at' },
+  { word: 'Hare', file: 'Scrub Hare (Lepus saxatilis) close-up (30544290256) (2).jpg', author: 'Bernard DUPONT from FRANCE', license: 'CC BY-SA 2.0' },
+  { word: 'Alligator', file: 'Alligator meat in Orlando.jpg', author: 'Toni Kaarttinen', license: 'CC BY 2.0' },
+  { word: 'Ostrich', file: 'Ostrich meat.jpg', author: 'Angelbmartin', license: 'CC BY-SA 4.0' },
+  { word: 'Alpaca', file: 'Alpaga.jpg', author: 'Olivier Lemoine (https://Photo-Terroir.fr)', license: 'CC BY-SA 4.0' },
+  { word: 'Llama', file: 'Llamas, Vernagt-Stausee, Italy.jpg', author: 'Andrija12345678', license: 'CC BY-SA 4.0' },
+  { word: 'Liver', file: 'Pig\'s liver with sauteed onion.jpg', author: 'FotoosVanRobin from Netherlands', license: 'CC BY-SA 2.0' },
+  { word: 'Foie Gras', file: 'Foie gras IMGP2349.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
+  { word: 'Salami', file: 'Salami aka.jpg', author: 'André Karwath aka Aka', license: 'CC BY-SA 2.5' },
+  { word: 'Pepperoni', file: 'Lamb pepperoni cropped.jpg', author: 'Chiring chandan', license: 'CC BY-SA 4.0' },
+  { word: 'Mortadella', file: 'Mortadella tagliata.jpg', author: 'AlMare', license: 'CC BY-SA 3.0' },
+  { word: 'Bresaola', file: 'Brisaula.jpg', author: 'Romano.massimiliano', license: 'CC BY-SA 4.0' },
+  { word: 'Serrano Ham', file: 'Jamon Serrano.jpg', author: 'Jardoz', license: 'CC BY-SA 3.0' },
+  { word: 'Ibérico Ham', file: 'Jamon iberico de bellota 2 (cinco jotas).jpg', author: 'Cantabrucu', license: 'CC0' },
+  { word: 'Goat', file: 'Goat chops.jpg', author: 'David Blaine from Spokane, USA', license: 'CC BY 2.0' },
+  { word: 'Frog Legs', file: '2012 Froschschenkel anagoria.JPG', author: 'Anagoria', license: 'CC BY 3.0' },
+  { word: 'Snail', file: 'Escargots à la Bourguignonne.jpg', author: 'ZhengZhou', license: 'CC BY-SA 4.0' },
+  { word: 'Brisket', file: 'Smoked Brisket with smoke ring.jpg', author: 'Johnsparks75', license: 'CC BY-SA 4.0' },
+  { word: 'Andouille Sausage', file: 'Andouille.jpg', author: 'CommonismNow', license: 'Public domain' },
+  { word: 'Bison', file: 'American bison k5680-1.jpg', author: 'Jack Dykinga', license: 'Public domain' },
+  { word: 'Kangaroo', file: 'Kangaroo Meat.jpg', author: 'Eric in SF', license: 'CC BY-SA 3.0' },
+  { word: 'Emu', file: 'Emu 1 - Tidbinbilla.jpg', author: 'JJ Harrison (https://www.jjharrison.com.au/)', license: 'CC BY-SA 4.0' },
+  { word: 'Crocodile', file: 'Nile crocodile head.jpg', author: 'Leigh Bedford', license: 'CC BY 2.0' },
+  { word: 'Spare Ribs', file: 'Spareribs 20160506 182617113.jpg', author: 'Edo de Roo', license: 'CC BY-SA 4.0' },
+  { word: 'Sirloin', file: 'Sirloin Steak with Potato Wedges.jpg', author: 'Ceeseven', license: 'CC BY-SA 4.0' },
+  { word: 'Venison', file: 'Venison Steaks.jpg', author: 'FotoosVanRobin from Netherlands', license: 'CC BY-SA 2.0' },
+  { word: 'Bone Marrow', file: 'Roast Bone Marrow & Parsley Salad (3512154149).jpg', author: 'Simon Doggett from London, UK', license: 'CC BY 2.0' },
+  { word: 'Tripe', file: 'Trippa2.jpg', author: 'Lissen', license: 'Public domain' },
+  { word: 'Smoked Bacon', file: 'Made20bacon.png', author: 'Made20rder555', license: 'Public domain' },
+  { word: 'Lard', file: 'Homelard.jpg', author: 'No machine-readable author provided. Peter G Werner~commonswiki assume', license: 'CC BY 2.5' },
+  { word: 'Tournedos', file: 'Tournedos Rossini 1.jpg', author: 'Arnaud 25', license: 'CC BY-SA 4.0' },
+  { word: 'Pork Crackling', file: 'Pork prrr.jpg', author: 'Biser Todorov', license: 'CC BY 4.0' },
+  { word: 'Salpicão', file: 'Salpicão.jpg', author: 'Adrião', license: 'CC BY-SA 3.0' },
+  { word: 'Saddle of Lamb', file: 'Elysian Fields Farm Lamb Saddle - Long of Naples squash, compressed sour apple, black trumpet mushrooms and "sauce bordelaise" (11901264574).jpg', author: 'City Foodsters', license: 'CC BY 2.0' },
+  { word: 'Roast Beef', file: 'Rostas (ready and served).JPG', author: 'Oxiq', license: 'CC0' },
+  { word: 'Meatloaf', file: 'MeatloafWithSauce.jpg', author: 'Renee Comet (photographer)', license: 'Public domain' },
+  { word: 'Rojões', file: 'Rojões à moda do minho com arroz de sarrabulho.jpg', author: 'Myself, adriao', license: 'Public domain' },
+  { word: 'Kidney', file: 'Lammnieren-gebraten.jpg', author: 'No machine-readable author provided. Rainer Zenz assumed (based on cop', license: 'CC BY-SA 3.0' },
+  { word: 'Chorizo', file: 'Chorizos P6021974.jpg', author: 'Amasuela-Luis Lafuente Agudín', license: 'CC BY-SA 4.0' },
+  { word: 'Pancetta', file: 'Pancetta.jpg', author: 'Nachoman-au', license: 'CC BY-SA 3.0' },
+  { word: 'Guanciale', file: 'Guanciale closeup (cropped).jpg', author: 'Popo le Chien', license: 'CC BY-SA 4.0' },
+  { word: 'Prosciutto', file: 'Parma Ham Prosciutto 02.jpg', author: 'Indrajit Das', license: 'CC BY-SA 4.0' },
+  { word: 'Tilapia', file: 'Oreochromis-niloticus-Nairobi.JPG', author: 'Bjørn Christian Tørrissen', license: 'CC BY-SA 3.0' },
+  { word: 'Bonito Flakes', file: 'Katsuobushi 02.jpg', author: 'Sakurai Midori', license: 'CC BY-SA 3.0' },
+  { word: 'Kombu', file: 'Kombu.jpg', author: 'Alice Wiegand, (Lyzzy)', license: 'CC BY-SA 3.0' },
+  { word: 'Dried Shrimp', file: 'Dried shrimp (penaeus chinensis).jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Salmon', file: 'Pink salmon FWS.jpg', author: 'Timothy Knepp', license: 'Public domain' },
+  { word: 'Tuna', file: 'Bluefin-big.jpg', author: 'Unknown author', license: 'Public domain' },
+  { word: 'Cod', file: 'Frozen cod fillet.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Shrimp', file: 'A heap of shrimp shells on a plate in Tuntorp 1.jpg', author: 'W.carter', license: 'CC BY-SA 4.0' },
+  { word: 'Lobster', file: 'KreeftbijDenOsse.jpg', author: 'Bart Braun', license: 'Public domain' },
+  { word: 'Crab', file: 'Cancer pagurus.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Octopus', file: 'Octopus2.jpg', author: 'albert kok', license: 'CC BY-SA 3.0' },
+  { word: 'Squid', file: 'Loligo vulgaris.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Oyster', file: 'Oysters served on ice, with lemon and parsley.jpg', author: 'David', license: 'Public domain' },
+  { word: 'Mussel', file: 'CornishMussels.JPG', author: 'Wilson44691 at English Wikipedia', license: 'Public domain' },
+  { word: 'Clam', file: 'Clams, Mumbai seafood 02.jpg', author: 'Pratishkhedekar', license: 'CC BY-SA 4.0' },
+  { word: 'Anchovies', file: 'Anchovy closeup.jpg', author: 'Eptalon', license: 'Public domain' },
+  { word: 'Sea Bass', file: 'Sealife, Bray, Ireland. (6985874908).jpg', author: 'Miguel Mendez from Malahide, Ireland', license: 'CC BY 2.0' },
+  { word: 'Trout', file: 'Salmo trutta.jpg', author: 'Eric Engbretson for U.S. Fish and Wildlife Service', license: 'Public domain' },
+  { word: 'Swordfish', file: 'Xiphias gladius stuffed.jpg', author: 'This illustration was made by Citron You must credit this : Citron / C', license: 'CC BY-SA 3.0' },
+  { word: 'Halibut', file: 'Hippoglossus hippoglossus1.jpg', author: 'Krüger', license: 'Public domain' },
+  { word: 'Herring', file: 'Catch of Atlantic herring.jpg', author: 'Unknown author', license: 'Public domain' },
+  { word: 'Saithe', file: 'Seelachs, Köhler (Pollachius virens).jpg', author: 'Wilhelm Thomas Fiege', license: 'CC BY-SA 4.0' },
+  { word: 'Garfish', file: 'Belone belone - Garfish.jpg', author: 'Zeynel Cebeci', license: 'CC BY-SA 4.0' },
+  { word: 'Lemon Sole', file: 'Microstomus kitt 1.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Whiting', file: 'Merlangius merlangus.jpg', author: 'Krüger', license: 'Public domain' },
+  { word: 'Dogfish', file: 'Squalus acanthias stellwagen.jpg', author: 'Doug Costa, NOAA/SBNMS', license: 'Public domain' },
+  { word: 'Periwinkle', file: 'Littorina littorea 02.JPG', author: 'H. Zell', license: 'CC BY-SA 3.0' },
+  { word: 'Bacalhau', file: 'Bacalhau (Porto).jpg', author: 'Sitomon', license: 'CC BY-SA 2.0' },
+  { word: 'Toadfish', file: 'Opsanus tau 156068452.jpg', author: 'Dan Schofield', license: 'CC BY 4.0' },
+  { word: 'Ray\'s Bream', file: 'Brama brama McCoy.jpg', author: 'Arthur Bartholemew', license: 'Public domain' },
+  { word: 'Scallop', file: 'Scallops at Capital Grille.jpg', author: 'Junjigye40', license: 'CC0' },
+  { word: 'Arctic Char', file: 'Salvelinus alpinus 311639131.jpg', author: 'Alison Copeland', license: 'CC BY 4.0' },
+  { word: 'King Crab', file: 'Paralithodes camtschaticus cheliped.jpg', author: 'Rina Chen', license: 'CC0' },
+  { word: 'Dried Cod', file: 'Torsk-Bacalao-Cod-Gjesvær.jpg', author: 'Carlos Delgado', license: 'CC BY-SA 3.0' },
+  { word: 'Ahi Tuna', file: 'Yellowfin tuna nurp.jpg', author: 'OAR/National Undersea Research Program (NURP)', license: 'Public domain' },
+  { word: 'Coconut Crab', file: 'Coconut Crab Birgus latro.jpg', author: 'Drew Avery', license: 'CC BY 2.0' },
+  { word: 'Blue Crab', file: 'The Childrens Museum of Indianapolis - Atlantic blue crab.jpg', author: 'LoriLee', license: 'CC BY-SA 3.0' },
+  { word: 'Crawfish', file: 'Dish of crawdads.jpg', author: 'Justin Watt', license: 'CC BY 3.0' },
+  { word: 'Catfish', file: 'Channelcat.jpg', author: 'Harmil', license: 'Public domain' },
+  { word: 'Barramundi', file: 'Lates calcarifer (barramundi), Airlie Beach IMGP0254.jpg', author: 'John Robert McPherson', license: 'CC0' },
+  { word: 'Pāua Shell', file: 'Haliotis iris LC0282.jpg', author: 'Jörg Hempel', license: 'CC BY-SA 3.0 de' },
+  { word: 'Tarakihi', file: 'Nemadactylus macropterus (Tarakihi).jpg', author: 'Togabi', license: 'Public domain' },
+  { word: 'Shark', file: 'Corl0207 (28225976491).jpg', author: 'NOAA Photo Library', license: 'CC BY 2.0' },
+  { word: 'Sea Trout', file: 'Wst meerforelle stoer 001.jpg', author: 'No machine-readable author provided. Wolfgang Striewski assumed (based', license: 'Public domain' },
+  { word: 'Lake Trout', file: 'Lake trout fishes salvelinus namaycush.jpg', author: 'Knepp Timothy, U.S. Fish and Wildlife Service', license: 'Public domain' },
+  { word: 'Rainbow Trout', file: 'Close up of rainbow trout fish underwater oncorhynchus mykiss.jpg', author: 'Engbretson Eric, U.S. Fish and Wildlife Service', license: 'Public domain' },
+  { word: 'Electric Ray', file: 'Torpedo torpedo corsica3.jpg', author: 'Roberto Pillon', license: 'CC BY 3.0' },
+  { word: 'Grey Mullet', file: 'Mújol (Mugil cephalus), Parque natural de la Arrábida, Portugal, 2021-09-09, DD 25.jpg', author: 'Diego Delso', license: 'CC BY-SA 4.0' },
+  { word: 'Monkfish', file: 'Monkfish.jpg', author: 'Fruela', license: 'CC BY-SA 3.0' },
+  { word: 'Plaice', file: 'Pleuronectes platessa.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Shad', file: 'Alosa fallax.jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Sea Bream', file: 'Sargo común (Diplodus sargus), Madeira, Portugal, 2019-05-31, DD 29.jpg', author: 'Diego Delso', license: 'CC BY-SA 4.0' },
+  { word: 'Spider Crab', file: 'Maja brachydactyla (MNHN-IU-2013-4039) 002.jpeg', author: 'Noémy MOLLARET', license: 'CC BY 4.0' },
+  { word: 'Mackerel', file: 'Atlantic mackerel (Scomber scombrus).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Red Mullet', file: 'Rougets 01.jpg', author: 'Arnaud 25', license: 'Public domain' },
+  { word: 'Smoked Salmon', file: 'Smoked salmon 20080814 120624.jpg', author: 'Ka23 13', license: 'CC BY-SA 4.0' },
+  { word: 'Sargassum', file: 'Sargassum weeds closeup.jpg', author: 'Unknown author', license: 'Public domain' },
+  { word: 'Red Gurnard', file: 'Chelidonichthys cuculus - Crazy Kew Fish.jpg', author: 'Barney Livingston', license: 'CC BY-SA 2.0' },
+  { word: 'Turbot', file: 'Psetta maxima Luc Viatour.jpg', author: 'Luc Viatour', license: 'CC BY-SA 3.0' },
+  { word: 'Scorpion Fish', file: 'Red Scorpionfish (cropped).jpg', author: 'Vicmicallef', license: 'CC BY-SA 4.0' },
+  { word: 'Skate', file: 'Raja clavata (juv).jpg', author: 'Hans Hillewaert', license: 'CC BY-SA 4.0' },
+  { word: 'Nori', file: 'Nori-ben (38864337205).jpg', author: 'ayu oshimi from japan', license: 'CC BY-SA 2.0' },
+  { word: 'Wasabi', file: 'Fresh wasabi rhizomes.jpg', author: 'Sabigirl at English Wikipedia', license: 'Public domain' },
+  { word: 'Sardine', file: '2014 03 19 397 Eingelegte Fische.jpg', author: 'Friedrich Haag', license: 'CC BY-SA 4.0' },
 ];
