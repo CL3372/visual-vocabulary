@@ -2000,6 +2000,122 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'discount coupon paper voucher scissors savings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Coupon_Pile_Stock_Photo_%2810865703765%29.jpg/960px-Coupon_Pile_Stock_Photo_%2810865703765%29.jpg', // Coupon
   'loyalty reward card plastic wallet points store': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Customerloyalitycards.JPG/960px-Customerloyalitycards.JPG', // Loyalty Card
   'expiry date label food package close up stamped': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Expiration.jpg/500px-Expiration.jpg', // Expiry Date
+  'palm oil red orange african cooking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Palm_oil_in_a_white_bowl.jpg/960px-Palm_oil_in_a_white_bowl.jpg', // Palm Oil
+  'argan oil moroccan bottle gold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Huile_d%27argan_010.JPG/960px-Huile_d%27argan_010.JPG', // Argan Oil
+  'harissa north african red chili paste': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Harissa_Sauce.JPG/960px-Harissa_Sauce.JPG', // Harissa
+  'niter kibbeh ethiopian spiced butter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Clarified-butter.jpg/500px-Clarified-butter.jpg', // Niter Kibbeh
+  'preserved lemon moroccan jar salt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Preserved_lemon_in_a_clip_top_jar%2C_4_years_old.jpg/960px-Preserved_lemon_in_a_clip_top_jar%2C_4_years_old.jpg', // Preserved Lemon
+  'gochujang korean red chili paste tub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Gochujang_%28chilli_paste%29.jpg/500px-Gochujang_%28chilli_paste%29.jpg', // Gochujang
+  'doenjang korean soybean paste brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Doenjang.jpg/960px-Doenjang.jpg', // Doenjang
+  'mirin japanese sweet rice wine bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Mirinbowl.jpg/960px-Mirinbowl.jpg', // Mirin
+  'doubanjiang sichuan fermented bean paste red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Doubanjiang.jpg/960px-Doubanjiang.jpg', // Doubanjiang
+  'shrimp paste belacan southeast asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/A_square_of_shrimp_paste_from_Hung_Kee_store.jpg/960px-A_square_of_shrimp_paste_from_Hung_Kee_store.jpg', // Shrimp Paste
+  'kimchi korean fermented cabbage red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Various_kimchi.jpg/500px-Various_kimchi.jpg', // Kimchi
+  'kaya jam coconut egg jam green singapore': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kaya_toast_dip_into_soft_boiled_egg.jpg/960px-Kaya_toast_dip_into_soft_boiled_egg.jpg', // Kaya Jam
+  'sambal chili paste indonesian red spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Sambal_cobek.JPG/960px-Sambal_cobek.JPG', // Sambal
+  'xo sauce seafood hong kong premium': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Rice_with_XO_sauce.jpg/960px-Rice_with_XO_sauce.jpg', // XO Sauce
+  'coconut cream thick white can': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Coconut_cream.jpg/960px-Coconut_cream.jpg', // Coconut Cream
+  'fermented black beans chinese salty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2015_1012_Preserved_black_beans_douchi_close-up.jpg/960px-2015_1012_Preserved_black_beans_douchi_close-up.jpg', // Fermented Black Beans
+  'piloncillo raw unrefined cane sugar cone mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Panela.jpg/960px-Panela.jpg', // Piloncillo
+  'mojo sauce cuban garlic citrus green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Visita_a_Har%C3%ADa_%2809-2021%29_04.jpg/960px-Visita_a_Har%C3%ADa_%2809-2021%29_04.jpg', // Mojo Sauce
+  'sofrito recaito caribbean green sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Sofrito.jpg/960px-Sofrito.jpg', // Sofrito
+  'sriracha hot sauce bottle red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Sriracha_Hot_Sauce_Bottles_Freshii_Restaurant_Family_Dinner_Downtown_Grand_Rapids_June_27%2C_2014_1_%2814552677466%29.jpg/960px-Sriracha_Hot_Sauce_Bottles_Freshii_Restaurant_Family_Dinner_Downtown_Grand_Rapids_June_27%2C_2014_1_%2814552677466%29.jpg', // Sriracha
+  'pickle relish green jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Home-made_pickle_relish%21.jpg/960px-Home-made_pickle_relish%21.jpg', // Relish
+  'tartar sauce white mayo capers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Cup_of_Tunnicliff%27s_tartar_sauce.jpg/960px-Cup_of_Tunnicliff%27s_tartar_sauce.jpg', // Tartar Sauce
+  'hollandaise sauce yellow eggs benedict': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Hollandaise_sauce.jpg/960px-Hollandaise_sauce.jpg', // Hollandaise
+  'bearnaise sauce steak french yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/B%C3%A9arnaise_sauce_with_Tarragon_garnish.jpeg/960px-B%C3%A9arnaise_sauce_with_Tarragon_garnish.jpeg', // Béarnaise
+  'gravy pouring roast dinner': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wine_sauces_on_the_sauceboat.jpg/960px-Wine_sauces_on_the_sauceboat.jpg', // Gravy
+  'mint sauce green lamb condiment': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Mint_Sauce.jpg/960px-Mint_Sauce.jpg', // Mint Sauce
+  'cranberry sauce thanksgiving red turkey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Cranberry_Sauce_%283617909597%29.jpg/960px-Cranberry_Sauce_%283617909597%29.jpg', // Cranberry Sauce
+  'apple sauce smooth jar pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Applesauce.jpg/500px-Applesauce.jpg', // Apple Sauce
+  'bread sauce cream white christmas poultry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bread_sauce.jpg/960px-Bread_sauce.jpg', // Bread Sauce
+  'ponzu sauce japanese citrus soy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Ponzu_sauce_%E3%83%9D%E3%83%B3%E9%85%A23.jpg/960px-Ponzu_sauce_%E3%83%9D%E3%83%B3%E9%85%A23.jpg', // Ponzu
+  'teriyaki sauce glaze chicken japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/22nd_June_2012_Teriyaki_Duck.jpg/960px-22nd_June_2012_Teriyaki_Duck.jpg', // Teriyaki Sauce
+  'tonkatsu sauce japanese brown pork': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sauce%2C_Tonkatsu_Menu%2C_Tonkatsu_Tombo%2C_Paris_6_December_2016.jpg/960px-Sauce%2C_Tonkatsu_Menu%2C_Tonkatsu_Tombo%2C_Paris_6_December_2016.jpg', // Tonkatsu Sauce
+  'black bean sauce chinese fermented dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Lee_Kum_Kee_Black_Bean_Garlic_Sauce_%28cropped%29.jpg/500px-Lee_Kum_Kee_Black_Bean_Garlic_Sauce_%28cropped%29.jpg', // Black Bean Sauce
+  'chilli oil red sesame chinese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Chilioil.jpg/960px-Chilioil.jpg', // Chilli Oil
+  'kecap manis sweet soy sauce dark thick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Kecap_manis_%26_kecap_asin.jpg/960px-Kecap_manis_%26_kecap_asin.jpg', // Sweet Soy Sauce
+  'nam prik thai chilli dipping sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Nam_phrik_num.jpg/960px-Nam_phrik_num.jpg', // Nam Prik
+  'nuoc cham vietnamese fish sauce lime': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/B%C3%BAn_tr%E1%BB%99n%2C_James_Bun%2C_Paris_27_August_2016_004.jpg/960px-B%C3%BAn_tr%E1%BB%99n%2C_James_Bun%2C_Paris_27_August_2016_004.jpg', // Nuoc Cham
+  'chilli garlic sauce red jar spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Chili_Garlic_Sauce_%28Packaged%29.jpg/960px-Chili_Garlic_Sauce_%28Packaged%29.jpg', // Chilli Garlic Sauce
+  'hummus chickpea dip olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Hummus_with_Olive_Oil.jpg/960px-Hummus_with_Olive_Oil.jpg', // Hummus
+  'baba ganoush eggplant dip smoky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/960px-Baba_Ganoush_05of05_%288735238183%29.jpg', // Baba Ganoush
+  'chermoula moroccan green herb sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Chermoula_tagine.jpg/960px-Chermoula_tagine.jpg', // Chermoula
+  'ful medames fava bean dip egyptian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Ful_medames.jpg/960px-Ful_medames.jpg', // Ful Medames
+  'zhug yemeni green chilli herb sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Zkhoug_vert.jpg/960px-Zkhoug_vert.jpg', // Zhug
+  'toum garlic sauce white lebanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Toum_%28Lebanese_Garlic_Sauce%29.JPG/960px-Toum_%28Lebanese_Garlic_Sauce%29.JPG', // Toum
+  'shatta chilli paste red middle east': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Jar_of_Red_Shatta_Paste.jpg/960px-Jar_of_Red_Shatta_Paste.jpg', // Shatta
+  'muhammara roasted red pepper walnut dip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tanoreen_muhammara.jpg/500px-Tanoreen_muhammara.jpg', // Muhammara
+  'salsa verde tomatillo green mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Salsa_verde.jpg/960px-Salsa_verde.jpg', // Salsa Verde
+  'guacamole avocado dip fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Guacamole_IMGP1271.jpg/960px-Guacamole_IMGP1271.jpg', // Guacamole
+  'pico de gallo tomato onion fresh salsa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Mmm..._Pico_de_Gallo_%285923456035%29.jpg/960px-Mmm..._Pico_de_Gallo_%285923456035%29.jpg', // Pico de Gallo
+  'aji amarillo yellow pepper paste peru': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Aji_amarillo_fruits.jpg/960px-Aji_amarillo_fruits.jpg', // Aji Amarillo Paste
+  'mole sauce chocolate dark mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/960px-ChickRedMole.JPG', // Mole
+  'aioli garlic mayo dip white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/A%C3%AFoli_maison.jpg/960px-A%C3%AFoli_maison.jpg', // Aioli
+  'romesco sauce red pepper catalan spain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Romesco-sauce_%286917877891%29.jpg/960px-Romesco-sauce_%286917877891%29.jpg', // Romesco
+  'salsa rossa italian tomato roasted pepper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Fresh_Tomato_Sauce_%28Unsplash%29.jpg/960px-Fresh_Tomato_Sauce_%28Unsplash%29.jpg', // Salsa Rossa
+  'tapenade olive black paste french': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Cuillere_de_tapenade.jpg/500px-Cuillere_de_tapenade.jpg', // Tapenade
+  'gremolata parsley lemon zest garlic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Gremolata_03.jpg/960px-Gremolata_03.jpg', // Gremolata
+  'walnut sauce pasta ligurian italian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Pansoti-walnut-sauce.jpg/960px-Pansoti-walnut-sauce.jpg', // Salsa di Noci
+  'hp brown sauce bottle british': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fried_breakfast_with_brown_sauce.jpg/960px-Fried_breakfast_with_brown_sauce.jpg', // Brown Sauce
+  'marmite yeast extract spread toast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Marmite_and_cheese_on_toast.jpg/960px-Marmite_and_cheese_on_toast.jpg', // Marmite
+  'peanut butter jar smooth spread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2020-03-24_20_57_22_An_open_jar_of_Skippy_Creamy_Peanut_Butter_in_the_Dulles_section_of_Sterling%2C_Loudoun_County%2C_Virginia.jpg/960px-2020-03-24_20_57_22_An_open_jar_of_Skippy_Creamy_Peanut_Butter_in_the_Dulles_section_of_Sterling%2C_Loudoun_County%2C_Virginia.jpg', // Peanut Butter
+  'nutella chocolate hazelnut spread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Nutella_for_breakfast_-_Flickr_-_love.jsc.jpg/960px-Nutella_for_breakfast_-_Flickr_-_love.jsc.jpg', // Nutella
+  'jam strawberry jar spread toast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Strawberry_jam_%28home_preservation%29.jpg/960px-Strawberry_jam_%28home_preservation%29.jpg', // Jam
+  'marmalade orange peel jar breakfast': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Homemade_marmalade%2C_England.jpg/960px-Homemade_marmalade%2C_England.jpg', // Marmalade
+  'honey jar golden drizzle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Runny_hunny.jpg/960px-Runny_hunny.jpg', // Honey
+  'pickled jalapenos green sliced jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Indian_Jalape%C3%B1os.jpg/960px-Indian_Jalape%C3%B1os.jpg', // Pickled Jalapeños
+  'giardiniera italian pickled vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/GiardinieraSpicy.JPG/960px-GiardinieraSpicy.JPG', // Giardiniera
+  'tsukemono japanese pickles vegetables': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Tsukemono2.jpg/960px-Tsukemono2.jpg', // Tsukemono
+  'sunflower oil bottle cooking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Sunflower_oil_and_sunflower.jpg/960px-Sunflower_oil_and_sunflower.jpg', // Sunflower Oil
+  'plum sauce dark sweet condiment': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Plumsauce.jpg/500px-Plumsauce.jpg', // Plum Sauce
+  'walnut paste sauce georgian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Satsivi_%282%29.jpg/960px-Satsivi_%282%29.jpg', // Walnut Paste
+  'sauerkraut pickled cabbage fermented': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Belarusian-Russian_Sauerkraut-1.jpg/960px-Belarusian-Russian_Sauerkraut-1.jpg', // Sauerkraut
+  'dijon mustard french jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Dijon_mustard_on_a_spoon_-_20051218.jpg/960px-Dijon_mustard_on_a_spoon_-_20051218.jpg', // Dijon Mustard
+  'anchovy paste tube tin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Pasta_d%27acciughe_nel_mortaio.JPG/960px-Pasta_d%27acciughe_nel_mortaio.JPG', // Anchovy Paste
+  'olive oil': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Oliven_V1.jpg/960px-Oliven_V1.jpg', // Olive Oil
+  'vinegar bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Vintage_vinegar_bottle_-_2023-06_-02_-_Andy_Mabbett.jpg/960px-Vintage_vinegar_bottle_-_2023-06_-02_-_Andy_Mabbett.jpg', // Vinegar
+  'ketchup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Ketchup_20160918_181342_%28cropped%29.jpg/960px-Ketchup_20160918_181342_%28cropped%29.jpg', // Ketchup
+  'mustard': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Mustard.JPG/960px-Mustard.JPG', // Mustard
+  'mayonnaise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Mayonnaise_%281%29.jpg/960px-Mayonnaise_%281%29.jpg', // Mayonnaise
+  'soy sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Soy_sauce_2.jpg/960px-Soy_sauce_2.jpg', // Soy Sauce
+  'pesto sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/BasilPesto.JPG/960px-BasilPesto.JPG', // Pesto
+  'syrup bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Maltose_syrup.jpg/960px-Maltose_syrup.jpg', // Syrup
+  'caper food': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Capparis_spinosa-IMG_3417.jpg/960px-Capparis_spinosa-IMG_3417.jpg', // Caper
+  'sweet sour sauce': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/9800Sweet_and_sour_sauce_02.jpg/960px-9800Sweet_and_sour_sauce_02.jpg', // Sweet & Sour
+  'pomegranate molasses dark syrup bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Pomegranate_molasses_in_a_chinese_spoon.jpg/960px-Pomegranate_molasses_in_a_chinese_spoon.jpg', // Pomegranate Molasses
+  'rose water bottle floral distilled': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Golab_being_make_in_Meymand_-_Fars_21.jpg/500px-Golab_being_make_in_Meymand_-_Fars_21.jpg', // Rose Water
+  'orange blossom water floral bottle clear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/500px-OrangeBloss_wb.jpg', // Orange Blossom Water
+  'amba pickled mango sauce iraqi israeli': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%D7%A2%D7%9E%D7%91%D7%94.jpg/960px-%D7%A2%D7%9E%D7%91%D7%94.jpg', // Amba
+  'maple syrup canadian amber bottle pancakes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/US_grades_of_maple_syrup_%286963630107%29.jpg/960px-US_grades_of_maple_syrup_%286963630107%29.jpg', // Maple Syrup
+  'molasses dark syrup jar thick blackstrap': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Blackstrapmolasses.JPG/960px-Blackstrapmolasses.JPG', // Molasses
+  'hot sauce bottle louisiana red tabasco': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Hot_sauce_shelves_in_Rouses_Market%2C_New_Orleans_January_2025.jpg/960px-Hot_sauce_shelves_in_Rouses_Market%2C_New_Orleans_January_2025.jpg', // Hot Sauce
+  'ranch dressing white creamy dip bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Ranch_dressing.jpg/960px-Ranch_dressing.jpg', // Ranch Dressing
+  'vegemite jar yeast extract australian spread': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Two_Vegemite_Jars_%2841062016175%29.jpg/960px-Two_Vegemite_Jars_%2841062016175%29.jpg', // Vegemite
+  'manuka honey jar new zealand golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Manuka_honey_in_a_bowl.jpg/960px-Manuka_honey_in_a_bowl.jpg', // Mānuka Honey
+  'honeycomb toffee hokey pokey crunchy caramel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Peet%27s_honeycomb_toffee_%281%29.jpg/960px-Peet%27s_honeycomb_toffee_%281%29.jpg', // Hokey Pokey
+  'seasoning spices mix': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Achiote_paste_ingredients.jpg/960px-Achiote_paste_ingredients.jpg', // Seasoning
+  'black truffle fungus': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tuber_melanosporum_-_trufa_negra%2C_%C3%81greda%2C_Espa%C3%B1a.jpg/960px-Tuber_melanosporum_-_trufa_negra%2C_%C3%81greda%2C_Espa%C3%B1a.jpg', // Black Truffle
+  'coarse salt crystals': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sea_Salt_-_Macro_%2851840172425%29.jpg/960px-Sea_Salt_-_Macro_%2851840172425%29.jpg', // Coarse Salt
+  'fine salt white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Table_salt_with_salt_shaker_V1.jpg/960px-Table_salt_with_salt_shaker_V1.jpg', // Fine Salt
+  'salt mineral white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg/960px-Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg', // Salt
+  'miso paste japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Miso_001.jpg/960px-Miso_001.jpg', // Miso
+  'fish sauce thai bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Sauce_de_poisson.jpg/960px-Sauce_de_poisson.jpg', // Fish Sauce
+  'coconut milk can cream': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Cononut_milk.JPG/960px-Cononut_milk.JPG', // Coconut Milk
+  'tahini sesame paste': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Tahina.JPG/960px-Tahina.JPG', // Tahini
+  'hoisin sauce chinese dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Hoisin_sauce_1.jpg/960px-Hoisin_sauce_1.jpg', // Hoisin Sauce
+  'oyster sauce chinese bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/OysterSauce2.jpg/960px-OysterSauce2.jpg', // Oyster Sauce
+  'rice vinegar asian bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Rice_vinegar.jpg/960px-Rice_vinegar.jpg', // Rice Vinegar
+  'sesame oil dark bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Sesame_oil.jpg/500px-Sesame_oil.jpg', // Sesame Oil
+  'balsamic vinegar dark': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Balsamic_vinegar_%28drops%29.jpg/960px-Balsamic_vinegar_%28drops%29.jpg', // Balsamic Vinegar
+  'worcestershire sauce bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Worcester_Sauce_001.jpg/960px-Worcester_Sauce_001.jpg', // Worcestershire Sauce
+  'malt vinegar chip shop': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Eguilles_20110828_14.jpg/960px-Eguilles_20110828_14.jpg', // Malt Vinegar
+  'golden syrup tin treacle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Golden_Syrup.JPG/960px-Golden_Syrup.JPG', // Golden Syrup
+  'ghee clarified butter indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pure_Ghee-Homemade-Maharashtra.jpg/960px-Pure_Ghee-Homemade-Maharashtra.jpg', // Ghee
+  'dashi japanese stock broth': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Katsuobushi_02.jpg/960px-Katsuobushi_02.jpg', // Dashi
+  'chimichurri green herb sauce argentinian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Chimichurri_Sauce_Recipe_%2813294574784%29.jpg/960px-Chimichurri_Sauce_Recipe_%2813294574784%29.jpg', // Chimichurri
+  'dende palm oil red orange bahian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Azeite_de_Dend%C3%AA_-_Feira_das_Sete_Portas_-_Bahia.jpg/960px-Azeite_de_Dend%C3%AA_-_Feira_das_Sete_Portas_-_Bahia.jpg', // Dendê Oil
+  'dulce de leche caramel thick jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/DulceDeLeche.jpg/960px-DulceDeLeche.jpg', // Dulce de Leche
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3970,4 +4086,120 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Coupon', file: 'Coupon Pile Stock Photo (10865703765).jpg', author: 'Carol Pyles from Winter Haven, FL, US', license: 'CC BY 2.0' },
   { word: 'Loyalty Card', file: 'Customerloyalitycards.JPG', author: 'Mattes', license: 'Public domain' },
   { word: 'Expiry Date', file: 'Expiration.jpg', author: 'Edward Betts', license: 'Public domain' },
+  { word: 'Palm Oil', file: 'Palm oil in a white bowl.jpg', author: 'Zmu\'az4Z', license: 'CC BY 4.0' },
+  { word: 'Argan Oil', file: 'Huile d\'argan 010.JPG', author: 'Arnaud 25', license: 'CC BY-SA 3.0' },
+  { word: 'Harissa', file: 'Harissa Sauce.JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Niter Kibbeh', file: 'Clarified-butter.jpg', author: 'Nobby Nobody', license: 'CC BY-SA 3.0' },
+  { word: 'Preserved Lemon', file: 'Preserved lemon in a clip top jar, 4 years old.jpg', author: 'Michal Klajban', license: 'CC BY-SA 4.0' },
+  { word: 'Gochujang', file: 'Gochujang (chilli paste).jpg', author: '온맘으로', license: 'CC BY 4.0' },
+  { word: 'Doenjang', file: 'Doenjang.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Mirin', file: 'Mirinbowl.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Doubanjiang', file: 'Doubanjiang.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Shrimp Paste', file: 'A square of shrimp paste from Hung Kee store.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Kimchi', file: 'Various kimchi.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Kaya Jam', file: 'Kaya toast dip into soft boiled egg.jpg', author: 'Pinklily08', license: 'CC BY-SA 4.0' },
+  { word: 'Sambal', file: 'Sambal cobek.JPG', author: 'Midori', license: 'CC BY 3.0' },
+  { word: 'XO Sauce', file: 'Rice with XO sauce.jpg', author: 'Lishale', license: 'CC0' },
+  { word: 'Coconut Cream', file: 'Coconut cream.jpg', author: 'Katie Taylor', license: 'CC BY 2.0' },
+  { word: 'Fermented Black Beans', file: '2015 1012 Preserved black beans douchi close-up.jpg', author: 'Takeaway', license: 'CC BY-SA 4.0' },
+  { word: 'Piloncillo', file: 'Panela.jpg', author: 'Jdvillalobos', license: 'CC BY 3.0' },
+  { word: 'Mojo Sauce', file: 'Visita a Haría (09-2021) 04.jpg', author: 'MiguelAlanCS', license: 'CC BY-SA 4.0' },
+  { word: 'Sofrito', file: 'Sofrito.jpg', author: 'Javier Lastras', license: 'CC BY 2.0' },
+  { word: 'Sriracha', file: 'Sriracha Hot Sauce Bottles Freshii Restaurant Family Dinner Downtown Grand Rapids June 27, 2014 1 (14552677466).jpg', author: 'Steven Depolo from Grand Rapids, MI, USA', license: 'CC BY 2.0' },
+  { word: 'Relish', file: 'Home-made pickle relish!.jpg', author: 'Nutrition, Food Safety & Health', license: 'CC0' },
+  { word: 'Tartar Sauce', file: 'Cup of Tunnicliff\'s tartar sauce.jpg', author: 'Ser Amantio di Nicolao', license: 'CC BY-SA 4.0' },
+  { word: 'Hollandaise', file: 'Hollandaise sauce.jpg', author: 'Mark Miller', license: 'CC BY-SA 4.0' },
+  { word: 'Béarnaise', file: 'Béarnaise sauce with Tarragon garnish.jpeg', author: 'Alexander Guy', license: 'CC BY-SA 4.0' },
+  { word: 'Gravy', file: 'Wine sauces on the sauceboat.jpg', author: 'Peachyeung316', license: 'CC BY-SA 4.0' },
+  { word: 'Mint Sauce', file: 'Mint Sauce.jpg', author: 'rjp', license: 'CC BY-SA 2.0' },
+  { word: 'Cranberry Sauce', file: 'Cranberry Sauce (3617909597).jpg', author: 'Veganbaking.net from USA', license: 'CC BY-SA 2.0' },
+  { word: 'Apple Sauce', file: 'Applesauce.jpg', author: 'David Benbennick', license: 'CC BY-SA 3.0' },
+  { word: 'Bread Sauce', file: 'Bread sauce.jpg', author: 'ElinorD', license: 'CC BY-SA 3.0' },
+  { word: 'Ponzu', file: 'Ponzu sauce ポン酢3.jpg', author: 'Valenzuela400', license: 'CC BY-SA 4.0' },
+  { word: 'Teriyaki Sauce', file: '22nd June 2012 Teriyaki Duck.jpg', author: 'Murcotipton', license: 'CC BY-SA 3.0' },
+  { word: 'Tonkatsu Sauce', file: 'Sauce, Tonkatsu Menu, Tonkatsu Tombo, Paris 6 December 2016.jpg', author: 'Guilhem Vellut from Paris, France', license: 'CC BY 2.0' },
+  { word: 'Black Bean Sauce', file: 'Lee Kum Kee Black Bean Garlic Sauce (cropped).jpg', author: 'Taman Renyah', license: 'CC BY 3.0' },
+  { word: 'Chilli Oil', file: 'Chilioil.jpg', author: 'Alpha', license: 'CC BY-SA 2.0' },
+  { word: 'Sweet Soy Sauce', file: 'Kecap manis & kecap asin.jpg', author: 'Jdmtdktdht', license: 'CC BY-SA 3.0' },
+  { word: 'Nam Prik', file: 'Nam phrik num.jpg', author: 'Takeaway', license: 'CC BY-SA 3.0' },
+  { word: 'Nuoc Cham', file: 'Bún trộn, James Bun, Paris 27 August 2016 004.jpg', author: 'Guilhem Vellut from Paris, France', license: 'CC BY 2.0' },
+  { word: 'Chilli Garlic Sauce', file: 'Chili Garlic Sauce (Packaged).jpg', author: 'Ralff Nestor Nacor', license: 'CC BY-SA 4.0' },
+  { word: 'Hummus', file: 'Hummus with Olive Oil.jpg', author: 'TechnoKittyCat', license: 'CC BY 4.0' },
+  { word: 'Baba Ganoush', file: 'Baba Ganoush 05of05 (8735238183).jpg', author: 'Breville USA', license: 'CC BY 2.0' },
+  { word: 'Chermoula', file: 'Chermoula tagine.jpg', author: 'Michelle Tribe', license: 'CC BY 2.0' },
+  { word: 'Ful Medames', file: 'Ful medames.jpg', author: 'Zachbe at en.wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Zhug', file: 'Zkhoug vert.jpg', author: 'Sacrepan', license: 'CC BY-SA 4.0' },
+  { word: 'Toum', file: 'Toum (Lebanese Garlic Sauce).JPG', author: 'Miansari66', license: 'CC0' },
+  { word: 'Shatta', file: 'Jar of Red Shatta Paste.jpg', author: '2kbfloppadisk', license: 'CC0' },
+  { word: 'Muhammara', file: 'Tanoreen muhammara.jpg', author: 'Krista', license: 'CC BY 2.0' },
+  { word: 'Salsa Verde', file: 'Salsa verde.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Guacamole', file: 'Guacamole IMGP1271.jpg', author: 'Nikodem Nijaki', license: 'CC BY-SA 3.0' },
+  { word: 'Pico de Gallo', file: 'Mmm... Pico de Gallo (5923456035).jpg', author: 'jeffreyw', license: 'CC BY 2.0' },
+  { word: 'Aji Amarillo Paste', file: 'Aji amarillo fruits.jpg', author: 'Frozenmadness', license: 'CC BY-SA 4.0' },
+  { word: 'Mole', file: 'ChickRedMole.JPG', author: 'AlejandroLinaresGarcia', license: 'CC BY-SA 4.0' },
+  { word: 'Aioli', file: 'Aïoli maison.jpg', author: 'Marianne Casamance', license: 'CC BY-SA 4.0' },
+  { word: 'Romesco', file: 'Romesco-sauce (6917877891).jpg', author: 'cyclonebill from Copenhagen, Denmark', license: 'CC BY-SA 2.0' },
+  { word: 'Salsa Rossa', file: 'Fresh Tomato Sauce (Unsplash).jpg', author: 'Dennis Klein klein2', license: 'CC0' },
+  { word: 'Tapenade', file: 'Cuillere de tapenade.jpg', author: 'Marc Giacone', license: 'Public domain' },
+  { word: 'Gremolata', file: 'Gremolata 03.jpg', author: 'Popo le Chien', license: 'CC0' },
+  { word: 'Salsa di Noci', file: 'Pansoti-walnut-sauce.jpg', author: 'Dixy52', license: 'CC0' },
+  { word: 'Brown Sauce', file: 'Fried breakfast with brown sauce.jpg', author: 'Bob Peters', license: 'CC BY 2.0' },
+  { word: 'Marmite', file: 'Marmite and cheese on toast.jpg', author: 'TheJackal', license: 'CC BY-SA 3.0' },
+  { word: 'Peanut Butter', file: '2020-03-24 20 57 22 An open jar of Skippy Creamy Peanut Butter in the Dulles section of Sterling, Loudoun County, Virginia.jpg', author: 'Famartin', license: 'CC BY-SA 4.0' },
+  { word: 'Nutella', file: 'Nutella for breakfast - Flickr - love.jsc.jpg', author: 'Janine from South Korea, United States', license: 'CC BY 2.0' },
+  { word: 'Jam', file: 'Strawberry jam (home preservation).jpg', author: 'Nutrition, Food Safety & Health', license: 'CC0' },
+  { word: 'Marmalade', file: 'Homemade marmalade, England.jpg', author: 'Amanda Slater', license: 'CC BY-SA 2.0' },
+  { word: 'Honey', file: 'Runny hunny.jpg', author: 'Scott Bauer, USDA ARS', license: 'Public domain' },
+  { word: 'Pickled Jalapeños', file: 'Indian Jalapeños.jpg', author: 'Mayur Panchamia', license: 'CC BY-SA 4.0' },
+  { word: 'Giardiniera', file: 'GiardinieraSpicy.JPG', author: 'Antonio Cavallo', license: 'Public domain' },
+  { word: 'Tsukemono', file: 'Tsukemono2.jpg', author: 'Mimissu', license: 'CC BY-SA 4.0' },
+  { word: 'Sunflower Oil', file: 'Sunflower oil and sunflower.jpg', author: 'torange.biz', license: 'CC BY 4.0' },
+  { word: 'Plum Sauce', file: 'Plumsauce.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Walnut Paste', file: 'Satsivi (2).jpg', author: 'Lesya Dolyk', license: 'CC BY-SA 2.0' },
+  { word: 'Sauerkraut', file: 'Belarusian-Russian Sauerkraut-1.jpg', author: 'Eugene Zelenko', license: 'CC BY-SA 4.0' },
+  { word: 'Dijon Mustard', file: 'Dijon mustard on a spoon - 20051218.jpg', author: 'Rainer Zenz.', license: 'CC BY-SA 3.0' },
+  { word: 'Anchovy Paste', file: 'Pasta d\'acciughe nel mortaio.JPG', author: 'Roger469', license: 'CC BY-SA 3.0' },
+  { word: 'Olive Oil', file: 'Oliven V1.jpg', author: 'Poyraz 72', license: 'CC BY-SA 4.0' },
+  { word: 'Vinegar', file: 'Vintage vinegar bottle - 2023-06 -02 - Andy Mabbett.jpg', author: 'Andy Mabbett', license: 'CC BY-SA 4.0' },
+  { word: 'Ketchup', file: 'Ketchup 20160918 181342 (cropped).jpg', author: 'Kim Holger Kelting', license: 'CC BY 4.0' },
+  { word: 'Mustard', file: 'Mustard.JPG', author: 'fuji01', license: 'CC0' },
+  { word: 'Mayonnaise', file: 'Mayonnaise (1).jpg', author: 'jules', license: 'CC BY 2.0' },
+  { word: 'Soy Sauce', file: 'Soy sauce 2.jpg', author: '국립국어원', license: 'CC BY-SA 2.0' },
+  { word: 'Pesto', file: 'BasilPesto.JPG', author: 'Ɱ', license: 'CC BY-SA 3.0' },
+  { word: 'Syrup', file: 'Maltose syrup.jpg', author: 'FotoosVanRobin from Netherlands', license: 'CC BY-SA 2.0' },
+  { word: 'Caper', file: 'Capparis spinosa-IMG 3417.jpg', author: 'C T Johansson', license: 'CC BY-SA 3.0' },
+  { word: 'Sweet & Sour', file: '9800Sweet and sour sauce 02.jpg', author: 'Judgefloro', license: 'CC0' },
+  { word: 'Pomegranate Molasses', file: 'Pomegranate molasses in a chinese spoon.jpg', author: 'El Mono Español', license: 'CC BY-SA 4.0' },
+  { word: 'Rose Water', file: 'Golab being make in Meymand - Fars 21.jpg', author: 'Hossein Khosravi', license: 'CC BY 4.0' },
+  { word: 'Orange Blossom Water', file: 'OrangeBloss wb.jpg', author: 'Ellen Levy Finch (Elf)', license: 'CC BY-SA 3.0' },
+  { word: 'Amba', file: 'עמבה.jpg', author: 'ניר ודל', license: 'CC BY-SA 4.0' },
+  { word: 'Maple Syrup', file: 'US grades of maple syrup (6963630107).jpg', author: 'LadyDragonflyCC - &gt;;&lt; from Michigan, USA', license: 'CC BY 2.0' },
+  { word: 'Molasses', file: 'Blackstrapmolasses.JPG', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Hot Sauce', file: 'Hot sauce shelves in Rouses Market, New Orleans January 2025.jpg', author: 'pelican', license: 'CC BY-SA 2.0' },
+  { word: 'Ranch Dressing', file: 'Ranch dressing.jpg', author: 'Whitney from Chicago, IL', license: 'CC BY 2.0' },
+  { word: 'Vegemite', file: 'Two Vegemite Jars (41062016175).jpg', author: 'Willis Lam', license: 'CC BY-SA 2.0' },
+  { word: 'Mānuka Honey', file: 'Manuka honey in a bowl.jpg', author: 'Sage Ross', license: 'CC BY-SA 3.0' },
+  { word: 'Hokey Pokey', file: 'Peet\'s honeycomb toffee (1).jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Seasoning', file: 'Achiote paste ingredients.jpg', author: 'Paul Goyette', license: 'CC BY-SA 2.0' },
+  { word: 'Black Truffle', file: 'Tuber melanosporum - trufa negra, Ágreda, España.jpg', author: 'Diego Delso', license: 'CC BY-SA 3.0' },
+  { word: 'Coarse Salt', file: 'Sea Salt - Macro (51840172425).jpg', author: 'ajay_suresh', license: 'CC BY 2.0' },
+  { word: 'Fine Salt', file: 'Table salt with salt shaker V1.jpg', author: 'Poyraz 72', license: 'CC BY-SA 4.0' },
+  { word: 'Salt', file: 'Piles of Salt Salar de Uyuni Bolivia Luca Galuzzi 2006 a.jpg', author: 'Luca Galuzzi (Lucag), edit by Trialsanderrors', license: 'CC BY-SA 2.5' },
+  { word: 'Miso', file: 'Miso 001.jpg', author: 'https://publicdomainq.net/miso-0018849/', license: 'CC0' },
+  { word: 'Fish Sauce', file: 'Sauce de poisson.jpg', author: 'Assassas77', license: 'CC BY-SA 4.0' },
+  { word: 'Coconut Milk', file: 'Cononut milk.JPG', author: 'S Sepp', license: 'CC BY-SA 3.0' },
+  { word: 'Tahini', file: 'Tahina.JPG', author: 'Gilabrand', license: 'CC BY-SA 3.0' },
+  { word: 'Hoisin Sauce', file: 'Hoisin sauce 1.jpg', author: 'allen watkin from London, UK', license: 'CC BY-SA 2.0' },
+  { word: 'Oyster Sauce', file: 'OysterSauce2.jpg', author: 'Gossipguy', license: 'CC BY-SA 3.0' },
+  { word: 'Rice Vinegar', file: 'Rice vinegar.jpg', author: 'Sotaque', license: 'CC0' },
+  { word: 'Sesame Oil', file: 'Sesame oil.jpg', author: 'Mariko GODA', license: 'CC BY-SA 3.0' },
+  { word: 'Balsamic Vinegar', file: 'Balsamic vinegar (drops).jpg', author: 'Andrea Levers', license: 'CC BY-SA 2.0' },
+  { word: 'Worcestershire Sauce', file: 'Worcester Sauce 001.jpg', author: 'Ocdp', license: 'CC0' },
+  { word: 'Malt Vinegar', file: 'Eguilles 20110828 14.jpg', author: 'Georges Seguin (Okki)', license: 'CC BY-SA 3.0' },
+  { word: 'Golden Syrup', file: 'Golden Syrup.JPG', author: 'Londonsista', license: 'CC BY-SA 3.0' },
+  { word: 'Ghee', file: 'Pure Ghee-Homemade-Maharashtra.jpg', author: 'Phadke09', license: 'CC BY-SA 4.0' },
+  { word: 'Dashi', file: 'Katsuobushi 02.jpg', author: 'Sakurai Midori', license: 'CC BY-SA 3.0' },
+  { word: 'Chimichurri', file: 'Chimichurri Sauce Recipe (13294574784).jpg', author: 'Dominic Lockyer', license: 'CC BY 2.0' },
+  { word: 'Dendê Oil', file: 'Azeite de Dendê - Feira das Sete Portas - Bahia.jpg', author: 'SouDiana', license: 'CC BY-SA 4.0' },
+  { word: 'Dulce de Leche', file: 'DulceDeLeche.jpg', author: 'audinou from Paris, France', license: 'CC BY 2.0' },
 ];
