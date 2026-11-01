@@ -13,7 +13,6 @@ export const SOUTH_AMERICAN_INGREDIENT_WORDS: Word[] = [
 
   // ── Grains & Legumes ──────────────────────────────────────────────────────────
   { id: 'sai9',  word: 'Amaranth',         translations: { es: 'Amaranto',         pt: 'Amaranto', 'pt-br': 'Amaranto',         fr: 'Amarante',              de: 'Amaranth',           it: 'Amaranto',           ja: 'アマランス',         zh: '苋菜籽',      ko: '아마란스',         ar: 'الأمارانث', nl: 'Amarant'         }, category: 'Bread & Grains', unsplashQuery: 'amaranth grain ancient south american red' },
-  { id: 'sai10', word: 'Black Beans',      translations: { es: 'Frijoles negros',  pt: 'Feijão preto', 'pt-br': 'Feijão preto',     fr: 'Haricots noirs',        de: 'Schwarze Bohnen',    it: 'Fagioli neri',       ja: '黒インゲン豆',       zh: '黑豆',        ko: '검은콩',           ar: 'فاصوليا سوداء', nl: 'Zwarte bonen'     }, category: 'Nuts & Legumes', unsplashQuery: 'black beans dried south american' },
   { id: 'sai11', word: 'Cassava Flour',    translations: { es: 'Harina de yuca',   pt: 'Farinha de mandioca', 'pt-br': 'Farinha de mandioca', fr: 'Farine de manioc',   de: 'Maniokmehl',         it: 'Farina di manioca',  ja: 'キャッサバ粉',       zh: '木薯粉',      ko: '카사바 가루',      ar: 'دقيق الكاسافا', nl: 'Cassavemeel'     }, category: 'Bread & Grains', unsplashQuery: 'cassava flour white farofa coarse' },
 
   // ── Fruit & Specialties ───────────────────────────────────────────────────────
