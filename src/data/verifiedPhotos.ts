@@ -2497,6 +2497,62 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'exam paper test written answers pen desk hall': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Exam_paper_1.jpg/960px-Exam_paper_1.jpg', // Exam
   'lunch box open healthy food sandwich fruit school child': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Box-veggies-and-two-apples.jpg/960px-Box-veggies-and-two-apples.jpg', // Lunch Box
   'diploma graduation scroll certificate rolled ribbon seal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/SheepskinDiploma.jpg/960px-SheepskinDiploma.jpg', // Diploma
+  'basketball court hoop': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Basketball_hoop_1210388.jpg/960px-Basketball_hoop_1210388.jpg', // Basketball
+  'volleyball beach sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Brasil_vence_a_Fran%C3%A7a_no_v%C3%B4lei_masculino_1037987-15.08.2016_ffz-6369.jpg/960px-Brasil_vence_a_Fran%C3%A7a_no_v%C3%B4lei_masculino_1037987-15.08.2016_ffz-6369.jpg', // Volleyball
+  'rugby match tackle field': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/2014_Women%27s_Six_Nations_Championship_-_France_Italy_%2851%29.jpg/960px-2014_Women%27s_Six_Nations_Championship_-_France_Italy_%2851%29.jpg', // Rugby
+  'cricket bat wicket field': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Pollock_to_Hussey.jpg/960px-Pollock_to_Hussey.jpg', // Cricket
+  'baseball pitcher bat stadium': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tommy_Milone_gives_up_a_home_run_to_Mike_Trout_on_May_21%2C_2017.jpg/960px-Tommy_Milone_gives_up_a_home_run_to_Mike_Trout_on_May_21%2C_2017.jpg', // Baseball
+  'american football helmet field': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Foot_US_-_Ours_vs_Kangourous_-_2013-03-02_-_20.jpg/960px-Foot_US_-_Ours_vs_Kangourous_-_2013-03-02_-_20.jpg', // American Football
+  'handball team indoor sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/VB-VIF_Faroese_Handball_Match_November_2011.JPG/960px-VB-VIF_Faroese_Handball_Match_November_2011.JPG', // Handball
+  'water polo pool team': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/WaterPolo.JPG/960px-WaterPolo.JPG', // Water Polo
+  'polo horse mallet rider': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Varsity_Polo_2013.jpg/960px-Varsity_Polo_2013.jpg', // Polo
+  'badminton shuttlecock racket court': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Volant_badminton.jpg/500px-Volant_badminton.jpg', // Badminton
+  'table tennis ping pong paddle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/960px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg', // Table Tennis
+  'squash racket court indoor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Nanoldsquash2.JPG/960px-Nanoldsquash2.JPG', // Squash
+  'boxing gloves punch ring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Boxing_Tournament_in_Aid_of_King_George%27s_Fund_For_Sailors_at_the_Royal_Naval_Air_Station%2C_Henstridge%2C_Somerset%2C_July_1945_A29806.jpg/500px-Boxing_Tournament_in_Aid_of_King_George%27s_Fund_For_Sailors_at_the_Royal_Naval_Air_Station%2C_Henstridge%2C_Somerset%2C_July_1945_A29806.jpg', // Boxing
+  'judo throw mat martial art': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Kata_Guruma_02.jpg/960px-Kata_Guruma_02.jpg', // Judo
+  'karate kick punch dojo': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/K1PL_Berlin_2018-09-16_Female_Kata_108.jpg/960px-K1PL_Berlin_2018-09-16_Female_Kata_108.jpg', // Karate
+  'wrestling mat grapple sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Wrestling_at_the_2016_Summer_Olympics%2C_Gazyumov_vs_Andriitsev_6.jpg/960px-Wrestling_at_the_2016_Summer_Olympics%2C_Gazyumov_vs_Andriitsev_6.jpg', // Wrestling
+  'taekwondo kick martial art': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Taekwondo_kick.jpg/960px-Taekwondo_kick.jpg', // Taekwondo
+  'fencing sword sport mask': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Final_Trophee_Monal_2012_n08.jpg/960px-Final_Trophee_Monal_2012_n08.jpg', // Fencing
+  'sumo wrestling japan ring': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Asashoryu_fight_Jan08.JPG/960px-Asashoryu_fight_Jan08.JPG', // Sumo
+  'cycling road race bicycle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/20231005_Cycling_Road_Men%27s_Road_Race_at_Hangzhou_Asian_Games_3.jpg/960px-20231005_Cycling_Road_Men%27s_Road_Race_at_Hangzhou_Asian_Games_3.jpg', // Cycling
+  'marathon running race city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/BSK_CSOB_MARATON046_%2833791445325%29.jpg/960px-BSK_CSOB_MARATON046_%2833791445325%29.jpg', // Marathon
+  'high jump athletics bar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Nicole_Forrester.JPG/960px-Nicole_Forrester.JPG', // High Jump
+  'long jump sand athletics track': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Army_Athletics_Long_Jumper_at_The_Inter_Corps_Athletics_Competition_at_Tidworth%2C_Wiltshire_MOD_45152793_%28cropped%29.jpg/960px-Army_Athletics_Long_Jumper_at_The_Inter_Corps_Athletics_Competition_at_Tidworth%2C_Wiltshire_MOD_45152793_%28cropped%29.jpg', // Long Jump
+  'discus throw athletics': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Robert_Harting_%282008%29.jpg/960px-Robert_Harting_%282008%29.jpg', // Discus
+  'pole vault athletics jump': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Leichtathletik_Gala_Linz_2018_pole_vault_Preiner_Katrin-5628.jpg/960px-Leichtathletik_Gala_Linz_2018_pole_vault_Preiner_Katrin-5628.jpg', // Pole Vault
+  'surfing wave ocean board': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mavericks_Surf_Contest_2010b.jpg/960px-Mavericks_Surf_Contest_2010b.jpg', // Surfing
+  'rowing boat river race': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Harvard_Rowing_Crew_at_Henley_2004_-2.JPG/960px-Harvard_Rowing_Crew_at_Henley_2004_-2.JPG', // Rowing
+  'diving pool platform jump': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Diving_platforms_at_Coral_Springs_Aquatic_Complex%2C_May_2026.jpg/960px-Diving_platforms_at_Coral_Springs_Aquatic_Complex%2C_May_2026.jpg', // Diving
+  'skiing snow mountain alpine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mindersjochabfahrt.JPG/960px-Mindersjochabfahrt.JPG', // Skiing
+  'snowboarding mountain trick snow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Snowboarding.jpg/960px-Snowboarding.jpg', // Snowboarding
+  'ice hockey rink puck stick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Yost_Ice_Arena%2C_Michigan_Ice_Hockey_Game_During_Intermission.jpg/960px-Yost_Ice_Arena%2C_Michigan_Ice_Hockey_Game_During_Intermission.jpg', // Ice Hockey
+  'figure skating ice spin jump': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Team_Les_Supreme_Free_Skate_at_the_2026_ISU_Synchronized_Skating_World_Championships_01.jpg/960px-Team_Les_Supreme_Free_Skate_at_the_2026_ISU_Synchronized_Skating_World_Championships_01.jpg', // Figure Skating
+  'curling ice stone broom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Curling_Stones.jpg/960px-Curling_Stones.jpg', // Curling
+  'golf course green club': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Golfer_swing.jpg/960px-Golfer_swing.jpg', // Golf
+  'archery bow arrow target': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Changlimithang_Archery_Ground%2C_Thimphu_08.jpg/960px-Changlimithang_Archery_Ground%2C_Thimphu_08.jpg', // Archery
+  'rock climbing cliff mountain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Crack_climbing_in_Indian_Creek%2C_Utah.jpg/960px-Crack_climbing_in_Indian_Creek%2C_Utah.jpg', // Rock Climbing
+  'skateboarding trick ramp park': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/BackSmithGrind.jpg/500px-BackSmithGrind.jpg', // Skateboarding
+  'horse riding equestrian competition': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sherpa_Horse_Riding_Mavrovo_2.jpg/960px-Sherpa_Horse_Riding_Mavrovo_2.jpg', // Horse Riding
+  'gymnastics floor routine flip': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/ESTADOS_UNIDOS_LEVAM_OURO_NA_GIN%C3%81STICA_FEMININA_POR_EQUIPES_DOS_JOGOS_OL%C3%8DMPICOS_RIO_2016_%2828849586476%29.jpg/960px-ESTADOS_UNIDOS_LEVAM_OURO_NA_GIN%C3%81STICA_FEMININA_POR_EQUIPES_DOS_JOGOS_OL%C3%8DMPICOS_RIO_2016_%2828849586476%29.jpg', // Gymnastics
+  'weightlifting barbell strength': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Olympic_barbell.jpg/960px-Olympic_barbell.jpg', // Weightlifting
+  'field hockey stick grass pitch': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Match_Hockey_Grande_Bretagne_x_Espagne_Jeux_Olympiques_2024_Terrain_1_Stade_Yves_Manoir_-_Colombes_%28FR92%29_-_2024-07-27_-_28.jpg/960px-Match_Hockey_Grande_Bretagne_x_Espagne_Jeux_Olympiques_2024_Terrain_1_Stade_Yves_Manoir_-_Colombes_%28FR92%29_-_2024-07-27_-_28.jpg', // Hockey
+  'ferrari formula 1 red race car circuit speed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/1965_Sam_Tingle_Formula_1_LDS_Race_Car-1_%2829891690293%29.jpg/960px-1965_Sam_Tingle_Formula_1_LDS_Race_Car-1_%2829891690293%29.jpg', // Formula 1
+  'motogp motorcycle race track': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Marc_M%C3%A1rquez_at_the_pit_lane_during_the_2025_Italian_motorcycle_Grand_Prix_%28front_view%2C_cropped%29.jpg/500px-Marc_M%C3%A1rquez_at_the_pit_lane_during_the_2025_Italian_motorcycle_Grand_Prix_%28front_view%2C_cropped%29.jpg', // MotoGP
+  'kabaddi india team sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Iran_men%27s_national_kabaddi_team_13970602000432636707284535394012_98208.jpg/960px-Iran_men%27s_national_kabaddi_team_13970602000432636707284535394012_98208.jpg', // Kabaddi
+  'lacrosse stick field game': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/UNC_Lacrosse.jpg/960px-UNC_Lacrosse.jpg', // Lacrosse
+  'padel player hitting ball glass court action shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Sanchez-Casal_Paddle_Tennis_Game.jpg/960px-Sanchez-Casal_Paddle_Tennis_Game.jpg', // Padel
+  'triathlon swim bike run race': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/2018_European_Triathlon_Championships_%28men%27s_triathlon_-_swim%2C_lap_1%29.jpg/960px-2018_European_Triathlon_Championships_%28men%27s_triathlon_-_swim%2C_lap_1%29.jpg', // Triathlon
+  'darts board bullseye pub': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Darts_in_a_dartboard.jpg/960px-Darts_in_a_dartboard.jpg', // Darts
+  'snooker pool table cue ball': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Snooker_Table_Start_Positions.jpg/960px-Snooker_Table_Start_Positions.jpg', // Snooker
+  'esports gaming tournament screen': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg/960px-LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg', // e-Sports
+  'ball sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Various_game_and_sports_balls%2C_side_view.jpg/960px-Various_game_and_sports_balls%2C_side_view.jpg', // Ball
+  'swimming pool': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Depart4x100.jpg/960px-Depart4x100.jpg', // Swimming
+  'football soccer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/960px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg', // Football
+  'tennis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tennis_Match_at_EuroGames_2024.jpg/960px-Tennis_Match_at_EuroGames_2024.jpg', // Tennis
+  'running sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Human_running_gait_-_terminal_swing_to_heel_strike_%28runner_with_Asics_Metaspeed_Edge_Paris_-_2024_Ljubljana_Marathon%29.jpg/960px-Human_running_gait_-_terminal_swing_to_heel_strike_%28runner_with_Asics_Metaspeed_Edge_Paris_-_2024_Ljubljana_Marathon%29.jpg', // Running
+  'yoga': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Beach_asana_class%2C_Plage_Pereire%2C_Arcachon%2C_2015.jpg/960px-Beach_asana_class%2C_Plage_Pereire%2C_Arcachon%2C_2015.jpg', // Yoga
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -4912,4 +4968,60 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Exam', file: 'Exam paper 1.jpg', author: 'Ajia4ty', license: 'CC BY-SA 4.0' },
   { word: 'Lunch Box', file: 'Box-veggies-and-two-apples.jpg', author: 'Hay Kranen', license: 'CC0' },
   { word: 'Diploma', file: 'SheepskinDiploma.jpg', author: 'Millermz at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Basketball', file: 'Basketball hoop 1210388.jpg', author: 'Ermell', license: 'CC BY-SA 4.0' },
+  { word: 'Volleyball', file: 'Brasil vence a França no vôlei masculino 1037987-15.08.2016 ffz-6369.jpg', author: 'Fernando Frazão/Agência Brasil', license: 'CC BY 3.0 br' },
+  { word: 'Rugby', file: '2014 Women\'s Six Nations Championship - France Italy (51).jpg', author: 'Caroline Léna Becker', license: 'CC BY 3.0' },
+  { word: 'Cricket', file: 'Pollock to Hussey.jpg', author: 'Prescott Pym on Flickr', license: 'CC BY 2.0' },
+  { word: 'Baseball', file: 'Tommy Milone gives up a home run to Mike Trout on May 21, 2017.jpg', author: 'D. Benjamin Miller', license: 'CC0' },
+  { word: 'American Football', file: 'Foot US - Ours vs Kangourous - 2013-03-02 - 20.jpg', author: 'Pierre-Selim', license: 'CC BY 3.0' },
+  { word: 'Handball', file: 'VB-VIF Faroese Handball Match November 2011.JPG', author: 'Eileen Sandá', license: 'CC BY-SA 3.0' },
+  { word: 'Water Polo', file: 'WaterPolo.JPG', author: 'Massimo Finizio', license: 'CC BY-SA 2.0 it' },
+  { word: 'Polo', file: 'Varsity Polo 2013.jpg', author: 'Andreas Polo', license: 'CC BY-SA 3.0' },
+  { word: 'Badminton', file: 'Volant badminton.jpg', author: 'Badplayer', license: 'CC BY-SA 2.5' },
+  { word: 'Table Tennis', file: 'Mondial Ping - Men\'s Singles - Round 4 - Kenta Matsudaira-Vladimir Samsonov - 57.jpg', author: 'Pierre-Yves Beaudouin', license: 'CC BY-SA 3.0' },
+  { word: 'Squash', file: 'Nanoldsquash2.JPG', author: 'Sliat 1981 at English Wikipedia', license: 'CC0' },
+  { word: 'Boxing', file: 'Boxing Tournament in Aid of King George\'s Fund For Sailors at the Royal Naval Air Station, Henstridge, Somerset, July 1945 A29806.jpg', author: 'Royal Navy official photographer', license: 'Public domain' },
+  { word: 'Judo', file: 'Kata Guruma 02.jpg', author: 'Alfredo Fontana', license: 'CC BY 2.0' },
+  { word: 'Karate', file: 'K1PL Berlin 2018-09-16 Female Kata 108.jpg', author: 'Martin Rulsch, Wikimedia Commons', license: 'CC BY-SA 4.0' },
+  { word: 'Wrestling', file: 'Wrestling at the 2016 Summer Olympics, Gazyumov vs Andriitsev 6.jpg', author: 'Ilgar Jafarov', license: 'CC BY-SA 4.0' },
+  { word: 'Taekwondo', file: 'Taekwondo kick.jpg', author: 'Monadawson', license: 'Public domain' },
+  { word: 'Fencing', file: 'Final Trophee Monal 2012 n08.jpg', author: 'Marie-Lan Nguyen', license: 'CC BY 2.5' },
+  { word: 'Sumo', file: 'Asashoryu fight Jan08.JPG', author: 'Eckhard Pecher User:Arcimboldo', license: 'CC BY 3.0' },
+  { word: 'Cycling', file: '20231005 Cycling Road Men\'s Road Race at Hangzhou Asian Games 3.jpg', author: 'Simon Wade', license: 'CC BY-SA 4.0' },
+  { word: 'Marathon', file: 'BSK CSOB MARATON046 (33791445325).jpg', author: 'Bratislavská župa from Bratislava, Slovakia', license: 'CC BY 2.0' },
+  { word: 'High Jump', file: 'Nicole Forrester.JPG', author: 'Nicole Forrester', license: 'CC BY-SA 3.0' },
+  { word: 'Long Jump', file: 'Army Athletics Long Jumper at The Inter Corps Athletics Competition at Tidworth, Wiltshire MOD 45152793 (cropped).jpg', author: 'Sergeant Ian Forsyth RLC', license: 'OGL v1.0' },
+  { word: 'Discus', file: 'Robert Harting (2008).jpg', author: 'Bundeswehr-Fotos (derivative work: César)', license: 'CC BY 2.0' },
+  { word: 'Pole Vault', file: 'Leichtathletik Gala Linz 2018 pole vault Preiner Katrin-5628.jpg', author: 'Isiwal', license: 'CC BY-SA 4.0' },
+  { word: 'Surfing', file: 'Mavericks Surf Contest 2010b.jpg', author: 'Shalom Jacobovitz', license: 'CC BY-SA 3.0' },
+  { word: 'Rowing', file: 'Harvard Rowing Crew at Henley 2004 -2.JPG', author: 'Johnteslade', license: 'Public domain' },
+  { word: 'Diving', file: 'Diving platforms at Coral Springs Aquatic Complex, May 2026.jpg', author: 'Rosslieb', license: 'CC BY-SA 4.0' },
+  { word: 'Skiing', file: 'Mindersjochabfahrt.JPG', author: 'Root5.5', license: 'CC BY-SA 3.0' },
+  { word: 'Snowboarding', file: 'Snowboarding.jpg', author: 'Ripley119', license: 'CC BY-SA 3.0' },
+  { word: 'Ice Hockey', file: 'Yost Ice Arena, Michigan Ice Hockey Game During Intermission.jpg', author: 'Kyvuh', license: 'CC0' },
+  { word: 'Figure Skating', file: 'Team Les Supreme Free Skate at the 2026 ISU Synchronized Skating World Championships 01.jpg', author: 'Quejaytee', license: 'CC BY-SA 4.0' },
+  { word: 'Curling', file: 'Curling Stones.jpg', author: 'Michael (a.k.a. moik) McCullough', license: 'CC BY 2.0' },
+  { word: 'Golf', file: 'Golfer swing.jpg', author: 'Lilrizz', license: 'CC0' },
+  { word: 'Archery', file: 'Changlimithang Archery Ground, Thimphu 08.jpg', author: 'Bernard Gagnon', license: 'CC BY-SA 4.0' },
+  { word: 'Rock Climbing', file: 'Crack climbing in Indian Creek, Utah.jpg', author: 'Crystal', license: 'CC BY 2.0' },
+  { word: 'Skateboarding', file: 'BackSmithGrind.jpg', author: 'Vlwisconsin (talk)', license: 'Public domain' },
+  { word: 'Horse Riding', file: 'Sherpa Horse Riding Mavrovo 2.jpg', author: 'kallerna', license: 'CC BY-SA 4.0' },
+  { word: 'Gymnastics', file: 'ESTADOS UNIDOS LEVAM OURO NA GINÁSTICA FEMININA POR EQUIPES DOS JOGOS OLÍMPICOS RIO 2016 (28849586476).jpg', author: 'Fernando Frazão/Agência Brasil', license: 'CC BY 2.0' },
+  { word: 'Weightlifting', file: 'Olympic barbell.jpg', author: 'Tomáš Pilík', license: 'CC BY-SA 3.0' },
+  { word: 'Hockey', file: 'Match Hockey Grande Bretagne x Espagne Jeux Olympiques 2024 Terrain 1 Stade Yves Manoir - Colombes (FR92) - 2024-07-27 - 28.jpg', author: 'Chabe01', license: 'CC BY-SA 4.0' },
+  { word: 'Formula 1', file: '1965 Sam Tingle Formula 1 LDS Race Car-1 (29891690293).jpg', author: 'naeem mayet', license: 'CC BY 2.0' },
+  { word: 'MotoGP', file: 'Marc Márquez at the pit lane during the 2025 Italian motorcycle Grand Prix (front view, cropped).jpg', author: 'TeamEG00', license: 'Public domain' },
+  { word: 'Kabaddi', file: 'Iran men\'s national kabaddi team 13970602000432636707284535394012 98208.jpg', author: 'Amir Hosseini', license: 'CC BY 4.0' },
+  { word: 'Lacrosse', file: 'UNC Lacrosse.jpg', author: '(User:Wgreaves)', license: 'Public domain' },
+  { word: 'Padel', file: 'Sanchez-Casal Paddle Tennis Game.jpg', author: 'Jacky Cheong', license: 'CC BY-SA 2.0' },
+  { word: 'Triathlon', file: '2018 European Triathlon Championships (men\'s triathlon - swim, lap 1).jpg', author: 'Cs-wolves', license: 'CC BY-SA 4.0' },
+  { word: 'Darts', file: 'Darts in a dartboard.jpg', author: 'PeterPan23', license: 'Public domain' },
+  { word: 'Snooker', file: 'Snooker Table Start Positions.jpg', author: 'barfisch', license: 'CC BY-SA 3.0' },
+  { word: 'e-Sports', file: 'LGD Gaming at the 2015 LPL Summer Finals.jpg', author: 'Bruce Liu', license: 'CC BY-SA 3.0' },
+  { word: 'Ball', file: 'Various game and sports balls, side view.jpg', author: 'Classroom Camera (Cascade Canyon School)', license: 'CC BY 2.0' },
+  { word: 'Swimming', file: 'Depart4x100.jpg', author: 'Jmex60', license: 'CC BY-SA 3.0' },
+  { word: 'Football', file: 'Football in Bloomington, Indiana, 1995.jpg', author: 'Rick Dikeman', license: 'CC BY-SA 3.0' },
+  { word: 'Tennis', file: 'Tennis Match at EuroGames 2024.jpg', author: 'Petit94', license: 'CC BY-SA 4.0' },
+  { word: 'Running', file: 'Human running gait - terminal swing to heel strike (runner with Asics Metaspeed Edge Paris - 2024 Ljubljana Marathon).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Yoga', file: 'Beach asana class, Plage Pereire, Arcachon, 2015.jpg', author: 'DimiTalen', license: 'CC0' },
 ];
