@@ -2116,6 +2116,101 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'chimichurri green herb sauce argentinian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Chimichurri_Sauce_Recipe_%2813294574784%29.jpg/960px-Chimichurri_Sauce_Recipe_%2813294574784%29.jpg', // Chimichurri
   'dende palm oil red orange bahian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Azeite_de_Dend%C3%AA_-_Feira_das_Sete_Portas_-_Bahia.jpg/960px-Azeite_de_Dend%C3%AA_-_Feira_das_Sete_Portas_-_Bahia.jpg', // Dendê Oil
   'dulce de leche caramel thick jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/DulceDeLeche.jpg/960px-DulceDeLeche.jpg', // Dulce de Leche
+  'berbere ethiopian spice blend red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Berberespice.jpg/960px-Berberespice.jpg', // Berbere
+  'ras el hanout moroccan spice blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ras.el.hanout.jpg/960px-Ras.el.hanout.jpg', // Ras el Hanout
+  'gochugaru korean red chili flakes powder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Gochugaru.jpg/960px-Gochugaru.jpg', // Gochugaru
+  'sichuan pepper chinese numbing spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Sichuan_pepper.jpg/960px-Sichuan_pepper.jpg', // Sichuan Pepper
+  'curry leaves fresh green indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/20260317_Murraya_koenigii_02.jpg/960px-20260317_Murraya_koenigii_02.jpg', // Curry Leaves
+  'mustard seeds black yellow indian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Mustard.png/960px-Mustard.png', // Mustard Seeds
+  'asafoetida hing indian spice powder': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Asafoetida.jpg/960px-Asafoetida.jpg', // Asafoetida
+  'pandan leaf green fragrant southeast asian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/960px-Chottola.jpg', // Pandan
+  'kaffir lime fruit bumpy green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Citrus_hystrix_fruit.jpg/960px-Citrus_hystrix_fruit.jpg', // Makrut Lime
+  'chipotle smoked dried jalapeño pepper mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Capsicum_annuum_chipotle_dried.jpg/960px-Capsicum_annuum_chipotle_dried.jpg', // Chipotle
+  'ancho chile dried dark poblano flat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Chile_Ancho_seco.JPG/960px-Chile_Ancho_seco.JPG', // Ancho Chile
+  'pasilla chile dried wrinkled dark mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Pasillachiles.jpg/960px-Pasillachiles.jpg', // Pasilla Chile
+  'guajillo chile dried red mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Guajillos.jpg/960px-Guajillos.jpg', // Guajillo Chile
+  'epazote mexican herb green pungent': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Dysphania_ambrosioides_NRCS-1.jpg/500px-Dysphania_ambrosioides_NRCS-1.jpg', // Epazote
+  'culantro long leaf coriander caribbean herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eryngium_foetidum_%28Apiaceae%29.jpg/960px-Eryngium_foetidum_%28Apiaceae%29.jpg', // Culantro
+  'allspice berries jamaican spice brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/WholeAllspice.JPG/960px-WholeAllspice.JPG', // Allspice
+  'achiote annatto seeds red orange paste mexican': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Annatto_Seeds.jpg/960px-Annatto_Seeds.jpg', // Achiote
+  'fenugreek leaf herb georgian cooking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Washed_fenugreek_leaves_for_cooking_methi-chadachadi.jpg/960px-Washed_fenugreek_leaves_for_cooking_methi-chadachadi.jpg', // Fenugreek Leaf
+  'blue fenugreek georgian spice utskho suneli': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Trigonella_caerulea.jpg/960px-Trigonella_caerulea.jpg', // Blue Fenugreek
+  'lovage herb plant eastern european': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Liebst%C3%B6ckel.JPG/960px-Liebst%C3%B6ckel.JPG', // Lovage
+  'caraway seeds spice eastern european': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Caraway_Seed.jpg/500px-Caraway_Seed.jpg', // Caraway Seeds
+  'poppy seeds black baking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Poppy_seeds.jpg/960px-Poppy_seeds.jpg', // Poppy Seeds
+  'juniper berries blue gin spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Juniperus_communis_fruits_-_Keila.jpg/960px-Juniperus_communis_fruits_-_Keila.jpg', // Juniper Berries
+  'marjoram herb fresh mediterranean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Origanum_majorana_002.JPG/960px-Origanum_majorana_002.JPG', // Marjoram
+  'sage herb fresh grey-green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Salvia_officinalis0.jpg/500px-Salvia_officinalis0.jpg', // Sage
+  'pepper spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Peugeot_pepper_mill.jpg/960px-Peugeot_pepper_mill.jpg', // Pepper
+  'basil herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/960px-Ocimum_basilicum_8zz.jpg', // Basil
+  'cinnamon spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Cinnamomum_verum_spices.jpg/960px-Cinnamomum_verum_spices.jpg', // Cinnamon
+  'ginger root': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Fresh_ginger_%2820240131%29.jpg/960px-Fresh_ginger_%2820240131%29.jpg', // Ginger
+  'vanilla': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Vanilla_6beans.JPG/960px-Vanilla_6beans.JPG', // Vanilla
+  'parsley herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Petroselinum_crispum_003.JPG/960px-Petroselinum_crispum_003.JPG', // Parsley
+  'rosemary herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/960px-Rosemary_in_bloom.JPG', // Rosemary
+  'thyme herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Thyme-Bundle.jpg/960px-Thyme-Bundle.jpg', // Thyme
+  'chili pepper red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Madame_Jeanette_and_other_chillies.jpg/960px-Madame_Jeanette_and_other_chillies.jpg', // Chili
+  'turmeric spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Curcuma_longa_roots.jpg/960px-Curcuma_longa_roots.jpg', // Turmeric
+  'saffron spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Saffron_-_premium_spice.jpg/960px-Saffron_-_premium_spice.jpg', // Saffron
+  'fennel seeds herb fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Fennel_seed.jpg/960px-Fennel_seed.jpg', // Fennel
+  'chives green herb fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Allium_schoenoprasum_001.JPG/960px-Allium_schoenoprasum_001.JPG', // Chives
+  'lemongrass stalks thai cooking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/YosriNov04Pokok_Serai.JPG/500px-YosriNov04Pokok_Serai.JPG', // Lemongrass
+  'galangal root thai spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Thai_ginger_%28Alpinia_galanga%29.jpg/960px-Thai_ginger_%28Alpinia_galanga%29.jpg', // Galangal
+  'tamarind pod paste sour': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Tamarind_fruits_%28Tamarindus_indica_%27Si_Thong%27%29.jpg/960px-Tamarind_fruits_%28Tamarindus_indica_%27Si_Thong%27%29.jpg', // Tamarind
+  'celery salt seasoning spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Celery_Salt%2C_Penzeys_Spices%2C_Arlington_Heights_MA.jpg/960px-Celery_Salt%2C_Penzeys_Spices%2C_Arlington_Heights_MA.jpg', // Celery Salt
+  'anise seeds white spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Aniseeds.jpg/960px-Aniseeds.jpg', // Anise
+  'lavender culinary herb flowers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Lavandula_multifida.jpg/960px-Lavandula_multifida.jpg', // Lavender
+  'mace spice nutmeg red lacy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Nutmeg_seed_and_skin.JPG/960px-Nutmeg_seed_and_skin.JPG', // Mace
+  'long pepper piper ancient spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Piper_longum.jpg/960px-Piper_longum.jpg', // Long Pepper
+  'grains of paradise west african spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Aframomum_melegueta.jpg/960px-Aframomum_melegueta.jpg', // Grains of Paradise
+  'ajwain carom seeds indian spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Trachyspermum_ammi-3-xavier_cottage-yercaud-salem-India.jpg/960px-Trachyspermum_ammi-3-xavier_cottage-yercaud-salem-India.jpg', // Ajwain
+  'amchur mango powder indian spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Dried_Mango_Slices.JPG/960px-Dried_Mango_Slices.JPG', // Amchur
+  'black cardamom pod smoky spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/BlackCardamom.jpg/960px-BlackCardamom.jpg', // Black Cardamom
+  'kashmiri chilli red powder mild': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Kashmiri_Red_Chilies.jpg/960px-Kashmiri_Red_Chilies.jpg', // Kashmiri Chilli
+  'smoked paprika powder red spanish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Piment%C3%B3n_de_la_Vera_2.jpg/960px-Piment%C3%B3n_de_la_Vera_2.jpg', // Smoked Paprika
+  'dried chilli red peppers hanging': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Red_chili_peppers_drying_on_a_footbridge.jpg/960px-Red_chili_peppers_drying_on_a_footbridge.jpg', // Dried Chilli
+  'curry powder yellow blend spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Curry_powder_in_the_spice-bazaar_in_Istanbul.jpg/960px-Curry_powder_in_the_spice-bazaar_in_Istanbul.jpg', // Curry Powder
+  'five spice chinese powder blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Five_spices_detailed.jpg/960px-Five_spices_detailed.jpg', // Chinese Five Spice
+  'dukkah egyptian nut spice blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Du%27ah_%28dukkah%29_-_Egyptian_spice_mix.JPG/960px-Du%27ah_%28dukkah%29_-_Egyptian_spice_mix.JPG', // Dukkah
+  'zaatar lebanese herb spice blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Closeup_image_of_za%27atar%2C_a_blend_of_origanum_syriacum_%28hyssop%2C_sumac%2C_sesame_seeds_and_salt.jpg/960px-Closeup_image_of_za%27atar%2C_a_blend_of_origanum_syriacum_%28hyssop%2C_sumac%2C_sesame_seeds_and_salt.jpg', // Zaatar
+  'georgian spice blend herbs fenugreek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Khmeli_suneli.JPG/500px-Khmeli_suneli.JPG', // Khmeli Suneli
+  'shichimi togarashi japanese seven spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Shichimi_002.jpg/500px-Shichimi_002.jpg', // Shichimi Togarashi
+  'hyssop herb blue flowers mediterranean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Hyssopus-officinalis-habit.jpg/960px-Hyssopus-officinalis-habit.jpg', // Hyssop
+  'sorrel leaves green herb sour': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%28MHNT%29_Rumex_acetosa_-_Habit.jpg/960px-%28MHNT%29_Rumex_acetosa_-_Habit.jpg', // Sorrel
+  'borage blue flowers herb edible': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Borago_officinalis_%282025%29.jpg/960px-Borago_officinalis_%282025%29.jpg', // Borage
+  'savory herb dried thyme like': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Satureja_montana_kz01.jpg/960px-Satureja_montana_kz01.jpg', // Winter Savory
+  'tonka bean vanilla coumarin spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Tonka_Beans.jpg/960px-Tonka_Beans.jpg', // Tonka Bean
+  'banana leaf green large tropical cooking wrap': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Banana-leaf-1.JPG/960px-Banana-leaf-1.JPG', // Banana Leaf
+  'pandanus screwpine fruit tropical island': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Pandanus_tectorius_fruit_%28riped%29.JPG/960px-Pandanus_tectorius_fruit_%28riped%29.JPG', // Pandanus
+  'sumac dark red sour spice middle eastern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Sumac.jpg/500px-Sumac.jpg', // Sumac
+  'baharat arabic spice blend warm brown': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Lunas_Mix_-_Baharat.jpg/960px-Lunas_Mix_-_Baharat.jpg', // Baharat
+  'fenugreek seeds dried yellow spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Fenugreek_Seeds_01.jpg/960px-Fenugreek_Seeds_01.jpg', // Fenugreek
+  'nigella seeds black onion seeds small': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Nigella_sativa_seeds.jpg/960px-Nigella_sativa_seeds.jpg', // Nigella Seeds
+  'loomi dried lime black persian iraqi': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Dried_Lime.jpg/960px-Dried_Lime.jpg', // Dried Lime
+  'mahleb cherry pit spice middle eastern baking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Prma_002_shp_%28Prunus_mahaleb%29.jpg/960px-Prma_002_shp_%28Prunus_mahaleb%29.jpg', // Mahleb
+  'mastic resin tears greek chios clear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mastic.jpg/960px-Mastic.jpg', // Mastic
+  'file powder sassafras gumbo cajun green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Zherbes.jpg/330px-Zherbes.jpg', // Filé Powder
+  'old bay seasoning tin maryland crab': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Old_Bay_Seasoning.jpg/960px-Old_Bay_Seasoning.jpg', // Old Bay
+  'wattle seed australian native spice roasted': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/CSIRO_ScienceImage_4021_Seeds_of_the_Elegant_Wattle_Acacia_victoriae.jpg/960px-CSIRO_ScienceImage_4021_Seeds_of_the_Elegant_Wattle_Acacia_victoriae.jpg', // Wattle Seed
+  'lemon myrtle dried leaf australian native spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/CSIRO_ScienceImage_3845_Fresh_Lemon_Myrtle_Leaves_Backhousia_citriodora.jpg/960px-CSIRO_ScienceImage_3845_Fresh_Lemon_Myrtle_Leaves_Backhousia_citriodora.jpg', // Lemon Myrtle
+  'shiitake mushroom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Fresh_shiitake_mushrooms.jpg/960px-Fresh_shiitake_mushrooms.jpg', // Shiitake
+  'cumin seeds spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Seeds_of_Cumin.jpg/960px-Seeds_of_Cumin.jpg', // Cumin
+  'coriander cilantro fresh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Cilantro-alsterdrache.jpg/500px-Cilantro-alsterdrache.jpg', // Coriander
+  'paprika powder red spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Aleva_paprika.jpg/960px-Aleva_paprika.jpg', // Paprika
+  'oregano herb dried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregano_dried.JPG/960px-Oregano_dried.JPG', // Oregano
+  'bay leaf herb dried': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Bay_Leaves.JPG/960px-Bay_Leaves.JPG', // Bay Leaf
+  'tarragon fresh herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Artemisia_dracunculus_2997_6393.jpg/960px-Artemisia_dracunculus_2997_6393.jpg', // Tarragon
+  'dill fresh herb green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Aneth_FR_2012.jpg/960px-Aneth_FR_2012.jpg', // Dill
+  'cardamom pods spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Green_Cardamom_Pods.jpg/960px-Green_Cardamom_Pods.jpg', // Cardamom
+  'star anise chinese spice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Dried_Star_Anise_Fruit_Seeds.jpg/960px-Dried_Star_Anise_Fruit_Seeds.jpg', // Star Anise
+  'cloves spice whole': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2023_Go%C5%BAdziki.jpg/960px-2023_Go%C5%BAdziki.jpg', // Cloves
+  'nutmeg spice whole': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Whole_Nutmeg.jpg/960px-Whole_Nutmeg.jpg', // Nutmeg
+  'black pepper corns': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Black_pepper_whole.JPG/960px-Black_pepper_whole.JPG', // Black Pepper
+  'thai basil herb': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Thai_basil.jpg/500px-Thai_basil.jpg', // Thai Basil
+  'kaffir lime leaves thai': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/C_hystrix_kaffir_lime_leaves.jpg/960px-C_hystrix_kaffir_lime_leaves.jpg', // Kaffir Lime Leaf
+  'garam masala indian spice blend': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Garammasalaphoto.jpg/960px-Garammasalaphoto.jpg', // Garam Masala
+  'mint fresh herb leaves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fresh_Mint_leaves.jpg/960px-Fresh_Mint_leaves.jpg', // Mint
+  'huacatay black mint peruvian herb green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Starr-120608-7386-Tagetes_minuta-flowers-Ulupalakua_Ranch-Maui_%2825145434025%29.jpg/960px-Starr-120608-7386-Tagetes_minuta-flowers-Ulupalakua_Ranch-Maui_%2825145434025%29.jpg', // Huacatay
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -4202,4 +4297,99 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Chimichurri', file: 'Chimichurri Sauce Recipe (13294574784).jpg', author: 'Dominic Lockyer', license: 'CC BY 2.0' },
   { word: 'Dendê Oil', file: 'Azeite de Dendê - Feira das Sete Portas - Bahia.jpg', author: 'SouDiana', license: 'CC BY-SA 4.0' },
   { word: 'Dulce de Leche', file: 'DulceDeLeche.jpg', author: 'audinou from Paris, France', license: 'CC BY 2.0' },
+  { word: 'Berbere', file: 'Berberespice.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Ras el Hanout', file: 'Ras.el.hanout.jpg', author: 'Sarefo', license: 'CC BY-SA 4.0' },
+  { word: 'Gochugaru', file: 'Gochugaru.jpg', author: 'Stacy Spensley', license: 'CC BY 2.0' },
+  { word: 'Sichuan Pepper', file: 'Sichuan pepper.jpg', author: 'Matt K', license: 'CC BY-SA 4.0' },
+  { word: 'Curry Leaves', file: '20260317 Murraya koenigii 02.jpg', author: 'Flocci Nivis', license: 'CC BY 4.0' },
+  { word: 'Mustard Seeds', file: 'Mustard.png', author: 'Novalis at en.wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Asafoetida', file: 'Asafoetida.jpg', author: 'Iustinus', license: 'CC BY-SA 3.0' },
+  { word: 'Pandan', file: 'Chottola.jpg', author: 'Zuhairali', license: 'CC BY-SA 3.0' },
+  { word: 'Makrut Lime', file: 'Citrus hystrix fruit.jpg', author: 'Robyn Jay from Sydney, Australia', license: 'CC BY-SA 2.0' },
+  { word: 'Chipotle', file: 'Capsicum annuum chipotle dried.jpg', author: 'User:Carstor', license: 'CC BY-SA 2.5' },
+  { word: 'Ancho Chile', file: 'Chile Ancho seco.JPG', author: 'Diógenes el Filósofo', license: 'CC BY-SA 3.0' },
+  { word: 'Pasilla Chile', file: 'Pasillachiles.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Guajillo Chile', file: 'Guajillos.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Epazote', file: 'Dysphania ambrosioides NRCS-1.jpg', author: 'Ivan Romero', license: 'Public domain' },
+  { word: 'Culantro', file: 'Eryngium foetidum (Apiaceae).jpg', author: 'Filo gèn\'', license: 'CC BY-SA 4.0' },
+  { word: 'Allspice', file: 'WholeAllspice.JPG', author: 'Jonathunder', license: 'CC BY-SA 3.0' },
+  { word: 'Achiote', file: 'Annatto Seeds.jpg', author: 'Misterneedlemouse', license: 'CC0' },
+  { word: 'Fenugreek Leaf', file: 'Washed fenugreek leaves for cooking methi-chadachadi.jpg', author: 'Subhashish Panigrahi', license: 'CC BY-SA 4.0' },
+  { word: 'Blue Fenugreek', file: 'Trigonella caerulea.jpg', author: 'Flyout', license: 'CC BY-SA 3.0' },
+  { word: 'Lovage', file: 'Liebstöckel.JPG', author: '4028mdk09', license: 'CC BY-SA 3.0' },
+  { word: 'Caraway Seeds', file: 'Caraway Seed.jpg', author: 'OttawaAC', license: 'CC BY-SA 3.0' },
+  { word: 'Poppy Seeds', file: 'Poppy seeds.jpg', author: 'Odedr', license: 'Public domain' },
+  { word: 'Juniper Berries', file: 'Juniperus communis fruits - Keila.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Marjoram', file: 'Origanum majorana 002.JPG', author: 'H. Zell', license: 'CC BY-SA 3.0' },
+  { word: 'Sage', file: 'Salvia officinalis0.jpg', author: 'Kurt Stüber [1]', license: 'CC BY-SA 3.0' },
+  { word: 'Pepper', file: 'Peugeot pepper mill.jpg', author: 'Sebastian Koppehel', license: 'CC BY 4.0' },
+  { word: 'Basil', file: 'Ocimum basilicum 8zz.jpg', author: 'Photo by David J. Stang', license: 'CC BY-SA 4.0' },
+  { word: 'Cinnamon', file: 'Cinnamomum verum spices.jpg', author: 'Simon A. Eugster', license: 'CC BY-SA 3.0' },
+  { word: 'Ginger', file: 'Fresh ginger (20240131).jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Vanilla', file: 'Vanilla 6beans.JPG', author: 'B.navez', license: 'CC BY-SA 3.0' },
+  { word: 'Parsley', file: 'Petroselinum crispum 003.JPG', author: 'H. Zell', license: 'CC BY-SA 3.0' },
+  { word: 'Rosemary', file: 'Rosemary in bloom.JPG', author: 'Margalob', license: 'CC BY-SA 4.0' },
+  { word: 'Thyme', file: 'Thyme-Bundle.jpg', author: 'Evan-Amos', license: 'CC0' },
+  { word: 'Chili', file: 'Madame Jeanette and other chillies.jpg', author: 'Takeaway', license: 'CC BY-SA 4.0' },
+  { word: 'Turmeric', file: 'Curcuma longa roots.jpg', author: 'Simon A. Eugster', license: 'CC BY-SA 3.0' },
+  { word: 'Saffron', file: 'Saffron - premium spice.jpg', author: 'Shaharbano', license: 'CC BY 4.0' },
+  { word: 'Fennel', file: 'Fennel seed.jpg', author: 'Holly Cheng', license: 'CC BY-SA 3.0' },
+  { word: 'Chives', file: 'Allium schoenoprasum 001.JPG', author: 'H. Zell', license: 'CC BY-SA 3.0' },
+  { word: 'Lemongrass', file: 'YosriNov04Pokok Serai.JPG', author: 'Henna', license: 'CC BY 2.0' },
+  { word: 'Galangal', file: 'Thai ginger (Alpinia galanga).jpg', author: 'Susan Slater', license: 'CC BY-SA 4.0' },
+  { word: 'Tamarind', file: 'Tamarind fruits (Tamarindus indica \'Si Thong\').jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Celery Salt', file: 'Celery Salt, Penzeys Spices, Arlington Heights MA.jpg', author: 'John Phelan', license: 'CC BY-SA 3.0' },
+  { word: 'Anise', file: 'Aniseeds.jpg', author: 'Challiyan', license: 'CC BY-SA 4.0' },
+  { word: 'Lavender', file: 'Lavandula multifida.jpg', author: 'Laitche', license: 'Public domain' },
+  { word: 'Mace', file: 'Nutmeg seed and skin.JPG', author: 'Sajith Erattupetta', license: 'CC BY 4.0' },
+  { word: 'Long Pepper', file: 'Piper longum.jpg', author: 'Soerfm', license: 'CC BY-SA 3.0' },
+  { word: 'Grains of Paradise', file: 'Aframomum melegueta.jpg', author: 'Lemmikkipuu', license: 'CC BY-SA 3.0' },
+  { word: 'Ajwain', file: 'Trachyspermum ammi-3-xavier cottage-yercaud-salem-India.jpg', author: 'Yercaud-elango', license: 'CC BY-SA 4.0' },
+  { word: 'Amchur', file: 'Dried Mango Slices.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Black Cardamom', file: 'BlackCardamom.jpg', author: 'Brian Arthur', license: 'CC BY-SA 3.0' },
+  { word: 'Kashmiri Chilli', file: 'Kashmiri Red Chilies.jpg', author: 'Inu06', license: 'CC BY-SA 4.0' },
+  { word: 'Smoked Paprika', file: 'Pimentón de la Vera 2.jpg', author: 'Zarateman', license: 'CC0' },
+  { word: 'Dried Chilli', file: 'Red chili peppers drying on a footbridge.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Curry Powder', file: 'Curry powder in the spice-bazaar in Istanbul.jpg', author: 'Thomas Steiner', license: 'CC BY-SA 3.0' },
+  { word: 'Chinese Five Spice', file: 'Five spices detailed.jpg', author: 'Tim Sackton', license: 'CC BY-SA 2.0' },
+  { word: 'Dukkah', file: 'Du\'ah (dukkah) - Egyptian spice mix.JPG', author: 'Abissada', license: 'CC BY-SA 4.0' },
+  { word: 'Zaatar', file: 'Closeup image of za\'atar, a blend of origanum syriacum (hyssop, sumac, sesame seeds and salt.jpg', author: 'Fshadid', license: 'CC BY-SA 4.0' },
+  { word: 'Khmeli Suneli', file: 'Khmeli suneli.JPG', author: 'А. Кабанов', license: 'CC0' },
+  { word: 'Shichimi Togarashi', file: 'Shichimi 002.jpg', author: 'recipelab.jp', license: 'CC0' },
+  { word: 'Hyssop', file: 'Hyssopus-officinalis-habit.jpg', author: 'Sten Porse', license: 'CC BY-SA 3.0' },
+  { word: 'Sorrel', file: '(MHNT) Rumex acetosa - Habit.jpg', author: 'Didier Descouens', license: 'CC BY-SA 4.0' },
+  { word: 'Borage', file: 'Borago officinalis (2025).jpg', author: 'Christian Orlandi', license: 'CC BY-SA 4.0' },
+  { word: 'Winter Savory', file: 'Satureja montana kz01.jpg', author: 'Krzysztof Ziarnek, Kenraiz', license: 'CC BY-SA 4.0' },
+  { word: 'Tonka Bean', file: 'Tonka Beans.jpg', author: 'Mecredis / Fred Benenson', license: 'CC BY-SA 3.0' },
+  { word: 'Banana Leaf', file: 'Banana-leaf-1.JPG', author: 'Ted Garvin', license: 'CC BY-SA 2.5' },
+  { word: 'Pandanus', file: 'Pandanus tectorius fruit (riped).JPG', author: 'AntanO', license: 'CC BY-SA 4.0' },
+  { word: 'Sumac', file: 'Sumac.jpg', author: 'User:Webaware', license: 'CC BY-SA 3.0' },
+  { word: 'Baharat', file: 'Lunas Mix - Baharat.jpg', author: 'Myigamel', license: 'CC BY-SA 3.0' },
+  { word: 'Fenugreek', file: 'Fenugreek Seeds 01.jpg', author: 'சந்திரகலா', license: 'CC BY-SA 4.0' },
+  { word: 'Nigella Seeds', file: 'Nigella sativa seeds.jpg', author: 'Gaurav Dhwaj Khadka', license: 'CC BY-SA 4.0' },
+  { word: 'Dried Lime', file: 'Dried Lime.jpg', author: 'Mervat Salman', license: 'CC BY-SA 4.0' },
+  { word: 'Mahleb', file: 'Prma 002 shp (Prunus mahaleb).jpg', author: 'Steve Hurst, USDA-NRCS PLANTS Database', license: 'Public domain' },
+  { word: 'Mastic', file: 'Mastic.jpg', author: 'Slashme', license: 'CC BY-SA 3.0' },
+  { word: 'Filé Powder', file: 'Zherbes.jpg', author: 'Jperlow', license: 'CC BY-SA 3.0' },
+  { word: 'Old Bay', file: 'Old Bay Seasoning.jpg', author: 'L1veb4y0udi3', license: 'CC0' },
+  { word: 'Wattle Seed', file: 'CSIRO ScienceImage 4021 Seeds of the Elegant Wattle Acacia victoriae.jpg', author: 'division, CSIRO', license: 'CC BY 3.0' },
+  { word: 'Lemon Myrtle', file: 'CSIRO ScienceImage 3845 Fresh Lemon Myrtle Leaves Backhousia citriodora.jpg', author: 'division, CSIRO', license: 'CC BY 3.0' },
+  { word: 'Shiitake', file: 'Fresh shiitake mushrooms.jpg', author: 'Fumikas Sagisavas', license: 'CC0' },
+  { word: 'Cumin', file: 'Seeds of Cumin.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 4.0' },
+  { word: 'Coriander', file: 'Cilantro-alsterdrache.jpg', author: 'GeoTrinity', license: 'Public domain' },
+  { word: 'Paprika', file: 'Aleva paprika.jpg', author: 'Ljiljana Sundać', license: 'CC BY-SA 4.0' },
+  { word: 'Oregano', file: 'Oregano dried.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Bay Leaf', file: 'Bay Leaves.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Tarragon', file: 'Artemisia dracunculus 2997 6393.jpg', author: 'Joanna Boisse', license: 'CC BY-SA 4.0' },
+  { word: 'Dill', file: 'Aneth FR 2012.jpg', author: 'JLPC', license: 'CC BY-SA 3.0' },
+  { word: 'Cardamom', file: 'Green Cardamom Pods.jpg', author: 'Misterneedlemouse', license: 'CC0' },
+  { word: 'Star Anise', file: 'Dried Star Anise Fruit Seeds.jpg', author: 'Sanjay Acharya', license: 'CC BY-SA 4.0' },
+  { word: 'Cloves', file: '2023 Goździki.jpg', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Nutmeg', file: 'Whole Nutmeg.jpg', author: 'Misterneedlemouse', license: 'CC0' },
+  { word: 'Black Pepper', file: 'Black pepper whole.JPG', author: 'Miansari66', license: 'Public domain' },
+  { word: 'Thai Basil', file: 'Thai basil.jpg', author: 'Ies', license: 'CC BY-SA 3.0' },
+  { word: 'Kaffir Lime Leaf', file: 'C hystrix kaffir lime leaves.jpg', author: 'Jpbrigand2', license: 'CC BY-SA 4.0' },
+  { word: 'Garam Masala', file: 'Garammasalaphoto.jpg', author: 'Badagnani', license: 'CC BY 3.0' },
+  { word: 'Mint', file: 'Fresh Mint leaves.jpg', author: 'Mangosapiens', license: 'CC BY-SA 4.0' },
+  { word: 'Huacatay', file: 'Starr-120608-7386-Tagetes minuta-flowers-Ulupalakua Ranch-Maui (25145434025).jpg', author: 'Forest and Kim Starr', license: 'CC BY 3.0' },
 ];
