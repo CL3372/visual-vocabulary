@@ -1903,6 +1903,103 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'nori seaweed sheet japanese': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nori-ben_%2838864337205%29.jpg/960px-Nori-ben_%2838864337205%29.jpg', // Nori
   'wasabi paste japanese green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Fresh_wasabi_rhizomes.jpg/500px-Fresh_wasabi_rhizomes.jpg', // Wasabi
   'sardine fish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2014_03_19_397_Eingelegte_Fische.jpg/960px-2014_03_19_397_Eingelegte_Fische.jpg', // Sardine
+  'soy milk white drink glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/004-soymilk.jpg/960px-004-soymilk.jpg', // Soy Milk
+  'rum bottle caribbean brown spirit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/A_glass_of_rum.jpg/330px-A_glass_of_rum.jpg', // Rum
+  'horchata white rice cinnamon drink glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Horchata_de_chufa_2.jpg/960px-Horchata_de_chufa_2.jpg', // Horchata
+  'vodka bottle glass russian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Homemade_vodka_shot_in_Baku.jpg/960px-Homemade_vodka_shot_in_Baku.jpg', // Vodka
+  'kompot fruit drink eastern european': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Peach_kompot.JPG/960px-Peach_kompot.JPG', // Kompot
+  'aquavit scandinavian spirit bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Aquavit_bottle_with_pipeclay_decoration%2C_ceramic_-_Nordiska_museet_-_Stockholm%2C_Sweden_-_DSC00033.JPG/960px-Aquavit_bottle_with_pipeclay_decoration%2C_ceramic_-_Nordiska_museet_-_Stockholm%2C_Sweden_-_DSC00033.JPG', // Aquavit
+  'schnapps german spirit shot glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Hybensnaps_%285115367490%29.jpg/960px-Hybensnaps_%285115367490%29.jpg', // Schnapps
+  'water glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Glass_of_water%2C_detail.jpg/500px-Glass_of_water%2C_detail.jpg', // Water
+  'coffee cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG', // Coffee
+  'tea cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/960px-Cup_of_black_tea.JPG', // Tea
+  'beer glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Jeju_beer_09_%28cropped%29.jpg/960px-Jeju_beer_09_%28cropped%29.jpg', // Beer
+  'orange juice': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Orangejuice.jpg/960px-Orangejuice.jpg', // Juice
+  'smoothie': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Kiwi_Smoothie.jpg/960px-Kiwi_Smoothie.jpg', // Smoothie
+  'cocktail drink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/15-09-26-RalfR-WLC-0084.jpg/960px-15-09-26-RalfR-WLC-0084.jpg', // Cocktail
+  'lemonade': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Lemonade_pitcher_and_glass.jpg/960px-Lemonade_pitcher_and_glass.jpg', // Lemonade
+  'espresso coffee': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg/960px-Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg', // Espresso
+  'absinthe drink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Absinthe-glass.jpg/330px-Absinthe-glass.jpg', // Absinthe
+  'bitter ale beer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/A_pint_of_Extra_Bitter.jpg/960px-A_pint_of_Extra_Bitter.jpg', // Bitter
+  'arak anise spirit levantine white glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Arak_with_water_and_ice.jpg/960px-Arak_with_water_and_ice.jpg', // Arak
+  'qahwa arabic coffee cardamom gold dallah pot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg/500px-A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg', // Qahwa
+  'bourbon whiskey kentucky amber glass bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Glass_of_bourbon_cropped.jpg/960px-Glass_of_bourbon_cropped.jpg', // Bourbon
+  'root beer american soda brown foam': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Root_beer_in_glass_mug.jpg/960px-Root_beer_in_glass_mug.jpg', // Root Beer
+  'sweet tea southern american iced glass lemon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Iced_Tea_from_flickr.jpg/960px-Iced_Tea_from_flickr.jpg', // Sweet Tea
+  'fruit juice colorful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Apple_Juice_in_glasses_%285177690267%29.jpg/960px-Apple_Juice_in_glasses_%285177690267%29.jpg', // Fruit Juice
+  'herbal tea cup herbs': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Mixture_for_herbal_tea_03.jpg/960px-Mixture_for_herbal_tea_03.jpg', // Herbal Tea
+  'soda water sparkling': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Sparkling_Water_with_Mint_in_Glass_Cup.jpg/960px-Sparkling_Water_with_Mint_in_Glass_Cup.jpg', // Soda Water
+  'soft drink soda can': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tumbler_of_cola_with_ice.jpg/330px-Tumbler_of_cola_with_ice.jpg', // Soft Drink
+  'cachaca bottle sugarcane spirit brazilian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Cachaca.JPG/960px-Cachaca.JPG', // Cachaça
+  'pisco bottle peruvian grape spirit clear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Range_of_Pisco.jpg/960px-Range_of_Pisco.jpg', // Pisco
+  'chicha morada purple corn drink peruvian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Chicha_Morada_2017.jpg/960px-Chicha_Morada_2017.jpg', // Chicha Morada
+  'sangria wine fruit pitcher red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Red_Wine_Sangria_with_lemon%2C_lime%2C_apple%2C_and_orange_served_in_a_glass_-_Evan_Swigart.jpg/500px-Red_Wine_Sangria_with_lemon%2C_lime%2C_apple%2C_and_orange_served_in_a_glass_-_Evan_Swigart.jpg', // Sangria
+  'mojito cocktail mint lime rum': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/15-09-26-RalfR-WLC-0072.jpg/960px-15-09-26-RalfR-WLC-0072.jpg', // Mojito
+  'margarita cocktail lime salt tequila': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/MargaritaReal.jpg/960px-MargaritaReal.jpg', // Margarita
+  'pisco sour peruvian cocktail frothy white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Pisco_Sour_2.jpg/960px-Pisco_Sour_2.jpg', // Pisco Sour
+  'kir royale champagne blackcurrant pink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Kir_Royal.jpg/960px-Kir_Royal.jpg', // Kir Royale
+  'aperol spritz orange prosecco summer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Aperol_Spritz_2014a.jpg/960px-Aperol_Spritz_2014a.jpg', // Aperol Spritz
+  'negroni cocktail red orange gin': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/C%C3%B3ctel_Negroni_Campari.jpg/500px-C%C3%B3ctel_Negroni_Campari.jpg', // Negroni
+  'limoncello italian lemon liqueur yellow shot': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Limoncello_fron_Sorrento_02.jpg/960px-Limoncello_fron_Sorrento_02.jpg', // Limoncello
+  'irish coffee whiskey cream layered glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Irish_coffee_glass.jpg/960px-Irish_coffee_glass.jpg', // Irish Coffee
+  'whisky scotch glass amber': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Whiskyhogmanay2010.jpg/500px-Whiskyhogmanay2010.jpg', // Whisky
+  'ginger beer bottle fizzy spicy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Fresh_ginger_beer.jpg/960px-Fresh_ginger_beer.jpg', // Ginger Beer
+  'gluhwein mulled wine christmas market': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG/960px-Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG', // Glühwein
+  'tequila shot lime salt agave': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Tequila_Corralejo_100ml_%28Blanco%29%2C_Mexico%2C_2026-03-30.jpg/960px-Tequila_Corralejo_100ml_%28Blanco%29%2C_Mexico%2C_2026-03-30.jpg', // Tequila
+  'mezcal smoky agave mexican spirit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mezcal_bottles_.jpg/960px-Mezcal_bottles_.jpg', // Mezcal
+  'hibiscus tea jamaica agua red purple': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/A_glass_of_hibiscus_tea_02.jpg/960px-A_glass_of_hibiscus_tea_02.jpg', // Agua de Jamaica
+  'teh tarik pulled tea milk malaysia frothy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg/960px-Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg', // Teh Tarik
+  'dalgona coffee whipped foam milk korean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Homemade_Dalgona_Coffee.jpg/960px-Homemade_Dalgona_Coffee.jpg', // Dalgona Coffee
+  'matcha latte green milk foam cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Matcha_tea_latte_with_rosetta_latte_art.jpg/960px-Matcha_tea_latte_with_rosetta_latte_art.jpg', // Matcha Latte
+  'mango lassi indian yogurt drink yellow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mango_Lassi_.jpg/960px-Mango_Lassi_.jpg', // Mango Lassi
+  'mint tea moroccan glass pot green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Moroccan_Mint_Tea_-_1.jpg/960px-Moroccan_Mint_Tea_-_1.jpg', // Mint Tea
+  'rooibos south african red tea cup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/960px-Frisch_aufgebr%C3%BChter_Rooibos.jpg', // Rooibos
+  'hibiscus karkade egyptian tea red glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Homemade_sorrel_drink.jpg/960px-Homemade_sorrel_drink.jpg', // Karkadé
+  'kava pacific island ceremonial drink bowl': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Starr_070515-7054_Piper_methysticum.jpg/960px-Starr_070515-7054_Piper_methysticum.jpg', // Kava
+  'mead honey wine medieval goblet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Swedish_Mead.JPG/960px-Swedish_Mead.JPG', // Mead
+  'kombucha fermented tea glass jar': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kombucha_Mature.jpg/500px-Kombucha_Mature.jpg', // Kombucha
+  'yerba mate gourd straw argentina': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Traditional_mate_set_calabash_gourd_with_La_Merced_yerba_mate.jpg/960px-Traditional_mate_set_calabash_gourd_with_La_Merced_yerba_mate.jpg', // Yerba Mate
+  'cendol malaysian shaved ice coconut milk palm sugar green': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg/960px-Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg', // Cendol
+  'ginjinha portuguese cherry liqueur small glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Lissabon-Ginjinha-16-2011-gje.jpg/960px-Lissabon-Ginjinha-16-2011-gje.jpg', // Ginjinha
+  'gin tonic glass ice lime cucumber': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Gin_and_tonic_cocktail_with_wedge_of_lime.jpg/960px-Gin_and_tonic_cocktail_with_wedge_of_lime.jpg', // Gin & Tonic
+  'wine bottle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Red_and_white_wine_in_glass.jpg/500px-Red_and_white_wine_in_glass.jpg', // Wine
+  'red wine glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Red_Wine_Glass.jpg/330px-Red_Wine_Glass.jpg', // Red Wine
+  'white wine glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/White_Wine_Glas.jpg/330px-White_Wine_Glas.jpg', // White Wine
+  'rose wine glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Ros%C3%A9_wine_-_July_2023_-_Sarah_Stierch_01-cropped.jpg/960px-Ros%C3%A9_wine_-_July_2023_-_Sarah_Stierch_01-cropped.jpg', // Rosé Wine
+  'vinho verde wine glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Vinho_Verde_and_bottle.jpg/960px-Vinho_Verde_and_bottle.jpg', // Vinho Verde
+  'champagne flute bubbles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Glass_of_champagne.jpg/960px-Glass_of_champagne.jpg', // Champagne
+  'prosecco sparkling wine glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Prosecco_di_Conegliano_bottle_and_glass.jpg/960px-Prosecco_di_Conegliano_bottle_and_glass.jpg', // Prosecco
+  'cava spanish sparkling wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Cava_%285303223614%29.jpg/960px-Cava_%285303223614%29.jpg', // Cava
+  'sparkling wine bubbles glass': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Glass_of_sparkling_wine_at_Santa_Fe.jpg/960px-Glass_of_sparkling_wine_at_Santa_Fe.jpg', // Sparkling Wine
+  'port wine porto': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Port_wine.jpg/960px-Port_wine.jpg', // Port Wine
+  'madeira wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Ein_Gl%C3%A4schen_Madeira.jpg/960px-Ein_Gl%C3%A4schen_Madeira.jpg', // Madeira Wine
+  'moscatel wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Navarra_Moscatel.jpg/960px-Navarra_Moscatel.jpg', // Moscatel
+  'claret red wine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/A_glass_of_claret.JPG/960px-A_glass_of_claret.JPG', // Claret
+  'dessert wine sweet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Desserts_and_Wine.jpg/960px-Desserts_and_Wine.jpg', // Dessert Wine
+  'table wine dinner': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Gris_de_Grenache_-_Domaine_Vidal.jpg/960px-Gris_de_Grenache_-_Domaine_Vidal.jpg', // Table Wine
+  'house wine carafe': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/House_wine_in_A_Pendoa_%283799768809%29.jpg/500px-House_wine_in_A_Pendoa_%283799768809%29.jpg', // House Wine
+  'vineyard grapes': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Vineyards_in_Burgundy_France.jpg/960px-Vineyards_in_Burgundy_France.jpg', // Vineyard
+  'wine cellar barrels': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Wine_cellar.jpg/960px-Wine_cellar.jpg', // Wine Cellar
+  'wine glass crystal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wine_glass5275.jpg/960px-Wine_glass5275.jpg', // Wine Glass
+  'wine list menu': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Restaurant_wine_list_1870.jpg/960px-Restaurant_wine_list_1870.jpg', // Wine List
+  'wine tasting': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Wine_Tasting_at_Marsala.jpg/960px-Wine_Tasting_at_Marsala.jpg', // Wine Tasting
+  'grape harvest picker': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Grape_harvest_-_La_vendemmia.jpg/960px-Grape_harvest_-_La_vendemmia.jpg', // Grape Harvester
+  'vinaigrette dressing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Vinaigrette_dressing_with_a_chopped_salad.jpg/960px-Vinaigrette_dressing_with_a_chopped_salad.jpg', // Vinaigrette
+  'supermarket shopping cart trolley empty aisle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Sainsbury%27s_supermarket_shopping_trolleys_at_Chingford%2C_London%2C_England_1.jpg/960px-Sainsbury%27s_supermarket_shopping_trolleys_at_Chingford%2C_London%2C_England_1.jpg', // Trolley
+  'plastic shopping basket red grocery store handle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Nakupni_kosik.JPG/960px-Nakupni_kosik.JPG', // Basket
+  'supermarket aisle shelves products grocery store': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Stop%26Shop.jpg/960px-Stop%26Shop.jpg', // Aisle
+  'supermarket checkout till cashier conveyor belt': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Supermarket_checkout_Tegut_Tauberbischofsheim_7.jpg/960px-Supermarket_checkout_Tegut_Tauberbischofsheim_7.jpg', // Checkout
+  'supermarket shelves stocked products rows organized': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shelves_in_a_Ralphs_grocery_store.jpg/960px-Shelves_in_a_Ralphs_grocery_store.jpg', // Shelf
+  'paper receipt till grocery shopping close up white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/960px-ReceiptSwiss.jpg', // Receipt
+  'barcode scanner product label close up black white': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/UPC-A-036000291452.svg/500px-UPC-A-036000291452.svg.png', // Barcode
+  'frozen food supermarket freezer aisle cold section': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Frozen_berries_%2835379207760%29.jpg/960px-Frozen_berries_%2835379207760%29.jpg', // Frozen Food
+  'sale discount label red supermarket price tag': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Yellow_sticker_cakes_reduced_to_clear_in_Sainsbury%27s_supermarket_%28cropped%29.jpg/500px-Yellow_sticker_cakes_reduced_to_clear_in_Sainsbury%27s_supermarket_%28cropped%29.jpg', // Discount
+  'digital weighing scale produce fruit vegetables supermarket': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Supermarket_produce_scale.JPG/960px-Supermarket_produce_scale.JPG', // Weighing Scale
+  'plastic shopping bag handles white grocery carry': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Hemdchentuete.jpg/960px-Hemdchentuete.jpg', // Plastic Bag
+  'people queue waiting line supermarket checkout': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Check_out_line.jpg/960px-Check_out_line.jpg', // Queue
+  'discount coupon paper voucher scissors savings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Coupon_Pile_Stock_Photo_%2810865703765%29.jpg/960px-Coupon_Pile_Stock_Photo_%2810865703765%29.jpg', // Coupon
+  'loyalty reward card plastic wallet points store': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Customerloyalitycards.JPG/960px-Customerloyalitycards.JPG', // Loyalty Card
+  'expiry date label food package close up stamped': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Expiration.jpg/500px-Expiration.jpg', // Expiry Date
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -3776,4 +3873,101 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Nori', file: 'Nori-ben (38864337205).jpg', author: 'ayu oshimi from japan', license: 'CC BY-SA 2.0' },
   { word: 'Wasabi', file: 'Fresh wasabi rhizomes.jpg', author: 'Sabigirl at English Wikipedia', license: 'Public domain' },
   { word: 'Sardine', file: '2014 03 19 397 Eingelegte Fische.jpg', author: 'Friedrich Haag', license: 'CC BY-SA 4.0' },
+  { word: 'Soy Milk', file: '004-soymilk.jpg', author: 'Kjokkenutstyr', license: 'CC BY-SA 2.0' },
+  { word: 'Rum', file: 'A glass of rum.jpg', author: 'Linus Bohman from Malmö, Sweden', license: 'CC BY 2.0' },
+  { word: 'Horchata', file: 'Horchata de chufa 2.jpg', author: 'Photocapy', license: 'CC BY-SA 2.0' },
+  { word: 'Vodka', file: 'Homemade vodka shot in Baku.jpg', author: 'Aykhan Zayedzadeh', license: 'CC BY 4.0' },
+  { word: 'Kompot', file: 'Peach kompot.JPG', author: 'Biso', license: 'CC BY 3.0' },
+  { word: 'Aquavit', file: 'Aquavit bottle with pipeclay decoration, ceramic - Nordiska museet - Stockholm, Sweden - DSC00033.JPG', author: 'Daderot', license: 'CC0' },
+  { word: 'Schnapps', file: 'Hybensnaps (5115367490).jpg', author: 'cyclonebill from Copenhagen, Denmark', license: 'CC BY-SA 2.0' },
+  { word: 'Water', file: 'Glass of water, detail.jpg', author: 'Mia Gaitanidis', license: 'CC BY-SA 4.0' },
+  { word: 'Coffee', file: 'A small cup of coffee.JPG', author: 'Julius Schorzman', license: 'CC BY-SA 2.0' },
+  { word: 'Tea', file: 'Cup of black tea.JPG', author: 'AntanO', license: 'CC BY-SA 4.0' },
+  { word: 'Beer', file: 'Jeju beer 09 (cropped).jpg', author: 'KOREA.NET - Official page of the Republic of Korea', license: 'CC BY 2.0' },
+  { word: 'Juice', file: 'Orangejuice.jpg', author: 'rawpixel.com', license: 'CC0' },
+  { word: 'Smoothie', file: 'Kiwi Smoothie.jpg', author: 'rawpixel.com', license: 'CC0' },
+  { word: 'Cocktail', file: '15-09-26-RalfR-WLC-0084.jpg', author: 'Ralf Roletschek', license: 'CC BY-SA 3.0' },
+  { word: 'Lemonade', file: 'Lemonade pitcher and glass.jpg', author: 'Grandmaster Huon', license: 'CC0' },
+  { word: 'Espresso', file: 'Tazzina di caffè a Ventimiglia.jpg', author: 'Lemone', license: 'CC BY-SA 4.0' },
+  { word: 'Absinthe', file: 'Absinthe-glass.jpg', author: 'Eric Litton', license: 'CC BY-SA 2.5' },
+  { word: 'Bitter', file: 'A pint of Extra Bitter.jpg', author: '55belgianbeerfan', license: 'CC0' },
+  { word: 'Arak', file: 'Arak with water and ice.jpg', author: 'Preacher lad', license: 'CC BY-SA 4.0' },
+  { word: 'Qahwa', file: 'A dallah a traditional Arabic coffee pot with cups and coffee beans.jpg', author: 'Canbel', license: 'CC BY-SA 4.0' },
+  { word: 'Bourbon', file: 'Glass of bourbon cropped.jpg', author: 'J Yochem', license: 'CC BY-SA 2.0' },
+  { word: 'Root Beer', file: 'Root beer in glass mug.jpg', author: 'Markmark28', license: 'CC BY-SA 4.0' },
+  { word: 'Sweet Tea', file: 'Iced Tea from flickr.jpg', author: 'Melissa Doroquez', license: 'CC BY-SA 2.0' },
+  { word: 'Fruit Juice', file: 'Apple Juice in glasses (5177690267).jpg', author: 'Geoff Peters from Vancouver, BC, Canada', license: 'CC BY 2.0' },
+  { word: 'Herbal Tea', file: 'Mixture for herbal tea 03.jpg', author: 'Miomir Magdevski', license: 'CC BY-SA 4.0' },
+  { word: 'Soda Water', file: 'Sparkling Water with Mint in Glass Cup.jpg', author: 'Tony Webster', license: 'CC BY 2.0' },
+  { word: 'Soft Drink', file: 'Tumbler of cola with ice.jpg', author: 'Simon Cousins from High Wycombe, England', license: 'CC BY 2.0' },
+  { word: 'Cachaça', file: 'Cachaca.JPG', author: 'Tom Tom at German Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Pisco', file: 'Range of Pisco.jpg', author: 'Cocktailmarler', license: 'CC BY-SA 4.0' },
+  { word: 'Chicha Morada', file: 'Chicha Morada 2017.jpg', author: 'young shanahan from Bogotá, Colombia', license: 'CC BY 2.0' },
+  { word: 'Sangria', file: 'Red Wine Sangria with lemon, lime, apple, and orange served in a glass - Evan Swigart.jpg', author: 'Evan Swigart from Chicago, USA', license: 'CC BY 2.0' },
+  { word: 'Mojito', file: '15-09-26-RalfR-WLC-0072.jpg', author: 'Ralf Roletschek', license: 'CC BY-SA 3.0' },
+  { word: 'Margarita', file: 'MargaritaReal.jpg', author: 'Akke Monasso', license: 'CC BY-SA 3.0' },
+  { word: 'Pisco Sour', file: 'Pisco Sour 2.jpg', author: 'Erich Wagner (www.eventografie.de)', license: 'CC BY-SA 4.0' },
+  { word: 'Kir Royale', file: 'Kir Royal.jpg', author: 'Martin Asche', license: 'CC BY-SA 3.0' },
+  { word: 'Aperol Spritz', file: 'Aperol Spritz 2014a.jpg', author: 'Geolina163', license: 'CC BY-SA 4.0' },
+  { word: 'Negroni', file: 'Cóctel Negroni Campari.jpg', author: 'Desdealbert00', license: 'CC BY-SA 4.0' },
+  { word: 'Limoncello', file: 'Limoncello fron Sorrento 02.jpg', author: 'Daniel Ventura', license: 'CC BY-SA 4.0' },
+  { word: 'Irish Coffee', file: 'Irish coffee glass.jpg', author: 'jules / stone soup', license: 'CC BY 2.0' },
+  { word: 'Whisky', file: 'Whiskyhogmanay2010.jpg', author: 'Guinnog', license: 'CC BY-SA 3.0' },
+  { word: 'Ginger Beer', file: 'Fresh ginger beer.jpg', author: 'Hannah Clover', license: 'CC BY 4.0' },
+  { word: 'Glühwein', file: 'Glühwein Weinnachtsmarkt OS.JPG', author: 'Basotxerri', license: 'CC BY-SA 4.0' },
+  { word: 'Tequila', file: 'Tequila Corralejo 100ml (Blanco), Mexico, 2026-03-30.jpg', author: 'Chris Woodrich', license: 'CC BY 4.0' },
+  { word: 'Mezcal', file: 'Mezcal bottles .jpg', author: 'ProtoplasmaKid', license: 'CC BY-SA 4.0' },
+  { word: 'Agua de Jamaica', file: 'A glass of hibiscus tea 02.jpg', author: 'claralieu', license: 'CC BY 2.0' },
+  { word: 'Teh Tarik', file: 'Teh Tarik at the Iskandar Curry House at One Riverside (DSCF0286).jpg', author: 'Yu Chu Chin', license: 'CC BY-SA 4.0' },
+  { word: 'Dalgona Coffee', file: 'Homemade Dalgona Coffee.jpg', author: 'Wikieditkid', license: 'CC BY-SA 4.0' },
+  { word: 'Matcha Latte', file: 'Matcha tea latte with rosetta latte art.jpg', author: 'Irvan Ary Maulana', license: 'CC BY-SA 4.0' },
+  { word: 'Mango Lassi', file: 'Mango Lassi .jpg', author: 'Misaochan', license: 'CC BY-SA 3.0' },
+  { word: 'Mint Tea', file: 'Moroccan Mint Tea - 1.jpg', author: 'Sarkar Sayantan', license: 'CC BY-SA 4.0' },
+  { word: 'Rooibos', file: 'Frisch aufgebrühter Rooibos.jpg', author: 'soultea.de/André Helbig', license: 'CC BY-SA 3.0' },
+  { word: 'Karkadé', file: 'Homemade sorrel drink.jpg', author: 'stu_spivack', license: 'CC BY-SA 2.0' },
+  { word: 'Kava', file: 'Starr 070515-7054 Piper methysticum.jpg', author: 'Forest & Kim Starr', license: 'CC BY 3.0' },
+  { word: 'Mead', file: 'Swedish Mead.JPG', author: 'Grapetonix', license: 'CC BY 3.0' },
+  { word: 'Kombucha', file: 'Kombucha Mature.jpg', author: 'Mgarten at English Wikipedia', license: 'CC BY-SA 3.0' },
+  { word: 'Yerba Mate', file: 'Traditional mate set calabash gourd with La Merced yerba mate.jpg', author: 'Siarhei Besarab', license: 'CC BY-SA 4.0' },
+  { word: 'Cendol', file: 'Kampung Paya Jaras Tengah, Selangor 20250112 111330.jpg', author: 'Wiki Farazi', license: 'CC0' },
+  { word: 'Ginjinha', file: 'Lissabon-Ginjinha-16-2011-gje.jpg', author: 'Gerd Eichmann', license: 'CC BY-SA 4.0' },
+  { word: 'Gin & Tonic', file: 'Gin and tonic cocktail with wedge of lime.jpg', author: 'Davidnuescheler', license: 'CC BY-SA 4.0' },
+  { word: 'Wine', file: 'Red and white wine in glass.jpg', author: 'André Karwath', license: 'CC BY-SA 2.5' },
+  { word: 'Red Wine', file: 'Red Wine Glass.jpg', author: 'André Karwath aka Aka', license: 'CC BY-SA 3.0' },
+  { word: 'White Wine', file: 'White Wine Glas.jpg', author: 'André Karwath aka Aka', license: 'CC BY-SA 2.5' },
+  { word: 'Rosé Wine', file: 'Rosé wine - July 2023 - Sarah Stierch 01-cropped.jpg', author: 'User:Missvain', license: 'CC BY 4.0' },
+  { word: 'Vinho Verde', file: 'Vinho Verde and bottle.jpg', author: 'Joe Foodie', license: 'CC BY 2.0' },
+  { word: 'Champagne', file: 'Glass of champagne.jpg', author: 'bgvjpe', license: 'CC BY 2.0' },
+  { word: 'Prosecco', file: 'Prosecco di Conegliano bottle and glass.jpg', author: 'Sandstein', license: 'CC BY 3.0' },
+  { word: 'Cava', file: 'Cava (5303223614).jpg', author: 'cyclonebill from Copenhagen, Denmark', license: 'CC BY-SA 2.0' },
+  { word: 'Sparkling Wine', file: 'Glass of sparkling wine at Santa Fe.jpg', author: 'JIP', license: 'CC BY-SA 4.0' },
+  { word: 'Port Wine', file: 'Port wine.jpg', author: 'Jon Sullivan', license: 'Public domain' },
+  { word: 'Madeira Wine', file: 'Ein Gläschen Madeira.jpg', author: 'GerritR', license: 'CC BY-SA 4.0' },
+  { word: 'Moscatel', file: 'Navarra Moscatel.jpg', author: 'Agne27', license: 'CC BY-SA 3.0' },
+  { word: 'Claret', file: 'A glass of claret.JPG', author: 'Bapak Alex', license: 'CC BY-SA 4.0' },
+  { word: 'Dessert Wine', file: 'Desserts and Wine.jpg', author: 'FranHogan', license: 'CC BY-SA 4.0' },
+  { word: 'Table Wine', file: 'Gris de Grenache - Domaine Vidal.jpg', author: 'Hagen + Tine Graf', license: 'CC BY 2.0' },
+  { word: 'House Wine', file: 'House wine in A Pendoa (3799768809).jpg', author: 'Yusuke Kawasaki from Tokyo, Japan', license: 'CC BY 2.0' },
+  { word: 'Vineyard', file: 'Vineyards in Burgundy France.jpg', author: 'FrogsLegs71', license: 'CC BY-SA 3.0' },
+  { word: 'Wine Cellar', file: 'Wine cellar.jpg', author: 'Che', license: 'CC BY-SA 2.5' },
+  { word: 'Wine Glass', file: 'Wine glass5275.jpg', author: 'Itu', license: 'CC BY-SA 4.0' },
+  { word: 'Wine List', file: 'Restaurant wine list 1870.jpg', author: 'Double--M', license: 'CC BY 2.0' },
+  { word: 'Wine Tasting', file: 'Wine Tasting at Marsala.jpg', author: 'Christina Snyder', license: 'CC BY 2.0' },
+  { word: 'Grape Harvester', file: 'Grape harvest - La vendemmia.jpg', author: 'Anna.Massini', license: 'CC BY 4.0' },
+  { word: 'Vinaigrette', file: 'Vinaigrette dressing with a chopped salad.jpg', author: 'GrammarFascist', license: 'CC BY-SA 4.0' },
+  { word: 'Trolley', file: 'Sainsbury\'s supermarket shopping trolleys at Chingford, London, England 1.jpg', author: 'Acabashi', license: 'CC BY-SA 4.0' },
+  { word: 'Basket', file: 'Nakupni kosik.JPG', author: 'Lukáš Malý', license: 'Public domain' },
+  { word: 'Aisle', file: 'Stop&Shop.jpg', author: 'NYC Guru', license: 'CC BY-SA 4.0' },
+  { word: 'Checkout', file: 'Supermarket checkout Tegut Tauberbischofsheim 7.jpg', author: 'Triplec85', license: 'CC BY-SA 4.0' },
+  { word: 'Shelf', file: 'Shelves in a Ralphs grocery store.jpg', author: 'Downtowngal', license: 'CC BY-SA 3.0' },
+  { word: 'Receipt', file: 'ReceiptSwiss.jpg', author: 'Audrius Meskauskas (Audriusa)', license: 'CC BY-SA 3.0' },
+  { word: 'Barcode', file: 'UPC-A-036000291452.svg', author: 'toguro', license: 'CC0' },
+  { word: 'Frozen Food', file: 'Frozen berries (35379207760).jpg', author: 'I saw_that', license: 'Public domain' },
+  { word: 'Discount', file: 'Yellow sticker cakes reduced to clear in Sainsbury\'s supermarket (cropped).jpg', author: 'Philafrenzy', license: 'CC BY-SA 4.0' },
+  { word: 'Weighing Scale', file: 'Supermarket produce scale.JPG', author: 'Piotrus (Piotr Konieczny aka Prokonsul Piotrus Talk)', license: 'CC BY-SA 3.0' },
+  { word: 'Plastic Bag', file: 'Hemdchentuete.jpg', author: 'Phrontis', license: 'CC BY-SA 3.0' },
+  { word: 'Queue', file: 'Check out line.jpg', author: 'Kurt Kaiser', license: 'CC0' },
+  { word: 'Coupon', file: 'Coupon Pile Stock Photo (10865703765).jpg', author: 'Carol Pyles from Winter Haven, FL, US', license: 'CC BY 2.0' },
+  { word: 'Loyalty Card', file: 'Customerloyalitycards.JPG', author: 'Mattes', license: 'Public domain' },
+  { word: 'Expiry Date', file: 'Expiration.jpg', author: 'Edward Betts', license: 'Public domain' },
 ];
