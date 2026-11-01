@@ -2601,6 +2601,56 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'electric bike': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Urwahn_E-Bike_%E2%80%9EPlatzhirsch%E2%80%9C.jpg/960px-Urwahn_E-Bike_%E2%80%9EPlatzhirsch%E2%80%9C.jpg', // E-Bike
   'coach bus': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Reisebus_-_MAN_Lion%27s_Coach_in_%C3%96sterreich.jpg/960px-Reisebus_-_MAN_Lion%27s_Coach_in_%C3%96sterreich.jpg', // Coach
   'lorry truck': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Lorry_truck_on_the_road.jpg/960px-Lorry_truck_on_the_road.jpg', // Lorry
+  'kitchen modern interior': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Modern_kitchen_gnangarra.JPG/960px-Modern_kitchen_gnangarra.JPG', // Kitchen
+  'bathroom interior clean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Bathroom%2C_Interior_of_apartment_in_Brisbane%2C_2025%2C_07.jpg/960px-Bathroom%2C_Interior_of_apartment_in_Brisbane%2C_2025%2C_07.jpg', // Bathroom
+  'bedroom cozy interior': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Bedroom%2C_Interior_of_apartment_in_Brisbane%2C_2025%2C_02.jpg/960px-Bedroom%2C_Interior_of_apartment_in_Brisbane%2C_2025%2C_02.jpg', // Bedroom
+  'beautiful backyard garden flowers green lawn colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Balmoral_Castle_garden_20211026.jpg/960px-Balmoral_Castle_garden_20211026.jpg', // Garden
+  'garage door house': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Tourcoing_garage_rue_du_congo.jpg/960px-Tourcoing_garage_rue_du_congo.jpg', // Garage
+  'hallway interior corridor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Fairfax_House_Corridor.jpg/960px-Fairfax_House_Corridor.jpg', // Hallway
+  'attic converted loft bedroom exposed beams cozy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Attic_bedroom.jpg/960px-Attic_bedroom.jpg', // Attic
+  'balcony view city flowers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Flowers_on_the_balcony_-_geograph.org.uk_-_3125233.jpg/960px-Flowers_on_the_balcony_-_geograph.org.uk_-_3125233.jpg', // Balcony
+  'open wardrobe clothes organised bedroom interior': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Wardrobe_MET_DP235302.jpg/960px-Wardrobe_MET_DP235302.jpg', // Wardrobe
+  'bookshelf full books home library wooden wall': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Part_of_a_bookshelf_containing_books_by_Greek_and_Roman_writers_%281%29.jpg/960px-Part_of_a_bookshelf_containing_books_by_Greek_and_Roman_writers_%281%29.jpg', // Bookshelf
+  'carpet rug floor living room': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Carpet_Prayer_Rug_%28Bellini_Type%29.jpg/960px-Carpet_Prayer_Rug_%28Bellini_Type%29.jpg', // Carpet
+  'curtain window light fabric': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Gordijnen_aan_venster.JPG/960px-Gordijnen_aan_venster.JPG', // Curtain
+  'cushion sofa decorative pillow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Throw_Pillows_%28Scatter_Cushions%29.jpg/960px-Throw_Pillows_%28Scatter_Cushions%29.jpg', // Cushion
+  'white fluffy pillow bed linen bedroom cozy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/An_average_white_pillow.jpg/960px-An_average_white_pillow.jpg', // Pillow
+  'blanket cozy warm bed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Blanket_%28AM_2007.16.1-2%29.jpg/960px-Blanket_%28AM_2007.16.1-2%29.jpg', // Blanket
+  'drawer wooden furniture open': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Drawer.agr.jpg/960px-Drawer.agr.jpg', // Drawer
+  'shelf wall decor home': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Atifells_de_cuina_andalusins%2C_Museu_Arqueol%C3%B2gic_Municipal_d%27Alcoi.JPG/960px-Atifells_de_cuina_andalusins%2C_Museu_Arqueol%C3%B2gic_Municipal_d%27Alcoi.JPG', // Shelf
+  'staircase interior wooden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/City_Hall%2C_London%2C_Spiral_Staircase_-_1.jpg/960px-City_Hall%2C_London%2C_Spiral_Staircase_-_1.jpg', // Staircase
+  'microwave kitchen appliance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Panasonic_NN-SD69LS_20220410.jpg/960px-Panasonic_NN-SD69LS_20220410.jpg', // Microwave
+  'kitchen sink tap water': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Luxury_sink.jpg/960px-Luxury_sink.jpg', // Sink
+  'washing machine laundry appliance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/LG_%EB%93%9C%EB%9F%BC%EC%84%B8%ED%83%81%EA%B8%B0%EC%99%80_%EC%8B%9D%EA%B8%B0%EC%84%B8%EC%B2%99%EA%B8%B0%2C_%EC%98%81%EA%B5%AD%EC%84%9C_%EB%AC%BC%EC%82%AC%EC%9A%A9_%ED%9A%A8%EC%9C%A8_%EC%B5%9C%EC%9A%B0%EC%88%98_%EC%A0%9C%ED%92%88_%EC%88%98%EC%83%81.jpg/500px-LG_%EB%93%9C%EB%9F%BC%EC%84%B8%ED%83%81%EA%B8%B0%EC%99%80_%EC%8B%9D%EA%B8%B0%EC%84%B8%EC%B2%99%EA%B8%B0%2C_%EC%98%81%EA%B5%AD%EC%84%9C_%EB%AC%BC%EC%82%AC%EC%9A%A9_%ED%9A%A8%EC%9C%A8_%EC%B5%9C%EC%9A%B0%EC%88%98_%EC%A0%9C%ED%92%88_%EC%88%98%EC%83%81.jpg', // Washing Machine
+  'bath bathtub bathroom relax': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Clawfoot_bathtub.jpg/960px-Clawfoot_bathtub.jpg', // Bath
+  'fence garden wooden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Westtown.jpg/960px-Westtown.jpg', // Fence
+  'roof house tiles': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tak_-_Ystad-2022.jpg/960px-Tak_-_Ystad-2022.jpg', // Roof
+  'chimney rooftop house smoke': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Stone_chimney%2C_brick_chimney_%288087313200%29.jpg/960px-Stone_chimney%2C_brick_chimney_%288087313200%29.jpg', // Chimney
+  'fireplace fire cozy living room': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Open_fireplace_with_icon.jpg/960px-Open_fireplace_with_icon.jpg', // Fireplace
+  'stove cooker gas kitchen': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Gas_kitchen_2_Kenya.jpg/960px-Gas_kitchen_2_Kenya.jpg', // Stove
+  'vacuum cleaner hoover carpet upright appliance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/True_Hepa_Vacuum_Cleaner.jpg/960px-True_Hepa_Vacuum_Cleaner.jpg', // Vacuum Cleaner
+  'iron clothes ironing board': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Teal_and_white_electric_steam_iron_-_side_view.jpg/960px-Teal_and_white_electric_steam_iron_-_side_view.jpg', // Iron
+  'key door lock home': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg/960px-Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg', // Key
+  'doorbell front door entrance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Doorbell_button%2C_Highwic.jpg/960px-Doorbell_button%2C_Highwic.jpg', // Doorbell
+  'television tv screen living room': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/A_Vintage_Television_Set.jpg/960px-A_Vintage_Television_Set.jpg', // Television
+  'tv remote control black buttons hand holding': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2_TV_remote_controls.jpg/960px-2_TV_remote_controls.jpg', // Remote Control
+  'painting art wall home decor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gustav_Bauernfeind_-_The_Western_Wall_%28framed%29.jpg/960px-Gustav_Bauernfeind_-_The_Western_Wall_%28framed%29.jpg', // Painting
+  'three coloured recycling bins blue green brown outdoor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/NEA_recycling_bins%2C_Orchard_Road.JPG/960px-NEA_recycling_bins%2C_Orchard_Road.JPG', // Bin
+  'mop wet floor cleaning string mop bucket': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mop_and_bucket%2C_7-Eleven.jpg/960px-Mop_and_bucket%2C_7-Eleven.jpg', // Mop
+  'vase flower home': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Vase_of_Flowers_and_Refraction.jpg/960px-Vase_of_Flowers_and_Refraction.jpg', // Vase
+  'candle flame light': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/LA2_Skultuna_kontorsljusstake.jpg/960px-LA2_Skultuna_kontorsljusstake.jpg', // Candle
+  'living room interior': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Living_room_in_apartment_of_Condom%C3%ADnio_do_Edif%C3%ADcio_Zaher%2C_Le_Blond%2C_Rio_de_Janeiro%2C_Brazil.jpg/960px-Living_room_in_apartment_of_Condom%C3%ADnio_do_Edif%C3%ADcio_Zaher%2C_Le_Blond%2C_Rio_de_Janeiro%2C_Brazil.jpg', // Living Room
+  'dining room table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Heiligengrabe%2C_Kloster_Stift_zum_Heiligengrabe%2C_Abtei%2C_Speiseraum_--_2017_--_7082-8.jpg/960px-Heiligengrabe%2C_Kloster_Stift_zum_Heiligengrabe%2C_Abtei%2C_Speiseraum_--_2017_--_7082-8.jpg', // Dining Room
+  'chair furniture': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Set_of_fourteen_side_chairs_MET_DP110780.jpg/960px-Set_of_fourteen_side_chairs_MET_DP110780.jpg', // Chair
+  'wooden dining table chairs kitchen isolated': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Markedshallen_%28Dining_table%29.jpg/960px-Markedshallen_%28Dining_table%29.jpg', // Table
+  'bed bedroom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Canopy_bed_of_Amantaka_Suite_in_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg/960px-Canopy_bed_of_Amantaka_Suite_in_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg', // Bed
+  'door entrance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fischerkirche_%28main_door%29%2C_Born_a._Dar%C3%9F.jpg/960px-Fischerkirche_%28main_door%29%2C_Born_a._Dar%C3%9F.jpg', // Door
+  'window light': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Fischerkirche_%28window%29%2C_Born_a._Dar%C3%9F.jpg/960px-Fischerkirche_%28window%29%2C_Born_a._Dar%C3%9F.jpg', // Window
+  'book reading': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/960px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg', // Book
+  'lamp light': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Lamp_with_a_lampshade_illuminated_by_sunlight.jpg/960px-Lamp_with_a_lampshade_illuminated_by_sunlight.jpg', // Lamp
+  'sofa couch': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sofa_MET_DP-12204-001.jpg/960px-Sofa_MET_DP-12204-001.jpg', // Sofa
+  'mirror': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Golden_mirror_%28France%29.jpg/960px-Golden_mirror_%28France%29.jpg', // Mirror
+  'clock': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg/960px-Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg', // Clock
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5120,4 +5170,54 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'E-Bike', file: 'Urwahn E-Bike „Platzhirsch“.jpg', author: 'Writtenby', license: 'CC BY-SA 4.0' },
   { word: 'Coach', file: 'Reisebus - MAN Lion\'s Coach in Österreich.jpg', author: 'High Contrast', license: 'CC BY 3.0 de' },
   { word: 'Lorry', file: 'Lorry truck on the road.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
+  { word: 'Kitchen', file: 'Modern kitchen gnangarra.JPG', author: 'User:Gnangarra', license: 'CC BY 2.5 au' },
+  { word: 'Bathroom', file: 'Bathroom, Interior of apartment in Brisbane, 2025, 07.jpg', author: 'Chris Olszewski', license: 'CC BY-SA 4.0' },
+  { word: 'Bedroom', file: 'Bedroom, Interior of apartment in Brisbane, 2025, 02.jpg', author: 'Chris Olszewski', license: 'CC BY-SA 4.0' },
+  { word: 'Garden', file: 'Balmoral Castle garden 20211026.jpg', author: 'Daniel Kraft', license: 'CC BY-SA 3.0' },
+  { word: 'Garage', file: 'Tourcoing garage rue du congo.jpg', author: 'Velvet', license: 'CC BY-SA 4.0' },
+  { word: 'Hallway', file: 'Fairfax House Corridor.jpg', author: 'Michael D Beckwith', license: 'CC0' },
+  { word: 'Attic', file: 'Attic bedroom.jpg', author: 'Ben Husmann from Chicago, USA', license: 'CC BY 2.0' },
+  { word: 'Balcony', file: 'Flowers on the balcony - geograph.org.uk - 3125233.jpg', author: 'Bill Nicholls', license: 'CC BY-SA 2.0' },
+  { word: 'Wardrobe', file: 'Wardrobe MET DP235302.jpg', author: 'Herter Brothers', license: 'CC0' },
+  { word: 'Bookshelf', file: 'Part of a bookshelf containing books by Greek and Roman writers (1).jpg', author: 'Roman Eisele', license: 'CC BY-SA 4.0' },
+  { word: 'Carpet', file: 'Carpet Prayer Rug (Bellini Type).jpg', author: 'Unknown', license: 'Public domain' },
+  { word: 'Curtain', file: 'Gordijnen aan venster.JPG', author: 'Nieuw~commonswiki', license: 'CC BY-SA 3.0' },
+  { word: 'Cushion', file: 'Throw Pillows (Scatter Cushions).jpg', author: 'Markjones959', license: 'CC BY-SA 4.0' },
+  { word: 'Pillow', file: 'An average white pillow.jpg', author: '0hAerqplane', license: 'CC BY-SA 4.0' },
+  { word: 'Blanket', file: 'Blanket (AM 2007.16.1-2).jpg', author: 'Onehunga Woollen Mills', license: 'CC BY 4.0' },
+  { word: 'Drawer', file: 'Drawer.agr.jpg', author: 'ArnoldReinhold', license: 'CC BY-SA 3.0' },
+  { word: 'Shelf', file: 'Atifells de cuina andalusins, Museu Arqueològic Municipal d\'Alcoi.JPG', author: 'Joanbanjo', license: 'CC BY-SA 3.0' },
+  { word: 'Staircase', file: 'City Hall, London, Spiral Staircase - 1.jpg', author: 'Colin', license: 'CC BY-SA 4.0' },
+  { word: 'Microwave', file: 'Panasonic NN-SD69LS 20220410.jpg', author: 'Mrbeastmodeallday', license: 'CC BY-SA 4.0' },
+  { word: 'Sink', file: 'Luxury sink.jpg', author: 'Amin', license: 'CC BY-SA 4.0' },
+  { word: 'Washing Machine', file: 'LG 드럼세탁기와 식기세척기, 영국서 물사용 효율 최우수 제품 수상.jpg', author: 'LG전자', license: 'CC BY 2.0' },
+  { word: 'Bath', file: 'Clawfoot bathtub.jpg', author: 'Yannick Trottier (ytrottier)', license: 'CC BY-SA 3.0' },
+  { word: 'Fence', file: 'Westtown.jpg', author: 'Matanya', license: 'Public domain' },
+  { word: 'Roof', file: 'Tak - Ystad-2022.jpg', author: 'Foto: Jonn Leffmann', license: 'CC BY 3.0' },
+  { word: 'Chimney', file: 'Stone chimney, brick chimney (8087313200).jpg', author: 'Tim Green from Bradford', license: 'CC BY 2.0' },
+  { word: 'Fireplace', file: 'Open fireplace with icon.jpg', author: 'Klaus Mueller', license: 'CC BY-SA 2.0 de' },
+  { word: 'Stove', file: 'Gas kitchen 2 Kenya.jpg', author: 'GioRan', license: 'CC BY-SA 4.0' },
+  { word: 'Vacuum Cleaner', file: 'True Hepa Vacuum Cleaner.jpg', author: 'Infrogmation', license: 'CC BY 4.0' },
+  { word: 'Iron', file: 'Teal and white electric steam iron - side view.jpg', author: 'Sokolikmawwer0', license: 'CC BY-SA 3.0' },
+  { word: 'Key', file: 'Solex 99 30 padlock with keys (DSCF2659).jpg', author: 'Trougnouf', license: 'CC BY 4.0' },
+  { word: 'Doorbell', file: 'Doorbell button, Highwic.jpg', author: 'Bjankuloski06', license: 'CC BY 4.0' },
+  { word: 'Television', file: 'A Vintage Television Set.jpg', author: 'Naula Ayisabun Aningore', license: 'CC BY-SA 4.0' },
+  { word: 'Remote Control', file: '2 TV remote controls.jpg', author: 'Сергей Михель', license: 'CC BY-SA 3.0' },
+  { word: 'Painting', file: 'Gustav Bauernfeind - The Western Wall (framed).jpg', author: 'Gustav Bauernfeind', license: 'Public domain' },
+  { word: 'Bin', file: 'NEA recycling bins, Orchard Road.JPG', author: 'Terence Ong', license: 'CC BY 2.5' },
+  { word: 'Mop', file: 'Mop and bucket, 7-Eleven.jpg', author: 'Ser Amantio di Nicolao', license: 'CC BY-SA 4.0' },
+  { word: 'Vase', file: 'Vase of Flowers and Refraction.jpg', author: 'MsFrazzle', license: 'CC BY-SA 4.0' },
+  { word: 'Candle', file: 'LA2 Skultuna kontorsljusstake.jpg', author: 'LA2', license: 'CC BY-SA 3.0' },
+  { word: 'Living Room', file: 'Living room in apartment of Condomínio do Edifício Zaher, Le Blond, Rio de Janeiro, Brazil.jpg', author: 'Wilfredor', license: 'CC0' },
+  { word: 'Dining Room', file: 'Heiligengrabe, Kloster Stift zum Heiligengrabe, Abtei, Speiseraum -- 2017 -- 7082-8.jpg', author: 'Dietmar Rabich', license: 'CC BY-SA 4.0' },
+  { word: 'Chair', file: 'Set of fourteen side chairs MET DP110780.jpg', author: 'Thomas Chippendale', license: 'CC0' },
+  { word: 'Table', file: 'Markedshallen (Dining table).jpg', author: 'RhinoMind', license: 'CC BY-SA 4.0' },
+  { word: 'Bed', file: 'Canopy bed of Amantaka Suite in Amantaka luxury Resort & Hotel in Luang Prabang Laos.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Door', file: 'Fischerkirche (main door), Born a. Darß.jpg', author: 'Radomianin', license: 'CC BY-SA 4.0' },
+  { word: 'Window', file: 'Fischerkirche (window), Born a. Darß.jpg', author: 'Radomianin', license: 'CC BY-SA 4.0' },
+  { word: 'Book', file: 'Gutenberg Bible, Lenox Copy, New York Public Library, 2009. Pic 01.jpg', author: 'NYC Wanderer (Kevin Eng)', license: 'CC BY-SA 2.0' },
+  { word: 'Lamp', file: 'Lamp with a lampshade illuminated by sunlight.jpg', author: 'LoMit', license: 'CC BY-SA 4.0' },
+  { word: 'Sofa', file: 'Sofa MET DP-12204-001.jpg', author: 'The Metropolitan Museum of Art', license: 'CC0' },
+  { word: 'Mirror', file: 'Golden mirror (France).jpg', author: 'Tangopaso', license: 'Public domain' },
+  { word: 'Clock', file: 'Pendulum clock by Jacob Kock, antique furniture photography, IMG 0931 edit.jpg', author: 'Christoph Braun', license: 'CC0' },
 ];
