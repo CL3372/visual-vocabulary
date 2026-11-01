@@ -2553,6 +2553,54 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'tennis': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tennis_Match_at_EuroGames_2024.jpg/960px-Tennis_Match_at_EuroGames_2024.jpg', // Tennis
   'running sport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Human_running_gait_-_terminal_swing_to_heel_strike_%28runner_with_Asics_Metaspeed_Edge_Paris_-_2024_Ljubljana_Marathon%29.jpg/960px-Human_running_gait_-_terminal_swing_to_heel_strike_%28runner_with_Asics_Metaspeed_Edge_Paris_-_2024_Ljubljana_Marathon%29.jpg', // Running
   'yoga': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Beach_asana_class%2C_Plage_Pereire%2C_Arcachon%2C_2015.jpg/960px-Beach_asana_class%2C_Plage_Pereire%2C_Arcachon%2C_2015.jpg', // Yoga
+  'taxi yellow cab city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/TAXI.jpg/960px-TAXI.jpg', // Taxi
+  'van vehicle road': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/LDV_Maxus_2.8_CDi_95_SWB_2005.jpg/960px-LDV_Maxus_2.8_CDi_95_SWB_2005.jpg', // Van
+  'ambulance emergency vehicle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Stockholm%2C_ambulans%2C_2014%2C_21.jpg/960px-Stockholm%2C_ambulans%2C_2014%2C_21.jpg', // Ambulance
+  'fire engine truck red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Dublin_Fire_Brigade_Pump_Ladder_D32.jpg/960px-Dublin_Fire_Brigade_Pump_Ladder_D32.jpg', // Fire Engine
+  'police car blue lights': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg/960px-Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg', // Police Car
+  'scooter moped city street': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Vespa_a_Todi.JPG/960px-Vespa_a_Todi.JPG', // Scooter
+  'tuk tuk thailand rickshaw': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Bajaj_auto-rickshaw_in_Sri_Lanka.jpg/500px-Bajaj_auto-rickshaw_in_Sri_Lanka.jpg', // Tuk-Tuk
+  'rickshaw cycle india': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Rickshaw_Parking_at_Dhaka_%289601873282%29.jpg/960px-Rickshaw_Parking_at_Dhaka_%289601873282%29.jpg', // Rickshaw
+  'caravan trailer camping': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Caravan.jpg/500px-Caravan.jpg', // Caravan
+  'suv jeep off road vehicle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/97-01_Jeep_Cherokee.jpg/960px-97-01_Jeep_Cherokee.jpg', // SUV
+  'subway metro underground train': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Huvudsta_May_2014_01.jpg/960px-Huvudsta_May_2014_01.jpg', // Subway
+  'high speed train bullet shinkansen': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/N700a-Mt.Fuji.jpg/960px-N700a-Mt.Fuji.jpg', // High-Speed Train
+  'cable car gondola mountain': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Corona_Cable_Cars%2C_Table_Mountain.jpg/960px-Corona_Cable_Cars%2C_Table_Mountain.jpg', // Cable Car
+  'monorail futuristic urban': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Chongqing_Rail_Transit_Line_3_Monorail_Train_near_Xuetangwan_Station.jpg/960px-Chongqing_Rail_Transit_Line_3_Monorail_Train_near_Xuetangwan_Station.jpg', // Monorail
+  'funicular railway hill lisbon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Vevey%E2%80%93Chardonne%E2%80%93Mont_P%C3%A8lerin_funicular_railway_04.jpg/960px-Vevey%E2%80%93Chardonne%E2%80%93Mont_P%C3%A8lerin_funicular_railway_04.jpg', // Funicular
+  'ferry boat sea crossing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2022-04-29_WSDOT_ferry%2C_MV_SALISH_-_IMO_9618329_-_Coupeville_WA_USA.jpg/960px-2022-04-29_WSDOT_ferry%2C_MV_SALISH_-_IMO_9618329_-_Coupeville_WA_USA.jpg', // Ferry
+  'cruise ship ocean luxury': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Birka_June_2013.jpg/960px-Birka_June_2013.jpg', // Cruise Ship
+  'kayak paddling river water': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Kayak_on_the_Bay.jpg/960px-Kayak_on_the_Bay.jpg', // Kayak
+  'sailboat sailing ocean wind': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Vents_du_Sud_-_Le_Grau-du-Roi_03.jpg/960px-Vents_du_Sud_-_Le_Grau-du-Roi_03.jpg', // Sailboat
+  'canoe river paddle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Canoe_in_abandoned_channel%2C_River_Ljubljanica%2C_Slovenia.jpg/960px-Canoe_in_abandoned_channel%2C_River_Ljubljanica%2C_Slovenia.jpg', // Canoe
+  'submarine nuclear vessel ocean surfacing military': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg/960px-US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg', // Submarine
+  'gondola venice canal italy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Gondola%2C_Venice%2C_Italy.jpg/960px-Gondola%2C_Venice%2C_Italy.jpg', // Gondola
+  'hot air balloon sky colorful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/2006_Ojiya_balloon_festival_011.jpg/960px-2006_Ojiya_balloon_festival_011.jpg', // Hot Air Balloon
+  'glider sailplane soaring blue sky aerial wings': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/PH-1274_Rolladen-Schneider_LS-4b.JPG/960px-PH-1274_Rolladen-Schneider_LS-4b.JPG', // Glider
+  'seaplane floatplane landing lake water wilderness': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/CH.BE.Boenigen_2021-08-15_Seaplane-Meeting_5426_16x9-R_7680x4320.jpg/960px-CH.BE.Boenigen_2021-08-15_Seaplane-Meeting_5426_16x9-R_7680x4320.jpg', // Seaplane
+  'drone quadcopter flying': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2015_Dron_DJI_Phantom_3_Advanced.JPG/960px-2015_Dron_DJI_Phantom_3_Advanced.JPG', // Drone
+  'camel desert caravan': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Caravan_in_the_desert.jpg/960px-Caravan_in_the_desert.jpg', // Camel
+  'dog sled snow arctic husky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Dog_sled_quebec_2010.JPG/960px-Dog_sled_quebec_2010.JPG', // Dog Sled
+  'horse cart carriage traditional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Two-wheeled_horse-drawn_farm_cart_in_the_Skye_Museum_of_Island_Life.jpg/960px-Two-wheeled_horse-drawn_farm_cart_in_the_Skye_Museum_of_Island_Life.jpg', // Horse Cart
+  'elephant riding thailand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Elephant_Ride%2C_Ayutthaya_c27.jpg/960px-Elephant_Ride%2C_Ayutthaya_c27.jpg', // Elephant
+  'rocket launch blastoff fire smoke night sky nasa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Soyuz_TMA-9_launch.jpg/960px-Soyuz_TMA-9_launch.jpg', // Rocket
+  'space shuttle launch nasa': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/960px-STS120LaunchHiRes-edit1.jpg', // Space Shuttle
+  'hovercraft air cushion vehicle beach coast speed': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Hovercraft_off_Ryde_Pier_07.jpg/960px-Hovercraft_off_Ryde_Pier_07.jpg', // Hovercraft
+  'snowmobile winter snow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/SnowmobilesYellowstone.jpg/960px-SnowmobilesYellowstone.jpg', // Snowmobile
+  'atv quad bike offroad': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/ATV_-_Quad_-_SYM_Quadlander_200_-_Santorini_-_Greece_-_01.jpg/960px-ATV_-_Quad_-_SYM_Quadlander_200_-_Santorini_-_Greece_-_01.jpg', // ATV
+  'skateboard deck wheels grip tape close up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Skateboard_upside.jpg/960px-Skateboard_upside.jpg', // Skateboard
+  'car road': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/960px-1925_Ford_Model_T_touring.jpg', // Car
+  'bicycle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/960px-Left_side_of_Flying_Pigeon.jpg', // Bicycle
+  'airplane sky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Embraer_EMB_110_in_flight_%28105091729%29.jpg/960px-Embraer_EMB_110_in_flight_%28105091729%29.jpg', // Airplane
+  'boat water': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Pilot_boat_at_Landsort_April_2012.jpg/960px-Pilot_boat_at_Landsort_April_2012.jpg', // Boat
+  'train railway': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg/960px-%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg', // Train
+  'bus city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/LTZ1328-19-20241030-160332.jpg/960px-LTZ1328-19-20241030-160332.jpg', // Bus
+  'motorcycle': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Istockphoto-114285168-612x612.jpg/500px-Istockphoto-114285168-612x612.jpg', // Motorcycle
+  'helicopter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/VH-SUF_Taking_Off.jpg/960px-VH-SUF_Taking_Off.jpg', // Helicopter
+  'tram city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/960px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg', // Tram
+  'electric bike': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Urwahn_E-Bike_%E2%80%9EPlatzhirsch%E2%80%9C.jpg/960px-Urwahn_E-Bike_%E2%80%9EPlatzhirsch%E2%80%9C.jpg', // E-Bike
+  'coach bus': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Reisebus_-_MAN_Lion%27s_Coach_in_%C3%96sterreich.jpg/960px-Reisebus_-_MAN_Lion%27s_Coach_in_%C3%96sterreich.jpg', // Coach
+  'lorry truck': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Lorry_truck_on_the_road.jpg/960px-Lorry_truck_on_the_road.jpg', // Lorry
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5024,4 +5072,52 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Tennis', file: 'Tennis Match at EuroGames 2024.jpg', author: 'Petit94', license: 'CC BY-SA 4.0' },
   { word: 'Running', file: 'Human running gait - terminal swing to heel strike (runner with Asics Metaspeed Edge Paris - 2024 Ljubljana Marathon).jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
   { word: 'Yoga', file: 'Beach asana class, Plage Pereire, Arcachon, 2015.jpg', author: 'DimiTalen', license: 'CC0' },
+  { word: 'Taxi', file: 'TAXI.jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Van', file: 'LDV Maxus 2.8 CDi 95 SWB 2005.jpg', author: 'DeFacto', license: 'CC BY-SA 2.5' },
+  { word: 'Ambulance', file: 'Stockholm, ambulans, 2014, 21.jpg', author: 'AleWi', license: 'CC BY-SA 4.0' },
+  { word: 'Fire Engine', file: 'Dublin Fire Brigade Pump Ladder D32.jpg', author: 'William Murphy', license: 'CC BY-SA 2.0' },
+  { word: 'Police Car', file: 'Washington DC Metropolitan Police Department Dodge Charger No. 1605.jpg', author: 'Raymond Wambsgans', license: 'CC BY 2.0' },
+  { word: 'Scooter', file: 'Vespa a Todi.JPG', author: 'Livioandronico2013', license: 'CC BY-SA 4.0' },
+  { word: 'Tuk-Tuk', file: 'Bajaj auto-rickshaw in Sri Lanka.jpg', author: 'calflier001, cropped by uploader Mr.choppers', license: 'CC BY-SA 2.0' },
+  { word: 'Rickshaw', file: 'Rickshaw Parking at Dhaka (9601873282).jpg', author: 'Nasir Khan Saikat @ flickr from Dhaka, Bangladesh', license: 'CC BY-SA 2.0' },
+  { word: 'Caravan', file: 'Caravan.jpg', author: 'Edward', license: 'CC BY 2.5' },
+  { word: 'SUV', file: '97-01 Jeep Cherokee.jpg', author: 'IFCAR', license: 'Public domain' },
+  { word: 'Subway', file: 'Huvudsta May 2014 01.jpg', author: 'Arild Vågen', license: 'CC BY-SA 3.0' },
+  { word: 'High-Speed Train', file: 'N700a-Mt.Fuji.jpg', author: 'MaedaAkihiko', license: 'CC BY-SA 4.0' },
+  { word: 'Cable Car', file: 'Corona Cable Cars, Table Mountain.jpg', author: 'Fin.Seaman', license: 'CC0' },
+  { word: 'Monorail', file: 'Chongqing Rail Transit Line 3 Monorail Train near Xuetangwan Station.jpg', author: 'Baycrest', license: 'CC BY-SA 2.5' },
+  { word: 'Funicular', file: 'Vevey–Chardonne–Mont Pèlerin funicular railway 04.jpg', author: 'Llez', license: 'CC BY-SA 3.0' },
+  { word: 'Ferry', file: '2022-04-29 WSDOT ferry, MV SALISH - IMO 9618329 - Coupeville WA USA.jpg', author: 'Gordon Leggett', license: 'CC BY 4.0' },
+  { word: 'Cruise Ship', file: 'Birka June 2013.jpg', author: 'Arild Vågen', license: 'CC BY-SA 3.0' },
+  { word: 'Kayak', file: 'Kayak on the Bay.jpg', author: 'Marybquick', license: 'CC BY-SA 4.0' },
+  { word: 'Sailboat', file: 'Vents du Sud - Le Grau-du-Roi 03.jpg', author: 'Christian Ferrer', license: 'CC BY 4.0' },
+  { word: 'Canoe', file: 'Canoe in abandoned channel, River Ljubljanica, Slovenia.jpg', author: 'Petar Milošević', license: 'CC BY-SA 4.0' },
+  { word: 'Submarine', file: 'US Navy 040730-N-1234E-002 PCU Virginia (SSN 774) returns to the General Dynamics Electric Boat shipyard.jpg', author: 'U.S. Navy photo by General Dynamics Electric Boat', license: 'Public domain' },
+  { word: 'Gondola', file: 'Gondola, Venice, Italy.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Hot Air Balloon', file: '2006 Ojiya balloon festival 011.jpg', author: 'Kropsoq', license: 'CC BY-SA 3.0' },
+  { word: 'Glider', file: 'PH-1274 Rolladen-Schneider LS-4b.JPG', author: 'AlfvanBeem', license: 'CC0' },
+  { word: 'Seaplane', file: 'CH.BE.Boenigen 2021-08-15 Seaplane-Meeting 5426 16x9-R 7680x4320.jpg', author: 'Roy Egloff', license: 'CC BY-SA 4.0' },
+  { word: 'Drone', file: '2015 Dron DJI Phantom 3 Advanced.JPG', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Camel', file: 'Caravan in the desert.jpg', author: 'Sergey Pesterev', license: 'CC BY-SA 4.0' },
+  { word: 'Dog Sled', file: 'Dog sled quebec 2010.JPG', author: 'chensiyuan', license: 'CC BY-SA 4.0' },
+  { word: 'Horse Cart', file: 'Two-wheeled horse-drawn farm cart in the Skye Museum of Island Life.jpg', author: 'DeFacto', license: 'CC BY-SA 4.0' },
+  { word: 'Elephant', file: 'Elephant Ride, Ayutthaya c27.jpg', author: 'Michael Gunther', license: 'CC BY-SA 4.0' },
+  { word: 'Rocket', file: 'Soyuz TMA-9 launch.jpg', author: 'Bill Ingalls', license: 'Public domain' },
+  { word: 'Space Shuttle', file: 'STS120LaunchHiRes-edit1.jpg', author: 'NASA; edited by jjron (tilt corrected)', license: 'Public domain' },
+  { word: 'Hovercraft', file: 'Hovercraft off Ryde Pier 07.jpg', author: 'HJ Mitchell', license: 'CC BY 4.0' },
+  { word: 'Snowmobile', file: 'SnowmobilesYellowstone.jpg', author: '(NPS Photo), uploaded by en:User:Great Scott.', license: 'Public domain' },
+  { word: 'ATV', file: 'ATV - Quad - SYM Quadlander 200 - Santorini - Greece - 01.jpg', author: 'Norbert Nagel', license: 'CC BY-SA 3.0' },
+  { word: 'Skateboard', file: 'Skateboard upside.jpg', author: 'Cynroya', license: 'CC0' },
+  { word: 'Car', file: '1925 Ford Model T touring.jpg', author: 'ModelTMitch', license: 'Public domain' },
+  { word: 'Bicycle', file: 'Left side of Flying Pigeon.jpg', author: '齐健 from Peking, People\'s Republic of China', license: 'CC BY 2.0' },
+  { word: 'Airplane', file: 'Embraer EMB 110 in flight (105091729).jpg', author: 'Flickr user Shawn from Airdrie, Canada', license: 'CC BY-SA 2.0' },
+  { word: 'Boat', file: 'Pilot boat at Landsort April 2012.jpg', author: 'Arild Vågen', license: 'CC BY-SA 3.0' },
+  { word: 'Train', file: 'Поезд на фоне горы Шатрище. Воронежская область.jpg', author: 'Алексей Задонский', license: 'CC BY-SA 4.0' },
+  { word: 'Bus', file: 'LTZ1328-19-20241030-160332.jpg', author: 'SIA321', license: 'CC BY-SA 4.0' },
+  { word: 'Motorcycle', file: 'Istockphoto-114285168-612x612.jpg', author: 'Devanand.j', license: 'CC BY-SA 4.0' },
+  { word: 'Helicopter', file: 'VH-SUF Taking Off.jpg', author: 'Fly45yt', license: 'CC BY 4.0' },
+  { word: 'Tram', file: 'Muzeum MHD, tramvaje T3 8084 a 6149, zepředu.jpg', author: 'ŠJů (cs:ŠJů)', license: 'CC BY-SA 3.0' },
+  { word: 'E-Bike', file: 'Urwahn E-Bike „Platzhirsch“.jpg', author: 'Writtenby', license: 'CC BY-SA 4.0' },
+  { word: 'Coach', file: 'Reisebus - MAN Lion\'s Coach in Österreich.jpg', author: 'High Contrast', license: 'CC BY 3.0 de' },
+  { word: 'Lorry', file: 'Lorry truck on the road.jpg', author: 'daSupremo', license: 'CC BY-SA 4.0' },
 ];
