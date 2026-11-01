@@ -19,7 +19,6 @@ export const ISLAND_INGREDIENT_WORDS: Word[] = [
 
   // ── Mediterranean Islands ─────────────────────────────────────────────────────
   { id: 'isli14', word: 'Carob',           translations: { es: 'Algarroba',        pt: 'Alfarroba', 'pt-br': 'Alfarroba',        fr: 'Caroube',           de: 'Johannisbrot',      it: 'Carruba',           ja: 'カロブ',             zh: '角豆', nl: 'Carob'         }, category: 'Nuts & Legumes', unsplashQuery: 'carob pods dried brown mediterranean malta' },
-  { id: 'isli15', word: 'Capers',          translations: { es: 'Alcaparras',       pt: 'Alcaparras', 'pt-br': 'Alcaparras',       fr: 'Câpres',            de: 'Kapern',            it: 'Capperi',           ja: 'ケッパー',           zh: '刺山柑', nl: 'Capers'       }, category: 'Condiments',     unsplashQuery: 'capers small green jar mediterranean' },
   { id: 'isli16', word: 'Rabbit',          translations: { es: 'Conejo',           pt: 'Coelho', 'pt-br': 'Coelho',           fr: 'Lapin',             de: 'Kaninchen',         it: 'Coniglio',          ja: 'ウサギ肉',           zh: '兔肉', nl: 'Konijn', ko: '토끼고기', ar: 'أرنب'         }, category: 'Meat',           unsplashQuery: 'rabbit meat raw game maltese' },
 
   { id: 'isli20', word: 'Laurel',          translations: { es: 'Laurel',           pt: 'Louro', 'pt-br': 'Louro',            fr: 'Laurier',           de: 'Lorbeer',           it: 'Alloro',            ja: 'ローリエ',           zh: '月桂叶', nl: 'Laurel'       }, category: 'Herbs & Spices', unsplashQuery: 'bay laurel leaf fresh herb green' },
