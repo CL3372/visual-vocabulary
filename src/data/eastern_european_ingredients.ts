@@ -32,5 +32,5 @@ export const EASTERN_EUROPEAN_INGREDIENT_WORDS: Word[] = [
 
   // ── Meat ──────────────────────────────────────────────────────────────────────
 
-  { id: 'eei19', word: 'Smoked Pork',   translations: { es: 'Cerdo ahumado',   pt: 'Porco fumado', 'pt-br': 'Porco fumado',   fr: 'Porc fumé',       de: 'Geräuchertes Schweinefleisch', it: 'Maiale affumicato', ja: '燻製豚肉',   zh: '熏猪肉',    ko: '훈제 돼지고기', ar: 'لحم خنزير مدخن' }, category: 'Meat', unsplashQuery: 'smoked pork meat Eastern European' },
+  { id: 'eei19', word: 'Smoked Pork',   translations: { es: 'Cerdo ahumado',   pt: 'Porco fumado', 'pt-br': 'Porco fumado',   fr: 'Porc fumé',       de: 'Geräuchertes Schweinefleisch', it: 'Maiale affumicato', ja: '燻製豚肉',   zh: '熏猪肉',    ko: '훈제 돼지고기', ar: 'لحم خنزير مدخن', nl: 'Gerookt varkensvlees' }, category: 'Meat', unsplashQuery: 'smoked pork meat Eastern European' },
 ];
