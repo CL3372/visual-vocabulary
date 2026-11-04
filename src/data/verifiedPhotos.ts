@@ -2773,6 +2773,18 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'muddy boots splattered brown soil garden outdoor dirty': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Dirty_hands_%283979622838%29.jpg/960px-Dirty_hands_%283979622838%29.jpg', // Dirty
   'white fluffy cat long hair soft paw cozy indoors portrait': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Fluffy_Owl_Chick_%2842229297544%29.jpg/960px-Fluffy_Owl_Chick_%2842229297544%29.jpg', // Fluffy
   'hands cupping water droplet careful gentle protect delicate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Wet_floor_caution_sugn.jpg/960px-Wet_floor_caution_sugn.jpg', // Careful
+  'boarding pass ticket flight': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Western_Airlines_boarding_pass_1972-08-22.jpg/500px-Western_Airlines_boarding_pass_1972-08-22.jpg', // Boarding Pass
+  'check in airport desk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Check-in_counters_at_Suvarnabhumi_International_Airport.JPG/960px-Check-in_counters_at_Suvarnabhumi_International_Airport.JPG', // Check-in
+  'customs border control': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Netherlands_Customs_Douane_Schiphol_Airport.jpg/960px-Netherlands_Customs_Douane_Schiphol_Airport.jpg', // Customs
+  'reservation booking hotel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Reserved_table_sign.jpg/960px-Reserved_table_sign.jpg', // Reservation
+  'map travel navigation': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/World_Map_1689.JPG/960px-World_Map_1689.JPG', // Map
+  'ticket travel transport': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Train_ticket_-_from_Brighton_to_Portsmouth_%26_S_or_Harbour.jpg/960px-Train_ticket_-_from_Brighton_to_Portsmouth_%26_S_or_Harbour.jpg', // Ticket
+  'tour guide group sightseeing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Tour_guide_addressing_a_group_in_China.JPG/960px-Tour_guide_addressing_a_group_in_China.JPG', // Tour Guide
+  'departure airport gate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Flight_Information_Display_System_at_Singapore_Changi_Airport_Terminal_4_-_September_2023.jpg/960px-Flight_Information_Display_System_at_Singapore_Changi_Airport_Terminal_4_-_September_2023.jpg', // Departure
+  'arrival airport passengers': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Sign-1027308%2C_Dublin_Airport%2C_Ireland.jpg/960px-Sign-1027308%2C_Dublin_Airport%2C_Ireland.jpg', // Arrival
+  'flight delay airport waiting': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/HYD_board_2.jpg/500px-HYD_board_2.jpg', // Delay
+  'hostel backpacker dormitory': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Hostel_Dormitory.jpg/500px-Hostel_Dormitory.jpg', // Hostel
+  'phrase book travel language': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Phrase_book.jpg/960px-Phrase_book.jpg', // Phrase Book
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5415,4 +5427,16 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Dirty', file: 'Dirty hands (3979622838).jpg', author: 'Håkan Dahlström from Malmö, Sweden', license: 'CC BY 2.0' },
   { word: 'Fluffy', file: 'Fluffy Owl Chick (42229297544).jpg', author: 'Johan Neven from Borgloon-Gotem, Belgium', license: 'CC BY 2.0' },
   { word: 'Careful', file: 'Wet floor caution sugn.jpg', author: 'Kurt Kaiser', license: 'CC0' },
+  { word: 'Boarding Pass', file: 'Western Airlines boarding pass 1972-08-22.jpg', author: 'Western Airlines', license: 'Public domain' },
+  { word: 'Check-in', file: 'Check-in counters at Suvarnabhumi International Airport.JPG', author: 'Mattes', license: 'CC BY-SA 3.0' },
+  { word: 'Customs', file: 'Netherlands Customs Douane Schiphol Airport.jpg', author: 'Amin', license: 'CC BY-SA 4.0' },
+  { word: 'Reservation', file: 'Reserved table sign.jpg', author: 'David Baron', license: 'CC BY-SA 2.0' },
+  { word: 'Map', file: 'World Map 1689.JPG', author: 'Gerard van Schagen', license: 'Public domain' },
+  { word: 'Ticket', file: 'Train ticket - from Brighton to Portsmouth & S or Harbour.jpg', author: 'Andy Li', license: 'CC0' },
+  { word: 'Tour Guide', file: 'Tour guide addressing a group in China.JPG', author: 'Ctny', license: 'CC BY-SA 3.0' },
+  { word: 'Departure', file: 'Flight Information Display System at Singapore Changi Airport Terminal 4 - September 2023.jpg', author: 'Jun Jie Yam', license: 'CC BY 4.0' },
+  { word: 'Arrival', file: 'Sign-1027308, Dublin Airport, Ireland.jpg', author: 'Leimanbhradain', license: 'CC BY-SA 4.0' },
+  { word: 'Delay', file: 'HYD board 2.jpg', author: 'Addd wiki', license: 'CC BY 3.0' },
+  { word: 'Hostel', file: 'Hostel Dormitory.jpg', author: 'Let99', license: 'CC BY-SA 3.0' },
+  { word: 'Phrase Book', file: 'Phrase book.jpg', author: 'Victor Korniyenko', license: 'CC BY 3.0' },
 ];
