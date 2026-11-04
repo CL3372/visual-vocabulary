@@ -2785,6 +2785,17 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'flight delay airport waiting': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/HYD_board_2.jpg/500px-HYD_board_2.jpg', // Delay
   'hostel backpacker dormitory': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Hostel_Dormitory.jpg/500px-Hostel_Dormitory.jpg', // Hostel
   'phrase book travel language': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Phrase_book.jpg/960px-Phrase_book.jpg', // Phrase Book
+  'prescription medicine paper': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Printed_%E2%84%9E.jpg/960px-Printed_%E2%84%9E.jpg', // Prescription
+  'pharmacy drugstore medicine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gizella_pharmacy_sign%2C_2018_Istv%C3%A1nmez%C5%91.jpg/960px-Gizella_pharmacy_sign%2C_2018_Istv%C3%A1nmez%C5%91.jpg', // Pharmacy
+  'appointment calendar doctor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Agenda.jpg/960px-Agenda.jpg', // Appointment
+  'fever thermometer sick': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Clinical_thermometer_38.7.JPG/960px-Clinical_thermometer_38.7.JPG', // Fever
+  'allergy reaction sneezing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Misc_pollen_colorized.jpg/960px-Misc_pollen_colorized.jpg', // Allergy
+  'blood test tube laboratory': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Tube_with_blood_sample.jpg/960px-Tube_with_blood_sample.jpg', // Blood Test
+  'xray chest scan medical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg/960px-Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg', // X-Ray
+  'emergency ambulance hospital': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Emergency_Room_of_Edith_Wolfson_Medical_Center%2C_February_2024_03.jpg/960px-Emergency_Room_of_Edith_Wolfson_Medical_Center%2C_February_2024_03.jpg', // Emergency
+  'waiting room chairs hospital': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Social_Distanced_Waiting_Room%2C_LSU_Healthcare%2C_New_Orleans%2C_Sept_2022_01.jpg/960px-Social_Distanced_Waiting_Room%2C_LSU_Healthcare%2C_New_Orleans%2C_Sept_2022_01.jpg', // Waiting Room
+  'insurance card health wallet': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Tessera_Sanitaria_Italia-Fronte.jpg/960px-Tessera_Sanitaria_Italia-Fronte.jpg', // Insurance Card
+  'injection syringe vaccine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Subcutaneous_injection_with_insulin_needle_2.jpg/960px-Subcutaneous_injection_with_insulin_needle_2.jpg', // Injection
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5439,4 +5450,15 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Delay', file: 'HYD board 2.jpg', author: 'Addd wiki', license: 'CC BY 3.0' },
   { word: 'Hostel', file: 'Hostel Dormitory.jpg', author: 'Let99', license: 'CC BY-SA 3.0' },
   { word: 'Phrase Book', file: 'Phrase book.jpg', author: 'Victor Korniyenko', license: 'CC BY 3.0' },
+  { word: 'Prescription', file: 'Printed ℞.jpg', author: 'Psiĥedelisto', license: 'CC0' },
+  { word: 'Pharmacy', file: 'Gizella pharmacy sign, 2018 Istvánmező.jpg', author: 'Globetrotter19', license: 'CC BY-SA 3.0' },
+  { word: 'Appointment', file: 'Agenda.jpg', author: 'M.Minderhoud', license: 'CC BY-SA 3.0' },
+  { word: 'Fever', file: 'Clinical thermometer 38.7.JPG', author: 'Menchi', license: 'CC BY-SA 3.0' },
+  { word: 'Allergy', file: 'Misc pollen colorized.jpg', author: 'Dartmouth Electron Microscope Facility, Dartmouth College', license: 'Public domain' },
+  { word: 'Blood Test', file: 'Tube with blood sample.jpg', author: 'Dotodot', license: 'CC BY-SA 4.0' },
+  { word: 'X-Ray', file: 'Normal posteroanterior (PA) chest radiograph (X-ray).jpg', author: 'Mikael Häggström', license: 'CC0' },
+  { word: 'Emergency', file: 'Emergency Room of Edith Wolfson Medical Center, February 2024 03.jpg', author: 'Chenspec', license: 'CC BY-SA 4.0' },
+  { word: 'Waiting Room', file: 'Social Distanced Waiting Room, LSU Healthcare, New Orleans, Sept 2022 01.jpg', author: 'Infrogmation of New Orleans', license: 'CC BY-SA 4.0' },
+  { word: 'Insurance Card', file: 'Tessera Sanitaria Italia-Fronte.jpg', author: 'Unknown author (CC0)', license: 'CC0' },
+  { word: 'Injection', file: 'Subcutaneous injection with insulin needle 2.jpg', author: 'British Columbia Institute of Technology (BCIT)', license: 'CC BY 4.0' },
 ];
