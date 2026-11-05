@@ -4,6 +4,8 @@ import type { SRSCard } from '../types';
 import { useAuth } from '../hooks/useAuth';
 import { useCloudSync } from '../hooks/useCloudSync';
 import { useIAP } from '../hooks/useIAP';
+import { loadExtra, hasExtraFile } from '../data/extraTranslations';
+import { resolveKey } from '../utils/getTranslation';
 import { computeNewBadges, type BadgeDef, type BadgeStats, type EarnedBadge } from '../data/badges';
 
 const LANG_LOCALES: Record<string, string> = {
@@ -30,6 +32,8 @@ export const FREE_LANGS = new Set(['pt', 'pt-BR', 'fr', 'en']);
 interface AppContextType {
   targetLang: string;
   setTargetLang: (l: string) => void;
+  /** False while the saved language's translation file is still loading on first start. */
+  langReady: boolean;
   darkMode: boolean;
   toggleDarkMode: () => void;
   kidsMode: boolean;
@@ -196,9 +200,23 @@ export function AppProvider({ children }: { children: ReactNode }) {
     document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
-  const setTargetLang = useCallback((l: string) => {
-    setTargetLangRaw(l); save('vv-lang', l);
+  // A language with an extra translation file only becomes active once that file is loaded,
+  // so the screens never flash half-translated content.
+  const applyTargetLang = useCallback((l: string) => {
+    loadExtra(resolveKey(l)).then(() => setTargetLangRaw(l));
   }, []);
+
+  const setTargetLang = useCallback((l: string) => {
+    save('vv-lang', l);
+    applyTargetLang(l);
+  }, [applyTargetLang]);
+
+  // First load: wait for the saved language's file before showing the app.
+  const [langReady, setLangReady] = useState(() => !hasExtraFile(resolveKey(load('vv-lang', 'es'))));
+  useEffect(() => {
+    if (langReady) return;
+    loadExtra(resolveKey(targetLang)).then(() => setLangReady(true));
+  }, [langReady, targetLang]);
 
   const toggleDarkMode = useCallback(() => {
     setDarkMode(d => { save('vv-dark', !d); return !d; });
@@ -427,7 +445,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setStreak: (v) => { setStreak(v); save('vv-streak', v); },
     setBestStreak: (v) => { setBestStreak(v); save('vv-best-streak', v); },
     setLastPlayDate: (v) => { setLastPlayDate(v); save('vv-lastplay', v); },
-    setTargetLang: (v) => { setTargetLangRaw(v); save('vv-lang', v); },
+    setTargetLang: (v) => { save('vv-lang', v); applyTargetLang(v); },
     setSeenWords: (v) => { setSeenWords(v); save('vv-seen', [...v]); },
     setFavorites: (v) => { setFavorites(v); save('vv-favs', [...v]); },
     setSrsData: (v) => { setSrsData(v); save('vv-srs', v); },
@@ -502,7 +520,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   return (
     <AppContext.Provider value={{
-      targetLang, setTargetLang,
+      targetLang, setTargetLang, langReady,
       darkMode, toggleDarkMode,
       kidsMode, toggleKidsMode,
       favorites, toggleFavorite, isFavorite,
