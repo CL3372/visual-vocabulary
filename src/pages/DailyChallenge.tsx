@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Flame, ArrowLeft, Star } from 'lucide-react';
-import { WORDS } from '../data/words';
+import { translatedWords } from '../utils/langCoverage';
 import { useApp } from '../context/AppContext';
 import { Confetti } from '../components/Confetti';
 import { useUnsplashImage } from '../hooks/useUnsplash';
@@ -30,15 +30,22 @@ function seedRandom(seed: number) {
   };
 }
 
-function getDailyWords(): { words: Word[]; category: string } {
+function getDailyWords(lang: string): { words: Word[]; category: string } {
   const today = getTodayKey();
   const seed = today.split('-').reduce((a, b) => a * 100 + parseInt(b), 0);
   const rng = seedRandom(seed);
 
   const catIndex = Math.floor(rng() * DAILY_CATEGORIES.length);
-  const category = DAILY_CATEGORIES[catIndex];
+  const langWords = translatedWords(lang);
 
-  const pool = WORDS.filter(w => w.category === category);
+  // Start from today's category; if this language has fewer than 4 words there, take the next
+  // category that has enough (a 4-choice quiz needs at least 4).
+  let category = DAILY_CATEGORIES[catIndex];
+  let pool = langWords.filter(w => w.category === category);
+  for (let i = 1; i < DAILY_CATEGORIES.length && pool.length < 4; i++) {
+    category = DAILY_CATEGORIES[(catIndex + i) % DAILY_CATEGORIES.length];
+    pool = langWords.filter(w => w.category === category);
+  }
   const shuffled = [...pool].sort(() => rng() - 0.5);
   return { words: shuffled.slice(0, TOTAL), category };
 }
@@ -167,7 +174,7 @@ export function DailyChallenge({ onClose }: Props) {
   const todayKey = getTodayKey();
   const completedKey = `vv-daily-${todayKey}`;
 
-  const [{ words, category }] = useState(() => getDailyWords());
+  const [{ words, category }] = useState(() => getDailyWords(targetLang));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
