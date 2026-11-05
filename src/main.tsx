@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { PrivacyPolicy } from './pages/PrivacyPolicy.tsx'
 import { TermsOfService } from './pages/TermsOfService.tsx'
+import { Credits } from './pages/Credits.tsx'
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -17,6 +18,8 @@ if (path === '/privacy') {
   root = <PrivacyPolicy />;
 } else if (path === '/terms') {
   root = <TermsOfService />;
+} else if (path === '/credits') {
+  root = <Credits />;
 } else {
   root = <App />;
 }
