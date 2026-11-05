@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
+import { CATEGORY_GROUPS } from '../data/words';
+import type { Word } from '../types';
+import { useApp } from '../context/AppContext';
+import { translatedWords } from '../utils/langCoverage';
 import type { CategoryGroup } from '../data/words';
 
 const KIDS_CATEGORIES = ['Animals', 'Food', 'Nature', 'Colors', 'Home'];
@@ -14,16 +17,18 @@ const GROUP_TABS: { key: CategoryGroup; emoji: string; label: string }[] = [
 
 interface Props {
   mode: 'quiz' | 'flashcards';
-  onStart: (pool: typeof ALL_WORDS) => void;
+  onStart: (pool: Word[]) => void;
   kidsMode?: boolean;
 }
 
 export function TopicPicker({ mode, onStart, kidsMode }: Props) {
+  const { targetLang } = useApp();
+  const langWords = translatedWords(targetLang);
   const [group, setGroup] = useState<CategoryGroup>('All');
   const [cat, setCat] = useState('All');
 
   if (kidsMode) {
-    const pool = ALL_WORDS.filter(w => KIDS_CATEGORIES.includes(w.category));
+    const pool = langWords.filter(w => KIDS_CATEGORIES.includes(w.category));
     return (
       <div className="flex-1 flex flex-col items-center justify-center px-6 gap-6 text-center">
         <p className="text-6xl">🌈</p>
@@ -43,7 +48,7 @@ export function TopicPicker({ mode, onStart, kidsMode }: Props) {
   }
 
   const subCats = CATEGORY_GROUPS[group];
-  const pool = ALL_WORDS.filter(w => {
+  const pool = langWords.filter(w => {
     if (group !== 'All' && !CATEGORY_GROUPS[group].includes(w.category)) return false;
     if (cat !== 'All' && w.category !== cat) return false;
     return true;
