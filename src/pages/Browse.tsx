@@ -2,6 +2,7 @@ import { useState, useTransition, useMemo, useCallback, useEffect } from 'react'
 import { Search, Heart, LayoutGrid, Grid3x3, List, Lock, Zap } from 'lucide-react';
 import { CATEGORY_GROUPS } from '../data/words';
 import { translatedWords, languageCoverage } from '../utils/langCoverage';
+import { getTranslation } from '../utils/getTranslation';
 import type { CategoryGroup } from '../data/words';
 import { WordCard } from '../components/WordCard';
 import type { ViewMode } from '../components/WordCard';
@@ -165,9 +166,10 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
     return matchCat && (
       w.word.toLowerCase().includes(q) ||
       w.category.toLowerCase().includes(q) ||
+      getTranslation(w, targetLang).toLowerCase().includes(q) ||
       Object.values(w.translations).some(t => t.toLowerCase().includes(q))
     );
-  }), [langWords, kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
+  }), [langWords, targetLang, kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
 
   const handleSelect = useCallback((word: Word) => {
     const isNew = !seenWords.has(word.id);
