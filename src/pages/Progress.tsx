@@ -350,6 +350,8 @@ export function Progress() {
         <a href="/privacy" className="underline" style={{ color: 'var(--text3)' }}>Privacy Policy</a>
         &nbsp;·&nbsp;
         <a href="/terms" className="underline" style={{ color: 'var(--text3)' }}>Terms of Service</a>
+        &nbsp;·&nbsp;
+        <a href="/credits" className="underline" style={{ color: 'var(--text3)' }}>Photo Credits</a>
       </p>
     </div>
     </>
