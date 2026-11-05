@@ -2,7 +2,7 @@ import { useState, useMemo, useRef, useCallback } from 'react';
 // @ts-ignore
 import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import { X } from 'lucide-react';
-import { ALL_WORDS } from '../data/words';
+import { translatedWords } from '../utils/langCoverage';
 import { WordCard } from '../components/WordCard';
 import { WordModal } from '../components/WordModal';
 import { useApp } from '../context/AppContext';
@@ -157,7 +157,7 @@ const PINS: Pin[] = [
 interface Tooltip { label: string; x: number; y: number }
 
 export function MapBrowse() {
-  const { kidsMode, markWordSeen, darkMode } = useApp();
+  const { kidsMode, markWordSeen, darkMode, targetLang } = useApp();
   const [selectedId, setSelectedId]   = useState<string | null>(null);
   const [modalWord, setModalWord]     = useState<Word | null>(null);
   const [tooltip, setTooltip]         = useState<Tooltip | null>(null);
@@ -261,12 +261,12 @@ export function MapBrowse() {
 
   const wordsByCategory = useMemo(() => {
     const map = new Map<string, Word[]>();
-    for (const w of ALL_WORDS) {
+    for (const w of translatedWords(targetLang)) {
       if (!map.has(w.category)) map.set(w.category, []);
       map.get(w.category)!.push(w);
     }
     return map;
-  }, []);
+  }, [targetLang]);
 
   const selectedPin   = selectedId ? PINS.find(p => p.id === selectedId) : null;
   const selectedWords = selectedPin ? (wordsByCategory.get(selectedPin.category) ?? []) : [];
