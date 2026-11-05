@@ -32,7 +32,7 @@ const TABS: { id: AppMode; label: string; icon: typeof BookOpen; emoji: string; 
 ];
 
 function Inner() {
-  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, streak, srsDueCount, studiedToday, bestStreak, user, signOut, newBadge, clearNewBadge, earnedBadges } = useApp();
+  const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, langReady, streak, srsDueCount, studiedToday, bestStreak, user, signOut, newBadge, clearNewBadge, earnedBadges } = useApp();
   const handleBadgeDone = useCallback(() => clearNewBadge(), [clearNewBadge]);
   const [mode, setMode] = useState<AppMode>('browse');
   const [showLang, setShowLang] = useState(false);
@@ -52,6 +52,9 @@ function Inner() {
     }
     return param ?? '';
   });
+
+  // Wait (a moment) for the saved language's translation file before showing any words.
+  if (!langReady) return <div className="min-h-screen" style={{ background: 'var(--bg)' }} />;
 
   if (!onboarded) {
     return (
