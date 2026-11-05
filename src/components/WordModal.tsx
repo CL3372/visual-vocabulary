@@ -6,7 +6,9 @@ import { LANGUAGES } from '../data/languages';
 import { useApp } from '../context/AppContext';
 import { getColorSwatch } from '../utils/colorSwatches';
 import { generateShareCard, shareWord } from '../utils/shareCard';
-import { getTranslation, getTranslationOrDash } from '../utils/getTranslation';
+import { getTranslation, getTranslationOrDash, resolveKey } from '../utils/getTranslation';
+import { loadExtra, loadAllExtra } from '../data/extraTranslations';
+import { useExtraVersion } from '../utils/useExtraVersion';
 import { nameVoice } from './WordCard';
 
 interface Props { word: Word; onClose: () => void }
@@ -19,11 +21,17 @@ export function WordModal({ word, onClose }: Props) {
   const { imageUrl, loading, handleError } = useUnsplashImage(colorSwatch ? '' : word.unsplashQuery);
   const { speak, targetLang, isFavorite, toggleFavorite } = useApp();
 
+  useExtraVersion(); // re-render when another language's file finishes loading
   const [view, setView] = useState<'detail' | 'share'>('detail');
   const [showAllLangs, setShowAllLangs] = useState(false);
   const [shareDataUrl, setShareDataUrl] = useState<string | null>(null);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [shareState, setShareState] = useState<'idle' | 'loading' | 'done'>('idle');
+
+  // The comparison row (and the "all languages" view) show languages other than the one being
+  // learned, so fetch those languages' extra files too.
+  useEffect(() => { COMPARE_LANGS.forEach(c => { loadExtra(resolveKey(c)); }); }, []);
+  useEffect(() => { if (showAllLangs) loadAllExtra(); }, [showAllLangs]);
 
   const lang = LANGUAGES.find(l => l.code === targetLang) ?? LANGUAGES[1];
   const translation = getTranslation(word, targetLang);
