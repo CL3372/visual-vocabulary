@@ -1,6 +1,7 @@
-import { useState, useTransition, useMemo, useCallback } from 'react';
+import { useState, useTransition, useMemo, useCallback, useEffect } from 'react';
 import { Search, Heart, LayoutGrid, Grid3x3, List, Lock, Zap } from 'lucide-react';
-import { ALL_WORDS, CATEGORY_GROUPS } from '../data/words';
+import { CATEGORY_GROUPS } from '../data/words';
+import { translatedWords, languageCoverage } from '../utils/langCoverage';
 import type { CategoryGroup } from '../data/words';
 import { WordCard } from '../components/WordCard';
 import type { ViewMode } from '../components/WordCard';
@@ -9,6 +10,7 @@ import { WordOfDay } from '../components/WordOfDay';
 import { CuisineOfTheWeek } from '../components/CuisineOfTheWeek';
 import { useApp } from '../context/AppContext';
 import { UpgradeModal } from '../components/UpgradeModal';
+import { LANGUAGES } from '../data/languages';
 import type { Word } from '../types';
 
 const KIDS_CATEGORIES = ['Animals', 'Fruits', 'Vegetables', 'Dairy & Eggs', 'Desserts', 'Nature', 'Colors', 'Home'];
@@ -99,7 +101,9 @@ function getCategoryGroup(cat: string): CategoryGroup {
 }
 
 export function Browse({ initialCategory }: { initialCategory?: string }) {
-  const { kidsMode, favorites, markWordSeen, newWordsToday, dailyWordLimit, isPro, seenWords } = useApp();
+  const { kidsMode, favorites, markWordSeen, newWordsToday, dailyWordLimit, isPro, seenWords, targetLang } = useApp();
+  const langWords = useMemo(() => translatedWords(targetLang), [targetLang]);
+  const coverage = useMemo(() => languageCoverage(targetLang), [targetLang]);
   const [showUpgrade, setShowUpgrade] = useState(false);
   const [, startTransition] = useTransition();
   const [search, setSearch] = useState('');
@@ -139,14 +143,19 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   // Count per category (for chip badges)
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
-    ALL_WORDS.forEach(w => {
+    langWords.forEach(w => {
       if (kidsMode && !KIDS_CATEGORIES.includes(w.category)) return;
       counts[w.category] = (counts[w.category] || 0) + 1;
     });
     return counts;
-  }, [kidsMode]);
+  }, [kidsMode, langWords]);
 
-  const filtered = useMemo(() => ALL_WORDS.filter(w => {
+  // If the chosen language has no words in the open category, go back to All.
+  useEffect(() => {
+    if (activeCategory !== 'All' && !categoryCounts[activeCategory]) setActiveCategory('All');
+  }, [activeCategory, categoryCounts]);
+
+  const filtered = useMemo(() => langWords.filter(w => {
     if (kidsMode && !KIDS_CATEGORIES.includes(w.category)) return false;
     if (showFavs && !favorites.has(w.id)) return false;
     if (activeGroup !== 'All' && !CATEGORY_GROUPS[activeGroup].includes(w.category)) return false;
@@ -158,7 +167,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
       w.category.toLowerCase().includes(q) ||
       Object.values(w.translations).some(t => t.toLowerCase().includes(q))
     );
-  }), [kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
+  }), [langWords, kidsMode, showFavs, favorites, activeGroup, activeCategory, search]);
 
   const handleSelect = useCallback((word: Word) => {
     const isNew = !seenWords.has(word.id);
@@ -187,6 +196,15 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
   return (
     <div className="flex-1 flex flex-col">
       <WordOfDay />
+
+      {!coverage.complete && targetLang !== 'en' && (
+        <div className="mx-4 mt-3 px-4 py-3 rounded-2xl text-sm"
+          style={{ background: 'var(--accent-bg)', border: '1px solid var(--accent)', color: 'var(--accent-text)' }}>
+          <span className="font-bold">Beta · </span>
+          {LANGUAGES.find(l => l.code === targetLang)?.label ?? targetLang} has {coverage.have.toLocaleString()} of {coverage.total.toLocaleString()} words so far.
+          More are being added — words not translated yet are hidden.
+        </div>
+      )}
 
       {!kidsMode && !search && activeGroup === 'All' && activeCategory === 'All' && !showFavs && (
         <CuisineOfTheWeek
@@ -273,7 +291,7 @@ export function Browse({ initialCategory }: { initialCategory?: string }) {
             </button>
           )}
 
-          {['All', ...subCategories].map(cat => {
+          {['All', ...subCategories].filter(cat => cat === 'All' || categoryCounts[cat]).map(cat => {
             const isActive = activeCategory === cat;
             const count = cat === 'All' ? null : categoryCounts[cat];
             return (
