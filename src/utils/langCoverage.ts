@@ -1,8 +1,12 @@
 import { ALL_WORDS } from '../data/words';
-import { hasTranslation } from './getTranslation';
+import { hasTranslation, resolveKey } from './getTranslation';
+import { getExtra, hasExtraFile, subscribeExtra, EXTRA_WORD_COUNT } from '../data/extraTranslations';
 import type { Word } from '../types';
 
 const wordCache = new Map<string, Word[]>();
+
+// A newly loaded extra file changes which words exist, so forget the cached lists.
+subscribeExtra(() => wordCache.clear());
 
 /** Every word that has a real translation in the given language (cached per language). */
 export function translatedWords(langCode: string): Word[] {
@@ -19,7 +23,11 @@ export interface Coverage { have: number; total: number; pct: number; complete: 
 /** How much of the library exists in a language. "complete" allows for small gaps (90%+). */
 export function languageCoverage(langCode: string): Coverage {
   const total = ALL_WORDS.length;
-  const have = translatedWords(langCode).length;
+  const key = resolveKey(langCode);
+  // Languages with an extra file are counted from the stored total until the file is loaded.
+  const have = hasExtraFile(key) && !getExtra(key)
+    ? EXTRA_WORD_COUNT[key] ?? translatedWords(langCode).length
+    : translatedWords(langCode).length;
   const pct = Math.round((have / total) * 100);
   return { have, total, pct, complete: pct >= 90 };
 }
