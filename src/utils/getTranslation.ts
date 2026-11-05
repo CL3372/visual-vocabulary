@@ -1,5 +1,5 @@
 import { LANGUAGES } from '../data/languages';
-import { EXTRA_TRANSLATIONS } from '../data/extraTranslations';
+import { getExtra } from '../data/extraTranslations';
 import type { Word } from '../types';
 
 /** Resolves the correct translation key for a language code (handles pt-BR → pt-br). */
@@ -10,7 +10,7 @@ export function resolveKey(langCode: string): string {
 
 /** Looks up the value stored for a word in the extra translation files (if any). */
 function extraTranslation(word: Word, key: string): string | undefined {
-  return EXTRA_TRANSLATIONS[key]?.[word.category]?.[word.word];
+  return getExtra(key)?.[word.category]?.[word.word];
 }
 
 /** The stored translation for a word, or an empty string when there is none. */
