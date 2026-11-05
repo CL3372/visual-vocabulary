@@ -4,6 +4,7 @@ import { LANGUAGES } from '../data/languages';
 import { useApp } from '../context/AppContext';
 import { FREE_LANGS } from '../context/AppContext';
 import { UpgradeModal } from './UpgradeModal';
+import { languageCoverage } from '../utils/langCoverage';
 
 interface Props {
   value: string;
@@ -64,6 +65,7 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
             {LANGUAGES.map(lang => {
               const active  = lang.code === value;
               const locked  = !isPro && !FREE_LANGS.has(lang.code);
+              const cov     = languageCoverage(lang.code);
               return (
                 <button
                   key={lang.code}
@@ -83,6 +85,11 @@ export function LanguagePicker({ value, onChange, onClose }: Props) {
                     <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>
                       {lang.label}
                     </p>
+                    {!cov.complete && lang.code !== 'en' && (
+                      <p className="text-[10px] mt-0.5 font-semibold" style={{ color: 'var(--accent)' }}>
+                        Beta · {cov.have.toLocaleString()} words
+                      </p>
+                    )}
                   </div>
                   {active  && <Check className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--accent)' }} />}
                   {locked  && <Lock className="w-3.5 h-3.5 flex-shrink-0" style={{ color: 'var(--text3)' }} />}
