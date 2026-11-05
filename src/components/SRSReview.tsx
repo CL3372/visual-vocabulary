@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import { ArrowLeft, Brain, Bell, BellOff } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { ALL_WORDS } from '../data/words';
+import { translatedWords } from '../utils/langCoverage';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { useNotifications } from '../hooks/useNotifications';
 import type { Word } from '../types';
@@ -329,7 +329,7 @@ function SessionComplete({ reviewed, again, onBack }: { reviewed: number; again:
 interface Props { onBack: () => void }
 
 export function SRSReview({ onBack }: Props) {
-  const { srsData, seenWords, rateCard, isPro } = useApp();
+  const { srsData, seenWords, rateCard, isPro, targetLang } = useApp();
 
   // Build the session queue once on mount
   const initialQueue = useMemo(() => {
@@ -337,7 +337,7 @@ export function SRSReview({ onBack }: Props) {
     const due: Word[] = [];
     const newCards: Word[] = [];
 
-    for (const word of ALL_WORDS) {
+    for (const word of translatedWords(targetLang)) {
       if (!seenWords.has(word.id)) continue;
       const card = srsData[word.id];
       if (!card) newCards.push(word);
