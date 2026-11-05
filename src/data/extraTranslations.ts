@@ -1,4 +1,5 @@
 import { NL } from './extra/nl';
+import { HI } from './extra/hi';
 
 /**
  * Extra translations that fill gaps in the per-category word files.
@@ -8,4 +9,5 @@ import { NL } from './extra/nl';
  */
 export const EXTRA_TRANSLATIONS: Record<string, Record<string, Record<string, string>>> = {
   nl: NL,
+  hi: HI,
 };
