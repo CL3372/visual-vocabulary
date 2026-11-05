@@ -12,6 +12,7 @@ type Overlay = Record<string, Record<string, string>>;
 const LOADERS: Record<string, () => Promise<Overlay>> = {
   nl: () => import('./extra/nl').then(m => m.NL),
   hi: () => import('./extra/hi').then(m => m.HI),
+  ru: () => import('./extra/ru').then(m => m.RU),
 };
 
 /**
@@ -21,6 +22,7 @@ const LOADERS: Record<string, () => Promise<Overlay>> = {
 export const EXTRA_WORD_COUNT: Record<string, number> = {
   nl: 3217,
   hi: 3217,
+  ru: 3217,
 };
 
 const loaded = new Map<string, Overlay>();
