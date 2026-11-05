@@ -272,6 +272,11 @@ function Inner() {
         </a>
       </div>
 
+      {/* Photo credits */}
+      <div className="text-center pb-3 text-xs" style={{ background: 'var(--surface)', color: 'var(--text3)' }}>
+        <a href="/credits" className="underline" style={{ color: 'var(--text3)' }}>Photo Credits</a>
+      </div>
+
       {/* Streak modal */}
       {showStreak && (
         <StreakModal
