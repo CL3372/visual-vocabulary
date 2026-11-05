@@ -1,18 +1,19 @@
 import { Volume2 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { ALL_WORDS } from '../data/words';
+import { translatedWords } from '../utils/langCoverage';
 import { useUnsplashImage } from '../hooks/useUnsplash';
 import { LANGUAGES } from '../data/languages';
 import { getTranslation } from '../utils/getTranslation';
 
-function getTodayWord() {
+function getTodayWord(lang: string) {
   const day = Math.floor(Date.now() / 86400000);
-  return ALL_WORDS[day % ALL_WORDS.length];
+  const pool = translatedWords(lang);
+  return pool[day % pool.length];
 }
 
 export function WordOfDay() {
   const { targetLang, speak } = useApp();
-  const word = getTodayWord();
+  const word = getTodayWord(targetLang);
   const { imageUrl, loading, handleError } = useUnsplashImage(word.unsplashQuery);
   const translation = getTranslation(word, targetLang);
   const langLabel = LANGUAGES.find(l => l.code === targetLang)?.flag ?? '';
