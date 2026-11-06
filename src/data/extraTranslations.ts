@@ -39,6 +39,7 @@ const LOADERS: Record<string, () => Promise<Overlay>> = {
   ur: () => import('./extra/ur').then(m => m.UR),
   sw: () => import('./extra/sw').then(m => m.SW),
   vi: () => import('./extra/vi').then(m => m.VI),
+  th: () => import('./extra/th').then(m => m.TH),
 };
 
 /**
@@ -75,6 +76,7 @@ export const EXTRA_WORD_COUNT: Record<string, number> = {
   ur: 3217,
   sw: 3217,
   vi: 3217,
+  th: 3217,
 };
 
 const loaded = new Map<string, Overlay>();
