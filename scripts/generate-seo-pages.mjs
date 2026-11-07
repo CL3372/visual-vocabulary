@@ -18,6 +18,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
 import { loadWords, loadOverlays, translationOf } from './seo-data.mjs';
+import { loadPhotos, pickGallery } from './seo-photos.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -276,6 +277,16 @@ function formatNumber(n) { return n.toLocaleString('en-GB'); }
 
 const WORDS = loadWords(ROOT);
 const OVERLAYS = loadOverlays(ROOT);
+const PHOTO_STORE = loadPhotos(ROOT);
+const GALLERY_CACHE = new Map();
+/** The photos shown on a topic's pages (same set on the English page and every language page). */
+function galleryOf(topic) {
+  if (!GALLERY_CACHE.has(topic.slug ?? topic.name)) {
+    const g = pickGallery(topic.words, PHOTO_STORE, 6);
+    GALLERY_CACHE.set(topic.slug ?? topic.name, g.length >= 3 ? g : []);
+  }
+  return GALLERY_CACHE.get(topic.slug ?? topic.name);
+}
 
 if (WORDS.length < 3000) {
   console.error(`✗ Only ${WORDS.length} words could be read from src/data (expected 3,000+). Not generating SEO pages from partial data.`);
@@ -363,6 +374,15 @@ function css(color) {
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #0f172a; min-height: 100vh; }
     a { color: inherit; text-decoration: none; }
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.7rem; margin: 0 0 2rem; }
+    @media (min-width: 640px) { .gallery { grid-template-columns: repeat(3, 1fr); gap: 0.9rem; } }
+    .gallery figure { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+    .gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: #e2e8f0; }
+    .gallery figcaption { padding: 0.5rem 0.65rem 0.65rem; font-size: 0.74rem; overflow-wrap: anywhere; color: #64748b; line-height: 1.4; }
+    .gallery figcaption strong { display: block; font-size: 0.95rem; color: #0f172a; margin-bottom: 0.15rem; }
+    .gallery figcaption a { color: #475569; text-decoration: underline; }
+    .gallery-note { font-size: 0.78rem; color: #64748b; margin: -1.2rem 0 2rem; }
+    .gallery-note a { color: ${color.accent}; text-decoration: underline; }
     .blurb { max-width: 46rem; margin: 0 0 1.1rem; color: #475569; line-height: 1.6; }
     .nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 0 1.5rem; height: 56px; display: flex; align-items: center; justify-content: space-between; }
     .nav-logo { font-size: 1.1rem; font-weight: 700; color: #4f46e5; }
@@ -567,6 +587,35 @@ function sampleRows(topic, rows, k) {
 
 // ─── Topic page: /learn/{topic} ──────────────────────────────────────────────
 
+/** Photo gallery with visible author, licence and source for every picture. `label(p)` gives the caption words. */
+function galleryHtml(topic, heading, label) {
+  const items = galleryOf(topic).map(p => ({ p, cap: label(p) })).filter(x => x.cap);
+  if (items.length < 3) return '';
+  const figs = items.map(({ p, cap }) => `    <figure>
+      <img src="${htmlEncode(p.src)}" alt="${htmlEncode(cap.alt)}" width="500" height="375" loading="lazy" decoding="async">
+      <figcaption><strong>${htmlEncode(cap.main)}</strong>${cap.sub ? htmlEncode(cap.sub) + '<br>' : ''}Photo: ${htmlEncode(p.author)} · <a href="${htmlEncode(p.licenseUrl)}" rel="license noopener" target="_blank">${htmlEncode(p.license)}</a> · <a href="${htmlEncode(p.pageUrl)}" rel="noopener" target="_blank">Source</a></figcaption>
+    </figure>`).join('\n');
+  return `
+  <h2 class="section-title">📸 ${htmlEncode(heading)}</h2>
+  <div class="gallery">
+${figs}
+  </div>
+  <p class="gallery-note">Photos from Wikimedia Commons, shown under their open licences. <a href="${SITE_URL}/credits">All photo credits</a>.</p>
+`;
+}
+
+function imageLd(topic, label) {
+  return galleryOf(topic).filter(p => label(p)).map(p => ({
+    '@type': 'ImageObject',
+    contentUrl: p.src,
+    name: label(p).alt,
+    creditText: `${p.author}, ${p.license}`,
+    creator: { '@type': 'Person', name: p.author },
+    license: p.licenseUrl,
+    acquireLicensePage: p.pageUrl,
+  }));
+}
+
 function generateTopicPage(topic) {
   const n = topic.words.length;
   const url = topicUrl(topic);
@@ -599,6 +648,10 @@ function generateTopicPage(topic) {
 
   const trail = [{ name: 'LexPix', url: SITE_URL }, { name: 'Learn', url: LEARN_INDEX_URL }, { name: topic.name, url }];
 
+  const topicLabel = p => ({ main: p.word, sub: '', alt: `${p.word} (${topic.name} vocabulary)` });
+  const gallery = galleryHtml(topic, `${topic.name} in photos`, topicLabel);
+  const images = imageLd(topic, topicLabel);
+
   const langLinks = FULL_BUILD && !topic.noLang ? `
   <h2 class="section-title">🗣 ${htmlEncode(topic.name)} in your language</h2>
   <div class="lang-grid">
@@ -619,6 +672,7 @@ ${PAGE_LANGUAGES.map(l => `    <a class="lang-chip" href="${langTopicUrl(l, topi
       inLanguage: 'en',
       teaches: topic.name,
       numberOfItems: n,
+      ...(images.length ? { image: images } : {}),
     },
     breadcrumbLd(trail),
     {
@@ -649,6 +703,7 @@ ${crumbsHtml(trail)}
 
 <div class="content">
 
+${gallery}
   <h2 class="section-title">📖 ${htmlEncode(topic.name)} words and translations</h2>
   ${topic.blurb ? `<p class="blurb">${htmlEncode(topic.blurb)}</p>` : ''}
   <div class="table-wrap">
@@ -735,6 +790,13 @@ function generateLangTopicPage(topic, lang, rows) {
   const otherLangs = PAGE_LANGUAGES.filter(l => l.key !== lang.key);
   const related = getRelated(topic, true).slice(0, 6);
 
+  const trByEn = new Map(rows.map(r => [r.en, r.tr]));
+  const langLabel = p => {
+    const tr = trByEn.get(p.word);
+    return tr ? { main: tr, sub: p.word, alt: `${tr} (${p.word}) in ${lang.label}` } : null;
+  };
+  const gallery = galleryHtml(topic, `${topic.name} in ${lang.label}, with photos`, langLabel);
+
   const noteLine = lang.note ? `<p class="section-note">${lang.label} here means ${lang.note}.</p>` : '';
 
   const body = `
@@ -755,6 +817,7 @@ ${crumbsHtml(trail)}
 
 <div class="content">
 
+${gallery}
   <h2 class="section-title">📖 ${htmlEncode(topic.name)} in ${lang.label}: full word list</h2>
   ${topic.blurb ? `<p class="blurb">${htmlEncode(topic.blurb)}</p>` : ''}
   ${noteLine}
