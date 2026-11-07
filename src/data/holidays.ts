@@ -41,5 +41,5 @@ export const HOLIDAY_WORDS: Word[] = [
 
   // Other / Multi-faith
   { id: 'h29', word: 'Nowruz',          translations: { es: 'Nowruz',          pt: 'Nowruz', 'pt-br': 'Nowruz',          fr: 'Norouz',            de: 'Nowruz',         it: 'Nowruz',           ja: 'ノウルーズ',       zh: '诺鲁孜节', ko: '노루즈',         ar: 'نوروز'             }, category: 'Holidays', unsplashQuery: 'nowruz haft seen table spring flowers goldfish candles persian new year' },
-  { id: 'h30', word: 'Vaisakhi',        translations: { es: 'Vaisakhi',        pt: 'Vaisakhi', 'pt-br': 'Vaisakhi',        fr: 'Vaisakhi',          de: 'Vaisakhi',       it: 'Vaisakhi',         ja: 'バイサーキー',     zh: '丰收节',   ko: '바이사키',       ar: 'عيد فيساخي'        }, category: 'Holidays', unsplashQuery: 'golden temple amritsar sikh punjab celebration parade colourful' },
+  { id: 'h30', word: 'Vaisakhi',        translations: { es: 'Vaisakhi',        pt: 'Vaisakhi', 'pt-br': 'Vaisakhi',        fr: 'Vaisakhi',          de: 'Vaisakhi',       it: 'Vaisakhi',         ja: 'バイサーキー',     zh: '瓦萨基节',   ko: '바이사키',       ar: 'عيد فيساخي'        }, category: 'Holidays', unsplashQuery: 'golden temple amritsar sikh punjab celebration parade colourful' },
 ];
