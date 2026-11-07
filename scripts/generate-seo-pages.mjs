@@ -83,12 +83,77 @@ const CATEGORY_DATA = [
   { name: 'Condiments', group: 'Ingredients', emoji: '🫙', featured: ['mustard', 'mayonnaise', 'sriracha', 'tahini', 'ketchup', 'soy sauce', 'fish sauce', 'hoisin'] },
   { name: 'Nuts & Legumes', group: 'Ingredients', emoji: '🥜', featured: ['almond', 'lentil', 'chickpea', 'cashew', 'walnut', 'peanut', 'pistachio', 'hazelnut'] },
   { name: 'Wine', group: 'Wine', emoji: '🍷', featured: ['Chardonnay', 'Cabernet Sauvignon', 'Pinot Noir', 'Sauvignon Blanc', 'Merlot', 'Riesling', 'Syrah', 'Rosé'] },
+  // ── Added in the second SEO round ──
+  { name: 'Government & Admin', group: 'Moving', emoji: '🛂', blurb: 'The words you need for paperwork when you move abroad: visas, residence permits, registrations and appointments at the town hall.', featured: ['passport', 'visa', 'residence permit', 'driving licence', 'embassy', 'city hall', 'form', 'appointment'] },
+  { name: 'Banking', group: 'Moving', emoji: '🏦', blurb: 'Words for opening an account, reading a statement, using a cash machine and asking about transfers and loans.', featured: ['bank', 'account', 'card', 'ATM', 'transfer', 'mortgage', 'loan', 'savings'] },
+  { name: 'At the Doctor', group: 'Moving', emoji: '🩺', blurb: 'Words for a visit to the doctor or pharmacy: describing symptoms, asking for a prescription and understanding the answer.', featured: ['doctor', 'hospital', 'nurse', 'prescription', 'pharmacy', 'fever', 'allergy', 'ambulance'] },
+  { name: 'Emergency', group: 'Moving', emoji: '🚨', blurb: 'Words to call for help and describe what has happened in an emergency. Worth learning before you need them.', featured: ['help', 'police', 'fire brigade', 'ambulance', 'fire', 'accident', 'first aid', 'lost'] },
+  { name: 'Renting a Home', group: 'Moving', emoji: '🔑', blurb: 'Words for finding a flat, reading a lease and talking to a landlord about rent, deposits and bills.', featured: ['landlord', 'tenant', 'lease', 'rent', 'deposit', 'utilities', 'furnished', 'flat'] },
+  { name: 'Work & Jobs', group: 'Moving', emoji: '💼', blurb: 'Words for looking for work and starting a job abroad: CVs, interviews, contracts, salary and time off.', featured: ['CV', 'interview', 'contract', 'salary', 'payslip', 'colleague', 'manager', 'sick leave'] },
+  { name: 'Supermarket', group: 'Moving', emoji: '🛒', blurb: 'Words you will see and hear while shopping for groceries: aisles, checkouts, receipts, discounts and expiry dates.', featured: ['trolley', 'basket', 'aisle', 'checkout', 'receipt', 'discount', 'expiry date', 'queue'] },
+  { name: 'Travel Essentials', group: 'Moving', emoji: '✈️', blurb: 'Words for airports, hotels and getting around when you travel.', featured: ['airport', 'boarding pass', 'luggage', 'customs', 'hotel', 'ticket', 'map', 'currency'] },
+  { name: 'Body Parts', group: 'Language', emoji: '🫀', dataCats: ['Body'], featured: ['hand', 'eye', 'nose', 'mouth', 'ear', 'heart', 'foot', 'arm'] },
+  { name: 'Bathroom', group: 'Language', emoji: '🚿', featured: ['toilet', 'sink', 'shower', 'towel', 'toothbrush', 'soap', 'shampoo', 'toothpaste'] },
+  { name: 'Kitchen', group: 'Language', emoji: '🍳', featured: ['knife', 'fork', 'spoon', 'bowl', 'pan', 'oven', 'fridge', 'kettle'] },
+  { name: 'Car', group: 'Language', emoji: '🔧', featured: ['steering wheel', 'seat belt', 'headlights', 'tyre', 'engine', 'windscreen', 'horn', 'number plate'] },
+  { name: 'Plants', group: 'Language', emoji: '🌷', featured: ['rose', 'sunflower', 'cactus', 'tulip', 'lavender', 'bamboo', 'orchid', 'daisy'] },
+  { name: 'Bread & Grains', group: 'Ingredients', emoji: '🍞', featured: ['bread', 'rice', 'pasta', 'noodles', 'flour', 'oats', 'quinoa', 'bagel'] },
+  { name: 'Dairy & Eggs', group: 'Ingredients', emoji: '🧀', featured: ['egg', 'milk', 'cheese', 'butter', 'yogurt', 'cream', 'mozzarella', 'parmesan'] },
+  { name: 'Dishes', group: 'Ingredients', emoji: '🍽️', featured: ['pizza', 'soup', 'salad', 'sandwich', 'paella', 'stew', 'meatball', 'toast'] },
+  { name: 'Irish Cuisine', group: 'Cuisine', emoji: '🇮🇪', noLang: true, featured: ['Irish Stew', 'Soda Bread', 'Colcannon', 'Boxty'] },
+  { name: 'Australian Cuisine', group: 'Cuisine', emoji: '🇦🇺', noLang: true, featured: ['Meat Pie', 'Lamington', 'Pavlova', 'Sausage Roll'] },
+  { name: 'Romanian Cuisine', group: 'Cuisine', emoji: '🇷🇴', noLang: true, featured: ['Sarmale', 'Mămăligă', 'Cozonac', 'Papanași'] },
+  { name: 'Balkan Cuisine', group: 'Cuisine', emoji: '🥘', noLang: true, featured: ['Ćevapi', 'Burek', 'Ajvar', 'Sarma'] },
+  { name: 'Bulgarian Cuisine', group: 'Cuisine', emoji: '🇧🇬', noLang: true, featured: ['Banitsa', 'Shopska Salad', 'Tarator', 'Kebapche'] },
+  { name: 'Hungarian Cuisine', group: 'Cuisine', emoji: '🇭🇺', noLang: true, featured: ['Gulyás', 'Lángos', 'Pörkölt', 'Kürtőskalács'] },
+  { name: 'Swedish Cuisine', group: 'Cuisine', emoji: '🇸🇪', noLang: true, featured: ['Köttbullar', 'Smörgåsbord', 'Gravlax', 'Kanelbulle'] },
+  { name: 'New Zealand Cuisine', group: 'Cuisine', emoji: '🇳🇿', noLang: true, featured: ['Hāngī', 'Pāua', 'Whitebait Fritters', 'Hokey Pokey Ice Cream'] },
+  { name: 'Ethiopian Cuisine', group: 'Cuisine', emoji: '🇪🇹', noLang: true, featured: ['Injera', 'Doro Wat', 'Tibs', 'Kitfo'] },
+  { name: 'Russian Cuisine', group: 'Cuisine', emoji: '🇷🇺', noLang: true, featured: ['Pelmeni', 'Beef Stroganoff', 'Blini', 'Olivier Salad'] },
+  { name: 'Tunisian Cuisine', group: 'Cuisine', emoji: '🇹🇳', noLang: true, featured: ['Harissa', 'Brik', 'Couscous Tunisien', 'Merguez'] },
+  { name: 'Indonesian Cuisine', group: 'Cuisine', emoji: '🇮🇩', noLang: true, featured: ['Nasi Goreng', 'Rendang', 'Satay', 'Gado-Gado'] },
+  { name: 'Czech Cuisine', group: 'Cuisine', emoji: '🇨🇿', noLang: true, featured: ['Svíčková', 'Trdelník', 'Guláš', 'Knedlíky'] },
+  { name: 'Ukrainian Cuisine', group: 'Cuisine', emoji: '🇺🇦', noLang: true, featured: ['Borscht', 'Varenyky', 'Chicken Kyiv', 'Holubtsi'] },
+  { name: 'Polish Cuisine', group: 'Cuisine', emoji: '🇵🇱', noLang: true, featured: ['Pierogi', 'Bigos', 'Żurek', 'Kiełbasa'] },
+  { name: 'Canadian Cuisine', group: 'Cuisine', emoji: '🇨🇦', noLang: true, featured: ['Poutine', 'Butter Tarts', 'Nanaimo Bars', 'Tourtière'] },
+  { name: 'Peruvian Cuisine', group: 'Cuisine', emoji: '🇵🇪', noLang: true, featured: ['Ceviche', 'Lomo Saltado', 'Pisco Sour', 'Anticucho'] },
+  { name: 'Egyptian Cuisine', group: 'Cuisine', emoji: '🇪🇬', noLang: true, featured: ['Koshari', 'Ful Medames', 'Om Ali', 'Basbousa'] },
+  { name: 'Nigerian Cuisine', group: 'Cuisine', emoji: '🇳🇬', noLang: true, featured: ['Jollof Rice', 'Suya', 'Egusi Soup', 'Puff Puff'] },
+  { name: 'Ghanaian Cuisine', group: 'Cuisine', emoji: '🇬🇭', noLang: true, featured: ['Jollof Rice', 'Fufu', 'Waakye', 'Kelewele'] },
+  { name: 'East African Cuisine', group: 'Cuisine', emoji: '🌍', noLang: true, featured: ['Ugali', 'Nyama Choma', 'Pilau', 'Mandazi'] },
+  { name: 'South African Cuisine', group: 'Cuisine', emoji: '🇿🇦', noLang: true, featured: ['Boerewors', 'Biltong', 'Bobotie', 'Bunny Chow'] },
+  { name: 'Baltic Cuisine', group: 'Cuisine', emoji: '🌲', noLang: true, featured: ['Black Bread', 'Cepelinai', 'Kvass', 'Kama'] },
+  { name: 'Belgian Cuisine', group: 'Cuisine', emoji: '🇧🇪', noLang: true, featured: ['Moules-Frites', 'Belgian Waffle', 'Belgian Chocolate', 'Speculoos'] },
+  { name: 'Georgian Cuisine', group: 'Cuisine', emoji: '🇬🇪', noLang: true, featured: ['Khachapuri', 'Khinkali', 'Churchkhela', 'Satsivi'] },
+  { name: 'Norwegian Cuisine', group: 'Cuisine', emoji: '🇳🇴', noLang: true, featured: ['Lutefisk', 'Lefse', 'Brunost', 'Fårikål'] },
+  { name: 'Iranian Cuisine', group: 'Cuisine', emoji: '🇮🇷', noLang: true, featured: ['Ghormeh Sabzi', 'Fesenjan', 'Tahdig', 'Persian Tea'] },
+  { name: 'Malaysian Cuisine', group: 'Cuisine', emoji: '🇲🇾', noLang: true, featured: ['Nasi Lemak', 'Laksa', 'Roti Canai', 'Teh Tarik'] },
+  { name: 'Argentine Cuisine', group: 'Cuisine', emoji: '🇦🇷', noLang: true, featured: ['Asado', 'Empanada', 'Chimichurri', 'Dulce de Leche'] },
+  { name: 'Armenian Cuisine', group: 'Cuisine', emoji: '🇦🇲', noLang: true, featured: ['Lavash', 'Dolma', 'Khorovats', 'Basturma'] },
+  { name: 'Austrian Cuisine', group: 'Cuisine', emoji: '🇦🇹', noLang: true, featured: ['Wiener Schnitzel', 'Sachertorte', 'Apfelstrudel', 'Kaiserschmarrn'] },
+  { name: 'Danish Cuisine', group: 'Cuisine', emoji: '🇩🇰', noLang: true, featured: ['Smørrebrød', 'Frikadeller', 'Æbleskiver', 'Rugbrød'] },
+  { name: 'Dutch Cuisine', group: 'Cuisine', emoji: '🇳🇱', noLang: true, featured: ['Stroopwafel', 'Bitterballen', 'Poffertjes', 'Stamppot'] },
+  { name: 'Icelandic Cuisine', group: 'Cuisine', emoji: '🇮🇸', noLang: true, featured: ['Skyr', 'Hákarl', 'Kleinur', 'Pylsur'] },
+  { name: 'Algerian Cuisine', group: 'Cuisine', emoji: '🇩🇿', noLang: true, featured: ['Rechta', 'Bourek', 'Makrout', 'Chakhchoukha'] },
+  { name: 'Senegalese Cuisine', group: 'Cuisine', emoji: '🇸🇳', noLang: true, featured: ['Thiéboudienne', 'Yassa Poulet', 'Mafé', 'Bissap'] },
+  { name: 'Alaskan Cuisine', group: 'Cuisine', emoji: '🏔️', noLang: true, featured: ['King Crab', 'Halibut', 'Akutaq', 'Moose Stew'] },
+  { name: 'Filipino Cuisine', group: 'Cuisine', emoji: '🇵🇭', noLang: true, featured: ['Adobo', 'Lumpia', 'Sinigang', 'Halo-Halo'] },
+  { name: 'Jamaican Cuisine', group: 'Cuisine', emoji: '🇯🇲', noLang: true, featured: ['Jerk Chicken', 'Ackee and Saltfish', 'Patty', 'Rum Punch'] },
+  { name: 'Swiss Cuisine', group: 'Cuisine', emoji: '🇨🇭', noLang: true, featured: ['Fondue', 'Raclette', 'Rösti', 'Swiss Chocolate'] },
+  { name: 'Finnish Cuisine', group: 'Cuisine', emoji: '🇫🇮', noLang: true, featured: ['Karelian Pasty', 'Lohikeitto', 'Rye Bread', 'Salmiak'] },
+  { name: 'Hawaiian Cuisine', group: 'Cuisine', emoji: '🌺', noLang: true, featured: ['Poke', 'Loco Moco', 'Shave Ice', 'Haupia'] },
+  { name: 'Latin American and Caribbean Food', group: 'Cuisine', emoji: '🌎', noLang: true, merged: true, dataCats: ['Guatemalan Cuisine', 'Cuban Cuisine', 'Colombian Cuisine', 'Chilean Cuisine', 'Venezuelan Cuisine', 'Salvadoran Cuisine', 'Honduran Cuisine', 'Nicaraguan Cuisine', 'Costa Rican Cuisine', 'Trinidadian Cuisine', 'Puerto Rican Cuisine', 'Haitian Cuisine', 'Bolivian Cuisine', 'Ecuadorian Cuisine', 'Panamanian Cuisine', 'Dominican Cuisine', 'Barbadian Cuisine', 'Uruguayan Cuisine', 'Paraguayan Cuisine'], featured: ['Gallo Pinto', 'Pupusas', 'Ropa Vieja', 'Arepa'] },
+  { name: 'African and Indian Ocean Food', group: 'Cuisine', emoji: '🌍', noLang: true, merged: true, dataCats: ['Ivorian Cuisine', 'Mozambican Cuisine', 'Angolan Cuisine', 'Cape Verdean Cuisine', 'Mauritian Cuisine', 'Réunion Cuisine', 'Seychellois Cuisine'], featured: ['Piri-Piri Chicken', 'Cachupa', 'Attiéké', 'Dholl Puri'] },
+  { name: 'Middle Eastern and Cypriot Food', group: 'Cuisine', emoji: '🕌', noLang: true, merged: true, dataCats: ['Israeli Cuisine', 'Saudi Cuisine', 'Iraqi Cuisine', 'Yemeni Cuisine', 'Omani Cuisine', 'Palestinian Cuisine', 'Jordanian Cuisine', 'Cypriot Cuisine'], featured: ['Shakshuka', 'Hummus', 'Falafel', 'Kabsa'] },
+  { name: 'Other Asian Food', group: 'Cuisine', emoji: '🥢', noLang: true, merged: true, dataCats: ['Sri Lankan Cuisine', 'Singaporean Cuisine', 'Taiwanese Cuisine', 'Cambodian Cuisine', 'Pakistani Cuisine', 'Burmese Cuisine', 'Nepalese Cuisine', 'Mongolian Cuisine'], featured: ['Bubble Tea', 'Momo', 'Chilli Crab', 'Mohinga'] },
+  { name: 'Pacific, Arctic and Island Food', group: 'Cuisine', emoji: '🏝️', noLang: true, merged: true, dataCats: ['Greenlandic Cuisine', 'Faroese Cuisine', 'Fijian Cuisine', 'Samoan Cuisine', 'Polynesian Cuisine', 'Vanuatu Cuisine', 'Maltese Cuisine'], featured: ['Pastizzi', 'Fenkata', 'Lap Lap', 'Kokoda'] },
 ];
 
 const GROUP_LABELS = {
   Language: 'Everyday vocabulary',
   Cuisine: 'Food by cuisine',
-  Ingredients: 'Ingredients and drinks',
+  Moving: 'Living in a new country',
+  Ingredients: 'Ingredients, dishes and drinks',
   Wine: 'Wine',
 };
 
@@ -164,6 +229,7 @@ function groupColor(group) {
   switch (group) {
     case 'Cuisine':     return { bg: '#fef3c7', accent: '#d97706', dark: '#92400e' };
     case 'Ingredients': return { bg: '#dcfce7', accent: '#16a34a', dark: '#14532d' };
+    case 'Moving':      return { bg: '#ecfeff', accent: '#0891b2', dark: '#155e75' };
     case 'Wine':        return { bg: '#fdf2f8', accent: '#a21caf', dark: '#701a75' };
     default:            return { bg: '#eff6ff', accent: '#2563eb', dark: '#1e3a8a' };
   }
@@ -182,6 +248,7 @@ function topicUrl(cat) { return `${SITE_URL}/learn/${slugify(cat.name)}`; }
 function langHubUrl(lang) { return `${SITE_URL}/learn/${lang.slug}`; }
 function langTopicUrl(lang, cat) { return `${SITE_URL}/learn/${lang.slug}/${slugify(cat.name)}`; }
 function appUrlFor(cat) {
+  if (cat.merged) return SITE_URL;
   const target = cat.dataCats ? cat.dataCats[0] : cat.name;
   return `${SITE_URL}/?cat=${encodeURIComponent(target)}`;
 }
@@ -296,6 +363,7 @@ function css(color) {
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #0f172a; min-height: 100vh; }
     a { color: inherit; text-decoration: none; }
+    .blurb { max-width: 46rem; margin: 0 0 1.1rem; color: #475569; line-height: 1.6; }
     .nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 0 1.5rem; height: 56px; display: flex; align-items: center; justify-content: space-between; }
     .nav-logo { font-size: 1.1rem; font-weight: 700; color: #4f46e5; }
     .nav-home { font-size: 0.85rem; color: #64748b; }
@@ -320,6 +388,7 @@ function css(color) {
     .vocab th { background: #f8fafc; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: #475569; white-space: nowrap; }
     .vocab th a { color: ${color.accent}; }
     .vocab td.en { font-weight: 600; color: #0f172a; }
+    .vocab td.origin { color: #64748b; font-size: 0.9rem; white-space: nowrap; }
     .vocab td.tr { font-size: 1rem; color: #1e293b; min-width: 6.5rem; }
     .vocab td.meaning { color: #64748b; font-size: 0.85rem; line-height: 1.45; min-width: 13rem; }
     .vocab td.en { min-width: 6rem; }
@@ -437,10 +506,21 @@ function faqHtml(faqs) {
   </div>`;
 }
 
-function getRelated(cat) {
-  const sameGroup = TOPICS.filter(c => c.name !== cat.name && c.group === cat.group).slice(0, 4);
-  const others = TOPICS.filter(c => c.name !== cat.name && c.group !== cat.group).slice(0, 3);
-  return [...sameGroup, ...others].slice(0, 7);
+function getRelated(cat, forLang = false) {
+  const pool = forLang ? TOPICS.filter(c => !c.noLang) : TOPICS;
+  // Same group: the four topics that follow this one (wrapping round), so every page gets different neighbours.
+  const group = pool.filter(c => c.group === cat.group);
+  const at = group.findIndex(c => c.name === cat.name);
+  const sameGroup = [];
+  for (let i = 1; i < group.length && sameGroup.length < 4; i++) sameGroup.push(group[(Math.max(at, 0) + i) % group.length]);
+  // Other groups: one or two from each, in a stable order.
+  const others = [];
+  for (const g of ['Language', 'Moving', 'Ingredients', 'Cuisine', 'Wine']) {
+    if (g === cat.group) continue;
+    const list = pool.filter(c => c.group === g);
+    if (list.length) others.push(list[0]);
+  }
+  return [...sameGroup, ...others.slice(0, 3)].slice(0, 7);
 }
 
 const FEATURES_HTML = `<h2 class="section-title">✨ How it Works</h2>
@@ -504,11 +584,12 @@ function generateTopicPage(topic) {
       const t = translationOf(w, l.key, OVERLAYS);
       return `<td class="tr" lang="${l.htmlLang}">${htmlEncode(t)}</td>`;
     }).join('');
-    return `<tr><td class="en">${htmlEncode(w.word)}</td>${cells}</tr>`;
+    const origin = topic.merged ? `<td class="origin">${htmlEncode(w.category.replace(/ Cuisine$/, ''))}</td>` : '';
+    return `<tr><td class="en">${htmlEncode(w.word)}</td>${origin}${cells}</tr>`;
   }).join('\n      ');
 
   const head = TOPIC_TABLE_LANGS.map(l =>
-    FULL_BUILD ? `<th><a href="${langTopicUrl(l, topic)}">${l.label}</a></th>` : `<th>${l.label}</th>`).join('');
+    FULL_BUILD && !topic.noLang ? `<th><a href="${langTopicUrl(l, topic)}">${l.label}</a></th>` : `<th>${l.label}</th>`).join('');
 
   const first = sampleWords(topic, 1)[0];
   const faqs = [
@@ -518,7 +599,7 @@ function generateTopicPage(topic) {
 
   const trail = [{ name: 'LexPix', url: SITE_URL }, { name: 'Learn', url: LEARN_INDEX_URL }, { name: topic.name, url }];
 
-  const langLinks = FULL_BUILD ? `
+  const langLinks = FULL_BUILD && !topic.noLang ? `
   <h2 class="section-title">🗣 ${htmlEncode(topic.name)} in your language</h2>
   <div class="lang-grid">
 ${PAGE_LANGUAGES.map(l => `    <a class="lang-chip" href="${langTopicUrl(l, topic)}"><span>${l.flag}</span> ${l.label}</a>`).join('\n')}
@@ -569,9 +650,10 @@ ${crumbsHtml(trail)}
 <div class="content">
 
   <h2 class="section-title">📖 ${htmlEncode(topic.name)} words and translations</h2>
+  ${topic.blurb ? `<p class="blurb">${htmlEncode(topic.blurb)}</p>` : ''}
   <div class="table-wrap">
     <table class="vocab">
-      <thead><tr><th>English</th>${head}</tr></thead>
+      <thead><tr><th>English</th>${topic.merged ? '<th>Cuisine</th>' : ''}${head}</tr></thead>
       <tbody>
       ${rows}
       </tbody>
@@ -651,7 +733,7 @@ function generateLangTopicPage(topic, lang, rows) {
   ];
 
   const otherLangs = PAGE_LANGUAGES.filter(l => l.key !== lang.key);
-  const related = getRelated(topic).slice(0, 6);
+  const related = getRelated(topic, true).slice(0, 6);
 
   const noteLine = lang.note ? `<p class="section-note">${lang.label} here means ${lang.note}.</p>` : '';
 
@@ -674,6 +756,7 @@ ${crumbsHtml(trail)}
 <div class="content">
 
   <h2 class="section-title">📖 ${htmlEncode(topic.name)} in ${lang.label}: full word list</h2>
+  ${topic.blurb ? `<p class="blurb">${htmlEncode(topic.blurb)}</p>` : ''}
   ${noteLine}
   <div class="table-wrap">
     <table class="vocab">
@@ -795,7 +878,7 @@ function generateLearnIndex() {
     },
   ];
 
-  const sections = ['Language', 'Cuisine', 'Ingredients', 'Wine']
+  const sections = ['Language', 'Moving', 'Cuisine', 'Ingredients', 'Wine']
     .map(g => ({ g, items: TOPICS.filter(t => t.group === g) }))
     .filter(x => x.items.length)
     .map(({ g, items }) => `
@@ -864,6 +947,7 @@ if (FULL_BUILD) {
   for (const lang of PAGE_LANGUAGES) {
     const entries = [];
     for (const topic of TOPICS) {
+      if (topic.noLang) continue; // small cuisines and regional pages stay English-only
       const rows = wordsIn(topic, lang);
       if (rows.length < 5) continue;
       entries.push({ topic, rows });
