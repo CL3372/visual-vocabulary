@@ -17,7 +17,7 @@ const DEMO_WORDS: Word[] = [
     word: 'Cat',
     translations: {
       es: 'Gato', pt: 'Gato', 'pt-br': 'Gato', fr: 'Chat', de: 'Katze',
-      it: 'Gatto', ja: '猫', zh: '猫', ko: '고양이', ar: 'قطة',
+      it: 'Gatto', ja: '猫', zh: '猫', 'zh-tw': '貓', ko: '고양이', ar: 'قطة',
       hi: 'बिल्ली', ru: 'Кошка', tr: 'Kedi', nl: 'Kat', pl: 'Kot',
       cs: 'Kočka', ro: 'Pisică',
     },
@@ -29,7 +29,7 @@ const DEMO_WORDS: Word[] = [
     word: 'Apple',
     translations: {
       es: 'Manzana', pt: 'Maçã', 'pt-br': 'Maçã', fr: 'Pomme', de: 'Apfel',
-      it: 'Mela', ja: 'りんご', zh: '苹果', ko: '사과', ar: 'تفاحة',
+      it: 'Mela', ja: 'りんご', zh: '苹果', 'zh-tw': '蘋果', ko: '사과', ar: 'تفاحة',
       hi: 'सेब', ru: 'Яблоко', tr: 'Elma', nl: 'Appel', pl: 'Jabłko',
       cs: 'Jablko', ro: 'Măr',
     },
@@ -41,7 +41,7 @@ const DEMO_WORDS: Word[] = [
     word: 'Sun',
     translations: {
       es: 'Sol', pt: 'Sol', 'pt-br': 'Sol', fr: 'Soleil', de: 'Sonne',
-      it: 'Sole', ja: '太陽', zh: '太阳', ko: '태양', ar: 'شمس',
+      it: 'Sole', ja: '太陽', zh: '太阳', 'zh-tw': '太陽', ko: '태양', ar: 'شمس',
       hi: 'सूरज', ru: 'Солнце', tr: 'Güneş', nl: 'Zon', pl: 'Słońce',
       cs: 'Slunce', ro: 'Soare',
     },
