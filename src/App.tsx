@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, lazy, Suspense } from 'react';
 import { BookOpen, CreditCard, HelpCircle, BarChart2, Map, Moon, Sun, Baby, Globe, Cloud, LogOut, ArrowLeft, Flame } from 'lucide-react';
 import { DailyChallenge } from './pages/DailyChallenge';
 import { Badges } from './pages/Badges';
@@ -11,7 +11,8 @@ import { Browse } from './pages/Browse';
 import { Flashcards } from './pages/Flashcards';
 import { Quiz } from './pages/Quiz';
 import { Progress } from './pages/Progress';
-import { MapBrowse } from './pages/MapBrowse';
+// The map pulls in its own libraries, so it is loaded only when the Map tab is opened.
+const MapBrowse = lazy(() => import('./pages/MapBrowse').then(m => ({ default: m.MapBrowse })));
 import { LanguagePicker } from './components/LanguagePicker';
 import { Onboarding } from './components/Onboarding';
 import { LANGUAGES } from './data/languages';
@@ -219,7 +220,7 @@ function Inner() {
           </button>
         )}
         {mode === 'browse'     && <Browse initialCategory={startCategory || undefined} />}
-        {mode === 'map'        && <MapBrowse />}
+        {mode === 'map'        && <Suspense fallback={<div className="p-8 text-center opacity-60">Loading map…</div>}><MapBrowse /></Suspense>}
         {mode === 'flashcards' && <Flashcards />}
         {mode === 'quiz'       && <Quiz />}
         {mode === 'progress'   && <Progress />}
