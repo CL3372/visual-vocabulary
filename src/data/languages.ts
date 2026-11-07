@@ -13,7 +13,7 @@ export const LANGUAGES: Language[] = [
   { code: 'tr',    label: 'Turkish',                nativeName: 'Türkçe',             flag: '🇹🇷' },
   { code: 'ja',    label: 'Japanese',               nativeName: '日本語',              flag: '🇯🇵' },
   { code: 'zh',    label: 'Chinese (Simplified)',   nativeName: '中文（简体）',          flag: '🇨🇳' },
-  { code: 'zh-TW', label: 'Chinese (Traditional)', nativeName: '中文（繁體）',          flag: '🇹🇼', dataKey: 'zh' },
+  { code: 'zh-TW', label: 'Chinese (Traditional)', nativeName: '中文（繁體）',          flag: '🇹🇼', dataKey: 'zh-tw' },
   { code: 'ko',    label: 'Korean',                 nativeName: '한국어',              flag: '🇰🇷' },
   { code: 'ar',    label: 'Arabic',                 nativeName: 'العربية',            flag: '🇸🇦' },
   { code: 'pl',    label: 'Polish',                 nativeName: 'Polski',             flag: '🇵🇱' },
