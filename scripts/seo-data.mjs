@@ -33,6 +33,7 @@ export function loadWords(root) {
         category: obj.category,
         translations: obj.translations,
         sentence: typeof obj.sentence === 'string' ? obj.sentence : '',
+        unsplashQuery: typeof obj.unsplashQuery === 'string' ? obj.unsplashQuery : '',
         file,
       });
     }
