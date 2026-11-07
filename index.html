@@ -58,15 +58,137 @@
       "description": "Learn 4,000+ vocabulary words in 42 languages through beautiful photography. Covers food, verbs, emotions, numbers, family, occupations, weather and more.",
       "applicationCategory": "EducationalApplication",
       "image": "https://lexpix.io/og-image.png",
-      "installUrl": "https://play.google.com/store/apps/details?id=com.visualvocabulary.app",
+      "installUrl": ["https://play.google.com/store/apps/details?id=com.visualvocabulary.app", "https://apps.apple.com/app/id6803274567"],
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
       "inLanguage": ["en", "es", "pt", "pt-BR", "fr", "de", "it", "hi", "ru", "tr", "ja", "zh", "zh-TW", "ko", "ar", "pl", "cs", "ro", "nl", "sv", "el", "id", "vi", "th", "nb", "da", "fi", "fil", "uk", "he", "ms", "bn", "ta", "hu", "sk", "bg", "hr", "sr", "lt", "lv", "ur", "sw"]
     }
     </script>
+
+    <!-- Landing content shown before the app loads (crawlers and first-time visitors). The app replaces it. -->
+    <script>
+      (function () {
+        try {
+          var native = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
+          var home = location.pathname === '/' || location.pathname === '';
+          var seen = false;
+          try { seen = localStorage.getItem('vv-onboarded') === 'true'; } catch (e) {}
+          if (native || !home || seen) document.documentElement.className += ' no-shell';
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      .no-shell #seo-shell { display: none; }
+      #seo-shell { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; background: #f8fafc; min-height: 100vh; }
+      #seo-shell a { color: #4f46e5; text-decoration: none; }
+      #seo-shell .ss-wrap { max-width: 880px; margin: 0 auto; padding: 0 1.25rem; }
+      #seo-shell .ss-top { background: #fff; border-bottom: 1px solid #e2e8f0; height: 56px; display: flex; align-items: center; }
+      #seo-shell .ss-logo { font-size: 1.1rem; font-weight: 700; color: #4f46e5; }
+      #seo-shell .ss-hero { background: #eff6ff; border-bottom: 1px solid #e2e8f0; padding: 2.5rem 0 2.25rem; text-align: center; }
+      #seo-shell h1 { font-size: clamp(1.7rem, 5vw, 2.6rem); font-weight: 800; color: #1e3a8a; line-height: 1.2; margin-bottom: 0.75rem; }
+      #seo-shell .ss-hero p { font-size: 1.05rem; color: #475569; line-height: 1.6; max-width: 620px; margin: 0 auto 1.25rem; }
+      #seo-shell .ss-btns { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+      #seo-shell .ss-btn { display: inline-block; background: #4f46e5; color: #fff !important; font-weight: 700; padding: 0.75rem 1.4rem; border-radius: 12px; }
+      #seo-shell .ss-btn.ss-alt { background: #fff; color: #4f46e5 !important; border: 1px solid #c7d2fe; }
+      #seo-shell h2 { font-size: 1.2rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+      #seo-shell ol { list-style: decimal; padding-left: 1.5rem; color: #475569; line-height: 1.7; }
+      #seo-shell .ss-top .ss-wrap { width: 100%; }
+      #seo-shell .ss-table { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow-x: auto; }
+      #seo-shell table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      #seo-shell th, #seo-shell td { padding: 0.5rem 0.8rem; text-align: left; border-bottom: 1px solid #f1f5f9; }
+      #seo-shell tr:last-child td { border-bottom: none; }
+      #seo-shell th { background: #f8fafc; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: #475569; }
+      #seo-shell td:first-child { font-weight: 600; }
+      #seo-shell .ss-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+      #seo-shell .ss-links a { background: #fff; border: 1px solid #e2e8f0; border-radius: 9999px; padding: 0.35rem 0.9rem; font-size: 0.88rem; font-weight: 500; }
+      #seo-shell .ss-foot { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: #94a3b8; border-top: 1px solid #e2e8f0; margin-top: 2.5rem; }
+      @media (prefers-color-scheme: dark) {
+        #seo-shell { background: #0f172a; color: #e2e8f0; }
+        #seo-shell .ss-top { background: #111827; border-color: #1f2937; }
+        #seo-shell .ss-hero { background: #172554; border-color: #1f2937; }
+        #seo-shell h1 { color: #dbeafe; }
+        #seo-shell .ss-hero p, #seo-shell ol { color: #cbd5e1; }
+        #seo-shell a { color: #a5b4fc; }
+        #seo-shell .ss-btn { background: #6366f1; }
+        #seo-shell .ss-btn.ss-alt, #seo-shell .ss-table, #seo-shell .ss-links a { background: #111827; border-color: #1f2937; }
+        #seo-shell th { background: #111827; color: #94a3b8; }
+        #seo-shell th, #seo-shell td { border-color: #1f2937; }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="seo-shell">
+        <header class="ss-top"><div class="ss-wrap"><span class="ss-logo">🌐 LexPix</span></div></header>
+        <main>
+          <section class="ss-hero">
+            <div class="ss-wrap">
+              <h1>Learn vocabulary with real photos</h1>
+              <p>LexPix is a visual vocabulary app that is free to start. See a real photo, hear the word and learn it in Spanish, French, German, Italian, Portuguese, Japanese, Chinese, Korean, Russian and many more languages.</p>
+              <div class="ss-btns">
+                <a class="ss-btn" href="/learn">Browse vocabulary topics</a>
+                <a class="ss-btn ss-alt" href="https://apps.apple.com/app/id6803274567">Get it on the App Store</a>
+                <a class="ss-btn ss-alt" href="https://play.google.com/store/apps/details?id=com.visualvocabulary.app">Get it on Google Play</a>
+              </div>
+            </div>
+          </section>
+          <div class="ss-wrap">
+            <h2>How LexPix works</h2>
+            <ol>
+              <li>Pick a topic, such as animals, verbs, emotions or the food of a country.</li>
+              <li>Choose the language you want to learn and see each word with a real photo.</li>
+              <li>Practise with flashcards and quizzes, and keep a daily streak going.</li>
+            </ol>
+            <h2>Try a few words</h2>
+            <div class="ss-table">
+              <table>
+                <thead><tr><th>English</th><th>Spanish</th><th>French</th><th>German</th><th>Japanese</th></tr></thead>
+                <tbody>
+                  <tr><td>Lion</td><td lang="es">León</td><td lang="fr">Lion</td><td lang="de">Löwe</td><td lang="ja">ライオン</td></tr>
+                  <tr><td>Run</td><td lang="es">Correr</td><td lang="fr">Courir</td><td lang="de">Laufen</td><td lang="ja">走る</td></tr>
+                  <tr><td>Happy</td><td lang="es">Feliz</td><td lang="fr">Heureux</td><td lang="de">Glücklich</td><td lang="ja">嬉しい</td></tr>
+                  <tr><td>Red</td><td lang="es">Rojo</td><td lang="fr">Rouge</td><td lang="de">Rot</td><td lang="ja">赤</td></tr>
+                  <tr><td>Coffee</td><td lang="es">Café</td><td lang="fr">Café</td><td lang="de">Kaffee</td><td lang="ja">コーヒー</td></tr>
+                  <tr><td>Apple</td><td lang="es">Manzana</td><td lang="fr">Pomme</td><td lang="de">Apfel</td><td lang="ja">リンゴ</td></tr>
+                  <tr><td>Mother</td><td lang="es">Madre</td><td lang="fr">Mère</td><td lang="de">Mutter</td><td lang="ja">お母さん</td></tr>
+                  <tr><td>Sunny</td><td lang="es">Soleado</td><td lang="fr">Ensoleillé</td><td lang="de">Sonnig</td><td lang="ja">晴れ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h2>Popular topics</h2>
+            <div class="ss-links">
+            <a href="/learn/animals">Animals</a>
+            <a href="/learn/verbs">Verbs</a>
+            <a href="/learn/emotions">Emotions</a>
+            <a href="/learn/colors">Colors</a>
+            <a href="/learn/numbers">Numbers</a>
+            <a href="/learn/family">Family</a>
+            <a href="/learn/fruits">Fruits</a>
+            <a href="/learn/drinks">Drinks</a>
+            <a href="/learn/italian-cuisine">Italian food</a>
+            <a href="/learn/japanese-cuisine">Japanese food</a>
+            <a href="/learn/spanish-cuisine">Spanish food</a>
+            <a href="/learn/portuguese-cuisine">Portuguese food</a>
+              <a href="/learn">All topics</a>
+            </div>
+            <h2>Learn by language</h2>
+            <div class="ss-links">
+            <a href="/learn/spanish">Spanish vocabulary</a>
+            <a href="/learn/french">French vocabulary</a>
+            <a href="/learn/german">German vocabulary</a>
+            <a href="/learn/italian">Italian vocabulary</a>
+            <a href="/learn/portuguese">Portuguese vocabulary</a>
+            <a href="/learn/brazilian-portuguese">Brazilian Portuguese vocabulary</a>
+            <a href="/learn/japanese">Japanese vocabulary</a>
+            <a href="/learn/chinese">Chinese vocabulary</a>
+            <a href="/learn/korean">Korean vocabulary</a>
+            <a href="/learn/russian">Russian vocabulary</a>
+            </div>
+          </div>
+        </main>
+        <footer class="ss-foot">© LexPix · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/credits">Photo credits</a></footer>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
