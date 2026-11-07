@@ -15,10 +15,10 @@ const DATA_DIR = path.join(__dirname, '../src/data');
 const NL = {
   // Animals
   'Cat': 'Kat', 'Dog': 'Hond', 'Bird': 'Vogel', 'Fish': 'Vis', 'Horse': 'Paard',
-  'Elephant': 'Olifant', 'Lion': 'Leeuw', 'Butterfly': 'Vlinder', 'Rabbit': 'Konijn',
+  'Elephant': 'Olifant', 'Lion': 'Leeuw', 'Butterfly': 'Vlinder', 
   'Bear': 'Beer', 'Tiger': 'Tijger', 'Monkey': 'Aap', 'Cow': 'Koe', 'Sheep': 'Schaap',
-  'Duck': 'Eend', 'Frog': 'Kikker', 'Zebra': 'Zebra', 'Wasp': 'Wesp', 'Worm': 'Worm',
-  'Chicken': 'Kip', 'Pig': 'Varken', 'Goat': 'Geit', 'Donkey': 'Ezel',
+  'Frog': 'Kikker', 'Zebra': 'Zebra', 'Wasp': 'Wesp', 'Worm': 'Worm',
+  'Chicken': 'Kip', 'Pig': 'Varken', 'Donkey': 'Ezel',
   'Fox': 'Vos', 'Wolf': 'Wolf', 'Deer': 'Hert', 'Snake': 'Slang',
   'Turtle': 'Schildpad', 'Penguin': 'Pinguïn', 'Parrot': 'Papegaai',
   'Owl': 'Uil', 'Eagle': 'Adelaar', 'Shark': 'Haai', 'Whale': 'Walvis',
@@ -30,7 +30,7 @@ const NL = {
   'River': 'Rivier', 'Forest': 'Bos', 'Desert': 'Woestijn', 'Cloud': 'Wolk',
   'Juniper': 'Jeneverbes', 'Violet': 'Viooltje', 'View': 'Uitzicht',
   'Zinc': 'Zink', 'Schist': 'Schist', 'Lake': 'Meer', 'Sea': 'Zee',
-  'Island': 'Eiland', 'Valley': 'Dal', 'Beach': 'Strand', 'Cave': 'Grot',
+  'Island': 'Eiland', 'Valley': 'Dal', 'Cave': 'Grot',
   'Waterfall': 'Waterval', 'Volcano': 'Vulkaan', 'Cliff': 'Klif',
 
   // Seafood
@@ -44,7 +44,7 @@ const NL = {
   'Bowl': 'Kom', 'Cup': 'Kopje', 'Glass': 'Glas', 'Pan': 'Pan',
   'Pot': 'Pot', 'Oven': 'Oven', 'Fridge': 'Koelkast', 'Freezer': 'Vriezer',
   'Blender': 'Blender', 'Toaster': 'Broodrooster', 'Kettle': 'Waterkoker',
-  'Colander': 'Vergiet', 'Rolling Pin': 'Deegroller', 'Grater': 'Rasp',
+  'Rolling Pin': 'Deegroller', 'Grater': 'Rasp',
   'Cutting Board': 'Snijplank', 'Whisk': 'Garde', 'Ladle': 'Pollepel',
   'Spatula': 'Spatel', 'Tongs': 'Tang', 'Peeler': 'Dunschiller',
   'Measuring Cup': 'Maatbeker', 'Apron': 'Schort', 'Wok': 'Wok',
@@ -59,14 +59,14 @@ const NL = {
   'Wall': 'Muur', 'Stairs': 'Trap', 'Lamp': 'Lamp', 'Mirror': 'Spiegel',
   'Carpet': 'Tapijt', 'Curtain': 'Gordijn', 'Shelf': 'Plank',
   'Wardrobe': 'Kledingkast', 'Drawer': 'Lade', 'Pillow': 'Kussen',
-  'Blanket': 'Deken', 'Mattress': 'Matras', 'Desk': 'Bureau',
+  'Blanket': 'Deken', 'Mattress': 'Matras', 
   'Bookcase': 'Boekenkast', 'Fireplace': 'Open haard', 'Radiator': 'Radiator',
-  'Painting': 'Schilderij', 'Clock': 'Klok', 'Television': 'Televisie',
-  'Remote Control': 'Afstandsbediening', 'Washing Machine': 'Wasmachine',
+  'Painting': 'Schilderij', 'Television': 'Televisie',
+  'Washing Machine': 'Wasmachine',
   'Dryer': 'Droger', 'Vacuum Cleaner': 'Stofzuiger', 'Broom': 'Bezem',
   'Mop': 'Dweil', 'Bucket': 'Emmer', 'Dustbin': 'Prullenbak',
-  'Tap': 'Kraan', 'Sink': 'Gootsteen', 'Bathtub': 'Badkuip',
-  'Shower': 'Douche', 'Toilet': 'Toilet', 'Towel': 'Handdoek',
+  'Tap': 'Kraan', 
+  
 
   // Transport
   'Car': 'Auto', 'Bus': 'Bus', 'Train': 'Trein', 'Bicycle': 'Fiets',
@@ -74,15 +74,15 @@ const NL = {
   'Ship': 'Schip', 'Helicopter': 'Helikopter', 'Truck': 'Vrachtwagen',
   'Taxi': 'Taxi', 'Tram': 'Tram', 'Subway': 'Metro', 'Ferry': 'Veerboot',
   'Scooter': 'Scooter', 'Van': 'Busje', 'Lorry': 'Vrachtwagen',
-  'Ambulance': 'Ambulance', 'Fire Engine': 'Brandweerauto', 'Police Car': 'Politieauto',
+  'Fire Engine': 'Brandweerauto', 'Police Car': 'Politieauto',
 
   // Colours
   'Red': 'Rood', 'Blue': 'Blauw', 'Green': 'Groen', 'Yellow': 'Geel',
-  'Orange': 'Oranje', 'Purple': 'Paars', 'Pink': 'Roze', 'Black': 'Zwart',
+  'Purple': 'Paars', 'Pink': 'Roze', 'Black': 'Zwart',
   'White': 'Wit', 'Grey': 'Grijs', 'Brown': 'Bruin', 'Gold': 'Goud',
   'Silver': 'Zilver', 'Beige': 'Beige', 'Turquoise': 'Turkoois',
   'Cyan': 'Cyaan', 'Magenta': 'Magenta', 'Indigo': 'Indigo', 'Lilac': 'Lila',
-  'Cream': 'Crème', 'Maroon': 'Kastanjebruin', 'Navy': 'Marineblauw',
+  'Maroon': 'Kastanjebruin', 'Navy': 'Marineblauw',
   'Olive': 'Olijfgroen', 'Teal': 'Petrolblauw', 'Coral': 'Koraalrood',
 
   // Clothes
@@ -93,7 +93,7 @@ const NL = {
   'Belt': 'Riem', 'Tie': 'Das', 'Jumper': 'Trui', 'Sweater': 'Sweater',
   'Hoodie': 'Hoodie', 'Suit': 'Pak', 'Underwear': 'Ondergoed',
   'Trainers': 'Sneakers', 'Sunglasses': 'Zonnebril', 'Watch': 'Horloge',
-  'Bag': 'Tas', 'Backpack': 'Rugzak', 'Handbag': 'Handtas',
+  'Bag': 'Tas', 'Handbag': 'Handtas',
 
   // Sports
   'Football': 'Voetbal', 'Basketball': 'Basketbal', 'Tennis': 'Tennis',
@@ -111,10 +111,10 @@ const NL = {
   'Ruler': 'Liniaal', 'Scissors': 'Schaar', 'Eraser': 'Gum',
   'Backpack': 'Rugzak', 'Desk': 'Bureau', 'Blackboard': 'Schoolbord',
   'Chalk': 'Krijt', 'Compass': 'Passer', 'Calculator': 'Rekenmachine',
-  'Globe': 'Wereldbol', 'Map': 'Kaart', 'Dictionary': 'Woordenboek',
-  'Teacher': 'Leraar', 'Student': 'Leerling', 'Classroom': 'Klaslokaal',
+  'Globe': 'Wereldbol', 'Dictionary': 'Woordenboek',
+  'Student': 'Leerling', 'Classroom': 'Klaslokaal',
   'Library': 'Bibliotheek', 'Glue': 'Lijm', 'Stapler': 'Nieter',
-  'Highlighter': 'Markeerstift', 'Paint': 'Verf', 'Paintbrush': 'Penseel',
+  'Highlighter': 'Markeerstift', 'Paintbrush': 'Penseel',
 
   // Family
   'Mother': 'Moeder', 'Father': 'Vader', 'Sister': 'Zus', 'Brother': 'Broer',
@@ -126,8 +126,8 @@ const NL = {
   'Twins': 'Tweeling', 'Parents': 'Ouders', 'Grandparents': 'Grootouders',
 
   // Occupations
-  'Doctor': 'Dokter', 'Nurse': 'Verpleegkundige', 'Teacher': 'Leraar',
-  'Engineer': 'Ingenieur', 'Chef': 'Kok', 'Pilot': 'Piloot', 'Farmer': 'Boer',
+  'Nurse': 'Verpleegkundige', 'Teacher': 'Leraar',
+  'Engineer': 'Ingenieur', 'Pilot': 'Piloot', 'Farmer': 'Boer',
   'Police Officer': 'Politieagent', 'Firefighter': 'Brandweerman',
   'Lawyer': 'Advocaat', 'Architect': 'Architect', 'Dentist': 'Tandarts',
   'Artist': 'Kunstenaar', 'Musician': 'Muzikant', 'Journalist': 'Journalist',
@@ -144,8 +144,8 @@ const NL = {
   'Rainbow': 'Regenboog', 'Hail': 'Hagel', 'Frost': 'Vorst', 'Ice': 'IJs',
   'Heatwave': 'Hittegolf', 'Blizzard': 'Sneeuwstorm', 'Drought': 'Droogte',
   'Flood': 'Overstroming', 'Tornado': 'Tornado', 'Hurricane': 'Orkaan',
-  'Temperature': 'Temperatuur', 'Forecast': 'Weersvoorspelling',
-  'Umbrella': 'Paraplu', 'Thermometer': 'Thermometer',
+  'Forecast': 'Weersvoorspelling',
+  'Umbrella': 'Paraplu', 
 
   // Technology
   'Phone': 'Telefoon', 'Computer': 'Computer', 'Laptop': 'Laptop',
@@ -163,7 +163,7 @@ const NL = {
   'Ten': 'Tien', 'Eleven': 'Elf', 'Twelve': 'Twaalf', 'Twenty': 'Twintig',
   'Thirty': 'Dertig', 'Forty': 'Veertig', 'Fifty': 'Vijftig',
   'Hundred': 'Honderd', 'Thousand': 'Duizend', 'Million': 'Miljoen',
-  'First': 'Eerste', 'Second': 'Tweede', 'Third': 'Derde',
+  'First': 'Eerste', 'Third': 'Derde',
 
   // Shapes
   'Circle': 'Cirkel', 'Square': 'Vierkant', 'Triangle': 'Driehoek',
@@ -179,13 +179,13 @@ const NL = {
   'Cook': 'Koken', 'Drive': 'Rijden', 'Work': 'Werken', 'Play': 'Spelen',
   'Dance': 'Dansen', 'Sing': 'Zingen', 'Paint': 'Schilderen', 'Draw': 'Tekenen',
   'Buy': 'Kopen', 'Sell': 'Verkopen', 'Give': 'Geven', 'Take': 'Nemen',
-  'Open': 'Openen', 'Close': 'Sluiten', 'Start': 'Beginnen', 'Stop': 'Stoppen',
-  'Love': 'Houden van', 'Laugh': 'Lachen', 'Cry': 'Huilen', 'Think': 'Denken',
+  'Close': 'Sluiten', 'Start': 'Beginnen', 'Stop': 'Stoppen',
+  'Laugh': 'Lachen', 'Cry': 'Huilen', 'Think': 'Denken',
   'Know': 'Weten', 'See': 'Zien', 'Hear': 'Horen', 'Feel': 'Voelen',
-  'Help': 'Helpen', 'Learn': 'Leren', 'Teach': 'Onderwijzen', 'Ask': 'Vragen',
+  'Learn': 'Leren', 'Teach': 'Onderwijzen', 'Ask': 'Vragen',
   'Answer': 'Antwoorden', 'Come': 'Komen', 'Go': 'Gaan', 'Stand': 'Staan',
   'Sit': 'Zitten', 'Wait': 'Wachten', 'Carry': 'Dragen', 'Push': 'Duwen',
-  'Pull': 'Trekken', 'Cut': 'Snijden', 'Clean': 'Schoonmaken',
+  'Pull': 'Trekken', 'Cut': 'Snijden', 
 
   // Emotions
   'Happy': 'Blij', 'Sad': 'Verdrietig', 'Angry': 'Boos', 'Surprised': 'Verrast',
@@ -233,7 +233,7 @@ const NL = {
   'Carrot': 'Wortel', 'Potato': 'Aardappel', 'Tomato': 'Tomaat',
   'Onion': 'Ui', 'Garlic': 'Knoflook', 'Broccoli': 'Broccoli',
   'Spinach': 'Spinazie', 'Lettuce': 'Sla', 'Cucumber': 'Komkommer',
-  'Pepper': 'Paprika', 'Mushroom': 'Paddenstoel', 'Corn': 'Maïs',
+  'Mushroom': 'Paddenstoel', 'Corn': 'Maïs',
   'Peas': 'Erwten', 'Beans': 'Bonen', 'Cabbage': 'Kool',
   'Leek': 'Prei', 'Celery': 'Selderij', 'Cauliflower': 'Bloemkool',
   'Aubergine': 'Aubergine', 'Courgette': 'Courgette', 'Asparagus': 'Asperge',
@@ -243,7 +243,7 @@ const NL = {
 
   // Fruits
   'Apple': 'Appel', 'Banana': 'Banaan', 'Orange': 'Sinaasappel',
-  'Grape': 'Druif', 'Strawberry': 'Aardbei', 'Lemon': 'Citroen',
+  'Strawberry': 'Aardbei', 'Lemon': 'Citroen',
   'Mango': 'Mango', 'Pineapple': 'Ananas', 'Watermelon': 'Watermeloen',
   'Cherry': 'Kers', 'Peach': 'Perzik', 'Pear': 'Peer', 'Plum': 'Pruim',
   'Kiwi': 'Kiwi', 'Coconut': 'Kokosnoot', 'Avocado': 'Avocado',
@@ -270,10 +270,10 @@ const NL = {
   'Fennel Seeds': 'Venkelzaad', 'Mustard Seeds': 'Mosterdzaad',
 
   // Condiments
-  'Olive Oil': 'Olijfolie', 'Butter': 'Boter', 'Sugar': 'Suiker',
+  'Olive Oil': 'Olijfolie', 'Sugar': 'Suiker',
   'Honey': 'Honing', 'Vinegar': 'Azijn', 'Mustard': 'Mosterd',
   'Ketchup': 'Ketchup', 'Mayonnaise': 'Mayonaise', 'Soy Sauce': 'Sojasaus',
-  'Hot Sauce': 'Hete saus', 'Cream': 'Room', 'Flour': 'Bloem',
+  'Hot Sauce': 'Hete saus', 'Flour': 'Bloem',
   'Yeast': 'Gist', 'Baking Powder': 'Bakpoeder', 'Cornstarch': 'Maizena',
 
   // Nuts & Legumes
@@ -299,7 +299,7 @@ const NL = {
 
   // Supermarket
   'Trolley': 'Winkelwagen', 'Basket': 'Mandje', 'Aisle': 'Gang',
-  'Checkout': 'Kassa', 'Receipt': 'Bon', 'Barcode': 'Streepjescode',
+  'Checkout': 'Kassa', 'Barcode': 'Streepjescode',
   'Frozen Food': 'Diepvriesvoedsel', 'Discount': 'Korting',
   'Weighing Scale': 'Weegschaal', 'Plastic Bag': 'Plastic tas',
   'Queue': 'Rij', 'Coupon': 'Coupon', 'Loyalty Card': 'Klantenkaart',
@@ -353,10 +353,10 @@ const NL = {
   'Tasting': 'Proeven', 'Sommelier': 'Sommelier', 'Cellar': 'Kelder',
 
   // Common recipe ingredients
-  'Egg': 'Ei', 'Milk': 'Melk', 'Cheese': 'Kaas', 'Yoghurt': 'Yoghurt',
-  'Butter': 'Boter', 'Cream': 'Room', 'Oil': 'Olie', 'Bread': 'Brood',
+  'Egg': 'Ei', 'Cheese': 'Kaas', 'Yoghurt': 'Yoghurt',
+  'Butter': 'Boter', 'Cream': 'Room', 'Oil': 'Olie', 
   'Rice': 'Rijst', 'Pasta': 'Pasta', 'Noodles': 'Noedels',
-  'Soup': 'Soep', 'Salad': 'Salade', 'Sauce': 'Saus', 'Gravy': 'Jus',
+  'Salad': 'Salade', 'Sauce': 'Saus', 'Gravy': 'Jus',
   'Stock': 'Bouillon', 'Dough': 'Deeg', 'Batter': 'Beslag',
   'Marinade': 'Marinade', 'Stuffing': 'Vulling',
 
