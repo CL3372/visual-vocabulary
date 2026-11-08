@@ -2880,6 +2880,161 @@ export const VERIFIED_PHOTOS: Record<string, string> = {
   'pica pau portuguese marinated pork bites pickled': 'data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b10%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFF3E0%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23FFE0B2%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23b10)%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22225%22%20rx%3D%22175%22%20ry%3D%22108.5%22%20fill%3D%22%23000%22%20opacity%3D%22.12%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22215%22%20rx%3D%22175%22%20ry%3D%22108.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23CFD8DC%22%20stroke-width%3D%225%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22215%22%20rx%3D%22136.5%22%20ry%3D%2282.25%22%20fill%3D%22%23FAFAFA%22%20stroke%3D%22%23E0E0E0%22%20stroke-width%3D%223%22%2F%3E%3Cg%20fill%3D%22%238D4A2B%22%20stroke%3D%22%235D2E17%22%20stroke-width%3D%223%22%3E%3Crect%20x%3D%22133%22%20y%3D%22181%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(-20%20150%20195)%22%2F%3E%3Crect%20x%3D%22173%22%20y%3D%22171%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(3%20190%20185)%22%2F%3E%3Crect%20x%3D%22213%22%20y%3D%22181%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(-14%20230%20195)%22%2F%3E%3Crect%20x%3D%22153%22%20y%3D%22211%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(9%20170%20225)%22%2F%3E%3Crect%20x%3D%22198%22%20y%3D%22216%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(-8%20215%20230)%22%2F%3E%3Crect%20x%3D%22238%22%20y%3D%22211%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(15%20255%20225)%22%2F%3E%3Crect%20x%3D%22183%22%20y%3D%22194%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(-2%20200%20208)%22%2F%3E%3Crect%20x%3D%22113%22%20y%3D%22211%22%20width%3D%2234%22%20height%3D%2228%22%20rx%3D%227%22%20transform%3D%22rotate(-19%20130%20225)%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23A66A3F%22%20opacity%3D%22.7%22%3E%3Cellipse%20cx%3D%22190%22%20cy%3D%22215%22%20rx%3D%2270%22%20ry%3D%2210%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%237CB342%22%20stroke%3D%22%23558B2F%22%20stroke-width%3D%223%22%3E%3Crect%20x%3D%22262%22%20y%3D%22160%22%20width%3D%2268%22%20height%3D%2220%22%20rx%3D%2210%22%20transform%3D%22rotate(-30%20296%20170)%22%2F%3E%3Crect%20x%3D%22270%22%20y%3D%22198%22%20width%3D%2266%22%20height%3D%2220%22%20rx%3D%2210%22%20transform%3D%22rotate(15%20303%20208)%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%232E7D32%22%20stroke-width%3D%223%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M82%20205l20%20-10M92%20195l16%20-2%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M100%20245q30-14%2060-6%22%20fill%3D%22none%22%20stroke%3D%22%23388E3C%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E', // Pica-Pau
   'pastel com diabo cape verde fried pastry tuna': 'data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b11%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FBE9E7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23FFAB91%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23b11)%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22235%22%20rx%3D%22175%22%20ry%3D%22108.5%22%20fill%3D%22%23000%22%20opacity%3D%22.12%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22225%22%20rx%3D%22175%22%20ry%3D%22108.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23CFD8DC%22%20stroke-width%3D%225%22%2F%3E%3Cellipse%20cx%3D%22200%22%20cy%3D%22225%22%20rx%3D%22136.5%22%20ry%3D%2282.25%22%20fill%3D%22%23F5F5F5%22%20stroke%3D%22%23E0E0E0%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M90%20245A110%20110%200%200%201%20310%20245Z%22%20fill%3D%22%23E0A04A%22%20stroke%3D%22%23A8691C%22%20stroke-width%3D%226%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M110%20235A90%2090%200%200%201%20290%20235%22%20fill%3D%22none%22%20stroke%3D%22%23A8691C%22%20stroke-width%3D%224%22%20stroke-dasharray%3D%223%2010%22%20stroke-linecap%3D%22round%22%2F%3E%3Cg%20fill%3D%22%23C98A33%22%20opacity%3D%22.8%22%3E%3Ccircle%20cx%3D%22160%22%20cy%3D%22200%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%22215%22%20cy%3D%22185%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%22250%22%20cy%3D%22215%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%22195%22%20cy%3D%22222%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(300%20160)%20rotate(30)%22%3E%3Cpath%20d%3D%22M0%200C30%20-6%2070%2020%2080%2060C50%2056%2020%2040%200%200Z%22%20fill%3D%22%23E53935%22%20stroke%3D%22%23B71C1C%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M2%202L-8%20-8%22%20stroke%3D%22%232E7D32%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E', // Pastel com Diabo Dentro
   'che ba mau three colour dessert coconut milk jelly': 'data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b12%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23F3E5F5%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23D1C4E9%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url(%23b12)%22%2F%3E%3Cpath%20d%3D%22M130%2070H270L252%20340Q250%20355%20235%20355H165Q150%20355%20148%20340Z%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.55%22%20stroke%3D%22%237E57C2%22%20stroke-width%3D%227%22%20stroke-linejoin%3D%22round%22%2F%3E%3CclipPath%20id%3D%22g%22%3E%3Cpath%20d%3D%22M137%2078H263L246%20335Q244%20347%20232%20347H168Q156%20347%20154%20335Z%22%2F%3E%3C%2FclipPath%3E%3Cg%20clip-path%3D%22url(%23g)%22%3E%3Crect%20x%3D%22120%22%20y%3D%22270%22%20width%3D%22160%22%20height%3D%2290%22%20fill%3D%22%23B71C1C%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%22205%22%20width%3D%22160%22%20height%3D%2266%22%20fill%3D%22%23FFD54F%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%22140%22%20width%3D%22160%22%20height%3D%2266%22%20fill%3D%22%2366BB6A%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%2278%22%20width%3D%22160%22%20height%3D%2262%22%20fill%3D%22%23FFF8E1%22%2F%3E%3Cg%20fill%3D%22%237B1FA2%22%20opacity%3D%22.45%22%3E%3Ccircle%20cx%3D%22180%22%20cy%3D%22300%22%20r%3D%228%22%2F%3E%3Ccircle%20cx%3D%22215%22%20cy%3D%22318%22%20r%3D%228%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%22296%22%20r%3D%228%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fff%22%20opacity%3D%22.6%22%3E%3Ccircle%20cx%3D%22190%22%20cy%3D%22105%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%22228%22%20cy%3D%22118%22%20r%3D%227%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Crect%20x%3D%22215%22%20y%3D%2225%22%20width%3D%2214%22%20height%3D%22190%22%20rx%3D%227%22%20fill%3D%22%23EC407A%22%20transform%3D%22rotate(12%20222%20120)%22%2F%3E%3C%2Fsvg%3E', // Che Ba Mau
+  // --- Concrete everyday words (animals, nature, weather, holidays, tech, travel, clothes, banking) ---
+  'bull large horns male cattle field strong': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Charolais_cattle%2C_Sierra_Nevada%2C_Venezuela.jpg/960px-Charolais_cattle%2C_Sierra_Nevada%2C_Venezuela.jpg', // Bull
+  'turtle sea tortoise': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Hawaii_turtle_2.JPG/960px-Hawaii_turtle_2.JPG', // Turtle
+  'golden plover bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Goldregenpfeifer_%28Pluvialis_apricaria%29.jpg/960px-Goldregenpfeifer_%28Pluvialis_apricaria%29.jpg', // Golden Plover
+  'humpback whale ocean breach': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Mother_and_baby_sperm_whale.jpg/960px-Mother_and_baby_sperm_whale.jpg', // Whale
+  'dolphin jumping ocean waves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg', // Dolphin
+  'penguin antarctica ice colony': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg/960px-South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg', // Penguin
+  'small spider sitting web macro closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Araneus_diadematus_%28Clerck%2C_1757%29.JPG/960px-Araneus_diadematus_%28Clerck%2C_1757%29.JPG', // Spider
+  'ant macro close up leaf': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Red_Ant_-_March_2025.jpg/960px-Red_Ant_-_March_2025.jpg', // Ant
+  'great white shark ocean underwater': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Corl0207_%2828225976491%29.jpg/960px-Corl0207_%2828225976491%29.jpg', // Shark
+  'giraffe savanna africa portrait': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Three_giraffes_01.jpg/960px-Three_giraffes_01.jpg', // Giraffe
+  'crocodile river wildlife basking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Nile_crocodile_head.jpg/960px-Nile_crocodile_head.jpg', // Crocodile
+  'red fox wildlife forest portrait': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Vulpes_vulpes_ssp_fulvus.jpg/960px-Vulpes_vulpes_ssp_fulvus.jpg', // Fox
+  'owl perched bird of prey portrait': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Eurasian_eagle-owl_%2844088%29.jpg/960px-Eurasian_eagle-owl_%2844088%29.jpg', // Owl
+  'flamingo pink flock lake': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg/960px-Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg', // Flamingo
+  'gorilla silverback jungle portrait': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Mountain_gorilla_%28Gorilla_beringei_beringei%29_female_2.jpg/960px-Mountain_gorilla_%28Gorilla_beringei_beringei%29_female_2.jpg', // Gorilla
+  'giant panda bamboo eating': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG', // Panda
+  'python snake coiled colorful scales': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg/960px-Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg', // Snake
+  'toad frog amphibian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bufo_bufo_2009_G1.jpg/960px-Bufo_bufo_2009_G1.jpg', // Toad
+  'salamander amphibian': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Salamandra_salamandra_MHNT_1.jpg/960px-Salamandra_salamandra_MHNT_1.jpg', // Salamander
+  'nightingale bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_%28cropped%29.jpg/960px-Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_%28cropped%29.jpg', // Nightingale
+  'turtle dove bird': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Rufous_turtle_dove_%28Streptopelia_orientalis_orii%29_Qianshan.jpg/960px-Rufous_turtle_dove_%28Streptopelia_orientalis_orii%29_Qianshan.jpg', // Turtle Dove
+  'cat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg', // Cat
+  'dog': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/DSC09611a_Search_and_Rescue_Dog%2C_Austrian_Red_Cross_Perchtoldsdorf%2C_2024-10.jpg/960px-DSC09611a_Search_and_Rescue_Dog%2C_Austrian_Red_Cross_Perchtoldsdorf%2C_2024-10.jpg', // Dog
+  'bird nature': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Female_house_sparrow_at_Kodai.jpg/960px-Female_house_sparrow_at_Kodai.jpg', // Bird
+  'fish ocean': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Balantiocheilos_melanopterus_-_Karlsruhe_Zoo_02_%28cropped%29.jpg/960px-Balantiocheilos_melanopterus_-_Karlsruhe_Zoo_02_%28cropped%29.jpg', // Fish
+  'horse': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg/960px-Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg', // Horse
+  'elephant': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Red_elephant_in_dirt.jpg/960px-Red_elephant_in_dirt.jpg', // Elephant
+  'lion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg', // Lion
+  'monarch butterfly wings flower colorful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Peacock_butterfly_%28Aglais_io%29_2.jpg/960px-Peacock_butterfly_%28Aglais_io%29_2.jpg', // Butterfly
+  'rabbit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Lapin_blanc.jpg/960px-Lapin_blanc.jpg', // Rabbit
+  'bear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/European_Brown_Bear.jpg/960px-European_Brown_Bear.jpg', // Bear
+  'tiger': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg', // Tiger
+  'monkey': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ubud_Monkey_Family.jpg/960px-Ubud_Monkey_Family.jpg', // Monkey
+  'highland cow portrait meadow': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/960px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg', // Cow
+  'sheep': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Swaledale_Sheep%2C_Lake_District%2C_England_-_June_2009.jpg/960px-Swaledale_Sheep%2C_Lake_District%2C_England_-_June_2009.jpg', // Sheep
+  'frog': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg', // Frog
+  'zebra': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Equus_zebra_hartmannae_-_Etosha_2015.jpg/960px-Equus_zebra_hartmannae_-_Etosha_2015.jpg', // Zebra
+  'heather calluna bloom pink purple scottish moor': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Calluna_vulgaris_RF.jpg/960px-Calluna_vulgaris_RF.jpg', // Heather
+  'tulip flower colorful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Tulipa_suaveolens_floriade_to_Canberra.jpg/960px-Tulipa_suaveolens_floriade_to_Canberra.jpg', // Tulip
+  'terracotta roof tiles mediterranean house pattern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Terracotta_roof_tiles.jpg/960px-Terracotta_roof_tiles.jpg', // Roof Tile
+  'cork oak tree portugal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Cork_oak_December_2015-1.jpg/960px-Cork_oak_December_2015-1.jpg', // Cork Oak
+  'bramble blackberry bush': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Blackberry_fruits_2008_G1.jpg/960px-Blackberry_fruits_2008_G1.jpg', // Bramble
+  'seeds various': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg/960px-%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg', // Seed
+  'vine shoot tendril grapevine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Vine_shoots.JPG/960px-Vine_shoots.JPG', // Vine Shoot
+  'mountain range landscape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Verkhoyansk_Range%2C_Republic_of_Sakha_%28Yakutia%29%2C_Russia_-_2019.jpg/960px-Verkhoyansk_Range%2C_Republic_of_Sakha_%28Yakutia%29%2C_Russia_-_2019.jpg', // Mountain Range
+  'lavender purple flower': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Lavender_field_in_Misato_Town%2C_Akita_20180624e.jpg/960px-Lavender_field_in_Misato_Town%2C_Akita_20180624e.jpg', // Lavender
+  'rose red flower': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Red_rose_with_black_background.jpg/960px-Red_rose_with_black_background.jpg', // Rose
+  'beautiful flower bouquet roses colourful wrapped ribbon gift': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Rose_and_carnation_flower_bouquet_01.jpg/960px-Rose_and_carnation_flower_bouquet_01.jpg', // Bouquet
+  'root plant vegetable': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Exposed_tree_roots_along_Clearwater_River.jpg/960px-Exposed_tree_roots_along_Clearwater_River.jpg', // Root
+  'ruby gemstone red': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ruby_crystal_1.jpg/960px-Ruby_crystal_1.jpg', // Ruby
+  'bright sun yellow sky sunshine clear day': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/960px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg', // Sun
+  'moon night': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Full_Moon_Luc_Viatour.jpg/960px-Full_Moon_Luc_Viatour.jpg', // Moon
+  'tree nature': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Usamljeni_jasen_-_panoramio_%28cropped%29.jpg/960px-Usamljeni_jasen_-_panoramio_%28cropped%29.jpg', // Tree
+  'mountain landscape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Himalayas%2C_Ama_Dablam%2C_Nepal.jpg/960px-Himalayas%2C_Ama_Dablam%2C_Nepal.jpg', // Mountain
+  'ocean waves': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Seal_Rocks%2C_Ocean_Beach%2C_San_Francisco.jpg/960px-Seal_Rocks%2C_Ocean_Beach%2C_San_Francisco.jpg', // Ocean
+  'rain drops': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hard_rain_on_a_roof.jpg/960px-Hard_rain_on_a_roof.jpg', // Rain
+  'snow winter': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Snow_Scene_at_Shipka_Pass_1.JPG/960px-Snow_Scene_at_Shipka_Pass_1.JPG', // Snow
+  'forest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Spruce_forest_at_Holma.jpg/960px-Spruce_forest_at_Holma.jpg', // Forest
+  'desert sand': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Dunes%2C_D%C3%A9sert_du_Thar.jpg/960px-Dunes%2C_D%C3%A9sert_du_Thar.jpg', // Desert
+  'cloud sky': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Cumulus_cloud_above_Lechtaler_Alps_at_tannheim%2C_Austria.jpg/960px-Cumulus_cloud_above_Lechtaler_Alps_at_tannheim%2C_Austria.jpg', // Cloud
+  'juniper bush blue berries branches closeup': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Juniperus_communis_fruits_-_Keila.jpg/960px-Juniperus_communis_fruits_-_Keila.jpg', // Juniper
+  'viola odorata violet purple wildflower bloom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Early_Blue_Violet_-_Viola_adunca_%2823183359724%29.jpg/960px-Early_Blue_Violet_-_Viola_adunca_%2823183359724%29.jpg', // Violet
+  'scenic view landscape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Blyde_River_Canyon_Nature_Reserve_%28ZA%29%2C_Lowveld_View_--_2024_--_9971.jpg/960px-Blyde_River_Canyon_Nature_Reserve_%28ZA%29%2C_Lowveld_View_--_2024_--_9971.jpg', // View
+  'zinc galvanized metal sheet industrial texture': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Zinc_foils.JPG/960px-Zinc_foils.JPG', // Zinc
+  'schist metamorphic rock layers mica geology': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Schist_%28Ordovician%3B_Marlboro_West_Route_9_roadcut%2C_Vermont%2C_USA%29_3.jpg/960px-Schist_%28Ordovician%3B_Marlboro_West_Route_9_roadcut%2C_Vermont%2C_USA%29_3.jpg', // Schist
+  'red rose flower garden bloom close up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Red_rose_at_Square_of_the_Cathedral_of_Christ_the_Saviour.jpg/960px-Red_rose_at_Square_of_the_Cathedral_of_Christ_the_Saviour.jpg', // Rose
+  'sunflower bright yellow field blue sky summer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Eberndorf_K%C3%B6cking_Sonnenblumenfeld_Biohof_Tomic_18072014_0792.jpg/960px-Eberndorf_K%C3%B6cking_Sonnenblumenfeld_Biohof_Tomic_18072014_0792.jpg', // Sunflower
+  'green cactus pot spines close up succulent': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pachycereus_pringlei_forest.jpg/960px-Pachycereus_pringlei_forest.jpg', // Cactus
+  'colourful tulips field blooming spring netherlands': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/960px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG', // Tulip
+  'green fern leaves close up forest damp': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Lady_fern_at_Myrstigen_trail_1.jpg/960px-Lady_fern_at_Myrstigen_trail_1.jpg', // Fern
+  'purple lavender field provence france aromatic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Lavendelbl%C3%BCte-20220619-RM-160923.jpg/960px-Lavendelbl%C3%BCte-20220619-RM-160923.jpg', // Lavender
+  'green bamboo stalks forest japan tall': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg/960px-Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg', // Bamboo
+  'white orchid flower elegant close up tropical': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Orchidaceae_flowers_-_magenta_colour.jpg/960px-Orchidaceae_flowers_-_magenta_colour.jpg', // Orchid
+  'green ivy climbing wall leaves close up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Hedera_algeriensis_kz01.jpg/960px-Hedera_algeriensis_kz01.jpg', // Ivy
+  'white daisy flower green field meadow sunny': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Leucanthemum_vulgare_%27Filigran%27_Flower_2200px.jpg/960px-Leucanthemum_vulgare_%27Filigran%27_Flower_2200px.jpg', // Daisy
+  'tropical palm tree blue sky beach coast sunny': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Three_palm_trees_during_the_sunset%2C_Ayia_Marina_Chrysochous%2C_Paphos_District%2C_Cyprus_02.jpg/960px-Three_palm_trees_during_the_sunset%2C_Ayia_Marina_Chrysochous%2C_Paphos_District%2C_Cyprus_02.jpg', // Palm Tree
+  'green moss covered rock forest damp close up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Tionesta-ac-moss2.jpg/960px-Tionesta-ac-moss2.jpg', // Moss
+  'bonsai tree miniature pot wooden table japanese art': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Bonsai%2C_Kenshin_Toge.jpg/960px-Bonsai%2C_Kenshin_Toge.jpg', // Bonsai
+  'succulent plant green rosette pot close up minimal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Succulent_-_Azores.jpg/960px-Succulent_-_Azores.jpg', // Succulent
+  'fresh green herbs basil mint rosemary kitchen garden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Freshly_picked_herbs_held_high_against_a_lush_green_backdrop_in_an_outdoor_farm_setting.jpg/960px-Freshly_picked_herbs_held_high_against_a_lush_green_backdrop_in_an_outdoor_farm_setting.jpg', // Herb
+  'iphone smartphone screen hand holding modern sleek': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Smartphone_Use.jpg/960px-Smartphone_Use.jpg', // Phone
+  'laptop open screen glowing desk minimal workspace modern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Laptop_der_Marke_exone_go_20240203_HOF06886_RAW-Export_000276.png/960px-Laptop_der_Marke_exone_go_20240203_HOF06886_RAW-Export_000276.png', // Computer
+  'dslr camera black lens closeup photography professional': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/12_MP_digital_camera_-_red.jpg/960px-12_MP_digital_camera_-_red.jpg', // Camera
+  'flat screen television mounted living room wall modern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Polytechnical_Museum_television_set_Volna_20150214_164839.jpg/960px-Polytechnical_Museum_television_set_Volna_20150214_164839.jpg', // Television
+  'over ear headphones black white wireless floating minimal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Headphones_1.jpg/960px-Headphones_1.jpg', // Headphones
+  'mechanical keyboard backlit keys desk closeup typing': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/QWERTY_keyboard.jpg/960px-QWERTY_keyboard.jpg', // Keyboard
+  'usb phone charger cable plugged charging white desk': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Phone_charger_2026.jpg/960px-Phone_charger_2026.jpg', // Charger
+  'humanoid robot white futuristic machine artificial intelligence': 'https://upload.wikimedia.org/wikipedia/commons/0/05/HONDA_ASIMO.jpg', // Robot
+  'rocket launch nasa fire smoke night sky blastoff space': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Soyuz_TMA-9_launch.jpg/960px-Soyuz_TMA-9_launch.jpg', // Rocket
+  'satellite orbiting earth space solar panels technology': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Two_3U_CubeSats.jpg/960px-Two_3U_CubeSats.jpg', // Satellite
+  'drone quadcopter flying sky aerial photography hovering': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Quadcopter_camera_drone_in_flight.jpg/960px-Quadcopter_camera_drone_in_flight.jpg', // Drone
+  'inkjet printer white office printing paper document': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Canon_PIXMA_TS207_Printer_picture.jpg/960px-Canon_PIXMA_TS207_Printer_picture.jpg', // Printer
+  'bluetooth speaker portable black round minimal music': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/2016_Kolumna_g%C5%82o%C5%9Bnikowa_Altus_110.jpg/960px-2016_Kolumna_g%C5%82o%C5%9Bnikowa_Altus_110.jpg', // Speaker
+  'aa batteries row closeup energy power cells white background': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/AA_Batteries_%2851825378856%29.jpg/960px-AA_Batteries_%2851825378856%29.jpg', // Battery
+  'computer monitor screen glowing dark desk ultrawide modern': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/EIZO_Foris_FG2421_VGA_computer_monitor_displaying_test_pattern.png/960px-EIZO_Foris_FG2421_VGA_computer_monitor_displaying_test_pattern.png', // Screen
+  'smartphone app icons grid colourful screen close up': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Smartphone_screen_with_Land_Rover_apps.jpg/960px-Smartphone_screen_with_Land_Rover_apps.jpg', // App
+  'wifi router glowing internet network connection home device': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/CAT8_Ethernet_Cable-0319.jpg/960px-CAT8_Ethernet_Cable-0319.jpg', // Internet
+  'condenser microphone studio recording podcast desk silver': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Shure_mikrofon_55S.jpg/960px-Shure_mikrofon_55S.jpg', // Microphone
+  'bright blue sky sun shining summer sunshine warm golden': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Wooden_footbridge_in_Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_Japan%2C_a_sunny_day_with_blue_sky.jpg/960px-Wooden_footbridge_in_Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_Japan%2C_a_sunny_day_with_blue_sky.jpg', // Sunny
+  'heavy rain street umbrella puddle reflection wet city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Purple_rain_on_roof.jpg/960px-Purple_rain_on_roof.jpg', // Rainy
+  'overcast grey clouds sky dramatic moody landscape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Submerged_tree_under_a_dark_and_cloudy_sky_in_Si_Phan_Don.jpg/960px-Submerged_tree_under_a_dark_and_cloudy_sky_in_Si_Phan_Don.jpg', // Cloudy
+  'strong wind blowing trees bent branches stormy gust': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Roadside_tree_on_a_windy_day_-_geograph.org.uk_-_2610470.jpg/960px-Roadside_tree_on_a_windy_day_-_geograph.org.uk_-_2610470.jpg', // Windy
+  'snowfall winter pine forest white snow covered peaceful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Iceland%27s_Mid-Atlantic_Ridge_during_snow.jpg/960px-Iceland%27s_Mid-Atlantic_Ridge_during_snow.jpg', // Snowy
+  'foggy morning mist forest path trees ethereal atmospheric': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Receding_Fog_over_Lake_Altaussee.jpg/960px-Receding_Fog_over_Lake_Altaussee.jpg', // Foggy
+  'storm dark dramatic clouds lightning sky threatening': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cumulonimbus_incus_over_Warsaw%2C_Poland.jpg/960px-Cumulonimbus_incus_over_Warsaw%2C_Poland.jpg', // Stormy
+  'lightning bolt strike dark storm sky dramatic electric': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Lightning_Pritzerbe_01_%28MK%29.jpg/960px-Lightning_Pritzerbe_01_%28MK%29.jpg', // Thunder
+  'rainbow vivid arc sky green field after rain colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/WhereRainbowRises.jpg/960px-WhereRainbowRises.jpg', // Rainbow
+  'hailstones white ice pellets ground pavement frozen storm': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Gr%C3%AAle.jpg/960px-Gr%C3%AAle.jpg', // Hail
+  'frost ice crystals macro leaf frozen white winter morning': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Red_leaves_wih_frost%2C_Ehrenbach.jpg/960px-Red_leaves_wih_frost%2C_Ehrenbach.jpg', // Frost
+  'drought cracked dry earth mud flat arid barren landscape': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Cracked_earth_after_prolonged_drought._2020.jpg/960px-Cracked_earth_after_prolonged_drought._2020.jpg', // Drought
+  'hurricane tropical storm swirling clouds ocean aerial dramatic': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Staring_Down_Hurricane_Florence.jpg/960px-Staring_Down_Hurricane_Florence.jpg', // Hurricane
+  'thermometer red mercury glass closeup temperature hot cold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Medical_mercury_thermometer_with_velvet-lined_cardboard_box_-_focus_stack_%282020-05-25%29.jpg/960px-Medical_mercury_thermometer_with_velvet-lined_cardboard_box_-_focus_stack_%282020-05-25%29.jpg', // Temperature
+  'flood submerged street houses water disaster high level': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Flooded_building_and_tree_trunk_in_the_muddy_water_of_the_Mekong_in_Si_Phan_Don%2C_Laos%2C_September_2019.jpg/960px-Flooded_building_and_tree_trunk_in_the_muddy_water_of_the_Mekong_in_Si_Phan_Don%2C_Laos%2C_September_2019.jpg', // Flood
+  'christmas tree decorated ornaments lights golden bokeh cozy': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/A1_Christmas_Tree_photo.jpg/960px-A1_Christmas_Tree_photo.jpg', // Christmas
+  'easter painted eggs colorful basket spring flowers nest': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Bg-easter-eggs.jpg/960px-Bg-easter-eggs.jpg', // Easter
+  'wooden cross silhouette dramatic sky sunset devotion': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Homemade_Hot_Cross_Buns.jpg/960px-Homemade_Hot_Cross_Buns.jpg', // Good Friday
+  'three wise men nativity star gifts figurines gold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Rosc%C3%B3n_de_Reyes_Magos.jpg/960px-Rosc%C3%B3n_de_Reyes_Magos.jpg', // Epiphany
+  'palm fronds woven cross green procession church sunday': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Palm-sunday.jpg/960px-Palm-sunday.jpg', // Palm Sunday
+  'white dove wings spread light sky symbolic holy spirit': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Saint_James_the_Greater_Catholic_Church_%28Concord%2C_North_Carolina%29_-_stained_glass%2C_Holy_Spirit_at_Pentecost.JPG/960px-Saint_James_the_Greater_Catholic_Church_%28Concord%2C_North_Carolina%29_-_stained_glass%2C_Holy_Spirit_at_Pentecost.JPG', // Pentecost
+  'ramadan ornate lanterns golden glowing night crescent moon': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Ramadan_lantern_with_quran.jpg/960px-Ramadan_lantern_with_quran.jpg', // Ramadan
+  'eid al fitr sweets pastries baklava celebration family table': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Eid_al-Fitr_prayer_at_the_Al-Hikmah_Kebonsari_Mosque.jpg/960px-Eid_al-Fitr_prayer_at_the_Al-Hikmah_Kebonsari_Mosque.jpg', // Eid al-Fitr
+  'mosque minaret blue sky crescent islamic architecture prayer': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg/960px-Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul%2C_Turkey_002.jpg', // Eid al-Adha
+  'mosque illuminated night celebration lights islamic ornate': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mawlid_Sidi_Abdel-Rahim_El_Qenawy_%282025%29_-_042.jpg/960px-Mawlid_Sidi_Abdel-Rahim_El_Qenawy_%282025%29_-_042.jpg', // Mawlid
+  'hanukkah menorah nine candles lit golden dark bokeh': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Hanukkah_Lamp_-_Lemberg_F_5119.jpg/960px-Hanukkah_Lamp_-_Lemberg_F_5119.jpg', // Hanukkah
+  'passover seder plate matzo bitter herbs symbolic foods jewish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Passover_Seder_plate_with_wine_and_matzot.jpg/960px-Passover_Seder_plate_with_wine_and_matzot.jpg', // Passover
+  'rosh hashanah apple honey pomegranate shofar jewish new year': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Liat_Portal_for_Foodie_Disorder_-_Apple_slices_with_honey_for_Rosh_Hashanah.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Apple_slices_with_honey_for_Rosh_Hashanah.jpg', // Rosh Hashanah
+  'synagogue interior candles prayer shawl tallit jewish solemn': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Shofar-16-Zachi-Evenor.jpg/960px-Shofar-16-Zachi-Evenor.jpg', // Yom Kippur
+  'hamantaschen triangle cookies poppy seed pastry purim jewish': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Hamantaschen%2C_strawberry.jpg/960px-Hamantaschen%2C_strawberry.jpg', // Purim
+  'sukkah decorated fruits citrus palm branches harvest festival': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/JerusalemSukka.JPG/960px-JerusalemSukka.JPG', // Sukkot
+  'cheesecake fresh flowers white dairy blintzes jewish holiday': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cooking_frozen_blintzes_in_a_frying_pan.jpg/960px-Cooking_frozen_blintzes_in_a_frying_pan.jpg', // Shavuot
+  'diwali diyas clay oil lamps glowing golden dark night india': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Diya_Lamp.jpg/960px-Diya_Lamp.jpg', // Diwali
+  'holi festival colored powder cloud vibrant pink yellow joyful celebration': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Holi_Colours_on_hand.jpg/960px-Holi_Colours_on_hand.jpg', // Holi
+  'navaratri dandiya dance colorful traditional dress celebration india': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Shardiya_Navratri_Festival_in_Pune_2020.jpg/960px-Shardiya_Navratri_Festival_in_Pune_2020.jpg', // Navaratri
+  'ganesh idol colorful decorated flowers elephant god festival india': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Shree_Ganesh_Images_-_A_special_Lord_Ganesh_image_on_display_at_a_Ganesh_Chaturthi_idol_shop.jpg/960px-Shree_Ganesh_Images_-_A_special_Lord_Ganesh_image_on_display_at_a_Ganesh_Chaturthi_idol_shop.jpg', // Ganesh Chaturthi
+  'vesak lanterns floating sky buddha temple night glowing pink': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Grandpass_Vesak_Thorana.jpg/960px-Grandpass_Vesak_Thorana.jpg', // Vesak
+  'bodhi tree sacred ancient roots temple ficus religiosa spiritual': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bodhgaya_3639641913_f4c5f73689_t.jpg/960px-Bodhgaya_3639641913_f4c5f73689_t.jpg', // Bodhi Day
+  'nowruz haft seen table spring flowers goldfish candles persian new year': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Iranian_New_Year_Haft_Sin.jpg/960px-Iranian_New_Year_Haft_Sin.jpg', // Nowruz
+  'golden temple amritsar sikh punjab celebration parade colourful': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Hamandir_Sahib_%28Golden_Temple%29.jpg/960px-Hamandir_Sahib_%28Golden_Temple%29.jpg', // Vaisakhi
+  'airport terminal': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Berlin_Brandenburg_Airport_Terminal_1.jpg/960px-Berlin_Brandenburg_Airport_Terminal_1.jpg', // Airport
+  'luggage suitcase travel': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Belber_Striped_Suitcase.jpg/960px-Belber_Striped_Suitcase.jpg', // Luggage
+  'hotel lobby reception': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg/960px-Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg', // Hotel
+  'tourist sightseeing city': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/009_Sightseeing_in_the_rain_in_Porto%2C_Portugal_-_tourist_with_outdoor_jacket_hood_visiting_a_viewpoint.jpg/960px-009_Sightseeing_in_the_rain_in_Porto%2C_Portugal_-_tourist_with_outdoor_jacket_hood_visiting_a_viewpoint.jpg', // Tourist
+  'currency money exchange': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Euro_banknotes%2C_Europa_series.png/960px-Euro_banknotes%2C_Europa_series.png', // Currency
+  'souvenir shop travel gifts': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Souvenir_shop_in_Marrakech%2C_Morocco%2C_20250125_1123_7198.jpg/960px-Souvenir_shop_in_Marrakech%2C_Morocco%2C_20250125_1123_7198.jpg', // Souvenir
+  'itinerary travel plan notebook': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Amboy_%28California%2C_USA%29%2C_Hist._Route_66_--_2012_--_1.jpg/960px-Amboy_%28California%2C_USA%29%2C_Hist._Route_66_--_2012_--_1.jpg', // Itinerary
+  'backpack travel hiking': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Plecak_Hiker_50_L_HiMountain.jpg/960px-Plecak_Hiker_50_L_HiMountain.jpg', // Backpack
+  'spring cherry blossom': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Spring_meadow_flowers%2C_Runnymede_-_geograph.org.uk_-_4498578.jpg/960px-Spring_meadow_flowers%2C_Runnymede_-_geograph.org.uk_-_4498578.jpg', // Spring
+  'summer sunny beach': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/R%C3%BCgen%2C_Beach_at_Sellin_--_2009_--_1173.jpg/960px-R%C3%BCgen%2C_Beach_at_Sellin_--_2009_--_1173.jpg', // Summer
+  'winter snow cold': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Snow_Scene_at_Shipka_Pass_1.JPG/960px-Snow_Scene_at_Shipka_Pass_1.JPG', // Winter
+  'hat': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/A_fedora_hat%2C_made_by_Borsalino.jpg/960px-A_fedora_hat%2C_made_by_Borsalino.jpg', // Hat
+  'jacket': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Windbreaker_Jacket%2C_Hood_Outside.jpg/960px-Windbreaker_Jacket%2C_Hood_Outside.jpg', // Jacket
+  'glasses eyewear': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/960px-2023_Okulary_korekcyjne.jpg', // Glasses
+  'bank building finance': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/U.S._National_Bank_Building_--_Galveston.jpg/960px-U.S._National_Bank_Building_--_Galveston.jpg', // Bank
+  'atm cash machine': 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Cash_machine_-_ATM_-_panoramio.jpg/960px-Cash_machine_-_ATM_-_panoramio.jpg', // ATM
 };
 
 export interface PhotoCredit { word: string; file: string; author: string; license: string; }
@@ -5613,4 +5768,158 @@ export const PHOTO_CREDITS: PhotoCredit[] = [
   { word: 'Lucuma', file: 'Lucuma.png', author: 'Akramm', license: 'CC BY-SA 3.0' },
   { word: 'Urfa Kebap', file: 'Lula kebab 2.jpg', author: 'Lesya Dolyk', license: 'CC BY-SA 2.0' },
   { word: 'Tom Rim', file: 'Món tôm kho rim nhà làm, tháng 4 năm 2018 (3).jpg', author: 'Phương Huy', license: 'Public domain' },
+  { word: 'Bull', file: 'Charolais cattle, Sierra Nevada, Venezuela.jpg', author: 'Wilfredor', license: 'CC0' },
+  { word: 'Turtle', file: 'Hawaii turtle 2.JPG', author: 'Brocken Inaglory', license: 'CC BY-SA 3.0' },
+  { word: 'Golden Plover', file: 'Goldregenpfeifer (Pluvialis apricaria).jpg', author: 'Stephan Sprinz', license: 'CC BY 4.0' },
+  { word: 'Whale', file: 'Mother and baby sperm whale.jpg', author: 'Gabriel Barathieu', license: 'CC BY-SA 2.0' },
+  { word: 'Dolphin', file: 'Tursiops truncatus 01.jpg', author: 'NASA', license: 'Public domain' },
+  { word: 'Penguin', file: 'South Shetland-2016-Deception Island–Chinstrap penguin (Pygoscelis antarctica) 04.jpg', author: 'Godot13', license: 'CC BY-SA 4.0' },
+  { word: 'Spider', file: 'Araneus diadematus (Clerck, 1757).JPG', author: 'Michael Gäbler', license: 'CC BY-SA 3.0' },
+  { word: 'Ant', file: 'Red Ant - March 2025.jpg', author: 'Samantha Henneke from Seagrove, North Carolina, USA', license: 'CC BY 2.0' },
+  { word: 'Shark', file: 'Corl0207 (28225976491).jpg', author: 'NOAA Photo Library', license: 'CC BY 2.0' },
+  { word: 'Giraffe', file: 'Three giraffes 01.jpg', author: 'Byrdyak', license: 'CC BY-SA 4.0' },
+  { word: 'Crocodile', file: 'Nile crocodile head.jpg', author: 'Leigh Bedford', license: 'CC BY 2.0' },
+  { word: 'Fox', file: 'Vulpes vulpes ssp fulvus.jpg', author: 'Joanne Redwood', license: 'CC0' },
+  { word: 'Owl', file: 'Eurasian eagle-owl (44088).jpg', author: 'Rhododendrites', license: 'CC BY-SA 4.0' },
+  { word: 'Flamingo', file: 'Phoenicopterus ruber in São Paulo Zoo.jpg', author: 'Wilfredor', license: 'CC0' },
+  { word: 'Gorilla', file: 'Mountain gorilla (Gorilla beringei beringei) female 2.jpg', author: 'Charles J. Sharp', license: 'CC BY-SA 4.0' },
+  { word: 'Panda', file: 'Grosser Panda.JPG', author: 'J. Patrick Fischer', license: 'CC BY-SA 3.0' },
+  { word: 'Snake', file: 'Trimeresurus sabahi fucatus, Banded pit viper - Takua Pa District, Phang-nga Province (46710893582).jpg', author: 'Rushenb', license: 'CC BY-SA 2.0' },
+  { word: 'Toad', file: 'Bufo bufo 2009 G1.jpg', author: 'George Chernilevsky', license: 'Public domain' },
+  { word: 'Salamander', file: 'Salamandra salamandra MHNT 1.jpg', author: 'Didier Descouens', license: 'CC BY-SA 4.0' },
+  { word: 'Nightingale', file: 'Luscinia megarhynchos - Common nightingale - Nachtegaal (cropped).jpg', author: 'Warrieboy', license: 'CC BY-SA 4.0' },
+  { word: 'Turtle Dove', file: 'Rufous turtle dove (Streptopelia orientalis orii) Qianshan.jpg', author: 'Charles J. Sharp', license: 'CC BY-SA 4.0' },
+  { word: 'Cat', file: 'Cat November 2010-1a.jpg', author: 'Alvesgaspar', license: 'CC BY-SA 3.0' },
+  { word: 'Dog', file: 'DSC09611a Search and Rescue Dog, Austrian Red Cross Perchtoldsdorf, 2024-10.jpg', author: 'Aciarium', license: 'CC BY 4.0' },
+  { word: 'Bird', file: 'Female house sparrow at Kodai.jpg', author: 'Deepak Sundar', license: 'CC BY-SA 4.0' },
+  { word: 'Fish', file: 'Balantiocheilos melanopterus - Karlsruhe Zoo 02 (cropped).jpg', author: 'H. Zell', license: 'CC BY-SA 3.0' },
+  { word: 'Horse', file: 'Domestic horse at Suryachaur and the mountains in the back1.jpg', author: 'Shadow Ayush', license: 'CC BY-SA 4.0' },
+  { word: 'Elephant', file: 'Red elephant in dirt.jpg', author: 'Byrdyak', license: 'CC BY-SA 4.0' },
+  { word: 'Lion', file: '020 The lion king Snyggve in the Serengeti National Park Photo by Giles Laurent.jpg', author: 'Giles Laurent', license: 'CC BY-SA 4.0' },
+  { word: 'Butterfly', file: 'Peacock butterfly (Aglais io) 2.jpg', author: 'Charles J. Sharp', license: 'CC BY-SA 3.0' },
+  { word: 'Rabbit', file: 'Lapin blanc.jpg', author: 'Fabien1309', license: 'CC BY-SA 3.0' },
+  { word: 'Bear', file: 'European Brown Bear.jpg', author: 'Francis C. Franklin', license: 'CC BY-SA 3.0' },
+  { word: 'Tiger', file: 'Bengal tiger (Panthera tigris tigris) female 3 crop.jpg', author: 'Charles J. Sharp', license: 'CC BY-SA 4.0' },
+  { word: 'Monkey', file: 'Ubud Monkey Family.jpg', author: 'Deerpeter', license: 'CC BY-SA 4.0' },
+  { word: 'Cow', file: 'Cow (Fleckvieh breed) Oeschinensee Slaunger 2009-07-07.jpg', author: 'Kim Hansen', license: 'CC BY-SA 3.0' },
+  { word: 'Sheep', file: 'Swaledale Sheep, Lake District, England - June 2009.jpg', author: 'User:Diliff', license: 'CC BY-SA 3.0' },
+  { word: 'Frog', file: 'Red-eyed Leaf Frog (49661076226).jpg', author: 'Charlie Jackson', license: 'CC BY 2.0' },
+  { word: 'Zebra', file: 'Equus zebra hartmannae - Etosha 2015.jpg', author: 'Yathin S Krishnappa', license: 'CC BY-SA 4.0' },
+  { word: 'Heather', file: 'Calluna vulgaris RF.jpg', author: 'Robert Flogaus-Faust', license: 'CC BY 4.0' },
+  { word: 'Tulip', file: 'Tulipa suaveolens floriade to Canberra.jpg', author: 'John O\'Neill', license: 'CC BY-SA 3.0' },
+  { word: 'Roof Tile', file: 'Terracotta roof tiles.jpg', author: 'Procsilas Moscas', license: 'CC BY 2.0' },
+  { word: 'Cork Oak', file: 'Cork oak December 2015-1.jpg', author: 'Alvesgaspar', license: 'CC BY-SA 4.0' },
+  { word: 'Bramble', file: 'Blackberry fruits 2008 G1.jpg', author: 'George Chernilevsky', license: 'Public domain' },
+  { word: 'Seed', file: 'Разнообразие семян.jpg', author: 'Alexander Klepnev', license: 'CC BY 4.0' },
+  { word: 'Vine Shoot', file: 'Vine shoots.JPG', author: 'Graftedvines', license: 'CC BY-SA 4.0' },
+  { word: 'Mountain Range', file: 'Verkhoyansk Range, Republic of Sakha (Yakutia), Russia - 2019.jpg', author: 'Ilya Varlamov', license: 'CC BY-SA 3.0' },
+  { word: 'Lavender', file: 'Lavender field in Misato Town, Akita 20180624e.jpg', author: '掬茶', license: 'CC BY-SA 4.0' },
+  { word: 'Rose', file: 'Red rose with black background.jpg', author: 'Laitche', license: 'CC BY-SA 4.0' },
+  { word: 'Bouquet', file: 'Rose and carnation flower bouquet 01.jpg', author: 'Suyash Dwivedi', license: 'CC BY-SA 4.0' },
+  { word: 'Root', file: 'Exposed tree roots along Clearwater River.jpg', author: 'PinchyCC', license: 'CC BY 4.0' },
+  { word: 'Ruby', file: 'Ruby crystal 1.jpg', author: 'W.carter', license: 'CC BY 4.0' },
+  { word: 'Sun', file: 'The Sun by the Atmospheric Imaging Assembly of NASA\'s Solar Dynamics Observatory - 20100819.jpg', author: 'NASA/SDO (AIA)', license: 'Public domain' },
+  { word: 'Moon', file: 'Full Moon Luc Viatour.jpg', author: 'Luc Viatour', license: 'CC BY-SA 3.0' },
+  { word: 'Tree', file: 'Usamljeni jasen - panoramio (cropped).jpg', author: 'menergo', license: 'CC BY-SA 3.0' },
+  { word: 'Mountain', file: 'Himalayas, Ama Dablam, Nepal.jpg', author: 'Vyacheslav Argenberg', license: 'CC BY 4.0' },
+  { word: 'Ocean', file: 'Seal Rocks, Ocean Beach, San Francisco.jpg', author: 'Radomianin', license: 'CC BY-SA 4.0' },
+  { word: 'Rain', file: 'Hard rain on a roof.jpg', author: 'W.carter', license: 'CC0' },
+  { word: 'Snow', file: 'Snow Scene at Shipka Pass 1.JPG', author: 'Psy guy', license: 'CC BY-SA 3.0' },
+  { word: 'Forest', file: 'Spruce forest at Holma.jpg', author: 'W.carter', license: 'CC0' },
+  { word: 'Desert', file: 'Dunes, Désert du Thar.jpg', author: 'Clément Bardot', license: 'CC BY-SA 4.0' },
+  { word: 'Cloud', file: 'Cumulus cloud above Lechtaler Alps at tannheim, Austria.jpg', author: 'Glg', license: 'CC BY-SA 2.0 de' },
+  { word: 'Juniper', file: 'Juniperus communis fruits - Keila.jpg', author: 'Ivar Leidus', license: 'CC BY-SA 4.0' },
+  { word: 'Violet', file: 'Early Blue Violet - Viola adunca (23183359724).jpg', author: 'GlacierNPS', license: 'Public domain' },
+  { word: 'View', file: 'Blyde River Canyon Nature Reserve (ZA), Lowveld View -- 2024 -- 9971.jpg', author: 'Dietmar Rabich', license: 'CC BY-SA 4.0' },
+  { word: 'Zinc', file: 'Zinc foils.JPG', author: 'Mauro Cateb', license: 'CC BY-SA 3.0' },
+  { word: 'Schist', file: 'Schist (Ordovician; Marlboro West Route 9 roadcut, Vermont, USA) 3.jpg', author: 'James St. John', license: 'CC BY 2.0' },
+  { word: 'Rose', file: 'Red rose at Square of the Cathedral of Christ the Saviour.jpg', author: 'Юрий Д.К.', license: 'CC BY 4.0' },
+  { word: 'Sunflower', file: 'Eberndorf Köcking Sonnenblumenfeld Biohof Tomic 18072014 0792.jpg', author: 'Johann Jaritz', license: 'CC BY-SA 4.0' },
+  { word: 'Cactus', file: 'Pachycereus pringlei forest.jpg', author: 'Tomascastelazo', license: 'CC BY-SA 4.0' },
+  { word: 'Tulip', file: 'צבעונים.JPG', author: 'Dina L', license: 'CC0' },
+  { word: 'Fern', file: 'Lady fern at Myrstigen trail 1.jpg', author: 'W.carter', license: 'CC0' },
+  { word: 'Lavender', file: 'Lavendelblüte-20220619-RM-160923.jpg', author: 'Ermell', license: 'CC BY-SA 4.0' },
+  { word: 'Bamboo', file: 'Bamboo Forest, Arashiyama, Kyoto, Japan.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Orchid', file: 'Orchidaceae flowers - magenta colour.jpg', author: 'Mister rf', license: 'CC BY-SA 4.0' },
+  { word: 'Ivy', file: 'Hedera algeriensis kz01.jpg', author: 'Krzysztof Ziarnek, Kenraiz', license: 'CC BY-SA 4.0' },
+  { word: 'Daisy', file: 'Leucanthemum vulgare \'Filigran\' Flower 2200px.jpg', author: 'Derek Ramsey (Ram-Man)', license: 'CC BY-SA 3.0' },
+  { word: 'Palm Tree', file: 'Three palm trees during the sunset, Ayia Marina Chrysochous, Paphos District, Cyprus 02.jpg', author: 'Michal Klajban', license: 'CC BY-SA 4.0' },
+  { word: 'Moss', file: 'Tionesta-ac-moss2.jpg', author: 'IvoShandor', license: 'CC BY 2.5' },
+  { word: 'Bonsai', file: 'Bonsai, Kenshin Toge.jpg', author: 'Order of the Rose (薔薇騎士団)', license: 'CC BY 4.0' },
+  { word: 'Succulent', file: 'Succulent - Azores.jpg', author: 'P. Hughes', license: 'CC BY-SA 4.0' },
+  { word: 'Herb', file: 'Freshly picked herbs held high against a lush green backdrop in an outdoor farm setting.jpg', author: 'Shixart1985', license: 'CC BY 2.0' },
+  { word: 'Phone', file: 'Smartphone Use.jpg', author: 'Océanos y dados', license: 'CC0' },
+  { word: 'Computer', file: 'Laptop der Marke exone go 20240203 HOF06886 RAW-Export 000276.png', author: 'PantheraLeo1359531', license: 'CC BY 4.0' },
+  { word: 'Camera', file: '12 MP digital camera - red.jpg', author: 'Packer1028', license: 'CC0' },
+  { word: 'Television', file: 'Polytechnical Museum television set Volna 20150214 164839.jpg', author: 'Svetlov Artem', license: 'CC BY 4.0' },
+  { word: 'Headphones', file: 'Headphones 1.jpg', author: 'Unknown author (credited on Wikimedia Commons)', license: 'CC BY-SA 3.0' },
+  { word: 'Keyboard', file: 'QWERTY keyboard.jpg', author: 'MichaelMaggs', license: 'CC BY-SA 3.0' },
+  { word: 'Charger', file: 'Phone charger 2026.jpg', author: 'Сергей Михель', license: 'CC BY-SA 3.0' },
+  { word: 'Robot', file: 'HONDA ASIMO.jpg', author: 'Gnsin', license: 'CC BY-SA 3.0' },
+  { word: 'Rocket', file: 'Soyuz TMA-9 launch.jpg', author: 'Bill Ingalls', license: 'Public domain' },
+  { word: 'Satellite', file: 'Two 3U CubeSats.jpg', author: 'NASA', license: 'Public domain' },
+  { word: 'Drone', file: 'Quadcopter camera drone in flight.jpg', author: 'Josh Sorenson', license: 'CC0' },
+  { word: 'Printer', file: 'Canon PIXMA TS207 Printer picture.jpg', author: 'Paowee', license: 'CC BY-SA 4.0' },
+  { word: 'Speaker', file: '2016 Kolumna głośnikowa Altus 110.jpg', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Battery', file: 'AA Batteries (51825378856).jpg', author: 'ajay_suresh', license: 'CC BY 2.0' },
+  { word: 'Screen', file: 'EIZO Foris FG2421 VGA computer monitor displaying test pattern.png', author: 'Lucasbosch', license: 'CC BY-SA 4.0' },
+  { word: 'App', file: 'Smartphone screen with Land Rover apps.jpg', author: 'Land Rover MENA', license: 'CC BY 2.0' },
+  { word: 'Internet', file: 'CAT8 Ethernet Cable-0319.jpg', author: 'Raimond Spekking', license: 'CC BY-SA 4.0' },
+  { word: 'Microphone', file: 'Shure mikrofon 55S.jpg', author: 'Holger.Ellgaard', license: 'CC BY-SA 3.0' },
+  { word: 'Sunny', file: 'Wooden footbridge in Shinjuku Gyoen National Garden, Tokyo, Japan, a sunny day with blue sky.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Rainy', file: 'Purple rain on roof.jpg', author: 'W.carter', license: 'CC0' },
+  { word: 'Cloudy', file: 'Submerged tree under a dark and cloudy sky in Si Phan Don.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Windy', file: 'Roadside tree on a windy day - geograph.org.uk - 2610470.jpg', author: 'Christine Johnstone', license: 'CC BY-SA 2.0' },
+  { word: 'Snowy', file: 'Iceland\'s Mid-Atlantic Ridge during snow.jpg', author: 'Bar Harel', license: 'CC BY-SA 4.0' },
+  { word: 'Foggy', file: 'Receding Fog over Lake Altaussee.jpg', author: 'Bernd Thaller', license: 'CC BY 2.0' },
+  { word: 'Stormy', file: 'Cumulonimbus incus over Warsaw, Poland.jpg', author: 'Kamil Nowacki', license: 'CC BY-SA 4.0' },
+  { word: 'Thunder', file: 'Lightning Pritzerbe 01 (MK).jpg', author: 'Mathias Krumbholz', license: 'CC BY-SA 3.0' },
+  { word: 'Rainbow', file: 'WhereRainbowRises.jpg', author: 'Wing-Chi Poon', license: 'CC BY-SA 2.5' },
+  { word: 'Hail', file: 'Grêle.jpg', author: 'Kevain25460', license: 'CC BY-SA 3.0' },
+  { word: 'Frost', file: 'Red leaves wih frost, Ehrenbach.jpg', author: 'Gerda Arendt', license: 'CC0' },
+  { word: 'Drought', file: 'Cracked earth after prolonged drought. 2020.jpg', author: 'Rosser1954', license: 'CC BY-SA 4.0' },
+  { word: 'Hurricane', file: 'Staring Down Hurricane Florence.jpg', author: 'Alexander Gerst', license: 'Public domain' },
+  { word: 'Temperature', file: 'Medical mercury thermometer with velvet-lined cardboard box - focus stack (2020-05-25).jpg', author: 'Franz van Duns', license: 'CC BY-SA 4.0' },
+  { word: 'Flood', file: 'Flooded building and tree trunk in the muddy water of the Mekong in Si Phan Don, Laos, September 2019.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0' },
+  { word: 'Christmas', file: 'A1 Christmas Tree photo.jpg', author: 'William Warby', license: 'CC BY 2.0' },
+  { word: 'Easter', file: 'Bg-easter-eggs.jpg', author: 'Ikonact', license: 'CC BY-SA 3.0' },
+  { word: 'Good Friday', file: 'Homemade Hot Cross Buns.jpg', author: 'Cjorsch', license: 'CC BY-SA 3.0' },
+  { word: 'Epiphany', file: 'Roscón de Reyes Magos.jpg', author: 'Juan Emilio Prades Bel', license: 'CC BY 4.0' },
+  { word: 'Palm Sunday', file: 'Palm-sunday.jpg', author: 'CKSherrod', license: 'CC0' },
+  { word: 'Pentecost', file: 'Saint James the Greater Catholic Church (Concord, North Carolina) - stained glass, Holy Spirit at Pentecost.JPG', author: 'Nheyob', license: 'CC BY-SA 4.0' },
+  { word: 'Ramadan', file: 'Ramadan lantern with quran.jpg', author: 'Pshahma', license: 'CC BY-SA 4.0' },
+  { word: 'Eid al-Fitr', file: 'Eid al-Fitr prayer at the Al-Hikmah Kebonsari Mosque.jpg', author: 'Mumun96', license: 'CC BY-SA 4.0' },
+  { word: 'Eid al-Adha', file: 'Exterior of Sultan Ahmed I Mosque in Istanbul, Turkey 002.jpg', author: 'Moonik', license: 'CC BY-SA 3.0' },
+  { word: 'Mawlid', file: 'Mawlid Sidi Abdel-Rahim El Qenawy (2025) - 042.jpg', author: 'Amr F.Nagy', license: 'CC BY-SA 4.0' },
+  { word: 'Hanukkah', file: 'Hanukkah Lamp - Lemberg F 5119.jpg', author: 'The Jewish Museum New York', license: 'CC BY-SA 3.0' },
+  { word: 'Passover', file: 'Passover Seder plate with wine and matzot.jpg', author: 'Mikael Häggström', license: 'CC0' },
+  { word: 'Rosh Hashanah', file: 'Liat Portal for Foodie Disorder - Apple slices with honey for Rosh Hashanah.jpg', author: 'HaJunkiyada', license: 'CC BY-SA 4.0' },
+  { word: 'Yom Kippur', file: 'Shofar-16-Zachi-Evenor.jpg', author: 'Zachi Evenor', license: 'CC BY 2.0' },
+  { word: 'Purim', file: 'Hamantaschen, strawberry.jpg', author: 'Eden Aviv', license: 'CC0' },
+  { word: 'Sukkot', file: 'JerusalemSukka.JPG', author: 'Gilabrand', license: 'CC BY-SA 3.0' },
+  { word: 'Shavuot', file: 'Cooking frozen blintzes in a frying pan.jpg', author: 'Andrevan', license: 'CC BY-SA 2.5' },
+  { word: 'Diwali', file: 'Diya Lamp.jpg', author: 'Ara Basu', license: 'CC BY-SA 4.0' },
+  { word: 'Holi', file: 'Holi Colours on hand.jpg', author: 'Alokjain19883105', license: 'CC BY-SA 4.0' },
+  { word: 'Navaratri', file: 'Shardiya Navratri Festival in Pune 2020.jpg', author: 'आर्या जोशी', license: 'CC BY-SA 4.0' },
+  { word: 'Ganesh Chaturthi', file: 'Shree Ganesh Images - A special Lord Ganesh image on display at a Ganesh Chaturthi idol shop.jpg', author: 'VedSutra', license: 'CC BY-SA 4.0' },
+  { word: 'Vesak', file: 'Grandpass Vesak Thorana.jpg', author: 'Sheviii 1234', license: 'CC BY-SA 4.0' },
+  { word: 'Bodhi Day', file: 'Bodhgaya 3639641913 f4c5f73689 t.jpg', author: 'Ken Wieland from Philadelphia, USA', license: 'CC BY-SA 2.0' },
+  { word: 'Nowruz', file: 'Iranian New Year Haft Sin.jpg', author: 'Hamed Saber', license: 'CC BY 2.0' },
+  { word: 'Vaisakhi', file: 'Hamandir Sahib (Golden Temple).jpg', author: 'Oleg Yunakov', license: 'CC BY-SA 3.0' },
+  { word: 'Airport', file: 'Berlin Brandenburg Airport Terminal 1.jpg', author: 'Arne Müseler', license: 'CC BY-SA 3.0 de' },
+  { word: 'Luggage', file: 'Belber Striped Suitcase.jpg', author: 'Sandrine Z', license: 'CC BY-SA 4.0' },
+  { word: 'Hotel', file: 'Livorno - Hotel Palazzo - 2025-09-29 20-09-38 001.jpg', author: 'Terragio67', license: 'CC BY-SA 4.0' },
+  { word: 'Tourist', file: '009 Sightseeing in the rain in Porto, Portugal - tourist with outdoor jacket hood visiting a viewpoint.jpg', author: 'Marek Ślusarczyk (Tupungato) Photo portfolio', license: 'CC BY 3.0' },
+  { word: 'Currency', file: 'Euro banknotes, Europa series.png', author: 'Bericht', license: 'CC0' },
+  { word: 'Souvenir', file: 'Souvenir shop in Marrakech, Morocco, 20250125 1123 7198.jpg', author: 'Jakub Hałun', license: 'CC BY 4.0' },
+  { word: 'Itinerary', file: 'Amboy (California, USA), Hist. Route 66 -- 2012 -- 1.jpg', author: 'Dietmar Rabich', license: 'CC BY-SA 4.0' },
+  { word: 'Backpack', file: 'Plecak Hiker 50 L HiMountain.jpg', author: 'WrS.tm.pl', license: 'CC0' },
+  { word: 'Spring', file: 'Spring meadow flowers, Runnymede - geograph.org.uk - 4498578.jpg', author: 'Stephen Craven', license: 'CC BY-SA 2.0' },
+  { word: 'Summer', file: 'Rügen, Beach at Sellin -- 2009 -- 1173.jpg', author: 'Dietmar Rabich', license: 'CC BY-SA 4.0' },
+  { word: 'Winter', file: 'Snow Scene at Shipka Pass 1.JPG', author: 'Psy guy', license: 'CC BY-SA 3.0' },
+  { word: 'Hat', file: 'A fedora hat, made by Borsalino.jpg', author: 'Kjetil Ree', license: 'CC BY 2.5' },
+  { word: 'Jacket', file: 'Windbreaker Jacket, Hood Outside.jpg', author: 'Ingolfson', license: 'Public domain' },
+  { word: 'Glasses', file: '2023 Okulary korekcyjne.jpg', author: 'Jacek Halicki', license: 'CC BY-SA 4.0' },
+  { word: 'Bank', file: 'U.S. National Bank Building -- Galveston.jpg', author: 'Jim Evans', license: 'CC BY-SA 4.0' },
+  { word: 'ATM', file: 'Cash machine - ATM - panoramio.jpg', author: 'Bjarne Henning Kvaal…', license: 'CC BY-SA 3.0' },
 ];
