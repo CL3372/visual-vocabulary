@@ -374,6 +374,11 @@ function css(color) {
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #0f172a; min-height: 100vh; }
     a { color: inherit; text-decoration: none; }
+    .article .blurb { max-width: none; margin-bottom: 1.4rem; font-size: 1.02rem; }
+    .article .blurb a { color: #4f46e5; text-decoration: underline; }
+    .article .section-title { margin-top: 0.4rem; }
+    ol.steps { margin: 0 0 1.8rem 1.25rem; color: #334155; line-height: 1.6; font-size: 1.02rem; }
+    ol.steps li { margin-bottom: 0.6rem; }
     .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.7rem; margin: 0 0 2rem; }
     @media (min-width: 640px) { .gallery { grid-template-columns: repeat(3, 1fr); gap: 0.9rem; } }
     .gallery figure { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
@@ -482,7 +487,7 @@ function layout({ title, desc, url, color, ld, body }) {
 ${body}
 <footer>
   <p>© ${new Date().getFullYear()} <a href="${SITE_URL}">${SITE_NAME}</a> · Free visual vocabulary learning · 4,000+ words · 42 languages</p>
-  <p style="margin-top:0.5rem"><a href="${LEARN_INDEX_URL}">All topics</a></p>
+  <p style="margin-top:0.5rem"><a href="${LEARN_INDEX_URL}">All topics</a> · <a href="${SITE_URL}/learn/visual-vocabulary">Visual vocabulary</a> · <a href="${SITE_URL}/learn/learn-words-with-pictures">Learn words with pictures</a></p>
   <p style="margin-top:0.5rem">
     <a href="${SITE_URL}/learn/verbs">Verbs</a> ·
     <a href="${SITE_URL}/learn/emotions">Emotions</a> ·
@@ -967,11 +972,166 @@ ${crumbsHtml(trail)}
 </section>
 
 <div class="content">
+  <h2 class="section-title">📖 Guides</h2>
+  <div class="topic-grid">
+    <a class="topic-card" href="${guideUrl(GUIDE_SLUGS.visual)}"><strong>👁️ Visual vocabulary</strong><span>What it is and why photos help you remember words</span></a>
+    <a class="topic-card" href="${guideUrl(GUIDE_SLUGS.pictures)}"><strong>🖼️ Learn words with pictures</strong><span>A simple 5-step method you can use today</span></a>
+  </div>
 ${sections}
 ${languages}
 </div>
 `;
   return layout({ title, desc, url, color, ld, body });
+}
+
+// ─── Guides: /learn/visual-vocabulary and /learn/learn-words-with-pictures ───
+
+const GUIDE_SLUGS = { visual: 'visual-vocabulary', pictures: 'learn-words-with-pictures' };
+const guideUrl = slug => `${SITE_URL}/learn/${slug}`;
+
+function topicLink(name) {
+  const t = TOPICS.find(x => x.name === name);
+  return t ? `<a href="${topicUrl(t)}" class="related-link">${t.emoji} ${htmlEncode(t.name)}</a>` : '';
+}
+
+/** A few everyday topics whose words have real photos, used for the "try it" gallery. */
+function guideGalleryTopic() {
+  const names = ['Fruits', 'Vegetables', 'Home', 'Kitchen', 'Transport', 'Animals', 'Italian Cuisine'];
+  const words = names.flatMap(n => TOPICS.find(t => t.name === n)?.words ?? []);
+  return { name: 'Guide examples', words };
+}
+
+function guideGallery(heading) {
+  const topic = guideGalleryTopic();
+  const byName = new Map(topic.words.map(w => [w.word, w]));
+  return galleryHtml(topic, heading, p => {
+    const w = byName.get(p.word);
+    const es = w ? translationOf(w, 'es', OVERLAYS) : '';
+    return { main: p.word, sub: es ? `Spanish: ${es}` : '', alt: `${p.word}${es ? ` (${es} in Spanish)` : ''}` };
+  });
+}
+
+function guideShell({ slug, title, desc, h1, lead, bodyHtml, faqs, emoji }) {
+  const url = guideUrl(slug);
+  const color = groupColor('Language');
+  const trail = [{ name: 'LexPix', url: SITE_URL }, { name: 'Learn', url: LEARN_INDEX_URL }, { name: h1.split(':')[0], url }];
+  const ld = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: h1,
+      description: desc,
+      url,
+      inLanguage: 'en',
+      author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      mainEntityOfPage: url,
+    },
+    breadcrumbLd(trail),
+    faqLd(faqs),
+  ];
+  const body = `
+${crumbsHtml(trail)}
+<section class="hero">
+  <div class="emoji">${emoji}</div>
+  <h1>${htmlEncode(h1)}</h1>
+  <p>${htmlEncode(lead)}</p>
+  <a href="${SITE_URL}" class="cta-btn">Try ${SITE_NAME} free</a>
+  <p class="cta-sub">Free to start · Works on all devices</p>
+</section>
+
+<div class="content article">
+${bodyHtml}
+
+  ${faqHtml(faqs)}
+
+  <h2 class="section-title">🗂 Start with a topic</h2>
+  <div class="related">
+    ${['Fruits', 'Vegetables', 'Home', 'Kitchen', 'Animals', 'Transport', 'Italian Cuisine', 'Japanese Cuisine'].map(topicLink).join('\n    ')}
+    <a href="${LEARN_INDEX_URL}" class="related-link">📚 All topics</a>
+  </div>
+
+  <div class="cta-bottom">
+    <h2>Learn your first words with pictures</h2>
+    <p>Pick a topic, look at the photo, then check the word.</p>
+    <a href="${SITE_URL}" class="cta-btn">Open ${SITE_NAME}</a>
+  </div>
+</div>
+`;
+  return layout({ title, desc, url, color, ld, body });
+}
+
+function generateGuideVisual() {
+  const langs = FULL_BUILD ? `
+  <p>Prefer to start from a language? Browse word lists for ${PAGE_LANGUAGES.map(l => `<a href="${langHubUrl(l)}">${l.label}</a>`).join(', ')}.</p>` : '';
+  const bodyHtml = `
+  <h2 class="section-title">What is visual vocabulary?</h2>
+  <p class="blurb">Visual vocabulary means learning a word together with a picture of the thing it describes, instead of only with a translation. You see a photo of a pomegranate, then the word <em>granada</em>, and your memory links the word to the image rather than to another word in your own language.</p>
+
+  <h2 class="section-title">Why pictures help words stick</h2>
+  <p class="blurb">Psychologists have long found that people tend to remember pictures better than words alone, a finding often called the picture superiority effect. Dual coding theory adds that a word and an image give the brain two routes back to the same memory. Neither is a promise of fast results, but pairing words with images is a well-established way to make vocabulary easier to recall, and it is how most picture dictionaries and flashcards work.</p>
+
+  <h2 class="section-title">Where it works best, and where it does not</h2>
+  <p class="blurb">Concrete things are easy to show: foods, animals, objects in a home, vehicles, clothes, places. Abstract words such as numbers, emotions or verbs are harder, so ${SITE_NAME} uses a real photo where one can be taken and a simple drawn picture where it cannot. Photos are not a replacement for hearing the language, reading sentences and speaking, so use them as the first step for each word.</p>
+
+${guideGallery('Examples: words with their photos')}
+
+  <h2 class="section-title">How ${SITE_NAME} uses visual vocabulary</h2>
+  <p class="blurb">Every word in ${SITE_NAME} comes with a picture. You can browse by topic, flip through flashcards in the language you are learning, take quizzes, and come back to review words you found hard. Topics range from everyday life (home, kitchen, transport) to the food of countries around the world, and the app works in ${LANGUAGES.length} languages.</p>
+  ${langs}
+`;
+  const faqs = [
+    { q: 'What is a visual vocabulary app?', a: `A visual vocabulary app teaches words with pictures. ${SITE_NAME} shows a photo for each word, then the translation, and lets you practise with flashcards and quizzes.` },
+    { q: 'Is visual vocabulary only for beginners?', a: 'It is most useful at the start, when you need to connect new words to real things, but it also works for topics you have not studied before, such as the food or the vocabulary of a new country.' },
+    { q: `Is ${SITE_NAME} free?`, a: `${SITE_NAME} is free to start. You can try it in the browser or download it from the App Store or Google Play.` },
+    { q: `Is ${SITE_NAME} the same app as Visual Vocab?`, a: `Yes. ${SITE_NAME} was previously called Visual Vocab, and the old visualvocab.io address now redirects to lexpix.io.` },
+  ];
+  return guideShell({
+    slug: GUIDE_SLUGS.visual,
+    title: fit([`Visual Vocabulary: learn words with real photos | ${SITE_NAME}`, `Visual Vocabulary: learn words with photos | ${SITE_NAME}`], 68),
+    desc: fit([`What visual vocabulary is, why pairing words with photos helps you remember them, and how to study with the free ${SITE_NAME} app in ${LANGUAGES.length} languages.`, `What visual vocabulary is and how to learn words with photos in ${LANGUAGES.length} languages.`], 158),
+    h1: 'Visual Vocabulary: Learn Words with Real Photos',
+    lead: `What visual vocabulary is, why pictures help you remember words, and how to use it with ${SITE_NAME}.`,
+    bodyHtml, faqs, emoji: '👁️',
+  });
+}
+
+function generateGuidePictures() {
+  const langs = FULL_BUILD ? `
+  <p class="blurb">Choose a language to see the words with translations: ${PAGE_LANGUAGES.map(l => `<a href="${langHubUrl(l)}">${l.label}</a>`).join(', ')}.</p>` : '';
+  const bodyHtml = `
+  <h2 class="section-title">Why learn words with pictures?</h2>
+  <p class="blurb">When you learn a word from a translation list, you connect it to another word. When you learn it from a picture, you connect it to the thing itself, which is how you learned your first language. This guide is a simple method you can follow with any topic, using ${SITE_NAME} or your own photos.</p>
+
+  <h2 class="section-title">A simple 5-step method</h2>
+  <ol class="steps">
+    <li><strong>Pick a small topic.</strong> Choose 10 to 20 words you will actually meet this week: the food in your kitchen, things in your home, the words on a supermarket shelf.</li>
+    <li><strong>Look at the picture first.</strong> Before you read the word, say what you think it is, in any language. This small guess helps you remember the answer.</li>
+    <li><strong>Reveal the word and say it aloud.</strong> Read the translation, listen to how it sounds, and say it out loud while looking at the picture.</li>
+    <li><strong>Test yourself the next day.</strong> Use flashcards or a quiz to see which words you remember from the picture alone.</li>
+    <li><strong>Return at longer gaps.</strong> Review the hard words again after a few days, then after a week or more, and let the easy ones rest.</li>
+  </ol>
+
+${guideGallery('Try it: look at the photo, then check the word')}
+
+  <h2 class="section-title">Tips that make pictures work harder</h2>
+  <p class="blurb">Match the topic to your life: if you are moving to a new country, start with supermarket, home and transport words. Add a short sentence to each word you find hard. Label real objects around you with the new word. For abstract words that cannot be photographed, such as verbs and emotions, use the picture as a reminder of one clear example.</p>
+  ${langs}
+`;
+  const faqs = [
+    { q: 'How many words should I learn with pictures each day?', a: 'Start with 10 to 20 words from one topic and review them the next day. A small set you remember is better than a long list you forget.' },
+    { q: 'Can I learn words with pictures without an app?', a: 'Yes. You can print photos or use your own, write the word on the back, and flip them like flashcards. An app saves the work of finding photos and keeps track of what to review.' },
+    { q: `Which languages can I learn with ${SITE_NAME}?`, a: `${SITE_NAME} supports ${LANGUAGES.length} languages, including Spanish, French, German, Italian, Portuguese, Japanese, Chinese, Korean and Russian.` },
+    { q: `Is ${SITE_NAME} free?`, a: `${SITE_NAME} is free to start, in the browser and as an app for iPhone and Android.` },
+  ];
+  return guideShell({
+    slug: GUIDE_SLUGS.pictures,
+    title: fit([`Learn Words with Pictures: a simple 5-step method | ${SITE_NAME}`, `Learn Words with Pictures: a 5-step method | ${SITE_NAME}`], 68),
+    desc: fit([`A simple 5-step method to learn words with pictures: pick a topic, guess from the photo, say the word aloud and review. Try it free with ${SITE_NAME}.`, `A simple 5-step method to learn words with pictures, with free photo flashcards in ${LANGUAGES.length} languages.`], 158),
+    h1: 'Learn Words with Pictures: A Simple Method',
+    lead: 'A five-step method for remembering new words from photos, with examples you can try now.',
+    bodyHtml, faqs, emoji: '🖼️',
+  });
 }
 
 // ─── Sitemap ─────────────────────────────────────────────────────────────────
@@ -994,6 +1154,12 @@ if (existsSync(britishDir)) {
 const sitemap = [sitemapUrl(`${SITE_URL}/`, '1.0', latestDate(['index.html']))];
 writeFileSync(join(LEARN_DIR, 'index.html'), generateLearnIndex(), 'utf8');
 sitemap.push(sitemapUrl(LEARN_INDEX_URL, '0.9', latestDate(GENERATOR_FILES)));
+for (const [slug, make] of [[GUIDE_SLUGS.visual, generateGuideVisual], [GUIDE_SLUGS.pictures, generateGuidePictures]]) {
+  const dir = join(LEARN_DIR, slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'index.html'), make(), 'utf8');
+  sitemap.push(sitemapUrl(guideUrl(slug), '0.8', latestDate(GENERATOR_FILES)));
+}
 let topicPages = 0;
 let hubPages = 0;
 let langPages = 0;
