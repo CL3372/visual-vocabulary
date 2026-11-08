@@ -82,7 +82,22 @@ function Inner() {
             <button onClick={wordData.retry} className="px-5 py-2 rounded-xl text-white font-semibold" style={{ background: 'var(--accent)' }}>Try again</button>
           </>
         ) : (
-          <p className="text-sm" style={{ color: 'var(--text2)' }}>Loading words…</p>
+          <>
+            <img src="/favicon-192x192.png" alt="LexPix" width={72} height={72} className="w-18 h-18 rounded-2xl shadow-md animate-pulse" style={{ width: 72, height: 72 }} />
+            <h1 className="text-xl font-bold" style={{ color: 'var(--accent)' }}>LexPix</h1>
+            <p className="text-sm" style={{ color: 'var(--text2)' }}>Loading words…</p>
+            <div className="grid grid-cols-2 gap-3 w-full max-w-xs mt-4" aria-hidden="true">
+              {[0, 1, 2, 3].map(i => (
+                <div key={i} className="rounded-2xl overflow-hidden animate-pulse" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                  <div style={{ aspectRatio: '4 / 3', background: 'var(--surface2)' }} />
+                  <div className="p-2 space-y-1.5">
+                    <div className="h-3 rounded" style={{ background: 'var(--surface2)', width: '70%' }} />
+                    <div className="h-2.5 rounded" style={{ background: 'var(--surface2)', width: '45%' }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
         )}
       </div>
     );
@@ -201,7 +216,7 @@ function Inner() {
       {mode === 'browse' && (
         <button
           onClick={() => setShowDailyChallenge(true)}
-          className="mx-4 mt-3 flex items-center gap-3 px-4 py-3 rounded-2xl transition-all active:scale-95"
+          className="mx-4 mt-2 flex items-center gap-3 px-4 py-2 rounded-2xl transition-all active:scale-95"
           style={{
             background: dailyDone ? 'var(--surface2)' : 'linear-gradient(135deg, #f97316, #ef4444)',
             border: dailyDone ? '1.5px solid var(--border)' : 'none',

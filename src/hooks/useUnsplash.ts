@@ -464,7 +464,6 @@ const CURATED: Record<string, string> = {
   'tiger':              'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=400&h=400&fit=crop',
   'monkey':             'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=400&h=400&fit=crop',
   'sheep':              'https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=400&h=400&fit=crop',
-  'duck':               'https://images.unsplash.com/photo-1444208516459-a2979afaff9d?w=400&h=400&fit=crop',
   // frog → Wikipedia fallback
 
   // Food
@@ -480,7 +479,6 @@ const CURATED: Record<string, string> = {
   'banana':             'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop',
   'tomato':             'https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=400&h=400&fit=crop',
   'cheese':             'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?w=400&h=400&fit=crop',
-  'rice bowl':          'https://images.unsplash.com/photo-1536304993881-ff86e0c9b785?w=400&h=400&fit=crop',
   // soup bowl → Wikipedia fallback
   'coffee cup':         'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop',
   // chocolate → Wikipedia
@@ -495,12 +493,10 @@ const CURATED: Record<string, string> = {
   'sun sunrise':        'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop',
   'moon night':         'https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=400&h=400&fit=crop',
   'tree nature':        'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=400&h=400&fit=crop',
-  'flower bloom':       'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'mountain landscape': 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=400&fit=crop',
   'ocean waves':        'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&h=400&fit=crop',
   'rain drops':         'https://images.unsplash.com/photo-1438449805896-28a666819a20?w=400&h=400&fit=crop',
   'snow winter':        'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=400&h=400&fit=crop',
-  'river':              'https://images.unsplash.com/photo-1439728441434-45b4c8e3c4b7?w=400&h=400&fit=crop',
   'forest':             'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&h=400&fit=crop',
   'desert sand':        'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=400&fit=crop',
   'cloud sky':          'https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=400&h=400&fit=crop',
@@ -527,7 +523,6 @@ const CURATED: Record<string, string> = {
   'electric bike':      'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=400&h=400&fit=crop',
   'coach bus':          'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=400&fit=crop',
   'lorry truck':        'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&h=400&fit=crop',
-  'helicopter':         'https://images.unsplash.com/photo-1534569635806-4d53c9e7ea64?w=400&h=400&fit=crop',
 
   // Colors — objects that clearly show the hue
   'red color abstract':    'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop',
@@ -536,7 +531,6 @@ const CURATED: Record<string, string> = {
   'yellow sunflower':      'https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=400&h=400&fit=crop',
   'purple lavender':       'https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=400&h=400&fit=crop',
   'orange color sunset':   'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=400&h=400&fit=crop',
-  'pink flowers':          'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'white snow minimal':    'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=400&h=400&fit=crop',
 
   // Body
@@ -579,7 +573,6 @@ const CURATED: Record<string, string> = {
   'grapes':             'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=400&h=400&fit=crop',
   'watermelon':         'https://images.unsplash.com/photo-1563114773-84221bd62daa?w=400&h=400&fit=crop',
   'peach fruit':        'https://images.unsplash.com/photo-1595743825637-cdafc8ad4173?w=400&h=400&fit=crop',
-  'pear fruit':         'https://images.unsplash.com/photo-1601275868399-5df6f0c07ca5?w=400&h=400&fit=crop',
   'cherry fruit':       'https://images.unsplash.com/photo-1528821128474-27f963b062bf?w=400&h=400&fit=crop',
   'blueberry':          'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=400&h=400&fit=crop',
   'raspberry':          'https://images.unsplash.com/photo-1550828520-4cb496926fc9?w=400&h=400&fit=crop',
@@ -591,19 +584,15 @@ const CURATED: Record<string, string> = {
   'carrot':             'https://images.unsplash.com/photo-1445282768818-728615cc910a?w=400&h=400&fit=crop',
   'potato':             'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=400&fit=crop',
   'onion':              'https://images.unsplash.com/photo-1508747703725-719777637510?w=400&h=400&fit=crop',
-  'garlic':             'https://images.unsplash.com/photo-1415253461696-b4ef09c22a66?w=400&h=400&fit=crop',
   'broccoli':           'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400&h=400&fit=crop',
   'spinach':            'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&h=400&fit=crop',
   'lettuce salad':      'https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400&h=400&fit=crop',
   'cucumber':           'https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=400&h=400&fit=crop',
   'bell pepper':        'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=400&h=400&fit=crop',
   // eggplant, asparagus, artichoke → Wikipedia
-  'zucchini':           'https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?w=400&h=400&fit=crop',
   'mushroom':           'https://images.unsplash.com/photo-1504545102780-26774c1bb073?w=400&h=400&fit=crop',
   'corn':               'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400&h=400&fit=crop',
   'peas green':         'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?w=400&h=400&fit=crop',
-  'leek vegetable':     'https://images.unsplash.com/photo-1623227413711-25ee4a2b8de7?w=400&h=400&fit=crop',
-  'cauliflower':        'https://images.unsplash.com/photo-1568584711271-6bf3a01b3b5b?w=400&h=400&fit=crop',
   'cabbage':            'https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=400&h=400&fit=crop',
 
   // Gastronomy — Meat
@@ -612,7 +601,6 @@ const CURATED: Record<string, string> = {
   'pork meat':          'https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=400&fit=crop',
   // lamb meat, sausage → Wikipedia
   'turkey roast':       'https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=400&h=400&fit=crop',
-  'duck roast':         'https://images.unsplash.com/photo-1612392062422-18b4d5bdb8d1?w=400&h=400&fit=crop',
   // ham prosciutto → Wikipedia
   'bacon':              'https://images.unsplash.com/photo-1528607929212-2636ec44253e?w=400&h=400&fit=crop',
   'steak grilled':      'https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=400&h=400&fit=crop',
@@ -650,18 +638,13 @@ const CURATED: Record<string, string> = {
   'cheesecake':         'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400&h=400&fit=crop',
   // pudding dessert → Wikipedia
   'honey jar':          'https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&h=400&fit=crop',
-  'jam jar':            'https://images.unsplash.com/photo-1597498685600-1a75e08ccf0b?w=400&h=400&fit=crop',
   // caramel → Wikipedia
 
   // Gastronomy — Herbs & Spices
   'salt':               'https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?w=400&h=400&fit=crop',
   'pepper spice':       'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=400&h=400&fit=crop',
-  'basil herb':         'https://images.unsplash.com/photo-1632584185413-5b2f651e6cf1?w=400&h=400&fit=crop',
-  'cinnamon spice':     'https://images.unsplash.com/photo-1508061256848-b5a9b5184c38?w=400&h=400&fit=crop',
-  'ginger root':        'https://images.unsplash.com/photo-1573414405013-46a5e9d15e76?w=400&h=400&fit=crop',
   // vanilla → Wikipedia
   // parsley herb, thyme herb, turmeric spice → Wikipedia
-  'rosemary herb':      'https://images.unsplash.com/photo-1515586838455-8ae9f9b29cfe?w=400&h=400&fit=crop',
   'chili pepper red':   'https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=400&h=400&fit=crop',
   // saffron spice → Wikipedia
 
@@ -670,12 +653,10 @@ const CURATED: Record<string, string> = {
   'vinegar bottle':     'https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=400&h=400&fit=crop',
   'ketchup':            'https://images.unsplash.com/photo-1605789538467-f715d58e03f9?w=400&h=400&fit=crop',
   // mustard → Wikipedia
-  'mayonnaise':         'https://images.unsplash.com/photo-1600454309261-3dc9ead47b5e?w=400&h=400&fit=crop',
   'soy sauce':          'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=400&fit=crop',
   'pesto sauce':        'https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=400&h=400&fit=crop',
 
   // Gastronomy — Dishes
-  'sushi':              'https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=400&h=400&fit=crop',
   'burger':             'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=400&fit=crop',
   'salad fresh':        'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=400&fit=crop',
   'sandwich':           'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=400&fit=crop',
@@ -688,15 +669,9 @@ const CURATED: Record<string, string> = {
   'ramen noodles':      'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=400&fit=crop',
 
   // Gastronomy — Nuts & Legumes
-  'almonds nuts':       'https://images.unsplash.com/photo-1574184864703-3487b13f0edd?w=400&h=400&fit=crop',
-  'walnuts':            'https://images.unsplash.com/photo-1563412580-d4c42a137238?w=400&h=400&fit=crop',
-  'beans legumes':      'https://images.unsplash.com/photo-1601001434776-0ede7f7e15e3?w=400&h=400&fit=crop',
-  'lentils':            'https://images.unsplash.com/photo-1609197100763-bb2e72e3d6a0?w=400&h=400&fit=crop',
-  'chickpeas':          'https://images.unsplash.com/photo-1515543904379-3d757abe9a5d?w=400&h=400&fit=crop',
   // peanuts → Wikipedia
 
   // Gastronomy — Kitchen
-  'knife kitchen':      'https://images.unsplash.com/photo-1594999678537-d2e459e9b0d8?w=400&h=400&fit=crop',
   // frying pan → Wikipedia
   'cooking pot':        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop',
   // fork cutlery, spoon kitchen, bowl ceramic, oven kitchen, cutting board → Wikipedia
@@ -704,16 +679,10 @@ const CURATED: Record<string, string> = {
   // PT vocab — CURATED
   'white grape':              'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=400&h=400&fit=crop',
   'muscat grape green':       'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=400&h=400&fit=crop',
-  'raisins dried grapes':     'https://images.unsplash.com/photo-1597528380855-4f0fbe8a0f2e?w=400&h=400&fit=crop',
   'black grapes dark':        'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=400&h=400&fit=crop',
   'grapefruit citrus':        'https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?w=400&h=400&fit=crop',
-  'tangerine mandarin':       'https://images.unsplash.com/photo-1548155566-7b4c2a2f1eb4?w=400&h=400&fit=crop',
   'lime citrus green':        'https://images.unsplash.com/photo-1590502593747-42a996133562?w=400&h=400&fit=crop',
-  'green beans':              'https://images.unsplash.com/photo-1567375699567-c1eeaeb8c68a?w=400&h=400&fit=crop',
   'stinging nettle plant':    'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&h=400&fit=crop',
-  'clover plant':             'https://images.unsplash.com/photo-1542601906897-5759f2aa1b26?w=400&h=400&fit=crop',
-  'lupin lupini beans':       'https://images.unsplash.com/photo-1515543904379-3d757abe9a5d?w=400&h=400&fit=crop',
-  'spare ribs grilled':       'https://images.unsplash.com/photo-1544025162-d76538647ad1?w=400&h=400&fit=crop',
   'sirloin steak beef':       'https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=400&h=400&fit=crop',
   'venison deer meat':        'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop',
   'bone marrow roasted':      'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop',
@@ -728,17 +697,13 @@ const CURATED: Record<string, string> = {
   'wheat field grain':        'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=400&fit=crop',
   'tapioca pearls':           'https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&h=400&fit=crop',
   'juice glass fresh':        'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=400&fit=crop',
-  'fruit juice colorful':     'https://images.unsplash.com/photo-1534353473418-4cfa0c1ba5f9?w=400&h=400&fit=crop',
   'herbal tea cup herbs':     'https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=400&h=400&fit=crop',
-  'meringue dessert white':   'https://images.unsplash.com/photo-1531069538330-e8a3b8bfed13?w=400&h=400&fit=crop',
   'apple pie tart':           'https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=400&h=400&fit=crop',
-  'chocolate truffle':        'https://images.unsplash.com/photo-1511381939415-e44f02b4dc0f?w=400&h=400&fit=crop',
   'mixed toast ham cheese':   'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=400&fit=crop',
   'bruschetta toast topping': 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=400&fit=crop',
   'tortilla flatbread':       'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop',
   'toast bread golden':       'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop',
   'seasoning spices mix':     'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=400&h=400&fit=crop',
-  'black truffle fungus':     'https://images.unsplash.com/photo-1504504538629-c1bb67b2de99?w=400&h=400&fit=crop',
   'serving platter dish':     'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=400&fit=crop',
   'baking tray oven':         'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop',
   'saucepan cooking':         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop',
@@ -752,13 +717,8 @@ const CURATED: Record<string, string> = {
   'butcher shop meat':        'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&h=400&fit=crop',
   'heather moorland purple':  'https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=400&h=400&fit=crop',
   'tulip flower colorful':    'https://images.unsplash.com/photo-1520763185298-1b434c919102?w=400&h=400&fit=crop',
-  'topaz gemstone crystal':   'https://images.unsplash.com/photo-1561714200-d28799b2f8b4?w=400&h=400&fit=crop',
   'roof tile terracotta':     'https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=400&h=400&fit=crop',
   'turtle sea tortoise':      'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=400&h=400&fit=crop',
-  'chaffinch bird':           'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Male_Common_Chaffinch.jpg/480px-Male_Common_Chaffinch.jpg',
-  'mermaid ocean mythology':  'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/John_William_Waterhouse_-_A_Mermaid.jpg/480px-John_William_Waterhouse_-_A_Mermaid.jpg',
-  'vase flower home':         'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
-  'candle flame light':       'https://images.unsplash.com/photo-1478431048903-94c27d6ba9c8?w=400&h=400&fit=crop',
   'steam vapor hot':          'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop',
   'slow snail pace':          'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
   'fast speed racing':        'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&h=400&fit=crop',
@@ -783,7 +743,6 @@ const CURATED: Record<string, string> = {
 
   // Holidays — Christian
   'christmas tree lights':       'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&h=400&fit=crop',
-  'easter eggs colorful':        'https://images.unsplash.com/photo-1522459666956-5786f8babb8d?w=400&h=400&fit=crop',
   'good friday cross church':    'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=400&h=400&fit=crop',
   'advent candles wreath':       'https://images.unsplash.com/photo-1512389098783-66b81f86e199?w=400&h=400&fit=crop',
   'epiphany three kings':        'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&h=400&fit=crop',
@@ -801,13 +760,10 @@ const CURATED: Record<string, string> = {
   'mawlid prophet mosque':       'https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=400&h=400&fit=crop',
 
   // Holidays — Jewish
-  'hanukkah menorah candles':    'https://images.unsplash.com/photo-1544967919-44c1ef2f9e4a?w=400&h=400&fit=crop',
   'passover seder plate':        'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=400&h=400&fit=crop',
   'rosh hashanah apple honey':   'https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=400&h=400&fit=crop',
   'yom kippur synagogue prayer': 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=400&h=400&fit=crop',
-  'purim costume celebration':   'https://images.unsplash.com/photo-1535268244197-63e388f6bcbd?w=400&h=400&fit=crop',
   'sukkot sukkah harvest':       'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=400&fit=crop',
-  'shavuot flowers dairy':       'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
 
   // Holidays — Hindu
   'diwali oil lamps light':      'https://images.unsplash.com/photo-1604594849809-dfedbc827105?w=400&h=400&fit=crop',
@@ -820,7 +776,6 @@ const CURATED: Record<string, string> = {
   'bodhi day meditation tree':   'https://images.unsplash.com/photo-1545389336-cf090694435e?w=400&h=400&fit=crop',
 
   // Holidays — Other
-  'nowruz persian new year':     'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'vaisakhi sikh celebration':   'https://images.unsplash.com/photo-1604594849809-dfedbc827105?w=400&h=400&fit=crop',
 
   // Days of the week
@@ -829,15 +784,12 @@ const CURATED: Record<string, string> = {
   'tuesday productivity desk':  'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=400&fit=crop',
   'midweek planning calendar':  'https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&h=400&fit=crop',
   'thursday meeting teamwork':  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=400&fit=crop',
-  'friday celebration weekend': 'https://images.unsplash.com/photo-1535268244197-63e388f6bcbd?w=400&h=400&fit=crop',
   'saturday fun leisure':       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop',
 
   // Months of the year
   'january winter snow':        'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=400&h=400&fit=crop',
   'february valentines hearts': 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop',
-  'march spring flowers bloom': 'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'april rain showers':         'https://images.unsplash.com/photo-1438449805896-28a666819a20?w=400&h=400&fit=crop',
-  'may spring garden':          'https://images.unsplash.com/photo-1477419501086-dfb0edfe7a85?w=400&h=400&fit=crop',
   'june summer sunshine':       'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop',
   'july summer beach':          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop',
   'august harvest field':       'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=400&fit=crop',
@@ -848,12 +800,9 @@ const CURATED: Record<string, string> = {
 
   // Animals additions
   'zebra':                 'https://images.unsplash.com/photo-1526095179574-86e545346ae6?w=400&h=400&fit=crop',
-  'wasp insect':           'https://images.unsplash.com/photo-1558618047-f2db8cebc571?w=400&h=400&fit=crop',
   'worm earthworm':        'https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=400&h=400&fit=crop',
 
   // Nature additions
-  'juniper tree':          'https://images.unsplash.com/photo-1542601906897-5759f2aa1b26?w=400&h=400&fit=crop',
-  'violet flower':         'https://images.unsplash.com/photo-1490750967868-88df5691cc6c?w=400&h=400&fit=crop',
   'scenic view landscape': 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=400&fit=crop',
   'zinc mineral':          'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=400&h=400&fit=crop',
   'schist rock':           'https://images.unsplash.com/photo-1519922639192-e73293ca430e?w=400&h=400&fit=crop',
@@ -864,17 +813,13 @@ const CURATED: Record<string, string> = {
   // Wine
   'wine bottle':           'https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=400&fit=crop',
   'red wine glass':        'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop',
-  'white wine glass':      'https://images.unsplash.com/photo-1519671282429-b8d4945f4d8a?w=400&h=400&fit=crop',
   'rose wine glass':       'https://images.unsplash.com/photo-1598306442928-4d90f32c6866?w=400&h=400&fit=crop',
   'vinho verde wine glass': 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=400&h=400&fit=crop',
   'vinho verde wine':      'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=400&h=400&fit=crop',
   'champagne flute bubbles': 'https://images.unsplash.com/photo-1547595628-c61a29f496f0?w=400&h=400&fit=crop',
-  'prosecco sparkling wine glass': 'https://images.unsplash.com/photo-1558618047-f4e70e4a48f3?w=400&h=400&fit=crop',
-  'cava spanish sparkling wine': 'https://images.unsplash.com/photo-1534236006086-8f5d8d3b7fcb?w=400&h=400&fit=crop',
   'sparkling wine bubbles glass': 'https://images.unsplash.com/photo-1504279807002-09854ccc9b6c?w=400&h=400&fit=crop',
   'port wine porto':       'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&h=400&fit=crop',
   'madeira wine':          'https://images.unsplash.com/photo-1567529684892-09290a1b2d05?w=400&h=400&fit=crop',
-  'moscatel wine':         'https://images.unsplash.com/photo-1558618047-f4e70e4a48f3?w=400&h=400&fit=crop',
   'claret red wine':       'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=400&fit=crop',
   'dessert wine sweet':    'https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?w=400&h=400&fit=crop',
   'table wine dinner':     'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=400&fit=crop',
@@ -888,7 +833,6 @@ const CURATED: Record<string, string> = {
   'vinaigrette dressing':  'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&h=400&fit=crop',
 
   // Seafood additions
-  'scallop shellfish':     'https://images.unsplash.com/photo-1559820135-a5f98de84900?w=400&h=400&fit=crop',
 
   // Food additions
   'veal meat':             'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=400&fit=crop',
@@ -898,7 +842,6 @@ const CURATED: Record<string, string> = {
 
   // Additional food
   'plum fruit':            'https://images.unsplash.com/photo-1562051036-e0eea191d42f?w=400&h=400&fit=crop',
-  'prune dried plum':      'https://images.unsplash.com/photo-1597528380855-4f0fbe8a0f2e?w=400&h=400&fit=crop',
   'carob':                 'https://images.unsplash.com/photo-1548940740-204726a19be3?w=400&h=400&fit=crop',
   'pumpkin':               'https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&h=400&fit=crop',
   'celery':                'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=400&fit=crop',
@@ -919,18 +862,14 @@ const CURATED: Record<string, string> = {
 
   // School
   'pencil':              'https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=400&h=400&fit=crop',
-  'pen writing':         'https://images.unsplash.com/photo-1583394293859-39b4d88f8f6c?w=400&h=400&fit=crop',
   'eraser school':       'https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?w=400&h=400&fit=crop',
-  'ruler':               'https://images.unsplash.com/photo-1609349093772-5b8acc866b2d?w=400&h=400&fit=crop',
   'scissors':            'https://images.unsplash.com/photo-1618365908648-e71bd5716cba?w=400&h=400&fit=crop',
-  'glue stick':          'https://images.unsplash.com/photo-1617952739516-b5ca15b4b793?w=400&h=400&fit=crop',
   'notebook':            'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400&h=400&fit=crop',
   'textbook open':       'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=400&fit=crop',
   'backpack school':     'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop',
   'pencil case':         'https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&h=400&fit=crop',
   'marker pen':          'https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&h=400&fit=crop',
   'crayons colorful':    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
-  'pencil sharpener':    'https://images.unsplash.com/photo-1603486002664-af5c1a909b50?w=400&h=400&fit=crop',
   'calculator':          'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=400&h=400&fit=crop',
   'drawing compass':     'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&h=400&fit=crop',
   'highlighter pen':     'https://images.unsplash.com/photo-1589998059171-988d887df646?w=400&h=400&fit=crop',
@@ -942,14 +881,12 @@ const CURATED: Record<string, string> = {
   'teacher classroom':   'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=400&fit=crop',
   'student studying':    'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=400&h=400&fit=crop',
   'mathematics numbers': 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop',
-  'science experiment':  'https://images.unsplash.com/photo-1532094349884-543559059b57?w=400&h=400&fit=crop',
   'art painting':        'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop',
   'music notes':         'https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=400&h=400&fit=crop',
   'history book':        'https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=400&h=400&fit=crop',
   'homework studying':   'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=400&fit=crop',
   'exam test paper':     'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&h=400&fit=crop',
   'lunch box':           'https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=400&fit=crop',
-  'diploma certificate': 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=400&fit=crop',
 };
 
 export function useUnsplashImage(query: string) {

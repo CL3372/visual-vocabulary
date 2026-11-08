@@ -50,60 +50,27 @@ export function CuisineOfTheWeek({ onExplore }: Props) {
   const cuisine = FEATURED[week % FEATURED.length];
 
   return (
-    <div
-      className="mx-4 mt-4 mb-2 rounded-2xl overflow-hidden relative"
+    <button
+      onClick={() => onExplore(cuisine.category, cuisine.group)}
+      className="mx-4 mt-2 mb-2 rounded-2xl flex items-center gap-3 px-4 py-2.5 text-left transition-all active:scale-95"
       style={{
         background: `linear-gradient(135deg, ${cuisine.color}, ${cuisine.color2})`,
-        boxShadow: `0 4px 24px ${cuisine.color}44`,
+        boxShadow: `0 2px 12px ${cuisine.color}44`,
       }}
+      aria-label={`Explore ${cuisine.name} cuisine`}
     >
-      {/* Decorative large flag */}
-      <div
-        className="absolute right-3 top-1/2 -translate-y-1/2 text-7xl select-none pointer-events-none"
-        style={{ opacity: 0.2, filter: 'blur(1px)' }}
-      >
-        {cuisine.flag}
-      </div>
-
-      <div className="px-4 py-4 relative">
-        {/* Label */}
-        <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: 'rgba(255,255,255,0.65)' }}>
+      <span className="text-2xl flex-shrink-0">{cuisine.flag}</span>
+      <div className="flex-1 min-w-0">
+        <p className="text-[11px] font-bold uppercase tracking-widest" style={{ color: 'rgba(255,255,255,0.7)' }}>
           🌟 Cuisine of the week
         </p>
-
-        {/* Name */}
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-2xl">{cuisine.flag}</span>
-          <h3 className="text-xl font-black text-white">{cuisine.name}</h3>
-        </div>
-
-        {/* Tagline */}
-        <p className="text-sm mb-3 leading-snug" style={{ color: 'rgba(255,255,255,0.8)' }}>
-          {cuisine.tagline}
+        <p className="text-base font-black text-white leading-tight truncate">
+          {cuisine.name} <span className="font-medium text-xs" style={{ color: 'rgba(255,255,255,0.8)' }}>· {cuisine.highlights.slice(0, 2).join(', ')}</span>
         </p>
-
-        {/* Dish chips */}
-        <div className="flex gap-2 flex-wrap mb-4">
-          {cuisine.highlights.map(dish => (
-            <span
-              key={dish}
-              className="text-xs px-2.5 py-1 rounded-full font-medium"
-              style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}
-            >
-              {dish}
-            </span>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <button
-          onClick={() => onExplore(cuisine.category, cuisine.group)}
-          className="px-4 py-2 rounded-xl text-sm font-bold transition-all active:scale-95"
-          style={{ background: 'rgba(255,255,255,0.95)', color: cuisine.color }}
-        >
-          Explore {cuisine.name} →
-        </button>
       </div>
-    </div>
+      <span className="text-sm font-bold flex-shrink-0 px-3 py-1.5 rounded-xl" style={{ background: 'rgba(255,255,255,0.95)', color: cuisine.color }}>
+        Explore →
+      </span>
+    </button>
   );
 }
