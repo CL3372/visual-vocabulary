@@ -95,6 +95,7 @@ const CATEGORY_DATA = [
   { name: 'Travel Essentials', group: 'Moving', emoji: '✈️', blurb: 'Words for airports, hotels and getting around when you travel.', featured: ['airport', 'boarding pass', 'luggage', 'customs', 'hotel', 'ticket', 'map', 'currency'] },
   { name: 'Body Parts', group: 'Language', emoji: '🫀', dataCats: ['Body'], featured: ['hand', 'eye', 'nose', 'mouth', 'ear', 'heart', 'foot', 'arm'] },
   { name: 'Bathroom', group: 'Language', emoji: '🚿', featured: ['toilet', 'sink', 'shower', 'towel', 'toothbrush', 'soap', 'shampoo', 'toothpaste'] },
+  { name: 'Cooking and Restaurant', group: 'Moving', emoji: '👩‍🍳', dataCats: ['Concepts'], noGallery: true, blurb: 'Words for tasting, cooking and eating out: flavours, textures, recipes, reservations, receipts and leftovers.', featured: ['Recipe', 'Tasty', 'Fresh', 'Flavour', 'Leftovers', 'Reservation', 'To Recommend', 'To Slice'] },
   { name: 'Kitchen', group: 'Language', emoji: '🍳', featured: ['knife', 'fork', 'spoon', 'bowl', 'pan', 'oven', 'fridge', 'kettle'] },
   { name: 'Car', group: 'Language', emoji: '🔧', featured: ['steering wheel', 'seat belt', 'headlights', 'tyre', 'engine', 'windscreen', 'horn', 'number plate'] },
   { name: 'Plants', group: 'Language', emoji: '🌷', featured: ['rose', 'sunflower', 'cactus', 'tulip', 'lavender', 'bamboo', 'orchid', 'daisy'] },
@@ -281,6 +282,7 @@ const PHOTO_STORE = loadPhotos(ROOT);
 const GALLERY_CACHE = new Map();
 /** The photos shown on a topic's pages (same set on the English page and every language page). */
 function galleryOf(topic) {
+  if (topic.noGallery) return [];
   if (!GALLERY_CACHE.has(topic.slug ?? topic.name)) {
     const g = pickGallery(topic.words, PHOTO_STORE, 6);
     GALLERY_CACHE.set(topic.slug ?? topic.name, g.length >= 3 ? g : []);
@@ -976,6 +978,7 @@ ${crumbsHtml(trail)}
   <div class="topic-grid">
     <a class="topic-card" href="${guideUrl(GUIDE_SLUGS.visual)}"><strong>👁️ Visual vocabulary</strong><span>What it is and why photos help you remember words</span></a>
     <a class="topic-card" href="${guideUrl(GUIDE_SLUGS.pictures)}"><strong>🖼️ Learn words with pictures</strong><span>A simple 5-step method you can use today</span></a>
+    <a class="topic-card" href="${guideUrl(GUIDE_SLUGS.portuguese)}"><strong>🇵🇹🇧🇷 European vs Brazilian Portuguese</strong><span>Everyday words that differ, side by side</span></a>
   </div>
 ${sections}
 ${languages}
@@ -986,7 +989,7 @@ ${languages}
 
 // ─── Guides: /learn/visual-vocabulary and /learn/learn-words-with-pictures ───
 
-const GUIDE_SLUGS = { visual: 'visual-vocabulary', pictures: 'learn-words-with-pictures' };
+const GUIDE_SLUGS = { visual: 'visual-vocabulary', pictures: 'learn-words-with-pictures', portuguese: 'european-vs-brazilian-portuguese' };
 const guideUrl = slug => `${SITE_URL}/learn/${slug}`;
 
 function topicLink(name) {
@@ -1134,6 +1137,77 @@ ${guideGallery('Try it: look at the photo, then check the word')}
   });
 }
 
+
+// Everyday words that differ between European and Brazilian Portuguese. Values come from the
+// app data (so the page always matches the app); each pair is checked to exist and to differ.
+const PORTUGUESE_GROUPS = [
+  { title: 'Food and drink', words: ['Pineapple', 'Eggplant', 'Asparagus', 'Leek', 'Green Beans', 'Ice Cream', 'Cookie', 'Juice', 'Fruit Juice', 'Smoothie'] },
+  { title: 'Kitchen and home', words: ['Fridge', 'Cup', 'Baking Tray', 'Rolling Pin', 'Bathroom', 'Wardrobe', 'Sink', 'Shower', 'Toilet', 'Bin'] },
+  { title: 'Clothes and shopping', words: ['T-Shirt', 'Jumper', 'Hoodie', 'Jeans', 'Raincoat', 'Trainers', 'Handbag', 'Swimsuit', 'Suit', 'Receipt', 'Plastic Bag'] },
+  { title: 'Getting around', words: ['Bus', 'Train', 'Subway', 'Lorry', 'Fire Engine', 'Number Plate', 'Bonnet', 'Windscreen'] },
+];
+
+function generateGuidePortuguese() {
+  const pt = PAGE_LANGUAGES.find(l => l.key === 'pt');
+  const br = PAGE_LANGUAGES.find(l => l.key === 'pt-br');
+  const norm = x => x.trim().toLowerCase();
+  let total = 0;
+  const sections = PORTUGUESE_GROUPS.map(g => {
+    const rows = g.words.map(name => {
+      // Some English words appear in more than one category; use the entry where the two differ.
+      let a = '', b = '';
+      for (const w of WORDS.filter(x => x.word === name)) {
+        a = translationOf(w, 'pt', OVERLAYS);
+        b = translationOf(w, 'pt-br', OVERLAYS);
+        if (a && b && norm(a) !== norm(b)) break;
+      }
+      if (!a || !b || norm(a) === norm(b)) {
+        console.error(`✗ Portuguese guide: "${name}" is missing or has no difference (pt "${a}", pt-br "${b}").`);
+        process.exit(1);
+      }
+      total++;
+      return `<tr><td>${htmlEncode(name)}</td><td lang="pt-PT">${htmlEncode(a)}</td><td lang="pt-BR">${htmlEncode(b)}</td></tr>`;
+    }).join('\n        ');
+    return `
+  <h2 class="section-title">${htmlEncode(g.title)}</h2>
+  <div class="table-wrap">
+    <table class="vocab">
+      <thead><tr><th>English</th><th>European Portuguese</th><th>Brazilian Portuguese</th></tr></thead>
+      <tbody>
+        ${rows}
+      </tbody>
+    </table>
+  </div>`;
+  }).join('\n');
+
+  const hubs = FULL_BUILD ? `
+  <p class="blurb">Browse the full word lists: <a href="${langHubUrl(pt)}">European Portuguese</a> and <a href="${langHubUrl(br)}">Brazilian Portuguese</a>.</p>` : '';
+  const bodyHtml = `
+  <h2 class="section-title">Same language, different everyday words</h2>
+  <p class="blurb">European Portuguese (spoken in Portugal) and Brazilian Portuguese share their grammar and most of their vocabulary, and speakers can generally understand each other. But many everyday words differ, especially in the kitchen, at home, in shops and on the road. If you are moving to Lisbon or São Paulo, it helps to learn the words for the place where you will actually live.</p>
+  <p class="blurb">The ${total} pairs below come from the word lists in ${SITE_NAME}, which keeps European and Brazilian Portuguese as two separate languages so you can choose the one you need.</p>
+${sections}
+
+  <h2 class="section-title">Spelling and pronunciation also differ</h2>
+  <p class="blurb">Some pairs above differ only in spelling or accent, such as <em>Beringela</em> and <em>Berinjela</em>, or <em>Papel higiénico</em> and <em>Papel higiênico</em>. Others are completely different words, such as <em>Autocarro</em> and <em>Ônibus</em> for a bus. Pronunciation differs as well, so listening to a word spoken helps. In ${SITE_NAME} every word comes with a photo and audio in the language you choose.</p>
+  ${hubs}
+`;
+  const faqs = [
+    { q: 'Can Portuguese speakers from Portugal and Brazil understand each other?', a: 'Generally yes. The grammar and most words are shared, but accents, spelling and a number of everyday words differ, so both sides sometimes need a moment to adjust.' },
+    { q: 'Which Portuguese should I learn, European or Brazilian?', a: 'Learn the variety spoken where you will live or work: European Portuguese for Portugal, Brazilian Portuguese for Brazil. The other one will still be mostly understandable.' },
+    { q: `Does ${SITE_NAME} have both European and Brazilian Portuguese?`, a: `Yes. ${SITE_NAME} lists European Portuguese and Brazilian Portuguese as separate languages, so words such as ananás and abacaxi each appear in the right one.` },
+    { q: `Is ${SITE_NAME} free?`, a: `${SITE_NAME} is free to start, in the browser and as an app for iPhone and Android.` },
+  ];
+  return guideShell({
+    slug: GUIDE_SLUGS.portuguese,
+    title: fit([`European vs Brazilian Portuguese: everyday words | ${SITE_NAME}`, `European vs Brazilian Portuguese words | ${SITE_NAME}`], 68),
+    desc: fit([`${total} everyday words that differ between European and Brazilian Portuguese, side by side: food, home, clothes and transport. Learn both free with ${SITE_NAME}.`, `${total} everyday words that differ between European and Brazilian Portuguese, side by side. Learn both free with ${SITE_NAME}.`], 158),
+    h1: 'European vs Brazilian Portuguese: Everyday Words That Differ',
+    lead: `${total} everyday words in European and Brazilian Portuguese, side by side.`,
+    bodyHtml, faqs, emoji: '🇵🇹',
+  });
+}
+
 // ─── Sitemap ─────────────────────────────────────────────────────────────────
 
 function sitemapUrl(loc, priority, lastmod) {
@@ -1154,7 +1228,7 @@ if (existsSync(britishDir)) {
 const sitemap = [sitemapUrl(`${SITE_URL}/`, '1.0', latestDate(['index.html']))];
 writeFileSync(join(LEARN_DIR, 'index.html'), generateLearnIndex(), 'utf8');
 sitemap.push(sitemapUrl(LEARN_INDEX_URL, '0.9', latestDate(GENERATOR_FILES)));
-for (const [slug, make] of [[GUIDE_SLUGS.visual, generateGuideVisual], [GUIDE_SLUGS.pictures, generateGuidePictures]]) {
+for (const [slug, make] of [[GUIDE_SLUGS.visual, generateGuideVisual], [GUIDE_SLUGS.pictures, generateGuidePictures], [GUIDE_SLUGS.portuguese, generateGuidePortuguese]]) {
   const dir = join(LEARN_DIR, slug);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, 'index.html'), make(), 'utf8');
