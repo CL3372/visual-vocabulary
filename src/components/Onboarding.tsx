@@ -293,12 +293,13 @@ export function Onboarding({ onComplete }: Props) {
 
         <div className="flex flex-col items-center gap-7">
           <div className="relative">
-            <div
-              className="w-24 h-24 rounded-3xl flex items-center justify-center text-5xl shadow-lg"
-              style={{ background: 'var(--accent)' }}
-            >
-              🌍
-            </div>
+            <img
+              src="/favicon-192x192.png"
+              alt="LexPix"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-3xl shadow-lg"
+            />
           </div>
 
           <div>
@@ -309,7 +310,7 @@ export function Onboarding({ onComplete }: Props) {
               Learn words through photos
             </p>
             <p className="text-base leading-relaxed max-w-xs" style={{ color: 'var(--text2)' }}>
-              3,000+ words, 42 languages, WaveNet audio. Free to start.
+              3,000+ words, 42 languages, spoken audio for every word. Free to start.
             </p>
           </div>
 
@@ -317,7 +318,7 @@ export function Onboarding({ onComplete }: Props) {
             {[
               { value: '3,000+', label: 'words' },
               { value: '42', label: 'languages' },
-              { value: '🎙️', label: 'WaveNet audio' },
+              { value: '🎙️', label: 'spoken audio' },
             ].map(s => (
               <div key={s.label} className="flex flex-col items-center gap-0.5">
                 <span className="text-xl font-black" style={{ color: 'var(--accent)' }}>{s.value}</span>
@@ -639,7 +640,7 @@ export function Onboarding({ onComplete }: Props) {
             { icon: '🃏', text: 'Flashcards — drill words with photos' },
             { icon: '🧠', text: 'Quiz — test yourself in multiple ways' },
             { icon: '🔥', text: 'Daily Challenge — 10 words every day' },
-            { icon: '🎙️', text: 'Native speaker audio on every word' },
+            { icon: '🎙️', text: 'Natural-sounding audio for every word' },
           ].map(({ icon, text }) => (
             <div key={text} className="flex items-center gap-3 py-2">
               <span className="text-xl">{icon}</span>

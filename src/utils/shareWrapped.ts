@@ -151,7 +151,7 @@ export async function generateWrappedCard(data: WrappedData): Promise<File> {
 
   ctx.font = '600 38px system-ui, sans-serif';
   ctx.fillStyle = 'rgba(255,255,255,0.35)';
-  ctx.fillText('🍽️  LexPix · World Gastronomy', PAD, y);
+  ctx.fillText('🍽️  LexPix · Learn words with photos', PAD, y);
 
   // ── Export ─────────────────────────────────────────────────────────────────
   return new Promise((resolve, reject) => {

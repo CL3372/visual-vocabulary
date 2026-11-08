@@ -101,7 +101,7 @@ function Inner() {
             {kidsMode ? '🌈 LexPix' : 'LexPix'}
           </h1>
           <p className="text-xs mt-0.5" style={{ color: 'var(--text2)' }}>
-            {kidsMode ? 'Learning is fun!' : 'World Gastronomy'}
+            {kidsMode ? 'Learning is fun!' : 'Learn words with photos'}
           </p>
         </button>
 

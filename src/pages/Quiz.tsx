@@ -33,10 +33,26 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+// Wrong options come from the same category as the right answer first (a pastry is
+// offered with other foods, not with "pencil"), then from anywhere in the pool if the
+// category is too small. Options that repeat the answer or each other are skipped.
 function getChoices(correct: Word, all: Word[], lang: string): string[] {
   const answer = getTranslation(correct, lang);
-  const wrong = shuffle(all.filter(w => w.id !== correct.id)).slice(0, 3)
-    .map(w => getTranslation(w, lang));
+  const seen = new Set([answer.trim().toLowerCase()]);
+  const wrong: string[] = [];
+  const others = all.filter(w => w.id !== correct.id);
+  const ordered = [
+    ...shuffle(others.filter(w => w.category === correct.category)),
+    ...shuffle(others.filter(w => w.category !== correct.category)),
+  ];
+  for (const w of ordered) {
+    const t = getTranslation(w, lang);
+    const key = t.trim().toLowerCase();
+    if (!t || seen.has(key)) continue;
+    seen.add(key);
+    wrong.push(t);
+    if (wrong.length === 3) break;
+  }
   return shuffle([answer, ...wrong]);
 }
 

@@ -50,18 +50,29 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
 
   const kidsPalette = KIDS_PALETTES[parseInt(word.id.replace(/\D/g, '')) % KIDS_PALETTES.length];
 
-  function handleSpeak(e: React.MouseEvent) {
-    e.stopPropagation();
+  function speakWord() {
     const text = showTranslation ? translation : word.word;
     const lang = showTranslation ? targetLang : nameVoice(word);
     speak(text, lang, word.id);
+  }
+
+  function handleSpeak(e: React.MouseEvent) {
+    e.stopPropagation();
+    speakWord();
+  }
+
+  // In Kids Mode a tap on the card also says the word, so a child who cannot read yet
+  // hears it straight away without looking for the small speaker button.
+  function handleCardClick() {
+    if (kidsMode) speakWord();
+    onClick?.();
   }
 
   // ── List mode ─────────────────────────────────────────────────────────────
   if (viewMode === 'list') {
     return (
       <div
-        onClick={onClick}
+        onClick={handleCardClick}
         className="flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors active:scale-[0.99]"
         style={{
           background: 'var(--surface)',
@@ -125,7 +136,7 @@ export const WordCard = memo(function WordCard({ word, viewMode = 'grid2', onCli
   return (
     <>
     <div
-      onClick={onClick}
+      onClick={handleCardClick}
       className="rounded-2xl overflow-hidden cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:scale-95"
       style={{
         background: kidsMode ? kidsPalette.bg : 'var(--surface)',

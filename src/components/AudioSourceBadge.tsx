@@ -33,9 +33,9 @@ export function AudioSourceBadge({ source, variant = 'auto' }: Props) {
     <span
       className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold"
       style={variant === 'light' ? lightStyle : autoStyle}
-      title={isWavenet ? 'Native speaker audio (WaveNet)' : 'Device text-to-speech'}
+      title={isWavenet ? 'Natural-sounding neural voice (Google WaveNet)' : 'Voice from your device'}
     >
-      {isWavenet ? '🎙️ WaveNet' : '📱 Device'}
+      {isWavenet ? '🎙️ Natural voice' : '📱 Device voice'}
     </span>
   );
 }
