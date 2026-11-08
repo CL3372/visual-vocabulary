@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CATEGORY_GROUPS } from '../data/words';
+import { getCategoryGroups } from '../data/wordStore';
 import type { Word } from '../types';
 import { useApp } from '../context/AppContext';
 import { translatedWords } from '../utils/langCoverage';
@@ -47,6 +47,7 @@ export function TopicPicker({ mode, onStart, kidsMode }: Props) {
     );
   }
 
+  const CATEGORY_GROUPS = getCategoryGroups();
   const subCats = CATEGORY_GROUPS[group];
   const pool = langWords.filter(w => {
     if (group !== 'All' && !CATEGORY_GROUPS[group].includes(w.category)) return false;

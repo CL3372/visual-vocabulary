@@ -16,6 +16,7 @@ const MapBrowse = lazy(() => import('./pages/MapBrowse').then(m => ({ default: m
 import { LanguagePicker } from './components/LanguagePicker';
 import { Onboarding } from './components/Onboarding';
 import { LANGUAGES } from './data/languages';
+import { useWordData } from './data/wordStore';
 import type { AppMode } from './types';
 
 function load<T>(key: string, fallback: T): T {
@@ -35,6 +36,8 @@ const TABS: { id: AppMode; label: string; icon: typeof BookOpen; emoji: string; 
 function Inner() {
   const { darkMode, toggleDarkMode, kidsMode, toggleKidsMode, targetLang, setTargetLang, langReady, streak, srsDueCount, studiedToday, bestStreak, user, signOut, newBadge, clearNewBadge, earnedBadges } = useApp();
   const handleBadgeDone = useCallback(() => clearNewBadge(), [clearNewBadge]);
+  // The word library downloads in the background; the first screen does not wait for it.
+  const wordData = useWordData();
   const [mode, setMode] = useState<AppMode>('browse');
   const [showLang, setShowLang] = useState(false);
   const [showStreak, setShowStreak] = useState(false);
@@ -67,6 +70,21 @@ function Inner() {
           setOnboarded(true);
         }}
       />
+    );
+  }
+
+  if (!wordData.ready) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center gap-3 px-6 text-center" style={{ background: 'var(--bg)' }}>
+        {wordData.failed ? (
+          <>
+            <p className="text-sm" style={{ color: 'var(--text2)' }}>Could not load the words. Check your connection and try again.</p>
+            <button onClick={wordData.retry} className="px-5 py-2 rounded-xl text-white font-semibold" style={{ background: 'var(--accent)' }}>Try again</button>
+          </>
+        ) : (
+          <p className="text-sm" style={{ color: 'var(--text2)' }}>Loading words…</p>
+        )}
+      </div>
     );
   }
 

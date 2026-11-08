@@ -15,8 +15,7 @@ export default defineConfig({
             // Libraries every screen needs. The map libraries are left out on purpose:
             // they load only when the Map tab is opened (see App.tsx).
             { name: 'vendor', test: /node_modules[\\/](?:react|react-dom|scheduler|@supabase|@capacitor|lucide-react)[\\/]/, priority: 20 },
-            // The vocabulary itself (src/data, except the per-language files in src/data/extra, which already load on demand).
-            { name: 'word-data', test: /src[\\/]data[\\/](?!extra[\\/])/, priority: 10 },
+            // The vocabulary (src/data) is not listed here: it is loaded with a dynamic import in src/data/wordStore.ts, so it becomes its own on-demand file.
           ],
         },
       },

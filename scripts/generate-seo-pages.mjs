@@ -486,7 +486,7 @@ function layout({ title, desc, url, color, ld, body }) {
 </nav>
 ${body}
 <footer>
-  <p>© ${new Date().getFullYear()} <a href="${SITE_URL}">${SITE_NAME}</a> · Free visual vocabulary learning · 4,000+ words · 42 languages</p>
+  <p>© ${new Date().getFullYear()} <a href="${SITE_URL}">${SITE_NAME}</a> · Free visual vocabulary learning · 3,000+ words · 42 languages</p>
   <p style="margin-top:0.5rem"><a href="${LEARN_INDEX_URL}">All topics</a> · <a href="${SITE_URL}/learn/visual-vocabulary">Visual vocabulary</a> · <a href="${SITE_URL}/learn/learn-words-with-pictures">Learn words with pictures</a></p>
   <p style="margin-top:0.5rem">
     <a href="${SITE_URL}/learn/verbs">Verbs</a> ·

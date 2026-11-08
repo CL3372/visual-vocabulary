@@ -309,13 +309,13 @@ export function Onboarding({ onComplete }: Props) {
               Learn words through photos
             </p>
             <p className="text-base leading-relaxed max-w-xs" style={{ color: 'var(--text2)' }}>
-              4,000+ words, 42 languages, WaveNet audio. Free to start.
+              3,000+ words, 42 languages, WaveNet audio. Free to start.
             </p>
           </div>
 
           <div className="flex gap-6 justify-center">
             {[
-              { value: '4,000+', label: 'words' },
+              { value: '3,000+', label: 'words' },
               { value: '42', label: 'languages' },
               { value: '🎙️', label: 'WaveNet audio' },
             ].map(s => (

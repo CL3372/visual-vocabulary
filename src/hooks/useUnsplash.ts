@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { VERIFIED_PHOTOS } from '../data/verifiedPhotos';
+import { getVerifiedPhotos } from '../data/wordStore';
 
 const cache = new Map<string, string>();
 
@@ -961,6 +961,7 @@ export function useUnsplashImage(query: string) {
     setImageUrl('');
     if (!query) { setLoading(false); return; }
     const key = query.toLowerCase();
+    const VERIFIED_PHOTOS = getVerifiedPhotos();
 
     // Hand-verified photos win over the device cache and every API. An empty
     // string means "no trustworthy photo yet": show the placeholder, never guess.
@@ -1011,6 +1012,7 @@ export function useUnsplashImage(query: string) {
   const handleError = useCallback(() => {
     if (!imageUrl) return;
     const key = query.toLowerCase();
+    const VERIFIED_PHOTOS = getVerifiedPhotos();
     // A verified photo that fails to load (e.g. offline) is not replaced by a guess
     if (key in VERIFIED_PHOTOS) { setImageUrl(''); return; }
     cache.delete(key);

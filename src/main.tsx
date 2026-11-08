@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { PrivacyPolicy } from './pages/PrivacyPolicy.tsx'
 import { TermsOfService } from './pages/TermsOfService.tsx'
-import { Credits } from './pages/Credits.tsx'
+// Credits pulls in the photo list (about 1 MB), so it loads only on its own page.
+const Credits = lazy(() => import('./pages/Credits.tsx').then(m => ({ default: m.Credits })))
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -19,7 +20,7 @@ if (path === '/privacy') {
 } else if (path === '/terms') {
   root = <TermsOfService />;
 } else if (path === '/credits') {
-  root = <Credits />;
+  root = <Suspense fallback={null}><Credits /></Suspense>;
 } else {
   root = <App />;
 }

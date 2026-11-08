@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { Flame, BookOpen, Heart, Trophy, BarChart2, Star, Brain, Gift, Zap, Lock } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { ALL_WORDS } from '../data/words';
+import { getAllWords } from '../data/wordStore';
 import { WrappedStats } from '../components/WrappedStats';
 import { UpgradeModal } from '../components/UpgradeModal';
 import { Leaderboard } from '../components/Leaderboard';
 import { NotificationSettings } from '../components/NotificationSettings';
 
-const TOTAL_WORDS = ALL_WORDS.length;
 
 // ── Milestone badge definitions ───────────────────────────────────────────────
 interface Badge {
@@ -27,7 +26,7 @@ interface Stats {
   avgPct: number;
 }
 
-const BADGES: Badge[] = [
+const makeBadges = (TOTAL_WORDS: number): Badge[] => [
   { id: 'first',    emoji: '🌱', title: 'First Steps',    desc: 'Complete your first quiz',           unlocked: s => s.quizCount >= 1   },
   { id: 'curious',  emoji: '👀', title: 'Curious',        desc: 'See 10 words',                       unlocked: s => s.totalSeen >= 10   },
   { id: 'bookworm', emoji: '📖', title: 'Bookworm',       desc: 'See 50 words',                       unlocked: s => s.totalSeen >= 50   },
@@ -45,6 +44,8 @@ const BADGES: Badge[] = [
 ];
 
 export function Progress() {
+  const TOTAL_WORDS = Math.max(getAllWords().length, 1);
+  const BADGES = makeBadges(TOTAL_WORDS);
   const [showWrapped, setShowWrapped] = useState(false);
   const [showUpgrade, setShowUpgrade] = useState(false);
   const { streak, totalSeen, favorites, quizHistory, srsData, seenWords, isPro, xp, level, levelName, xpIntoLevel, xpForNextLevel } = useApp();

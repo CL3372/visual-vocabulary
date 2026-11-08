@@ -1,6 +1,6 @@
 import { useState, useTransition, useMemo, useCallback, useEffect } from 'react';
 import { Search, Heart, LayoutGrid, Grid3x3, List, Lock, Zap } from 'lucide-react';
-import { CATEGORY_GROUPS } from '../data/words';
+import { getCategoryGroups } from '../data/wordStore';
 import { translatedWords, languageCoverage } from '../utils/langCoverage';
 import { getTranslation } from '../utils/getTranslation';
 import type { CategoryGroup } from '../data/words';
@@ -95,13 +95,14 @@ function getCategoryEmoji(cat: string) {
 }
 
 function getCategoryGroup(cat: string): CategoryGroup {
-  for (const [group, cats] of Object.entries(CATEGORY_GROUPS)) {
+  for (const [group, cats] of Object.entries(getCategoryGroups())) {
     if ((cats as string[]).includes(cat)) return group as CategoryGroup;
   }
   return 'All';
 }
 
 export function Browse({ initialCategory }: { initialCategory?: string }) {
+  const CATEGORY_GROUPS = getCategoryGroups();
   const { kidsMode, favorites, markWordSeen, newWordsToday, dailyWordLimit, isPro, seenWords, targetLang } = useApp();
   const langWords = useMemo(() => translatedWords(targetLang), [targetLang]);
   const coverage = useMemo(() => languageCoverage(targetLang), [targetLang]);

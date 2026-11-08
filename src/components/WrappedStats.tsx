@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { X, Share2, Loader2 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { ALL_WORDS } from '../data/words';
+import { getAllWords } from '../data/wordStore';
 import { LANGUAGES } from '../data/languages';
 import { shareWrapped } from '../utils/shareWrapped';
 
@@ -9,7 +9,7 @@ interface Props { onClose: () => void }
 
 function getTopCuisine(seenWords: Set<string>): { name: string; flag: string } {
   const counts: Record<string, number> = {};
-  for (const word of ALL_WORDS) {
+  for (const word of getAllWords()) {
     if (seenWords.has(word.id) && word.category.includes('Cuisine')) {
       counts[word.category] = (counts[word.category] ?? 0) + 1;
     }
@@ -39,7 +39,7 @@ export function WrappedStats({ onClose }: Props) {
   const stats = useMemo(() => {
     const topCuisine = getTopCuisine(seenWords);
     const wordsMastered = Object.values(srsData).filter(c => c.interval >= 21).length;
-    const pct = Math.round((seenWords.size / ALL_WORDS.length) * 100);
+    const pct = Math.round((seenWords.size / Math.max(getAllWords().length, 1)) * 100);
     return { topCuisine, wordsMastered, pct };
   }, [seenWords, srsData]);
 
@@ -50,7 +50,7 @@ export function WrappedStats({ onClose }: Props) {
       await shareWrapped({
         year,
         wordsDiscovered: seenWords.size,
-        totalWords: ALL_WORDS.length,
+        totalWords: getAllWords().length,
         topCuisine: stats.topCuisine.name,
         topCuisineFlag: stats.topCuisine.flag,
         quizzesTaken: quizHistory.length,
@@ -148,7 +148,7 @@ export function WrappedStats({ onClose }: Props) {
               : 'World-class food vocabulary! 👑'}
           </p>
           <p className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            Keep exploring — {ALL_WORDS.length - seenWords.size} words still waiting to be discovered.
+            Keep exploring — {getAllWords().length - seenWords.size} words still waiting to be discovered.
           </p>
         </div>
 
